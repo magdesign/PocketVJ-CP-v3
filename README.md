@@ -42,20 +42,22 @@ pip install python-osc
 If you want to use PiMapper you must install openframeworks: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, change the keyboard commands in ProjectionMappingState.cpp (Backslash to 'd') and then install and compile PiMapper https://github.com/kr15h/ofxPiMapper, then you have to simulate a fake keyboard to unleash the remote control, see here: 
 http://www.fsays.eu/Blogging/Blog/Details/23
 
+...
+
+
 If you want to use TCPSClient, downnload it here: http://techlife.sg/TCPSClient/index.html
 put it to `/usr/bin` and make `chmod u+x TCPSClient.bin`
 Read the copyrights on their websites and make a donation!
+
+
+...
+
 
 For using the snapshot function:
 git-clone https://github.com/info-beamer/tools.git
 Go into tools/screenshot/ and type make
 then move the screenshot folder to /opt/
 
-For using the airplay function, install rplay as described here:
-http://www.instructables.com/id/AirPlay-Mirroring-without-Apple-TV-using-RPi/?ALLSTEPS)
-
-For using raspberry cast (https://github.com/vincent-lwt/RaspberryCast):
-wget https://raw.githubusercontent.com/vincent-lwt/RaspberryCast/master/setup.sh && sudo sh setup.sh
 
 
 
@@ -72,9 +74,9 @@ Clock written by: xorg62, https://github.com/xorg62/tty-clock
 
 Projector Power Script by: Marco Schmalz
 
-Testmovie by: Manuel Berner, http://towerbus.ch/
+Testmovie by: (to come...)
 
-Testaudio by: Marcel Bieri, https://facebook.com/casashowband
+Testaudio by: (to come...)
 
 Idea, support and concept by: Marc-André Gasser, http://magdesign.ch/
 
