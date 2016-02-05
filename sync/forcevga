@@ -1,0 +1,13 @@
+#disable_overscan=1
+disable_splash=1
+hdmi_group=2
+hdmi_mode=9
+hdmi_drive=2
+
+hdmi_ignore_edid=0xa5000080
+
+hdmi_force_hotplug=1
+
+gpu_mem=512
+max_usb_current=1
+dtparam=i2c_arm=on

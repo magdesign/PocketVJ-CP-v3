@@ -1,0 +1,3 @@
+#!/bin/bash
+
+expect /var/www/sync/mapper2e

@@ -1,0 +1,10 @@
+#!/bin/expect
+
+spawn /opt/fsayskeyboard
+expect "background handler\r"
+
+send -- "q"
+expect -exact "\[q\]\r"
+
+send -- "q"
+expect -exact "\[q\]\r"

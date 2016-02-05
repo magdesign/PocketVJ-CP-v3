@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#kill all running tasks exept .mp3 player
+sudo /var/www/sync/omxkill.py
+sudo /var/www/sync/testscreenoff.py &
+sudo killall -9 /home/pi/of_v0.8.4/addons/ofxPiMapper/example/./bin/example
+sudo killall -9 /usr/bin/TCPSClient.bin
+sudo /var/www/sync/rplay stop
+sudo killall -9 /var/www/sync/tty-clock
+sudo killall -9 feh
+sudo /var/www/sync/killxsession
+sudo /var/www/sync/clearscreen.sh
+
+#write to .xsession that feh shall start
+sudo cp /var/www/sync/xsessionslidesusb /home/pi/.xsession
+
+#start x and run feh
+su -s /bin/bash -c startx pi&

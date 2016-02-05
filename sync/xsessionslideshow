@@ -1,0 +1,5 @@
+#!/bin/bash
+# start picture viewer in x with auto slidshow
+
+DELAY=0.01
+feh -FD${DELAY} -Z -q -Y  /media/internal/images/*

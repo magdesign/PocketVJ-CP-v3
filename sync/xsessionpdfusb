@@ -1,0 +1,4 @@
+
+# start xpdf usb
+
+xpdf -fullscreen /media/usb/*.pdf

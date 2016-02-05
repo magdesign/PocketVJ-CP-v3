@@ -1,0 +1,4 @@
+
+# start feh picture viewer in x for manual slideshow
+
+feh -F -Z -q -Y /media/internal/images/*

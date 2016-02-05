@@ -1,0 +1,8 @@
+#!/bin/bash
+
+su pi <<'EOF'
+/var/www/sync/impressesce
+EOF
+
+
+

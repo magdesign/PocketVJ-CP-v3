@@ -1,0 +1,74 @@
+#! /bin/sh
+#
+# This script starts and stops rplay
+#
+# Do the following to use this file:
+# make sure to adjust the hardcoded path for rplay binary, the default path is /usr/bin/rplay
+#
+# sudo cp rplay.init /etc/init.d/rplay
+# cd /etc/init.d
+# sudo chmod a+x ./rplay
+# sudo update-rc.d rplay defaults
+#
+### BEGIN INIT INFO
+# Provides:          rplay
+# Required-Start:    $network
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: rplay server
+# Description:       VMLite Airplay/Mirroring Receiver
+#                    
+#                   
+### END INIT INFO
+#
+# Init script to start the remotepi daemon
+# Created by: VMLite Corporation, http://www.vmlite.com
+# Created: 2013/07/15
+#
+
+EXECUTABLE=/usr/bin/rplay
+PID=/var/run/rplay/rplay.pid
+LOG=/var/log/rplay.log
+
+. /lib/lsb/init-functions
+
+case "$1" in
+   start)
+      if ! [ -d $(dirname $PID) ]; then
+        mkdir -p -m 0755 $(dirname $PID)
+      fi
+      if [ -e $PID ]; then
+        PIDDIR=/proc/$(cat $PID)
+        if [ -d ${PIDDIR} -a  "$(readlink -f ${PIDDIR}/exe)" = "${EXECUTABLE}" ]; then 
+          log_success_msg "rplay already started."
+          exit
+        else
+          log_success_msg "Removing stale PID file $PID."
+          rm -f $PID
+        fi
+      fi
+      log_daemon_msg "Starting rplay"
+      $EXECUTABLE > $LOG &
+      echo $! > $PID
+      log_end_msg $?
+      ;;
+   stop)
+      log_daemon_msg "Stopping rplay"
+      kill -9 `cat $PID`
+      log_end_msg $?
+      rm -f $PID
+      ;;
+   restart)
+      log_action_begin_msg "Restarting rplay"
+      $0 stop
+      $0 start
+      log_action_end_msg $?
+      ;;
+   *)
+      echo "Usage: rplay {start|stop|restart}" >&2
+      exit 1
+      ;;
+esac
+
+exit 0

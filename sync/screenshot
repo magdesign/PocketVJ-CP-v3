@@ -1,0 +1,11 @@
+#!/bin/bash
+curDate=$(date +"%T")
+imgName=$curDate
+imgDirectory="/media/internal/images/"
+imgSavePath=$imgDirectory$imgName.jpg
+/opt/screenshot/./screenshot > "$imgSavePath"
+
+   
+
+
+

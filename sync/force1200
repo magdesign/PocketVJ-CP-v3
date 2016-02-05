@@ -1,0 +1,15 @@
+disable_splash=1
+hdmi_force_hotplug=1
+
+framebuffer_width=1920
+framebuffer_height=1200
+
+# force 1920x1200
+hdmi_group=2
+hdmi_mode=68
+hdmi_drive=1
+config_hdmi_boost=7
+
+gpu_mem=512
+max_usb_current=1
+dtparam=i2c_arm=on

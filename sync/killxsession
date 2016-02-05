@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo (kill $(pidof X")

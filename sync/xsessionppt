@@ -1,0 +1,4 @@
+
+# start libre office
+
+libreoffice --norestore --nologo --impress /media/internal/presentations/demo.odp

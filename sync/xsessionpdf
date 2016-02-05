@@ -1,0 +1,4 @@
+
+# start xpdf
+
+xpdf -fullscreen /media/internal/pdf/*

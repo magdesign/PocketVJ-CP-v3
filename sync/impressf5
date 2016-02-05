@@ -1,0 +1,5 @@
+#!/bin/bash
+
+su pi <<'EOF'
+/var/www/sync/impressf5e
+EOF

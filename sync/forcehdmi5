@@ -1,0 +1,17 @@
+disable_splash=1
+hdmi_force_hotplug=1
+
+# force HDMI mode (1080p)
+hdmi_group=1
+hdmi_mode=5
+
+# uncomment to force a HDMI mode rather than DVI
+hdmi_drive=2
+
+# uncomment to increase signal to HDMI
+#config_hdmi_boost=7
+
+gpu_mem=512
+max_usb_current=1
+dtparam=i2c_arm=on
+
