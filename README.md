@@ -42,6 +42,12 @@ pip install python-osc
 If you want to use PiMapper you must install openframeworks: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, change the keyboard commands in ProjectionMappingState.cpp (Backslash to 'd') and then install and compile PiMapper https://github.com/kr15h/ofxPiMapper, then you have to simulate a fake keyboard to unleash the remote control, see here: 
 http://www.fsays.eu/Blogging/Blog/Details/23
 
+install this for mouse remote (not sure if it works):
+
+sudo wget http://remotepi.io/drivers/remotepi_1.0.15_armhf.deb
+sudo dpkg -i remotepi_1.0.15_armhf.deb
+sudo /etc/init.d/remotepi start
+
 ...
 
 
