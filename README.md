@@ -52,16 +52,16 @@ If you want to use PiMapper you must install openframeworks 9.0.1 for arm: http:
 
 To have access via Control Panel (for mapping and presentation) you must simulate a fake keyboard, see here: 
 http://www.fsays.eu/Blogging/Blog/Details/23
-(place it in /opt/fsaysuinput) 
+(place it in `/opt/fsaysuinput`) 
 
 ...
 
 
 For mouse remote (trying to make it work with openframeworks, need to siumulate it somehow as /dev/input):
 
-sudo wget http://remotepi.io/drivers/remotepi_1.0.15_armhf.deb
-sudo dpkg -i remotepi_1.0.15_armhf.deb
-sudo /etc/init.d/remotepi start
+`sudo wget http://remotepi.io/drivers/remotepi_1.0.15_armhf.deb`
+`sudo dpkg -i remotepi_1.0.15_armhf.deb`
+`sudo /etc/init.d/remotepi start`
 
 ...
 
