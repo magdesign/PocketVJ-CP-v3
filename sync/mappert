@@ -1,3 +1,3 @@
 #!/bin/bash
 
-expect /var/www/sync/mapperte
+expect /var/www/sync/mapperte > /dev/null 2>&1
