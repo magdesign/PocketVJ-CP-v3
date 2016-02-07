@@ -1,14 +1,16 @@
-# PocketVJ Control Panel 2.5beta (will be 3.0)
-(Its beta, dont use this until beta disapears)
+# PocketVJ Control Panel 3.0 (beta)
+(Its beta,  use it on your own risk, for the controlpanel us the one from PocketVJ 2.0
+scripts are not working on PocketVJ 2.0)
 
 http://www.pocketvj.com
 
-This file is used to control the PocketVJ over the webbrowser.
+This files are used to control the PocketVJ 3.0 via webbrowser.
 
 Clone everything into the `/var/www/` directory.
 
 This file is only useful if you use the omxplayer-sync https://github.com/turingmachine/omxplayer-sync script.
 Read turingmachines installation instructions and get the custom build of omxplayer.
+https://github.com/turingmachine/omxplayer-sync
 
 ##Instruction
 
@@ -16,13 +18,16 @@ Add www-data to your sudoers list with: `visudo` add this line at the end: `www-
 
 Allow php with: `sudo lighty-enable-mod fastcgi-php`
 
-The videofiles have to be stored in `/media/internal/video`
-The imagefiles have to be stored in `/media/internal/images`
+The video files have to be stored in `/media/internal/video`
+The image files have to be stored in `/media/internal/images`
+The pdf files have to be stored in `/media/internal/pdf`
+The audio files in `/media/internal/audios`
 
 We recommend to use your RPi as a Hotspot, setup as described here: http://elinux.org/RPI-Wireless-Hotspot
+(udhcpd seems to work well in debian jessie)
 
 ###To do list:
-https://github.com/magdesign/PocketVJ-CP-v2/blob/master/roadmap.txt
+https://github.com/magdesign/PocketVJ-CP-v3/blob/master/roadmap.txt
 
 ###If you Build it from scratch
 use the Raspian Lite image together with RPi2
@@ -39,10 +44,20 @@ pip install python-osc
 ...
 
 
-If you want to use PiMapper you must install openframeworks: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, change the keyboard commands in ProjectionMappingState.cpp (Backslash to 'd') and then install and compile PiMapper https://github.com/kr15h/ofxPiMapper, then you have to simulate a fake keyboard to unleash the remote control, see here: 
-http://www.fsays.eu/Blogging/Blog/Details/23
+If you want to use PiMapper you must install openframeworks 9.0.1 for arm: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard command in ProjectionMappingState.cpp (Backslash to 'd') and then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
 
-install this for mouse remote (not sure if i can make it working with openframeworks):
+(openframeworks is placed in /home/pi/openFrameworks)
+
+...
+
+To have access via Control Panel (for mapping and presentation) you must simulate a fake keyboard, see here: 
+http://www.fsays.eu/Blogging/Blog/Details/23
+(place it in /opt/fsaysuinput) 
+
+...
+
+
+For mouse remote (trying to make it work with openframeworks, need to siumulate it somehow as /dev/input):
 
 sudo wget http://remotepi.io/drivers/remotepi_1.0.15_armhf.deb
 sudo dpkg -i remotepi_1.0.15_armhf.deb
@@ -51,7 +66,7 @@ sudo /etc/init.d/remotepi start
 ...
 
 
-If you want to use TCPSClient, downnload it here: http://techlife.sg/TCPSClient/index.html
+For TCPSClient, downnload the package here: http://techlife.sg/TCPSClient/index.html
 put it to `/usr/bin` and make `chmod u+x TCPSClient.bin`
 Read the copyrights on their websites and make a donation!
 
@@ -65,7 +80,7 @@ Go into tools/screenshot/ and type make
 then move the screenshot folder to /opt/
 
 
-
+...
 
 
 Sync Script and Omxplayer fork written by: Simon Josi, http://www.yokto.net
