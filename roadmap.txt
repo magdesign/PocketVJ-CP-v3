@@ -16,6 +16,9 @@ what is still to do on PVJ3:
 - test piwall: http://www.piwall.co.uk/
 
 - check this for more tools: http://www.ofxaddons.com/categories
+  - https://github.com/TsubokuLab/ofxBezierWarpManager
+  - https://github.com/frauzufall/ofx2DMapping
+  - https://github.com/TsubokuLab/ofxContrast
 
 Control Panel:
 **************
