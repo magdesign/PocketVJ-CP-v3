@@ -1,0 +1,55 @@
+Roadmap
+*******
+
+what is still to do on PVJ3:
+
+- login into X as root and disable screensaver
+
+- install shellinabox (/etc/default/ )
+
+- configure shortcuts in Impress
+
+- check why I get ! symbol in wifi, difference to PV2 subnet? 
+
+- make all functions executable without reboot
+
+- test piwall: http://www.piwall.co.uk/
+
+
+Control Panel:
+**************
+- make a link to access shellinabox (red section) and a short description how to change wifi password and ethernet
+- keep on coding the mobile solution (use off canvas navigation)
+- TCPSClient section (-s -d -c -p option), force restart knob
+
+Remote:
+*******
+- make remote control scripts for mapper manual mask adjustment
+- make stop function as script, not .php, kill also keyboard in /dev/input
+- test synergy on rpi (for femote mouse in mapping?)
+- if not used, uninstall or disable: /etc/init.d/remotepi
+- fix that logitech wireless mouse is accepted in mapper
+
+
+Testing:
+********
+
+- test master/slave
+- test imageplayer/audio
+- test impress
+- test networking as wifi internet hotspot
+- test all slideshow functions / pdf
+
+Manual:
+*******
+
+- remove rplay, raspberry cast section
+- more description for tcpsclient
+- how to change things with shell in a box link
+
+
+
+
+
+
+©2016 marc-andré gasser
