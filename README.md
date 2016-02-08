@@ -57,15 +57,6 @@ http://www.fsays.eu/Blogging/Blog/Details/23
 ...
 
 
-For mouse remote (trying to make it work with openframeworks, need to siumulate it somehow as /dev/input):
-
-`sudo wget http://remotepi.io/drivers/remotepi_1.0.15_armhf.deb`
-`sudo dpkg -i remotepi_1.0.15_armhf.deb`
-`sudo /etc/init.d/remotepi start`
-
-...
-
-
 For TCPSClient, downnload the package here: http://techlife.sg/TCPSClient/index.html
 put it to `/usr/bin` and make `chmod u+x TCPSClient.bin`
 Read the copyrights on their websites and make a donation!
