@@ -3,8 +3,7 @@ Roadmap
 
 what is still to do on PVJ3:
 
-- fix all players which run under X
-( X: user not authorized to run the X server, aborting.)
+- start image player does not write output status
 
 - autologin and clear screen as pi user?!
 
