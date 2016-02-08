@@ -19,6 +19,8 @@ what is still to do on PVJ3:
   - https://github.com/TsubokuLab/ofxBezierWarpManager
   - https://github.com/frauzufall/ofx2DMapping
   - https://github.com/TsubokuLab/ofxContrast
+  - https://github.com/microcosm/ofxProjectionMask
+  - https://github.com/julapy/ofxQuadWarp
 
 Control Panel:
 **************
