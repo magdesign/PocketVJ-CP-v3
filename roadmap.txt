@@ -3,6 +3,8 @@ Roadmap
 
 what is still to do on PVJ3:
 
+- autologin and clear screen as pi user?!
+
 - configure shortcuts in Impress
 
 - check why I get ! symbol in wifi, difference to PV2 subnet? 
