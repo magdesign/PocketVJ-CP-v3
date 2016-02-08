@@ -1,0 +1,17 @@
+mount -t auto /dev/sda1 /media/usb
+mount -t auto /dev/sda2 /media/usb
+cat /etc/motd; sleep 3
+echo 0 > /sys/class/graphics/fbcon/cursor_blink
+TERM=linux setterm -blank 0 -powersave off -powerdown 0 -foreground black -clear -cursor off >/dev/tty0
+TERM=linux setterm -blank 0 -powersave off -powerdown 0 -foreground black -clear -cursor off >/dev/tty1
+TERM=linux setterm -blank 0 -powersafe off -powerdown 0 >/dev/tty2
+
+/var/www/sync/startpdf &
+
+echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+sudo hwclock -s
+
+service isc-dhcp-server restart
+
+exit 0
+

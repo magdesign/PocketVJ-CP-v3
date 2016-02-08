@@ -11,6 +11,20 @@ sudo killall -9 feh
 sudo /var/www/sync/killxsession
 sudo /var/www/sync/clearscreen.sh
 
+#initalize faked keyboard
+
+/opt/fsaysuinput &
+
+#The below commands are only used if no mouse is connected, 
+#if this happens,keep in mind to change /dev/input/event1 to /dev/input/event0
+mkdir /dev/input/by-id/
+mkdir /dev/input/by-path/
+
+ln -s /dev/input/event0 /dev/input/by-id/usb-046a_0023-event-kbd
+ln -s /dev/input/event0 /dev/input/by-path/platform-bcm2708_usb-usb-0:1.2.4:1.0-event-kbd
+
+
+
 #write to .xsession that xpdf shall start
 
 sudo cp /var/www/sync/xsessionpdf /home/pi/.xsession
