@@ -7,8 +7,6 @@ what is still to do on PVJ3:
 
 - configure shortcuts in Impress
 
-- check why I get ! symbol in wifi, difference to PV2 subnet? 
-
 - make all functions executable without reboot
 
 - test piwall: http://www.piwall.co.uk/
