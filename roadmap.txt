@@ -36,6 +36,7 @@ Control Panel:
 Remote:
 *******
 - make remote control scripts for mapper manual mask adjustment
+- save and load comp with name giving for mapper
 - make stop function as script, not .php, kill also keyboard in /dev/input
 - test synergy on rpi (for femote mouse in mapping?)
 - if not used, uninstall or disable: /etc/init.d/remotepi
