@@ -44,7 +44,7 @@ pip install python-osc
 ...
 
 
-If you want to use PiMapper you must install openframeworks 9.0.1 for arm: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard command in ProjectionMappingState.cpp (Backslash to 'd') and then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
+If you want to use PiMapper you must install openframeworks 9.0.1 for arm: http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard command in /src/Application/ProjectionMappingState.cpp (OF_KEY_BACKSPACE to 'd') and then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
 
 (openframeworks is placed in /home/pi/openFrameworks)
 
