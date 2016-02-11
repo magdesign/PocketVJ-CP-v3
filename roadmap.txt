@@ -3,7 +3,6 @@ Roadmap
 
 what is still to do on PVJ3:
 
-
 - start image player does not write output status
 
 - configure shortcuts in Impress
@@ -11,6 +10,7 @@ what is still to do on PVJ3:
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
 
 - make all functions executable without reboot
+
 - test piwall: http://www.piwall.co.uk/
 
 - check this for more tools: http://www.ofxaddons.com/categories
@@ -19,19 +19,42 @@ what is still to do on PVJ3:
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask
   - https://github.com/julapy/ofxQuadWarp
+  
+=====================================================================
+
+- update the timer.txt with factory preset to the newes version
+- fix the no mouse mapper behaviour
+- make an online update function which updates everything incl. depencies (while dhcp is active)
+- user can define RJ45 Network adress by himself
+- adding display force resolution to 1280x800
+- add a regular video player (omxplayer without sync) with pause, fastforward, next file, loop functions
+- starting/stoping movies while manual slideshow persists
+- adding slideshow function which also plays movies
+- a simple text tool to overlay text infos (for displaying showtimes) (maybe with suptitle function)
+- adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
+- adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
+- sync for slideshow
+- add new testfile which is smoothly recorded
+- adding an OSC wrapper for remote control pip install python-osc (https://pypi.python.org/pypi/python-osc)
+- screen controls for color, brightness, contrast
+- Remote mouse for mapping (remotepi app, xdootool?)
+- adding a screen recorder to record a TCPSyphon stream
+- Start all functions without reboot
+- Make sync script compatible with video mapper 
+- Automaticly convert incompatible movies to h264  (PocketVJ 3 release), when finished play happy movie ;-)
+- Master Slave auto-detection
+- Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
+- Integrate RaspiVJ function for videomixing
+- Artnet output for lightning control
+- DMX Creator bridge (emulate usb keyboard over gpio)
+- Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
+- Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
+- webcam and 3G hotspot for remote controlling 
 
 
 
-Control Panel:
-**************
-- make a link to access shellinabox (port 4200) (red section) and a short description how to change wifi password and ethernet
-=======
 
-Control Panel:
-**************
-- make a link to access shellinabox (red section) and a short description how to change wifi password and ethernet
-- keep on coding the mobile solution (use off canvas navigation)
-- TCPSClient section (-s -d -c -p option), force restart knob
+
 
 Remote:
 *******
