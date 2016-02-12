@@ -775,9 +775,8 @@ if ($_GET['action'] == 'mapperinfo') {
 
 
 if ($_GET['action'] == 'impresslast') {
-	$outputtext =  "not implemented yet";
-	#ystem("pkill soffice.bin");
-	#system("su -s /bin/bash -c startx pi&");
+	$outputtext =  "open recent document";
+	system("sudo /var/www/sync/impress");
 }
 
 if ($_GET['action'] == 'impressrelaunch') {
@@ -846,6 +845,12 @@ if ($_GET['action'] == 'setstatic') {
 	system("sudo cp /var/www/sync/interfaces.static /etc/network/interfaces");
 }
 
+//# TCPSyphon Server
+
+if ($_GET['action'] == 'tcpsserver') {
+	system("sudo /var/www/sync/tcpsserver");
+	$outputtext =  "re/start TCPSyphon";
+}
 
 
 
