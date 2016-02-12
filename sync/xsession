@@ -3,8 +3,8 @@ export IP=`ip addr show wlan0 | grep -oP '(?<=inet )(\d+\.){3}\d+'`
 
 # Display the IP address, so people know where to connect
 wish <<END &
-pack [label .ip -text "$IP:5500" -font "Helvetica 72" -fg grey -bg black]
+pack [label .ip -text "VNC=> $IP:5500" -font "Helvetica 72" -fg grey -bg black]
 END
 
 # Listen for VNC connections
-xvncviewer -listen -fullscreen
+xvncviewer -listen -fullscreen -x11cursor -nocursorshape
