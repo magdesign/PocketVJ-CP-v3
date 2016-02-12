@@ -1,18 +1,11 @@
 Roadmap
 *******
-
 what is still to do on PVJ3:
 
 - start image player does not write output status
-
-- configure shortcuts in Impress
-
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
-
 - make all functions executable without reboot
-
 - test piwall: http://www.piwall.co.uk/
-
 - check this for more tools: http://www.ofxaddons.com/categories
   - https://github.com/TsubokuLab/ofxBezierWarpManager
   - https://github.com/frauzufall/ofx2DMapping
