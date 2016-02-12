@@ -457,7 +457,7 @@ if ($_GET['action'] == 'controlpanel') {
 if ($_GET['action'] == 'controlpanelintern') {
 	$outputtext =  "update ControlPanel internal";
 	system("sudo unzip /media/internal/PocketVJ-CP-v2-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v2-master /var/www/");
+	system("sudo cp -r /media/internal/PocketVJ-CP-v2-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v2-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v2-master");
