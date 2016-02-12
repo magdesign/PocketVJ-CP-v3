@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#kill all running tasks exept .mp3 player
+sudo /var/www/sync/omxkill.py
+sudo /var/www/sync/testscreenoff.py &
+sudo killall -9 /home/pi/of_v0.8.4/addons/ofxPiMapper/example/./bin/example
+sudo killall -9 /usr/bin/TCPSClient.bin
+sudo /var/www/sync/rplay stop
+sudo killall -9 /var/www/sync/tty-clock
+sudo killall -9 feh
+sudo /var/www/sync/killxsession
+sudo /var/www/sync/clearscreen.sh
+
+#initalize faked keyboard
+
+/opt/fsaysuinput &
+
+#The below commands are only used if no mouse is connected, 
+#if this happens,keep in mind to change /dev/input/event1 to /dev/input/event0
+mkdir /dev/input/by-id/
+mkdir /dev/input/by-path/
+
+ln -s /dev/input/event0 /dev/input/by-id/usb-046a_0023-event-kbd
+ln -s /dev/input/event0 /dev/input/by-path/platform-bcm2708_usb-usb-0:1.2.4:1.0-event-kbd
+
+
+
+#write to .xsession that xpdf shall start
+
+sudo cp /var/www/sync/xsessionpdfusb /home/pi/.xsession
+
+#start x and run feh
+su -s /bin/bash -c startx pi &
