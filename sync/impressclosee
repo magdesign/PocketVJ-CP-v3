@@ -1,5 +1,5 @@
 #!/bin/bash
 
 export DISPLAY=:0.0
-xhost
+#xhost
 xdotool key 'Ctrl'+S
