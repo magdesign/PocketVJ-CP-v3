@@ -50,9 +50,9 @@ If you want to use PiMapper you must install openframeworks 9.0.1 for arm: http:
 
 ...
 
-To have access via Control Panel (for mapping and presentation) you must simulate a fake keyboard, see here: 
+To have remote access via Control Panel (for mapping and presentation) you must simulate a fake keyboard, see here: 
 http://www.fsays.eu/Blogging/Blog/Details/23
-(place it in `/opt/fsaysuinput`) 
+(place it in `/opt/fsaysuinput` `/opt/fsayskeyboard`) 
 
 ...
 
