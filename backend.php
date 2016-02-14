@@ -771,6 +771,19 @@ if ($_GET['action'] == 'mapperinfo') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
+
+if ($_GET['action'] == 'mappernext') {
+	$outputtext =  "selecet next surface";
+	system("sudo /var/www/sync/mappernext");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperprev') {
+	$outputtext =  "select prev surface";
+	system("sudo /var/www/sync/mapperprev");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 //# Impress Presentation
 
 
