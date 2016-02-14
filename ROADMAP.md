@@ -13,7 +13,7 @@ what is still to do on PVJ3:
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask
   - https://github.com/julapy/ofxQuadWarp
-  
+- check RTMP http://www.instructables.com/id/View-RTMP-Stream-on-Raspberry-Pi/
 =====================================================================
 
 - chnage colors for clock display
