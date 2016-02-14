@@ -14,6 +14,8 @@ what is still to do on PVJ3:
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask
   - https://github.com/julapy/ofxQuadWarp
+
+
 =====================================================================
 
 - change colors for clock display
