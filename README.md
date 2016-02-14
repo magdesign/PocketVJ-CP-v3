@@ -74,25 +74,5 @@ then move the screenshot folder to /opt/
 ...
 
 
-Sync Script and Omxplayer fork written by: Simon Josi, http://www.yokto.net
-
-Pi-Mapper written by: Krisjanis Rijnieks, https://github.com/kr15h/
-
-Virtual Keyboard written by: Erwin van Dijk, http://www.fsays.eu/
-
-TCPSyphon written by: Nozomu Miura, http://techlife.sg/
-
-Clock written by: xorg62, https://github.com/xorg62/tty-clock
-
-Projector Power Script by: Marco Schmalz
-
-Testmovie by: (to come...)
-
-Testaudio by: (to come...)
-
-Idea, support and concept by: Marc-André Gasser, http://magdesign.ch/
-
-
-Copyright by http://magdesign.ch
-
-Please support this project! http://www.pocketvj.com
+Please support this project! 
+http://www.pocketvj.com
