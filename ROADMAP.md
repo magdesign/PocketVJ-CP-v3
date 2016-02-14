@@ -7,17 +7,16 @@ what is still to do on PVJ3:
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
 - make all functions executable without reboot
 - test piwall: http://www.piwall.co.uk/
+- checkout RTMP
 - check this for more tools: http://www.ofxaddons.com/categories
   - https://github.com/TsubokuLab/ofxBezierWarpManager
   - https://github.com/frauzufall/ofx2DMapping
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask
   - https://github.com/julapy/ofxQuadWarp
-  - check RTMP http://www.instructables.com/id/View-RTMP-Stream-on-Raspberry-Pi
-  - 
 =====================================================================
 
-- chnage colors for clock display
+- change colors for clock display
 - fix the no mouse mapper behaviour
 - make an online update function which updates everything incl. depencies (while dhcp is active)
 - user can define RJ45 Network adress by himself
