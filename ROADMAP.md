@@ -2,6 +2,7 @@ Roadmap
 *******
 what is still to do on PVJ3:
 
+- update to of0.9.2
 - start image player does not write output status
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
 - make all functions executable without reboot
@@ -47,16 +48,11 @@ what is still to do on PVJ3:
 
 
 
-
-
-
 Remote:
 *******
 - make remote control scripts for mapper manual mask adjustment
 - save and load comp with name giving for mapper
-- make stop function as script, not .php, kill also keyboard in /dev/input
 - test synergy on rpi (for femote mouse in mapping?)
-- if not used, uninstall or disable: /etc/init.d/remotepi
 - fix that logitech wireless mouse is accepted in mapper
 
 
@@ -78,11 +74,6 @@ Manual:
 
 
 
-
-
-
-
-
-=======
+=======================
 ©2016 marc-andré gasser
 
