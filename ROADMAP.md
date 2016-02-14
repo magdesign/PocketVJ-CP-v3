@@ -16,7 +16,6 @@ what is still to do on PVJ3:
   
 =====================================================================
 
-- update the timer.txt with factory preset to the newes version
 - chnage colors for clock display
 - fix the no mouse mapper behaviour
 - make an online update function which updates everything incl. depencies (while dhcp is active)
