@@ -2,6 +2,7 @@ Roadmap
 *******
 what is still to do on PVJ3:
 
+- update to of0.9.2
 - start image player does not write output status
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
 - make all functions executable without reboot
@@ -13,7 +14,9 @@ what is still to do on PVJ3:
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask (unable to compile)
   - https://github.com/julapy/ofxQuadWarp (cant find make file, how to comile?)
-======================================================================================
+ ..
+=====================================================================
+
 - change colors for clock display
 - fix the no mouse mapper behaviour
 - make an online update function which updates everything incl. depencies (while dhcp is active)
@@ -43,12 +46,15 @@ what is still to do on PVJ3:
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
 - webcam and 3G hotspot for remote controlling 
 
+
+
 Remote:
 *******
 - make remote control scripts for mapper manual mask adjustment
 - save and load comp with name giving for mapper
 - test synergy on rpi (for femote mouse in mapping?)
 - fix that logitech wireless mouse is accepted in mapper
+
 
 Testing:
 ********
@@ -65,8 +71,6 @@ Manual:
 - remove rplay, raspberry cast section
 - more description for tcpsclient
 - how to change things with shell in a box link
-
-
 
 =======================
 ©2016 marc-andré gasser
