@@ -9,8 +9,8 @@ what is still to do on PVJ3:
 - test piwall: http://www.piwall.co.uk/
 - checkout RTMP
 - check this for more tools: http://www.ofxaddons.com/categories
-  - https://github.com/TsubokuLab/ofxBezierWarpManager
-  - https://github.com/frauzufall/ofx2DMapping
+  - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
+  - https://github.com/frauzufall/ofx2DMapping (dont know how to compile, no make file?)
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask
   - https://github.com/julapy/ofxQuadWarp
