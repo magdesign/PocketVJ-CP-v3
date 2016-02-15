@@ -12,7 +12,7 @@ what is still to do on PVJ3:
   - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
   - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to comile?)
   - https://github.com/TsubokuLab/ofxContrast
-  - https://github.com/microcosm/ofxProjectionMask
+  - https://github.com/microcosm/ofxProjectionMask (unable to compile)
   - https://github.com/julapy/ofxQuadWarp (cant find make file, how to comile?)
 
 
