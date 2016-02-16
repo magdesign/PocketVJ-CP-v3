@@ -5,15 +5,15 @@ Marc-André Gasser, http://www.magdesign.ch                 (Idea, support and c
 
 Simon Josi, https://github.com/turingmachine               (Sync Script and Omxplayer fork)
 
-Krisjanis Rijnieks, https://github.com/kr15h               (Pi-Mapper)
+Marco Schmalz                                              (Projector Power Scripts, sed stuff)
 
-Erwin van Dijk, http://www.fsays.eu/                       (Virtual Keyboard)
+Krisjanis Rijnieks, https://github.com/kr15h               (Pi-Mapper)
 
 Nozomu Miura, http://techlife.sg/TCPSClient/index.html     (TCPSyphon)
 
-xorg62, https://github.com/xorg62/tty-clock                (TTY Clock)
+Erwin van Dijk, http://www.fsays.eu/                       (Virtual Keyboard)
 
-Marco Schmalz                                              (Projector Power Scripts, sed stuff)
+xorg62, https://github.com/xorg62/tty-clock                (TTY Clock)
 
 Alex Goodyear, http://www.piwall.co.uk                     (pwomxplayer)
 
