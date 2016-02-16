@@ -9,7 +9,12 @@ what is still to do on PVJ3:
 - fix the ofx behaviour when logitech wifi mouse is connected 
 - mapper does not run without mouse connected
 - make all functions executable without reboot
-- piwall: http://www.piwall.co.uk/
+
+- install and test piwall (see readme): http://www.piwall.co.uk/ 
+    test for slave: pwomxplayer --tile-code=41 udp://239.0.1.23:1234?buffer_size=1200000B
+    for master:  avconv -re -i movie.avi -vcodec copy -f avi -an udp://239.0.1.23:1234
+    figure out how they ment the udp adressing..
+
 - checkout RTMP
 - check this for more tools: http://www.ofxaddons.com/categories
   - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
