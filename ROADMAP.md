@@ -2,6 +2,7 @@ Roadmap
 *******
 what is still to do on PVJ3:
 
+- stop video only script
 - start image player does not write output status
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
 - make all functions executable without reboot
