@@ -69,6 +69,8 @@ Manual:
 - remove rplay, raspberry cast section
 - more description for tcpsclient
 - how to change things with shell in a box link
+- specs for the extension board
+- 
 
 =======================
 ©2016 marc-andré gasser
