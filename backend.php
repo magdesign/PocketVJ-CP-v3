@@ -436,7 +436,7 @@ if ($_GET['action'] == 'movieinfo') {
 if ($_GET['action'] == 'diskspace') {
     $output = shell_exec('df -h /media');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 124, "<br />\n");
 }
 
 
