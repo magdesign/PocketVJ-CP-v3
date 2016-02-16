@@ -75,5 +75,14 @@ then move the screenshot folder to /opt/
 ...
 
 
+Install Pi-Wall:
+
+wget http://dl.piwall.co.uk/pwlibs1_1.1_armhf.deb
+dpkg -i pwlibs1_1.1_armhf.deb
+wget http://dl.piwall.co.uk/pwomxplayer_20130815_armhf.deb
+dpkg -i pwomxplayer_20130815_armhf.deb
+
+...
+
 Please support this project! 
 http://www.pocketvj.com
