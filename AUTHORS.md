@@ -13,7 +13,9 @@ Nozomu Miura, http://techlife.sg/TCPSClient/index.html     (TCPSyphon)
 
 xorg62, https://github.com/xorg62/tty-clock                (TTY Clock)
 
-Marco Schmalz                                              (Projector Power Scripts)
+Marco Schmalz                                              (Projector Power Scripts, sed stuff)
+
+Alex Goodyear, http://www.piwall.co.uk                     (pwomxplayer)
 
  
 - 2016 -
