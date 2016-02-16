@@ -5,10 +5,11 @@ what is still to do on PVJ3:
 - stop video only script
 - loading mapper sets needs save, kill and restart mapper function!
 - start image player does not write output status, also pdf player
-- fix the ofx behaviour when logitech wifi mouse is connected, 
+- set slideshowtime, shall kill and restart imageplayer to take action
+- fix the ofx behaviour when logitech wifi mouse is connected 
 - mapper does not run without mouse connected
 - make all functions executable without reboot
-- test piwall: http://www.piwall.co.uk/
+- piwall: http://www.piwall.co.uk/
 - checkout RTMP
 - check this for more tools: http://www.ofxaddons.com/categories
   - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
