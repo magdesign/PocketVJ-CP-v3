@@ -330,13 +330,13 @@ if ($_GET['action'] == 'picastrestart') {
 if ($_GET['action'] == 'ipwifi') {
     $output = shell_exec("sudo /sbin/ifconfig -a wlan0 | awk '/(cast)/ { print $2 }' | cut -d':' -f2 | head -1");
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 if ($_GET['action'] == 'iplan') {
     $output = shell_exec("sudo /sbin/ifconfig -a eth0 | awk '/(cast)/ { print $2 }' | cut -d':' -f2 | head -1");
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 
@@ -410,14 +410,14 @@ if ($_GET['action'] == 'screenoff') {
 if ($_GET['action'] == 'getresolution') {
 	$output = shell_exec('sudo tvservice -s');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 if ($_GET['action'] == 'parser') {
     $output = shell_exec('sudo tvservice -d edid.dat');
     $output = shell_exec('sudo edidparser edid.dat');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 if ($_GET['action'] == 'codecinfo') {
@@ -436,7 +436,7 @@ if ($_GET['action'] == 'movieinfo') {
 if ($_GET['action'] == 'diskspace') {
     $output = shell_exec('df -h /media');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 
@@ -638,7 +638,7 @@ if ($_GET['action'] == 'setscheduler') {
 if ($_GET['action'] == 'gettime') {
     $output = shell_exec('date');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 if ($_GET['action'] == 'timeron') {
@@ -655,7 +655,7 @@ if ($_GET['action'] == 'timeroff') {
 if ($_GET['action'] == 'timer') {
     $output = shell_exec('sudo crontab -l | grep -v "^$\|^\s*\#"');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 102, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 //# Clock Display
@@ -899,7 +899,7 @@ if ($_GET['action'] == 'setexpansion') {
 if ($_GET['action'] == 'gettemp') {
     $output = shell_exec('sudo /var/www/sync/gettemp.py');
 	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
 }
 
 if ($_GET['action'] == 'button1') {
