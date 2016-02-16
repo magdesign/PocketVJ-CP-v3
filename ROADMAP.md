@@ -3,9 +3,10 @@ Roadmap
 what is still to do on PVJ3:
 
 - stop video only script
-- loading mapper sets needs kill and restart mapper function!
-- start image player does not write output status
-- fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
+- loading mapper sets needs save, kill and restart mapper function!
+- start image player does not write output status, also pdf player
+- fix the ofx behaviour when logitech wifi mouse is connected, 
+- mapper does not run without mouse connected
 - make all functions executable without reboot
 - test piwall: http://www.piwall.co.uk/
 - checkout RTMP
