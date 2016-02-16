@@ -8,20 +8,14 @@ DELAY = 3 #in seconds
  
  
 def main():
-	try:
-		while True:
-			p = Popen(['i2cget' , '-y' , '1' , str(SLAVE_ADDR) , '0x00' , 'w'] ,\
-			 stdout=PIPE)
-			output = p.stdout.read()
-			temperature = getTemperature(int(output , 16))
-			
-			print "Current temperature is %s degree celsius" % (str(temperature))
-			#print "Waiting " + DELAY + " seconds..."
- 
-			sleep(DELAY)
-	except KeyboardInterrupt:
-		print "Execution canceled by user."
- 
+	p = Popen(['i2cget' , '-y' , '1' , str(SLAVE_ADDR) , '0x00' , 'w'] ,\
+	 stdout=PIPE)
+	output = p.stdout.read()
+	temperature = getTemperature(int(output , 16))
+	
+	print "Current temperature is %s degree celsius" % (str(temperature))
+	#print "Waiting " + DELAY + " seconds..."
+  
  
 def getTemperature(rawData):
 	"""

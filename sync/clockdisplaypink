@@ -1,0 +1,5 @@
+#!/bin/bash
+
+COLOR=5
+
+TERM=xterm-256color /var/www/sync/tty-clock -sc -C${COLOR} -T /dev/tty1

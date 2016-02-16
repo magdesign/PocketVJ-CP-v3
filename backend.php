@@ -484,6 +484,7 @@ if ($_GET['action'] == 'factoryreset') {
     system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
     system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
     system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
+    system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
     system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
@@ -623,25 +624,6 @@ if ($_GET['action'] == 'slidetime0') {
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslideshow");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslidesusb");
 	$outputtext =  "set slideshowtime to 15s";
-}
-
-
-//# Extension 1
-
-if ($_GET['action'] == 'temperature') {
-    $output = shell_exec('sudo /var/www/sync/temperature.py 11 4');
-	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
-}
-
-if ($_GET['action'] == 'heateron') {
-	$outputtext =  "Heater ON !!!";
-	system("sudo /var/www/sync/relais1_on.py &");
-}
-
-if ($_GET['action'] == 'heateroff') {
-	$outputtext =  "Heater OFF !!!";
-	system("sudo /var/www/sync/relais1_off.py &");
 }
 
 
@@ -902,6 +884,24 @@ if ($_GET['action'] == 'setexpansion') {
 	system("sudo sed -ri 's/ds1307 0x.. /ds1307 0x6f /' /var/www/sync/rc.local.* /etc/rc.local");
 }
 
+
+//# Extension 1
+
+if ($_GET['action'] == 'gettemp') {
+    $output = shell_exec('sudo /var/www/sync/gettemp.py');
+	$preoutputtext =  "<pre>$output</pre>";
+	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
+}
+
+if ($_GET['action'] == 'heateron') {
+	$outputtext =  "Heater ON !!!";
+	system("sudo /var/www/sync/relais1_on.py &");
+}
+
+if ($_GET['action'] == 'heateroff') {
+	$outputtext =  "Heater OFF !!!";
+	system("sudo /var/www/sync/relais1_off.py &");
+}
 
 echo $outputtext;
 ?>
