@@ -132,6 +132,12 @@ if ($_GET['action'] == 'imageusb') {
 	system("sudo /var/www/sync/startimageusb");
 }
 
+if ($_GET['action'] == 'imagemanual') {
+	$outputtext =  "start image player manual";
+	system("sudo /var/www/sync/startimagemanual");
+}
+
+
 //# PDF player
 
 if ($_GET['action'] == 'startpdf') {
@@ -272,7 +278,7 @@ if ($_GET['action'] == 'powerpoint') {
 
 if ($_GET['action'] == 'setimagemanual') {
 	$outputtext =  "set to manual imageplayer";
-	system("sudo cp /var/www/sync/xsessionimage /home/pi/.xsession");
+	system("sudo cp /var/www/sync/xsessionimagemanu /home/pi/.xsession");
 	system("sudo cp /var/www/sync/rc.local.screenshare /etc/rc.local");
 }
 
@@ -676,9 +682,28 @@ if ($_GET['action'] == 'timer') {
 if ($_GET['action'] == 'clockdisplay') {
 	$outputtext =  "display time onscreen";
 	system ("sudo /var/www/sync/stopall");
-	system("sudo /var/www/sync/clockdisplaypink");
+	system("sudo /var/www/sync/clockdisplay");
 }
 
+if ($_GET['action'] == 'clockred') {
+	$outputtext =  "clock color red";
+	system("sudo sed -ri 's/^COLOR=.+$/COLOR=1/' /var/www/sync/clockdisplay");
+}
+
+if ($_GET['action'] == 'clockgreen') {
+	$outputtext =  "clock color green";
+	system("sudo sed -ri 's/^COLOR=.+$/COLOR=2/' /var/www/sync/clockdisplay");
+}
+
+if ($_GET['action'] == 'clockorange') {
+	$outputtext =  "clock color orange";
+	system("sudo sed -ri 's/^COLOR=.+$/COLOR=3/' /var/www/sync/clockdisplay");
+}
+
+if ($_GET['action'] == 'clockpink') {
+	$outputtext =  "clock color pink";
+	system("sudo sed -ri 's/^COLOR=.+$/COLOR=5/' /var/www/sync/clockdisplay");
+}
 
 
 //# Mapper
@@ -865,6 +890,17 @@ if ($_GET['action'] == 'tcpsserver') {
 	$outputtext =  "re/start TCPSyphon";
 }
 
+//# Expansion Board
+
+if ($_GET['action'] == 'setrtc') {
+	$outputtext =  "set to PocketVJ RTC";
+	system("sudo sed -ri 's/ds1307 0x.. /ds1307 0x68 /' /var/www/sync/rc.local.* /etc/rc.local");
+}
+
+if ($_GET['action'] == 'setexpansion') {
+	$outputtext =  "set to PocketVJ Expansion";
+	system("sudo sed -ri 's/ds1307 0x.. /ds1307 0x6f /' /var/www/sync/rc.local.* /etc/rc.local");
+}
 
 
 echo $outputtext;
