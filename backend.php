@@ -893,14 +893,14 @@ if ($_GET['action'] == 'gettemp') {
 	$outputtext = wordwrap($preoutputtext, 51, "<br />\n");
 }
 
-if ($_GET['action'] == 'heateron') {
-	$outputtext =  "Heater ON !!!";
-	system("sudo /var/www/sync/relais1_on.py &");
+if ($_GET['action'] == 'button1') {
+	$outputtext =  "simulate button 1";
+	system("sudo /var/www/sync/button1.py &");
 }
 
-if ($_GET['action'] == 'heateroff') {
-	$outputtext =  "Heater OFF !!!";
-	system("sudo /var/www/sync/relais1_off.py &");
+if ($_GET['action'] == 'button2') {
+	$outputtext =  "simulate button 2";
+	system("sudo /var/www/sync/button2.py &");
 }
 
 echo $outputtext;
