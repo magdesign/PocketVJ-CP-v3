@@ -2,7 +2,6 @@ Roadmap
 *******
 what is still to do on PVJ3:
 
-- update to of0.9.2
 - start image player does not write output status
 - fix the ofx behaviour when logitech wifi mouse is connected, test without mouse
 - make all functions executable without reboot
@@ -17,7 +16,6 @@ what is still to do on PVJ3:
  ..
 =====================================================================
 
-- change colors for clock display
 - fix the no mouse mapper behaviour
 - make an online update function which updates everything incl. depencies (while dhcp is active)
 - user can define RJ45 Network adress by himself
