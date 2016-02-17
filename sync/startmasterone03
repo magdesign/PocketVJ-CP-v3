@@ -1,6 +1,6 @@
 #!/bin/bash
 #kill all running tasks
-/var/www/sync/stopall &
+/var/www/sync/stopall
 
 #start video 03
 /usr/bin/omxplayer-sync -m -o hdmi /media/internal/video/03* > /dev/null 2>&1 & echo $! &

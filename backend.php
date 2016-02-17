@@ -675,22 +675,30 @@ if ($_GET['action'] == 'clockdisplay') {
 
 if ($_GET['action'] == 'clockred') {
 	$outputtext =  "clock color red";
+	system ("sudo /var/www/sync/stopall");
 	system("sudo sed -ri 's/^COLOR=.+$/COLOR=1/' /var/www/sync/clockdisplay");
+	system("sudo /var/www/sync/clockdisplay");
 }
 
 if ($_GET['action'] == 'clockgreen') {
 	$outputtext =  "clock color green";
+	system ("sudo /var/www/sync/stopall");
 	system("sudo sed -ri 's/^COLOR=.+$/COLOR=2/' /var/www/sync/clockdisplay");
+	system("sudo /var/www/sync/clockdisplay");
 }
 
 if ($_GET['action'] == 'clockorange') {
 	$outputtext =  "clock color orange";
+	system ("sudo /var/www/sync/stopall");
 	system("sudo sed -ri 's/^COLOR=.+$/COLOR=3/' /var/www/sync/clockdisplay");
+	system("sudo /var/www/sync/clockdisplay");
 }
 
 if ($_GET['action'] == 'clockpink') {
 	$outputtext =  "clock color pink";
+	system ("sudo /var/www/sync/stopall");
 	system("sudo sed -ri 's/^COLOR=.+$/COLOR=5/' /var/www/sync/clockdisplay");
+	system("sudo /var/www/sync/clockdisplay");
 }
 
 

@@ -3,12 +3,12 @@
 sudo /var/www/sync/omxkill.py > /dev/null 2>&1
 sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
 sudo killall -9 /usr/bin/TCPSClient.bin > /dev/null 2>&1
-#sudo /var/www/sync/rplay stop > /dev/null 2>&1
 sudo killall -9 /var/www/sync/tty-clock > /dev/null 2>&1
 sudo killall -9 mpg321 > /dev/null 2>&1
 sudo killall -9 feh > /dev/null 2>&1
 sudo kill $(pidof X) > /dev/null 2>&1
-#sudo killall -9 fsaysuinput > /dev/null 2>&1
+#dont know if I have to kill this:
+sudo killall -9 fsaysuinput > /dev/null 2>&1
 sudo /var/www/sync/testscreenoff.py > /dev/null 2>&1
 sudo killall -9 avconv > /dev/null 2>&1
 sudo killall -9 pwomxplayer.bin > /dev/null 2>&1
