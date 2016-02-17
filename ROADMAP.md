@@ -2,6 +2,7 @@ Roadmap
 *******
 what is still to do on PVJ3:
 
+- fix xsession to stop blank screen (this drives me crazy..)
 - stop video only script
 - loading mapper sets needs save, kill and restart mapper function!
 - start image player does not write output status, also pdf player
@@ -10,9 +11,11 @@ what is still to do on PVJ3:
 - mapper does not run without mouse connected
 - make all functions executable without reboot
 
-- install and test piwall (see readme): http://www.piwall.co.uk/ 
+-  test piwall
     test for slave: pwomxplayer --tile-code=41 udp://239.0.1.23:1234?buffer_size=1200000B
     for master:  avconv -re -i movie.avi -vcodec copy -f avi -an udp://239.0.1.23:1234
+    make a function for master which does: sudo route add -net 224.0.0.0 netmask 240.0.0.0 eth0
+
     figure out how they ment the udp adressing..
 
 - checkout RTMP
