@@ -918,5 +918,34 @@ if ($_GET['action'] == 'button2') {
 	system("sudo /var/www/sync/button2.py &");
 }
 
+
+//# PiWall
+
+
+if ($_GET['action'] == 'piwall_topleft') {
+	$outputtext =  "piwall slave top left";
+	system("sudo /var/www/sync/piwall_topleft");
+}
+
+if ($_GET['action'] == 'piwall_topright') {
+	$outputtext =  "piwall slave top right";
+	system("sudo /var/www/sync/piwall_topright");
+}
+
+if ($_GET['action'] == 'piwall_butleft') {
+	$outputtext =  "piwall slave button left";
+	system("sudo /var/www/sync/piwall_butleft");
+}
+
+if ($_GET['action'] == 'piwall_butright') {
+	$outputtext =  "piwall slave button right";
+	system("sudo /var/www/sync/piwall_butright");
+}
+
+if ($_GET['action'] == 'piwall_master') {
+	$outputtext =  "piwall master";
+	system("sudo /var/www/sync/piwall_master");
+}
+
 echo $outputtext;
 ?>

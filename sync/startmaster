@@ -1,15 +1,7 @@
 #!/bin/bash
 
 #kill all running tasks
-sudo /var/www/sync/omxkill.py
-sudo /var/www/sync/testscreenoff.py & > /dev/null 2>&1
-sudo killall -9 /home/pi/of_v0.8.4/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
-sudo killall -9 /usr/bin/TCPSClient.bin > /dev/null 2>&1
-sudo killall -9 /var/www/sync/tty-clock > /dev/null 2>&1
-sudo killall -9 feh > /dev/null 2>&1
-sudo /var/www/sync/killxsession > /dev/null 2>&1
-sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
-sudo sudo killall -9 mpg321 > /dev/null 2>&1
+/var/www/sync/stopall &
 
 #start master
 /usr/bin/omxplayer-sync -mu -o hdmi /media/internal/video/* > /dev/null 2>&1 & echo $! &

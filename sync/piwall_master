@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#stop all tasks
+/var/www/sync/stopall &
+
+#start the piwall function as master with a video file called "piwall.mp4"
+
+#set master to broadcast:
+sudo -u pi route add -net 224.0.0.0 netmask 240.0.0.0 eth0 &
+
+#start master piwall
+avconv -re -i /media/internal/video/piwall.mp4 -vcodec copy -f avi -an udp://239.0.1.23:1234

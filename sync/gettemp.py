@@ -13,7 +13,7 @@ def main():
 	output = p.stdout.read()
 	temperature = getTemperature(int(output , 16))
 	
-	print "Current temperature is %s degree celsius" % (str(temperature))
+	print "Temperature inside PVJ is %s C" % (str(temperature))
 	#print "Waiting " + DELAY + " seconds..."
   
  
