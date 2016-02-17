@@ -9,20 +9,8 @@ what is still to do on PVJ3:
 - fix the ofx behaviour when logitech wifi mouse is connected 
 - mapper does not run without mouse connected
 - make all functions executable without reboot
-
--  test piwall
-    test for slave: pwomxplayer --tile-code=41 udp://239.0.1.23:1234?buffer_size=1200000B
-    for master:  avconv -re -i movie.avi -vcodec copy -f avi -an udp://239.0.1.23:1234
-    make a function for master which does: sudo route add -net 224.0.0.0 netmask 240.0.0.0 eth0
-
 - checkout RTMP
-- check this for more tools: http://www.ofxaddons.com/categories
-  - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
-  - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to comile?)
-  - https://github.com/TsubokuLab/ofxContrast
-  - https://github.com/microcosm/ofxProjectionMask (unable to compile)
-  - https://github.com/julapy/ofxQuadWarp (cant find make file, how to comile?)
- ..
+ .
 =====================================================================
 
 - fix the no mouse mapper behaviour
@@ -52,6 +40,14 @@ what is still to do on PVJ3:
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
 - webcam and 3G hotspot for remote controlling 
+- 
+- check this for more tools: http://www.ofxaddons.com/categories
+ - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
+  - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to comile?)
+  - https://github.com/TsubokuLab/ofxContrast
+  - https://github.com/microcosm/ofxProjectionMask (unable to compile)
+  - https://github.com/julapy/ofxQuadWarp (cant find make file, how to comile?)
+..
 
 
 
