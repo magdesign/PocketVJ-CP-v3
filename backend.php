@@ -17,6 +17,12 @@ if ($_GET['action'] == 'stop') {
 	#system("sudo /var/www/sync/clearscreen.sh");
 }
 
+if ($_GET['action'] == 'stopvideo') {
+	$outputtext =  "stop video player only";
+	system ("sudo /var/www/sync/stopvideo > /dev/null 2>&1");
+}
+
+
 if ($_GET['action'] == 'startmaster') {
 	exec("sudo /var/www/sync/startmaster");
 	$outputtext = "start player as master";
