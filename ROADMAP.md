@@ -39,8 +39,7 @@ what is still to do on PVJ3:
 - DMX Creator bridge (emulate usb keyboard over gpio)
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
-- webcam and 3G hotspot for remote controlling 
-- 
+- webcam and 3G hotspot for remote controlling
 - check this for more tools: http://www.ofxaddons.com/categories
  - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
   - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to comile?)
