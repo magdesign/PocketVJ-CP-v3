@@ -49,14 +49,11 @@ what is still to do on PVJ3:
 ..
 
 
-
 Remote:
 *******
 - make remote control scripts for mapper manual mask adjustment
-- save and load comp with name giving for mapper
-- test synergy on rpi (for femote mouse in mapping?)
+- test synergy on rpi (for remote mouse in mapping?)
 - fix that logitech wireless mouse is accepted in mapper
-
 
 Testing:
 ********
@@ -65,7 +62,12 @@ Testing:
 - test imageplayer/audio
 - test impress
 - test networking as wifi internet hotspot
+- test update
+- test piwall
+- mapper
 - test all slideshow functions / pdf
+-test extension
+
 
 Manual:
 *******
