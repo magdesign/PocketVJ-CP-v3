@@ -1,23 +1,12 @@
 #!/bin/bash
 
-#kill all running tasks exept .mp3 player
-sudo /var/www/sync/omxkill.py > /dev/null 2>&1
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
-sudo killall -9 /usr/bin/TCPSClient.bin > /dev/null 2>&1
-#sudo /var/www/sync/rplay stop > /dev/null 2>&1
-sudo killall -9 tty-clock > /dev/null 2>&1
-#sudo killall -9 mpg321 > /dev/null 2>&1
-sudo killall -9 feh > /dev/null 2>&1
-sudo kill $(pidof X) > /dev/null 2>&1
-#sudo killall -9 fsaysuinput > /dev/null 2>&1
-sudo /var/www/sync/testscreenoff.py > /dev/null 2>&1
-sudo killall -9 avconv > /dev/null 2>&1
-sudo killall -9 pwomxplayer.bin > /dev/null 2>&1
-sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
+#kill all running tasks 
+/var/www/sync/stopall
 
 #write to .xsession that feh shall start
 
 sudo cp /var/www/sync/xsessionimage /home/pi/.xsession
+
 
 #start x and run feh
 su -s /bin/bash -c startx pi &

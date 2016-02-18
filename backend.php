@@ -10,7 +10,7 @@ if ($_GET['action'] == 'stop') {
 	#system("sudo killall -9 /home/pi/of_v0.8.4/addons/ofxPiMapper/example/./bin/example");
 	#system("sudo killall -9 /usr/bin/TCPSClient.bin");
 	#system("sudo /var/www/sync/rplay stop");
-	#system("sudo killall -9 /var/www/sync/tty-clock");
+	#system("sudo killall -9 tty-clock");
 	#system("sudo killall -9 mpg321");
 	#system("sudo killall -9 feh");
 	#system("sudo kill $(pidof X");
@@ -130,7 +130,7 @@ if ($_GET['action'] == 'stopimage') {
 
 if ($_GET['action'] == 'image') {
 	$outputtext =  "start image player";
-	system("sudo /var/www/sync/startimage &");
+	system("sudo /var/www/sync/startimage");
 }
 
 if ($_GET['action'] == 'imageusb') {
@@ -138,9 +138,35 @@ if ($_GET['action'] == 'imageusb') {
 	system("sudo /var/www/sync/startimageusb");
 }
 
-if ($_GET['action'] == 'imagemanual') {
+if ($_GET['action'] == 'startimagemanual') {
 	$outputtext =  "start image player manual";
 	system("sudo /var/www/sync/startimagemanual");
+}
+
+//# Slideshow Time
+
+if ($_GET['action'] == 'slidetime5') {
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslidesusb");
+	$outputtext =  "set slideshowtime to 5s";
+}
+
+if ($_GET['action'] == 'slidetime10') {
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=10/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=10/' /var/www/sync/xsessionslidesusb");
+	$outputtext =  "set slideshowtime to 10s";
+}
+
+if ($_GET['action'] == 'slidetime15') {
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=15/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=15/' /var/www/sync/xsessionslidesusb");
+	$outputtext =  "set slideshowtime to 15s";
+}
+
+if ($_GET['action'] == 'slidetime0') {
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslidesusb");
+	$outputtext =  "set slideshowtime to 15s";
 }
 
 
@@ -160,14 +186,13 @@ if ($_GET['action'] == 'startpdfusb') {
 //# Testscreen
 
 if ($_GET['action'] == 'testscreen') {
-    exec("sudo /var/www/sync/omxkill.py");
-	system("sudo killall fbi");
-	system("sudo /var/www/sync/testscreen.py &");
+	system("sudo /var/www/sync/testscreen &");
     $outputtext =  "testscreen activated"; 
 }
 
 if ($_GET['action'] == 'testscreenoff') {
-    system("sudo /var/www/sync/testscreenoff.py &");
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+    system("sudo /var/www/sync/testscreenoff &");
 	$outputtext =  "testscreen deactivated";
 }
 
@@ -606,31 +631,6 @@ if ($_GET['action'] == 'imageconform') {
 
 }
 
-//# Slideshow Time
-
-if ($_GET['action'] == 'slidetime5') {
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslideshow");
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslidesusb");
-	$outputtext =  "set slideshowtime to 5s";
-}
-
-if ($_GET['action'] == 'slidetime10') {
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=10/' /var/www/sync/xsessionslideshow");
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=10/' /var/www/sync/xsessionslidesusb");
-	$outputtext =  "set slideshowtime to 10s";
-}
-
-if ($_GET['action'] == 'slidetime15') {
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=15/' /var/www/sync/xsessionslideshow");
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=15/' /var/www/sync/xsessionslidesusb");
-	$outputtext =  "set slideshowtime to 15s";
-}
-
-if ($_GET['action'] == 'slidetime0') {
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslideshow");
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslidesusb");
-	$outputtext =  "set slideshowtime to 15s";
-}
 
 
 //# Sheduler
