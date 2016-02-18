@@ -898,13 +898,13 @@ if ($_GET['action'] == 'tcpsserver') {
 //# Expansion Board
 
 if ($_GET['action'] == 'setrtc') {
-	$outputtext =  "set to PocketVJ RTC";
-	system("sudo sed -ri 's/ds1307 0x.. /ds1307 0x68 /' /var/www/sync/rc.local.* /etc/rc.local");
+	$outputtext =  "no function yet";
+	
 }
 
 if ($_GET['action'] == 'setexpansion') {
-	$outputtext =  "set to PocketVJ Expansion";
-	system("sudo sed -ri 's/ds1307 0x.. /ds1307 0x6f /' /var/www/sync/rc.local.* /etc/rc.local");
+	$outputtext =  "no function yet;
+
 }
 
 
