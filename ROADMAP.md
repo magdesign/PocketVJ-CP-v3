@@ -2,7 +2,7 @@ Roadmap
 *******
 what is still to do on PVJ3:
 
-
+- fix RTC (this drives me crazy, since jessie i2c support is fucked...)
 - loading mapper sets needs save, kill and restart mapper function!
 - start image player does not write output status, also pdf player, its written after stopping.... (need help)
 - fix the ofx behaviour when logitech wifi mouse is connected 
