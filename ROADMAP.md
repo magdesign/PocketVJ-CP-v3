@@ -4,11 +4,9 @@ what is still to do on PVJ3:
 
 
 - loading mapper sets needs save, kill and restart mapper function!
-- start image player does not write output status, also pdf player
-- set slideshowtime, shall kill and restart imageplayer to take action
+- start image player does not write output status, also pdf player, its written after stopping.... (need help)
 - fix the ofx behaviour when logitech wifi mouse is connected 
 - mapper does not run without mouse connected
-- make all functions executable without reboot
 - checkout RTMP
  .
 =====================================================================
