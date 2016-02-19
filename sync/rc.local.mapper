@@ -14,4 +14,7 @@ ln -s /dev/input/event1 /dev/input/by-path/platform-bcm2708_usb-usb-0:1.2.4:1.0-
 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example -f &
 
 
+echo ds1307 0x68 > /sys/class/i2c-adapter/i2c-1/new_device
+sudo hwclock -s
+
 exit 0
