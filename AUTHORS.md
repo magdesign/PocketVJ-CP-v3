@@ -17,5 +17,9 @@ xorg62, https://github.com/xorg62/tty-clock                (TTY Clock)
 
 Alex Goodyear, http://www.piwall.co.uk                     (pwomxplayer)
 
+Marcel Bieri, https://facebook.com/casashowband				(testaudio)
+
+vj mag feat. Lockedesign, http://www.lockedesign.ch/		(testvideo)
+
  
 - 2016 -

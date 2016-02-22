@@ -1,11 +1,19 @@
 Roadmap
 *******
+
+
 what is still to do on PVJ3:
 
-- fix RTC (this drives me crazy, since jessie i2c support is fucked...)
-- loading mapper sets needs save, kill and restart mapper function!
+- finally fixed rtc, removed from rc.local,  added in boot.config
+  now in backend.php make sed command to change: dtoverlay=i2c-rtc,ds1307
+  to extension: dtoverlay=i2c-rtc,mcp7941x and vice versa.
+
+- recompile the newest pimapper, change backspace, symlink videos/images
+
+- improve sync script with turingmachine
+
 - start image player does not write output status, also pdf player, its written after stopping.... (need help)
-- fix the ofx behaviour when logitech wifi mouse is connected 
+
 - mapper does not run without mouse connected
 - checkout RTMP
  .
@@ -43,7 +51,7 @@ what is still to do on PVJ3:
   - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to comile?)
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask (unable to compile)
-  - https://github.com/julapy/ofxQuadWarp (cant find make file, how to comile?)
+  - https://github.com/julapy/ofxQuadWarp (cant find make file, how to compile?)
 ..
 
 
