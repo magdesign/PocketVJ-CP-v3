@@ -1,22 +1,10 @@
 Roadmap
 *******
 
-
-what is still to do on PVJ3:
-
-- finally fixed rtc, removed from rc.local,  added in boot.config
-  now in backend.php make sed command to change: dtoverlay=i2c-rtc,ds1307
-  to extension: dtoverlay=i2c-rtc,mcp7941x and vice versa.
-
-- recompile the newest pimapper, change backspace, symlink videos/images
-
 - improve sync script with turingmachine
-
 - start image player does not write output status, also pdf player, its written after stopping.... (need help)
-
 - mapper does not run without mouse connected
-- checkout RTMP
- .
+
 =====================================================================
 
 - fix the no mouse mapper behaviour
