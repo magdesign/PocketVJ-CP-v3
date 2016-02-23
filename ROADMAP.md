@@ -4,7 +4,8 @@ Roadmap
 - improve sync script with turingmachine
 - start image player does not write output status, also pdf player, its written after stopping.... (need help)
 - mapper does not run without mouse connected
-- finish the laoyout with new button sizes
+- finish the layout with new button sizes
+.
 =====================================================================
 
 - fix the no mouse mapper behaviour
