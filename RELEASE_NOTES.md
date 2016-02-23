@@ -1,8 +1,7 @@
-PocketVJ 3.0 Control Panel
-**************************
+******************************
+* PocketVJ 3.0 Control Panel *
+******************************
 
+CP 0.96 26.Feb. 2016
 
-CP 0.95 14.Feb. 2016
-====================
-- Release of the first version
-- of 0.92
+- Official Release of PocketVJ 3.0 Version
