@@ -1,8 +1,9 @@
 Roadmap
 *******
 
+- write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
+.
 - improve sync script with turingmachine
-- start image player does not write output status, also pdf player, its written after stopping.... (need help)
 - mapper does not run without mouse connected
 - finish the layout with new button sizes
 .
@@ -53,7 +54,7 @@ Remote:
 Testing:
 ********
 
-- test master/slave
+- test master/slave with 1h loop, 3 players, .log files
 - test imageplayer/audio
 - test impress
 - test networking as wifi internet hotspot
@@ -67,7 +68,7 @@ Testing:
 Manual:
 *******
 
-- remove rplay, raspberry cast section
+
 - more description for tcpsclient
 - how to change things with shell in a box link
 - specs for the extension board
