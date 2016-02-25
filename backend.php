@@ -130,7 +130,7 @@ if ($_GET['action'] == 'stopimage') {
 
 if ($_GET['action'] == 'image') {
 	$outputtext =  "start image player";
-	system("sudo /var/www/sync/startimage");
+	system("sudo /var/www/sync/startimage > /dev/null &");
 }
 
 if ($_GET['action'] == 'imageusb') {
@@ -174,12 +174,12 @@ if ($_GET['action'] == 'slidetime0') {
 
 if ($_GET['action'] == 'startpdf') {
 	$outputtext =  "start pdf player";
-	system("sudo /var/www/sync/startpdf");
+	system("sudo /var/www/sync/startpdf > /dev/null &");
 }
 
 if ($_GET['action'] == 'startpdfusb') {
 	$outputtext =  "start pdf player";
-	system("sudo /var/www/sync/startpdfusb");
+	system("sudo /var/www/sync/startpdfusb > /dev/null &");
 }
 
 
@@ -931,28 +931,28 @@ if ($_GET['action'] == 'button2') {
 
 
 if ($_GET['action'] == 'piwall_topleft') {
+	system("sudo /var/www/sync/piwall_topleft > /dev/null &");
 	$outputtext =  "piwall slave top left";
-	system("sudo /var/www/sync/piwall_topleft");
 }
 
 if ($_GET['action'] == 'piwall_topright') {
 	$outputtext =  "piwall slave top right";
-	system("sudo /var/www/sync/piwall_topright");
+	system("sudo /var/www/sync/piwall_topright > /dev/null &");
 }
 
-if ($_GET['action'] == 'piwall_butleft') {
+if ($_GET['action'] == 'piwall_botleft') {
 	$outputtext =  "piwall slave button left";
-	system("sudo /var/www/sync/piwall_butleft");
+	system("sudo /var/www/sync/piwall_butleft > /dev/null &");
 }
 
-if ($_GET['action'] == 'piwall_butright') {
+if ($_GET['action'] == 'piwall_botright') {
 	$outputtext =  "piwall slave button right";
-	system("sudo /var/www/sync/piwall_butright");
+	system("sudo /var/www/sync/piwall_butright > /dev/null &");
 }
 
 if ($_GET['action'] == 'piwall_master') {
 	$outputtext =  "piwall master";
-	system("sudo /var/www/sync/piwall_master");
+	system("sudo /var/www/sync/piwall_master > /dev/null &");
 }
 
 echo $outputtext;
