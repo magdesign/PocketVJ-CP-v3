@@ -44,9 +44,14 @@ pip install python-osc
 ...
 
 
-If you want to use PiMapper you must install openframeworks 9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard command in /src/Application/ProjectionMappingState.cpp (OF_KEY_BACKSPACE to 'd') and then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
+If you want to use PiMapper you must install openframeworks 9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard command in /src/Application/ProjectionMappingState.cpp (OF_KEY_BACKSPACE to 'd') also ] to vand [ to b and { to m and } to m.
+
+Then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
 after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources and delete the two folders images and video.
-Then create symlinks ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/video  /media/internal/images   ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
+
+Then create symlinks 
+ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/video /media/internal/video
+ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images /media/internal/images
 
 
 ...
