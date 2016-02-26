@@ -1,0 +1,8 @@
+#!/bin/bash
+
+/var/www/sync/extension_01.py &
+
+su -s /bin/bash -c startx pi &
+
+
+exit 0

@@ -68,7 +68,6 @@ if ($_GET['action'] == 'startmaster08') {
 	$outputtext = "start video 08 loop";
 }
 
-
 if ($_GET['action'] == 'startmasteronce') {
 	exec("sudo /var/www/sync/startmasterone");
 	$outputtext = "start player as master once";
@@ -214,8 +213,6 @@ if ($_GET['action'] == 'stopaudio') {
 }
 
 
-
-
 //# Testtone
 
 if ($_GET['action'] == 'testtone') {
@@ -261,7 +258,8 @@ if ($_GET['action'] == 'slave') {
 }
 
 if ($_GET['action'] == 'extension1') {
-	$outputtext =  "extension1 set";
+	$outputtext =  "extension1 set to image presenter";
+	system("sudo cp /var/www/sync/xsessionimage /home/pi/.xsession");
 	system("sudo cp /var/www/sync/rc.local.ext1 /etc/rc.local");
 }
 
@@ -309,7 +307,7 @@ if ($_GET['action'] == 'powerpoint') {
 
 if ($_GET['action'] == 'setimagemanual') {
 	$outputtext =  "set to manual imageplayer";
-	system("sudo cp /var/www/sync/xsessionimagemanu /home/pi/.xsession");
+	system("sudo cp /var/www/sync/xsessionimage /home/pi/.xsession");
 	system("sudo cp /var/www/sync/rc.local.screenshare /etc/rc.local");
 }
 
@@ -908,24 +906,6 @@ if ($_GET['action'] == 'setexpansion') {
 }
 
 
-//# Extension 1
-
-if ($_GET['action'] == 'gettemp') {
-    $output = shell_exec('sudo /var/www/sync/gettemp.py');
-	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 40, "<br />\n");
-}
-
-if ($_GET['action'] == 'button1') {
-	$outputtext =  "simulate button 1";
-	system("sudo /var/www/sync/button1.py &");
-}
-
-if ($_GET['action'] == 'button2') {
-	$outputtext =  "simulate button 2";
-	system("sudo /var/www/sync/button2.py &");
-}
-
 
 //# PiWall
 
@@ -954,6 +934,8 @@ if ($_GET['action'] == 'piwall_master') {
 	$outputtext =  "piwall master";
 	system("sudo /var/www/sync/piwall_master > /dev/null &");
 }
+
+
 
 echo $outputtext;
 ?>

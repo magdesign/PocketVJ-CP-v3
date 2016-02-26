@@ -4,6 +4,7 @@ Roadmap
 - write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
 .
 - improve sync script with turingmachine
+- add play/pause function to mapper (mxplayer overlay)
 - mapper does not run without mouse connected
 - finish the layout with new button sizes
 .
