@@ -4,7 +4,7 @@ Roadmap
 - write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
 .
 - improve sync script with turingmachine
-- add play/pause function to mapper (mxplayer overlay)
+- add play/pause function to mapper (omxplayer overlay)
 - mapper does not run without mouse connected
 - finish the layout with new button sizes
 .
@@ -23,7 +23,7 @@ Roadmap
 - sync for slideshow
 - add new testfile which is smoothly recorded
 - adding an OSC wrapper for remote control pip install python-osc (https://pypi.python.org/pypi/python-osc)
-- screen controls for color, brightness, contrast
+- screen controls for color, brightness, contrast (openframeworks solution?)
 - Remote mouse for mapping (remotepi app, xdootool?)
 - adding a screen recorder to record a TCPSyphon stream
 - Start all functions without reboot
@@ -31,7 +31,7 @@ Roadmap
 - Automaticly convert incompatible movies to h264  (PocketVJ 3 release), when finished play happy movie ;-)
 - Master Slave auto-detection
 - Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
-- Integrate RaspiVJ function for videomixing
+- Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj)
 - Artnet output for lightning control
 - DMX Creator bridge (emulate usb keyboard over gpio)
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
@@ -39,7 +39,7 @@ Roadmap
 - webcam and 3G hotspot for remote controlling
 - check this for more tools: http://www.ofxaddons.com/categories
  - https://github.com/TsubokuLab/ofxBezierWarpManager (tried it: https://github.com/TsubokuLab/ofxBezierWarpManager/issues/3)
-  - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to comile?)
+  - https://github.com/frauzufall/ofx2DMapping (cant find make file, how to compile?)
   - https://github.com/TsubokuLab/ofxContrast
   - https://github.com/microcosm/ofxProjectionMask (unable to compile)
   - https://github.com/julapy/ofxQuadWarp (cant find make file, how to compile?)
