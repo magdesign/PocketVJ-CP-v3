@@ -12,6 +12,7 @@ Roadmap
 
 - fix the no mouse mapper behaviour
 - make an online update function which updates everything incl. depencies (while dhcp is active)
+- test if I can compile https://github.com/labatrockwell/openTSPS to work with a webcam
 - user can define RJ45 Network adress by himself
 - adding display force resolution to 1280x800
 - add a regular video player (omxplayer without sync) with pause, fastforward, next file, loop functions
