@@ -1,16 +1,15 @@
 # PocketVJ Control Panel 3.0
 
-(scripts are not working on PocketVJ 2.0)
-
 http://www.pocketvj.com
 
 This files are used to control the PocketVJ 3.0 via webbrowser.
 
 Clone everything into the `/var/www/` directory.
 
-This file is only useful if you use the omxplayer-sync https://github.com/turingmachine/omxplayer-sync script.
-Read turingmachines installation instructions and get the custom build of omxplayer.
-https://github.com/turingmachine/omxplayer-sync
+![Alt text](master/05_mapper.png?raw=true "Optional Title")
+
+
+
 
 ##Instruction
 
@@ -40,6 +39,10 @@ pip install pjlink
 
 pip install python-osc
 
+...
+get the omxplayer-sync omxplayer since all is build on this: 
+https://github.com/turingmachine/omxplayer-sync
+Read turingmachines installation instructions.
 
 ...
 
