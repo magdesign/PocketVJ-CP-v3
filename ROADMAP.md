@@ -1,6 +1,9 @@
 Roadmap
 *******
-
+- mapper: switch media selection to center of screen, make remote for input selection (numbers)
+- make remote for mapping masks, corners
+- make shortcut in CP for play master loop
+- change the deploy script (vj100, wifi channel is= 6, ff vj 101, wifi channel is 7 etc. in /etc/hostapd/hostapd.conf 
 - write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
 .
 - improve sync script with turingmachine
