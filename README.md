@@ -11,7 +11,7 @@ Clone everything into the `/var/www/` directory.
 
 
 
-##Building Instruction
+##Instruction
 
 Add www-data to your sudoers list with: `visudo` add this line at the end: `www-data ALL=(ALL) NOPASSWD: ALL`
 
