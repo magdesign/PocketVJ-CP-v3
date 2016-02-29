@@ -1,7 +1,10 @@
 Roadmap
 *******
-- mapper: switch media selection to center of screen, make remote for input selection (numbers)
-- make remote for mapping masks, corners
+
+- mapper: compile new version, simulate the tab key to switch media selection via controlpanel.
+- make remote for mapping masks, corners (arrows in all directions, next, previous).
+- 
+
 - make shortcut in CP for play master loop
 - change the deploy script (vj100, wifi channel is= 6, ff vj 101, wifi channel is 7 etc. in /etc/hostapd/hostapd.conf 
 - write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
