@@ -6,7 +6,7 @@ This files are used to control the PocketVJ 3.0 via webbrowser.
 
 Clone everything into the `/var/www/` directory.
 
-![Alt text](master/05_mapper.png?raw=true "Optional Title")
+![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
 
 
 
