@@ -40,6 +40,7 @@ pip install pjlink
 pip install python-osc
 
 ...
+
 get the omxplayer-sync omxplayer since all is build on this: 
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
