@@ -1,6 +1,6 @@
-# PocketVJ Control Panel 3.0 (beta)
-(Its beta,  use it on your own risk, for the controlpanel us the one from PocketVJ 2.0
-scripts are not working on PocketVJ 2.0)
+# PocketVJ Control Panel 3.0
+
+(scripts are not working on PocketVJ 2.0)
 
 http://www.pocketvj.com
 
