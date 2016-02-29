@@ -3,7 +3,6 @@ Roadmap
 
 - mapper: compile new version, simulate the tab key to switch media selection via controlpanel.
 - make remote for mapping masks, corners (arrows in all directions, next, previous).
-- 
 
 - make shortcut in CP for play master loop
 - change the deploy script (vj100, wifi channel is= 6, ff vj 101, wifi channel is 7 etc. in /etc/hostapd/hostapd.conf 
