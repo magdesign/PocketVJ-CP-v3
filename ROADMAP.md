@@ -5,7 +5,7 @@ Roadmap
 - make remote for mapping masks, corners (arrows in all directions, next, previous)
 - button to manualy load a mouse connect after boot
 - make shortcut in CP for play master loop
-- change the deploy script (vj100, wifi channel is= 6, ff vj 101, wifi channel is 7 etc. in /etc/hostapd/hostapd.conf 
+- change the deploy script (vj100, wifi channel is= 6, ff vj 101, wifi channel is 7 etc. in /etc/hostapd/hostapd.conf (channel 1, 6, and 11 are mostly used)
 - make button in system to change wifi channel
 - write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
 - improve sync script with turingmachine
