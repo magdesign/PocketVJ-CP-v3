@@ -68,9 +68,9 @@ after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/dat
 
 Then create symlinks
 
-ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/video /media/internal/video
+ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/video
 
-ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images /media/internal/images
+ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
 
 
 ...
