@@ -481,21 +481,32 @@ if ($_GET['action'] == 'firmware') {
 
 if ($_GET['action'] == 'controlpanel') {
 	$outputtext =  "update ControlPanel USB";
-	system("sudo cp -r /media/usb/PocketVJ-CP-v2-master.zip /media/internal/PocketVJ-CP-v2-master.zip");
-	system("sudo unzip /media/internal/PocketVJ-CP-v2-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v2-master/* /var/www");
+	system("sudo cp -r /media/usb/PocketVJ-CP-v3-master.zip /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
+	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www");
 	system("sudo chmod 755 -R /var/www");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v2-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v2-master");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
 }
 
 if ($_GET['action'] == 'controlpanelintern') {
 	$outputtext =  "update ControlPanel internal";
-	system("sudo unzip /media/internal/PocketVJ-CP-v2-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v2-master/* /var/www/");
+	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
+	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v2-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v2-master");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+
+}
+
+if ($_GET['action'] == 'controlpanelweb') {
+	$outputtext =  "update ControlPanel internal";
+	system("sudo wget https://github.com/magdesign/PocketVJ-CP-v3/archive/master.zip -O /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
+	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
+	system("sudo chmod 755 -R /var/www/");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
 
 }
 
@@ -518,6 +529,28 @@ if ($_GET['action'] == 'factoryreset') {
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
 
+}
+
+//# Set Wifi Channel
+
+if ($_GET['action'] == 'setwifi1') {
+	$outputtext =  "wifi channel 1";
+	system("sudo sed -ri 's/^channel=.+$/channel=1/' /etc/hostapd/hostapd.conf");
+}
+
+if ($_GET['action'] == 'setwifi3') {
+	$outputtext =  "wifi channel 3";
+	system("sudo sed -ri 's/^channel=.+$/channel=3/' /etc/hostapd/hostapd.conf");
+}
+
+if ($_GET['action'] == 'setwifi6') {
+	$outputtext =  "wifi channel 6";
+	system("sudo sed -ri 's/^channel=.+$/channel=6/' /etc/hostapd/hostapd.conf");
+}
+
+if ($_GET['action'] == 'setwifi9') {
+	$outputtext =  "wifi channel 9";
+	system("sudo sed -ri 's/^channel=.+$/channel=9/' /etc/hostapd/hostapd.conf");
 }
 
 //# Set Projector Stuff
@@ -811,6 +844,50 @@ if ($_GET['action'] == 'mapperprev') {
 	system("sudo /var/www/sync/mapperprev");
 	system("killall -9 /opt/fsayskeyboard");
 }
+
+if ($_GET['action'] == 'mapmediaselectth') {
+	$outputtext =  "select next source";
+	system("sudo /var/www/sync/mapperthrough");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperaddrow') {
+	$outputtext =  "add row gridwarp only";
+	system("sudo /var/www/sync/mapperaddrow");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+
+if ($_GET['action'] == 'mapperrmrow') {
+	$outputtext =  "remove row gridwarp only";
+	system("sudo /var/www/sync/mapperrmrow");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperaddcolumn') {
+	$outputtext =  "add column gridwarp only";
+	system("sudo /var/www/sync/mapperaddcolumn");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperrmcolumn') {
+	$outputtext =  "remove column gridwarp only";
+	system("sudo /var/www/sync/mapperaddcolumn");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mappernextvertex') {
+	$outputtext =  "select next vertex";
+	system("sudo /var/www/sync/mappernextvertex");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperprevvertex') {
+	$outputtext =  "select previous vertex";
+	system("sudo /var/www/sync/mapperprevvertex");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 
 //# Impress Presentation
 
