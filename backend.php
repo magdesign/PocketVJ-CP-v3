@@ -510,9 +510,17 @@ if ($_GET['action'] == 'controlpanelweb') {
 
 }
 
+if ($_GET['action'] == 'updatemapper') {
+	$outputtext =  "update mapper";
+	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /media/internal/ofxPiMapper.zip -d /home/pi/openFrameworks/addons/ofxPiMapper");
+
+}
+
+
 if ($_GET['action'] == 'depencies1') {
 	$outputtext =  "update depencies";
-	system("sudo /var/www/sync/omxkill.py");
+	system("sudo /var/www/sync/stopall");
 	system("sudo /var/www/sync/testscreenoff.py &");
 	system("sudo /var/www/sync/depencies1.py &");
 
