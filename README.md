@@ -72,6 +72,10 @@ d to a (duplicate)
 
 } to m
 
+< to 
+
+> to
+
 
 Then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
 after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources and delete the two folders images and video.
