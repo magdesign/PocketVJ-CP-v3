@@ -72,9 +72,9 @@ d to a (duplicate)
 
 } to m
 
-< to 
+< to k
 
-> to
+> to l
 
 
 Then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
