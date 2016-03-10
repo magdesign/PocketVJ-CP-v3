@@ -1,7 +1,7 @@
 Roadmap
 *******
 
-- mapper: compile new version, simulate the tab key to switch media selection via controlpanel
+- mapper: simulate the tab key to switch media selection via controlpanel
 - make remote for mapping masks, corners (arrows in all directions, next, previous)
 - button to manualy load a mouse connect after boot
 - make shortcut in CP for play master loop
@@ -62,7 +62,7 @@ Testing:
 
 Manual:
 *******
-
+- shortcuts for mapping mode with keyboard
 - more description for tcpsclient, with example using syphoner to capture software
 - how to change things with shell in a box link
 - overall specs description and specs for the extension board, preorder link
