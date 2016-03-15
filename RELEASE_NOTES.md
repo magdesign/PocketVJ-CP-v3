@@ -1,5 +1,9 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 0.97a 15.March 2016
+   - Added missing up down left right commands for mapper
+
+
 ###CP 0.97 10.March 2016
    - Fixed update function
    - Updated Mapper Controls

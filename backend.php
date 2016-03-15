@@ -896,6 +896,30 @@ if ($_GET['action'] == 'mapperprevvertex') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
+if ($_GET['action'] == 'mapperleft') {
+	$outputtext =  "move left";
+	system("sudo /var/www/sync/mapperleft");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperright') {
+	$outputtext =  "move right";
+	system("sudo /var/www/sync/mapperright");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperup') {
+	$outputtext =  "move up";
+	system("sudo /var/www/sync/mapperup");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperdown') {
+	$outputtext =  "move down";
+	system("sudo /var/www/sync/mapperdown");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 
 //# Impress Presentation
 
