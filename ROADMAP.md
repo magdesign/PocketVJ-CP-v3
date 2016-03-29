@@ -2,7 +2,8 @@ Roadmap
 *******
 
 - mapper remote:implement big step moving
-- button to manualy load a mouse connect after boot
+- button to manualy load a mouse connected after boot
+- make mapper working without mouse
 - write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
 - improve sync script with turingmachine
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
@@ -10,11 +11,12 @@ Roadmap
 - Master Slave auto-detection
 - add play/pause function to mapper (omxplayer overlay)
 
-- adding manual slideshow function which also plays movies (placed in images folder).
+- adding manual slideshow function which also plays movies (placed in images folder)
 - make an online update function which updates everything incl. depencies (while dhcp is active)
 - test if I can compile https://github.com/labatrockwell/openTSPS to work with a webcam, to make it posible to send osc data to other applications
 - user can define RJ45 Network adress by himself
 - adding display force resolution to 1280x800
+- integrate LTC / SMPTE function (https://github.com/x42/libltc)
 - add a regular video player (omxplayer without sync) with pause, fastforward, next file, loop functions
 - a simple text tool to overlay text infos (e.g. displaying showtimes) (maybe can do with suptitle function?)
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
