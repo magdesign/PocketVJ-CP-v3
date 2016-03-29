@@ -7,7 +7,7 @@ This files are used to control the PocketVJ 3.0 via webbrowser.
 
 Clone everything into the `/var/www/` directory.
 
-(this is not a PocketVJ 2.0 update!)
+(this is not a PocketVJ 2.0 update!, since PocketVJ 2.0 is running debian wheezy and PocketVJ3.0 runs on jessie)
 
 ![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
 
@@ -89,6 +89,8 @@ ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/b
 
 ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
 
+Here is a table of keyboard shortcuts for the mapper provided by chaot2:
+https://github.com/magdesign/PocketVJ-CP-v3/files/188104/Keys_PocketVJ-VP-v3.pdf
 
 ...
 
