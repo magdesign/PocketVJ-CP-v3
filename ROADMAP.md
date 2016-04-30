@@ -1,27 +1,28 @@
 Roadmap
 *******
 
-- improve sync script with turingmachine- mapper remote:implement big step moving
+- improve sync script with turingmachine (recompile omxplayer, push resolution fix)
+- Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
+- Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
+- adding an OSC wrapper for remote control (python-osc) e.g. select video1 and play, stop.
+
+- mapper remote:implement big step moving
 - button to manualy load a mouse connected after boot
 - make mapper working without mouse
 
-- Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
-- Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
+- sync for slideshow
 - Master Slave auto-detection
-- add play/pause function to mapper (omxplayer overlay)
+- integrate LTC / SMPTE function (https://github.com/x42/libltc)
 
+- add play/pause function to mapper (omxplayer overlay)
 - adding manual slideshow function which also plays movies (placed in images folder)
-- make an online update function which updates everything incl. depencies (while dhcp is active)
-- test if I can compile https://github.com/labatrockwell/openTSPS to work with a webcam, to make it posible to send osc data to other applications
 - user can define RJ45 Network adress by himself
 - adding display force resolution to 1280x800
-- integrate LTC / SMPTE function (https://github.com/x42/libltc)
+
 - add a regular video player (omxplayer without sync) with pause, fastforward, next file, loop functions
 - a simple text tool to overlay text infos (e.g. displaying showtimes) (maybe can do with suptitle function?)
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
-- sync for slideshow
-- adding an OSC wrapper for remote control (python-osc)
 - screen controls for color, brightness, contrast (openframeworks solution?)
 - adding a screen recorder to record a TCPSyphon stream (maybe possible with RPI3)
 - Make sync script compatible with video mapper 
@@ -29,7 +30,6 @@ Roadmap
 - Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj)
 - Artnet output for lightning control
 - DMX Creator bridge (emulate usb keyboard over gpio)
-
 - webcam and 3G hotspot for remote controlling
 - Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
 - check this for more tools: http://www.ofxaddons.com/categories
