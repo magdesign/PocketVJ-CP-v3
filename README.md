@@ -1,3 +1,4 @@
+This is not compatible with PocketVJ 2.0
 # PocketVJ Control Panel 3.0
 
 http://www.pocketvj.com
@@ -7,7 +8,6 @@ This files are used to control the PocketVJ 3.0 via webbrowser.
 
 Clone everything into the `/var/www/` directory.
 
-(this is not a PocketVJ 2.0 update!, since PocketVJ 2.0 is running debian wheezy and PocketVJ3.0 runs on jessie)
 
 ![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
 
