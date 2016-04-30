@@ -1,11 +1,10 @@
 Roadmap
 *******
 
-- mapper remote:implement big step moving
+- improve sync script with turingmachine- mapper remote:implement big step moving
 - button to manualy load a mouse connected after boot
 - make mapper working without mouse
-- write scripts for extension board: http://36.media.tumblr.com/b1ff51289c41dbd475433b8f058adc8b/tumblr_o2nhexniKa1uyck1ko1_1280.jpg
-- improve sync script with turingmachine
+
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
 - Master Slave auto-detection
