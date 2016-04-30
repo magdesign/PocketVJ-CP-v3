@@ -12,8 +12,7 @@
    added function to change wifi channel
 
    Notes for users with version 0.96:
-   
-   OIf you want upgrade from version 0.96, you must rename the PocketVJ-CP-v3-master.zip file to PocketVJ-CP-v2-master.zip.
+   If you want upgrade from version 0.96, you must rename the PocketVJ-CP-v3-master.zip file to PocketVJ-CP-v2-master.zip.
 
 
 
