@@ -4,7 +4,7 @@ Roadmap
 - improve sync script with turingmachine (recompile omxplayer, push resolution fix)
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
-- adding an OSC wrapper for remote control (python-osc) e.g. select video1 and play, stop.
+- adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
 
 - mapper remote:implement big step moving
 - button to manualy load a mouse connected after boot
