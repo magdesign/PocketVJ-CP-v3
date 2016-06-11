@@ -1,6 +1,8 @@
 Roadmap
 *******
-
+- get rid of the noise from audio jack using omxplayer
+- change the startscripts with option -b to blank screen
+- compile newest ofxPimapper, implement play/pause in CP
 - improve sync script with turingmachine (recompile omxplayer, push resolution fix)
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
