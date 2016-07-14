@@ -16,13 +16,12 @@ Roadmap
 - Master Slave auto-detection
 - integrate LTC / SMPTE function (https://github.com/x42/libltc)
 
-- add play/pause function to mapper (omxplayer overlay)
 - adding manual slideshow function which also plays movies (placed in images folder)
 - user can define RJ45 Network adress by himself
 - adding display force resolution to 1280x800
 
 - add a regular video player (omxplayer without sync) with pause, fastforward, next file, loop functions
-- a simple text tool to overlay text infos (e.g. displaying showtimes) (maybe can do with suptitle function?)
+- a simple text tool to overlay text infos (e.g. displaying showtimes) (with subtitle function?)
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
 - screen controls for color, brightness, contrast (openframeworks solution?)
