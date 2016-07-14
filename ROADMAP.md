@@ -3,11 +3,11 @@ Roadmap
 - get rid of the noise from audio jack using omxplayer
 - change the startscripts with option -b to blank screen
 - compile newest ofxPimapper, implement play/pause in CP
-- improve sync script with turingmachine (recompile omxplayer, push resolution fix)
+- improve sync script with turingmachine (recompile omxplayer is done, workin on script now)
 - Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
 - Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
 - adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
-
+- create button to change from old omxplayer-sync method to new omxplayer-sync and vice versa
 - mapper remote:implement big step moving
 - button to manualy load a mouse connected after boot
 - make mapper working without mouse
