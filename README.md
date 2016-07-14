@@ -51,7 +51,7 @@ Read turingmachines installation instructions.
 ...
 
 
-If you want to use PiMapper you must install openframeworks 9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/ProjectionMappingState.cpp as following:
+If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/ProjectionMappingState.cpp as following:
 
 OF_KEY_BACKSPACE to 'd' (delete)
 
@@ -101,7 +101,7 @@ http://www.fsays.eu/Blogging/Blog/Details/23
 ...
 
 
-For TCPSClient, downnload the package here: http://techlife.sg/TCPSClient/index.html
+For TCPSClient, download the package here: http://techlife.sg/TCPSClient/index.html
 put it to `/usr/bin` and make `chmod u+x TCPSClient.bin`
 Read the copyrights on their websites and make a donation!
 
