@@ -130,5 +130,12 @@ dpkg -i pwomxplayer_20130815_armhf.deb
 
 ...
 
+install eXtplorer in /var/www/eXtplorer and configure it:
+sudo nano /var/www/eXtplorer/include/init.php
+
+change the root directory to '/media/';
+
+...
+
 Please support this project! 
 http://www.pocketvj.com
