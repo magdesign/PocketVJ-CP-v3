@@ -11,6 +11,7 @@ Roadmap
 - mapper remote:implement big step moving
 - button to manualy load a mouse connected after boot
 - make mapper working without mouse
+- install and enable telnet as default
 
 - sync for slideshow
 - Master Slave auto-detection
