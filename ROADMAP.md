@@ -1,5 +1,6 @@
 Roadmap
 *******
+- write tcp commands to manual
 - get rid of the noise from audio jack using omxplayer
 - change the startscripts with option -b to blank screen
 - compile newest ofxPimapper, implement play/pause in CP
