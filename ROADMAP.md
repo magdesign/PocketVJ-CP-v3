@@ -3,7 +3,7 @@ Roadmap
 
 - get rid of the noise from audio jack using omxplayer
 - change the startscripts with option -b to blank screen
-- compile newest ofxPimapper, implement play/pause and audio / noAudio / update mapper in CP (place mapper in www/sync/ for update
+- compile newest ofxPimapper, implement play/pause and audio / noAudio / update mapper in CP (place compiled mapper version as .zip in www/sync/ for update
 - mapper remote: implement big step moving
 - make mapper working without mouse
 - button to manualy load a mouse connected after boot
