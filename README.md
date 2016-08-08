@@ -79,6 +79,16 @@ d to a (duplicate)
 
 > to l
 
+space to w
+
+If you want to enable audio, change in: src/Sources/VideoSource.cpp 
+line 6:bool VideoSource::enableAudio = true;
+
+and in: example/src/ofApp.cpp
+line 8: ofx::piMapper::VideoSource::enableAudio = true;
+
+and in: src/Sources/OMXPlayerCache.cpp 
+settings.useHDMIForAudio = false;
 
 Then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
 after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources and delete the two folders images and video.
