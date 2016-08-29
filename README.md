@@ -65,6 +65,10 @@ KEY_LEFT to '7'
 
 KEY_RIGHT to '0'
 
+'0' to 1 (one layer up)
+
+'9' to 2 (one layer down)
+
 d to a (duplicate)
 
 ] to v
@@ -79,18 +83,18 @@ d to a (duplicate)
 
 > to l
 
-space to w
+space to w (play/pause)
 
 If you want to enable audio, change in: src/Sources/VideoSource.cpp 
 line 6:bool VideoSource::enableAudio = true;
+line 7 decide weather hdmi or jack: bool VideoSource::useHDMIForAudio = false;
 
 and in: example/src/ofApp.cpp
 line 8: ofx::piMapper::VideoSource::enableAudio = true;
 
-and in: src/Sources/OMXPlayerCache.cpp 
-settings.useHDMIForAudio = false;
 
-Then compile PiMapper https://github.com/kr15h/ofxPiMapper. 
+Then compile PiMapper (cd into the /example folder and type make (https://github.com/kr15h/ofxPiMapper). 
+
 after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources and delete the two folders images and video.
 
 Then create symlinks
