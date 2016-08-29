@@ -87,13 +87,14 @@ space to w (play/pause)
 
 If you want to enable audio, change in: src/Sources/VideoSource.cpp 
 line 6:bool VideoSource::enableAudio = true;
+
 line 7 decide weather hdmi or jack: bool VideoSource::useHDMIForAudio = false;
 
 and in: example/src/ofApp.cpp
 line 8: ofx::piMapper::VideoSource::enableAudio = true;
 
 
-Then compile PiMapper (cd into the /example folder and type make (https://github.com/kr15h/ofxPiMapper). 
+Then compile PiMapper (cd into the /example folder and type make) https://github.com/kr15h/ofxPiMapper. 
 
 after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources and delete the two folders images and video.
 
