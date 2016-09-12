@@ -55,7 +55,7 @@ If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openf
 
 OF_KEY_BACKSPACE to 'd' (delete)
 
-TAB to '5'
+TAB to '5' (toggle)
 
 KEY_UP to '8'
 
@@ -65,9 +65,9 @@ KEY_LEFT to '7'
 
 KEY_RIGHT to '0'
 
-'0' to 1 (one layer up)
+'h' to 1 (one layer up)
 
-'9' to 2 (one layer down)
+'j' to 2 (one layer down)
 
 d to a (duplicate)
 
