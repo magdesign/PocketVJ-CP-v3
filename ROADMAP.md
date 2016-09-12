@@ -3,16 +3,11 @@ Roadmap
 
 - get rid of the noise from audio jack using omxplayer
 - change the startscripts with option -b to blank screen
-- compile newest ofxPimapper, implement play/pause and audio / noAudio / update mapper in CP (place compiled mapper version as .zip in www/sync/ for update
 - mapper remote: implement big step moving
 - make mapper working without mouse
 - button to manualy load a mouse connected after boot
-- improve sync script with turingmachine (recompile omxplayer is done, workin on script now, nest session 10.08.16)
-- Add fast forward function (dbuscontrol.sh seek, needs recompile of custom omxplayer)
-- Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control)
+- Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control no ready yet, waiting)
 - adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
-- create button to change from old omxplayer-sync method to new omxplayer-sync and vice versa
-- remove in system: set expansion, remove expansion in menu (its not rentable yet to ralize for public)
 
 - sync for slideshow
 - Master Slave auto-detection
@@ -20,9 +15,7 @@ Roadmap
 
 - adding manual slideshow function which also plays movies (placed in images folder)
 - user can define RJ45 Network adress by himself
-- adding display force resolution to 1280x800
 
-- add a regular video player (omxplayer without sync) with pause, fastforward, next file, loop functions
 - a simple text tool to overlay text infos (e.g. displaying showtimes) (with subtitle function?)
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
