@@ -510,11 +510,13 @@ if ($_GET['action'] == 'firmwareupdate') {
 	system("rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer");
 	system("rm -f /usr/bin/omxplayer-sync");
 	system ("rm -f /usr/bin/dbuscontrol.sh");
-	system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+    system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
     system("sudo dpkg -i *.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160713-66f9076_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160713-66f9076_armhf.deb");
+    system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160713-66f9076_armhf.deb");
 	system("sudo apt-get clean");
-    system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
-	system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
+    //system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
+	//system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
 	system("sudo chmod a+x /usr/bin/omxplayer");
 	system("sudo chmod a+x /usr/bin/omxplayer.bin");
