@@ -3,6 +3,7 @@
 ###CP 1.00 12.September 2016
 
    make sure that after updating the CP, you go to system and hit Update Firmware and Update Mapper the use all the new functions.
+   Be patient, updateing takes several minutes!
     
     - Added seamless loop
     - Sections are now color coded
