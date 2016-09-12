@@ -1,5 +1,15 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.00 12.September 2016
+
+   make sure that after updating the CP, you go to system and hit Update Firmware and Update Mapper the use all the new functions.
+    
+    - Added seamless loop
+    - Sections are now color coded
+    - New Sync script and new Player
+    - many new feuatures and little bugfixes
+    
+
 ###CP 0.97a 15.March 2016
    Added missing up down left right commands for mapper
 
