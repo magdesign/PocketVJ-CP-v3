@@ -569,7 +569,7 @@ if ($_GET['action'] == 'controlpanelweb') {
 if ($_GET['action'] == 'mapperupdate') {
 	$outputtext =  "update mapper";
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /");
 	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
@@ -579,7 +579,7 @@ if ($_GET['action'] == 'mapperupdate') {
 if ($_GET['action'] == 'mapperaudioupdate') {
 	$outputtext =  "update mapper";
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperAudio.zip -d /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperAudio.zip -d /");
 	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
