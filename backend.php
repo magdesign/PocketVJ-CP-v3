@@ -1,5 +1,16 @@
 <?php
 
+//# Shortcuts
+
+if ($_GET['action'] == 'pause') {
+	$outputtext =  "pause video";
+	system ("/var/www/sync/dbuscontrol.sh pause > /dev/null 2>&1");
+}
+
+if ($_GET['action'] == 'fastforward') {
+	$outputtext =  "seek video forward";
+	system ("sudo /var/www/sync/dbuscontrol.sh seek 10000000");
+}
 
 
 if ($_GET['action'] == 'stop') {
@@ -21,6 +32,14 @@ if ($_GET['action'] == 'stopvideo') {
 	$outputtext =  "stop video player only";
 	system ("sudo /var/www/sync/stopvideo > /dev/null 2>&1");
 }
+
+//# Video Control Section
+
+if ($_GET['action'] == 'startseamless') {
+	$outputtext =  "start seamless video loop player";
+	system ("sudo /var/www/sync/startseamless");
+}
+
 
 
 if ($_GET['action'] == 'startmaster') {
@@ -257,6 +276,12 @@ if ($_GET['action'] == 'slave') {
 	system("sudo cp /var/www/sync/rc.local.slave /etc/rc.local");
 }
 
+if ($_GET['action'] == 'seamless') {
+	$outputtext =  "set to seamless player";
+	system("sudo cp /var/www/sync/rc.local.seamless /etc/rc.local");
+}
+
+
 if ($_GET['action'] == 'extension1') {
 	$outputtext =  "extension1 set to image presenter";
 	system("sudo cp /var/www/sync/xsessionimage /home/pi/.xsession");
@@ -383,34 +408,42 @@ if ($_GET['action'] == 'bootconfusb') {
 }
 
 if ($_GET['action'] == 'hdmireset') {
-	$output =  "reset resolution settings";
+	$outputtext =  "reset resolution settings";
 	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
 }
 
 if ($_GET['action'] == 'hdmi1') {
-	$output =  "forced to use hdmi VGA";
+	$outputtext =  "forced to use 1024x768";
 	system("sudo cp /var/www/sync/forcehdmi1 /boot/config.txt");
 }
 
 if ($_GET['action'] == 'hdmi4') {
-	$outputtext =  "forced to use hdmi 720p";
+	$outputtext =  "forced to use hdmi 1280x720";
 	system("sudo cp /var/www/sync/forcehdmi4 /boot/config.txt");
 }
 
 if ($_GET['action'] == 'hdmi5') {
-	$outputtext =  "forced to fullHD 1080";
+	$outputtext =  "forced to 1920x1080";
 	system("sudo cp /var/www/sync/forcehdmi5 /boot/config.txt");
 }
 
-if ($_GET['action'] == 'hdmivga') {
-	$outputtext =  "hdmi to vga 800x600";
+if ($_GET['action'] == 'hdmi6') {
+	$outputtext =  "forced to 1280x800";
+	system("sudo cp /var/www/sync/forcehdmi6 /boot/config.txt");
+}
+
+if ($_GET['action'] == 'forcevga') {
+	$outputtext =  "force 800x600";
 	system("sudo cp /var/www/sync/forcevga /boot/config.txt");
 }
 
+
+
 if ($_GET['action'] == 'force1200') {
-	$outputtext =  "force 1920x1200 rb";
+	$outputtext =  "force 1920x1200 rgb";
 	system("sudo cp /var/www/sync/force1200 /boot/config.txt");
 }
+
 
 
 if ($_GET['action'] == 'clean') {
@@ -469,13 +502,33 @@ if ($_GET['action'] == 'diskspace') {
 }
 
 
-//# Firmmware Stuff
+//# Firmmare Stuff
+
+if ($_GET['action'] == 'firmwareupdate') {
+	
+	system("sudo apt-get remove omxplayer");
+	system("rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer");
+	system("rm -f /usr/bin/omxplayer-sync");
+	system ("rm -f /usr/bin/dbuscontrol.sh");
+	system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+    system("sudo dpkg -i *.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+	system("sudo apt-get clean");
+    system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
+	system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
+	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
+	system("sudo chmod a+x /usr/bin/omxplayer");
+	system("sudo chmod a+x /usr/bin/omxplayer.bin");
+	system("sudo chmod a+x /usr/bin/omxplayer-sync");
+	$outputtext =  "Update Firmware, Player&Sync to PVJ v3.1";
+}
+
 
 if ($_GET['action'] == 'firmware') {
 	$outputtext =  "upgrade player and sync";
 	system("sudo cp /media/usb/omxplayer /usr/bin/omxplayer");
 	system("sudo cp /media/usb/omxplayer.bin /usr/bin/omxplayer.bin");
 	system("sudo cp /media/usb/omxplayer-sync /usr/bin/omxplayer-sync");
+	$outputtext =  "Omxplayer Updated";
 	
 }
 
@@ -487,6 +540,7 @@ if ($_GET['action'] == 'controlpanel') {
 	system("sudo chmod 755 -R /var/www");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	$outputtext =  "ControlPanel Updated";
 }
 
 if ($_GET['action'] == 'controlpanelintern') {
@@ -496,35 +550,55 @@ if ($_GET['action'] == 'controlpanelintern') {
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	$outputtext =  "ControlPanel Updated";
 
 }
 
 if ($_GET['action'] == 'controlpanelweb') {
-	$outputtext =  "update ControlPanel internal";
+	$outputtext =  "update ControlPanel via internet";
 	system("sudo wget https://github.com/magdesign/PocketVJ-CP-v3/archive/master.zip -O /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	$outputtext =  "ControlPanel Updated";
 
 }
 
-if ($_GET['action'] == 'updatemapper') {
+if ($_GET['action'] == 'mapperupdate') {
 	$outputtext =  "update mapper";
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /media/internal/ofxPiMapper.zip -d /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /home/pi/openFrameworks/addons/ofxPiMapper");
+	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system ("ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+}
+
+if ($_GET['action'] == 'mapperaudioupdate') {
+	$outputtext =  "update mapper";
+	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperAudio.zip -d /home/pi/openFrameworks/addons/ofxPiMapper");
+	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system ("ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 
 }
 
 
-if ($_GET['action'] == 'depencies1') {
-	$outputtext =  "update depencies";
-	system("sudo /var/www/sync/stopall");
-	system("sudo /var/www/sync/testscreenoff.py &");
-	system("sudo /var/www/sync/depencies1.py &");
 
-}
+
+
+
+//if ($_GET['action'] == 'depencies1') {
+//	$outputtext =  "update depencies";
+//	system("sudo /var/www/sync/stopall");
+//	system("sudo /var/www/sync/testscreenoff.py &");
+//	system("sudo /var/www/sync/depencies1.py &");
+
+//}
 
 if ($_GET['action'] == 'factoryreset') {
 	$outputtext =  "factory reset system";
@@ -602,9 +676,14 @@ if ($_GET['action'] == 'hdmi_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmaster04");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmaster05");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmaster06");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmaster07");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmaster08");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone01");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone02");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone03");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone04");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone05");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startseamless");
 	$outputtext =  "Audio set to HDMI";
 }
 
@@ -620,9 +699,14 @@ if ($_GET['action'] == 'jack_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmaster04");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmaster05");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmaster06");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmaster07");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmaster08");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone01");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone02");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone03");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone04");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone05");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startseamless");
 	$outputtext =  "Audio set to Jack";
 }
 
@@ -638,9 +722,14 @@ if ($_GET['action'] == 'both_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmaster04");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmaster05");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmaster06");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmaster07");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmaster08");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone01");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone02");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone03");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone04");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone05");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startseamless");
 	$outputtext =  "Audio set to both";
 }
 
@@ -853,9 +942,15 @@ if ($_GET['action'] == 'mapperprev') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
-if ($_GET['action'] == 'mapmediaselectth') {
+if ($_GET['action'] == 'mappermediaselectth') {
 	$outputtext =  "select next source";
 	system("sudo /var/www/sync/mapperthrough");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperplaypause') {
+	$outputtext =  "play/pause mapping source";
+	system("sudo /var/www/sync/mapperpause");
 	system("killall -9 /opt/fsayskeyboard");
 }
 
@@ -917,6 +1012,18 @@ if ($_GET['action'] == 'mapperup') {
 if ($_GET['action'] == 'mapperdown') {
 	$outputtext =  "move down";
 	system("sudo /var/www/sync/mapperdown");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperlayerup') {
+	$outputtext =  "layerup";
+	system("sudo /var/www/sync/mapperlayerup");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperlayerdown') {
+	$outputtext =  "layerdown";
+	system("sudo /var/www/sync/mapperlayerdown");
 	system("killall -9 /opt/fsayskeyboard");
 }
 

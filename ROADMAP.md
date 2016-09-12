@@ -1,6 +1,7 @@
 Roadmap
 *******
 
+- mapper remote: moving has quite a big delay, fix this
 - mapper remote:implement big step moving
 - button to manualy load a mouse connected after boot
 - make mapper working without mouse

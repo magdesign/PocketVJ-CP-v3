@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo /var/www/sync/stopall
+
 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example -f &
 
 #/var/www/sync/stopall &

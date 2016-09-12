@@ -7,40 +7,24 @@ html
 
 body,div,dl,dt,dd,ul,ol,li,nav,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td,a
 {
-	margin: 0px;
-	padding: 0px;
-	border-width: 0px;
-	border-style: solid;
-	border-color: transparent;
+	margin: 0;
+	padding: 0;
+	border-width: 0;
 	-webkit-transform-origin: left top;
 	-ms-transform-origin: left top;
 	-o-transform-origin: left top;
 	transform-origin: left top;
-	background-repeat: no-repeat;
-}
-
-.transition
-{
-	-webkit-transition-property: background-image,background-position,background-color,border-color,border-radius,color,font-size,font-style,font-weight,letter-spacing,line-height,text-align,box-shadow,text-shadow,opacity;
-	transition-property: background-image,background-position,background-color,border-color,border-radius,color,font-size,font-style,font-weight,letter-spacing,line-height,text-align,box-shadow,text-shadow,opacity;
-}
-
-.transition *
-{
-	-webkit-transition: inherit;
-	transition: inherit;
 }
 
 table
 {
 	border-collapse: collapse;
-	border-spacing: 0px;
+	border-spacing: 0;
 }
 
 fieldset,img
 {
-	border: 0px;
-	border-style: solid;
+	border: 0;
 	-webkit-transform-origin: left top;
 	-ms-transform-origin: left top;
 	-o-transform-origin: left top;
@@ -90,10 +74,11 @@ body
 	line-height: 17px;
 	word-wrap: break-word;
 	text-rendering: optimizeLegibility;/* kerning, primarily */
-	-moz-font-feature-settings: 'liga';
-	-ms-font-feature-settings: 'liga';
-	-webkit-font-feature-settings: 'liga';
-	font-feature-settings: 'liga';
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	body { text-rendering:auto; }
 }
 
 a:link
@@ -202,7 +187,7 @@ a.nontext /* used to override default properties of 'a' tag */
 	white-space: nowrap;
 }
 
-.MenuBar .MenuBarView,.MenuBar .SubMenuView /* Resets for ul and li in menus */
+.MenuBar  .MenuBarView,.MenuBar  .SubMenuView /* Resets for ul and li in menus */
 {
 	display: block;
 	list-style: none;
@@ -233,12 +218,23 @@ a.nontext /* used to override default properties of 'a' tag */
 	clear: both;
 }
 
+.colelem100 /* a child element of a column that is 100% width */
+{
+	clear: both;
+}
+
+.grpelem /* a child element of a group */
+{
+	display: inline;
+	float: left;
+}
+
 .clearfix:after /* force a container to fit around floated items */
 {
 	content: "\0020";
 	visibility: hidden;
 	display: block;
-	height: 0px;
+	height: 0;
 	clear: both;
 }
 
@@ -250,6 +246,65 @@ a.nontext /* used to override default properties of 'a' tag */
 .clip_frame /* used to clip the contents as in the case of an image frame */
 {
 	overflow: hidden;
+}
+
+.inclusion_context /* context for positioning a group of elements that share the same height */
+{
+	display: table;
+	table-layout: fixed;
+	width: 0.01px;
+}
+
+.inclelem /* element of an inclusion context */
+{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.f3s_mid /* 3-slice frame, middle slice */
+{
+	background-repeat: repeat;
+}
+
+.f3s_top,.f3s_bot /* 3-slice frame, top slice */
+{
+	background-repeat: no-repeat;
+}
+
+.f9s_top_left,.f9s_bot_left /* 9-slice frame, left corner slice */
+{
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.f9s_top_right,.f9s_bot_right /* 9-slice frame, right corner slice */
+{
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.f9s_top_mid,.f9s_bot_mid /* 9-slice frame, top/bottom horizontal slice */
+{
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+}
+
+.f9s_mid_left /* 9-slice frame, left vertical slice */
+{
+	background-repeat: repeat-y;
+	background-position: left;
+}
+
+.f9s_mid_right /* 9-slice frame, right vertical slice */
+{
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+.f9s_center /* 9-slice frame, center slice */
+{
+	background-repeat: repeat;
+	background-position: 0px 0px;
 }
 
 .popup_anchor /* anchors an abspos popup */
@@ -297,7 +352,7 @@ span.actAsInlineDiv /* used to simulate a DIV with inline display when already n
 	width: 1px;
 }
 
-.preload /* used to specifiy the dimension of preload item */
+preload /* used to specifiy the dimension of preload item */
 {
 	height: 1px;
 	width: 1px;
@@ -311,7 +366,7 @@ span.actAsInlineDiv /* used to simulate a DIV with inline display when already n
 	transition: 0.3s ease-in-out;
 }
 
-[data-whatinput="mouse"] *:focus,[data-whatinput="touch"] *:focus,input:focus,textarea:focus
+input:focus,textarea:focus /* remove default focussed input styling */
 {
 	outline: none;
 }
@@ -330,8 +385,8 @@ textarea
 .wrapped-input /* form inputs & placeholders let div styling show thru */
 {
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	background: transparent;
 	border: none;
 }
@@ -377,6 +432,11 @@ textarea
 .always_horz_scroll
 {
 	overflow-x: scroll;
+}
+
+.popup_element.Inactive,.js .disn,.hidden
+{
+	display: none;
 }
 
 .fullscreen
@@ -432,13 +492,14 @@ textarea
 	position: relative;
 }
 
-.grpelem,.accordion_wrapper /* a child element of a group */
+.accordion_wrapper
 {
 	display: inline;
 	float: left;
+	width: 0px;
 }
 
-.fld-checkbox input[type=checkbox],.fld-radiobutton input[type=radio] /* Hide native checkbox */
+.fld-checkbox input[type=checkbox] /* Hide native checkbox */
 {
 	position: absolute;
 	overflow: hidden;
@@ -446,11 +507,11 @@ textarea
 	height: 1px;
 	width: 1px;
 	margin: -1px;
-	padding: 0px;
-	border: 0px;
+	padding: 0;
+	border: 0;
 }
 
-.fld-checkbox input[type=checkbox] + label,.fld-radiobutton input[type=radio] + label
+.fld-checkbox input[type=checkbox] + label
 {
 	display: inline-block;
 	background-repeat: no-repeat;
@@ -474,57 +535,13 @@ p,h1,h2,h3,h4,h5,h6,ol,ul,span.actAsPara /* disable Android font boosting */
 {
 	vertical-align: super;
 	font-size: 66%;
-	line-height: 0px;
+	line-height: 0;
 }
 
 .subscript
 {
 	vertical-align: sub;
 	font-size: 66%;
-	line-height: 0px;
-}
-
-.horizontalSlideShow /* disable left-right panning on horizondal slide shows */
-{
-	-ms-touch-action: pan-y;
-	touch-action: pan-y;
-}
-
-.verticalSlideShow /* disable up-down panning on vertical slide shows */
-{
-	-ms-touch-action: pan-x;
-	touch-action: pan-x;
-}
-
-.colelem100,.verticalspacer /* a child element of a column that is 100% width */
-{
-	clear: both;
-}
-
-.popup_element.Inactive,.js .disn,.hidden,.breakpoint
-{
-	display: none;
-}
-
-#muse_css_mq
-{
-	position: absolute;
-	display: none;
-	background-color: #FFFFFE;
-}
-
-.fluid_height_spacer
-{
-	position: static;
-	width: 0.01px;
-	float: left;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{
-	body
-	{
-		text-rendering: auto;
-	}
+	line-height: 0;
 }
 
