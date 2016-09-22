@@ -1,4 +1,5 @@
-#disable_overscan=1
+#settings for vga
+
 disable_splash=1
 hdmi_group=2
 hdmi_mode=9
@@ -10,4 +11,5 @@ hdmi_force_hotplug=1
 
 gpu_mem=512
 max_usb_current=1
+dtoverlay=i2c-rtc,ds3231
 dtparam=i2c_arm=on
