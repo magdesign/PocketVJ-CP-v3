@@ -1,5 +1,9 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.01 30.September 2016
+   Added symbols to the colored register menu for better usability
+   Fixed an issue with omxplayer-sync, play once played the file twice... thanks to mdmcclel for fix and pull request
+
 ###CP 1.00 12.September 2016
 
    make sure that after updating the CP, you go to system and hit Update Firmware and Update Mapper to use all the new functions.
