@@ -1,9 +1,9 @@
 This is not compatible with PocketVJ 2.0
-# PocketVJ Control Panel 3.0
+# PocketVJ Control Panel 1.01
 
 http://www.pocketvj.com
 
-This files are used to control the PocketVJ 3.0 via webbrowser.
+This files are used to control the PocketVJ 3.0/3.1 via webbrowser.
 
 
 Clone everything into the `/var/www/` directory.
