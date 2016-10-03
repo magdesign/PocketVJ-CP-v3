@@ -1,5 +1,10 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.02 03.Oktober 2016
+   Fixed Mapper: Pause, Media Stepper, BigMoves
+   Added tag description to shortcuts and link to logo
+   (Still trying to remote mapper without mouse and fix the relauch mapper issue)
+
 ###CP 1.01 30.September 2016
    Added symbols to the colored register menu for better usability
    Fixed an issue with omxplayer-sync, play once played the file twice... thanks to mdmcclel for fix and pull request
