@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#stop all tasks
+/var/www/sync/stopall
+
+#copy id to home folder
+
+cp /var/www/sync/pitile1 /home/pi/.pitile
+
+
+#copy conf file to home folder
+
+cp /var/www/sync/piwall /home/pi/.piwall
+
+#start the piwall function as slave left
+
+su -s /bin/bash -c /var/www/sync/piwall_3bez pi

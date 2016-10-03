@@ -1,0 +1,47 @@
+# wall definition for 3x1 screens with bezel compensation
+[3bez_wall]
+width=3840
+height=1080
+x=0
+y=0
+ 
+
+# corresponding tile definitions
+[3bez_1]
+wall=3bez_wall
+width=1920
+height=1080
+x=0
+y=0
+ 
+
+[3bez_2]
+wall=3bez_wall
+width=1920
+height=1080
+x=1920
+y=0
+ 
+
+[3bez_3]
+wall=3bez_wall
+width=1920
+height=1080
+x=3840
+y=0
+ 
+
+[3bez_4]
+wall=3bez_wall
+width=522
+height=293
+x=545
+y=320
+ 
+
+# config
+[3bez]
+pi1=3bez_1
+pi2=3bez_2
+pi3=3bez_3
+pi4=3bez_4

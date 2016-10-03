@@ -1152,8 +1152,7 @@ if ($_GET['action'] == 'setexpansion') {
 
 
 
-//# PiWall
-
+//# PiWall 4 Screen setup
 
 if ($_GET['action'] == 'piwall_topleft') {
 	system("sudo /var/www/sync/piwall_topleft > /dev/null &");
@@ -1175,8 +1174,33 @@ if ($_GET['action'] == 'piwall_botright') {
 	system("sudo /var/www/sync/piwall_butright > /dev/null &");
 }
 
+//# PiWall 3 Screen Setup
+
+if ($_GET['action'] == 'piwall_left') {
+	system("sudo /var/www/sync/piwall_left > /dev/null &");
+	$outputtext =  "piwall3 slave left";
+}
+
+if ($_GET['action'] == 'piwall_middle') {
+	$outputtext =  "piwall3 slave middle";
+	system("sudo /var/www/sync/piwall_middle > /dev/null &");
+}
+
+if ($_GET['action'] == 'piwall_right') {
+	$outputtext =  "piwall3 slave right";
+	system("sudo /var/www/sync/piwall_right > /dev/null &");
+}
+
+
+//# PiWall Master
+
 if ($_GET['action'] == 'piwall_master') {
 	$outputtext =  "piwall master";
+	system("sudo /var/www/sync/piwall_masteronly > /dev/null &");
+}
+
+if ($_GET['action'] == 'piwall_masterloop') {
+	$outputtext =  "piwall master loop";
 	system("sudo /var/www/sync/piwall_master > /dev/null &");
 }
 

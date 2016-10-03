@@ -9,7 +9,7 @@
 sudo -u pi route add -net 224.0.0.0 netmask 240.0.0.0 eth0 &
 
 #start master piwall
-#avconv -re -i /media/internal/video/piwall.mp4 -vcodec copy -f avi -an udp://239.0.1.23:1234
+avconv -re -i /media/internal/video/piwall.mp4 -vcodec copy -f avi -an udp://239.0.1.23:1234
 
 #start master piwall script as endless loop script
-su -s /bin/bash -c /var/www/sync/piwall_masterloop pi 
+#su -s /bin/bash -c /var/www/sync/piwall_masterloop pi 

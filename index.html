@@ -13,9 +13,9 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?422415861"/>
   <link rel="stylesheet" type="text/css" href="css/master_a-master.css?3881581600"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?295777571" id="pagesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?3953329303" id="pagesheet"/>
   <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?519632529"/>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?12143924"/>
   <![endif]-->
   <!-- Other scripts -->
   <script type="text/javascript">
@@ -196,13 +196,13 @@ var __adobewebfontsappname__ = "muse";
          </div>
         </div>
         <div class="clearfix colelem" id="pu3366-4"><!-- group -->
-         <a class="nonblock nontext grpelem" id="u3366-4" href="/eXtplorer/" target="_blank"><!-- rasterized frame --><img id="u3366-4_img" alt="Filebrowser" width="150" height="40" src="images/u3366-4.png"/></a>
+         <a class="nonblock action nontext grpelem" id="u3366-4" href="/eXtplorer/" target="_blank"><!-- rasterized frame --><img id="u3366-4_img" alt="Filebrowser" width="150" height="40" src="images/u3366-4.png"/></a>
          <div class="clip_frame grpelem" id="u3387"><!-- image -->
           <img class="block" id="u3387_img" src="images/00_files.png" alt="" width="25" height="25"/>
          </div>
         </div>
         <div class="clearfix colelem" id="pu3367-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3367-4" href="?action=diskspace"><!-- rasterized frame --><img id="u3367-4_img" alt="Diskspace" width="150" height="40" src="images/u3367-4.png"/></a>
+         <a class="nonblock nontext grpelem" id="u3367-4" href="?action=diskspace"><!-- rasterized frame --><img id="u3367-4_img" alt="Diskspace" width="150" height="40" src="images/u3367-4.png"/></a>
          <div class="clip_frame grpelem" id="u3372"><!-- image -->
           <img class="block" id="u3372_img" src="images/00_diskspace.png" alt="" width="32" height="32"/>
          </div>
@@ -446,25 +446,32 @@ Right" width="75" height="40" src="images/u3537-6.png"/></a>
          <a class="nonblock action nontext grpelem" id="u3542-5" href="?action=piwall_botright"><!-- rasterized frame --><img id="u3542-5_img" alt="
 4" width="100" height="60" src="images/u3542-5.png"/></a>
         </div>
+        <div class="clearfix colelem" id="u3857-6"><!-- content -->
+         <p>3 Screen Setup</p>
+         <p>Start Slave:</p>
+        </div>
+        <div class="clearfix colelem" id="pu3858-5"><!-- group -->
+         <a class="nonblock action nontext grpelem" id="u3858-5" href="?action=piwall_left"><!-- rasterized frame --><img id="u3858-5_img" alt="
+1" width="100" height="60" src="images/u3858-5.png"/></a>
+         <a class="nonblock action nontext grpelem" id="u3859-5" href="?action=piwall_middle"><!-- rasterized frame --><img id="u3859-5_img" alt="
+2" width="100" height="60" src="images/u3859-5.png"/></a>
+         <a class="nonblock action nontext grpelem" id="u3861-5" href="?action=piwall_right"><!-- rasterized frame --><img id="u3861-5_img" alt="
+3" width="100" height="60" src="images/u3861-5.png"/></a>
+        </div>
         <div class="clearfix colelem" id="u3544-6"><!-- content -->
-         <p>The master file must be named: piwall.mp4</p>
+         <p>The master file must be 1920x1080 and named: piwall.mp4</p>
          <p>stored in /media/internal/video/</p>
         </div>
         <a class="nonblock action nontext colelem" id="u3543-5" href="?action=piwall_master"><!-- rasterized frame --><img id="u3543-5_img" alt="
 PI-WALL MASTER" width="200" height="60" src="images/u3543-5.png"/></a>
-        <div class="clearfix colelem" id="u3545-20"><!-- content -->
-         <p id="u3545-2">Start all slaves before starting the master!</p>
-         <p id="u3545-3">&nbsp;</p>
-         <p id="u3545-4">&nbsp;</p>
-         <p id="u3545-6">You can also use any Linux computer to be master:</p>
-         <p id="u3545-7">&nbsp;</p>
-         <p id="u3545-9">#enable broadcast:</p>
-         <p id="u3545-10">&nbsp;</p>
-         <p id="u3545-12">sudo route add -net 224.0.0.0 netmask 240.0.0.0 eth0</p>
-         <p id="u3545-13">&nbsp;</p>
-         <p id="u3545-15">#stream as master:</p>
-         <p id="u3545-16">&nbsp;</p>
-         <p id="u3545-18">avconv -re -i /your/movie.mp4 -vcodec copy -f avi -an udp://239.0.1.23:1234</p>
+        <div class="clearfix colelem" id="u3545-4"><!-- content -->
+         <p>Start all slaves before starting the master!</p>
+        </div>
+        <a class="nonblock action nontext colelem" id="u3862-5" href="?action=piwall_masterloop"><!-- rasterized frame --><img id="u3862-5_img" alt="
+PI-WALL MASTER Loop" width="200" height="60" src="images/u3862-5.png"/></a>
+        <div class="clearfix colelem" id="u3863-6"><!-- content -->
+         <p>Attention: This loops forever and is not killable</p>
+         <p>Needs restart to stop.</p>
         </div>
        </div>
        <div class="Container invi clearfix grpelem" id="u3479"><!-- column -->
