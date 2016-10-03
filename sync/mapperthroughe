@@ -4,7 +4,7 @@ spawn /opt/fsayskeyboard
 expect "background handler\r"
 
 send -- "5"
-#expect -exact "\[5\]\r"
+expect -exact "\[5\]\r"
 
-#send -- "5"
-#expect -exact "\[5\]\r"
+send -- "5"
+expect -exact "\[5\]\r"

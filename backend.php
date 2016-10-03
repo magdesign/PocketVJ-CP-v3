@@ -1001,9 +1001,21 @@ if ($_GET['action'] == 'mapperleft') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
+if ($_GET['action'] == 'mapperleftbig') {
+	$outputtext =  "move left";
+	system("sudo /var/www/sync/mapperleftbig");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 if ($_GET['action'] == 'mapperright') {
 	$outputtext =  "move right";
 	system("sudo /var/www/sync/mapperright");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mapperrightbig') {
+	$outputtext =  "move right";
+	system("sudo /var/www/sync/mapperrightbig");
 	system("killall -9 /opt/fsayskeyboard");
 }
 
@@ -1013,11 +1025,24 @@ if ($_GET['action'] == 'mapperup') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
+if ($_GET['action'] == 'mapperupbig') {
+	$outputtext =  "move up";
+	system("sudo /var/www/sync/mapperupbig");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 if ($_GET['action'] == 'mapperdown') {
 	$outputtext =  "move down";
 	system("sudo /var/www/sync/mapperdown");
 	system("killall -9 /opt/fsayskeyboard");
 }
+
+if ($_GET['action'] == 'mapperdownbig') {
+	$outputtext =  "move down";
+	system("sudo /var/www/sync/mapperdownbig");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 
 if ($_GET['action'] == 'mapperlayerup') {
 	$outputtext =  "layerup";

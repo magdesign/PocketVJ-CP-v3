@@ -1,0 +1,13 @@
+#!/bin/bash
+
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
+expect /var/www/sync/mapperrighte > /dev/null 2>&1
