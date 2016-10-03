@@ -2,8 +2,9 @@
 
 ###CP 1.02 03.Oktober 2016
    Fixed Mapper: Pause, Media Stepper, BigMoves, Relaunch
-   
-   Added tag description to shortcuts and link to logo
+   Fixed: Terminal link
+   Added: PiWall setting for 3screens, PiWall master loop
+   Added: tag description to shortcuts and link to logo
    (Still trying to remote mapper without mouse)
 
 ###CP 1.01 30.September 2016
