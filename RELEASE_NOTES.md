@@ -1,7 +1,7 @@
 #PocketVJ 3.0 Control Panel
 
-###CP 1.03 13.Oktober 2016
-   Updated to newest omxplayer build (fiexed some alsa issues)
+###CP 1.03 16.Oktober 2016
+   Updated to newest omxplayer build
    Added: Autostart custom file
 
 ###CP 1.02 03.Oktober 2016
