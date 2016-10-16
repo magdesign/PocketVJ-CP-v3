@@ -1,5 +1,9 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.03 13.Oktober 2016
+   Updated to newest omxplayer build (fiexed some alsa issues)
+   Added: Autostart custom file
+
 ###CP 1.02 03.Oktober 2016
    Fixed Mapper: Pause, Media Stepper, BigMoves, Relaunch
    Fixed: Terminal link

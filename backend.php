@@ -1,5 +1,13 @@
 <?php
 
+//# Custom Autostart File
+
+if ($_GET['action'] == 'custom') {
+	$outputtext = "autostart custom";
+	system("sudo cp /var/www/sync/rc.local.custom /etc/rc.local");
+}
+
+
 //# Shortcuts
 
 if ($_GET['action'] == 'pause') {
@@ -514,8 +522,8 @@ if ($_GET['action'] == 'firmwareupdate') {
     system("sudo dpkg -i *.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
     system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
     system("sudo dpkg -i *.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
-	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160713-66f9076_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160713-66f9076_armhf.deb");
-    system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160713-66f9076_armhf.deb");
+	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
+    system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
 	system("sudo apt-get clean");
     //system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
 	//system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
@@ -523,18 +531,9 @@ if ($_GET['action'] == 'firmwareupdate') {
 	system("sudo chmod a+x /usr/bin/omxplayer");
 	system("sudo chmod a+x /usr/bin/omxplayer.bin");
 	system("sudo chmod a+x /usr/bin/omxplayer-sync");
-	$outputtext =  "Update Firmware, Player&Sync to PVJ v3.1";
+	$outputtext =  "Update Firmware, Player & Sync to PVJ v3.1";
 }
 
-
-if ($_GET['action'] == 'firmware') {
-	$outputtext =  "upgrade player and sync";
-	system("sudo cp /media/usb/omxplayer /usr/bin/omxplayer");
-	system("sudo cp /media/usb/omxplayer.bin /usr/bin/omxplayer.bin");
-	system("sudo cp /media/usb/omxplayer-sync /usr/bin/omxplayer-sync");
-	$outputtext =  "Omxplayer Updated";
-	
-}
 
 if ($_GET['action'] == 'controlpanel') {
 	$outputtext =  "update ControlPanel USB";
@@ -638,6 +637,25 @@ if ($_GET['action'] == 'setwifi9') {
 	$outputtext =  "wifi channel 9";
 	system("sudo sed -ri 's/^channel=.+$/channel=9/' /etc/hostapd/hostapd.conf");
 }
+
+if ($_GET['action'] == 'setwifi1') {
+	$outputtext =  "wifi channel 1";
+	system("sudo sed -ri 's/^channel=.+$/channel=1/' /etc/hostapd/hostapd.conf");
+}
+
+//# Wifi 
+
+if ($_GET['action'] == 'wifiup') {
+	$outputtext =  "wifi on";
+	system("ifconfig wlan0 up");
+}
+
+if ($_GET['action'] == 'wifidown') {
+	$outputtext =  "wifi off";
+	system("sudo ifconfig wlan0 down");
+}
+
+
 
 //# Set Projector Stuff
 

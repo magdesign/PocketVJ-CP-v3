@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+cd /home/pi/rpi-fb-matrix
+sudo ./rpi-fb-matrix matrix.cfg &
+
+fbi -T 1 /media/internal/images/pocketvjlogo.jpg 
+
+
+
+
+exit 0
