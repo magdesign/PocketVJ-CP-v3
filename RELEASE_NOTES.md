@@ -1,5 +1,8 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.03a 02.November 2016
+   Fixed the issue that testscreen and imageplayer did not display fullscreen
+
 ###CP 1.03 16.Oktober 2016
    Updated to newest omxplayer build
    Added: Autostart custom file
