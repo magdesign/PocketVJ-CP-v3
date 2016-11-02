@@ -1,7 +1,8 @@
-# force 1920x1200
+# force resolution of 1920x1200
 
 disable_splash=1
 hdmi_force_hotplug=1
+disable_overscan=1
 
 framebuffer_width=1920
 framebuffer_height=1200

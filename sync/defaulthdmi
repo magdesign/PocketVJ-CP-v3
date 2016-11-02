@@ -2,6 +2,7 @@
 
 hdmi_force_hotplug=1
 disable_splash=1
+disable_overscan=1
 
 # uncomment to increase signal to HDMI
 #config_hdmi_boost=5

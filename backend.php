@@ -172,26 +172,34 @@ if ($_GET['action'] == 'startimagemanual') {
 //# Slideshow Time
 
 if ($_GET['action'] == 'slidetime5') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslideshow");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslidesusb");
+	system("sudo /var/www/sync/startimage > /dev/null &");
 	$outputtext =  "set slideshowtime to 5s";
 }
 
 if ($_GET['action'] == 'slidetime10') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=10/' /var/www/sync/xsessionslideshow");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=10/' /var/www/sync/xsessionslidesusb");
+	system("sudo /var/www/sync/startimage > /dev/null &");
 	$outputtext =  "set slideshowtime to 10s";
 }
 
 if ($_GET['action'] == 'slidetime15') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=15/' /var/www/sync/xsessionslideshow");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=15/' /var/www/sync/xsessionslidesusb");
+	system("sudo /var/www/sync/startimage > /dev/null &");
 	$outputtext =  "set slideshowtime to 15s";
 }
 
 if ($_GET['action'] == 'slidetime0') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslideshow");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslidesusb");
+	system("sudo /var/www/sync/startimage > /dev/null &");
 	$outputtext =  "set slideshowtime to 15s";
 }
 

@@ -2,6 +2,8 @@
 
 hdmi_force_hotplug=1
 disable_splash=1
+disable_overscan=1
+
 hdmi_group=2
 hdmi_mode=16
 config_hdmi_boost=4
