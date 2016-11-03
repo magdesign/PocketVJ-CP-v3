@@ -29,22 +29,6 @@ Roadmap
 - Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
 ..
 
-
-Testing:
-********
-
-- test master/slave with 1h loop, 3 players, .log files
-- test imageplayer/audio
-- test impress
-- test networking as wifi internet hotspot
-- test update
-- test piwall
-- mapper, all remote buttons
-- test all slideshow functions / pdf
-- test extension
-- more than 3 pocketvjs in same environment, is wifi faster when switching channels?
-
-
 Manual:
 *******
 - shortcuts for mapping mode with keyboard
