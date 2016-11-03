@@ -17,7 +17,7 @@ if [[ "$1" == "--on" ]]; then
     #    echo "Already starting up"
     #else
         echo "Turning ON"
-        ./pjlink-wrapper 192.168.2.254 power on > /dev/null
+        /var/www/sync./pjlink-wrapper 192.168.2.254 power on > /dev/null
     #fi
 elif [[ "$1" == "--off" ]]; then
     #if [[ "$STATUS" == "OFF" ]]; then
@@ -26,7 +26,7 @@ elif [[ "$1" == "--off" ]]; then
     #    echo "Already shutting down"
     #else
         echo "Turning OFF"
-        ./pjlink-wrapper 192.168.2.254 power off > /dev/null
+        /var/www/sync./pjlink-wrapper 192.168.2.254 power off > /dev/null
     #fi
 else
     echo "Usage: $0 [--on|--off]"
