@@ -5,9 +5,10 @@ Roadmap
 - make mapper working without mouse
 - button to manualy load a mouse connected after boot
 - change the startscripts with option -b to blank screen
-- Slow motion function (1 Increase Speed 2 Decrease Speed to dbus control no ready yet, waiting)
+- Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version)
 
 - adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
+
 - sync for slideshow
 - Master Slave auto-detection
 - integrate LTC / SMPTE function (https://github.com/x42/libltc)
