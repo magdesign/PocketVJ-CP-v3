@@ -1,5 +1,8 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.03b 03.November 2016
+   Fixed PJLink Projector remote On/Off, was missing direct file path...
+
 ###CP 1.03a 02.November 2016
    Fixed the issue that testscreen and imageplayer did not display fullscreen
 
