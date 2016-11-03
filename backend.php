@@ -663,6 +663,21 @@ if ($_GET['action'] == 'wifidown') {
 	system("sudo ifconfig wlan0 down");
 }
 
+//# Disable Wifi & Bluetooth
+
+if ($_GET['action'] == 'wifidisable') {
+	$outputtext =  "wifi&bluetooth permanent off";
+	system("sudo cp /var/www/sync/raspi-blacklist.conf /etc/modprobe.d/raspi-blacklist.conf");
+}
+
+if ($_GET['action'] == 'wifienable') {
+	$outputtext =  "wifi&bluetooth permanent on";
+	system("sudo cp /var/www/sync/raspi-blacklist.empty /etc/modprobe.d/raspi-blacklist.conf");
+}
+
+
+
+
 
 
 //# Set Projector Stuff
