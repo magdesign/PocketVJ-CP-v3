@@ -12,19 +12,19 @@
    Added: Autostart custom file
 
 ###CP 1.02 03.Oktober 2016
-   Fixed Mapper: Pause, Media Stepper, BigMoves, Relaunch
-   Fixed: Terminal link
-   Added: PiWall setting for 3screens, PiWall master loop
-   Added: tag description to shortcuts and link to logo
-   (Still trying to remote mapper without mouse)
+   Fixed Mapper: Pause, Media Stepper, BigMoves, Relaunch<br />
+   Fixed: Terminal link<br />
+   Added: PiWall setting for 3screens, PiWall master loop<br />
+   Added: tag description to shortcuts and link to logo<br />
+   (Still trying to remote mapper without mouse)<br />
 
 ###CP 1.01 30.September 2016
-   Added symbols to the colored register menu for better usability
+   Added symbols to the colored register menu for better usability<br />
    Fixed an issue with omxplayer-sync, play once played the file twice... thanks to mdmcclel for fix and pull request
 
 ###CP 1.00 12.September 2016
 
-   make sure that after updating the CP, you go to system and hit Update Firmware and Update Mapper to use all the new functions.
+   make sure that after updating the CP, you go to system and hit Update Firmware and Update Mapper to use all the new functions.<br />
    Be patient, updating takes several minutes!
     
     - Added seamless loop
