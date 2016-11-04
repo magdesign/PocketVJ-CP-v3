@@ -1,7 +1,7 @@
 #PocketVJ 3.0 Control Panel
 
 ###CP 1.03b 03.November 2016
-   Fixed PJLink Projector remote On/Off, was missing direct file path
+   Fixed PJLink Projector remote On/Off, was missing direct file path<br />
    Fixed startmasterusb
 
 ###CP 1.03a 02.November 2016
