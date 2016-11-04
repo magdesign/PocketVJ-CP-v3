@@ -131,7 +131,7 @@ if ($_GET['action'] == 'startslave') {
 	$outputtext =  "start player as slave";
 }
 
-if ($_GET['action'] == 'startusb') {
+if ($_GET['action'] == 'startmasterusb') {
 	exec("sudo /var/www/sync/startmasterusb");
 	$outputtext =  "start player in usb mode";	
 }
