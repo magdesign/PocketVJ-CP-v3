@@ -8,7 +8,7 @@
    Fixed the issue that testscreen and imageplayer did not display fullscreen
 
 ###CP 1.03 16.Oktober 2016
-   Updated to newest omxplayer build
+   Updated to newest omxplayer build<br />
    Added: Autostart custom file
 
 ###CP 1.02 03.Oktober 2016
