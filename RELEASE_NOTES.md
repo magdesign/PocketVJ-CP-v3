@@ -5,7 +5,8 @@
    Fixed startmasterusb
 
 ###CP 1.03a 02.November 2016
-   Fixed the issue that testscreen and imageplayer did not display fullscreen
+   Fixed the issue that testscreen and imageplayer did not display fullscreen<br />
+   After upgrading, go to "display" and selecet "default" to update the settings
 
 ###CP 1.03 16.Oktober 2016
    Updated to newest omxplayer build<br />
