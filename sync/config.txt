@@ -51,3 +51,4 @@ hdmi_force_hotplug=1
 gpu_mem=512
 max_usb_current=1
 dtparam=i2c_arm=on
+dtparam=audio=on

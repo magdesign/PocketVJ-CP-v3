@@ -232,12 +232,12 @@ if ($_GET['action'] == 'testscreenoff') {
 
 //# Audioplayer
 
-if ($_GET['action'] == 'audio') {
+if ($_GET['action'] == 'startaudio') {
 	exec("sudo /var/www/sync/startaudio");
 	$outputtext = "start audio player";
 }
 
-if ($_GET['action'] == 'audiousb') {
+if ($_GET['action'] == 'startaudiousb') {
 	$outputtext =  "start audio player in usb mode";
 	exec("sudo /var/www/startaudiosub");
 }
