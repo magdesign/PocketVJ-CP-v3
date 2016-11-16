@@ -10,37 +10,35 @@
 # min (0 - 59)
 #
 #
-#
 # command for starting the videoplayer:
-# /var/www/sync/startmaster.py
-#
-# command for stopping the videoplayer:
-# /var/www/sync/omxkill.py
-#
+# /var/www/sync/startmaster
+# 
+# command for stopping:
+# /var/www/sync/stopall
 #
 # command for starting the videoplayer only playing video 01_*:
-# /var/www/sync/startmaster01.py
+# /var/www/sync/startmaster01
 # this works from 01 up to 06, more to be implemented on request
 #
-#
 # command for starting the slideshow:
-# /var/www/sync/startimage.py
+# /var/www/sync/startimage
 #
-# command for stopping the slideshow:
-# /var/www/sync/testscreenoff.py
+# command for starting the mapper:
+# /var/www/sync/relaunchmapper
 #
-# IMPORTANT:        
-# If you have more than one task, you have to stop the previous task before
-# starting a new one!
-# 
+# command to start projector: 
+# /var/www/sync/beamer_on_off.sh --on
+#
+# command to stop projector:
+# /var/www/sync/beamer_on_off.sh –off
 #
 # EXAMPLE: 
 # Following entry starts the videoplayer every day at midnight and stops it
 # every day at noon:
 
 
-0 12 * * *  /var/www/sync/omxkill.py
-0 0 * * *  /var/www/sync/startmaster.py
+0 12 * * *  /var/www/sync/stopall
+0 0 * * *  /var/www/sync/startmaster
 
 
 
