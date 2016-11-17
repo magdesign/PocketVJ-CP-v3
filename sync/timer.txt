@@ -27,10 +27,10 @@
 # /var/www/sync/relaunchmapper
 #
 # command to start projector: 
-# /var/www/sync/beamer_on_off.sh --on
+# /var/www/sync/beameron
 #
 # command to stop projector:
-# /var/www/sync/beamer_on_off.sh –off
+# /var/www/sync/beameroff
 #
 # EXAMPLE: 
 # Following entry starts the videoplayer every day at midnight and stops it
