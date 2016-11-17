@@ -4,7 +4,8 @@
    Added a permanent wifi and bluetooth disable<br />
    Fixed audioplayer, did not workd because dtoverlay in config.txt was missing<br />
    Updated the timer.txt example file (make a factory preset to get it)<br />
-
+   Added projector power on/off script which works with scheduler<br />
+   
 ###CP 1.03b 03.November 2016
    Fixed PJLink Projector remote On/Off, was missing direct file path<br />
    Fixed startmasterusb
