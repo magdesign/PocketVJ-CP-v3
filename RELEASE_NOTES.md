@@ -1,5 +1,9 @@
 #PocketVJ 3.0 Control Panel
 
+###CP 1.05 18.November 2016
+   Added setting to use RCA (analog) video output, could not test because I dont own analog hardware, can someone please test and report back, thanks!<br />
+   Improved the response time when loading CP in browser<br />
+
 ###CP 1.04 15.November 2016
    Added a permanent wifi and bluetooth disable<br />
    Fixed audioplayer, did not workd because dtoverlay in config.txt was missing<br />
