@@ -1,0 +1,14 @@
+#Setting for analog RCA PAL Output 4:3
+
+hdmi_ignore_hotplug=1
+sdtv_mode=0
+sdtv_aspect=1
+
+disable_splash=1
+disable_overscan=1
+
+gpu_mem=512
+max_usb_current=1
+dtoverlay=i2c-rtc,ds3231
+dtparam=i2c_arm=on
+dtparam=audio=on

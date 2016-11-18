@@ -454,12 +454,20 @@ if ($_GET['action'] == 'forcevga') {
 }
 
 
-
 if ($_GET['action'] == 'force1200') {
 	$outputtext =  "force 1920x1200 rgb";
 	system("sudo cp /var/www/sync/force1200 /boot/config.txt");
 }
 
+if ($_GET['action'] == 'analog1') {
+	$outputtext =  "force RCA PAL output";
+	system("sudo cp /var/www/sync/analog1 /boot/config.txt");
+}
+
+if ($_GET['action'] == 'analog2') {
+	$outputtext =  "force RCA NTSC output";
+	system("sudo cp /var/www/sync/analog2 /boot/config.txt");
+}
 
 
 if ($_GET['action'] == 'clean') {
