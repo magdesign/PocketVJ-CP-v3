@@ -1,4 +1,4 @@
-#PocketVJ 3.0 Control Panel
+#PocketVJ 3.0/3.1 Control Panel
 
 ###CP 1.05 18.November 2016
    Added setting to use RCA (analog) video output, could not test because I dont own analog hardware, can someone please test and report back, thanks!<br />
