@@ -1,5 +1,8 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.05a 20.November 2016
+   Fixed: Mapper Add Triangle was not working<br />
+
 ###CP 1.05 18.November 2016
    Added setting to use RCA (analog) video output, could not test because I dont own analog hardware, can someone please test and report back, thanks!<br />
    Improved the response time when loading CP in browser<br />
