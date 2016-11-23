@@ -2,6 +2,7 @@ Roadmap
 *******
 
 - option to rotate screen (boot/config.txt = display_rotate=2 https://github.com/Evilpaul/RPi-config/blob/master/config.txt
+- integrate rtp (rtsp, http all streaming methods...)
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manualy load a mouse connected after boot
