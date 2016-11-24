@@ -1,5 +1,7 @@
 #this setting forces 1024x768 VGA
 
+display_rotate=0
+
 hdmi_force_hotplug=1
 disable_splash=1
 disable_overscan=1

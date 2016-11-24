@@ -1,4 +1,6 @@
 
+display_rotate=0
+
 disable_splash=1
 hdmi_force_hotplug=1
 disable_overscan=1

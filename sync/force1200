@@ -1,17 +1,19 @@
-# force resolution of 1920x1200
+# force resolution of 1680 x 1050
+
+display_rotate=0
 
 disable_splash=1
 hdmi_force_hotplug=1
 disable_overscan=1
 
-framebuffer_width=1920
-framebuffer_height=1200
+framebuffer_width=1680
+framebuffer_height=1050
 
-# force 1920x1200
+
 hdmi_group=2
-hdmi_mode=68
+hdmi_mode=58
 hdmi_drive=1
-config_hdmi_boost=7
+#config_hdmi_boost=5
 
 gpu_mem=512
 max_usb_current=1

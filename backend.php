@@ -410,7 +410,6 @@ if ($_GET['action'] == 'iplan') {
 }
 
 
-
 //# Set Boot.conf resolution
 
 if ($_GET['action'] == 'bootconf') {
@@ -490,6 +489,39 @@ if ($_GET['action'] == 'screenon') {
 if ($_GET['action'] == 'screenoff') {
 	$outputtext = shell_exec('sudo /opt/vc/bin/tvservice -o');
 }
+
+//# Set Boot.conf resolution rotate screen
+
+if ($_GET['action'] == 'rotate0') {
+	system("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0/' /boot/config.txt");
+	$outputtext =  "Display Rotation = Normal";
+}
+
+if ($_GET['action'] == 'rotate1') {
+	system("sudo sed -ri 's/^display_rotate=.+$/display_rotate=1/' /boot/config.txt");
+	$outputtext =  "Display Rotation = 90°";
+}
+
+if ($_GET['action'] == 'rotate2') {
+	system("sudo sed -ri 's/^display_rotate=.+$/display_rotate=2/' /boot/config.txt");
+	$outputtext =  "Display Rotation = 180°";
+}
+
+if ($_GET['action'] == 'rotate3') {
+	system("sudo sed -ri 's/^display_rotate=.+$/display_rotate=3/' /boot/config.txt");
+	$outputtext =  "Display Rotation = 270°";
+}
+
+if ($_GET['action'] == 'flip1') {
+	system("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0x10000/' /boot/config.txt");
+	$outputtext =  "Display Flip Horizontally";
+}
+
+if ($_GET['action'] == 'flip2') {
+	system("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0x20000/' /boot/config.txt");
+	$outputtext =  "Display Flip Vertically";
+}
+
 
 //# Display Info
 
@@ -607,10 +639,6 @@ if ($_GET['action'] == 'mapperaudioupdate') {
 }
 
 
-
-
-
-
 //if ($_GET['action'] == 'depencies1') {
 //	$outputtext =  "update depencies";
 //	system("sudo /var/www/sync/stopall");
@@ -682,10 +710,6 @@ if ($_GET['action'] == 'wifienable') {
 	$outputtext =  "wifi&bluetooth permanent on";
 	system("sudo cp /var/www/sync/raspi-blacklist.empty /etc/modprobe.d/raspi-blacklist.conf");
 }
-
-
-
-
 
 
 //# Set Projector Stuff
