@@ -2,7 +2,7 @@
 
 ###CP 1.06 24.November 2016
    Added rotate screen options<br />
-   removed 1920 x 1200 resolution since it caused glitches, added 1680x1080 instead<br />
+   removed 1920 x 1200 resolution since it caused glitches, added 1680x1050 instead<br />
 
 ###CP 1.05a 20.November 2016
    Fixed: Mapper "Add Triangle" was not working<br />
