@@ -579,6 +579,8 @@ if ($_GET['action'] == 'firmwareupdate') {
 	system("sudo chmod a+x /usr/bin/omxplayer");
 	system("sudo chmod a+x /usr/bin/omxplayer.bin");
 	system("sudo chmod a+x /usr/bin/omxplayer-sync");
+	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
 	$outputtext =  "Update Firmware, Player & Sync to PVJ v3.1";
 }
 
@@ -591,6 +593,8 @@ if ($_GET['action'] == 'controlpanel') {
 	system("sudo chmod 755 -R /var/www");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
 	$outputtext =  "ControlPanel Updated";
 }
 
@@ -601,6 +605,8 @@ if ($_GET['action'] == 'controlpanelintern') {
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
 	$outputtext =  "ControlPanel Updated";
 
 }
@@ -613,6 +619,8 @@ if ($_GET['action'] == 'controlpanelweb') {
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
 	$outputtext =  "ControlPanel Updated";
 
 }
