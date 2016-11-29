@@ -1,5 +1,8 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.06a 29.November 2016
+   Mapper Update did remove path to videos and images, thanks to martani for bugreport<br />
+
 ###CP 1.06 24.November 2016
    Added rotate screen options<br />
    removed 1920 x 1200 resolution since it caused glitches, added 1680x1050 instead<br />
