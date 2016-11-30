@@ -32,6 +32,8 @@ Roadmap
 - DMX Creator bridge (emulate usb keyboard over gpio)
 - webcam and 3G hotspot for remote controlling
 - Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
+- integration to a third party mapping tool
+- 
 ..
 
 Manual:
