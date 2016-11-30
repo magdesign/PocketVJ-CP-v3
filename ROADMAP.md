@@ -5,12 +5,13 @@ Roadmap
 - integrate rtp (rtsp, http all streaming methods...)
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
-- button to manualy load a mouse connected after boot
+- button to manually load a mouse connected after boot
 - change the startscripts with option -b to blank screen
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version)
 - Sync in seamless loop 
 
 - adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
+   omxplayer via OSC: https://github.com/Hemisphere-Project/HPlayer
 
 - sync for slideshow
 - Master Slave auto-detection
