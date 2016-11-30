@@ -1192,12 +1192,12 @@ if ($_GET['action'] == 'impressclose') {
 
 if ($_GET['action'] == 'beameron') {
 	$outputtext =  "Projector ON";
-	system("sudo /var/www/sync/beamer_on_off.sh --on");
+	system("sudo /var/www/sync/beameron");
 }
 
 if ($_GET['action'] == 'beameroff') {
-	$outputtext =  "Projector ON";
-	system("sudo /var/www/sync/beamer_on_off.sh --off");
+	$outputtext =  "Projector OFF";
+	system("sudo /var/www/sync/beameroff");
 }
 
 //# Change Network to DHCP/Static
