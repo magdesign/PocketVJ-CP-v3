@@ -3,6 +3,7 @@ Roadmap
 
 - slideshow with ken burns effect (maybe with QT)
 - integrate rtp (rtsp, http all streaming methods...)
+- option to switch to usb soundcard for better audio
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manually load a mouse connected after boot
