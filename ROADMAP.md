@@ -34,6 +34,7 @@ Roadmap
 - webcam and 3G hotspot for remote controlling
 - Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
 - integration to a third party mapping tool
+- make compatible with other arm boards like nanoPi
 - and much more....
 ..
 
@@ -42,10 +43,6 @@ Manual:
 - shortcuts for mapping mode with keyboard
 - more description for tcpsclient, with example using syphoner to capture software
 - how to change things with shell in a box link
-- overall specs description and specs for the extension board, preorder link
-- workflow tutorial video: from mapping tool to pocketvj
-
-
 =======================
 ©2016 marc-andré gasser
 
