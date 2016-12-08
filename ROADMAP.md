@@ -1,6 +1,6 @@
 Roadmap
 *******
-- more store settings ins mapper
+- more store settings in mapper 6 presets
 - scheduler can load various mapper settings
 - slideshow with ken burns effect (maybe with QT)
 - integrate rtp (rtsp, http all streaming methods...)
