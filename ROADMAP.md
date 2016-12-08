@@ -1,6 +1,7 @@
 Roadmap
 *******
-
+- more store settings ins mapper
+- scheduler can load various mapper settings
 - slideshow with ken burns effect (maybe with QT)
 - integrate rtp (rtsp, http all streaming methods...)
 - integrate miracast (https://github.com/albfan/miraclecast)
