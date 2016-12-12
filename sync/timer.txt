@@ -23,8 +23,11 @@
 # command for starting the slideshow:
 # /var/www/sync/startimage
 #
-# command for starting the mapper:
+# command for starting the mapper with last used setting:
 # /var/www/sync/relaunchmapper
+#
+# command for starting the mapper with a preset3:
+# /var/www/sync/mapperimport3
 #
 # command to start projector: 
 # /var/www/sync/beameron
