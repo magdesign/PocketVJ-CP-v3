@@ -1,13 +1,11 @@
 Roadmap
 *******
-- more store settings in mapper 6 presets
-- scheduler can load various mapper settings
+
 - slideshow with ken burns effect (maybe with QT)
 - integrate rtp (rtsp, http all streaming methods...)
 - integrate miracast (https://github.com/albfan/miraclecast)
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) to remote mapper functions, especiallay the mouse
 - integrate icacast, darkice, casting soltutions
-- option to switch to usb soundcard for better audio
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manually load a mouse connected after boot
