@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#this script exorts the mapper settings to /media/internal/mappersettings.xml
+#made for PVJ 3.1
+
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
+
+sudo cp /media/internal/mappersets/mappersetting3.xml /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/surfaces.xml
+
+/home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example -f &

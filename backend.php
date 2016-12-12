@@ -7,7 +7,6 @@ if ($_GET['action'] == 'custom') {
 	system("sudo cp /var/www/sync/rc.local.custom /etc/rc.local");
 }
 
-
 //# Shortcuts
 
 if ($_GET['action'] == 'pause') {
@@ -19,7 +18,6 @@ if ($_GET['action'] == 'fastforward') {
 	$outputtext =  "seek video forward";
 	system ("sudo /var/www/sync/dbuscontrol.sh seek 10000000");
 }
-
 
 if ($_GET['action'] == 'stop') {
 	$outputtext =  "all players stopped";
@@ -820,6 +818,28 @@ if ($_GET['action'] == 'both_out') {
 	$outputtext =  "Audio set to both";
 }
 
+if ($_GET['action'] == 'alsa_out') {
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /etc/rc.local");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startslave");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster01");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster02");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster03");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster04");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster05");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster06");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster07");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmaster08");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone01");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone02");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone03");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone04");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone05");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startseamless");
+	$outputtext =  "Audio set to alsa:hw:1,0";
+}
 
 if ($_GET['action'] == 'imageconform') {
 	system("sudo mogrify -format jpg /media/internal/images/*.png");
@@ -943,7 +963,7 @@ if ($_GET['action'] == 'mappermappingmode') {
 }
 
 if ($_GET['action'] == 'mappermediaselect') {
-	$outputtext =  "select input mesh";
+	$outputtext =  "select input mesh, first select grid";
 	system("sudo /var/www/sync/mapper4");
 	system("killall -9 /opt/fsayskeyboard");
 }
@@ -989,19 +1009,49 @@ if ($_GET['action'] == 'mapperimport1') {
 	system("sudo /var/www/sync/mapperimport1");
 }
 
-if ($_GET['action'] == 'mapperexport1') {
-	$outputtext =  "export to /internal/mappersets/mappersetting1.xml";
-	system("sudo /var/www/sync/mapperexport1");
-}
-
 if ($_GET['action'] == 'mapperimport2') {
-	$outputtext =  "import mappersetting1.xml";
+	$outputtext =  "import mappersetting2.xml";
 	system("sudo /var/www/sync/mapperimport2");
 }
 
+if ($_GET['action'] == 'mapperimport3') {
+	$outputtext =  "import mappersetting3.xml";
+	system("sudo /var/www/sync/mapperimport3");
+}
+
+if ($_GET['action'] == 'mapperimport4') {
+	$outputtext =  "import mappersetting4.xml";
+	system("sudo /var/www/sync/mapperimport4");
+}
+
+if ($_GET['action'] == 'mapperimport5') {
+	$outputtext =  "import mappersetting5.xml";
+	system("sudo /var/www/sync/mapperimport5");
+}
+
+if ($_GET['action'] == 'mapperexport1') {
+	$outputtext =  "export mappersetting1.xml";
+	system("sudo /var/www/sync/mapperexport1");
+}
+
 if ($_GET['action'] == 'mapperexport2') {
-	$outputtext =  "export to /internal/mappersets/mappersetting2.xml";
+	$outputtext =  "export to mappersetting2.xml";
 	system("sudo /var/www/sync/mapperexport2");
+}
+
+if ($_GET['action'] == 'mapperexport3') {
+	$outputtext =  "export to mappersetting3.xml";
+	system("sudo /var/www/sync/mapperexport3");
+}
+
+if ($_GET['action'] == 'mapperexport4') {
+	$outputtext =  "export to mappersetting4.xml";
+	system("sudo /var/www/sync/mapperexport4");
+}
+
+if ($_GET['action'] == 'mapperexport5') {
+	$outputtext =  "export to mappersetting5.xml";
+	system("sudo /var/www/sync/mapperexport5");
 }
 
 if ($_GET['action'] == 'mapperundo') {

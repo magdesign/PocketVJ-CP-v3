@@ -1,8 +1,11 @@
 #!/bin/bash
 
 #this script exorts the mapper settings to /media/internal/mappersettings.xml
-#first save then export
+
+#first save the comp
 
 sudo /var/www/sync/mappers
+
+#then export to setting
 
 sudo cp /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/surfaces.xml /media/internal/mappersets/mappersetting2.xml
