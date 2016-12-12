@@ -44,7 +44,7 @@ pip install python-osc
 
 ...
 
-get the omxplayer-sync omxplayer since all is build on this: 
+get the omxplayer-sync: 
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
 
