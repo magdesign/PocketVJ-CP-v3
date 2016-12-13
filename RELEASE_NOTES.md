@@ -6,8 +6,8 @@
   Mapper presets 1-5<br />
   ALSA option for USB soundcard output (make sure to update firmware)<br />
   Updated manual for scheduler/mappersetting commands<br />
+  Fixed Screenshot function<br />
   Updated timer.txt<br />
-
 ###CP 1.06a 29.November 2016
    Mapper Update did remove path to videos and images, thanks to martani for bugreport, fixed now!<br />
 
