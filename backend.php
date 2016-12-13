@@ -139,7 +139,7 @@ if ($_GET['action'] == 'pause') {
 	$outputtext = "Pause, click again to resume";
 }
 
-if ($_GET['action'] == 'printscreen') {
+if ($_GET['action'] == 'screenshot') {
 	exec("sudo /var/www/sync/screenshot");
 	$outputtext = "Printscreen saved in /media/internal/images";
 }
