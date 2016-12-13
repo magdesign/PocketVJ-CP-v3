@@ -5,7 +5,8 @@ Roadmap
 - integrate rtp (rtsp, http all streaming methods...)
 - integrate miracast (https://github.com/albfan/miraclecast)
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) to remote mapper functions, especiallay the mouse
-- integrate icacast, darkice, casting soltutions
+- integrate icacast, darkice, casting soltutions (its easy, but the all produce various deleays, unusable)
+- .svg to .xml parser to import .svg from mapping softwares to mapper
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manually load a mouse connected after boot
@@ -45,6 +46,7 @@ Manual:
 - shortcuts for mapping mode with keyboard
 - more description for tcpsclient, with example using syphoner to capture software
 - how to change things with shell in a box link
+
 =======================
 ©2016 marc-andré gasser
 
