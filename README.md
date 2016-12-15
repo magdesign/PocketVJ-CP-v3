@@ -51,14 +51,15 @@ sudo aptitude install libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev li
 
 ...
 
+configure janus as described here:
+https://planb.nicecupoftea.org/2015/10/17/hackspace-hat-quick-install-or-audio-and-video-streaming-from-a-raspberry-pi-to-a-remote-or-local-webrtc-compatible-browser/
+
+...
+
 get the omxplayer-sync: 
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
 
-...
-
-configure janus as described here:
-https://planb.nicecupoftea.org/2015/10/17/hackspace-hat-quick-install-or-audio-and-video-streaming-from-a-raspberry-pi-to-a-remote-or-local-webrtc-compatible-browser/
 ...
 
 If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/ProjectionMappingState.cpp as following:
