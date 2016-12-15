@@ -2,10 +2,10 @@ Roadmap
 *******
 
 - slideshow with ken burns effect (maybe with QT)
-- integrate rtp (rtsp, http all streaming methods...)
+- integrate rtp (rtsp, http all streaming methods..web rtc in version 3.2 coming...)
 - integrate miracast (https://github.com/albfan/miraclecast)
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) to remote mapper functions, especiallay the mouse
-- integrate icacast, darkice, casting soltutions (its easy, but they all produce various deleays on the user side, unusable)
+- integrate sound analyzer for use with mic: https://github.com/karlstav/cava
 - .svg to .xml parser to import .svg from mapping softwares to mapper
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
