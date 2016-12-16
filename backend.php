@@ -22,7 +22,7 @@ if ($_GET['action'] == 'fastforward') {
 if ($_GET['action'] == 'stop') {
 	$outputtext =  "all players stopped";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	#system("sudo /var/www/sync/omxkill.py");
+	#system("sudo /var/www/sync/omxkill");
 	#system("sudo /var/www/sync/testscreenoff.py &");
 	#system("sudo killall -9 /home/pi/of_v0.8.4/addons/ofxPiMapper/example/./bin/example");
 	#system("sudo killall -9 /usr/bin/TCPSClient.bin");
@@ -249,7 +249,7 @@ if ($_GET['action'] == 'stopaudio') {
 //# Testtone
 
 if ($_GET['action'] == 'testtone') {
-	exec("sudo /var/www/sync/omxkill.py");
+	exec("sudo /var/www/sync/omxkill");
 	exec("sudo omxplayer-sync -mu /var/www/sync/testtone.mp3 > /dev/null 2>&1 & echo $!");
 	$outputtext = "sinus 440 testtone";
 }
@@ -860,7 +860,7 @@ if ($_GET['action'] == 'imageconform') {
 	$outputtext =  "FINISHED! all images converted to jpg and resized to HD";
 	
 	system("sudo killall fbi");
-	system("sudo /var/www/sync/omxkill.py");
+	system("sudo /var/www/sync/omxkill");
 	system("sudo /var/www/sync/startimage > /dev/null 2>&1 & echo $!");
 	$outputtext =  "starting image player";
 
@@ -1336,6 +1336,28 @@ if ($_GET['action'] == 'piwall_masterloop') {
 	$outputtext =  "piwall master loop";
 	system("sudo /var/www/sync/piwall_master > /dev/null &");
 }
+
+//# Stream Audio from ALSA to Janus server only available in PocketVJ 3.2
+//# might not work when usb soundcard is connected, due indexing of devices, loopback must be device 2
+//# check with cat /proc/asound/modules
+//# Access with link: http://192.168.2.100/streamer/streamingtest.html
+
+if ($_GET['action'] == 'audiostream') {
+	$outputtext =  "start video master loop and send audio to server";
+	system("sudo modprobe snd-aloop > /dev/null &");
+	system("sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &");
+	system("sudo /usr/bin/omxplayer-sync -mu -o alsa:hw:1,1 /media/internal/video/* &");
+	system("sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &");
+}
+
+if ($_GET['action'] == 'audiostreamstop') {
+	$outputtext =  "stop video master loop and stop audio server";
+	system("sudo /var/www/sync/omxkill");
+	system("sudo pkill gst-launch");
+	system("sudo killall -9 janus");
+	system("sudo modprobe -r snd-aloop");
+}
+
 
 
 

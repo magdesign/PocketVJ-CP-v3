@@ -7,4 +7,6 @@ sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example
 
 sudo cp /media/internal/mappersets/mappersetting4.xml /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/surfaces.xml
 
+sleep 0.5
+
 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example -f &

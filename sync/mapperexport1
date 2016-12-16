@@ -1,8 +1,12 @@
 #!/bin/bash
 
 #this script exorts the mapper settings to /media/internal/mappersettings.xml
-#made for PVJ 2.0
 
+#first save the setting
 sudo /var/www/sync/mappers
 
+#wait a tiny little bit
+sleep 0.2
+
+#copy the setting
 sudo cp /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/surfaces.xml /media/internal/mappersets/mappersetting1.xml

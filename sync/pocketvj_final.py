@@ -60,7 +60,7 @@ class ButtonController(object):
 
 # Commands
 def cmd_stop_omx():     #define stop kommando
-    os.system ("sudo /var/www/sync/omxkill.py")
+    os.system ("sudo /var/www/sync/omxkill")
     print "stop all movies"
     
 def cmd_start_vid1():   #define video 1
