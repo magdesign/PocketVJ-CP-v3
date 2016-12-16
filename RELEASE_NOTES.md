@@ -1,5 +1,8 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.07a 16.December 2016
+  Stability improvements for loading and saving mapper presets<br />
+  
 ###CP 1.07a 13.December 2016
   Fixed Screenshot function<br />
 
