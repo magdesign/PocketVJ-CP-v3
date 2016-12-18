@@ -3,7 +3,7 @@ Roadmap
 
 - pause Knob in shortcuts global (checks what is running, then iniciate pause command for this app)
 - slideshow with ken burns effect (maybe with QT)
-- integrate rtp (rtsp, http all streaming methods..web rtc in version 3.2 coming...)
+- integrate rtp (web rtc is coming...in beta tests now)
 - integrate miracast (https://github.com/albfan/miraclecast)
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) to remote mapper functions, especiallay the mouse
 - integrate sound analyzer for use with mic: https://github.com/karlstav/cava
