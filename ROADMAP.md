@@ -1,6 +1,7 @@
 Roadmap
 *******
 
+- pause Knob in shortcuts global (checks what is running, then iniciate pause command for this app)
 - slideshow with ken burns effect (maybe with QT)
 - integrate rtp (rtsp, http all streaming methods..web rtc in version 3.2 coming...)
 - integrate miracast (https://github.com/albfan/miraclecast)
