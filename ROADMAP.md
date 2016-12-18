@@ -2,12 +2,12 @@ Roadmap
 *******
 
 - pause Knob in shortcuts global (checks what is running, then iniciate pause command for this app)
-- slideshow with ken burns effect (maybe with QT)
+- slideshow with ken burns effect (maybe with QT, or openFramworks ofImage))
 - integrate rtp (web rtc is coming...in beta tests now)
 - integrate miracast (https://github.com/albfan/miraclecast)
-- integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) to remote mapper functions, especiallay the mouse
-- integrate sound analyzer for use with mic: https://github.com/karlstav/cava
-- .svg to .xml parser to import .svg from mapping softwares to mapper
+- integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)
+- integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava
+- .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manually load a mouse connected after boot
