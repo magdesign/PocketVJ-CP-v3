@@ -32,7 +32,7 @@ We recommend to use your RPi as a Hotspot, setup as described here: http://elinu
 https://github.com/magdesign/PocketVJ-CP-v3/blob/master/ROADMAP.md
 
 ###If you Build it from scratch
-use the Raspian Lite image together with RPi2
+use the Raspian Lite image together with RPi2/RPi3
 
 ###Dependencies to install:
 
