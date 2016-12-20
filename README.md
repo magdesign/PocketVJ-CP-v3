@@ -56,7 +56,9 @@ Read turingmachines installation instructions.
 
 ...
 
-If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/ProjectionMappingState.cpp as following:
+If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/Application.cpp as following:
+
+(will update this, since there changed a lot in recent releases...)
 
 OF_KEY_BACKSPACE to 'd' (delete)
 
