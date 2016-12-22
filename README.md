@@ -1,5 +1,6 @@
-This is not compatible with PocketVJ 2.0 only with PocketVJ 3.0/3.1
-# PocketVJ Control Panel 1.07b
+This is not compatible with PocketVJ 2.0<br />
+only with PocketVJ 3.0/3.1/3.2
+# PocketVJ Control Panel 1.08
 
 http://www.pocketvj.com
 
