@@ -3,10 +3,10 @@
 ###CP 1.08 22.December 2016
   New mapper version, you must do update:  system->update mapper<br />
   Redesign of Mapper section<br />
-  Undo of mapper is now workin
-  Hide/show layer panel added
-  Pause in shortcuts now also works for mapper
-  Removed Terminal link and wrote which port you can access Terminal
+  Undo of mapper is now working<br />
+  Hide/show layer panel added<br />
+  Pause in shortcuts now also works for mapper<br />
+  Removed Terminal link and wrote which port you can access Terminal<br />
   Fixed Status Monitor size
     
 ###CP 1.07b 16.December 2016
