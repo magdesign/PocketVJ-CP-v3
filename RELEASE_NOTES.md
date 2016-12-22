@@ -1,7 +1,7 @@
 #PocketVJ 3.0/3.1 Control Panel
 
 ###CP 1.08 22.December 2016
-  New mapper version, go to>: system->update mapper<br />
+  New mapper version, you must do update:  system->update mapper<br />
   Redesign of Mapper section<br />
   Undo of mapper is now workin
   Hide/show layer panel added
