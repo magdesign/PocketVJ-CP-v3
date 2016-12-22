@@ -1,5 +1,14 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.08 22.December 2016
+  New mapper version, go to>: system->update mapper<br />
+  Redesign of Mapper section<br />
+  Undo of mapper is now workin
+  Hide/show layer panel added
+  Pause in shortcuts now also works for mapper
+  Removed Terminal link and wrote which port you can access Terminal
+  Fixed Status Monitor size
+    
 ###CP 1.07b 16.December 2016
   Stability improvements for loading and saving mapper presets<br />
   
