@@ -3,9 +3,9 @@ Credits, Authors
 
 Marc-André Gasser, http://www.magdesign.ch                 (Idea, support and concept)
 
-Simon Josi, https://github.com/turingmachine               (Sync Script and Omxplayer fork)
+Simon Josi, https://github.com/turingmachine               (Sync Script,Omxplayer fork, overall help)
 
-Marco Schmalz                                              (Projector Power Scripts, sed stuff)
+Marco Schmalz                                              (Projector Power Scripts)
 
 Krisjanis Rijnieks, https://github.com/kr15h               (Pi-Mapper)
 
