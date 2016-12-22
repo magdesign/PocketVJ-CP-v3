@@ -9,4 +9,4 @@ sudo /var/www/sync/mappers
 sleep 0.2
 #then export to setting
 
-sudo cp /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/surfaces.xml /media/internal/mappersets/mappersetting2.xml
+sudo cp /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/ofxpimapper.xml /media/internal/mappersets/mappersetting2.xml

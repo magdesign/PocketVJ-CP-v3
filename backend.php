@@ -12,6 +12,8 @@ if ($_GET['action'] == 'custom') {
 if ($_GET['action'] == 'pause') {
 	$outputtext =  "pause video";
 	system ("/var/www/sync/dbuscontrol.sh pause > /dev/null 2>&1");
+	system("sudo /var/www/sync/mapperpause");
+	system("killall -9 /opt/fsayskeyboard");
 }
 
 if ($_GET['action'] == 'fastforward') {
@@ -294,6 +296,23 @@ if ($_GET['action'] == 'seamless') {
 	$outputtext =  "set to seamless player";
 	system("sudo cp /var/www/sync/rc.local.seamless /etc/rc.local");
 }
+
+
+if ($_GET['action'] == 'streamermaster') {
+	$outputtext = "master with audioserver";
+	system("sudo cp /var/www/sync/rc.local.streamermaster /etc/rc.local");
+}
+
+if ($_GET['action'] == 'streamerslave') {
+	$outputtext =  "slave with audioserver";
+	system("sudo cp /var/www/sync/rc.local.streamerslave /etc/rc.local");
+}
+
+if ($_GET['action'] == 'streamerseamless') {
+	$outputtext =  "seamless with audioserver";
+	system("sudo cp /var/www/sync/rc.local.streamerseamless /etc/rc.local");
+}
+
 
 
 if ($_GET['action'] == 'extension1') {
@@ -841,6 +860,7 @@ if ($_GET['action'] == 'alsa_out') {
 	$outputtext =  "Audio set to alsa:hw:1,0";
 }
 
+
 if ($_GET['action'] == 'imageconform') {
 	system("sudo mogrify -format jpg /media/internal/images/*.png");
 	system("sudo mogrify -format jpg /media/internal/images/*.tiff");
@@ -967,6 +987,13 @@ if ($_GET['action'] == 'mappermediaselect') {
 	system("sudo /var/www/sync/mapper4");
 	system("killall -9 /opt/fsayskeyboard");
 }
+
+if ($_GET['action'] == 'mapperpanel') {
+	$outputtext =  "show/hide layer panel";
+	system("sudo /var/www/sync/mappery");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
 
 if ($_GET['action'] == 'mappertriangle') {
 	$outputtext =  "add triangle";

@@ -2,11 +2,14 @@
 
 #this script exorts the mapper settings to /media/internal/mappersettings.xml
 
-#first save the setting
+#switch to play mode
+sudo /var/www/sync/mapper1
+
+#save the setting
 sudo /var/www/sync/mappers
 
 #wait a tiny little bit
 sleep 0.2
 
 #copy the setting
-sudo cp /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/surfaces.xml /media/internal/mappersets/mappersetting1.xml
+sudo cp /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/ofxpimapper.xml /media/internal/mappersets/mappersetting1.xml
