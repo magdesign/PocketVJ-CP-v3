@@ -1,30 +1,26 @@
 Roadmap
 *******
 
-- pause Knob in shortcuts global (checks what is running, then iniciate pause command for this app)
 - slideshow with ken burns effect (maybe with QT, or openFramworks ofImage))
 - integrate rtp (web rtc is coming...in beta tests now)
 - integrate miracast (https://github.com/albfan/miraclecast)
-- integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manually load a mouse connected after boot
+- integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)
 - change the startscripts with option -b to blank screen
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version)
 - Sync in seamless loop 
 - edge blending function
-
 - adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
    omxplayer via OSC: https://github.com/Hemisphere-Project/HPlayer
-
 - sync for slideshow
 - Master Slave auto-detection
 - integrate LTC / SMPTE function (https://github.com/x42/libltc)
 - adding manual slideshow function which also plays movies (placed in images folder)
 - user can define RJ45 Network adress by himself
-
 - a simple text tool to overlay text infos (e.g. displaying showtimes) (with subtitle function?)
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
