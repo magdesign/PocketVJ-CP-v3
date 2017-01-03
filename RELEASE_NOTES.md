@@ -1,7 +1,7 @@
 #PocketVJ 3.0/3.1 Control Panel
 
 ###CP 1.09a 04.Januar 2017
-  fixed mapper relaunch function, remote the not work after clicking relauch<br />
+  fixed mapper relaunch function, remote did not work after clicking relauch<br />
 
 ###CP 1.09 03.Januar 2017
   added more seamless loop functions<br />
