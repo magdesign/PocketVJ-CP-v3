@@ -49,6 +49,30 @@ if ($_GET['action'] == 'startseamless') {
 }
 
 
+if ($_GET['action'] == 'startseamless01') {
+	$outputtext =  "start seamless video_01 loop";
+	system ("sudo /var/www/sync/startseamless01");
+}
+
+if ($_GET['action'] == 'startseamless02') {
+	$outputtext =  "start seamless video_02 loop";
+	system ("sudo /var/www/sync/startseamless02");
+}
+
+if ($_GET['action'] == 'startseamless03') {
+	$outputtext =  "start seamless video_03 loop";
+	system ("sudo /var/www/sync/startseamless03");
+}
+
+if ($_GET['action'] == 'startseamless04') {
+	$outputtext =  "start seamless video_04 loop";
+	system ("sudo /var/www/sync/startseamless04");
+}
+
+if ($_GET['action'] == 'startseamless05') {
+	$outputtext =  "start seamless video_05 loop";
+	system ("sudo /var/www/sync/startseamless05");
+}
 
 if ($_GET['action'] == 'startmaster') {
 	exec("sudo /var/www/sync/startmaster");
