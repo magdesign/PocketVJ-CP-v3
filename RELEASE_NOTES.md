@@ -1,5 +1,8 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.09 03.Januar 2017
+  added more seamless loop functions<br />
+
 ###CP 1.08 22.December 2016
   New mapper version, you must do update:  system->update mapper<br />
   Redesign of Mapper section<br />
