@@ -1,6 +1,6 @@
 Roadmap
 *******
-
+- update and include all license texts of all used tools...
 - slideshow with ken burns effect (maybe with QT, or openFramworks ofImage))
 - integrate rtp (web rtc is coming...in beta tests now)
 - integrate miracast (https://github.com/albfan/miraclecast)
