@@ -7,7 +7,10 @@ sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example
 
 sleep 0.5
 
+sudo /var/www/sync/stopall &
+
 sudo cp /media/internal/mappersets/mappersetting3.xml /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/ofxpimapper.xml
+
 sleep 0.5
 
 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example -f &

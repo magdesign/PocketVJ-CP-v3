@@ -266,6 +266,12 @@ if ($_GET['action'] == 'startaudiousb') {
 	exec("sudo /var/www/startaudiosub");
 }
 
+if ($_GET['action'] == 'startaudioslave') {
+	exec("sudo /var/www/sync/startaudio");
+	$outputtext = "start audio player";
+}
+
+
 if ($_GET['action'] == 'stopaudio') {
 	$outputtext =  "stop audio player only";
 	system("sudo killall -9 mpg321");
@@ -601,8 +607,9 @@ if ($_GET['action'] == 'diskspace') {
 
 //# Firmmare Stuff
 
-if ($_GET['action'] == 'firmwareupdate') {
-	
+if ($_GET['action'] == 'updateall') {
+	//this is the firmware update section
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo apt-get remove omxplayer");
 	system("rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer");
 	system("rm -f /usr/bin/omxplayer-sync");
@@ -622,12 +629,55 @@ if ($_GET['action'] == 'firmwareupdate') {
 	system("sudo chmod a+x /usr/bin/omxplayer-sync");
 	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
 	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	$outputtext =  "Update Firmware, Player & Sync to PVJ v3.1";
+	//this is the regular update CP section;
+	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
+	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
+	system("sudo chmod 755 -R /var/www/");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	//system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+	//system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
+	//this is the mapper update section
+	//system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /");
+	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	//system ("rm /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	$outputtext =  "everything updated, please report any bugs on github";
+}
+
+
+
+if ($_GET['action'] == 'firmwareupdate') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo apt-get remove omxplayer");
+	system("rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer");
+	system("rm -f /usr/bin/omxplayer-sync");
+	system ("rm -f /usr/bin/dbuscontrol.sh");
+    system("sudo cp /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
+    system("sudo dpkg -i *.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
+    system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+    system("sudo dpkg -i *.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
+    system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
+	system("sudo apt-get clean");
+    //system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
+	//system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
+	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
+	system("sudo chmod a+x /usr/bin/omxplayer");
+	system("sudo chmod a+x /usr/bin/omxplayer.bin");
+	system("sudo chmod a+x /usr/bin/omxplayer-sync");
+	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
+	$outputtext =  "Updated Firmware, Player & Sync to PVJ v3.1";
 }
 
 
 if ($_GET['action'] == 'controlpanel') {
 	$outputtext =  "update ControlPanel USB";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp -r /media/usb/PocketVJ-CP-v3-master.zip /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www");
@@ -641,6 +691,7 @@ if ($_GET['action'] == 'controlpanel') {
 
 if ($_GET['action'] == 'controlpanelintern') {
 	$outputtext =  "update ControlPanel internal";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
@@ -654,6 +705,7 @@ if ($_GET['action'] == 'controlpanelintern') {
 
 if ($_GET['action'] == 'controlpanelweb') {
 	$outputtext =  "update ControlPanel via internet";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo wget https://github.com/magdesign/PocketVJ-CP-v3/archive/master.zip -O /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
@@ -812,6 +864,8 @@ if ($_GET['action'] == 'hdmi_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startaudioslave");
 	$outputtext =  "Audio set to HDMI";
 }
 
@@ -835,6 +889,8 @@ if ($_GET['action'] == 'jack_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startaudioslave");
 	$outputtext =  "Audio set to Jack";
 }
 
@@ -858,6 +914,8 @@ if ($_GET['action'] == 'both_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startaudioslave");
 	$outputtext =  "Audio set to both";
 }
 
@@ -881,6 +939,8 @@ if ($_GET['action'] == 'alsa_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startaudioslave");
 	$outputtext =  "Audio set to alsa:hw:1,0";
 }
 
@@ -987,6 +1047,12 @@ if ($_GET['action'] == 'relaunchmapper') {
 	$outputtext =  "PiMapper relaunched";
 	system("sudo /var/www/sync/relaunchmapper");
 }
+
+if ($_GET['action'] == 'launchmapper') {
+	$outputtext =  "PiMapper launched";
+	system("sudo /var/www/sync/launchmapper");
+}
+
 
 if ($_GET['action'] == 'mapperplaymode') {
 	$outputtext =  "Playmode/Presentation";

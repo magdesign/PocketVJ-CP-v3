@@ -18,4 +18,4 @@ sudo killall -9 pwomxplayer.bin > /dev/null 2>&1
 #solution to play audio, but is not syncable and not alsa compatible
 #mpg321 -l 0 /media/internal/audio/* > /dev/null 2>&1 & echo $! &
 
-/usr/bin/omxplayer-sync -mu -o both /media/internal/audio/* > /dev/null 2>&1 & echo $! &
+/usr/bin/omxplayer-sync -lu -o both /media/internal/audio/* > /dev/null 2>&1 & echo $! &
