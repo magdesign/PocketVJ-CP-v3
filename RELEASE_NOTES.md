@@ -1,5 +1,14 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.10 12.Januar 2017
+  merged presenter and imageviewer together<br />
+  added launch/relaunch mapper knobs<br />
+  added an Update All function for single click update<br />
+  added audio slave<br />
+  changed audioplayer to omxplayer, so its possible to use usb soundcards and sync<br />
+  added stopall function to mappersettings, so it does not need stop command in scheduler<br />
+  
+
 ###CP 1.09a 04.Januar 2017
   fixed mapper relaunch function, remote did not work after clicking relauch<br />
 
