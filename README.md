@@ -42,13 +42,6 @@ gstreamer1.0
 
 pip install pjlink python-osc svgtools svgpathtools svgwrite
 
-sudo aptitude install libmicrohttpd-dev libjansson-dev libnice-dev libssl-dev libsrtp-dev libsofia-sip-ua-dev libglib2.0-dev libopus-dev libogg-dev libini-config-dev libcollection-dev pkg-config gengetopt libtool automake dh-autoreconf
-
-...
-
-configure janus as described here:
-https://planb.nicecupoftea.org/2015/10/17/hackspace-hat-quick-install-or-audio-and-video-streaming-from-a-raspberry-pi-to-a-remote-or-local-webrtc-compatible-browser/
-
 ...
 
 get the omxplayer-sync: 
