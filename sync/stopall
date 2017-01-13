@@ -16,6 +16,6 @@ sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
 sudo rm /var/www/*.log
 sudo pkill gst-launch > /dev/null 2>&1
 #Kill janus server:
-sudo killall -9 janus > /dev/null 2>&1
+#sudo killall -9 janus > /dev/null 2>&1
 #Remove Loopback device:
 #sudo modprobe -r snd-loop
