@@ -1457,7 +1457,7 @@ if ($_GET['action'] == 'piwall_masterloop') {
 //# Stream Audio from ALSA to Janus server only available in PocketVJ 3.2
 //# might not work when usb soundcard is connected, due indexing of devices, loopback must be device 2
 //# check with cat /proc/asound/modules
-//# Access with link: http://192.168.2.100/streamer/streamingtest.html
+//# Access with link: http://192.168.2.100/streamer/index.html
 
 if ($_GET['action'] == 'audiostream') {
 	$outputtext =  "start video master loop and send audio to server";
@@ -1466,6 +1466,23 @@ if ($_GET['action'] == 'audiostream') {
 	system("sudo /usr/bin/omxplayer-sync -mu -o alsa:hw:1,1 /media/internal/video/* &");
 	system("sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &");
 }
+
+if ($_GET['action'] == 'audiostreamslave') {
+	$outputtext =  "start video slave loop and send audio to server";
+	system("sudo modprobe snd-aloop > /dev/null &");
+	system("sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &");
+	system("sudo /usr/bin/omxplayer-sync -lu -o alsa:hw:1,1 /media/internal/video/* &");
+	system("sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &");
+}
+
+if ($_GET['action'] == 'audiostreamseamless') {
+	$outputtext =  "start video seamless e loop and send audio to server";
+	system("sudo modprobe snd-aloop > /dev/null &");
+	system("sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &");
+	system("sudo /usr/bin/omxplayer --loop --no-osd -o alsa:hw:1,1 /media/internal/video/* > /dev/null 2>&1 & echo $! &");
+	system("sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &");
+}
+
 
 if ($_GET['action'] == 'audiostreamstop') {
 	$outputtext =  "stop video master loop and stop audio server";

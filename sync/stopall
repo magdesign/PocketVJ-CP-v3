@@ -14,8 +14,9 @@ sudo killall -9 avconv > /dev/null 2>&1
 sudo killall -9 pwomxplayer.bin > /dev/null 2>&1
 sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
 sudo rm /var/www/*.log
+#kill gstreamer
 sudo pkill gst-launch > /dev/null 2>&1
 #Kill janus server:
-#sudo killall -9 janus > /dev/null 2>&1
+sudo killall -9 janus > /dev/null 2>&1
 #Remove Loopback device:
-#sudo modprobe -r snd-loop
+sudo modprobe -r snd-loop > /dev/null 2>&1
