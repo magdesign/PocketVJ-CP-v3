@@ -50,63 +50,9 @@ Read turingmachines installation instructions.
 
 ...
 
-If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/Application.cpp and in src/Application/Modes/ProjectionMappingMode.cpp as following:
+If you want to use PiMapper you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/Application.cpp and in src/Application/Modes/ProjectionMappingMode.cpp
 
-(you dont have to compile, just install all other stuff, then open ControlPanel and hit update mapper...)
-
-OF_KEY_BACKSPACE to 'd' (delete)
-
-TAB to '5' (toggle)
-
-KEY_UP to '8'
-
-KEY_DOWN to '9'
-
-KEY_LEFT to '7'
-
-KEY_RIGHT to '0'
-
-'h' to 1 (one layer up)
-
-'j' to 2 (one layer down)
-
-d to a (duplicate)
-
-] to v
-
-[ to b
-
-{ to n
-
-} to m
-
-< to k
-
-> to l
-
-space to w (play/pause)
-
-If you want to enable audio, change in: src/Sources/VideoSource.cpp 
-line 6:bool VideoSource::enableAudio = true;
-
-line 7 decide weather hdmi or jack: bool VideoSource::useHDMIForAudio = false;
-
-and in: example/src/ofApp.cpp
-line 8: ofx::piMapper::VideoSource::enableAudio = true;
-
-
-Then compile PiMapper (cd into the /example folder and type make) https://github.com/kr15h/ofxPiMapper. 
-
-after compiling go to /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources and delete the two folders images and video.
-
-Then create symlinks
-
-ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos
-
-ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
-
-Here is a table of keyboard shortcuts for the mapper provided by chaot2:
-https://github.com/magdesign/PocketVJ-CP-v3/files/188104/Keys_PocketVJ-VP-v3.pdf
+Update: (you dont have to compile, just install all other stuff, then open ControlPanel and hit update mapper...)
 
 ...
 
