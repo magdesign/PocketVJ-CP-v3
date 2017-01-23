@@ -1,5 +1,9 @@
 #PocketVJ 3.0/3.1 Control Panel
 
+###CP 1.11 23.Januar 2017
+  updated with new functions of PVJ 3.2<br />
+  if you have an older (3.0/3.1) version, audio streaming will not work<br />
+  
 ###CP 1.10 12.Januar 2017
   merged presenter and imageviewer together<br />
   added launch/relaunch mapper knobs<br />
