@@ -1,4 +1,4 @@
-#PocketVJ 3.0/3.1 Control Panel
+#PocketVJ 3.0/3.1/3.2 Control Panel
 
 ###CP 1.11 23.Januar 2017
   updated with new functions of PVJ 3.2<br />
