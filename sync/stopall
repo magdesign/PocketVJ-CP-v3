@@ -18,4 +18,4 @@ sudo pkill gst-launch > /dev/null 2>&1
 #Kill janus server:
 sudo killall -9 janus > /dev/null 2>&1
 #Remove Loopback device:
-#sudo modprobe -r snd-loop
+sudo modprobe -r snd-loop

@@ -55,14 +55,28 @@ var spinner = null;
 
 var selectedStream = null;
 
+var selFlag = 1;
+
+var setStream = null;
+
+var setStreamID = null;
+
 
 $(document).ready(function() {
 	// Initialize the library (all console debuggers enabled)
 	Janus.init({debug: "all", callback: function() {
 		// Use a button to start the demo
-		$('#start').click(function() {
+//		$('#start').click(function() {
+	 		
+			
+			
+
 			if(started)
-				return;
+			{
+				
+				return;				
+			}
+				
 			started = true;
 			$(this).attr('disabled', true).unbind('click');
 			// Make sure the browser supports WebRTC
@@ -172,7 +186,7 @@ $(document).ready(function() {
 						window.location.reload();
 					}
 				});
-		});
+//		});
 	}});
 });
 
@@ -194,17 +208,34 @@ function updateStreamsList() {
 			$('#watch').attr('disabled', true).unbind('click');
 			var list = result["list"];
 			Janus.log("Got a list of available streams");
-			Janus.debug(list);
+			Janus.debug(list);		
+			
 			for(var mp in list) {
 				Janus.debug("  >> [" + list[mp]["id"] + "] " + list[mp]["description"] + " (" + list[mp]["type"] + ")");
+//				$('#streamset').append(list[mp]["description"] +"<span  class='caret'></span>");
+				setStream = list[mp]["description"] + "(" + list[mp]["type"] + ")";
+				setStreamID = list[mp]["id"];
 				$('#streamslist').append("<li><a href='#' id='" + list[mp]["id"] + "'>" + list[mp]["description"] + " (" + list[mp]["type"] + ")" + "</a></li>");
+				
 			}
 			$('#streamslist a').unbind('click').click(function() {
+				
+				selFlag =2;
 				selectedStream = $(this).attr("id");
 				$('#streamset').html($(this).html()).parent().removeClass('open');
+				
 				return false;
-
+				
 			});
+			
+			if(selFlag == 1)
+			{
+				selFlag = 2;
+				$('#streamset').append(setStream +"<span  class='caret'></span>");
+				selectedStream = setStreamID;				
+				
+			}
+			
 			$('#watch').removeAttr('disabled').click(startStream);
 		}
 	}});
@@ -212,7 +243,7 @@ function updateStreamsList() {
 
 function startStream() {
 	Janus.log("Selected video id #" + selectedStream);
-	if(selectedStream === undefined || selectedStream === null) {
+	if(selectedStream === undefined || selectedStream === null) { 
 		bootbox.alert("Select a stream from the list");
 		return;
 	}
@@ -232,12 +263,13 @@ function startStream() {
 }
 
 function stopStream() {
+	
 	$('#watch').attr('disabled', true).unbind('click');
 	var body = { "request": "stop" };
 	streaming.send({"message": body});
 	streaming.hangup();
 	$('#streamset').removeAttr('disabled');
 	$('#streamslist').removeAttr('disabled');
-	$('#watch').html("Watch or Listen").removeAttr('disabled').click(startStream);
+	$('#watch').html("Listen").removeAttr('disabled').click(startStream);
 	$('#status').empty().hide();
 }

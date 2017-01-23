@@ -261,6 +261,12 @@ if ($_GET['action'] == 'startaudio') {
 	$outputtext = "start audio player";
 }
 
+if ($_GET['action'] == 'startaudioslave') {
+	exec("sudo /var/www/sync/startaudioslave");
+	$outputtext = "start audio slave player";
+}
+
+
 if ($_GET['action'] == 'startaudiousb') {
 	$outputtext =  "start audio player in usb mode";
 	exec("sudo /var/www/startaudiosub");
@@ -270,6 +276,8 @@ if ($_GET['action'] == 'stopaudio') {
 	$outputtext =  "stop audio player only";
 	system("sudo killall -9 mpg321");
 }
+
+
 
 
 //# Testtone
@@ -337,6 +345,10 @@ if ($_GET['action'] == 'streamerseamless') {
 	system("sudo cp /var/www/sync/rc.local.streamerseamless /etc/rc.local");
 }
 
+if ($_GET['action'] == 'streameraudio') {
+	$outputtext =  "audio with audioserver";
+	system("sudo cp /var/www/sync/rc.local.streameraudio /etc/rc.local");
+}
 
 
 if ($_GET['action'] == 'extension1') {
@@ -812,6 +824,8 @@ if ($_GET['action'] == 'hdmi_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /var/www/sync/startseamless");
+
+
 	$outputtext =  "Audio set to HDMI";
 }
 
@@ -835,6 +849,9 @@ if ($_GET['action'] == 'jack_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startaudioslave");
+	system("sudo sed -ri 's/-o [a-z]+/-o local/' /var/www/sync/startaudiousb");
 	$outputtext =  "Audio set to Jack";
 }
 
@@ -858,6 +875,9 @@ if ($_GET['action'] == 'both_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startaudioslave");
+	system("sudo sed -ri 's/-o [a-z]+/-o both/' /var/www/sync/startaudiousb");
 	$outputtext =  "Audio set to both";
 }
 
@@ -881,6 +901,9 @@ if ($_GET['action'] == 'alsa_out') {
 	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startseamless");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startaudio");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startaudioslave");
+	system("sudo sed -ri 's/-o [a-z]+/-o alsa:hw:1,0/' /var/www/sync/startaudiousb");
 	$outputtext =  "Audio set to alsa:hw:1,0";
 }
 
@@ -1391,15 +1414,30 @@ if ($_GET['action'] == 'piwall_masterloop') {
 //# Stream Audio from ALSA to Janus server only available in PocketVJ 3.2
 //# might not work when usb soundcard is connected, due indexing of devices, loopback must be device 2
 //# check with cat /proc/asound/modules
-//# Access with link: http://192.168.2.100/streamer/streamingtest.html
+//# Access with link: http://192.168.2.100/streamer/index.html
 
 if ($_GET['action'] == 'audiostream') {
+	system("sudo /var/www/sync/startmasterstream");
 	$outputtext =  "start video master loop and send audio to server";
-	system("sudo modprobe snd-aloop > /dev/null &");
-	system("sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &");
-	system("sudo /usr/bin/omxplayer-sync -mu -o alsa:hw:1,1 /media/internal/video/* &");
-	system("sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &");
 }
+
+if ($_GET['action'] == 'audiostreamslave') {
+	system("sudo /var/www/sync/startslavestream");
+	$outputtext =  "start video slave loop and send audio to server";
+}
+
+if ($_GET['action'] == 'audiostreamseamless') {
+	system("sudo /var/www/sync/startseamlessstream");
+	$outputtext =  "start video seamless and send audio to server";	
+}
+
+if ($_GET['action'] == 'startaudiostream') {
+	exec("sudo /var/www/sync/startaudiostream");
+	$outputtext = "start audio streaming player";
+}
+
+
+
 
 if ($_GET['action'] == 'audiostreamstop') {
 	$outputtext =  "stop video master loop and stop audio server";
