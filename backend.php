@@ -1011,6 +1011,11 @@ if ($_GET['action'] == 'relaunchmapper') {
 	system("sudo /var/www/sync/relaunchmapper");
 }
 
+if ($_GET['action'] == 'launchmapper') {
+	$outputtext =  "PiMapper launched";
+	system("sudo /var/www/sync/launchmapper");
+}
+
 if ($_GET['action'] == 'mapperplaymode') {
 	$outputtext =  "Playmode/Presentation";
 	system("sudo /var/www/sync/mapper1");
