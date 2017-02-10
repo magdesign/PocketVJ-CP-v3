@@ -1,6 +1,7 @@
 Roadmap
 *******
 - mapper: compile shortcut for bigmove, make moves even bigger, aso small moves
+- mapper: remote buttons for scaling up and scaling down
 - maperimport files: add stoppall command, so scheduler doesnt need stop command
 - update and include all license texts of all used tools...
 - slideshow with ken burns effect (maybe with QT, or openFramworks ofImage))
