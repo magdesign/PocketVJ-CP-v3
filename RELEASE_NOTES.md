@@ -1,5 +1,9 @@
 #PocketVJ 3.0/3.1/3.2 Control Panel
 
+###CP 1.12 18.March 2017
+  added function to overlay transparent .png file over videos<br />
+  will only work on PocketVJs bought after march 18th<br />
+
 ###CP 1.11 23.Januar 2017
   updated with new functions of PVJ 3.2<br />
   if you have an older (3.0/3.1) version, audio streaming will not work<br />
