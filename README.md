@@ -42,6 +42,8 @@ gstreamer1.0
 
 pip install pjlink python-osc svgtools svgpathtools svgwrite
 
+...
+
 git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/
 
 ...
