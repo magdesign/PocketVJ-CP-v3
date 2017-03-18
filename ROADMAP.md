@@ -1,12 +1,10 @@
 Roadmap
 *******
-- mapper: compile shortcut for bigmove, make moves even bigger, aso small moves
+- mapper: compile shortcut for bigmove, make moves even bigger, also small moves
 - mapper: remote buttons for scaling up and scaling down
-- maperimport files: add stoppall command, so scheduler doesnt need stop command
 - update and include all license texts of all used tools...
 - slideshow with ken burns effect (maybe with QT, or openFramworks ofImage))
-- integrate rtp (web rtc is coming...in beta tests now)
-- integrate miracast (https://github.com/albfan/miraclecast)
+- integrate miracast (https://github.com/albfan/miraclecast) do we need this?
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - mapper remote: moving has quite a big delay, fix this
@@ -25,7 +23,6 @@ Roadmap
 - integrate LTC / SMPTE function (https://github.com/x42/libltc)
 - adding manual slideshow function which also plays movies (placed in images folder)
 - user can define RJ45 Network adress by himself
-- a simple text tool to overlay text infos (e.g. displaying showtimes) (with subtitle function?)
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
 - screen controls for color, brightness, contrast (openframeworks solution?)
