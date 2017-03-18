@@ -1,5 +1,6 @@
 Roadmap
 *******
+- upgrade to newest pimapper
 - mapper: compile shortcut for bigmove, make moves even bigger, also small moves
 - mapper: remote buttons for scaling up and scaling down
 - update and include all license texts of all used tools...
