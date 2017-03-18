@@ -7,6 +7,7 @@ sudo killall -9 tty-clock > /dev/null 2>&1
 sudo killall -9 mpg321 > /dev/null 2>&1
 sudo killall -9 feh > /dev/null 2>&1
 sudo kill $(pidof X) > /dev/null 2>&1
+sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/overlay.png > /dev/null 2>&1
 #dont know if I have to kill this:
 sudo killall -9 fsaysuinput > /dev/null 2>&1
 sudo /var/www/sync/testscreenoff > /dev/null 2>&1

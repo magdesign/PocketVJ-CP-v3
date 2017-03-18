@@ -193,6 +193,17 @@ if ($_GET['action'] == 'startimagemanual') {
 	system("sudo /var/www/sync/startimagemanual");
 }
 
+if ($_GET['action'] == 'overlay') {
+	$outputtext =  "start .png overlay";
+	system("sudo /var/www/sync/overlay");
+}
+
+if ($_GET['action'] == 'stopoverlay') {
+	$outputtext =  "stop .png overlay";
+	system("sudo /var/www/sync/overlaystop");
+	//system("sudo killall -9 /home/pi/raspidmx/pngview/./pngview");
+}
+
 //# Slideshow Time
 
 if ($_GET['action'] == 'slidetime5') {
