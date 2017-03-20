@@ -1,5 +1,9 @@
 #PocketVJ 3.0/3.1/3.2 Control Panel
 
+###CP 1.12a 20.March 2017<br />
+  fixed issue when hitting more than once to ALSA output
+
+
 ###CP 1.12 18.March 2017<br />
   added function to overlay transparent .png file over videos<br />
   will only work on PocketVJs bought after march 18th<br />
