@@ -1,6 +1,6 @@
 This is not compatible with PocketVJ 2.0<br />
 Works only with PocketVJ 3.0/3.1/3.2
-# PocketVJ Control Panel 1.12
+# PocketVJ Control Panel 1.12a
 
 http://www.pocketvj.com
 
@@ -15,7 +15,7 @@ Clone everything into the `/var/www/` directory.
 
 
 
-##Instruction
+## Instruction
 
 Add www-data to your sudoers list with: `visudo` add this line at the end: `www-data ALL=(ALL) NOPASSWD: ALL`
 
@@ -29,13 +29,13 @@ The audio files in `/media/internal/audios`
 We recommend to use your RPi as a Hotspot, setup as described here: http://elinux.org/RPI-Wireless-Hotspot
 (udhcpd seems to work well in debian jessie)
 
-###To do list:
+### To do list:
 https://github.com/magdesign/PocketVJ-CP-v3/blob/master/ROADMAP.md
 
-###If you Build it from scratch
+### If you Build it from scratch
 use the Raspian Lite image together with RPi2/RPi3
 
-###Dependencies to install:
+### Dependencies to install:
 
 apt-get -y install lxde-core lxterminal lxappearance xinit lightdm ntfs-3g python-pexpect vim figlet git-core firmware-ralink hostapd isc-dhcp-server lighttpd samba samba-common-bin php5-common php5-cgi php5 php5-mysql screen fbi ttf-mscorefonts-installer mediainfo gparted php5-cli iptables xtightvncviewer imagemagick dosfstools exfat-utils exfat-fuse hfsplus hfsprogs hfsutils xdotool expect expect-dev avahi-daemon libavahi-compat-libdnssd-dev feh libjpeg8 libjpeg8-dev libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl python-smbus mpg321 mpg123 libreoffice-impress rc-gui python-pip iceweasel python-dbus xpdf x11-xserver-utils libncurses5-dev shellinabox tk okular mountusb libgstreamer0.10-0 libgstreamer0.10-dev gstreamer0.10-tools gstreamer0.10-plugins-base libgstreamer-plugins-base0.10-dev gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad libgstreamer-plugins-base1.0-dev 
 gstreamer1.0
