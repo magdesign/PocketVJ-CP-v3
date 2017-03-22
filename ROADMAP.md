@@ -14,7 +14,7 @@ Roadmap
 - more FBO sources, masks
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)
 - change the startscripts with option -b to blank screen
-- Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version)
+- Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)
 - Sync in seamless loop 
 - edge blending function
 - adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
@@ -25,27 +25,23 @@ Roadmap
 - adding manual slideshow function which also plays movies (placed in images folder)
 - user can define RJ45 Network adress by himself
 - adding support of wireless/bluetooth mouse in mapping mode (e.g. Logitech MX)
-- adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts'
+- adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)
 - screen controls for color, brightness, contrast (openframeworks solution?)
-- adding a screen recorder to record a TCPSyphon stream (maybe possible with RPI3)
+- adding a screen recorder to record a TCPSyphon stream (tried it, not enough power on the RPi yet)
 - Make sync script compatible with video mapper 
 - Automaticly convert incompatible movies to h264  (PocketVJ 3 release), when finished picture with smiley:finshed ;-)
 - Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj)
-- Artnet output for lightning control
-- DMX Creator bridge (emulate usb keyboard over gpio)
-- webcam and 3G hotspot for remote controlling
 - Integrate LPMT (already tried it: https://github.com/Foaly/lpmt/issues/15)
 - integration to a third party mapping tool
-- make compatible with other arm boards like nanoPi
-- and much more....
+- make compatible with other arm boards, or completely switch to more powerful board
+- and much more.... I need your help!
 ..
 
 Manual:
 *******
 - shortcuts for mapping mode with keyboard
 - more description for tcpsclient, with example using syphoner to capture software
-- how to change things with shell in a box link
 
 =======================
-©2016 marc-andré gasser
+©2017 marc-andré gasser
 
