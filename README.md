@@ -46,6 +46,7 @@ pip install pjlink python-osc svgtools svgpathtools svgwrite
 
 git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/
 
+install https://github.com/Hemisphere-Project/HPlayer to /home/pi/
 ...
 
 get the omxplayer-sync: 
