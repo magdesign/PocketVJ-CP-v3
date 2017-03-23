@@ -1,5 +1,5 @@
 This is not compatible with PocketVJ 2.0<br />
-Works only with PocketVJ 3.0/3.1/3.2
+Works only with PocketVJ 3.0/3.1/3.2/3.3
 # PocketVJ Control Panel 1.12a
 
 http://www.pocketvj.com
