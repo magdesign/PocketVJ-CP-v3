@@ -104,5 +104,5 @@ change the root directory to '/media/';
 
 ...
 
-Please support this project! 
+Please support this project, otherwise it will die some day...! 
 http://www.pocketvj.com
