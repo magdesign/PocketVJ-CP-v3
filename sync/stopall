@@ -16,6 +16,8 @@ sudo killall -9 pwomxplayer.bin > /dev/null 2>&1
 sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
 sudo rm /var/www/*.log > /dev/null 2>&1
 sudo pkill gst-launch > /dev/null 2>&1
+#Kill hPlayer
+killall -9 /home/pi/HPlayer/./HPlayer > /dev/null 2>&1
 #Kill janus server:
 sudo killall -9 janus > /dev/null 2>&1
 #Remove Loopback device:

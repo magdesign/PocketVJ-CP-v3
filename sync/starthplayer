@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#start hplayer with osc control
+/home/pi/HPlayer/./HPlayer --path /media/internal/video/ --start 1 --loop 1 > /dev/null 2>&1 & echo $! &

@@ -160,6 +160,12 @@ if ($_GET['action'] == 'startmasterusb') {
 	$outputtext =  "start player in usb mode";	
 }
 
+if ($_GET['action'] == 'starthplayer') {
+	exec("sudo /var/www/sync/starthplayer");
+	$outputtext =  "start hplayer with OSC control";	
+}
+
+
 if ($_GET['action'] == 'pause') {
 	exec("sudo /var/www/sync/pause.py");
 	$outputtext = "Pause, click again to resume";
@@ -425,6 +431,12 @@ if ($_GET['action'] == 'setsyphon') {
 	$outputtext =  "set to TCPSClient";
 	system("sudo cp /var/www/sync/rc.local.syphon /etc/rc.local");
 }
+
+if ($_GET['action'] == 'sethplayer') {
+	$outputtext =  "set to hPlayer OSC";
+	system("sudo cp /var/www/sync/rc.local.hplayer /etc/rc.local");
+}
+
 
 if ($_GET['action'] == 'setairplay') {
 	$outputtext =  "set to Airplay Mirror";
