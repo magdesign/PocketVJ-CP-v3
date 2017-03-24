@@ -1,7 +1,7 @@
 # PocketVJ 3.0/3.1/3.2 Control Panel
 
 ### CP 1.13 24.March 2017<br />
-  upgraded CP for PocketVJ 3.3, now ith OSC support for videoplayer<br />
+  upgraded CP for PocketVJ 3.3, now with OSC support for videoplayer<br />
 
 ### CP 1.12a 20.March 2017<br />
   fixed issue when hitting more than once to ALSA output
