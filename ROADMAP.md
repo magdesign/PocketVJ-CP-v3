@@ -17,8 +17,7 @@ Roadmap
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)
 - Sync in seamless loop 
 - edge blending function
-- adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger) e.g. select video1 and play, stop.
-   omxplayer via OSC: https://github.com/Hemisphere-Project/HPlayer
+- adding an OSC wrapper for remote control (https://wiki.openlighting.org/index.php/OLA_DMX_Trigger)
 - sync for slideshow
 - Master Slave auto-detection
 - integrate LTC / SMPTE function (https://github.com/x42/libltc)
