@@ -4,7 +4,7 @@ Works only with PocketVJ 3.0/3.1/3.2/3.3
 
 http://www.pocketvj.com
 
-This files are used to control the PocketVJ 3.0/3.1 via webbrowser.
+This files are used to control the PocketVJ 3 via webbrowser.
 
 
 Clone everything into the `/var/www/` directory.
