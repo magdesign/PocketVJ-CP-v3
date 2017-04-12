@@ -1,5 +1,6 @@
 Roadmap
 *******
+- remove seamless button since script automatically detects.
 - upgrade to newest pimapper, which looks very promising in terms of alsa audio and syncing...
 - mapper: compile shortcut for bigmove, make moves even bigger, also small moves
 - mapper: remote buttons for scaling up and scaling down
@@ -7,6 +8,7 @@ Roadmap
 - slideshow with ken burns effect (maybe with QT, or openFramworks ofImage))
 - integrate miracast (https://github.com/albfan/miraclecast) do we need this?
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava
+- sound reactive video effects
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
