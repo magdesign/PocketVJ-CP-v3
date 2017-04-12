@@ -1,5 +1,9 @@
 # PocketVJ 3.0/3.1/3.2 Control Panel
 
+### CP 1.13a 12.April 2017<br />
+  turingmachine updated the sync script, now it automatically makes a seamless loop when only one video is in the folder and its now syncable!<br />
+  Make sure that you hit "factory preset" after the update.
+
 ### CP 1.13 24.March 2017<br />
   upgraded CP for PocketVJ 3.3, now with OSC support for videoplayer<br />
 
