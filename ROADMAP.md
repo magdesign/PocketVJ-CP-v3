@@ -1,6 +1,7 @@
 Roadmap
 *******
-- remove seamless buttons (video, autostart,streamer) since script automatically detects.
+- remove seamless buttons (video, autostart,streamer) since script automatically detects.but make switch to chance between old and new sync script 
+- jump to next file button
 - upgrade to newest pimapper, which looks very promising in terms of alsa audio and syncing...
 - mapper: compile shortcut for bigmove, make moves even bigger, also small moves
 - mapper: remote buttons for scaling up and scaling down
