@@ -1,5 +1,9 @@
 # PocketVJ 3.0/3.1/3.2 Control Panel
 
+### CP 1.13b 25.April 2017<br />
+  fixed the cursor blinking when nothing was running<br />
+  fixed streaming page button was not linked<br />
+
 ### CP 1.13a 12.April 2017<br />
   turingmachine updated the sync script, now it automatically makes a seamless loop when only one video is in the folder and its now syncable!<br />
   Make sure that you hit "factory preset" after the update.
