@@ -48,6 +48,18 @@ if ($_GET['action'] == 'startseamless') {
 	system ("sudo /var/www/sync/startseamless");
 }
 
+if ($_GET['action'] == 'setseamlessscript') {
+	$outputtext =  "set to seamless sync-script";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1"); 
+	system ("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
+}
+
+if ($_GET['action'] == 'setgapscript') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	$outputtext =  "set to gap playlist sync-script";
+	system ("sudo cp /var/www/sync/omxplayer-sync-old /usr/bin/omxplayer-sync");
+}
+
 
 if ($_GET['action'] == 'startseamless01') {
 	$outputtext =  "start seamless video_01 loop";
@@ -118,6 +130,27 @@ if ($_GET['action'] == 'startmaster08') {
 	exec("sudo /var/www/sync/startmaster08");
 	$outputtext = "start video 08 loop";
 }
+
+if ($_GET['action'] == 'startmaster09') {
+	exec("sudo /var/www/sync/startmaster09");
+	$outputtext = "start video 09 loop";
+}
+
+if ($_GET['action'] == 'startmaster10') {
+	exec("sudo /var/www/sync/startmaster10");
+	$outputtext = "start video 10 loop";
+}
+
+if ($_GET['action'] == 'startmaster11') {
+	exec("sudo /var/www/sync/startmaster11");
+	$outputtext = "start video 11 loop";
+}
+
+if ($_GET['action'] == 'startmaster12') {
+	exec("sudo /var/www/sync/startmaster12");
+	$outputtext = "start video 12 loop";
+}
+
 
 if ($_GET['action'] == 'startmasteronce') {
 	exec("sudo /var/www/sync/startmasterone");
