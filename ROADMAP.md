@@ -1,6 +1,6 @@
 Roadmap
 *******
-- remove seamless buttons (video, autostart,streamer) since script automatically detects.but make switch to chance between old and new sync script 
+- remove seamless buttons (video, autostart,streamer) since script automatically detects
 - jump to next file button
 - get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this
 - get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1
