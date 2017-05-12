@@ -1,5 +1,7 @@
 Roadmap
 *******
+- complete redesign of §cP interface, new CSS code to became fully resposive (very soon!)
+- .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - remove seamless button in autostart since script automatically detects
 - jump to next file button
 - get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this
@@ -13,7 +15,6 @@ Roadmap
 - integrate miracast (https://github.com/albfan/miraclecast) do we need this?
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava
 - sound reactive video effects
-- .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - mapper remote: moving has quite a big delay, fix this
 - make mapper working without mouse
 - button to manually load a mouse connected after boot
