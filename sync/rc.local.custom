@@ -1,14 +1,6 @@
 #!/bin/bash
 
-
-sudo modprobe snd-aloop > /dev/null &
-sleep 1
-sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &
-sleep 1
-sudo /usr/bin/omxplayer-sync -mu -o alsa:hw:1,1 /media/internal/video/* &
-sleep 1
-sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &
-
+#enter your custom startup application below this line:
 
 
 exit 0
