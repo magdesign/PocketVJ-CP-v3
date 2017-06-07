@@ -1,6 +1,7 @@
 Roadmap
 *******
 - complete redesign of §cP interface, new CSS code to became fully resposive (very soon!)
+- sync with USB alsa audio does not work, fix it!
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - remove seamless button in autostart since script automatically detects
 - jump to next file button
