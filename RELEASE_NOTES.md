@@ -1,4 +1,4 @@
-# PocketVJ 3.0/3.1/3.2 Control Panel
+# PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
 ### CP 1.14 30.April 2017<br />
   function to change between deamless and gap-list sync<br />
