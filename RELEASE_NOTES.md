@@ -1,7 +1,7 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
 ### CP 1.14 30.April 2017<br />
-  function to change between deamless and gap-list sync<br />
+  function to change between seamless and gap-list sync<br />
   added more numbered startmaser09-12<br />
   moved OSCplayer under startmaster button<br />
   
