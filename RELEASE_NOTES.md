@@ -1,5 +1,8 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
+### CP 1.14a 19.Juni 2017<br />
+  fixed the issue when you set to network to static you where not able to connect via wifi anymore<br />
+  
 ### CP 1.14 30.April 2017<br />
   function to change between seamless and gap-list sync<br />
   added more numbered startmaser09-12<br />
