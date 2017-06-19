@@ -1,6 +1,6 @@
 #!/bin/bash
 
-setterm $* | sudo tee /dev/tty0 > /dev/null
+#setterm $* | sudo tee /dev/tty0 > /dev/null
 
 
 exit 0
