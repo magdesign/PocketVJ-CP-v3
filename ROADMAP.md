@@ -6,10 +6,10 @@ Roadmap
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - remove seamless button in autostart since script automatically detects
 - jump to next file button
+- upgrade to newest pimapper, which looks very promising in terms of alsa audio and syncing...
 - get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this
 - get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1
 - more shader stuff: https://github.com/dff180/pishadertoy
-- upgrade to newest pimapper, which looks very promising in terms of alsa audio and syncing...
 - mapper: compile shortcut for bigmove, make moves even bigger, also small moves
 - mapper: remote buttons for scaling up and scaling down
 - update and include all license texts of all used tools...
