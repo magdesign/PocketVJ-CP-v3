@@ -3,6 +3,7 @@ Roadmap
 - complete redesign of CP interface, new CSS code to became fully resposive (very soon, fixing bootstrap problems)
 - add playlist version of mapper (plays every video in /media/internal/video
 - make a function which plays movies and images after each other
+- make an animated .gif player (use python or QT5 to get it working on Framebuffer)
 - sync with USB alsa audio does not work, fix it!
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - remove seamless button in autostart since script automatically detects
