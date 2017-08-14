@@ -17,14 +17,16 @@ Clone everything into the `/var/www/` directory.
 
 ## Instruction
 
-Add www-data to your sudoers list with: `visudo` add this line at the end: `www-data ALL=(ALL) NOPASSWD: ALL`
+- Add www-data to your sudoers list with:
+   `visudo` add this line at the end: `www-data ALL=(ALL) NOPASSWD: ALL`
+- Allow php with: `sudo lighty-enable-mod fastcgi-php`
 
-Allow php with: `sudo lighty-enable-mod fastcgi-php`
 
-The video files have to be stored in `/media/internal/video`
-The image files have to be stored in `/media/internal/images`
-The pdf files have to be stored in `/media/internal/pdf`
-The audio files in `/media/internal/audios`
+#### Content Locations
+- The video files have to be stored in `/media/internal/video`
+- The image files have to be stored in `/media/internal/images`
+- The pdf files have to be stored in `/media/internal/pdf`
+- The audio files in `/media/internal/audios`
 
 We recommend to use your RPi as a Hotspot, setup as described here: http://elinux.org/RPI-Wireless-Hotspot
 (udhcpd seems to work well in debian jessie)
@@ -37,14 +39,18 @@ use the Raspian Lite image together with RPi2/RPi3
 
 ### Dependencies to install:
 
-apt-get -y install lxde-core lxterminal lxappearance xinit lightdm ntfs-3g python-pexpect vim figlet git-core firmware-ralink hostapd isc-dhcp-server lighttpd samba samba-common-bin php5-common php5-cgi php5 php5-mysql screen fbi ttf-mscorefonts-installer mediainfo gparted php5-cli iptables xtightvncviewer imagemagick dosfstools exfat-utils exfat-fuse hfsplus hfsprogs hfsutils xdotool expect expect-dev avahi-daemon libavahi-compat-libdnssd-dev feh libjpeg8 libjpeg8-dev libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl python-smbus mpg321 mpg123 libreoffice-impress rc-gui python-pip iceweasel python-dbus xpdf x11-xserver-utils libncurses5-dev shellinabox tk okular usbmount libgstreamer0.10-0 libgstreamer0.10-dev gstreamer0.10-tools gstreamer0.10-plugins-base libgstreamer-plugins-base0.10-dev gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad libgstreamer-plugins-base1.0-dev 
-gstreamer1.0 python-dev
+```shell
+sudo apt-get -y install lxde-core lxterminal lxappearance xinit lightdm ntfs-3g python-pexpect vim figlet git-core firmware-ralink hostapd isc-dhcp-server lighttpd samba samba-common-bin php5-common php5-cgi php5 php5-mysql screen fbi ttf-mscorefonts-installer mediainfo gparted php5-cli iptables xtightvncviewer imagemagick dosfstools exfat-utils exfat-fuse hfsplus hfsprogs hfsutils xdotool expect expect-dev avahi-daemon libavahi-compat-libdnssd-dev feh libjpeg8 libjpeg8-dev libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl python-smbus mpg321 mpg123 libreoffice-impress rc-gui python-pip iceweasel python-dbus xpdf x11-xserver-utils libncurses5-dev shellinabox tk okular usbmount libgstreamer0.10-0 libgstreamer0.10-dev gstreamer0.10-tools gstreamer0.10-plugins-base libgstreamer-plugins-base0.10-dev gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad libgstreamer-plugins-base1.0-dev gstreamer1.0 python-dev libopenblas-dev
+```
 
-pip install pjlink python-osc svgtools svgpathtools svgwrite
-
+```shell
+sudo pip install pjlink python-osc svgtools svgpathtools svgwrite
+```
 ...
 
+```shell
 git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/
+```
 
 install https://github.com/Hemisphere-Project/HPlayer to /home/pi/
 ...
@@ -87,13 +93,12 @@ then move the screenshot folder to /opt/
 
 Install Pi-Wall:
 
-wget http://dl.piwall.co.uk/pwlibs1_1.1_armhf.deb
-
-dpkg -i pwlibs1_1.1_armhf.deb
-
-wget http://dl.piwall.co.uk/pwomxplayer_20130815_armhf.deb
-
-dpkg -i pwomxplayer_20130815_armhf.deb
+```bash
+wget http://dl.piwall.co.uk/pwlibs1_1.1_armhf.deb \
+&& dpkg -i pwlibs1_1.1_armhf.deb \
+&& wget http://dl.piwall.co.uk/pwomxplayer_20130815_armhf.deb \
+&& dpkg -i pwomxplayer_20130815_armhf.deb
+```
 
 ...
 
