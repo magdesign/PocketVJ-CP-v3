@@ -1,5 +1,9 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
+### CP 1.14b 15.August 2017<br />
+  fixed wrong link for piwall_topright, thanks to francoestrubia <br />
+  updated readme (pull request from Aaron Israel, thanks!)
+  
 ### CP 1.14a 19.Juni 2017<br />
   fixed the issue when you set network to dhcp you where not able to connect via wifi anymore<br />
   
