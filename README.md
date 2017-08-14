@@ -40,7 +40,82 @@ use the Raspian Lite image together with RPi2/RPi3
 ### Dependencies to install:
 
 ```shell
-sudo apt-get -y install lxde-core lxterminal lxappearance xinit lightdm ntfs-3g python-pexpect vim figlet git-core firmware-ralink hostapd isc-dhcp-server lighttpd samba samba-common-bin php5-common php5-cgi php5 php5-mysql screen fbi ttf-mscorefonts-installer mediainfo gparted php5-cli iptables xtightvncviewer imagemagick dosfstools exfat-utils exfat-fuse hfsplus hfsprogs hfsutils xdotool expect expect-dev avahi-daemon libavahi-compat-libdnssd-dev feh libjpeg8 libjpeg8-dev libao-dev avahi-utils libavahi-compat-libdnssd-dev libva-dev youtube-dl python-smbus mpg321 mpg123 libreoffice-impress rc-gui python-pip iceweasel python-dbus xpdf x11-xserver-utils libncurses5-dev shellinabox tk okular usbmount libgstreamer0.10-0 libgstreamer0.10-dev gstreamer0.10-tools gstreamer0.10-plugins-base libgstreamer-plugins-base0.10-dev gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad libgstreamer-plugins-base1.0-dev gstreamer1.0 python-dev libopenblas-dev
+sudo apt-get -y install \
+avahi-daemon \
+avahi-utils \
+dosfstools \
+exfat-fuse \
+exfat-utils \
+expect \
+expect-dev \
+fbi \
+feh \
+figlet \
+firmware-ralink \
+git-core \
+gparted \
+gstreamer0.10-plugins-bad \
+gstreamer0.10-plugins-base \
+gstreamer0.10-plugins-good \
+gstreamer0.10-plugins-ugly \
+gstreamer0.10-tools \
+gstreamer1.0 \
+hfsplus \
+hfsprogs \
+hfsutils \
+hostapd \
+iceweasel \
+imagemagick \
+iptables \
+isc-dhcp-server \
+libao-dev \
+libavahi-compat-libdnssd-dev \
+libavahi-compat-libdnssd-dev \
+libgstreamer-plugins-base0.10-dev \
+libgstreamer-plugins-base1.0-dev \
+libgstreamer0.10-0 \
+libgstreamer0.10-dev \
+libjpeg8 \
+libjpeg8-dev \
+libncurses5-dev \
+libopenblas-dev
+libreoffice-impress \
+libva-dev \
+lightdm \
+lighttpd \
+lxappearance \
+lxde-core \
+lxterminal \
+mediainfo \
+mpg123 \
+mpg321 \
+ntfs-3g \
+okular \
+php5 \
+php5-cgi \
+php5-cli \
+php5-common \
+php5-mysql \
+python-dbus \
+python-dev \
+python-pexpect \
+python-pip \
+python-smbus \
+rc-gui \
+samba \
+samba-common-bin \
+screen \
+shellinabox \
+tk \
+ttf-mscorefonts-installer \
+usbmount \
+vim \
+x11-xserver-utils \
+xdotool \
+xinit \
+xpdf \
+xtightvncviewer \
+youtube-dl \
 ```
 
 ```shell
