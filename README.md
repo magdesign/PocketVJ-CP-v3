@@ -1,35 +1,26 @@
-This is not compatible with PocketVJ 2.0<br />
+This is not compatible with PocketVJ 2.0 \
 Works only with PocketVJ 3.0/3.1/3.2/3.3
+
 # PocketVJ Control Panel 1.14a
 
-http://www.pocketvj.com
+### http://www.pocketvj.com
 
-This files are used to control the PocketVJ 3 via webbrowser.
-
-
-Clone everything into the `/var/www/` directory.
-
+These files are used to control the PocketVJ 3 via webbrowser. \
+Clone everything into the `/var/www` directory.
 
 ![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
 
-
-
-
 ## Instruction
 
-- Add www-data to your sudoers list with:
+- Add www-data to your sudoers list with:\
    `visudo` add this line at the end: `www-data ALL=(ALL) NOPASSWD: ALL`
 - Allow php with: `sudo lighty-enable-mod fastcgi-php`
-
 
 #### Content Locations
 - The video files have to be stored in `/media/internal/video`
 - The image files have to be stored in `/media/internal/images`
 - The pdf files have to be stored in `/media/internal/pdf`
 - The audio files in `/media/internal/audios`
-
-We recommend to use your RPi as a Hotspot, setup as described here: http://elinux.org/RPI-Wireless-Hotspot
-(udhcpd seems to work well in debian jessie)
 
 ### To do list:
 https://github.com/magdesign/PocketVJ-CP-v3/blob/master/ROADMAP.md
@@ -130,7 +121,7 @@ git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/
 install https://github.com/Hemisphere-Project/HPlayer to /home/pi/
 ...
 
-get the omxplayer-sync: 
+get the omxplayer-sync:
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
 
@@ -142,9 +133,9 @@ Update: (you dont have to compile, just install all other stuff, then open Contr
 
 ...
 
-To have remote access via Control Panel (for mapping and presentation) you must simulate a fake keyboard, see here: 
+To have remote access via Control Panel (for mapping and presentation) you must simulate a fake keyboard, see here:
 http://www.fsays.eu/Blogging/Blog/Details/23
-(place it in `/opt/fsaysuinput` `/opt/fsayskeyboard`) 
+(place it in `/opt/fsaysuinput` `/opt/fsayskeyboard`)
 
 ...
 
@@ -158,9 +149,9 @@ Read the copyrights on their websites and make a donation!
 
 
 For using the snapshot function:
-- ``git clone https://github.com/info-beamer/tools.git``
-- Go into tools/screenshot/ and type make
-- then move the screenshot folder to /opt/
+- `git clone https://github.com/info-beamer/tools.git`
+- Go into `tools/screenshot/` and type `make`
+- then move the screenshot folder to `/opt/`
 
 
 ...
@@ -177,12 +168,12 @@ wget http://dl.piwall.co.uk/pwlibs1_1.1_armhf.deb \
 
 ...
 
-install eXtplorer in /var/www/eXtplorer and configure it:
-sudo nano /var/www/eXtplorer/include/init.php
-
-change the root directory to '/media/';
+- install eXtplorer in `/var/www/eXtplorer`
+- configure it with: `sudo nano /var/www/eXtplorer/include/init.php`
+- change the root directory to `/media/;`
 
 ...
 
 Please support this project, otherwise it will die some day...!
+
 http://www.pocketvj.com
