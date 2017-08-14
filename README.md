@@ -158,9 +158,9 @@ Read the copyrights on their websites and make a donation!
 
 
 For using the snapshot function:
-git-clone https://github.com/info-beamer/tools.git
-Go into tools/screenshot/ and type make
-then move the screenshot folder to /opt/
+- ``git clone https://github.com/info-beamer/tools.git``
+- Go into tools/screenshot/ and type make
+- then move the screenshot folder to /opt/
 
 
 ...
@@ -184,5 +184,5 @@ change the root directory to '/media/';
 
 ...
 
-Please support this project, otherwise it will die some day...! 
+Please support this project, otherwise it will die some day...!
 http://www.pocketvj.com
