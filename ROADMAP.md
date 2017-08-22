@@ -1,6 +1,7 @@
 Roadmap
 *******
 - complete redesign of CP interface, new CSS code to became fully resposive (very soon, fixing bootstrap problems)
+- make autostart to videoplayer loop 01; 02; 03;
 - add playlist version of mapper (plays every video in /media/internal/video
 - make a function which plays movies and images after each other
 - make an animated .gif player (use python or QT5 to get it working on Framebuffer)
