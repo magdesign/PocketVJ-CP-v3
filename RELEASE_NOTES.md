@@ -1,5 +1,8 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
+### CP 1.14c 18.September 2017<br />
+  fixed force hdmi mode to get audio over hdmi, even if EDID of screen does not report compatibility <br />
+  
 ### CP 1.14b 15.August 2017<br />
   fixed wrong link for piwall_topright, thanks to francoestrubia <br />
   updated readme (pull request from Aaron Israel, thanks!)
