@@ -10,6 +10,8 @@ disable_overscan=1
 hdmi_group=1
 hdmi_mode=5
 
+#This setting should force hdmi audio output
+hdmi_drive=2
 
 # uncomment to increase signal to HDMI
 #config_hdmi_boost=7
