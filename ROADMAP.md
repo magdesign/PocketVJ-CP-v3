@@ -2,6 +2,7 @@ Roadmap
 *******
 - complete redesign of CP interface, new CSS code to became fully resposive (very soon, fixing bootstrap problems)
 - make autostart to videoplayer loop 01; 02; 03;
+- fix issues in omxplayer sync seamless mode, switch between old and new script
 - tutorial on how to softedge in video mode with overlay function, integrate softedge buttons
 - Update gstreamer, os? security?, tcpsyphon, omxplayer?, mapper?
 - integrate http://www.ultragrid.cz protocol
@@ -10,6 +11,7 @@ Roadmap
 - make a function which plays movies and images after each other
 - make an animated .gif player (use python or QT5 to get it working on Framebuffer)
 - sync with USB alsa audio does not work, fix it!
+- make a knob to download videocontent from a dropboxsource and restart the player
 - .svg to .xml parser to import .svg from mapping softwares to mapper (https://github.com/magdesign/mapping-converter)
 - remove seamless button in autostart since script automatically detects
 - jump to next file button
