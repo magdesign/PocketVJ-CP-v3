@@ -2,7 +2,8 @@ Roadmap
 *******
 - complete redesign of CP interface, new CSS code to became fully resposive (very soon, fixing bootstrap problems)
 - make autostart to videoplayer loop 01; 02; 03;
-- tutorial on how to softedge in video mode with overlay function
+- tutorial on how to softedge in video mode with overlay function, integrate softedge buttons
+- Update gstreamer, os? security?, tcpsyphon, omxplayer?, mapper?
 - integrate http://www.ultragrid.cz protocol
 - check again if there is any way to support NDI http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00
 - add playlist version of mapper (plays every video in /media/internal/video
