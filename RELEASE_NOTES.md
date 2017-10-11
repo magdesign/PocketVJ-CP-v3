@@ -1,7 +1,7 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
 ### CP 1.14d 04.October 2017<br />
-  added new build of omxplayer when hitting Update Firmware in System Tab <br />
+  added new build of omxplayer when hitting Update Firmware in System Tab (only recommended if you encounter any issues) <br />
 
 ### CP 1.14c 18.September 2017<br />
   fixed force hdmi mode to get audio over hdmi, even if EDID of screen does not report compatibility <br />
