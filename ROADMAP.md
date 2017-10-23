@@ -5,7 +5,7 @@ Roadmap
 - fix issues in omxplayer sync seamless mode, switch between old and new script
 - tutorial on how to softedge in video mode with overlay function, integrate softedge buttons
 - integrate slideshow into mapper, e.g.: http://openframeworks.cc/learning/02_graphics/how_to_load_and_display_an_image/
-https://github.com/jvcleave/SlideShowExampleApp
+https://forum.openframeworks.cc/t/play-image-sequence/4095/6
 - Update gstreamer, os? security?, tcpsyphon, omxplayer?, mapper?
 - check again if there is any way to support NDI http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 ,https://github.com/leadedge/ofxNDI
 - add playlist version of mapper (plays every video in /media/internal/video
