@@ -7,8 +7,7 @@ Roadmap
 - integrate slideshow into mapper, e.g.: http://openframeworks.cc/learning/02_graphics/how_to_load_and_display_an_image/
 https://github.com/jvcleave/SlideShowExampleApp
 - Update gstreamer, os? security?, tcpsyphon, omxplayer?, mapper?
-- integrate http://www.ultragrid.cz protocol
-- check again if there is any way to support NDI http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00
+- check again if there is any way to support NDI http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 ,https://github.com/leadedge/ofxNDI
 - add playlist version of mapper (plays every video in /media/internal/video
 - make a function which plays movies and images after each other
 - make an animated .gif player (use python or QT5 to get it working on Framebuffer)
