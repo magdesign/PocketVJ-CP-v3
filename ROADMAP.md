@@ -4,6 +4,8 @@ Roadmap
 - make autostart to videoplayer loop 01; 02; 03;
 - fix issues in omxplayer sync seamless mode, switch between old and new script
 - tutorial on how to softedge in video mode with overlay function, integrate softedge buttons
+- integrate slideshow into mapper, e.g.: http://openframeworks.cc/learning/02_graphics/how_to_load_and_display_an_image/
+https://github.com/jvcleave/SlideShowExampleApp
 - Update gstreamer, os? security?, tcpsyphon, omxplayer?, mapper?
 - integrate http://www.ultragrid.cz protocol
 - check again if there is any way to support NDI http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00
