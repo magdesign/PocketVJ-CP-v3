@@ -1392,7 +1392,7 @@ if ($_GET['action'] == 'beameroff') {
 
 if ($_GET['action'] == 'setdhcp') {
 	$outputtext =  "Set dhcp (disable sync & projector control)";
-	system("sudo cp /etc/network/interfaces /var/www/sync/interfaces.static");
+	#system("sudo cp /etc/network/interfaces /var/www/sync/interfaces.static");
 	system("sudo cp /var/www/sync/interfaces.dhcp /etc/network/interfaces");
 }
 
