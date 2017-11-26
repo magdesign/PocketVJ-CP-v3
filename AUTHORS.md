@@ -19,6 +19,8 @@ Alex Goodyear, http://www.piwall.co.uk                     (pwomxplayer)
 
 Leon Adolf,                                             (Streaming page mod)
 
+Cris(tobal) Mendoza                                       (slideshow for mapper)
+
 Marcel Bieri, https://facebook.com/casashowband				(testaudio)
 
 vj mag  http://www.lockedesign.ch/							(testvideo)
