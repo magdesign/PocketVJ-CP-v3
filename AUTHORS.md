@@ -17,6 +17,8 @@ xorg62, https://github.com/xorg62/tty-clock                (TTY Clock)
 
 Alex Goodyear, http://www.piwall.co.uk                     (pwomxplayer)
 
+Atelier de Dispositifs Numériques ,http://www.hemisphere-project.com/   (HPlayer)
+
 Leon Adolf,                                             (Streaming page mod)
 
 Cris(tobal) Mendoza                                       (slideshow for mapper)
