@@ -1,5 +1,7 @@
 ## Roadmap
 **********
+### Image: <br />
+- Update to 3.4 (incl. Processing, Janus 0.2.6, uv4l)
 
 ### System: <br />
 - Install processing (PVJ 3.4)<br />
@@ -15,6 +17,7 @@
 ### Streaming: <br />
 - Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 <br />
 - Update Tcpsyphon (need libs from debian stretch, causes PVJ update to 4.0 or a good dependencies hack)
+- uv4l (possibility to share mapping screen?)
 
 ### Image: <br />
 - Gif player <br />
@@ -58,6 +61,6 @@
 - correct errors concerning timer.txt (possible to seperate with commas? ) <br />
 - Add scheduler commands <br />
 
-=======================
+=======================<br />
 ©2017 marc-andré gasser
 
