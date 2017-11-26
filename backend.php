@@ -783,6 +783,7 @@ if ($_GET['action'] == 'firmwareupdate') {
 
 if ($_GET['action'] == 'controlpanel') {
 	$outputtext =  "update ControlPanel USB";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp -r /media/usb/PocketVJ-CP-v3-master.zip /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www");
@@ -796,6 +797,7 @@ if ($_GET['action'] == 'controlpanel') {
 
 if ($_GET['action'] == 'controlpanelintern') {
 	$outputtext =  "update ControlPanel internal, .zip must be provided";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
@@ -809,6 +811,7 @@ if ($_GET['action'] == 'controlpanelintern') {
 
 if ($_GET['action'] == 'controlpanelweb') {
 	$outputtext =  "update ControlPanel via internet";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo wget https://github.com/magdesign/PocketVJ-CP-v3/archive/master.zip -O /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
@@ -890,9 +893,9 @@ if ($_GET['action'] == 'updateall') {
 	$outputtext =  "Update Controlpanel, Mapper, OMXPLAYER, Timer, Boot";
 }
 
-
 if ($_GET['action'] == 'factoryreset') {
 	$outputtext =  "factory reset system";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
     system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
     system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
