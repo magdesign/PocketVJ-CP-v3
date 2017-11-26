@@ -22,11 +22,11 @@
   Added Autostart to Clock <br />
   Added Autostart to Custom2 <br />
   Cleaned up the System settings panel <br />
-  Overall bugfixes <br />
   Function to download files from your personal server or dropbox, ideal for scheduler tasks <br />
   Get CPU temperature <br />
-  Get CPU usage (top)<br />
-  Updated License file <br />
+  Updated License file <br />  
+  Overall bugfixes <br />
+  
 <br />
 ### Known Bugs: <br />
   mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
