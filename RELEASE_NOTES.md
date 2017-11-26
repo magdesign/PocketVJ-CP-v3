@@ -9,6 +9,9 @@
   2.Update CP (wait!! until you get message, approx. 5 minutes) <br />
   3.refresh browser, then select UPDATE Mapper (wait 5minutes)<br />
   <br />
+  4.If it displays weird or buttons are not selecteable, update your browser, delete all cookies<br />
+  
+  
 ### Whats new: <br />
   Completely redesigned CP from scratch, now fully responsive :-) <br />
   CP output is now scrollable, better line breaks <br />
