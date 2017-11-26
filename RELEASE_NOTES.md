@@ -2,6 +2,7 @@
 
 ## CP 2.0.0 26.November 2017<br />
   This is a massive release with a completely new look and feel :-)<br />
+  
   To Update: <br />
   1.Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
   2.Update CP (wait!! until you get message, approx. 5 minutes) <br />
