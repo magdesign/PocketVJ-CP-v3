@@ -5,9 +5,6 @@
 - Install processing (PVJ 3.4)<br />
 - Update: gstreamer, janus gateway, wifi security, dist-upgrade (PVJ 3.4)<br />
 
-### File Handling:
-- make a knob to download videocontent from a dropboxsource and restart the player
-
 ### Video: <br />
 - make a function which plays movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! <br />
