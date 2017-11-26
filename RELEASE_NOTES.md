@@ -5,11 +5,11 @@
   
   To Update: <br />
   0. Stop all tasks<br />
-  1.Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
-  2.Update CP (wait!! until you get message, approx. 5 minutes) <br />
-  3.refresh browser, then select UPDATE Mapper (wait 5minutes)<br />
+  1. Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
+  2. Update CP (wait!! until you get message, approx. 5 minutes) <br />
+  3. Refresh browser, then select UPDATE Mapper (wait 5minutes)<br />
   <br />
-  4.If it displays weird or buttons are not selecteable, update your browser, delete all cookies<br />
+  4. If it displays weird or buttons are not selecteable, update your browser, delete all cookies<br />
   
   
 ### Whats new: <br />
