@@ -1,9 +1,11 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
-### CP 2.0.0 26.November 2017<br />
-  For updating: 1.update CP (wait!! until you get message, approx. 5 minutes) 2.select UPDATE Everything (wait 5minutes)<br />
+## CP 2.0.0 26.November 2017<br />
+  To Update: <br />
+  1.Update CP (wait!! until you get message, approx. 5 minutes) <br />
+  2.select UPDATE Everything (wait 5minutes)<br />
   <br />
-  Whats new: <br />
+### Whats new: <br />
   Completely redesigned CP from scratch, now fully responsive :-) <br />
   CP output is now scrollable, better line breaks <br />
   CP alerts when connection to PVJ is lost <br />
@@ -23,7 +25,7 @@
   Get CPU usage (top)<br />
   Updated License file <br />
 <br />
-  Known Bugs: <br />
+### Known Bugs: <br />
   mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
   mapper launch without mouse still does not work as expected <br />
   autostart clock takes 30seconds until it displays<br />
