@@ -5,7 +5,7 @@ Works only with PocketVJ 3.0/3.1/3.2/3.3
 
 ### http://www.pocketvj.com
 
-These files are used to control the PocketVJ 3 via webbrowser. \
+These files are used to control the PocketVJ 3.x via webbrowser. \
 Clone everything into the `/var/www` directory.
 
 ![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
@@ -26,7 +26,8 @@ Clone everything into the `/var/www` directory.
 https://github.com/magdesign/PocketVJ-CP-v3/blob/master/ROADMAP.md
 
 ### If you Build it from scratch
-use the Raspian Lite image together with RPi2/RPi3
+use the Raspian Jessie Lite image together with RPi2/RPi3
+(not tested with Debian stretch so far...)
 
 ### Dependencies to install:
 
