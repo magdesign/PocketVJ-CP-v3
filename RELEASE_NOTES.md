@@ -1,9 +1,11 @@
 # PocketVJ 3.0/3.1/3.2/3.3 Control Panel
 
 ## CP 2.0.0 26.November 2017<br />
+  Massive release :-)
   To Update: <br />
-  1.Update CP (wait!! until you get message, approx. 5 minutes) <br />
-  2.select UPDATE Everything (wait 5minutes)<br />
+  1.Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
+  2.Update CP (wait!! until you get message, approx. 5 minutes) <br />
+  3.select UPDATE Everything (wait 5minutes)<br />
   <br />
 ### Whats new: <br />
   Completely redesigned CP from scratch, now fully responsive :-) <br />
