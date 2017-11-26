@@ -1,946 +1,1082 @@
 <!DOCTYPE html>
-<html class="html" lang="en-GB">
- <head>
-
-  <script type="text/javascript">
-   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.watch.js", "index.css"], "outOfDate":[]};
-</script>
-  
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2014.3.2.295"/>
-  <link rel="shortcut icon" href="images/controlpanel-favicon.ico?114042110"/>
-  <title>ControlPanel</title>
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?422415861"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?3881581600"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?136417066" id="pagesheet"/>
-  <!--[if lt IE 9]>
-  <link rel="stylesheet" type="text/css" href="css/iefonts_index.css?4048585025"/>
-  <![endif]-->
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   document.documentElement.className += ' js';
-var __adobewebfontsappname__ = "muse";
-</script>
-   </head>
- <body>
-
-  <div class="clearfix" id="page"><!-- column -->
-   <div class="position_content" id="page_position_content">
-    <div class="clearfix colelem" id="pu3275"><!-- group -->
-     <a class="nonblock nontext clip_frame grpelem" id="u3275" href="http://pocketvj.com/#downloads" target="_blank"><!-- image --><img class="block" id="u3275_img" src="images/pocketvjlogos2.png" alt="" title="www.pocketvj.com" width="144" height="19"/></a>
-     <div class="clearfix grpelem" id="u3271-4"><!-- content -->
-      <p>CP 1.14e</p>
-     </div>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Sun Nov 26 2017 00:35:26 GMT+0000 (UTC)  -->
+<html data-wf-page="5913869e09b9f23ad6b314ee" data-wf-site="5913869e09b9f23ad6b314ed">
+<head>
+  <meta charset="utf-8">
+  <title>PocketVJ CP</title>
+  <meta content="Used to control the awesome PocketVJ" name="description">
+  <meta content="PocketVJ CP" property="og:title">
+  <meta content="Used to control the awesome PocketVJ" property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/pocketvj-cp.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon32.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/istore256.png" rel="apple-touch-icon">
+  <!-- 
+Code  below is for button tooltips
+ -->
+  <link rel="stylesheet" type="text/css" href="../themes/tooltipster.bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../themes/tooltipster-sideTip-borderless.css">
+</head>
+<body class="body">
+  <div class="container w-container">
+    <div>
+      <div class="w-row">
+        <div class="w-col w-col-6"><a href="https://pocketvj.com/#Downloads" target="_blank" class="w-inline-block"><img src="images/pocketVJlogoS2.png" class="logo"></a></div>
+        <div class="w-col w-col-6">
+          <div class="release">CP 2.0.0</div>
+        </div>
+      </div>
     </div>
-    <div class="clearfix colelem" id="pu3299"><!-- group -->
-     <a class="nonblock action nontext clip_frame grpelem" id="u3299" href="?action=stop"><!-- image --><img class="block" id="u3299_img" src="images/00_stop.png" alt="" title="Stop all" width="32" height="32"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3329" href="?action=pause"><!-- image --><img class="block" id="u3329_img" src="images/00_play-pause.png" alt="" title="Pause Video" width="30" height="30"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3335" href="?action=fastforward"><!-- image --><img class="block" id="u3335_img" src="images/00_fast-forward.png" alt="" title="Forward Video" width="30" height="30"/></a>
-     <a class="nonblock nontext clip_frame grpelem" id="u3311" href="/eXtplorer/" target="_blank"><!-- image --><img class="block" id="u3311_img" src="images/00_files.png" alt="" title="File Browser" width="30" height="30"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3281" href="?action=screenshot"><!-- image --><img class="block" id="u3281_img" src="images/00_prntscrn.png" alt="" title="Screenshot" width="30" height="30"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3317" href="?action=testscreen"><!-- image --><img class="block" id="u3317_img" src="images/00_testscreen.png" alt="" title="Testscreen" width="30" height="30"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3305" href="?action=getresolution"><!-- image --><img class="block" id="u3305_img" src="images/00_resolution.png" alt="" title="Resolution" width="30" height="30"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3287" href="?action=reboot"><!-- image --><img class="block" id="u3287_img" src="images/00_reboot.png" alt="" title="Reboot" width="30" height="30"/></a>
-     <a class="nonblock action nontext clip_frame grpelem" id="u3292" href="?action=shutdown"><!-- image --><img class="block" id="u3292_img" src="images/00_shutdown.png" alt="" title="Shutdown" width="30" height="30"/></a>
+    <div class="w-clearfix">
+      <div class="shortcutsheader"><a href="?action=stop" id="action" tooltipster="top" title="Stop All" class="action w-inline-block"><img src="images/00_stop.png" width="30" alt="Stop All"></a></div>
+      <div class="shortcutsheader"><a href="?action=pause" tooltipster="top" title="Pause" class="action w-inline-block"><img src="images/00_play-pause.png"></a></div>
+      <div class="shortcutsheader"><a href="?action=fastforward" tooltipster="top" title="Faststep Forward" class="action w-inline-block"><img src="images/00_fast-forward.png" class="action"></a></div>
+      <div class="shortcutsheader"><a href="/eXtplorer/" target="_blank" tooltipster="top" title="Filebrowser" class="w-inline-block"><img src="images/00_files.png" width="30"></a></div>
+      <div class="shortcutsheader"><a href="?action=screenshot" tooltipster="top" title="Screenshot" class="action w-inline-block"><img src="images/00_prntscrn.png" width="30" alt="Screenshot"></a></div>
+      <div class="shortcutsheader"><a href="?action=testscreen" tooltipster="top" title="Testscreen" class="action w-inline-block"><img src="images/00_testscreen.png"></a></div>
+      <div class="shortcutsheader"><a href="?action=getresolution" tooltipster="top" title="Show Resolution" class="action w-inline-block"><img src="images/00_resolution.png" width="30"></a></div>
+      <div class="shortcutsheader"><a href="?action=reboot" tooltipster="top" title="Reboot" class="action w-inline-block"><img src="images/00_reboot.png" width="30" class="action"></a></div>
+      <div class="shortcutsheader"><a href="?action=shutdown" tooltipster="top" title="Shutdown" class="action w-inline-block"><img src="images/00_shutdown.png" width="30"></a></div>
     </div>
-    <div class="colelem" id="u3265"><!-- custom html -->
-     <div style="height:60px; overflow-y: auto;overflow-x: hidden;">
-<table width="340" height="70" border="1" align="center">
-  <tr>
-       <td id="actions_output" width="340" height="70"></td>
-  <tr>
-</table>
-</div>
-</div>
-    <div class="PamphletWidget clearfix colelem" id="pamphletu3342"><!-- none box -->
-     <div class="ThumbGroup clearfix grpelem" id="u3353"><!-- none box -->
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3356"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3356" title="File Handling"><!-- group -->
-          <div class="clip_frame grpelem" id="u3693"><!-- image -->
-           <img class="block" id="u3693_img" src="images/01_filesdisk.png" alt="" width="21" height="20"/>
-          </div>
-         </div>
+    <div>
+      <div class="html-embed w-embed">
+        <div style="height:100%; overflow-y: auto; overflow-x: hidden;">
+          <table width="90%" height="70" border="1" align="center">
+            <tr>
+              <td id="actions_output" width="360" height="88"></td>
+            </tr>
+            <tr>
+            </tr>
+          </table>
         </div>
-       </div>
       </div>
-      <div class="popup_anchor">
-       <div class="Thumb popup_element clearfix" id="u3355" title="Video Control"><!-- group -->
-        <div class="clip_frame grpelem" id="u3714"><!-- image -->
-         <img class="block" id="u3714_img" src="images/02_video.png" alt="" width="21" height="20"/>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3354"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3354" title="Image Player"><!-- group -->
-          <div class="clip_frame grpelem" id="u3980"><!-- image -->
-           <img class="block" id="u3980_img" src="images/04_presenter.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3457"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3457" title="Mapping"><!-- group -->
-          <div class="clip_frame grpelem" id="u3789"><!-- image -->
-           <img class="block" id="u3789_img" src="images/05_mapping.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3474"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3474" title="Video Wall"><!-- group -->
-          <div class="clip_frame grpelem" id="u3795"><!-- image -->
-           <img class="block" id="u3795_img" src="images/06_piwall.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3478"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3478" title="Autostart"><!-- group -->
-          <div class="clip_frame grpelem" id="u3807"><!-- image -->
-           <img class="block" id="u3807_img" src="images/07_autostart.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3482"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3482" title="Timer"><!-- group -->
-          <div class="clip_frame grpelem" id="u3819"><!-- image -->
-           <img class="block" id="u3819_img" src="images/08_timer.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3486"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3486" title="Auxaliry"><!-- group -->
-          <div class="clip_frame grpelem" id="u3837"><!-- image -->
-           <img class="block" id="u3837_img" src="images/09_aux.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3490"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3490" title="Display Setting"><!-- group -->
-          <div class="clip_frame grpelem" id="u3831"><!-- image -->
-           <img class="block" id="u3831_img" src="images/10_resolutions.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3494"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3494" title="System"><!-- group -->
-          <div class="clip_frame grpelem" id="u3825"><!-- image -->
-           <img class="block" id="u3825_img" src="images/11_system.png" alt="" width="23" height="21"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="popup_anchor">
-       <div class="popup_element Thumb clearfix" id="pu3988"><!-- group -->
-        <div class="popup_anchor">
-         <div class="popup_element clearfix" id="u3988" title="System"><!-- group -->
-          <div class="clip_frame grpelem" id="u4030"><!-- image -->
-           <img class="block" id="u4030_img" src="images/12_streamer.png" alt="" width="23" height="23"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-     <div class="popup_anchor" id="u3343popup">
-      <div class="ContainerGroup clearfix" id="u3343"><!-- stack box -->
-       <div class="Container clearfix grpelem" id="u3346"><!-- column -->
-        <div class="clearfix colelem" id="u3403-4"><!-- content -->
-         <p>File Handling:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3363-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3363-4" href="?action=mount"><!-- rasterized frame --><img id="u3363-4_img" alt="Mount USB" width="150" height="40" src="images/u3363-4.png"/></a>
-         <div class="clip_frame grpelem" id="u3378"><!-- image -->
-          <img class="block" id="u3378_img" src="images/00_usb.png" alt="" width="18" height="27"/>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3365-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3365-4" href="?action=eject"><!-- rasterized frame --><img id="u3365-4_img" alt="Eject USB" width="150" height="40" src="images/u3365-4.png"/></a>
-         <div class="clip_frame grpelem" id="u3384"><!-- image -->
-          <img class="block" id="u3384_img" src="images/00_usb.png" alt="" width="18" height="27"/>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3366-4"><!-- group -->
-         <a class="nonblock nontext grpelem" id="u3366-4" href="/eXtplorer/" target="_blank"><!-- rasterized frame --><img id="u3366-4_img" alt="Filebrowser" width="150" height="40" src="images/u3366-4.png"/></a>
-         <div class="clip_frame grpelem" id="u3387"><!-- image -->
-          <img class="block" id="u3387_img" src="images/00_files.png" alt="" width="25" height="25"/>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3367-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3367-4" href="?action=diskspace"><!-- rasterized frame --><img id="u3367-4_img" alt="Diskspace" width="150" height="40" src="images/u3367-4.png"/></a>
-         <div class="clip_frame grpelem" id="u3372"><!-- image -->
-          <img class="block" id="u3372_img" src="images/00_diskspace.png" alt="" width="32" height="32"/>
-         </div>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3370-4" href="?action=clean"><!-- rasterized frame --><img id="u3370-4_img" alt="Clean HiddenFiles" width="150" height="40" src="images/u3370-4.png"/></a>
-        <div class="clearfix colelem" id="u3390-4"><!-- content -->
-         <p>Info about stored files:</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3368-4" href="?action=codecinfo"><!-- rasterized frame --><img id="u3368-4_img" alt="Movie Codec" width="150" height="40" src="images/u3368-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3369-4" href="?action=movieinfo"><!-- rasterized frame --><img id="u3369-4_img" alt="Movie Resolution" width="150" height="40" src="images/u3369-4.png"/></a>
-        <div class="clearfix colelem" id="u3392-4"><!-- content -->
-         <p>Special Functions:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3371-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3371-4" href="?action=imageconform"><!-- rasterized frame --><img id="u3371-4_img" alt="Conform Images" width="150" height="40" src="images/u3371-4.png"/></a>
-         <div class="clearfix grpelem" id="u3391-4"><!-- content -->
-          <p>Resize all images to 1920x1080 and save them as .jpg files</p>
-         </div>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3344"><!-- column -->
-        <div class="clearfix colelem" id="u3405-4"><!-- content -->
-         <p>Video Control:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3394-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3394-4" href="?action=startmaster"><!-- rasterized frame --><img id="u3394-4_img" alt="Play Master Loop" width="150" height="40" src="images/u3394-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3395-4" href="?action=startslave"><!-- rasterized frame --><img id="u3395-4_img" alt="Play as Slave" width="150" height="40" src="images/u3395-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3396-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3396-4" href="?action=startmasterusb"><!-- rasterized frame --><img id="u3396-4_img" alt="Play Master USB" width="150" height="40" src="images/u3396-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3411-4" href="?action=setseamlessscript"><!-- rasterized frame --><img id="u3411-4_img" alt="Seamless" width="75" height="36" src="images/u3411-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u4069-4" href="?action=setgapscript"><!-- rasterized frame --><img id="u4069-4_img" alt="Gaplist" width="75" height="36" src="images/u4069-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3427"><!-- group -->
-         <a class="nonblock action nontext clip_frame grpelem" id="u3427" href="?action=stopvideo"><!-- image --><img class="block" id="u3427_img" src="images/00_stop.png" alt="" width="25" height="25"/></a>
-         <div class="clearfix grpelem" id="u3430-4"><!-- content -->
-          <p>Stop Video only</p>
-         </div>
-         <div class="clearfix grpelem" id="u3412-6"><!-- content -->
-          <p>Change between</p>
-          <p>seamless or gap sync-script.</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu4066-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u4066-4" href="?action=starthplayer"><!-- rasterized frame --><img id="u4066-4_img" alt="HPlayer_OSC" width="150" height="40" src="images/u4066-4.png"/></a>
-         <div class="clearfix grpelem" id="u4067-8"><!-- content -->
-          <p>Start the videoplayer with</p>
-          <p>OSC control.</p>
-          <p>by the Hemisphere-Project Team</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3414-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3414-4" href="?action=startmaster01"><!-- rasterized frame --><img id="u3414-4_img" alt="Play _01 Loop" width="124" height="40" src="images/u3414-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3422-4" href="?action=startseamless01"><!-- rasterized frame --><img id="u3422-4_img" alt="&nbsp;Seamless" width="100" height="40" src="images/u3422-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3955-4" href="?action=startmaster01"><!-- rasterized frame --><img id="u3955-4_img" alt="Once" width="90" height="40" src="images/u3955-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3415-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3415-4" href="?action=startmaster02"><!-- rasterized frame --><img id="u3415-4_img" alt="Play _02 Loop" width="124" height="40" src="images/u3415-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3956-4" href="?action=startseamless02"><!-- rasterized frame --><img id="u3956-4_img" alt="&nbsp;Seamless" width="100" height="40" src="images/u3956-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3423-4" href="?action=startmasteronce02"><!-- rasterized frame --><img id="u3423-4_img" alt="Once" width="90" height="40" src="images/u3423-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3416-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3416-4" href="?action=startmaster03"><!-- rasterized frame --><img id="u3416-4_img" alt="Play _03 Loop" width="124" height="40" src="images/u3416-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3957-4" href="?action=startseamless03"><!-- rasterized frame --><img id="u3957-4_img" alt="&nbsp;Seamless" width="100" height="40" src="images/u3957-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3424-4" href="?action=startmasteronce03"><!-- rasterized frame --><img id="u3424-4_img" alt="Once" width="90" height="40" src="images/u3424-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3417-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3417-4" href="?action=startmaster04"><!-- rasterized frame --><img id="u3417-4_img" alt="Play _04 Loop" width="124" height="40" src="images/u3417-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3958-4" href="?action=startseamless04"><!-- rasterized frame --><img id="u3958-4_img" alt="&nbsp;Seamless" width="100" height="40" src="images/u3958-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3425-4" href="?action=startmasteronce04"><!-- rasterized frame --><img id="u3425-4_img" alt="Once" width="90" height="40" src="images/u3425-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3418-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3418-4" href="?action=startmaster05"><!-- rasterized frame --><img id="u3418-4_img" alt="Play _05 Loop" width="124" height="40" src="images/u3418-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3959-4" href="?action=startseamless05"><!-- rasterized frame --><img id="u3959-4_img" alt="&nbsp;Seamless" width="100" height="40" src="images/u3959-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3426-4" href="?action=startmasteronce05"><!-- rasterized frame --><img id="u3426-4_img" alt="Once" width="90" height="40" src="images/u3426-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="ppu3419-4"><!-- group -->
-         <div class="clearfix grpelem" id="pu3419-4"><!-- column -->
-          <a class="nonblock action nontext colelem" id="u3419-4" href="?action=startmaster06"><!-- rasterized frame --><img id="u3419-4_img" alt="Play _06 Loop" width="124" height="40" src="images/u3419-4.png"/></a>
-          <a class="nonblock action nontext colelem" id="u3420-4" href="?action=startmaster07"><!-- rasterized frame --><img id="u3420-4_img" alt="Play _07 Loop" width="124" height="40" src="images/u3420-4.png"/></a>
-          <a class="nonblock action nontext colelem" id="u3421-4" href="?action=startmaster08"><!-- rasterized frame --><img id="u3421-4_img" alt="Play _08 Loop" width="124" height="40" src="images/u3421-4.png"/></a>
-         </div>
-         <div class="clearfix grpelem" id="u3431-15"><!-- content -->
-          <p>The video naming must be:</p>
-          <p>&nbsp;</p>
-          <p>01*;02; 03;....</p>
-          <p>&nbsp;</p>
-          <p>for example:</p>
-          <p>01_movie.mp4</p>
-          <p>&nbsp;</p>
-          <p>There is no Sync function in seamless mode.</p>
-         </div>
-        </div>
-        <a class="nonblock action nontext colelem" id="u4070-4" href="?action=startmaster09"><!-- rasterized frame --><img id="u4070-4_img" alt="Play _09 Loop" width="124" height="40" src="images/u4070-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u4071-4" href="?action=startmaster10"><!-- rasterized frame --><img id="u4071-4_img" alt="Play _10 Loop" width="124" height="40" src="images/u4071-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u4072-4" href="?action=startmaster11"><!-- rasterized frame --><img id="u4072-4_img" alt="Play _11 Loop" width="124" height="40" src="images/u4072-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u4073-4" href="?action=startmaster12"><!-- rasterized frame --><img id="u4073-4_img" alt="Play _12 Loop" width="124" height="40" src="images/u4073-4.png"/></a>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3345"><!-- column -->
-        <div class="position_content" id="u3345_position_content">
-         <div class="clearfix colelem" id="u3408-4"><!-- content -->
-          <p>Image Player:</p>
-         </div>
-         <div class="clearfix colelem" id="pu3397-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u3397-4" href="?action=image"><!-- rasterized frame --><img id="u3397-4_img" alt="Image Player Start" width="150" height="40" src="images/u3397-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3398-4" href="?action=imageusb"><!-- rasterized frame --><img id="u3398-4_img" alt="Image Player USB" width="150" height="40" src="images/u3398-4.png"/></a>
-         </div>
-         <div class="clearfix colelem" id="u3439-4"><!-- content -->
-          <p>Image Playback time:</p>
-         </div>
-         <div class="clearfix colelem" id="pu3440-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u3440-4" href="?action=slidetime0"><!-- rasterized frame --><img id="u3440-4_img" alt="as fast as possible" width="150" height="40" src="images/u3440-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3442-4" href="?action=slidetime10"><!-- rasterized frame --><img id="u3442-4_img" alt="10 seconds" width="150" height="40" src="images/u3442-4.png"/></a>
-         </div>
-         <div class="clearfix colelem" id="pu3441-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u3441-4" href="?action=slidetime5"><!-- rasterized frame --><img id="u3441-4_img" alt="5 seconds" width="150" height="40" src="images/u3441-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3443-4" href="?action=slidetime15"><!-- rasterized frame --><img id="u3443-4_img" alt="15 seconds" width="150" height="40" src="images/u3443-4.png"/></a>
-         </div>
-         <div class="clearfix colelem" id="u4062-4"><!-- content -->
-          <p>Image overlay:</p>
-         </div>
-         <div class="clearfix colelem" id="pu4063-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u4063-4" href="?action=overlay"><!-- rasterized frame --><img id="u4063-4_img" alt="Overlay" width="150" height="40" src="images/u4063-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u4065-4" href="?action=stopoverlay"><!-- rasterized frame --><img id="u4065-4_img" alt="Stop Overlay" width="150" height="40" src="images/u4065-4.png"/></a>
-         </div>
-         <div class="clearfix colelem" id="u4064-4"><!-- content -->
-          <p>overlays /media/images/overlay.png over the video</p>
-         </div>
-         <div class="clearfix colelem" id="pu3979"><!-- group -->
-          <div class="clearfix grpelem" id="u3979"><!-- column -->
-           <div class="position_content" id="u3979_position_content">
-            <div class="clearfix colelem" id="u3965-4"><!-- content -->
-             <p>Presenter:</p>
+    </div>
+    <div>
+      <div data-duration-in="300" data-duration-out="100" data-easing="linear" class="w-tabs">
+        <div class="tabs-menu w-tab-menu"><a data-w-tab="Tab 1" class="tab-link w--current w-inline-block w-tab-link yellow1"><img src="images/01_filesdisk.png" class="image_register"></a><a data-w-tab="Tab 2" class="blue1 tab-link w-inline-block w-tab-link"><img src="images/02_video.png" class="image_register"></a><a data-w-tab="Tab 3" class="blue2 tab-link w-inline-block w-tab-link"><img src="images/12_streamer.png" class="image_register"></a><a data-w-tab="Tab 4" class="green1 tab-link w-inline-block w-tab-link"><img src="images/04_presenter.png" class="image_register"></a><a data-w-tab="Tab 5" class="grey1 tab-link w-inline-block w-tab-link"><img src="images/05_mapping.png" class="image_register"></a><a data-w-tab="Tab 6" class="brown tab-link w-inline-block w-tab-link"><img src="images/06_piwall.png" class="image_register"></a><a data-w-tab="Tab 7" class="tab-link violett1 w-inline-block w-tab-link"><img src="images/07_autostart.png" class="image_register"></a><a data-w-tab="Tab 8" class="tab-link violett2 w-inline-block w-tab-link"><img src="images/08_timer.png" class="image_register"></a><a data-w-tab="Tab 9" class="tab-link violett3 w-inline-block w-tab-link"><img src="images/09_aux.png" class="image_register"></a><a data-w-tab="Tab 10" class="red2 tab-link w-inline-block w-tab-link"><img src="images/10_resolutions.png" class="image_register"></a><a data-w-tab="Tab 11" class="red1 tab-link w-inline-block w-tab-link"><img src="images/11_system.png" class="image_register"></a></div>
+        <div class="tabs-content w-tab-content">
+          <div data-w-tab="Tab 1" class="w--tab-active w-tab-pane yellow_pane">
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading">  <br>File Handling:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
             </div>
-            <div class="clearfix colelem" id="pu3966-4"><!-- group -->
-             <a class="nonblock action nontext grpelem" id="u3966-4" href="?action=impressprev"><!-- rasterized frame --><img id="u3966-4_img" alt="&lt; Previous" width="150" height="40" src="images/u3966-4.png"/></a>
-             <a class="nonblock action nontext grpelem" id="u3967-4" href="?action=impressnext"><!-- rasterized frame --><img id="u3967-4_img" alt="Next &gt;" width="150" height="40" src="images/u3967-4.png"/></a>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mount" class="action button_orange w-button">Mount USB</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">To mount an usb-stick if it is not mounted automatically.</div>
+              </div>
             </div>
-            <div class="clearfix colelem" id="pu3968-4"><!-- group -->
-             <a class="nonblock action nontext grpelem" id="u3968-4" href="?action=startimagemanual"><!-- rasterized frame --><img id="u3968-4_img" alt="Image Presentation" width="150" height="40" src="images/u3968-4.png"/></a>
-             <a class="nonblock action nontext grpelem" id="u3969-4" href="?action=startpdf"><!-- rasterized frame --><img id="u3969-4_img" alt="PDF Presentation" width="150" height="40" src="images/u3969-4.png"/></a>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=eject" class="action button_orange w-button">Eject USB</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">To eject an usb-stick.</div>
+              </div>
             </div>
-            <a class="nonblock action nontext colelem" id="u3975-4" href="?action=impressopen"><!-- rasterized frame --><img id="u3975-4_img" alt="Open" width="150" height="40" src="images/u3975-4.png"/></a>
-            <a class="nonblock action nontext colelem" id="u3978-4" href="?action=impressrelaunch"><!-- rasterized frame --><img id="u3978-4_img" alt="Relaunch Impress" width="150" height="40" src="images/u3978-4.png"/></a>
-           </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="/eXtplorer/" target="_blank" class="button_orange w-button">Filebrowser</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Open online Filebrowser in new tab.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=getcontent" target="_blank" class="action button_orange w-button">Get File from Web</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Downloads content for example from your Dropbox.<br>You need to edit /var/www/sync/getcontent for your needs!</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=diskspace" class="action button_orange w-button">Diskspace</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Display used/free space.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=clean" class="action button_orange w-button">Clean hidden Files</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Removes unwanted files mostly generated by osx computers.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading"> <br><br>Info about stored files:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=codecinfo" class="action button_orange w-button">Movie Codec Info</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">To mount an usb-stick if it is not mounted automatically</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=movieinfo" class="action button_orange w-button">Movie Resolution</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">To mount an usb-stick if it is not mounted automatically</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading"> <br><br>Functions:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=imageconform" class="action button_orange w-button">Conform Images</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Resizes all stored images to max. 1920 x 1080p and saves all of them in .jpg format.<br>.</div>
+              </div>
+            </div>
           </div>
-          <a class="nonblock action nontext grpelem" id="u3970-4" href="?action=startpdfusb"><!-- rasterized frame --><img id="u3970-4_img" alt="PDF USB Present" width="150" height="40" src="images/u3970-4.png"/></a>
-          <div class="clearfix grpelem" id="u3972-4"><!-- content -->
-           <p>Impress Control:</p>
+          <div data-w-tab="Tab 2" class="blue1_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading"> <br>Video Control:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startmaster" class="action buttonblue w-button">Play Master Loop</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startslave" class="action buttonblue w-button">Play as Slave</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startmasterusb" class="action buttonblue w-button">Play Master USB</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=setseamlessscript" class="action buttonblue w-button">Seamless</a></div>
+                  <div class="w-col w-col-6"><a href="?action=setgapscript" class="action buttonblue w-button">Gaplist</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=stopvideo" class="action buttomredstop w-button">Stop Video only</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="regular-text">Change between seamless and gap script.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=starthplayer" class="action buttonblue w-button">HPlayer_OSC</a>
+                <div class="heading"> <br>Video Loop Control:</div>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="regular-text">Start the videoplayer with OSC control. <br> by the Hemisphere-Project Team</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster01" class="action buttonblue w-button">Play_01 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce01" class="action buttonblue w-button">Play_01 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster02" class="action buttonblue w-button">Play_02 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce02" class="action buttonblue w-button">Play_02 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster03" class="action buttonblue w-button">Play_03 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce03" class="action buttonblue w-button">Play_03 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster04" class="action buttonblue w-button">Play_04 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce04" class="action buttonblue w-button">Play_04 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster05" class="action buttonblue w-button">Play_05 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce05" class="action buttonblue w-button">Play_05 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster06" class="action buttonblue w-button">Play_06 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce06" class="action buttonblue w-button">Play_06 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster07" class="action buttonblue w-button">Play_07 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce07" class="action buttonblue w-button">Play_07 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster08" class="action buttonblue w-button">Play_08 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce08" class="action buttonblue w-button">Play_08 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster09" class="action buttonblue w-button">Play_09 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce09" class="action buttonblue w-button">Play_09 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster10" class="action buttonblue w-button">Play_10 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce10" class="action buttonblue w-button">Play_10 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster11" class="action buttonblue w-button">Play_11 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce11" class="action buttonblue w-button">Play_11 Once</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startmaster12" class="action buttonblue w-button">Play_12 Loop</a></div>
+              <div class="w-col w-col-6"><a href="?action=startmasteronce12" class="action buttonblue w-button">Play_12 Once</a>
+                <div class="regular-text"><br> .</div>
+              </div>
+            </div>
           </div>
-          <a class="nonblock action nontext grpelem" id="u3973-4" href="?action=impressplay"><!-- rasterized frame --><img id="u3973-4_img" alt="Fullscreen" width="150" height="40" src="images/u3973-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3974-4" href="?action=impressedit"><!-- rasterized frame --><img id="u3974-4_img" alt="Edit" width="150" height="40" src="images/u3974-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3976-4" href="?action=impresslast"><!-- rasterized frame --><img id="u3976-4_img" alt="Open Demo" width="150" height="40" src="images/u3976-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3977-4" href="?action=impressclose"><!-- rasterized frame --><img id="u3977-4_img" alt="Save" width="150" height="40" src="images/u3977-4.png"/></a>
-         </div>
-         <div class="clearfix colelem" id="u3432-4"><!-- content -->
-          <p>Audio Player (usable with image player):</p>
-         </div>
-         <div class="clearfix colelem" id="pu3433-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u3433-4" href="?action=startaudio"><!-- rasterized frame --><img id="u3433-4_img" alt="Audio Player Start" width="150" height="40" src="images/u3433-4.png"/></a>
-          <a class="nonblock action nontext grpelem" id="u3971-4" href="?action=startaudioslave"><!-- rasterized frame --><img id="u3971-4_img" alt="Audio Slave" width="150" height="40" src="images/u3971-4.png"/></a>
-         </div>
-         <div class="clearfix colelem" id="pu3434-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u3434-4" href="?action=startaudiosub"><!-- rasterized frame --><img id="u3434-4_img" alt="Audio Player USB" width="150" height="40" src="images/u3434-4.png"/></a>
-          <a class="nonblock action nontext clip_frame grpelem" id="u3435" href="?action=stopaudio"><!-- image --><img class="block" id="u3435_img" src="images/00_stop.png" alt="" width="33" height="33"/></a>
-         </div>
-         <div class="clearfix colelem" id="u3438-4"><!-- content -->
-          <p>Stop audio only</p>
-         </div>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3458"><!-- column -->
-        <div class="clearfix colelem" id="pu3473-9"><!-- group -->
-         <div class="clearfix grpelem" id="u3473-9"><!-- content -->
-          <p>Mapping:</p>
-          <p id="u3473-5"><span id="u3473-3">&nbsp;</span><span id="u3473-4">(works only when booted with USB mouse</span></p>
-          <p id="u3473-7"><span id="u3473-6">&amp;Autostart Mapper)</span></p>
-         </div>
-         <div class="clearfix grpelem" id="ppu3960"><!-- column -->
-          <div class="clearfix colelem" id="pu3960"><!-- group -->
-           <a class="nonblock action nontext clip_frame grpelem" id="u3960" href="?action=launchmapper"><!-- image --><img class="block" id="u3960_img" src="images/00_shutdown.png" alt="" title="Launch for first time" width="20" height="20"/></a>
-           <a class="nonblock action nontext clip_frame grpelem" id="u3926" href="?action=relaunchmapper"><!-- image --><img class="block" id="u3926_img" src="images/00_reboot.png" alt="" title="Relaunch mapper" width="20" height="20"/></a>
+          <div data-w-tab="Tab 4" class="green_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading"> <br>Image Player:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=image" class="action buttongreen w-button">Image Player Start</a></div>
+              <div class="w-col w-col-6"><a href="?action=imageusb" class="action buttongreen w-button">Image Player Start USB</a>
+                <div class="regular-text"> </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading">Image Player Playback Time:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=slidetime0" class="action buttongreen w-button">As fast as possible</a></div>
+              <div class="w-col w-col-6"><a href="?action=slidetime10" class="action buttongreen w-button">10 Seconds</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=slidetime5" class="action buttongreen w-button">5 Seconds</a></div>
+              <div class="w-col w-col-6"><a href="?action=slidetime15" class="action buttongreen w-button">15 Seconds</a>
+                <div class="regular-text"> </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading">Image Overlay:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="regular-text">This function overlays an image over the videoplayer.<br>Make your .png with alpha channel and store it in /media/internal/overlay.png</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=overlay" class="action buttongreen w-button">Overlay</a></div>
+              <div class="w-col w-col-6"><a href="?action=stopoverlay" class="action buttongreen w-button">Stop Overlay</a>
+                <div class="regular-text"> </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading">Presenter:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=impressprev" class="action buttongreen w-button">&lt; Previous</a></div>
+              <div class="w-col w-col-6"><a href="?action=impressnext" class="action buttongreen w-button">Next &gt;</a>
+                <div class="regular-text"><br> .</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startimagemanual" class="action buttongreen w-button">Image Presentation</a></div>
+              <div class="w-col w-col-6"><a href="?action=startpdf" class="action buttongreen w-button">PDF Presentation</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6"><a href="?action=startpdfusb" class="action buttongreen w-button">PDF USB Presentation</a>
+                <div class="regular-text"> </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading">Impress Control:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=impressplay" class="action buttongreen w-button">Fullscreen</a></div>
+              <div class="w-col w-col-6"><a href="?action=impressedit" class="action buttongreen w-button">Edit</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=impressopen" class="action buttongreen w-button">Open</a></div>
+              <div class="w-col w-col-6"><a href="?action=impresslast" class="action buttongreen w-button">Open Demo</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="http://?action=impressclose" class="action buttongreen w-button">Save</a></div>
+              <div class="w-col w-col-6"><a href="?action=impressrelaunch" class="action buttongreen w-button">Relaunch Impress</a>
+                <div class="regular-text"></div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading">Audio Player:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="regular-text">You can us Audio together with Image Player</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startaudio" class="action buttongreen w-button">Audio Player Start</a></div>
+              <div class="w-col w-col-6"><a href="?action=startaudioslave" class="action buttongreen w-button">Audio Slave</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startaudiosub" class="action buttongreen w-button">Audio Player USB</a></div>
+              <div class="w-col w-col-6"><a href="?action=stopaudio" class="action buttomredstop w-button">Stop Audio Only</a>
+                <div class="regular-text"><br> .</div>
+              </div>
+            </div>
           </div>
-          <div class="clearfix colelem" id="pu3929-6"><!-- group -->
-           <a class="nonblock action nontext clearfix grpelem" id="u3929-6" href="?action=relaunchmapper"><!-- content --><p>Relaunch</p><p>Mapper</p></a>
-           <a class="nonblock action nontext clearfix grpelem" id="u3964-6" href="?action=relaunchmapper"><!-- content --><p>Launch</p><p>Mapper</p></a>
+          <div data-w-tab="Tab 5" class="grey_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>Mapping:</div>
+                <div class="regular-text">Autostart into Mapper with USB mouse connect to get remote functions working.</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=launchmapper" tooltipster="top" title="launch without  mouse" class="action buttomredstop w-button">Launch Mapper</a></div>
+                  <div class="w-col w-col-6"><a href="?action=relaunchmapper" tooltipster="top" title="Relaunch after crash" class="action buttomredstop w-button">ReLaunch Mapper</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <h1 class="heading_white">Open Setting:</h1>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperimport1" class="action buttongray_small w-button">1</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperimport2" class="action buttongray_small w-button">2</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperimport3" class="action buttongray_small w-button">3</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperimport4" class="action buttongray_small w-button">4</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperimport5" class="action buttongray_small w-button">5</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperimport6" class="action buttongray_small w-button">6</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <h1 class="heading_white">Save to Setting:</h1>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperexport1" class="action buttongray_small w-button">1</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperexport2" class="action buttongray_small w-button">2</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperexport3" class="action buttongray_small w-button">3</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperexport4" class="action buttongray_small w-button">4</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperexport5" class="action buttongray_small w-button">5</a></div>
+                  <div class="w-col w-col-2 w-col-small-2 w-col-tiny-2"><a href="?action=mapperexport6" class="action buttongray_small w-button">6</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mappermappingmode" class="action buttongray w-button"><strong>MAPPING Mode</strong></a></div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"></div>
+                  <div class="w-col w-col-6"><a href="?action=mapperundo" class="action buttongray_small w-button">Undo</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mapperquad" class="action buttongray w-button">Add Quad  □</a></div>
+              <div class="w-col w-col-6"><a href="?action=mapperpersp" class="action buttongray w-button">Toggle Perspective</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mappertriangl" class="action buttongray w-button">Add Triangle ∆</a></div>
+              <div class="w-col w-col-6"><a href="?action=mapperdelete" class="action buttongray w-button">Delete Surface</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mappergrid" class="action buttongray w-button">Add Gridwarp ◊</a>
+                <div class="regular-text">--------------------------------------------------------------------------------</div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-3"><a href="?action=mapperaddrow" class="action buttongray_small w-button">+ Row</a></div>
+                  <div class="w-col w-col-3"><a href="?action=mapperrmrow" class="action buttongray_small w-button">- Row</a></div>
+                  <div class="w-col w-col-3"><a href="?action=mapperaddcolumn" class="action buttongray_small w-button">+ Column</a></div>
+                  <div class="w-col w-col-3"><a href="?action=mapperrmcolumn" class="action buttongray_small w-button">- Column</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mapperscaleup" class="action buttongray_small w-button">Scale Up</a></div>
+                  <div class="w-col w-col-6"><a href="?action=mapperscaledown" class="action buttongray_small w-button">Scale Down</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-4"><a href="?action=mapperlayerup" class="action buttongray_small w-button">Layer Up</a></div>
+                  <div class="w-col w-col-4"><a href="http://?action=mapperlayerdown" class="action buttongray_small w-button">Layer Down</a></div>
+                  <div class="w-col w-col-4"><a href="?action=mapperpanel" class="action buttongray_small w-button">Show Panel</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mappernext" class="action buttongray_small w-button">Select Next Surface</a>
+                    <div class="regular-text">-----------------------------------------------</div>
+                  </div>
+                  <div class="w-col w-col-6"><a href="?action=mapperprev" class="action buttongray_small w-button">Select Prev Surface</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mappernextvertex" class="action buttongray_small w-button">Select Next Vertex °</a></div>
+                  <div class="w-col w-col-6"><a href="?action=mapperprevvertex" class="action buttongray_small w-button">Select Prev Vertex °</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mapperleft" class="action buttongray_small w-button">Move Left</a></div>
+                  <div class="w-col w-col-6"><a href="?action=mapperup" class="action buttongray_small w-button">Move Up</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mapperdown" class="action buttongray_small w-button">Move Down</a></div>
+                  <div class="w-col w-col-6"><a href="?action=mapperright" class="action buttongray_small w-button">Move Right</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mapperleftbig" class="action buttongray_small w-button">Big Move Left</a>
+                    <div class="regular-text">-----------------------------------------------</div>
+                  </div>
+                  <div class="w-col w-col-6"><a href="?action=mapperupbig" class="action buttongray_small w-button">Big Move Up</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=mapperdownbig" class="action buttongray_small w-button">Big Move Down</a></div>
+                  <div class="w-col w-col-6"><a href="?action=mapperrightbig" class="action buttongray_small w-button">Big Move Right</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mappermediaselectth" class="action buttongray w-button"><strong>Media Stepper</strong></a></div>
+              <div class="w-col w-col-6"><a href="?action=mappermediaselect" class="action buttongray w-button">Media Selection</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mappertexturemode" class="action buttongray w-button"><strong>TEXTURE Mode</strong></a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mapperplaymode" class="action buttongray w-button"><strong>PLAY Mode</strong></a>
+                <div class="regular-text"><br>PiMapper by Krisjanis Rijnieks<br>https://github.com/kr15h/ofxPiMapper<br>.</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
           </div>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3529-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3529-4" href="?action=mapperimport1" title="import setting 1"><!-- rasterized frame --><img id="u3529-4_img" alt="Import Setting: 1" title="import setting 1" width="165" height="40" src="images/u3529-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3896-4" href="?action=mapperimport2" title="import setting 2"><!-- rasterized frame --><img id="u3896-4_img" alt="2" title="import setting 2" width="37" height="40" src="images/u3896-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3897-4" href="?action=mapperimport3" title="import setting 3"><!-- rasterized frame --><img id="u3897-4_img" alt="3" title="import setting 3" width="37" height="40" src="images/u3897-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3898-4" href="?action=mapperimport4" title="import setting 4"><!-- rasterized frame --><img id="u3898-4_img" alt="4" title="import setting 4" width="37" height="40" src="images/u3898-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3899-4" href="?action=mapperimport5" title="import setting 5"><!-- rasterized frame --><img id="u3899-4_img" alt="5" title="import setting 5" width="37" height="40" src="images/u3899-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3527-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3527-4" href="?action=mapperexport1" title="export to setting 1"><!-- rasterized frame --><img id="u3527-4_img" alt="Export to Setting : 1" title="export to setting 1" width="165" height="40" src="images/u3527-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3892-4" href="?action=mapperexport2" title="export to setting 2"><!-- rasterized frame --><img id="u3892-4_img" alt="2" title="export to setting 2" width="37" height="40" src="images/u3892-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3893-4" href="?action=mapperexport3" title="export to setting 3"><!-- rasterized frame --><img id="u3893-4_img" alt="3" title="export to setting 3" width="37" height="40" src="images/u3893-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3894-4" href="?action=mapperexport4" title="export to setting 4"><!-- rasterized frame --><img id="u3894-4_img" alt="4" title="export to setting 4" width="37" height="40" src="images/u3894-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3895-4" href="?action=mapperexport5" title="export to setting 5"><!-- rasterized frame --><img id="u3895-4_img" alt="5" title="export to setting 5" width="37" height="40" src="images/u3895-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3501-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3501-4" href="?action=mappermappingmode"><!-- rasterized frame --><img id="u3501-4_img" alt="Mapping Mode" width="150" height="40" src="images/u3501-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3939-4" href="?action=mapperpanel"><!-- rasterized frame --><img id="u3939-4_img" alt="Panel" width="75" height="40" src="images/u3939-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3504-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3504-4" href="?action=mapperquad"><!-- rasterized frame --><img id="u3504-4_img" alt="Add Quad" width="150" height="40" src="images/u3504-4.png"/></a>
-         <a class="nonblock action nontext clip_frame grpelem" id="u3620" href="?action=mapperquad"><!-- image --><img class="block" id="u3620_img" src="images/mapper_quad.png" alt="" width="49" height="28"/></a>
-         <a class="nonblock action nontext grpelem" id="u3508-4" href="?action=mapperpersp"><!-- rasterized frame --><img id="u3508-4_img" alt="Toggle" width="75" height="40" src="images/u3508-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3526-4" href="?action=mapperundo"><!-- rasterized frame --><img id="u3526-4_img" alt="Undo" width="75" height="40" src="images/u3526-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="ppu3507-4"><!-- group -->
-         <div class="clearfix grpelem" id="pu3507-4"><!-- group -->
-          <a class="nonblock action nontext grpelem" id="u3507-4" href="?action=mapperdelete"><!-- rasterized frame --><img id="u3507-4_img" alt="Delete Surface" width="150" height="40" src="images/u3507-4.png"/></a>
-          <a class="nonblock action nontext clip_frame grpelem" id="u3614" href="?action=mapperdelete" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0,M12=-1,M21=1,M22=0,SizingMethod='auto expand')" data-mu-ie-matrix-dx="7" data-mu-ie-matrix-dy="-7"><!-- image --><img class="block" id="u3614_img" src="images/mapper_delete.png" alt="" width="31" height="18"/></a>
-         </div>
-         <a class="nonblock action nontext grpelem" id="u3505-4" href="?action=mappertriangle"><!-- rasterized frame --><img id="u3505-4_img" alt="Add Triangle" width="150" height="40" src="images/u3505-4.png"/></a>
-         <a class="nonblock action nontext clip_frame grpelem" id="u3631" href="?action=mappertriangle" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- image --><img class="block" id="u3631_img" src="images/mapper_triang.png" alt="" width="47" height="26"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3506-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3506-4" href="?action=mappergrid"><!-- rasterized frame --><img id="u3506-4_img" alt="Add Gridwarp" width="150" height="40" src="images/u3506-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3509-4" href="?action=mapperaddrow"><!-- rasterized frame --><img id="u3509-4_img" alt="Add Row" width="75" height="40" src="images/u3509-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3510-4" href="?action=mapperrmrow"><!-- rasterized frame --><img id="u3510-4_img" alt="Remove Row" width="75" height="40" src="images/u3510-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3513-6"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3513-6" href="?action=mapperlayerup"><!-- rasterized frame --><img id="u3513-6_img" alt="Layer
-Up" width="75" height="40" src="images/u3513-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3514-6" href="?action=mapperlayerdown"><!-- rasterized frame --><img id="u3514-6_img" alt="Layer
-Down" width="75" height="40" src="images/u3514-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3511-6" href="?action=mapperaddcolumn"><!-- rasterized frame --><img id="u3511-6_img" alt="Add Column" width="75" height="40" src="images/u3511-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3512-4" href="?action=mapperrmcolumn"><!-- rasterized frame --><img id="u3512-4_img" alt="Remove Column" width="75" height="40" src="images/u3512-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3516-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3516-4" href="?action=mappernext"><!-- rasterized frame --><img id="u3516-4_img" alt="Select Next Surface" width="150" height="40" src="images/u3516-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3517-4" href="?action=mapperprev"><!-- rasterized frame --><img id="u3517-4_img" alt="Select Previous Surface" width="150" height="40" src="images/u3517-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3518-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3518-4" href="?action=mappernextvertex"><!-- rasterized frame --><img id="u3518-4_img" alt="Select Next Vertex" width="150" height="40" src="images/u3518-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3519-4" href="?action=mapperprevvertex"><!-- rasterized frame --><img id="u3519-4_img" alt="Select Previous Vertex" width="150" height="40" src="images/u3519-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3521-6"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3521-6" href="?action=mapperleft"><!-- rasterized frame --><img id="u3521-6_img" alt="Move
-Left" width="75" height="40" src="images/u3521-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3520-6" href="?action=mapperup"><!-- rasterized frame --><img id="u3520-6_img" alt="Move
-Up" width="75" height="40" src="images/u3520-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3523-6" href="?action=mapperdown"><!-- rasterized frame --><img id="u3523-6_img" alt="Move
-Down" width="75" height="40" src="images/u3523-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3522-6" href="?action=mapperright"><!-- rasterized frame --><img id="u3522-6_img" alt="Move
-Right" width="75" height="40" src="images/u3522-6.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3534-6"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3534-6" href="?action=mapperleftbig"><!-- rasterized frame --><img id="u3534-6_img" alt="Big Move
-Left" width="75" height="40" src="images/u3534-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3535-6" href="?action=mapperupbig"><!-- rasterized frame --><img id="u3535-6_img" alt="Big Move
-Up" width="75" height="40" src="images/u3535-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3536-6" href="?action=mapperdownbig"><!-- rasterized frame --><img id="u3536-6_img" alt="Big Move
-Down" width="75" height="40" src="images/u3536-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3537-6" href="?action=mapperrightbig"><!-- rasterized frame --><img id="u3537-6_img" alt="Big Move
-Right" width="75" height="40" src="images/u3537-6.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3500-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3500-4" href="?action=mappertexturemode"><!-- rasterized frame --><img id="u3500-4_img" alt="Texture Mode" width="150" height="40" src="images/u3500-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3502-4" href="?action=mappermediaselect"><!-- rasterized frame --><img id="u3502-4_img" alt="Media Selection" width="150" height="40" src="images/u3502-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3499-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3499-4" href="?action=mapperplaymode"><!-- rasterized frame --><img id="u3499-4_img" alt="Play Mode" width="150" height="40" src="images/u3499-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3503-4" href="?action=mappermediaselectth"><!-- rasterized frame --><img id="u3503-4_img" alt="Media Stepper" width="150" height="40" src="images/u3503-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="u3533-8"><!-- content -->
-         <p>PiMapper v. 0.2.x</p>
-         <p>Copyright by Krisjanis Rijnieks</p>
-         <p>https://github.com/kr15h/ofxPiMapper</p>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3475"><!-- column -->
-        <div class="clearfix colelem" id="u3477-4"><!-- content -->
-         <p>Pi-Wall:</p>
-        </div>
-        <div class="clearfix colelem" id="u3538-6"><!-- content -->
-         <p>4 Screen Setup</p>
-         <p>Start Slave:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3539-5"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3539-5" href="?action=piwall_topleft"><!-- rasterized frame --><img id="u3539-5_img" alt="
-1" width="100" height="60" src="images/u3539-5.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3540-5" href="?action=piwall_topright"><!-- rasterized frame --><img id="u3540-5_img" alt="
-2" width="100" height="60" src="images/u3540-5.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3541-5"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3541-5" href="?action=piwall_botleft"><!-- rasterized frame --><img id="u3541-5_img" alt="
-3" width="100" height="60" src="images/u3541-5.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3542-5" href="?action=piwall_botright"><!-- rasterized frame --><img id="u3542-5_img" alt="
-4" width="100" height="60" src="images/u3542-5.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="u3857-6"><!-- content -->
-         <p>3 Screen Setup</p>
-         <p>Start Slave:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3858-5"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3858-5" href="?action=piwall_left"><!-- rasterized frame --><img id="u3858-5_img" alt="
-1" width="100" height="60" src="images/u3858-5.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3859-5" href="?action=piwall_middle"><!-- rasterized frame --><img id="u3859-5_img" alt="
-2" width="100" height="60" src="images/u3859-5.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3861-5" href="?action=piwall_right"><!-- rasterized frame --><img id="u3861-5_img" alt="
-3" width="100" height="60" src="images/u3861-5.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="u3544-6"><!-- content -->
-         <p>The master file must be 1920x1080 and named: piwall.mp4</p>
-         <p>stored in /media/internal/video/</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3543-5" href="?action=piwall_master"><!-- rasterized frame --><img id="u3543-5_img" alt="
-PI-WALL MASTER" width="200" height="60" src="images/u3543-5.png"/></a>
-        <div class="clearfix colelem" id="u3545-4"><!-- content -->
-         <p>Start all slaves before starting the master!</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3862-5" href="?action=piwall_masterloop"><!-- rasterized frame --><img id="u3862-5_img" alt="
-PI-WALL MASTER Loop" width="200" height="60" src="images/u3862-5.png"/></a>
-        <div class="clearfix colelem" id="pu3863-6"><!-- group -->
-         <div class="clearfix grpelem" id="u3863-6"><!-- content -->
-          <p>Attention: This loops forever and is not killable</p>
-          <p>Needs restart to stop.</p>
-         </div>
-         <div class="clearfix grpelem" id="u3891-8"><!-- content -->
-          <p>PiWall</p>
-          <p>by Alex Goodyear, Colin Hogben, Dr Adam Stephen</p>
-          <p>http://www.piwall.co.uk/</p>
-         </div>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3479"><!-- column -->
-        <div class="clearfix colelem" id="u3481-4"><!-- content -->
-         <p>Autostart:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3546-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3546-4" href="?action=master"><!-- rasterized frame --><img id="u3546-4_img" alt="Videoplayer Master" width="150" height="40" src="images/u3546-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u4043-4" href="?action=streamermaster"><!-- rasterized frame --><img id="u4043-4_img" alt="Streamer Master" width="150" height="40" src="images/u4043-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3592-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3592-4" href="?action=usb"><!-- rasterized frame --><img id="u3592-4_img" alt="Videoplayer USB" width="150" height="40" src="images/u3592-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u4044-4" href="?action=streamerslave"><!-- rasterized frame --><img id="u4044-4_img" alt="Streamer Slave" width="150" height="40" src="images/u4044-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3593-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3593-4" href="?action=slave"><!-- rasterized frame --><img id="u3593-4_img" alt="Videoplayer Slave" width="150" height="40" src="images/u3593-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u4045-4" href="?action=streamerseamless"><!-- rasterized frame --><img id="u4045-4_img" alt="Streamer Seamless" width="150" height="40" src="images/u4045-4.png"/></a>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3594-4" href="?action=seamless"><!-- rasterized frame --><img id="u3594-4_img" alt="Video Seamless" width="150" height="40" src="images/u3594-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u4068-4" href="?action=sethplayer"><!-- rasterized frame --><img id="u4068-4_img" alt="HPlayer_OSC" width="150" height="40" src="images/u4068-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3595-4" href="?action=setimage"><!-- rasterized frame --><img id="u3595-4_img" alt="Imageplayer" width="150" height="40" src="images/u3595-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3596-4" href="?action=setimageusb"><!-- rasterized frame --><img id="u3596-4_img" alt="Imageplayer USB" width="150" height="40" src="images/u3596-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3597-4" href="?action=setimagemanual"><!-- rasterized frame --><img id="u3597-4_img" alt="Imageplay Manual" width="150" height="40" src="images/u3597-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3598-4" href="?action=setpdf"><!-- rasterized frame --><img id="u3598-4_img" alt="PDF Player" width="150" height="40" src="images/u3598-4.png"/></a>
-        <div class="clearfix colelem" id="pu3599-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3599-4" href="?action=setaudio"><!-- rasterized frame --><img id="u3599-4_img" alt="Audio Player" width="150" height="40" src="images/u3599-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u4047-4" href="?action=streameraudio"><!-- rasterized frame --><img id="u4047-4_img" alt="Streamer Audio" width="150" height="40" src="images/u4047-4.png"/></a>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3600-4" href="?action=setaudiousb"><!-- rasterized frame --><img id="u3600-4_img" alt="Audio Player USB" width="150" height="40" src="images/u3600-4.png"/></a>
-        <div class="clearfix colelem" id="pu3601-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3601-4" href="?action=setmapper"><!-- rasterized frame --><img id="u3601-4_img" alt="Mapper" width="150" height="40" src="images/u3601-4.png"/></a>
-         <div class="clearfix grpelem" id="u3610-4"><!-- content -->
-          <p>Autostart in Mapper mode. Connect a USB mouse!</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3602-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3602-4" href="?action=setsyphon"><!-- rasterized frame --><img id="u3602-4_img" alt="TCPSclient" width="150" height="40" src="images/u3602-4.png"/></a>
-         <div class="clearfix grpelem" id="u3609-6"><!-- content -->
-          <p>TCPSyphon</p>
-          <p>http://techlife.sg/TCPSyphon/</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3607-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3607-4" href="?action=screenshare"><!-- rasterized frame --><img id="u3607-4_img" alt="Screensharing" width="150" height="40" src="images/u3607-4.png"/></a>
-         <div class="clearfix grpelem" id="u3608-4"><!-- content -->
-          <p>Start in VNC mode using reverse connection, see IP on Screen</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3604-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3604-4" href="?action=setscheduler"><!-- rasterized frame --><img id="u3604-4_img" alt="Scheduler" width="150" height="40" src="images/u3604-4.png"/></a>
-         <div class="clearfix grpelem" id="u3870-4"><!-- content -->
-          <p>Start in Scheduler Mode</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3606-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3606-4" href="?action=powerpoint"><!-- rasterized frame --><img id="u3606-4_img" alt="Presenter" width="150" height="40" src="images/u3606-4.png"/></a>
-         <div class="clearfix grpelem" id="u3611-4"><!-- content -->
-          <p>Start in Impress Mode</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3869-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3869-4" href="?action=custom"><!-- rasterized frame --><img id="u3869-4_img" alt="Custom" width="150" height="40" src="images/u3869-4.png"/></a>
-         <div class="clearfix grpelem" id="u3871-4"><!-- content -->
-          <p>Start your custom application defined in backend.php</p>
-         </div>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3483"><!-- column -->
-        <div class="clearfix colelem" id="u3485-4"><!-- content -->
-         <p>Timer:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3548-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3548-4" href="?action=clockdisplay"><!-- rasterized frame --><img id="u3548-4_img" alt="Display Clock" width="150" height="40" src="images/u3548-4.png"/></a>
-         <div class="clearfix grpelem" id="pu3551-4"><!-- column -->
-          <div class="clearfix colelem" id="u3551-4"><!-- content -->
-           <p>Display Clock color:</p>
+          <div data-w-tab="Tab 3" class="blue2_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading"> <br>Video Control with Wifi Audio Streaming:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=audiostream" class="action buttonblue w-button">Play Master Stream</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=audiostreamslave" class="action buttonblue w-button">Play Slave Stream</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="/streamer/index.html" target="_blank" class="buttonblue w-button">Open Streampage</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="regular-text">Remove any USB sound devices!<br>Works on PVJ 3.2 or newer<br><br>You can connect PVJ to a Wifi router and stream to several devices simultaneously.</div>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading"> <br>Audio Control with Wifi Stream:</div>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=startaudiostream" class="action buttonblue w-button">Audioplayer Stream</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="/streamer/index.html" target="_blank" class="buttonblue w-button">Open Streampage</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading"> <br>TCP Syphon Stream:</div>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=tcpsserver" class="action buttonblue w-button">TCPSyphon Receiver</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">© techlife.sg</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading"> <br>NDI Stream:</div>
+              </div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=ndireceiver" class="action buttonblue w-button">NDI Receiver</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">This is in alpha state and currently only displays if a stream is available which takes 60 seconds.<br>© newtwek.com</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a class="action buttonblue w-button">NDI Sender</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Not working yet<br><br>.</div>
+              </div>
+            </div>
           </div>
-          <div class="clearfix colelem" id="pu3549-3"><!-- group -->
-           <a class="nonblock action nontext grpelem" id="u3549-3" href="?action=clockred"><!-- rasterized frame --><div id="u3549-3_img"></div></a>
-           <a class="nonblock action nontext grpelem" id="u3552-3" href="?action=clockgreen"><!-- rasterized frame --><div id="u3552-3_img"></div></a>
-           <a class="nonblock action nontext grpelem" id="u3553-3" href="?action=clockorange"><!-- rasterized frame --><div id="u3553-3_img"></div></a>
-           <a class="nonblock action nontext grpelem" id="u3554-3" href="?action=clockpink"><!-- rasterized frame --><div id="u3554-3_img"></div></a>
+          <div data-w-tab="Tab 6" class="grey_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>Pi-Wall:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4"></div>
+              <div class="w-col w-col-4">
+                <div class="regular-textcentered">4 Screen Setup<br>Start Slave:</div>
+              </div>
+              <div class="w-col w-col-4"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=piwall_topleft" class="action buttonbrown w-button">1 Top Left</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="http://?action=piwall_topright" class="action buttonbrown w-button">2 Top Right</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=piwall_botleft" class="action buttonbrown w-button">3 Buttom Left</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=piwall_botright" class="action buttonbrown w-button">4 Buttom Right</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4"></div>
+              <div class="w-col w-col-4">
+                <div class="regular-textcentered"> <br>3 Screen Setup<br>Start Slave:</div>
+              </div>
+              <div class="w-col w-col-4"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="http://?action=piwall_left" class="action buttonbrown w-button">1 Left</a></div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="http://?action=piwall_middle" class="action buttonbrown w-button">2 Center</a></div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="http://?action=piwall_right" class="action buttonbrown w-button">3 Right</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
+                <div class="regular-textcentered"> <br>The master file must be 1920 x 1080 pixel and stored as:<br><br>/media/internal/video/piwall.mp4<br><br>.</div>
+              </div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="?action=piwall_master" class="action buttonbrown w-button">PI-Wall Master</a>
+                <div class="regular-textcentered"> <br>Start all slaves before starting the master <br><br>.</div>
+              </div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"><a href="?action=piwall_masterloop" class="action buttonbrown w-button">PI-Wall Master Loop</a>
+                <div class="regular-textcentered"> <br>Attention: This loops forever !<br>Needs reboot to stop.<br>.</div>
+              </div>
+              <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">.<br>PiWall by Alex Goodyear, Colin Hogben, Dr. Adam Stephen<br>https://www.piwall.co.uk<br>.</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
           </div>
-         </div>
+          <div data-w-tab="Tab 7" class="violett1_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>Autostart Video:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=master" class="action buttonblue w-button">VIDEOPLAYER Master</a></div>
+              <div class="w-col w-col-6"><a href="?action=streamermaster" class="action buttonblue w-button">STREAMER Master</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=usb" class="action buttonblue w-button">VIDEOPLAYER Master USB</a></div>
+              <div class="w-col w-col-6"><a href="?action=streamerslave" class="action buttonblue w-button">STREAMER Slave</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=slave" class="action buttonblue w-button">VIDEOPLAYER Slave</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=autostartloop01" class="action buttonblue w-button">VIDEOPLAYER Loop 01</a>
+                <div class="regular-text">  </div>
+              </div>
+              <div class="w-col w-col-6"><a href="?action=autostartloop02" class="action buttonblue w-button">VIDEOPLAYER Loop 02</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=sethplayer" class="action buttonblue w-button">VIDEOHPLAYER OSC</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setmapper" class="action buttongray w-button">VIDEOMAPPER</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setsyphon" class="action buttonblue w-button">TCPSyphon Receiver</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white"> <br>Autostart Presenter:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=powerpoint" class="action buttongreen w-button">PRESENTER</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setimage" class="action buttongreen w-button">IMAGEPLAYER</a></div>
+              <div class="w-col w-col-6"><a href="?action=setimageusb" class="action buttongreen w-button">IMAGEPLAYER USB</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setimagemanual" class="action buttongreen w-button">IMAGEPLAYER Manual</a></div>
+              <div class="w-col w-col-6"><a href="?action=setpdf" class="action buttongreen w-button">PDF PLAYER</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setaudio" class="action buttongreen w-button">AUDIOPLAYER</a></div>
+              <div class="w-col w-col-6"><a href="?action=setaudiousb" class="action buttongreen w-button">AUDIOPLAYER USB</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="http://?action=streameraudio" class="action buttongreen w-button">AUDIOSTREAMER</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white"> <br>Autostart Other:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setscheduler" class="action buttongray w-button">SCHEDULER</a></div>
+              <div class="w-col w-col-6"><a href="?action=autostartclock" class="action buttongray w-button">CLOCK on Screen</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=screenshare" class="action buttongray w-button">SCREENSHARING</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setprocessing" class="action buttongray w-button">PROCESSING</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=custom1" class="action buttongray w-button">CUSTOM 1</a>
+                <div class="regular-text"> <br>If you need others, open a github issue.<br>.</div>
+              </div>
+              <div class="w-col w-col-6"><a href="?action=custom2" class="action buttongray w-button">CUSTOM 2</a></div>
+            </div>
+          </div>
+          <div data-w-tab="Tab 8" class="violett2_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>Scheduler / Timer:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=clockdisplay" class="action buttonviolett w-button">Clock Display on Screen</a></div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-3"><a href="?action=clockred" class="action clockred w-button">Red</a></div>
+                  <div class="w-col w-col-3"><a href="?action=clockgreen" class="action clockgreen w-button">Green</a></div>
+                  <div class="w-col w-col-3"><a href="?action=clockorange" class="action clockorange w-button">Orange</a></div>
+                  <div class="w-col w-col-3"><a href="?action=clockpink" class="action clockpink w-button">Pink</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=gettime" class="action buttonviolett w-button">Check internal Date/Time</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">  </div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=timeron" class="action buttonviolett w-button">Scheduler ON</a></div>
+              <div class="w-col w-col-6"><a href="?action=timeroff" class="action buttonviolett w-button">Scheduler OFF</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=timer" class="action buttonviolett w-button">Timetable</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">  <br>To create a scheduler task, open the filebrowser and edit the timer.txt file in /media/internal/timer.txt<br><br>Activate with Scheduler ON knob, will immediately be active without reboot.</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+          </div>
+          <div data-w-tab="Tab 9" class="violett3_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>AUX:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=beameron" class="action buttonviolett2 w-button">Projector Power ON</a></div>
+              <div class="w-col w-col-6"><a href="?action=beameroff" class="action buttonviolett2 w-button">Projector Power OFF</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="/192.168.2.254" target="_blank" class="buttonviolett2 w-button">Projector Control Interface</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Network info:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=ipwifi" class="action buttonviolett2 w-button">Show Wifi IP Address</a></div>
+              <div class="w-col w-col-6"><a href="?action=iplan" class="action buttonviolett2 w-button">Show RJ45 IP Address</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Set the Audio Output:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=testtone" class="action buttonviolett2 w-button">Audio Testtone</a></div>
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=volume_up" class="action buttonviolett2 w-button">Volume +</a></div>
+                  <div class="w-col w-col-6"><a href="?action=volume_down" class="action buttonviolett2 w-button">Volume -</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-3"><a href="?action=hdmi_out" class="action buttonviolett2 w-button">Audio HDMI</a></div>
+              <div class="w-col w-col-3"><a href="?action=jack_out" class="action buttonviolett2 w-button">Audio Jack</a></div>
+              <div class="w-col w-col-3"><a href="?action=both_out" class="action buttonviolett2 w-button">Audio HDMI+Jack</a></div>
+              <div class="w-col w-col-3"><a href="?action=alsa_out" class="action buttonviolett2 w-button">Audio USB Soundcard</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>PVJ info:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=gettemp" class="action buttonviolett2 w-button">Show CPU Temperature</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">  <br>.</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+          </div>
+          <div data-w-tab="Tab 10" class="red2_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>Display:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=getresolution" class="action buttonred2 w-button">Get Actual Resolution</a></div>
+              <div class="w-col w-col-6"><a href="?action=parser" class="action buttonred2 w-button">Parse Possible Resolutions</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=screenoff" class="action buttonred2 w-button">Display Sleep</a></div>
+              <div class="w-col w-col-6"><a href="?action=screenon" class="action buttonred2 w-button">Display Wakeup</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Softedge:</div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="regular-text"><br><br>Softedge works on videoplayer.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=softedge100h" class="action buttonred2 w-button">Softedge 100px Horizontal</a></div>
+              <div class="w-col w-col-6"><a href="?action=softedge100v" class="action buttonred2 w-button">Softedge 100px Vertical</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=softedge200h" class="action buttonred2 w-button">Softedge 200px Horizontal</a></div>
+              <div class="w-col w-col-6"><a href="?action=softedge200v" class="action buttonred2 w-button">Softedge 200px Vertical</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>HDMI<br>Force Resolution (needs reboot):</div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>HDMI<br>Rotate &amp; Flip screen (needs reboot):</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=hdmireset" class="action buttonred2 w-button">Reset to Default</a></div>
+              <div class="w-col w-col-6"><a href="?action=rotate0" class="action buttonred2 w-button">Normal</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=hdmi5" class="action buttonred2 w-button">1920 x 1080</a></div>
+              <div class="w-col w-col-6"><a href="?action=rotate1" class="action buttonred2 w-button">90°</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=force1200" class="action buttonred2 w-button">1680 x 1050</a></div>
+              <div class="w-col w-col-6"><a href="?action=rotate2" class="action buttonred2 w-button">180°</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=hdmi4" class="action buttonred2 w-button">1280 x 720</a></div>
+              <div class="w-col w-col-6"><a href="?action=rotate3" class="action buttonred2 w-button">270°</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=hdmi6" class="action buttonred2 w-button">1280 x 800</a></div>
+              <div class="w-col w-col-6"><a href="?action=flip1" class="action buttonred2 w-button">Flip Horizontal</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=hdmi1" class="action buttonred2 w-button">1024 x 768</a></div>
+              <div class="w-col w-col-6"><a href="?action=flip2" class="action buttonred2 w-button">Flip Vertical</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=forcevga" class="action buttonred2 w-button">800 x 600</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Analog RCA Jack<br>Force Resolution (needs reboot):</div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Load custom configuration (see manual):</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=analog1" class="action buttonred2 w-button">RCA PAL</a></div>
+              <div class="w-col w-col-6"><a href="?action=bootconf" class="action buttonred2 w-button">Load Custom conf.txt</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=analog2" class="action buttonred2 w-button">RCA NTSC</a></div>
+              <div class="w-col w-col-6"><a href="?action=bootconfusb" class="action buttonred2 w-button">Load Custom conf.txt from USB</a></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">  <br>.</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+          </div>
+          <div data-w-tab="Tab 11" class="red1_pane w-tab-pane">
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>System:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=factoryreset" class="action buttonred2 w-button">Factory Reset</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Resets everything to the factory state.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=controlpanelintern" class="action buttonred2 w-button">UPDATE CP</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Updates the CP to newest version.<br>PocketVJ-CP-v3-master.zip must be placed in /internal/</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=controlpanelweb" class="action buttonred2 w-button">UPDATE CP from Internet</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">PVJ must have internet access.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=updateall" class="action buttonred2 w-button">UPDATE Everything</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Updates the CP, omxplayer and Mapper to newest version.<br>PocketVJ-CP-v3-master.zip must be placed in /internal/</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Firmware:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mapperupdate" class="action buttonred2 w-button">UPDATE Mapper</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Updates Mapper to the newest version.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=mapperaudioupdate" class="action buttonred2 w-button">UPDATE Mapper Audio</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Updates Mapper to the newest version and enables Audio Support.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=firmwareupdate" class="action buttonred2 w-button">UPDATE Videoplayer &amp; Sync</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Updates omxplayer and omxplayer-sync.<br>Only use when mentioned or needed.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Network RJ45:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setdhcp" class="action buttonred2 w-button">DHCP</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">WIth DHCP enabled, Sync and Projectorcontrol will not work.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setstatic100" class="action buttonred2 w-button">Static to 192.168.2.100</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Set IP adress to 192.168.2.100</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setstatic101" class="action buttonred2 w-button">Static to 192.168.2.101</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Set IP adress to 192.168.2.101</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setstatic102" class="action buttonred2 w-button">Static to 192.168.2.102</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Set IP adress to 192.168.2.102</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Wifi:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=wifiup" class="action buttonred2 w-button">ON</a></div>
+                  <div class="w-col w-col-6"><a href="?action=wifidown" class="action buttonred2 w-button">OFF</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Enable or disable Wifi until next reboot.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-6"><a href="?action=wifienable" class="action buttonred2 w-button">ON permanent</a></div>
+                  <div class="w-col w-col-6"><a href="http://?action=wifidisable" class="action buttonred2 w-button">OFF permanent</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Enable or disable Wifi &amp; bluetooth permanent.</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="w-row">
+                  <div class="w-col w-col-3"><a href="?action=setwifi1" class="action buttonred2 w-button">CH1</a></div>
+                  <div class="w-col w-col-3"><a href="?action=setwifi3" class="action buttonred2 w-button">CH3</a></div>
+                  <div class="w-col w-col-3"><a href="?action=setwifi6" class="action buttonred2 w-button">CH6</a></div>
+                  <div class="w-col w-col-3"><a href="?action=setwifi9" class="action buttonred2 w-button">CH9</a></div>
+                </div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Change the Wifi channel when using multiple devices.<br>Standard is CH6</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="heading_white">  <br><br>Access the Heart:</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">To access the built in Terminal, type :4200 behind your IP in the browser. e.g.: 192.168.2.100:4200</div>
+              </div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Login: pi<br>Pass: pocketusr</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
+                <div class="regular-text">  <br>.</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+          </div>
         </div>
-        <a class="nonblock action nontext colelem" id="u3550-4" href="?action=gettime"><!-- rasterized frame --><img id="u3550-4_img" alt="Show Actual Date" width="150" height="40" src="images/u3550-4.png"/></a>
-        <div class="clearfix colelem" id="u3555-4"><!-- content -->
-         <p>Scheduler:</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3556-4" href="?action=timeron"><!-- rasterized frame --><img id="u3556-4_img" alt="Scheduler ON" width="150" height="40" src="images/u3556-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3557-4" href="?action=timeroff"><!-- rasterized frame --><img id="u3557-4_img" alt="Scheduler OFF" width="150" height="40" src="images/u3557-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3558-4" href="?action=timer"><!-- rasterized frame --><img id="u3558-4_img" alt="Timetable" width="150" height="40" src="images/u3558-4.png"/></a>
-        <div class="clearfix colelem" id="u3559-16"><!-- content -->
-         <p>To create a Scheduler file:</p>
-         <p>&nbsp;</p>
-         <p>Modify the&nbsp; /internal/timer.txt with the filebrowsers edit function.</p>
-         <p>&nbsp;</p>
-         <p>Activate with the buttons above...</p>
-         <p>&nbsp;</p>
-         <p>Does not need a restart to take action!</p>
-         <p>&nbsp;</p>
-         <p>You can also do repetitively tasks like hourly play a movie.</p>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3487"><!-- column -->
-        <div class="clearfix colelem" id="u3489-4"><!-- content -->
-         <p>AUX:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3574-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3574-4" href="?action=testscreen"><!-- rasterized frame --><img id="u3574-4_img" alt="Testscreen" width="97" height="40" src="images/u3574-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3576-4" href="?action=testscreenoff"><!-- rasterized frame --><img id="u3576-4_img" alt="OFF" width="53" height="40" src="images/u3576-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3949"><!-- group -->
-         <div class="clip_frame grpelem" id="u3949"><!-- image -->
-          <img class="block" id="u3949_img" src="images/syphon.png" alt="" width="23" height="23"/>
-         </div>
-         <div class="clearfix grpelem" id="u3581-4"><!-- content -->
-          <p>Syphon/Spout:</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3580-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3580-4" href="?action=tcpsserver"><!-- rasterized frame --><img id="u3580-4_img" alt="TCPSyphon Start" width="150" height="40" src="images/u3580-4.png"/></a>
-         <div class="clearfix grpelem" id="u3673-7"><!-- content -->
-          <p>Re-/Start TCPSyphon</p>
-          <p>&nbsp;</p>
-          <p>© by http://techlife.sg/TCPSyphon/</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3907"><!-- group -->
-         <div class="clip_frame grpelem" id="u3907"><!-- image -->
-          <img class="block" id="u3907_img" src="images/projector.png" alt="" width="44" height="23"/>
-         </div>
-         <div class="clearfix grpelem" id="u3579-4"><!-- content -->
-          <p>Projector Control:</p>
-         </div>
-        </div>
-        <a class="nonblock nontext colelem" id="u3575-4" href="http://192.168.2.254" target="_blank" title="Projector ControlPanel"><!-- rasterized frame --><img id="u3575-4_img" alt="Projector" title="Projector ControlPanel" width="150" height="40" src="images/u3575-4.png"/></a>
-        <div class="clearfix colelem" id="pu3577-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3577-4" href="?action=beameron"><!-- rasterized frame --><img id="u3577-4_img" alt="ON" width="75" height="40" src="images/u3577-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3578-4" href="?action=beameroff"><!-- rasterized frame --><img id="u3578-4_img" alt="OFF" width="75" height="40" src="images/u3578-4.png"/></a>
-         <div class="clearfix grpelem" id="u3674-4"><!-- content -->
-          <p>Projector must be connected via RJ45 and has a static IP: 192.168.2.254</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3646-4"><!-- content -->
-         <p>Projector Type:</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3647-4" href="?action=setpjlink"><!-- rasterized frame --><img id="u3647-4_img" alt="PJ-LINK" width="150" height="40" src="images/u3647-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3648-4" href="?action=seteiki"><!-- rasterized frame --><img id="u3648-4_img" alt="Eiki LC-XT" width="150" height="40" src="images/u3648-4.png"/></a>
-        <div class="clearfix colelem" id="pu3901"><!-- group -->
-         <div class="clip_frame grpelem" id="u3901"><!-- image -->
-          <img class="block" id="u3901_img" src="images/audio.png" alt="" width="27" height="26"/>
-         </div>
-         <div class="clearfix grpelem" id="u3582-4"><!-- content -->
-          <p>Audio Settings:</p>
-         </div>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3583-4" href="?action=testtone"><!-- rasterized frame --><img id="u3583-4_img" alt="Audio Testtone" width="150" height="40" src="images/u3583-4.png"/></a>
-        <div class="clearfix colelem" id="pu3584-6"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3584-6" href="?action=volume_up"><!-- rasterized frame --><img id="u3584-6_img" alt="Volume
-Up" width="75" height="40" src="images/u3584-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3585-6" href="?action=volume_down"><!-- rasterized frame --><img id="u3585-6_img" alt="Volume
-Down" width="75" height="40" src="images/u3585-6.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3586-6"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3586-6" href="?action=hdmi_out"><!-- rasterized frame --><img id="u3586-6_img" alt="HDMI
-Out" width="66" height="40" src="images/u3586-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3587-6" href="?action=jack_out"><!-- rasterized frame --><img id="u3587-6_img" alt="Jack
-Out" width="66" height="40" src="images/u3587-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3588-6" href="?action=both_out"><!-- rasterized frame --><img id="u3588-6_img" alt="HDMI+Jack
-Out" width="66" height="40" src="images/u3588-6.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3900-6" href="?action=alsa_out"><!-- rasterized frame --><img id="u3900-6_img" alt="Alsa / USB
-Out" width="66" height="40" src="images/u3900-6.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3913"><!-- group -->
-         <div class="clip_frame grpelem" id="u3913"><!-- image -->
-          <img class="block" id="u3913_img" src="images/network.png" alt="" width="26" height="25"/>
-         </div>
-         <div class="clearfix grpelem" id="u3589-4"><!-- content -->
-          <p>Network Info:</p>
-         </div>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3590-4" href="?action=ipwifi"><!-- rasterized frame --><img id="u3590-4_img" alt="Show Wifi IP" width="150" height="40" src="images/u3590-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3591-4" href="?action=iplan"><!-- rasterized frame --><img id="u3591-4_img" alt="Show RJ45 IP" width="150" height="40" src="images/u3591-4.png"/></a>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3491"><!-- column -->
-        <div class="clearfix colelem" id="u3493-4"><!-- content -->
-         <p>Display:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3560-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3560-4" href="?action=getresolution"><!-- rasterized frame --><img id="u3560-4_img" alt="Get Resolution" width="150" height="40" src="images/u3560-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3561-4" href="?action=parser"><!-- rasterized frame --><img id="u3561-4_img" alt="Parse Resolutions" width="150" height="40" src="images/u3561-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3562-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3562-4" href="?action=screenon"><!-- rasterized frame --><img id="u3562-4_img" alt="Wake Up " width="150" height="40" src="images/u3562-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3563-4" href="?action=screenoff"><!-- rasterized frame --><img id="u3563-4_img" alt="Sleep" width="150" height="40" src="images/u3563-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3564-6"><!-- group -->
-         <div class="clearfix grpelem" id="u3564-6"><!-- content -->
-          <p>HDMI</p>
-          <p>Force Resolution:</p>
-         </div>
-         <div class="clearfix grpelem" id="u3884-5"><!-- content -->
-          <p>&nbsp;</p>
-          <p>Rotate &amp; Flip Screen:</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3565-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3565-4" href="?action=hdmireset"><!-- rasterized frame --><img id="u3565-4_img" alt="Reset Default" width="150" height="40" src="images/u3565-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3885-4" href="?action=rotate0"><!-- rasterized frame --><img id="u3885-4_img" alt="Normal" width="150" height="40" src="images/u3885-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3566-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3566-4" href="?action=hdmi5"><!-- rasterized frame --><img id="u3566-4_img" alt="1920 x 1080" width="150" height="40" src="images/u3566-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3886-4" href="?action=rotate1"><!-- rasterized frame --><img id="u3886-4_img" alt="90°" width="150" height="40" src="images/u3886-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3569-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3569-4" href="?action=force1200"><!-- rasterized frame --><img id="u3569-4_img" alt="1680 x 1050" width="150" height="40" src="images/u3569-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3887-4" href="?action=rotate2"><!-- rasterized frame --><img id="u3887-4_img" alt="180°" width="150" height="40" src="images/u3887-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3567-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3567-4" href="?action=hdmi4"><!-- rasterized frame --><img id="u3567-4_img" alt="1280 x 720" width="150" height="40" src="images/u3567-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3888-4" href="?action=rotate3"><!-- rasterized frame --><img id="u3888-4_img" alt="270°" width="150" height="40" src="images/u3888-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3568-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3568-4" href="?action=hdmi6"><!-- rasterized frame --><img id="u3568-4_img" alt="1280 x 800" width="150" height="40" src="images/u3568-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3889-4" href="?action=flip1"><!-- rasterized frame --><img id="u3889-4_img" alt="Flip Horizontally" width="150" height="40" src="images/u3889-4.png"/></a>
-        </div>
-        <div class="clearfix colelem" id="pu3570-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3570-4" href="?action=hdmi1"><!-- rasterized frame --><img id="u3570-4_img" alt="1024 x 768" width="150" height="40" src="images/u3570-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3890-4" href="?action=flip2"><!-- rasterized frame --><img id="u3890-4_img" alt="Flip Vertically" width="150" height="40" src="images/u3890-4.png"/></a>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3571-4" href="?action=forcevga"><!-- rasterized frame --><img id="u3571-4_img" alt="800 x 600" width="150" height="40" src="images/u3571-4.png"/></a>
-        <div class="clearfix colelem" id="u3880-6"><!-- content -->
-         <p>Analog (Jack)</p>
-         <p>Force Resolution:</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u3881-4" href="?action=analog1"><!-- rasterized frame --><img id="u3881-4_img" alt="RCA PAL" width="150" height="40" src="images/u3881-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3882-4" href="?action=analog2"><!-- rasterized frame --><img id="u3882-4_img" alt="RCA NTSC" width="150" height="40" src="images/u3882-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3572-4" href="?action=bootconf"><!-- rasterized frame --><img id="u3572-4_img" alt="Custom conf.txt" width="150" height="40" src="images/u3572-4.png"/></a>
-        <a class="nonblock action nontext colelem" id="u3573-4" href="?action=bootconfusb"><!-- rasterized frame --><img id="u3573-4_img" alt="Custom conf USB" width="150" height="40" src="images/u3573-4.png"/></a>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3495"><!-- column -->
-        <div class="clearfix colelem" id="u3498-4"><!-- content -->
-         <p>System:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3986-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3986-4" href="?action=updateall"><!-- rasterized frame --><img id="u3986-4_img" alt="Update All" width="150" height="40" src="images/u3986-4.png"/></a>
-         <div class="clearfix grpelem" id="u3987-8"><!-- content -->
-          <p>'PocketVJ-CP-v3-master.zip'</p>
-          <p>must be placed in /internal/*</p>
-          <p>updates also mapper and sync</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3636-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3636-4" href="?action=factoryreset"><!-- rasterized frame --><img id="u3636-4_img" alt="Factory Preset" width="150" height="40" src="images/u3636-4.png"/></a>
-         <div class="clearfix grpelem" id="u3661-4"><!-- content -->
-          <p>Reset to factory state</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3637-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3637-4" href="?action=controlpanelintern"><!-- rasterized frame --><img id="u3637-4_img" alt="Update CP" width="150" height="40" src="images/u3637-4.png"/></a>
-         <div class="clearfix grpelem" id="u3662-6"><!-- content -->
-          <p>'PocketVJ-CP-v3-master.zip'</p>
-          <p>must be placed in /internal/*</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3642-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3642-4" href="?action=controlpanelweb"><!-- rasterized frame --><img id="u3642-4_img" alt="Update CP Web" width="150" height="40" src="images/u3642-4.png"/></a>
-         <div class="clearfix grpelem" id="u3664-4"><!-- content -->
-          <p>PocketVJ must have internet access</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3643-4"><!-- content -->
-         <p>Firmwares:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3639-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3639-4" href="?action=firmwareupdate"><!-- rasterized frame --><img id="u3639-4_img" alt="Update Firmware" width="150" height="40" src="images/u3639-4.png"/></a>
-         <div class="clearfix grpelem" id="u3665-4"><!-- content -->
-          <p>Update omxplayer, omxplayer-sync and all depencies to version 3.1</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3640-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3640-4" href="?action=mapperupdate"><!-- rasterized frame --><img id="u3640-4_img" alt="Update Mapper" width="150" height="40" src="images/u3640-4.png"/></a>
-         <div class="clearfix grpelem" id="u3666-6"><!-- content -->
-          <p>Update Mapper to newest version</p>
-          <p>(without playing audio)</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="pu3641-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3641-4" href="?action=mapperaudioupdate"><!-- rasterized frame --><img id="u3641-4_img" alt="UpdateMapperAudio" width="150" height="40" src="images/u3641-4.png"/></a>
-         <div class="clearfix grpelem" id="u3667-6"><!-- content -->
-          <p>Update Mapper to newest version</p>
-          <p>(with playing audio)</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3650-4"><!-- content -->
-         <p>Network:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3649-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3649-4" href="?action=setdhcp"><!-- rasterized frame --><img id="u3649-4_img" alt="DHCP" width="75" height="40" src="images/u3649-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3651-4" href="?action=setstatic"><!-- rasterized frame --><img id="u3651-4_img" alt="Static" width="75" height="40" src="images/u3651-4.png"/></a>
-         <div class="clearfix grpelem" id="u3669-4"><!-- content -->
-          <p>with dhcp, projector control and sync will not work! See manual</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3864-4"><!-- content -->
-         <p>Wifi Power:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3865-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3865-4" href="?action=wifiup"><!-- rasterized frame --><img id="u3865-4_img" alt="On" width="75" height="40" src="images/u3865-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3866-4" href="?action=wifidown"><!-- rasterized frame --><img id="u3866-4_img" alt="Off" width="75" height="40" src="images/u3866-4.png"/></a>
-         <div class="clearfix grpelem" id="u3868-6"><!-- content -->
-          <p>Powers down the wifi interface,</p>
-          <p>will power up again after reboot</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3872-4"><!-- content -->
-         <p>Wifi &amp; Bluetooth Permanent disable:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3877-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3877-4" href="?action=wifienable"><!-- rasterized frame --><img id="u3877-4_img" alt="On" width="75" height="40" src="images/u3877-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3878-4" href="?action=wifidisable"><!-- rasterized frame --><img id="u3878-4_img" alt="Disable" width="75" height="40" src="images/u3878-4.png"/></a>
-         <div class="clearfix grpelem" id="u3879-6"><!-- content -->
-          <p>Powers down wifi and bluetooth forever (until enable again),</p>
-          <p>&nbsp;you need a RJ45 connection!!</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3652-4"><!-- content -->
-         <p>Change Wifi Channel:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3653-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u3653-4" href="?action=setwifi1"><!-- rasterized frame --><img id="u3653-4_img" alt="1" width="37" height="40" src="images/u3653-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3655-4" href="?action=setwifi3"><!-- rasterized frame --><img id="u3655-4_img" alt="3" width="37" height="40" src="images/u3655-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3656-4" href="?action=setwifi6"><!-- rasterized frame --><img id="u3656-4_img" alt="6" width="37" height="40" src="images/u3656-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u3657-4" href="?action=setwifi9"><!-- rasterized frame --><img id="u3657-4_img" alt="9" width="37" height="40" src="images/u3657-4.png"/></a>
-         <div class="clearfix grpelem" id="u3670-6"><!-- content -->
-          <p>Standard is Channel: 6</p>
-          <p>Change if wifi is slow becuse channel 6 is full....</p>
-         </div>
-        </div>
-        <div class="clearfix colelem" id="u3658-4"><!-- content -->
-         <p>Access the heart:</p>
-        </div>
-        <div class="clearfix colelem" id="pu3948-8"><!-- group -->
-         <div class="clearfix grpelem" id="u3948-8"><!-- content -->
-          <p>To access the Terminal, just type</p>
-          <p>:4200</p>
-          <p>behind your IP in the browser</p>
-         </div>
-         <div class="clearfix grpelem" id="u3671-8"><!-- content -->
-          <p>Login: pi</p>
-          <p>Pass: pocketusr</p>
-          <p>don't mess!</p>
-         </div>
-        </div>
-       </div>
-       <div class="Container invi clearfix grpelem" id="u3992"><!-- column -->
-        <div class="clearfix colelem" id="u4040-4"><!-- content -->
-         <p>Video Control with Wifi streaming:</p>
-        </div>
-        <div class="clearfix colelem" id="pu4036-4"><!-- group -->
-         <a class="nonblock action nontext grpelem" id="u4036-4" href="?action=audiostream"><!-- rasterized frame --><img id="u4036-4_img" alt="Play Master Stream" width="150" height="40" src="images/u4036-4.png"/></a>
-         <a class="nonblock action nontext grpelem" id="u4038-4" href="?action=audiostreamslave"><!-- rasterized frame --><img id="u4038-4_img" alt="Play Slave Stream" width="150" height="40" src="images/u4038-4.png"/></a>
-        </div>
-        <a class="nonblock nontext colelem" id="u4037-4" href="/streamer/index.html" target="_blank"><!-- rasterized frame --><img id="u4037-4_img" alt="Open Streampage" width="150" height="40" src="images/u4037-4.png"/></a>
-        <div class="clearfix colelem" id="u4041-9"><!-- content -->
-         <p>Remove any USB sound devices!</p>
-         <p>Works only on PVJ 3.2 or newer</p>
-         <p>&nbsp;</p>
-         <p>You can even connect it to a Wifi router and stream to several devices.</p>
-        </div>
-        <div class="clearfix colelem" id="u4046-4"><!-- content -->
-         <p>Audio Control with Wifi streaming:</p>
-        </div>
-        <a class="nonblock action nontext colelem" id="u4060-4" href="?action=startaudiostream"><!-- rasterized frame --><img id="u4060-4_img" alt="AudioPlayerStream" width="150" height="40" src="images/u4060-4.png"/></a>
-        <a class="nonblock nontext colelem" id="u4061-4" href="/streamer/index.html" target="_blank"><!-- rasterized frame --><img id="u4061-4_img" alt="Open Streampage" width="150" height="40" src="images/u4061-4.png"/></a>
-       </div>
       </div>
-     </div>
     </div>
-    <div class="clearfix colelem" id="u3856-6"><!-- content -->
-     <p>© 2017 by <a class="nonblock" href="http://www.magdesign.ch" target="_blank">magdesign.ch</a></p>
+    <div class="section">
+      <div class="footer">© 2017 <a target="_blank" href="http://www.magdesign.ch">magdesign.ch</a></div>
     </div>
-    <div class="verticalspacer"></div>
-   </div>
   </div>
-  <!-- JS includes -->
-  <script type="text/javascript">
-   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <!-- 
+Code below this line checks if user is online
+ -->
+  <head>
+    <script src="../offline.min.js"></script>
+    <link rel="stylesheet" href="../themes/offline-theme-chrome.css">
+    <link rel="stylesheet" href="../themes/offline-language-english.css">
+    <script>
+var run = function(){
+  var req = new XMLHttpRequest();
+  req.timeout = 5000;
+  req.open('GET', 'http://localhost:8888/walter/0', true);
+  req.send();
+}
+setInterval(run, 3000);
 </script>
-  <script src="scripts/museutils.js?521960461" type="text/javascript"></script>
-  <script src="scripts/webpro.js?220831917" type="text/javascript"></script>
-  <script src="scripts/musewpslideshow.js?224651946" type="text/javascript"></script>
-  <script src="scripts/jquery.museoverlay.js?276313855" type="text/javascript"></script>
-  <script src="scripts/touchswipe.js?325405309" type="text/javascript"></script>
-  <script src="scripts/jquery.watch.js?56779320" type="text/javascript"></script>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   $(document).ready(function() { try {
-(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
-for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
-typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
-/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.initWidget('#pamphletu3342', function(elem) { new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'horizontal',transitionDuration:0,hideAllContentsFirst:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false}); });/* #pamphletu3342 */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
-</script>
-
-   <script type="text/javascript">
+    <!--  
+Code below disabling resend of functions after lost connection
+  -->
+    <script>
+        Offline.options = {
+      requests: false
+    }
+  </script>
+    <!-- 
+Code below is for button actions
+ -->
+    <script type="text/javascript">
    $("a.action").on("click", function(event) { 
        event.preventDefault();
        $.get( "backend.php" + $(this).attr('href'), function(data) {
@@ -948,5 +1084,11 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
        });
    });
    </script>
-   </body>
+    <!-- 
+Code  below is for button tooltips
+ -->
+    <script src="../themes/tooltipster.bundle.min.js"></script>
+    <script src="../themes/tooltipster-for-webflow.js"></scr</script>
+  </head>
+</body>
 </html>

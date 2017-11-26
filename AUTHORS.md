@@ -21,4 +21,4 @@ Leon Adolf,                                             (Streaming page mod)
 
 Marcel Bieri, https://facebook.com/casashowband				(testaudio)
 
-vj mag feat. Lockedesign, http://www.lockedesign.ch/		(testvideo)
+vj mag  http://www.lockedesign.ch/							(testvideo)

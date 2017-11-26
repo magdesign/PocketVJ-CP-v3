@@ -1,0 +1,45 @@
+#######################################
+# Edit this file for scheduling tasks #
+#######################################
+#
+# * * * * *  command
+#         day of week (0 - 6) (0 to 6 are Sunday to Saturday, or use names;
+#       month (1 - 12)
+#     day of month (1 - 31)
+#   hour (0 - 23)
+# min (0 - 59)
+#
+# command for starting the videoplayer:
+# /var/www/sync/startmaster
+# 
+# command for stopping:
+# /var/www/sync/stopall
+#
+# command for starting the videoplayer only playing video 01_*:
+# /var/www/sync/startmaster01
+#
+# command for starting the slideshow:
+# /var/www/sync/startimage
+#
+# command for starting the mapper with last used setting:
+# /var/www/sync/relaunchmapper
+#
+# command for starting the mapper with a preset3:
+# /var/www/sync/mapperimport3
+#
+# command to start projector: 
+# /var/www/sync/beameron
+#
+# command to stop projector:
+# /var/www/sync/beameroff
+#
+# EXAMPLE: 
+# Following entry starts the videoplayer every day at midnight and stops it
+# every day at noon:
+
+
+0 12 * * *  /var/www/sync/stopall
+0 0 * * *  /var/www/sync/startmaster
+
+
+

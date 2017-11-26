@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#kill all running tasks to get enough ressources
+/var/www/sync/stopall &
+
+#get content from your defined video source (must be .mp4) and download it to /media/internal/video/01_download.mp4
+#for example from your server or from dropbox
+#if you know how the command would look like to recursivly download all content from folder and keep the filenames, please tell me: info@magdesign.ch
+
+
+#wget https://www.dropbox.com/your_personal_link/videofile.mp4 -O /media/internal/video/01_download.mp4
+
+wget https://www.pocketvj.com/video/test_right.mp4 -O /media/internal/video/01_download.mp4 &
+
+exit 0

@@ -1,0 +1,10 @@
+#!/bin/bash
+#start .png overlay over video
+
+sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/softedge* > /dev/null 2>&1
+
+#this is a temporary hack, because of user rights:
+sudo cp /var/www/sync/softedge100v.png /media/internal/images/softedge100v.png &
+
+#start softedge solution
+sudo /home/pi/raspidmx/pngview/./pngview /media/internal/images/softedge100v.png &

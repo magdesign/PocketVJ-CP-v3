@@ -7,7 +7,9 @@ sudo killall -9 tty-clock > /dev/null 2>&1
 sudo killall -9 mpg321 > /dev/null 2>&1
 sudo killall -9 feh > /dev/null 2>&1
 sudo kill $(pidof X) > /dev/null 2>&1
+#kill overlay and softedge
 sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/overlay.png > /dev/null 2>&1
+sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/softedge* > /dev/null 2>&1
 #dont know if I have to kill this:
 sudo killall -9 fsaysuinput > /dev/null 2>&1
 sudo /var/www/sync/testscreenoff > /dev/null 2>&1
@@ -22,3 +24,5 @@ killall -9 /home/pi/HPlayer/./HPlayer > /dev/null 2>&1
 sudo killall -9 janus > /dev/null 2>&1
 #Remove Loopback device:
 sudo modprobe -r snd-loop > /dev/null 2>&1
+#kill top command
+#sudo killall -9 top
