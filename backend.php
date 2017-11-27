@@ -853,9 +853,9 @@ if ($_GET['action'] == 'updateall') {
 	system("rm -f /usr/bin/omxplayer-sync");
 	system("rm -f /usr/bin/dbuscontrol.sh");
 	system("sudo apt-get clean");
-    system("sudo cp /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
-    system("sudo dpkg -i *.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
-    system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+   	system("sudo cp /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
+  	system("sudo dpkg -i *.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
+	system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
    	system("sudo dpkg -i *.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
 	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
   	system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
@@ -886,6 +886,8 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	//remove old chunk form CP 1.14
+	system("sudo rm /var/www/sitemap.xml");
 	//Text Output
 	$outputtext =  "Update Controlpanel, Mapper, OMXPLAYER, Timer, Boot";
 }
