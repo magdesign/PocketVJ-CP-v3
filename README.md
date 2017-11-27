@@ -127,6 +127,8 @@ install https://github.com/Hemisphere-Project/HPlayer to /home/pi/
 get the omxplayer-sync:
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
+...
+ edit /etc/lighttpd/lighttpd.conf to change server.document-root
 
 ...
 
