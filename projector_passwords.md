@@ -1,18 +1,18 @@
-List of passwords to remote control projectors
-(please contribute the password of your model):
+List of passwords to remote control projectors: <br />
+(please contribute the password of your model) <br />
 
-Panasonic
-*********
-name: user1
-password: panasonic
+Panasonic <br />
+********* <br />
+name: user1 <br />
+password: panasonic <br />
 
-Epson:
-******
-name: EPSONWEB 
-password: admin
+Epson: <br />
+****** <br />
+name: EPSONWEB <br />
+password: admin <br />
 
-Sony:
-*****
+Sony: <br />
+***** <br />
 
 Hitachi:
 ********
