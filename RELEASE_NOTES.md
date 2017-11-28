@@ -36,6 +36,7 @@
   Overall bugfixes <br />
   
 <br />
+
 ### Known Bugs: <br />
   mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
   mapper launch without mouse still does not work as expected <br />
