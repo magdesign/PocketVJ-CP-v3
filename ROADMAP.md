@@ -1,11 +1,5 @@
 ## Roadmap
 **********
-### Image: <br />
-- Update to 3.4 (incl. Processing, Janus 0.2.6, uv4l)
-
-### System: <br />
-- Install processing (PVJ 3.4)<br />
-- Update: gstreamer, janus gateway, wifi security, dist-upgrade (PVJ 3.4)<br />
 
 ### Video: <br />
 - make a function which plays movies and images after each other <br />
