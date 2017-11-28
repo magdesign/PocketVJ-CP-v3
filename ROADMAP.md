@@ -44,7 +44,8 @@
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
 - Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj) <br />
-- function to show CPU temp and usage (top) (/opt/vc/bin/vcgencmd measure_temp)
+- function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)
+- function to display version of omxplayer, feh, tcpsyphon
 ..
 
 ### Manual: <br />
