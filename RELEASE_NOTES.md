@@ -1,4 +1,4 @@
-# PocketVJ 3.0/3.1/3.2/3.3 Control Panel
+# PocketVJ 3.x Control Panel
 
 ## PVJ 3.4 release 27.November 2017<br />
   Updateded image to Version 3.4<br />
