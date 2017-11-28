@@ -1,7 +1,7 @@
 # PocketVJ 3.x Control Panel
 
 ## PVJ 3.4 release 27.November 2017<br />
-  Updateded image to Version 3.4<br />
+  Updated image to version 3.4<br />
   Installed processing<br />
   Updated several libs, gstreamer, new kernel and wifi firmware<br />
 
