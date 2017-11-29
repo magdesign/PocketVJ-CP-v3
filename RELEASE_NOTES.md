@@ -1,7 +1,7 @@
 # PocketVJ 3.x Control Panel
 
 ## CP 2.0.1 29.November 2017<br />
-Some .js scrips where linked with http. If user was connection to offline PocketVJ, CP did not work proper<br />
+Some .js scrips where linked with http. If the device connection to CP was offline, CP did not work proper<br />
 Fixed some button links <br />
 
 ## PVJ 3.4 release 27.November 2017<br />
