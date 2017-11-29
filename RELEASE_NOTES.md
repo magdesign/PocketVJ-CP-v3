@@ -1,13 +1,24 @@
-# PocketVJ 3.0/3.1/3.2/3.3 Control Panel
+# PocketVJ 3.x Control Panel
+
+### there is tiny bug which causes the cp to be really slow. will fix it in the next few hours.do not update until then!!
+if u already updated and cp does not really work, go online with the device you are loading cp, then it works. imediately uldate to 2.0.1
+
+## PVJ 3.4 release 27.November 2017<br />
+  Updated image to version 3.4<br />
+  Installed processing<br />
+  Updated several libs, gstreamer, new kernel and wifi firmware<br />
 
 ## CP 2.0.0 26.November 2017<br />
   This is a massive release with a completely new look and feel :-)<br />
   
   To Update: <br />
-  1.Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
-  2.Update CP (wait!! until you get message, approx. 5 minutes) <br />
-  3.select UPDATE Everything (wait 5minutes)<br />
-  <br />
+  0. Stop all tasks<br />
+  1. Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
+  2. Update CP (wait!! until you get message, approx. 5 minutes) <br />
+  3. Refresh browser, then select UPDATE Mapper (wait 5minutes)<br />
+  4. If it displays weird or buttons are not selecteable, update your browser, delete all cookies<br />
+  
+  
 ### Whats new: <br />
   Completely redesigned CP from scratch, now fully responsive :-) <br />
   CP output is now scrollable, better line breaks <br />
@@ -28,11 +39,12 @@
   Overall bugfixes <br />
   
 <br />
+
 ### Known Bugs: <br />
   mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
   mapper launch without mouse still does not work as expected <br />
   autostart clock takes 30seconds until it displays<br />
-   
+   autostart to processing is not coded yet<br />
 
 ### CP 1.14e 20.November 2017<br />
   fixed an issue when 2x clicked to set DHCP <br />

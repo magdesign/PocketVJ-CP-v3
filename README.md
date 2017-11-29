@@ -1,5 +1,5 @@
 This is not compatible with PocketVJ 2.0 \
-Works only with PocketVJ 3.0/3.1/3.2/3.3
+Works only with PocketVJ 3.x
 
 # PocketVJ Control Panel 2.x.x
 
@@ -127,6 +127,8 @@ install https://github.com/Hemisphere-Project/HPlayer to /home/pi/
 get the omxplayer-sync:
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
+...
+ edit /etc/lighttpd/lighttpd.conf to change server.document-root
 
 ...
 

@@ -25,4 +25,4 @@ Cris(tobal) Mendoza                                       (slideshow for mapper)
 
 Marcel Bieri, https://facebook.com/casashowband				(testaudio)
 
-vj mag  http://www.lockedesign.ch/							(testvideo)
+vj mag                          					(testvideo)
