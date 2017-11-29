@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+### there is tiny bug which causes the cp to be really slow. will fix it in the next few hours.do not update until then!!
+
+
 ## PVJ 3.4 release 27.November 2017<br />
   Updated image to version 3.4<br />
   Installed processing<br />
