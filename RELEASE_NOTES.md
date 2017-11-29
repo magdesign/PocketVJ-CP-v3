@@ -1,7 +1,8 @@
 # PocketVJ 3.x Control Panel
 
-### there is tiny bug which causes the cp to be really slow. will fix it in the next few hours.do not update until then!!
-if u already updated and cp does not really work, go online with the device you are loading cp, then it works. imediately uldate to 2.0.1
+## CP 2.0.1 29.November 2017<br />
+Some .js scrips where linked with http. If user was connection to offline PocketVJ, CP did not work proper<br />
+Fixed some button links <br />
 
 ## PVJ 3.4 release 27.November 2017<br />
   Updated image to version 3.4<br />
@@ -16,7 +17,7 @@ if u already updated and cp does not really work, go online with the device you 
   1. Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
   2. Update CP (wait!! until you get message, approx. 5 minutes) <br />
   3. Refresh browser, then select UPDATE Mapper (wait 5minutes)<br />
-  4. If it displays weird or buttons are not selecteable, update your browser, delete all cookies<br />
+  4. If CP is not working ore behaves strange, the device you are connection to the CP has also internet access, then imidiately update to CP 2.0.1<br />
   
   
 ### Whats new: <br />
