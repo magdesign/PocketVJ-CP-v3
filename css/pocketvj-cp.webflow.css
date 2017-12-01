@@ -28,14 +28,14 @@ a {
   min-height: 90px;
   padding-top: 10px;
   padding-bottom: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: OpensansPVJ, sans-serif;
   font-weight: 700;
   text-align: center;
 }
 
 .release {
   margin-right: 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: OpensansPVJ, sans-serif;
   text-align: right;
 }
 
@@ -179,10 +179,12 @@ a {
 
 .buttonblue.w--current {
   display: inline-block;
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .buttonblue.action {
   display: inline-block;
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .buttonblue.action.w--current {
@@ -197,17 +199,19 @@ a {
 .regular-text {
   padding-top: 10px;
   padding-left: 10px;
+  font-family: OpensansPVJ, sans-serif;
   color: #fff;
 }
 
 .body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: OpensansPVJ, sans-serif;
   font-size: 14px;
 }
 
 .footer {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: OpensansPVJ, sans-serif;
   text-align: center;
 }
 
@@ -218,6 +222,7 @@ a {
   border-style: none;
   background-color: #f60;
   box-shadow: 0 0 2px 0 #fff;
+  font-family: OpensansPVJ, sans-serif;
   font-size: 16px;
 }
 
@@ -227,6 +232,10 @@ a {
 
 .button_orange:active {
   background-color: #000;
+}
+
+.button_orange.action {
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .blue2_pane {
@@ -247,9 +256,14 @@ a {
   background-color: #000;
 }
 
+.buttomredstop.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .heading {
   margin-top: 5px;
   margin-left: 5px;
+  font-family: OpensansBoldPVJ, sans-serif;
   color: #4b4b4b;
   font-size: 18px;
   font-weight: 700;
@@ -278,6 +292,10 @@ a {
   background-color: #000;
 }
 
+.buttongreen.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .grey_pane {
   background-color: #4b4b4b;
   text-align: left;
@@ -286,6 +304,7 @@ a {
 .heading_white {
   margin-top: 5px;
   margin-left: 10px;
+  font-family: OpensansBoldPVJ, sans-serif;
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -314,6 +333,10 @@ a {
   background-color: #414141;
 }
 
+.buttongray.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .buttongray_small {
   margin: 5px;
   border-style: none;
@@ -336,8 +359,13 @@ a {
   background-color: #414141;
 }
 
+.buttongray_small.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .section {
   margin-top: 10px;
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .buttonbrown {
@@ -364,9 +392,14 @@ a {
   background-color: #414141;
 }
 
+.buttonbrown.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .regular-textcentered {
   padding-top: 10px;
   padding-left: 10px;
+  font-family: OpensansPVJ, sans-serif;
   color: #fff;
   text-align: center;
 }
@@ -407,6 +440,7 @@ a {
 
 .buttonviolett.action {
   display: inline-block;
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .buttonviolett.action.w--current {
@@ -417,16 +451,32 @@ a {
   background-color: red;
 }
 
+.clockred.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .clockgreen {
   background-color: #08be42;
+}
+
+.clockgreen.action {
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .clockorange {
   background-color: #ffad00;
 }
 
+.clockorange.action {
+  font-family: OpensansPVJ, sans-serif;
+}
+
 .clockpink {
   background-color: #c200ff;
+}
+
+.clockpink.action {
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .violett3_pane {
@@ -460,6 +510,7 @@ a {
 
 .buttonviolett2.action {
   display: inline-block;
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .buttonviolett2.action.w--current {
@@ -497,6 +548,7 @@ a {
 
 .buttonred2.action {
   display: inline-block;
+  font-family: OpensansPVJ, sans-serif;
 }
 
 .buttonred2.action.w--current {
@@ -506,6 +558,18 @@ a {
 .red1_pane {
   background-color: red;
   text-align: left;
+}
+
+.link {
+  font-family: OpensansPVJ, sans-serif;
+}
+
+.bold-text {
+  font-family: OpensansPVJ, sans-serif;
+}
+
+.row {
+  font-family: OpensansPVJ, sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -537,4 +601,17 @@ a {
   .tabs-content {
     display: inline-block;
   }
+}
+
+@font-face {
+  font-family: 'OpensansPVJ';
+  src: url('../fonts/OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpensansBoldPVJ';
+  src: url('../fonts/OpenSans-Bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
