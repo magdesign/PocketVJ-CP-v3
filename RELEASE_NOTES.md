@@ -3,6 +3,13 @@
 ## CP 2.0.2 01.Dezember 2017<br />
 Implemented the webfont. hopefully the offline issue is now fixed.
 
+### Known Bugs: <br />
+  Play_Once0x functions only work when setting to old script and updating audio to jack or hdmi (no also support) <br />
+  mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
+  mapper launch without mouse still does not work as expected <br />
+  autostart clock takes 30seconds until it displays<br />
+  autostart to processing is not coded yet<br />
+
 ## CP 2.0.1 29.November 2017<br />
 Some .js scrips where linked with http. If the device connection to CP was offline, CP did not work proper<br />
 Fixed some button links <br />
