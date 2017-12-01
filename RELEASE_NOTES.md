@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.0.2 01.Dezember 2017<br />
+Implemented the webfont. hopefully the offline issue is now fixed.
+
 ## CP 2.0.1 29.November 2017<br />
 Some .js scrips where linked with http. If the device connection to CP was offline, CP did not work proper<br />
 Fixed some button links <br />
