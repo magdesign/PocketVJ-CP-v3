@@ -16,7 +16,7 @@
 # /var/www/sync/stopall
 #
 # command for starting the videoplayer only playing video 01_*:
-# /var/www/sync/startmaster01
+# /var/www/sync/startmasterone01
 #
 # command for starting the slideshow:
 # /var/www/sync/startimage
