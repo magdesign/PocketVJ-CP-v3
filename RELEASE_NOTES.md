@@ -51,12 +51,6 @@ Fixed some button links <br />
   
 <br />
 
-### Known Bugs: <br />
-  mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
-  mapper launch without mouse still does not work as expected <br />
-  autostart clock takes 30seconds until it displays<br />
-   autostart to processing is not coded yet<br />
-
 ### CP 1.14e 20.November 2017<br />
   fixed an issue when 2x clicked to set DHCP <br />
 
