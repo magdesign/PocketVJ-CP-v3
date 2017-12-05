@@ -33,7 +33,8 @@
 - Autostart to Processing in fullscreen (still not sure how to execute command)<br />
 
 ### Others:<br />
-
+ 
+- Add Testtone Left and Testtone right  <br />
 - Add some processing demos in fullscreen <br />
 - get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this<br />
 - get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1<br />
