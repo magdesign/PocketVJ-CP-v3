@@ -19,9 +19,9 @@
 
 ### Mapper: <br />
 - Integrate slideshow into mapper (coming soon, https://github.com/magdesign/ofxPiMapper) <br />
-- Remote for creating hexagon shapes <br />
 - Spherical mask <br />
 - Grid mesh <br />
+- Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
 - .svg to .xml parser to import .svg from mapping softwares to mapper (as soones as circular shapes are finished) (https://github.com/magdesign/mapping-converter)
 - audio usb alsa support<br />
