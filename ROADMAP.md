@@ -49,6 +49,7 @@
 - function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)
 - function to display version of omxplayer, feh, tcpsyphon
 - Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone
+- Integrate PiTunnel for remote management <br />
 ..
 
 ### Manual: <br />
