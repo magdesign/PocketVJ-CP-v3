@@ -36,7 +36,7 @@
 - Add Testtone Left and Testtone right  <br />
 - Add some processing demos in fullscreen <br />
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava<br />
-- sound reactive video effects<br />
+- sound reactive video effects https://github.com/karlstav/cava https://github.com/xdaimon/music_visualizer<br />
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)<br />
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
@@ -49,7 +49,8 @@
 - get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this<br />
 - get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1<br />
 - more shader stuff: https://github.com/dff180/pishadertoy<br />
-..
+- https://github.com/scottlawsonbc/audio-reactive-led-strip<br />
+...
 
 ### Manual: <br />
 
