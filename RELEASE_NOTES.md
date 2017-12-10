@@ -1,7 +1,7 @@
 # PocketVJ 3.x Control Panel
 
 ## CP 2.1 10.Dezember 2017<br />
-Added new Mapper with SLideShow function. Update maper after CP update!<br />
+Added new Mapper with SlideShow function. Update mapper after CP update!<br />
 
 ### Known Bugs: <br />
   Play_Once0x functions only work when setting to old script and updating audio to jack or hdmi (no also support) <br />
