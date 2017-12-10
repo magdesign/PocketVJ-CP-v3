@@ -15,7 +15,7 @@
 
 ### Image: <br />
 - Gif player <br />
-- slideshow with ken burns effect (maybe with QT, or openFramworks ofImage)<br />
+- slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
 - Spherical mask <br />
