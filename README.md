@@ -29,7 +29,7 @@ https://github.com/magdesign/PocketVJ-CP-v3/blob/master/ROADMAP.md
 
 ### If you Build it from scratch
 use the Raspian Jessie Lite image together with RPi2/RPi3
-(not tested with Debian stretch so far...)
+(if you want to use Raspian Stretch, some dependencies will not be installed caused by new versioning, for example php and gstreamer, working on that to update soon...)
 
 ### Dependencies to install:
 
