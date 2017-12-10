@@ -19,9 +19,9 @@
 
 ### Mapper: <br />
 - Integrate slideshow into mapper (coming soon, https://github.com/magdesign/ofxPiMapper) <br />
-- Remote for creating hexagon shapes <br />
 - Spherical mask <br />
 - Grid mesh <br />
+- Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
 - .svg to .xml parser to import .svg from mapping softwares to mapper (as soones as circular shapes are finished) (https://github.com/magdesign/mapping-converter)
 - audio usb alsa support<br />
@@ -33,7 +33,8 @@
 - Autostart to Processing in fullscreen (still not sure how to execute command)<br />
 
 ### Others:<br />
-
+ 
+- Add Testtone Left and Testtone right  <br />
 - Add some processing demos in fullscreen <br />
 - get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this<br />
 - get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1<br />
@@ -48,6 +49,7 @@
 - function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)
 - function to display version of omxplayer, feh, tcpsyphon
 - Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone
+- Integrate PiTunnel for remote management <br />
 ..
 
 ### Manual: <br />
