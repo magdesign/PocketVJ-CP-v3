@@ -28,25 +28,29 @@ Always read the release notes before you update: https://github.com/magdesign/Po
 https://github.com/magdesign/PocketVJ-CP-v3/blob/master/ROADMAP.md
 
 ### If you Build it from scratch
-use the Raspian Jessie Lite image together with RPi2/RPi3
+use the Raspian Jessie Lite image together with RPi2/RPi3<br />
 (no official support for Raspian Stretch yet, but most of things should work, gstreamer0.10-plugins-bad gstreamer1.0 have no canditate)
 
 ### Dependencies to install:
 
 
-`sudo apt-get -y install avahi-daemon avahi-utils dosfstools exfat-fuse exfat-utils expect expect-dev fbi feh figlet firmware-ralink git-core gparted hfsplus hfsprogs hfsutils hostapd iceweasel imagemagick iptables isc-dhcp-server libao-dev libavahi-compat-libdnssd-dev libavahi-compat-libdnssd-dev libgstreamer-plugins-base0.10-dev libgstreamer-plugins-base1.0-dev libgstreamer0.10-0 libgstreamer0.10-dev libjpeg8 libjpeg8-dev libncurses5-dev libopenblas-dev libreoffice-impress libva-dev lightdm lighttpd lxappearance lxde-core lxterminal mediainfo mpg123 mpg321 ntfs-3g okular php php-cgi php-cli php-common php-mysql python-dbus python-dev python-pexpect python-pip python-smbus rc-gui samba samba-common-bin screen shellinabox tk ttf-mscorefonts-installer usbmount vim x11-xserver-utils xdotool xinit xpdf xtightvncviewer youtube-dl gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-tools gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad gstreamer1.0 `
+`sudo apt-get -y install avahi-daemon avahi-utils dosfstools exfat-fuse exfat-utils expect expect-dev fbi feh figlet firmware-ralink git-core gparted hfsplus hfsprogs hfsutils hostapd iceweasel imagemagick iptables isc-dhcp-server libao-dev libavahi-compat-libdnssd-dev libavahi-compat-libdnssd-dev libgstreamer-plugins-base0.10-dev libgstreamer-plugins-base1.0-dev libgstreamer0.10-0 libgstreamer0.10-dev libjpeg8 libjpeg8-dev libncurses5-dev libopenblas-dev libreoffice-impress libva-dev lightdm lighttpd lxappearance lxde-core lxterminal mediainfo mpg123 mpg321 ntfs-3g okular php php-cgi php-cli php-common php-mysql python-dbus python-dev python-pexpect python-pip python-smbus rc-gui samba samba-common-bin screen shellinabox tk ttf-mscorefonts-installer usbmount vim x11-xserver-utils xdotool xinit xpdf xtightvncviewer youtube-dl gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-tools gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad gstreamer1.0 subversion libfreeimage3 `
 
 
-```shell
+`
 sudo pip install pjlink python-osc svgtools svgpathtools svgwrite
-```
-...
+`
+<br />
 
-```shell
+`
 git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/
-```
+`
 
-install https://github.com/Hemisphere-Project/HPlayer to /home/pi/
+`git clone https://github.com/Hemisphere-Project/HPlayer.git` to /home/pi/HPlayer<br />
+`cd HPlayer
+make
+cp -R bin/ ~/HPlayer`
+
 ...
 
 get the omxplayer-sync:
