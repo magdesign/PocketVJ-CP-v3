@@ -1,6 +1,6 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.1 10.Dezember 2017<br />
+## CP 2.1.0 10.Dezember 2017<br />
 Added new Mapper with SlideShow function. Update mapper after CP update!<br />
 
 ### Known Bugs: <br />
