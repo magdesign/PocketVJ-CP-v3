@@ -128,8 +128,7 @@ get the omxplayer-sync:
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
 ...
- edit /etc/lighttpd/lighttpd.conf to change server.document-root
-
+ edit /etc/lighttpd/lighttpd.conf to change server.document-root to: /var/www/
 ...
 
 If you want to use PiMapper, https://github.com/kr15h/ofxPiMapper, you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/Application.cpp and in src/Application/Modes/ProjectionMappingMode.cpp
