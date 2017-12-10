@@ -1456,6 +1456,49 @@ if ($_GET['action'] == 'mapperscaledown') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
+//# Mapper Slide Show settings
+
+
+if ($_GET['action'] == 'mapperslidetime2') {
+	$outputtext =  "mapper slideshowtime 2s";
+	system("sudo sed -ri 's@<SlideDuration>.+</SlideDuration>@<SlideDuration>2</SlideDuration>@' /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/magslideshow_settings.xml");
+}
+
+if ($_GET['action'] == 'mapperslidetime5') {
+	$outputtext =  "mapper slideshowtime 5s";
+	system("sudo sed -ri 's@<SlideDuration>.+</SlideDuration>@<SlideDuration>5</SlideDuration>@' /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/magslideshow_settings.xml");
+}
+
+if ($_GET['action'] == 'mapperslidetime10') {
+	$outputtext =  "mapper slideshowtime 10s";
+	system("sudo sed -ri 's@<SlideDuration>.+</SlideDuration>@<SlideDuration>10</SlideDuration>@' /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/magslideshow_settings.xml");
+}
+
+if ($_GET['action'] == 'mapperslidetime15') {
+	$outputtext =  "mapper slideshowtime 15s";
+	system("sudo sed -ri 's@<SlideDuration>.+</SlideDuration>@<SlideDuration>15</SlideDuration>@' /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/magslideshow_settings.xml");
+}
+
+if ($_GET['action'] == 'mapperresizenative') {
+	$outputtext =  "mapper resize slideshow to native";
+	system("sudo /var/www/sync/mappersizenative");
+}
+
+if ($_GET['action'] == 'mapperresizefit') {
+	$outputtext =  "mapper resize slideshow to fit";
+	system("sudo /var/www/sync/mappersizefit");
+}
+
+if ($_GET['action'] == 'mapperresizefitprop') {
+	$outputtext =  "mapper resize slideshow to fitproportionally";
+	system("sudo /var/www/sync/mappersizefitprop");
+}
+
+if ($_GET['action'] == 'mapperresizefillprop') {
+	$outputtext =  "mapper resize slideshow to fillproportionally";
+	system("sudo /var/www/sync/mappersizefillprop");
+}
+
 //# Impress Presentation
 
 if ($_GET['action'] == 'impresslast') {
