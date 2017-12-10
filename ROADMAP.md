@@ -18,7 +18,6 @@
 - slideshow with ken burns effect (maybe with QT, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Integrate slideshow into mapper (coming soon, https://github.com/magdesign/ofxPiMapper) <br />
 - Spherical mask <br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
@@ -36,25 +35,25 @@
  
 - Add Testtone Left and Testtone right  <br />
 - Add some processing demos in fullscreen <br />
-- get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this<br />
-- get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1<br />
-- more shader stuff: https://github.com/dff180/pishadertoy<br />
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava<br />
 - sound reactive video effects<br />
-- processing<br />
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)<br />
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
-- Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj) <br />
 - function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)
 - function to display version of omxplayer, feh, tcpsyphon
 - Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone
 - Integrate PiTunnel for remote management <br />
+- Hub75 library to be compatible with led panels and adafruit board <br />
+- Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj) <br />
+- get into pi3d: http://pi3d.github.io/html/ReadMe.html#setup-on-the-raspberry-pi maybe do a mapper + slidshow with this<br />
+- get into shaders: http://journeytounknownsoundscapes.blogspot.ch/2013/02/raspi-as-poor-mans-video-jockey.html?m=1<br />
+- more shader stuff: https://github.com/dff180/pishadertoy<br />
 ..
 
 ### Manual: <br />
 
-- update manual for CP2.0.x release <br />
+- update manual for CP2.0.x release, new screenshots <br />
 - shortcuts for mapping mode with keyboard <br />
 - more description for tcpsclient, with example using syphoner to capture software <br />
 - correct errors concerning timer.txt (possible to seperate with commas? ) <br />
