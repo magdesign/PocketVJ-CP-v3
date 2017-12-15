@@ -2,7 +2,8 @@
 **********
 
 ### Video: <br />
-- make a function which plays movies and images after each other <br />
+- function to connect via wifi to PVJ100 which sends the master stream over wifi instead of rj245(soon, testing phase)... <br />
+- function which plays movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! <br />
 - jump to next file button <br />
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)<br />
@@ -18,7 +19,7 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Spherical mask <br />
+- Spherical mask (pretty soon, final tests)<br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
