@@ -1,14 +1,18 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.1.0 16.Dezember 2017<br />
+Added function to sync over Wifi<br />
+Click UPDATE Everything after CP update<br />
+There mast be a master with wifi name vj100 up and running to use this function<br />
+
+### Known Bugs: <br />
+  mapper launch without mouse still does not work as expected <br />
+  autostart to processing is not coded yet<br />
+  
+
 ## CP 2.1.0 10.Dezember 2017<br />
 Added new Mapper with SlideShow function. Update mapper after CP update!<br />
 
-### Known Bugs: <br />
-  Play_Once0x functions only work when setting to old script and updating audio to jack or hdmi (no also support) <br />
-  mapper remote is slow, when hitting commands very fast and often, there is quit a delay <br />
-  mapper launch without mouse still does not work as expected <br />
-  autostart to processing is not coded yet<br />
-  
 ## CP 2.0.2 04.Dezember 2017<br />
 Implemented the webfont, removed google font link, offline issue is now fixed.
 
