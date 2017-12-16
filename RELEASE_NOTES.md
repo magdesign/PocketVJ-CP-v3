@@ -3,7 +3,8 @@
 ## CP 2.2.0 16.Dezember 2017<br />
 Added function to sync over Wifi<br />
 Click UPDATE Everything after CP update<br />
-There mast be a master with wifi name vj100 up and running to use this function<br />
+There must be a master with wifi name vj100 up and running to use this function<br />
+Network adress will be 192.168.2.101 hardcoded<br />
 
 ### Known Bugs: <br />
   mapper launch without mouse still does not work as expected <br />
