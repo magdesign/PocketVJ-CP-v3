@@ -867,6 +867,8 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo chmod a+x /usr/bin/omxplayer");
 	system("sudo chmod a+x /usr/bin/omxplayer.bin");
 	system("sudo chmod a+x /usr/bin/omxplayer-sync");
+	//Update Interfaceswifi
+	system("sudo cp /var/www/sync/interfaceswifi /etc/network/interfaceswifi");
 	//Update Boot config
 	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
 	//Update timer.txt
