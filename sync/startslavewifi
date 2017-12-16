@@ -6,7 +6,10 @@
 sudo systemctl stop hostapd.service
 
 #temporary load another /network interfaces configuration, needs /etc/network/interfaceswifi
-sudo ifdown -a --exclude=lo && ifup -i /etc/network/interfaceswifi -a
+#first shutdown interface
+sudo ifdown -a --exclude=lo
+#then reload new one
+ifup -i /etc/network/interfaceswifi -a
 
 #wait a while for all to be done and beeing initialized
 sleep 10
