@@ -2,8 +2,7 @@
 **********
 
 ### Video: <br />
-- function to connect via wifi to PVJ100 which sends the master stream over wifi instead of rj245(soon, testing phase)... <br />
-- function which plays movies and images after each other <br />
+- play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! <br />
 - jump to next file button <br />
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)<br />
