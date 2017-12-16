@@ -1,6 +1,6 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.1.0 16.Dezember 2017<br />
+## CP 2.2.0 16.Dezember 2017<br />
 Added function to sync over Wifi<br />
 Click UPDATE Everything after CP update<br />
 There mast be a master with wifi name vj100 up and running to use this function<br />
