@@ -1,0 +1,17 @@
+#!/bin/bash
+#kill all running tasks
+/var/www/sync/stopall
+
+#disable hostapd hotspot 
+sudo systemctl stop hostapd.service
+
+#temporary load another /network interfaces configuration, needs /etc/network/interfaceswifi
+sudo ifdown -a --exclude=lo && ifup -i /etc/network/interfaceswifi -a
+
+#wait a while for all to be done and beeing initialized
+sleep 10
+
+#start video as slave
+#maybe the changeing omxplayer-sync to: SYNC_TOLERANCE = .2
+#or even create a custom omxplayer-sync-wifi file with this tolerance
+/usr/bin/omxplayer-sync -lu -o hdmi /media/internal/video/* > /dev/null 2>&1 & echo $! &
