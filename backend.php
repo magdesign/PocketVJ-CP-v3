@@ -48,6 +48,11 @@ if ($_GET['action'] == 'startseamless') {
 	system ("sudo /var/www/sync/startseamless");
 }
 
+if ($_GET['action'] == 'startslavewifi') {
+	$outputtext =  "start slave over wifi sync, be patient";
+	system ("sudo /var/www/sync/startslavewifi");
+}
+
 if ($_GET['action'] == 'setseamlessscript') {
 	$outputtext =  "set to seamless sync-script";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1"); 
@@ -60,6 +65,11 @@ if ($_GET['action'] == 'setgapscript') {
 	system ("sudo cp /var/www/sync/omxplayer-sync-old /usr/bin/omxplayer-sync");
 }
 
+if ($_GET['action'] == 'setwifiscript') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	$outputtext =  "increase sync window tolerance for wifi sync";
+	system ("sudo cp /var/www/sync/omxplayer-sync-wifi /usr/bin/omxplayer-sync");
+}
 
 if ($_GET['action'] == 'startseamless01') {
 	$outputtext =  "start seamless video_01 loop";
