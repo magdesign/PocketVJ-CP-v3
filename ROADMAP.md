@@ -40,9 +40,10 @@
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)<br />
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
-- function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)
-- function to display version of omxplayer, feh, tcpsyphon
-- Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone
+- function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)<br />
+- function to display version of omxplayer, feh, tcpsyphon<br />
+- Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone<br />
+- install any DMX tool likehttp://www.qlcplus.org, serach for an DMX player, https://github.com/peterdikant/SimpleDmxEngine <br />
 - Integrate PiTunnel for remote management <br />
 - Hub75 library to be compatible with led panels and adafruit board <br />
 - Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj) <br />
