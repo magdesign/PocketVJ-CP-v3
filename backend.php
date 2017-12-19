@@ -1706,6 +1706,14 @@ if ($_GET['action'] == 'ndireceiver') {
 	$outputtext = "$preoutputtext";
 }
 
+//# NDI sender
+
+if ($_GET['action'] == 'ndisend') {
+	$output = shell_exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video /media/internal/video/*');
+	$preoutputtext =  "<pre>$output</pre>";
+	$outputtext = "$preoutputtext";
+}
+
 //# System Stuff for Fun
 
 if ($_GET['action'] == 'gettemp') {
