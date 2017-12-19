@@ -34,7 +34,8 @@ use the Raspian Jessie Lite image together with RPi2/RPi3<br />
 ### Dependencies to install:
 
 
-`sudo apt-get -y install avahi-daemon avahi-utils dosfstools exfat-fuse exfat-utils expect expect-dev fbi feh figlet firmware-ralink git-core gparted hfsplus hfsprogs hfsutils hostapd iceweasel imagemagick iptables isc-dhcp-server libao-dev libavahi-compat-libdnssd-dev libavahi-compat-libdnssd-dev libgstreamer-plugins-base0.10-dev libgstreamer-plugins-base1.0-dev libgstreamer0.10-0 libgstreamer0.10-dev libjpeg8 libjpeg8-dev libncurses5-dev libopenblas-dev libreoffice-impress libva-dev lightdm lighttpd lxappearance lxde-core lxterminal mediainfo mpg123 mpg321 ntfs-3g okular php php-cgi php-cli php-common php-mysql python-dbus python-dev python-pexpect python-pip python-smbus rc-gui samba samba-common-bin screen shellinabox tk ttf-mscorefonts-installer usbmount vim x11-xserver-utils xdotool xinit xpdf xtightvncviewer youtube-dl gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-tools gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad gstreamer1.0 subversion libfreeimage3 libcppunit-1.13-0 libcppunit-dev ola`
+`sudo apt-get -y install avahi-daemon avahi-utils dosfstools exfat-fuse exfat-utils expect expect-dev fbi feh figlet firmware-ralink git-core gparted hfsplus hfsprogs hfsutils hostapd iceweasel imagemagick iptables isc-dhcp-server libao-dev libavahi-compat-libdnssd-dev libavahi-compat-libdnssd-dev libgstreamer-plugins-base0.10-dev libgstreamer-plugins-base1.0-dev libgstreamer0.10-0 libgstreamer0.10-dev libjpeg8 libjpeg8-dev libncurses5-dev libopenblas-dev libreoffice-impress libva-dev lightdm lighttpd lxappearance lxde-core lxterminal mediainfo mpg123 mpg321 ntfs-3g okular php php-cgi php-cli php-common php-mysql python-dbus python-dev python-pexpect python-pip python-smbus rc-gui samba samba-common-bin screen shellinabox tk ttf-mscorefonts-installer usbmount vim x11-xserver-utils xdotool xinit xpdf xtightvncviewer youtube-dl gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-tools gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad gstreamer1.0 subversion libfreeimage3 libcppunit-1.13-0 libcppunit-dev ola ola-python g++ make git build-essential libqt4-dev qt4-dev-tools fakeroot debhelper devscripts pkg-config libasound2-dev libusb-dev libftdi-dev libudev-dev libmad0-dev libsndfile1-dev libfftw3-dev`
+
 
 
 `
@@ -42,14 +43,35 @@ sudo pip install pjlink python-osc svgtools svgpathtools svgwrite PyYAML evdev
 `
 <br />
 
+disable OLA on boot: `sudo systemctl disable olad
 `
-git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/
-`
+<br />
 
+install QLC+: <br />
+
+cd /home/pi <br />
+git clone https://github.com/mcallegari/qlcplus.git <br />
+cd qlcplus <br />
+qmake <br />
+make -j4 <br />
+sudo make install <br />
+
+
+remove qlcplus source folder to free up space: <br />
+`
+sudo rm -rf /home/pi/qlcplus
+` 
+<br />
+install Overlay: <br />
+`git clone https://github.com/AndrewFromMelbourne/raspidmx to /home/pi/`
+
+<br />
+
+install HPlayer:
 `git clone https://github.com/Hemisphere-Project/HPlayer.git` to /home/pi/HPlayer<br />
-`cd HPlayer
+cd HPlayer
 make
-cp -R bin/ ~/HPlayer`
+cp -R bin/ ~/HPlayer
 
 ...
 
@@ -57,7 +79,7 @@ get the omxplayer-sync:
 https://github.com/turingmachine/omxplayer-sync
 Read turingmachines installation instructions.
 ...
- edit /etc/lighttpd/lighttpd.conf to change server.document-root to: /var/www/
+ edit `/etc/lighttpd/lighttpd.conf` to change `server.document-root` to: `/var/www/`
 ...
 
 If you want to use PiMapper, https://github.com/kr15h/ofxPiMapper, you must install openframeworks 0.9.2 for arm (openframeworks is placed in /home/pi/openFrameworks): http://forum.openframeworks.cc/t/raspberry-pi-2-setup-guide/18690, before compiling change the keyboard commands in /src/Application/Application.cpp and in src/Application/Modes/ProjectionMappingMode.cpp
