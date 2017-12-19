@@ -4,7 +4,7 @@
 Play NDI stream now streams all movies over NDI<br />
 added start OLA for usb-dmx devices<br />
 added QLC+ for dmx control<br />
-stopall command updated to stop ndi stream and find <br />
+stopall command updated to stop NDI functions <br />
 Note: OLA and QLC+ must be installed by hand, is integrated in PVJ 3.5 and newer<br />
 
 ## CP 2.2.0 16.Dezember 2017<br />
