@@ -389,9 +389,6 @@ if ($_GET['action'] == 'stopaudio') {
 	system("sudo killall -9 mpg321");
 }
 
-
-
-
 //# Testtone
 
 if ($_GET['action'] == 'testtone') {
@@ -400,9 +397,20 @@ if ($_GET['action'] == 'testtone') {
 	$outputtext = "sinus 440 testtone";
 }
 
+//# DMX OLA stuff
+
+if ($_GET['action'] == 'startola') {
+	exec("sudo /etc/init.d/olad start");
+	$outputtext = "OLA Daemon started, ready on port :9090";
+}
+
+if ($_GET['action'] == 'startqlcplus') {
+	$outputtext =  "start QLC+";
+	system("sudo /var/www/sync/startqlcplus");
+}
+
 
 //# USB Stick mount
-
 
 if ($_GET['action'] == 'reboot') {
 	$outputtext =  "rebooting now!";
@@ -512,6 +520,12 @@ if ($_GET['action'] == 'screenshare') {
 if ($_GET['action'] == 'setmapper') {
 	$outputtext =  "set to mapping mode";
 	system("sudo cp /var/www/sync/rc.local.mapper /etc/rc.local");
+}
+
+if ($_GET['action'] == 'setqlc') {
+	$outputtext =  "set to QLC+ DMX console";
+	system("sudo cp /var/www/sync/xsessionqlcplus /home/pi/.xsession");
+	system("sudo cp /var/www/sync/rc.local.qlcplus /etc/rc.local");
 }
 
 if ($_GET['action'] == 'powerpoint') {
@@ -1709,7 +1723,7 @@ if ($_GET['action'] == 'ndireceiver') {
 //# NDI sender
 
 if ($_GET['action'] == 'ndisend') {
-	$output = shell_exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video /media/internal/video/*');
+	$output = shell_exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video /media/internal/video/* &');
 	$preoutputtext =  "<pre>$output</pre>";
 	$outputtext = "$preoutputtext";
 }
