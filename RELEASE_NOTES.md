@@ -1,5 +1,12 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.0 19.Dezember 2017<br />
+Play NDI stream now streams all movies over NDI<br />
+added start OLA for usb-dmx devices<br />
+added QLC+ for dmx control<br />
+stopall command updated to stop ndi stream and find <br />
+Note: OLA and QLC+ must be installed by hand, is integrated in PVJ 3.5 and newer<br />
+
 ## CP 2.2.0 16.Dezember 2017<br />
 Added function to sync over Wifi<br />
 Click UPDATE Everything after CP update<br />
