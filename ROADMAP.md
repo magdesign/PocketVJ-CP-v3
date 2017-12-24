@@ -2,6 +2,7 @@
 **********
 
 ### Video: <br />
+- test and update new omxplayer-sync <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! <br />
 - jump to next file button <br />
