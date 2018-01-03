@@ -192,6 +192,11 @@ if ($_GET['action'] == 'startmasteronce05') {
 	$outputtext = "start video 05 once";
 }
 
+if ($_GET['action'] == 'startmasteronce06') {
+	exec("sudo /var/www/sync/startmasterone06");
+	$outputtext = "start video 06 once";
+}
+
 if ($_GET['action'] == 'startmasteronce07') {
 	exec("sudo /var/www/sync/startmasterone07");
 	$outputtext = "start video 07 once";
