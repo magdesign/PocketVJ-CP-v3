@@ -1,5 +1,13 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.3 04.Januar 2018<br />
+Added new mapper with circular shapes and slideshow function<br />
+Fallback to select older version of mapper with more performance<br />
+TCPSyphon gets updated when hitting UPDATE Everything<br />
+Mapping converter knob added, no function set yet, betatesting<br />
+Fixed playonce06<br />
+Updated omxplayer-sync script with the fixed loop option<br />
+
 ## CP 2.3.0 19.Dezember 2017<br />
 Play NDI stream now streams all movies over NDI<br />
 added start OLA for usb-dmx devices<br />

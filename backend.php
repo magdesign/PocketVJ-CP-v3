@@ -877,6 +877,32 @@ if ($_GET['action'] == 'mapperaudioupdate') {
 
 }
 
+if ($_GET['action'] == 'mapperupdateold') {
+	$outputtext =  "update mapper performance";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperNoAudioold.zip -d /");
+	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+}
+
+if ($_GET['action'] == 'mapperaudioupdateold') {
+	$outputtext =  "update mapper performance";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapperAudioold.zip -d /");
+	//following two lines are only used when .zipped different, as on this release
+	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+
+}
+
+
+
 if ($_GET['action'] == 'updateall') {
 	//Update omxplayer and sync
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
@@ -908,9 +934,10 @@ if ($_GET['action'] == 'updateall') {
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	//TCPSyphon new syphon needs debian strech libs!!
-	//#system("sudo rm /usr/bin/TCPSClient.bin");
-	//#system("sudo cp /var/www/sync/TCPSClient.bin /usr/bin/TCPSClient.bin");
-	//#system("sudo chmod a+x -R /usr/bin/TCPSClient.bin");
+	//reinstalls TCPSyphon
+	system("sudo rm /usr/bin/TCPSClient.bin");
+	system("sudo cp /var/www/sync/TCPSClient.bin /usr/bin/TCPSClient.bin");
+	system("sudo chmod +x /usr/bin/TCPSClient.bin");
 	//Set to PJlink
 	system("sudo cp /var/www/sync/beamer_on_off_pjlink.sh /var/www/sync/beamer_on_off.sh");
 	system("sudo chmod 755 /var/www/sync/beamer_on_off.sh");
@@ -1123,6 +1150,7 @@ if ($_GET['action'] == 'alsa_out') {
 	$outputtext =  "Audio set to alsa:hw:1,0";
 }
 
+//# conform images to hd
 
 if ($_GET['action'] == 'imageconform') {
 	system("sudo mogrify -format jpg /media/internal/images/*.png");
@@ -1146,6 +1174,13 @@ if ($_GET['action'] == 'imageconform') {
 	system("sudo /var/www/sync/omxkill");
 	system("sudo /var/www/sync/startimage > /dev/null 2>&1 & echo $!");
 	$outputtext =  "starting image player";
+}
+
+//# convert exported .svg from madmapper and mapio to mappersettings
+
+if ($_GET['action'] == 'mappingconverter') {
+	system("sudo /var/www/sync/mappingconverter");
+	$outputtext = "convert .svg to mappersetting1";
 }
 
 //# Sheduler
@@ -1239,7 +1274,7 @@ if ($_GET['action'] == 'mappertexturemode') {
 }
 
 if ($_GET['action'] == 'mappermappingmode') {
-	$outputtext =  "mappig mode";
+	$outputtext =  "mapping mode";
 	system("sudo /var/www/sync/mapper3");
 	system("killall -9 /opt/fsayskeyboard");
 }
@@ -1256,8 +1291,7 @@ if ($_GET['action'] == 'mapperpanel') {
 	system("killall -9 /opt/fsayskeyboard");
 }
 
-
-if ($_GET['action'] == 'mappertriangle') {
+if ($_GET['action'] == 'mappertriangl') {
 	$outputtext =  "add triangle";
 	system("sudo /var/www/sync/mappert");
 	system("killall -9 /opt/fsayskeyboard");
@@ -1266,6 +1300,12 @@ if ($_GET['action'] == 'mappertriangle') {
 if ($_GET['action'] == 'mapperquad') {
 	$outputtext =  "add quad";
 	system("sudo /var/www/sync/mapperq");
+	system("killall -9 /opt/fsayskeyboard");
+}
+
+if ($_GET['action'] == 'mappercircle') {
+	$outputtext =  "add circle";
+	system("sudo /var/www/sync/mapperr");
 	system("killall -9 /opt/fsayskeyboard");
 }
 
