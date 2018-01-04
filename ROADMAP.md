@@ -19,7 +19,8 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Spherical mask (pretty soon, final tests)<br />
+- Add shortcut R for Spherical mask<br />
+- Make mapperupdate for pocketvj version without fulHD and for kr15h version with fullHD support<br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
@@ -63,5 +64,5 @@
 - Add scheduler commands <br />
 
 =======================<br />
-©2017 marc-andré gasser
+©2018 marc-andré gasser
 
