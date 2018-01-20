@@ -25,9 +25,9 @@ sudo killall -9 janus > /dev/null 2>&1
 #Remove Loopback device:
 sudo modprobe -r snd-loop > /dev/null 2>&1
 #kill NDI sender
-sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video
+sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video > /dev/null 2>&1
 #kill NDI finder
-sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find
+sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find > /dev/null 2>&1
 
 
 #kill top command
