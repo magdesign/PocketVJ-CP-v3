@@ -704,6 +704,9 @@ if ($_GET['action'] == 'clean') {
 	system("sudo rm -R /media/internal/images/__MACOSX");
 	system("sudo rm -R /media/internal/audio/.[DTf_]*");
 	system("sudo rm -R /media/internal/audio/__MACOSX");
+//# also files on usb sticks
+	system("sudo rm -R /media/usb/.[DTf_]*");
+	system("sudo rm -R /media/usb/__MACOSX");	
 }
 
 
