@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.3a 05.Februar 2018<br />
+Added clean hidden files also on usb sticks to backend.php
+
 ## CP 2.3.3 04.Januar 2018<br />
 Added new mapper with circular shapes and slideshow function<br />
 Fallback to select older version of mapper with more performance<br />
