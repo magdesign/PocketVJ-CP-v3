@@ -18,20 +18,24 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
+- integrate mappingconverter script (and make a video tutorial) <br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
-- .svg to .xml parser to import .svg from mapping softwares to mapper (as soones as circular shapes are finished) (https://github.com/magdesign/mapping-converter)
 - audio usb alsa support<br />
 - compile shortcut for bigmove, make moves even bigger, also small moves<br />
 - make mapper working without mouse<br />
 - Make sync script compatible with video mapper <br />
 
 ### Autostart
-- Autostart to Processing in fullscreen (still not sure how to execute command)<br />
+- Autostart to Super Pikix Pi <br />
+- Autostart to Processing in fullscreen (still not sure how to execute command) <br />
 
 ### Others:<br />
  
+- Remove update cp and only integrate Update Everything<br />
+- include SuperPikixPi and Mapingconverter into update process<br />
+- move softedge file location to another place<br />
 - Add Testtone Left and Testtone right  <br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
 - Add OLA DMX recorder script and DMX playback script to record and playback DMX commands <br />
@@ -45,7 +49,6 @@
 - function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)<br />
 - function to display version of omxplayer, feh, tcpsyphon<br />
 - Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone<br />
-
 - Integrate PiTunnel for remote management <br />
 - Hub75 library to be compatible with led panels and adafruit board <br />
 - Integrate RaspiVJ function for videomixing (http://w.xuv.be/projects/raspivj#raspivj) <br />
@@ -62,6 +65,13 @@
 - more description for tcpsclient, with example using syphoner to capture software <br />
 - correct errors concerning timer.txt (possible to seperate with commas? ) <br />
 - Add scheduler commands <br />
+
+### Tutorials (Vimeo): <br />
+
+- Uplaod with Filezilla<br />
+- DMX functions<br />
+- Mapping Converter<br />
+
 
 =======================<br />
 ©2018 marc-andré gasser
