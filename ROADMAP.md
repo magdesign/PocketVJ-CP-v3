@@ -71,6 +71,7 @@
 - Uplaod with Filezilla<br />
 - DMX functions<br />
 - Mapping Converter<br />
+- new update tutorial<br />
 
 
 =======================<br />
