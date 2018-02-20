@@ -5,7 +5,7 @@ Added Audio Testtone Left & Right<br />
 Removed Update CP, since it makes sense to use only Update Everything<br />
 Fixed mapping converter<br />
 Added mappingconverter to Update Everything<br />
-Added to Autostart (PVJ3.5 2018 version)<br />
+Added SuperPikixPi to Autostart (PVJ3.5 2018 version)<br />
 Added SuperPikixPi to stop command<br />
 Added GPU ram usage info<br />
 Updated set Audio output to change all Play_0x files<br />
