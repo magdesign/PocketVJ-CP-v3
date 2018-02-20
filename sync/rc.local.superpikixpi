@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#starts to Super Pikix Pi from http://pikilipita.com/ (please donate when you like it)
+
+/home/pi/superpikix/./superPikixOf 
+
+exit 0

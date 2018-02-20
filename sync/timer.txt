@@ -15,8 +15,14 @@
 # command for stopping:
 # /var/www/sync/stopall
 #
-# command for starting the videoplayer only playing video 01_*:
+# command for starting the videoplayer only playing video 01_* in loop:
+# /var/www/sync/startmaster01
+#
+# command for starting the videoplayer only playing video 01_* once:
 # /var/www/sync/startmasterone01
+#
+# command for starting the videoplayer only playing video 01_* from usb:
+# /var/www/sync/startmasterusb01
 #
 # command for starting the slideshow:
 # /var/www/sync/startimage

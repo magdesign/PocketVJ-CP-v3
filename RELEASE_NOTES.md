@@ -1,7 +1,19 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.4 20.Februar 2018<br />
+Added Audio Testtone Left & Right<br />
+Removed Update CP, since it makes sense to use only Update Everything<br />
+Fixed mapping converter<br />
+Added mappingconverter to Update Everything<br />
+Added to Autostart (PVJ3.5 2018 version)<br />
+Added SuperPikixPi to stop command<br />
+Added GPU ram usage info<br />
+Updated set Audio output to change all Play_0x files<br />
+Added startmaster13-16 scripts to sync folder<br />
+Added startmaster01-02 from usb script<br />
+
 ## CP 2.3.3a 05.Februar 2018<br />
-Added clean hidden files also on usb sticks to backend.php
+Added clean hidden files also on usb sticks to backend.php<br />
 
 ## CP 2.3.3 04.Januar 2018<br />
 Added new mapper with circular shapes and slideshow function<br />

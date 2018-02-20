@@ -4,4 +4,4 @@
 /var/www/sync/stopall
 
 #start video 02 once
-/usr/bin/omxplayer-sync -m -o hdmi /media/internal/video/02* > /dev/null 2>&1 & echo $! &
+/usr/bin/omxplayer-sync -m -o both /media/internal/video/02* > /dev/null 2>&1 & echo $! &
