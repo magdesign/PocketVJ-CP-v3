@@ -11,7 +11,7 @@
 
 ### Streaming: <br />
 - Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 <br />
-- Update Tcpsyphon (need libs from debian stretch, causes PVJ update to 4.0 or a good dependencies hack)
+- Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK)
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
 ### Image: <br />
