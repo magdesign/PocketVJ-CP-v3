@@ -2,7 +2,7 @@
 **********
 
 ### Video: <br />
-- test if gstreamer gst-omx is loading videos faster for GPIO implementations <br />
+- test if gstreamer gst-omx is loading videos faster for GPIO implementations (compile: https://gist.github.com/Swap-File/ea4b7a4739ca8c859bd7c3c3d8b087e6) <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! <br />
 - jump to next file button <br />
