@@ -1,5 +1,11 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.4a 27.Februar 2018<br />
+Play as Slave button was not linked<br />
+
+
+
+
 ## CP 2.3.4 20.Februar 2018<br />
 Added Audio Testtone Left & Right<br />
 Removed Update CP, since it makes sense to use only Update Everything<br />
