@@ -17,4 +17,5 @@ sleep 10
 #start video as slave
 #maybe the changeing omxplayer-sync to: SYNC_TOLERANCE = .2
 #or even create a custom omxplayer-sync-wifi file with this tolerance
-/usr/bin/omxplayer-sync -lu -o hdmi /media/internal/video/* > /dev/null 2>&1 & echo $! &
+#remove the -o hdmi flag, since this breaks sync function
+/usr/bin/omxplayer-sync -lu /media/internal/video/* > /dev/null 2>&1 & echo $! &

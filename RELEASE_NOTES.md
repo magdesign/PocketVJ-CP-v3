@@ -2,12 +2,8 @@
 
 ## CP 2.3.4a 27.Februar 2018<br />
 Play as Slave button was not linked<br />
-Currently working on: a sync issue and files encoded with high bandwidht not playing<br />
-When slave has audio output to Jack or Alsa, it has to resync all the time<br />
-This might be caused by hdmi_drive=2 option under /boot/config.txt<br />
-Current workaround to get propper sync: set Audio to HDMI or remove the hdmi_drive=2 option<br />
-
-
+Fix sync script issue, files with high bandwidht where not playing<br />
+Removed sending audio flag on slave, so sync is working perfect again<br />
 
 ## CP 2.3.4 20.Februar 2018<br />
 Added Audio Testtone Left & Right<br />
