@@ -1086,7 +1086,7 @@ if ($_GET['action'] == 'hdmi_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startslave");
+	//system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startslave");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster03");
@@ -1131,7 +1131,7 @@ if ($_GET['action'] == 'jack_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterusb01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterusb02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startslave");
+	//system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startslave");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster03");
@@ -1174,7 +1174,7 @@ if ($_GET['action'] == 'both_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb02");	
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startslave");
+	//system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startslave");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster03");
@@ -1218,7 +1218,7 @@ if ($_GET['action'] == 'alsa_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb02");	
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startslave");
+	//system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startslave");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster01");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster03");
