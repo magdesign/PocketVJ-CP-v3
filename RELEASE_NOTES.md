@@ -2,7 +2,7 @@
 
 ## CP 2.3.4a 27.Februar 2018<br />
 Play as Slave button was not linked<br />
-
+Currently working on: a sync issue and files encoded with high bandwidht not playing<br />
 
 
 
