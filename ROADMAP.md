@@ -2,6 +2,7 @@
 **********
 
 ### Video: <br />
+- test if gstreamer gst-omx is loading videos faster for GPIO implementations (compile: https://gist.github.com/Swap-File/ea4b7a4739ca8c859bd7c3c3d8b087e6) <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! <br />
 - jump to next file button <br />
@@ -10,7 +11,7 @@
 
 ### Streaming: <br />
 - Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 <br />
-- Update Tcpsyphon (need libs from debian stretch, causes PVJ update to 4.0 or a good dependencies hack)
+- Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK)
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
 ### Image: <br />
@@ -18,7 +19,6 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- integrate mappingconverter script (and make a video tutorial) <br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
@@ -28,15 +28,12 @@
 - Make sync script compatible with video mapper <br />
 
 ### Autostart
-- Autostart to Super Pikix Pi <br />
 - Autostart to Processing in fullscreen (still not sure how to execute command) <br />
 
 ### Others:<br />
  
-- Remove update cp and only integrate Update Everything<br />
-- include SuperPikixPi and Mapingconverter into update process<br />
+- include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
-- Add Testtone Left and Testtone right  <br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
 - Add OLA DMX recorder script and DMX playback script to record and playback DMX commands <br />
 - Search for an DMX player, https://github.com/peterdikant/SimpleDmxEngine which could be synced to omxplayer <br />
@@ -46,7 +43,7 @@
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)<br />
 - adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
-- function to show CPU usage (top) (/opt/vc/bin/vcgencmd measure_temp)<br />
+- function to show CPU usage (top)<br />
 - function to display version of omxplayer, feh, tcpsyphon<br />
 - Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone<br />
 - Integrate PiTunnel for remote management <br />
