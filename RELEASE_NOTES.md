@@ -1,8 +1,8 @@
 # PocketVJ 3.x Control Panel
 
 ## CP 2.3.4a 27.Februar 2018<br />
-Play as Slave button was not linked<br />
-Fix sync script issue, files with high bandwidht where not playing<br />
+Play as Slave button was not linked, is working now<br />
+Fix issue where files with high bandwidth where not playing<br />
 Removed sending audio flag on slave, so sync is working perfect again<br />
 
 ## CP 2.3.4 20.Februar 2018<br />
