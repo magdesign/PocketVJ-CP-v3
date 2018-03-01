@@ -1,5 +1,11 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.4c 27.Februar 2018<br />
+updated jquerry version to 3.31<br />
+added play master button to icons<br />
+renamed play master to PLAY<br />
+
+
 ## CP 2.3.4a 27.Februar 2018<br />
 Play as Slave button was not linked, is working now<br />
 Fix issue where files with high bandwidth where not playing<br />

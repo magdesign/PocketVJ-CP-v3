@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Feb 19 2018 23:11:02 GMT+0000 (UTC)  -->
+<!--  Last Published: Thu Mar 01 2018 17:25:56 GMT+0000 (UTC)  -->
 <html data-wf-page="5913869e09b9f23ad6b314ee" data-wf-site="5913869e09b9f23ad6b314ed">
 <head>
   <meta charset="utf-8">
@@ -15,6 +15,7 @@
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/pocketvj-cp.webflow.css" rel="stylesheet" type="text/css">
   <script src="../js/webfont.js" type="text/javascript"></script>
+  
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon32.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/istore256.png" rel="apple-touch-icon">
@@ -30,13 +31,14 @@ Code  below is for button tooltips
       <div class="w-row">
         <div class="w-col w-col-6"><a href="https://pocketvj.com/#Downloads" target="_blank" class="w-inline-block"><img src="images/pocketVJlogoS2.png" class="logo"></a></div>
         <div class="w-col w-col-6">
-          <div class="release">CP 2.3.4a</div>
+          <div class="release">CP 2.3.4c</div>
         </div>
       </div>
     </div>
     <div class="w-clearfix">
       <div class="shortcutsheader"><a href="?action=stop" id="action" tooltipster="top" title="Stop All" class="action w-inline-block"><img src="images/00_stop.png" width="30" alt="Stop All"></a></div>
-      <div class="shortcutsheader"><a href="?action=pause" tooltipster="top" title="Pause" class="action w-inline-block"><img src="images/00_play-pause.png"></a></div>
+      <div class="shortcutsheader"><a href="?action=startmaster" id="action" tooltipster="top" title="Play" class="action w-inline-block"><img src="images/play.png" width="30" alt="Stop All"></a></div>
+      <div class="shortcutsheader"><a href="?action=pause" tooltipster="top" title="Pause/Play" class="action w-inline-block"><img src="images/00_play-pause.png"></a></div>
       <div class="shortcutsheader"><a href="?action=fastforward" tooltipster="top" title="Faststep Forward" class="action w-inline-block"><img src="images/00_fast-forward.png" class="action"></a></div>
       <div class="shortcutsheader"><a href="/eXtplorer/" target="_blank" tooltipster="top" title="Filebrowser" class="w-inline-block"><img src="images/00_files.png" width="30"></a></div>
       <div class="shortcutsheader"><a href="?action=screenshot" tooltipster="top" title="Screenshot" class="action w-inline-block"><img src="images/00_prntscrn.png" width="30" alt="Screenshot"></a></div>
@@ -68,56 +70,56 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mount" class="button_orange action w-button">Mount USB</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mount" class="button_orange action w-button">Mount USB</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">To mount an usb-stick if it is not mounted automatically.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=eject" class="button_orange action w-button">Eject USB</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=eject" class="button_orange action w-button">Eject USB</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">To eject an usb-stick.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="/eXtplorer/" target="_blank" class="button_orange w-button">Filebrowser</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="/eXtplorer/" target="_blank" class="button_orange w-button">Filebrowser</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Open online Filebrowser in new tab.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=getcontent" target="_blank" class="button_orange action w-button">Get File from Web</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=getcontent" target="_blank" class="button_orange action w-button">Get File from Web</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Downloads content for example from your Dropbox.<br>You need to edit /var/www/sync/getcontent for your needs!</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=diskspace" class="button_orange action w-button">Diskspace</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=diskspace" class="button_orange action w-button">Diskspace</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Display used/free space.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=clean" class="button_orange action w-button">Clean hidden Files</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=clean" class="button_orange action w-button">Clean hidden Files</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Removes unwanted files mostly generated by osx computers.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="heading"> <br><br>Info about stored files:</div>
               </div>
-              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6 w-col-tiny-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=codecinfo" class="button_orange action w-button">Movie Codec Info</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=codecinfo" class="button_orange action w-button">Movie Codec Info</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Show info about the codecs of stored movies.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=movieinfo" class="button_orange action w-button">Movie Resolution</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=movieinfo" class="button_orange action w-button">Movie Resolution</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Show info about the resolution of stored movies.</div>
               </div>
             </div>
@@ -128,14 +130,14 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=imageconform" class="button_orange action w-button">Conform Images</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=imageconform" class="button_orange action w-button">Conform Images</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Resizes all images to max.1920 x 1080p and saves them as .jpg</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mappingconverter" class="buttonred2 action w-button">Mapping  Converter</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mappingconverter" class="buttonred2 action w-button">Mapping  Converter</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Converts Mapping masks exported from MadMapper or Mapio to Mappersetting1. Save it as convert.svg in /internal/converter/<br>.</div>
               </div>
             </div>
@@ -148,11 +150,11 @@ Code  below is for button tooltips
               <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startmaster" class="buttonblue action w-button">Play Master Loop</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startmaster" class="buttonblue action w-button">PLAY</a></div>
               <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startslave" class="buttonblue action w-button">Play as Slave</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startmasterusb" class="buttonblue action w-button">Play Master USB</a></div>
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"><a href="?action=startmasterusb" class="buttonblue action w-button">PLAY  from USB</a></div>
               <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-4"><a href="?action=setseamlessscript" class="buttonblue action w-button">Seamless</a></div>
@@ -256,12 +258,12 @@ Code  below is for button tooltips
               <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=slidetime0" class="buttongreen action w-button">As fast as possible</a></div>
-              <div class="w-col w-col-6"><a href="?action=slidetime10" class="buttongreen action w-button">10 Seconds</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=slidetime0" class="buttongreen action w-button">As fast as possible</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=slidetime10" class="buttongreen action w-button">10 Seconds</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=slidetime5" class="buttongreen action w-button">5 Seconds</a></div>
-              <div class="w-col w-col-6"><a href="?action=slidetime15" class="buttongreen action w-button">15 Seconds</a>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=slidetime5" class="buttongreen action w-button">5 Seconds</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=slidetime15" class="buttongreen action w-button">15 Seconds</a>
                 <div class="regular-text"> </div>
               </div>
             </div>
@@ -274,8 +276,8 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=overlay" class="buttongreen action w-button">Overlay</a></div>
-              <div class="w-col w-col-6"><a href="?action=stopoverlay" class="buttongreen action w-button">Stop Overlay</a>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=overlay" class="buttongreen action w-button">Overlay</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=stopoverlay" class="buttongreen action w-button">Stop Overlay</a>
                 <div class="regular-text"> </div>
               </div>
             </div>
@@ -292,12 +294,12 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startimagemanual" class="buttongreen action w-button">Image Presentation</a></div>
-              <div class="w-col w-col-6"><a href="?action=startpdf" class="buttongreen action w-button">PDF Presentation</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=startimagemanual" class="buttongreen action w-button">Image Presentation</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=startpdf" class="buttongreen action w-button">PDF Presentation</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"></div>
-              <div class="w-col w-col-6"><a href="?action=startpdfusb" class="buttongreen action w-button">PDF USB Presentation</a>
+              <div class="w-col w-col-6 w-col-tiny-6"></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=startpdfusb" class="buttongreen action w-button">PDF USB Presentation</a>
                 <div class="regular-text"> </div>
               </div>
             </div>
@@ -384,33 +386,33 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mappermappingmode" class="buttongray action w-button"><strong class="bold-text">MAPPING Mode</strong></a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-tiny-stack"><a href="?action=mappermappingmode" class="buttongray action w-button"><strong class="bold-text">MAPPING Mode</strong></a></div>
+              <div class="w-col w-col-6 w-col-tiny-tiny-stack">
                 <div class="w-row">
-                  <div class="w-col w-col-6"></div>
-                  <div class="w-col w-col-6"><a href="?action=mapperundo" class="buttongray_small action w-button">Undo</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperundo" class="buttongray_small action w-button">Undo</a></div>
                 </div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mapperquad" class="buttongray action w-button">Add Quad  □</a></div>
-              <div class="w-col w-col-6"><a href="?action=mapperpersp" class="buttongray action w-button">Toggle Perspective</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperquad" class="buttongray action w-button">Add Quad  □</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperpersp" class="buttongray action w-button">Toggle Perspective</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mappertriangl" class="buttongray action w-button">Add Triangle ∆</a></div>
-              <div class="w-col w-col-6"><a href="?action=mapperdelete" class="buttongray action w-button">Delete Surface</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mappertriangl" class="buttongray action w-button">Add Triangle ∆</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperdelete" class="buttongray action w-button">Delete Surface</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mappercircle" class="buttongray action w-button">Add Circle o</a>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mappercircle" class="buttongray action w-button">Add Circle o</a>
                 <div class="regular-text">--------------------------------------------------------------------------------</div>
               </div>
-              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6 w-col-tiny-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mappergrid" class="buttongray action w-button">Add Gridwarp ◊</a>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mappergrid" class="buttongray action w-button">Add Gridwarp ◊</a>
                 <div class="regular-text">--------------------------------------------------------------------------------</div>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-3"><a href="?action=mapperaddrow" class="buttongray_small action w-button">+ Row</a></div>
                   <div class="w-col w-col-3"><a href="?action=mapperrmrow" class="buttongray_small action w-button">- Row</a></div>
@@ -420,13 +422,13 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
-                  <div class="w-col w-col-6"><a href="?action=mapperscaleup" class="buttongray_small action w-button">Scale Up</a></div>
-                  <div class="w-col w-col-6"><a href="?action=mapperscaledown" class="buttongray_small action w-button">Scale Down</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperscaleup" class="buttongray_small action w-button">Scale Up</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperscaledown" class="buttongray_small action w-button">Scale Down</a></div>
                 </div>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-4"><a href="?action=mapperlayerup" class="buttongray_small action w-button">Layer Up</a></div>
                   <div class="w-col w-col-4"><a href="?action=mapperlayerdown" class="buttongray_small action w-button">Layer Down</a></div>
@@ -435,7 +437,7 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-6"><a href="?action=mappernext" class="buttongray_small action w-button">Select Next Surface</a>
                     <div class="regular-text">-----------------------------------------------</div>
@@ -443,7 +445,7 @@ Code  below is for button tooltips
                   <div class="w-col w-col-6"><a href="?action=mapperprev" class="buttongray_small action w-button">Select Prev Surface</a></div>
                 </div>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-6"><a href="?action=mappernextvertex" class="buttongray_small action w-button">Select Next Vertex °</a></div>
                   <div class="w-col w-col-6"><a href="?action=mapperprevvertex" class="buttongray_small action w-button">Select Prev Vertex °</a></div>
@@ -451,13 +453,13 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-6"><a href="?action=mapperleft" class="buttongray_small action w-button">Move Left</a></div>
                   <div class="w-col w-col-6"><a href="?action=mapperup" class="buttongray_small action w-button">Move Up</a></div>
                 </div>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-6"><a href="?action=mapperdown" class="buttongray_small action w-button">Move Down</a></div>
                   <div class="w-col w-col-6"><a href="?action=mapperright" class="buttongray_small action w-button">Move Right</a></div>
@@ -465,7 +467,7 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-6"><a href="?action=mapperleftbig" class="buttongray_small action w-button">Big Move Left</a>
                     <div class="regular-text">-----------------------------------------------</div>
@@ -473,7 +475,7 @@ Code  below is for button tooltips
                   <div class="w-col w-col-6"><a href="?action=mapperupbig" class="buttongray_small action w-button">Big Move Up</a></div>
                 </div>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-6"><a href="?action=mapperdownbig" class="buttongray_small action w-button">Big Move Down</a></div>
                   <div class="w-col w-col-6"><a href="?action=mapperrightbig" class="buttongray_small action w-button">Big Move Right</a></div>
@@ -495,10 +497,10 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <h1 class="heading_white">Slideshow Time:</h1>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-3"><a href="?action=mapperslidetime2" class="buttongray_small action w-button">2 sec.</a></div>
                   <div class="w-col w-col-3"><a href="?action=mapperslidetime5" class="buttongray_small action w-button">5 sec.</a></div>
@@ -508,11 +510,11 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <h1 class="heading_white">Slideshow Resize Options:</h1>
                 <div class="regular-text"><br>PiMapper by Krisjanis Rijnieks<br>https://github.com/kr15h/ofxPiMapper<br>.</div>
               </div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-3"><a href="?action=mapperresizenative" class="buttongray_small action w-button">Native</a></div>
                   <div class="w-col w-col-3"><a href="?action=mapperresizefit" class="buttongray_small action w-button">Fit</a></div>
@@ -756,8 +758,8 @@ Code  below is for button tooltips
               <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=clockdisplay" class="buttonviolett action w-button">Clock Display on Screen</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=clockdisplay" class="buttonviolett action w-button">Clock Display on Screen</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="w-row">
                   <div class="w-col w-col-3"><a href="?action=clockred" class="clockred action w-button">Red</a></div>
                   <div class="w-col w-col-3"><a href="?action=clockgreen" class="clockgreen action w-button">Green</a></div>
@@ -924,32 +926,32 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=hdmireset" class="buttonred2 action w-button">Reset to Default</a></div>
-              <div class="w-col w-col-6"><a href="?action=rotate0" class="buttonred2 action w-button">Normal</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=hdmireset" class="buttonred2 action w-button">Reset to Default</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=rotate0" class="buttonred2 action w-button">Normal</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=hdmi5" class="buttonred2 action w-button">1920 x 1080</a></div>
-              <div class="w-col w-col-6"><a href="?action=rotate1" class="buttonred2 action w-button">90°</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=hdmi5" class="buttonred2 action w-button">1920 x 1080</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=rotate1" class="buttonred2 action w-button">90°</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=force1200" class="buttonred2 action w-button">1680 x 1050</a></div>
-              <div class="w-col w-col-6"><a href="?action=rotate2" class="buttonred2 action w-button">180°</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=force1200" class="buttonred2 action w-button">1680 x 1050</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=rotate2" class="buttonred2 action w-button">180°</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=hdmi4" class="buttonred2 action w-button">1280 x 720</a></div>
-              <div class="w-col w-col-6"><a href="?action=rotate3" class="buttonred2 action w-button">270°</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=hdmi4" class="buttonred2 action w-button">1280 x 720</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=rotate3" class="buttonred2 action w-button">270°</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=hdmi6" class="buttonred2 action w-button">1280 x 800</a></div>
-              <div class="w-col w-col-6"><a href="?action=flip1" class="buttonred2 action w-button">Flip Horizontal</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=hdmi6" class="buttonred2 action w-button">1280 x 800</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=flip1" class="buttonred2 action w-button">Flip Horizontal</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=hdmi1" class="buttonred2 action w-button">1024 x 768</a></div>
-              <div class="w-col w-col-6"><a href="?action=flip2" class="buttonred2 action w-button">Flip Vertical</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=hdmi1" class="buttonred2 action w-button">1024 x 768</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=flip2" class="buttonred2 action w-button">Flip Vertical</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=forcevga" class="buttonred2 action w-button">800 x 600</a></div>
-              <div class="w-col w-col-6"></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=forcevga" class="buttonred2 action w-button">800 x 600</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"></div>
             </div>
             <div class="w-row">
               <div class="w-col w-col-6">
@@ -960,12 +962,12 @@ Code  below is for button tooltips
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=analog1" class="buttonred2 action w-button">RCA PAL</a></div>
-              <div class="w-col w-col-6"><a href="?action=bootconf" class="buttonred2 action w-button">Load Custom conf.txt</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=analog1" class="buttonred2 action w-button">RCA PAL</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=bootconf" class="buttonred2 action w-button">Load Custom conf.txt</a></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=analog2" class="buttonred2 action w-button">RCA NTSC</a></div>
-              <div class="w-col w-col-6"><a href="?action=bootconfusb" class="buttonred2 action w-button">Load Custom conf.txt from USB</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=analog2" class="buttonred2 action w-button">RCA NTSC</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=bootconfusb" class="buttonred2 action w-button">Load Custom conf.txt from USB</a></div>
             </div>
             <div class="w-row">
               <div class="w-col w-col-6">
@@ -1000,32 +1002,32 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mapperupdate" class="buttonred2 action w-button">UPDATE Mapper</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperupdate" class="buttonred2 action w-button">UPDATE Mapper</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Updates Mapper to the newest version with slideshow and circular.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mapperaudioupdate" class="buttonred2 action w-button">UPDATE Mapper Audio</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperaudioupdate" class="buttonred2 action w-button">UPDATE Mapper Audio</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Newest version with slideshow, circles and  Audio Support.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mapperaudioupdateold" class="buttonred2 action w-button">UPDATE Mapper Performance  Audio</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperaudioupdateold" class="buttonred2 action w-button">UPDATE Mapper Performance  Audio</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Updates Mapper to performance version and Audio Support.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=mapperupdateold" class="buttonred2 action w-button">UPDATE Mapper Performance</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=mapperupdateold" class="buttonred2 action w-button">UPDATE Mapper Performance</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Updates Mapper to  version which has most performace.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=firmwareupdate" class="buttonred2 action w-button">UPDATE Videoplayer &amp; Sync</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=firmwareupdate" class="buttonred2 action w-button">UPDATE Videoplayer &amp; Sync</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Updates omxplayer and omxplayer-sync.<br>Only use when mentioned or needed.</div>
               </div>
             </div>
@@ -1036,26 +1038,26 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=setdhcp" class="buttonred2 action w-button">DHCP</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=setdhcp" class="buttonred2 action w-button">DHCP</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">WIth DHCP enabled, Sync and Projectorcontrol will not work.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=setstatic100" class="buttonred2 action w-button">Static to 192.168.2.100</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=setstatic100" class="buttonred2 action w-button">Static to 192.168.2.100</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Set IP adress to 192.168.2.100</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=setstatic101" class="buttonred2 action w-button">Static to 192.168.2.101</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=setstatic101" class="buttonred2 action w-button">Static to 192.168.2.101</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Set IP adress to 192.168.2.101</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=setstatic102" class="buttonred2 action w-button">Static to 192.168.2.102</a></div>
-              <div class="w-col w-col-6">
+              <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=setstatic102" class="buttonred2 action w-button">Static to 192.168.2.102</a></div>
+              <div class="w-col w-col-6 w-col-tiny-6">
                 <div class="regular-text">Set IP adress to 192.168.2.102</div>
               </div>
             </div>
@@ -1068,8 +1070,8 @@ Code  below is for button tooltips
             <div class="w-row">
               <div class="w-col w-col-6">
                 <div class="w-row">
-                  <div class="w-col w-col-6"><a href="?action=wifiup" class="buttonred2 action w-button">ON</a></div>
-                  <div class="w-col w-col-6"><a href="?action=wifidown" class="buttonred2 action w-button">OFF</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=wifiup" class="buttonred2 action w-button">ON</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=wifidown" class="buttonred2 action w-button">OFF</a></div>
                 </div>
               </div>
               <div class="w-col w-col-6">
@@ -1079,8 +1081,8 @@ Code  below is for button tooltips
             <div class="w-row">
               <div class="w-col w-col-6">
                 <div class="w-row">
-                  <div class="w-col w-col-6"><a href="?action=wifienable" class="buttonred2 action w-button">ON permanent</a></div>
-                  <div class="w-col w-col-6"><a href="?action=wifidisable" class="buttonred2 action w-button">OFF permanent</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=wifienable" class="buttonred2 action w-button">ON permanent</a></div>
+                  <div class="w-col w-col-6 w-col-tiny-6"><a href="?action=wifidisable" class="buttonred2 action w-button">OFF permanent</a></div>
                 </div>
               </div>
               <div class="w-col w-col-6">
@@ -1090,10 +1092,10 @@ Code  below is for button tooltips
             <div class="w-row">
               <div class="w-col w-col-6">
                 <div class="w-row">
-                  <div class="w-col w-col-3"><a href="?action=setwifi1" class="buttonred2 action w-button">CH1</a></div>
-                  <div class="w-col w-col-3"><a href="?action=setwifi3" class="buttonred2 action w-button">CH3</a></div>
-                  <div class="w-col w-col-3"><a href="?action=setwifi6" class="buttonred2 action w-button">CH6</a></div>
-                  <div class="w-col w-col-3"><a href="?action=setwifi9" class="buttonred2 action w-button">CH9</a></div>
+                  <div class="w-col w-col-3 w-col-tiny-3"><a href="?action=setwifi1" class="buttonred2 action w-button">CH1</a></div>
+                  <div class="w-col w-col-3 w-col-tiny-3"><a href="?action=setwifi3" class="buttonred2 action w-button">CH3</a></div>
+                  <div class="w-col w-col-3 w-col-tiny-3"><a href="?action=setwifi6" class="buttonred2 action w-button">CH6</a></div>
+                  <div class="w-col w-col-3 w-col-tiny-3"><a href="?action=setwifi9" class="buttonred2 action w-button">CH9</a></div>
                 </div>
               </div>
               <div class="w-col w-col-6">
@@ -1128,9 +1130,9 @@ Code  below is for button tooltips
       <div class="footer">© 2018 <a target="_blank" href="http://www.magdesign.ch" class="link">magdesign.ch</a></div>
     </div>
   </div>
-  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="../js/jquery/placeholders.min.js"></script><![endif] -->
+  <!-- [if lte IE 9]><script src="../js/placeholders.min.js"></script><![endif] -->
   <!-- 
 Code below this line checks if user is online
  -->

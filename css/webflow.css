@@ -1357,6 +1357,10 @@ textarea.w-select {
 .w-richtext:after {
   clear: both;
 }
+.w-richtext[contenteditable="true"]:before,
+.w-richtext[contenteditable="true"]:after {
+  white-space: initial;
+}
 .w-richtext ol,
 .w-richtext ul {
   overflow: hidden;
