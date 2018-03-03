@@ -14,6 +14,11 @@ password: admin <br />
 Sony: <br />
 ***** <br />
 
+Christie:
+************
+name: Administrator
+password: <blank>
+
 Hitachi:
 ********
 
