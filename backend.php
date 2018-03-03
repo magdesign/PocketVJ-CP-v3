@@ -930,8 +930,8 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
+	system("sudo rm -rf /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo rm -rf /media/internal/PocketVJ-CP-v3-master");
 	//Update omxplayer and sync
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo apt-get remove omxplayer");
