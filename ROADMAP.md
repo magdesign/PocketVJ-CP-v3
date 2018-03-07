@@ -71,8 +71,8 @@
 
 - Uplaod with Filezilla<br />
 - DMX functions<br />
-- Mapping Converter<br />
-- new update tutorial<br />
+- Filename-Fixer<br />
+- new update CP tutorial<br />
 
 
 =======================<br />
