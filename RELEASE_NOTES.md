@@ -1,6 +1,6 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.3.5 7.March 2018<br />
+## CP 2.3.5 07.March 2018<br />
 added a filename fixer script/function to rename incompatible files <br />
 
 ## CP 2.3.4a 27.Februar 2018<br />
