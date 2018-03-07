@@ -1259,6 +1259,7 @@ if ($_GET['action'] == 'namefixer') {
 	system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
         $outputtext =  "fixed all filenames";
 
+}
 
 //# conform images to hd
 

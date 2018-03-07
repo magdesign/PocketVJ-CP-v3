@@ -73,6 +73,17 @@ cd /media/internal/presentations/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd -
 cd /media/internal/video/ && (rename 's/\s*\[.*?\]\s*//g' *) ; cd - 
 cd /media/internal/video/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd - 
 
+# This command block shortens all file names to 16 characters
+
+cd /media/internal/audio/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/images/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/pdf/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/presentations/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/video/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
 
 
 exit 0
