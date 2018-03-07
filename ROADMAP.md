@@ -41,7 +41,6 @@
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava<br />
 - sound reactive video effects https://github.com/karlstav/cava https://github.com/xdaimon/music_visualizer<br />
 - integrate UV4L Streaming Server (http://www.linux-projects.org/uv4l/) (tested: works 640x480, waiting for HD)<br />
-- adding a function to check filenames, when there is a space, auto rename with _ , remove 'umlauts' (use a sed command for this)<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
 - function to show CPU usage (top)<br />
 - function to display version of omxplayer, feh, tcpsyphon<br />
@@ -57,7 +56,8 @@
 
 ### OS: <br />
 - add Fugio (https://www.bigfug.com)<br />
-- interate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
+- integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
+- integrade HUB75 library <br />
 
 ### Manual: <br />
 
