@@ -55,6 +55,10 @@
 - https://github.com/scottlawsonbc/audio-reactive-led-strip<br />
 ...
 
+### OS: <br />
+- add Fugio (https://www.bigfug.com)<br />
+- interate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
+
 ### Manual: <br />
 
 - update manual for CP2.0.x release, new screenshots <br />
