@@ -926,6 +926,12 @@ if ($_GET['action'] == 'mapperaudioupdateold') {
 
 
 if ($_GET['action'] == 'updateall') {
+	//Update CP
+	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
+	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
+	system("sudo chmod 755 -R /var/www/");
+	system("sudo rm -rf /media/internal/PocketVJ-CP-v3-master.zip");
+	system("sudo rm -rf /media/internal/PocketVJ-CP-v3-master");
 	//Update omxplayer and sync
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo apt-get remove omxplayer");
@@ -973,12 +979,6 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo unzip /var/www/sync/mappingconverter.zip -d /home/pi/openFrameworks/apps/myApps/");
 	//Update SuperPikixPi
 	//not implemented yet, create a zip and unpack
-	//Update CP
-	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
-	system("sudo chmod 755 -R /var/www/");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
 	//remove old chunk form CP 1.14
 	system("sudo rm /var/www/sitemap.xml");
 	//Text Output

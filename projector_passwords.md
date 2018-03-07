@@ -14,6 +14,11 @@ password: admin <br />
 Sony: <br />
 ***** <br />
 
-Hitachi:
-********
+Christie:<br />
+************<br />
+name: Administrator<br />
+password: blank<br />
+<br />
+Hitachi:<br />
+********<br />
 
