@@ -362,12 +362,12 @@ if ($_GET['action'] == 'startpdfusb') {
 
 if ($_GET['action'] == 'testscreen') {
 	system("sudo /var/www/sync/testscreen &");
-    $outputtext =  "testscreen activated"; 
+        $outputtext =  "testscreen activated"; 
 }
 
 if ($_GET['action'] == 'testscreenoff') {
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-    system("sudo /var/www/sync/testscreenoff &");
+        system("sudo /var/www/sync/testscreenoff &");
 	$outputtext =  "testscreen deactivated";
 }
 
@@ -989,15 +989,14 @@ if ($_GET['action'] == 'factoryreset') {
 	$outputtext =  "factory reset system";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
-    system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-    system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
-    system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
-    system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-    system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
-    system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
+        system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+        system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
+        system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
+        system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
+        system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
+        system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
-
 }
 
 //# Set Wifi Channel
@@ -1258,7 +1257,7 @@ if ($_GET['action'] == 'alsa_out') {
 //# filename fixer
 if ($_GET['action'] == 'namefixer') {
 	system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
-    $outputtext =  "fixed all filenames";
+        $outputtext =  "fixed all filenames";
 
 
 //# conform images to hd
