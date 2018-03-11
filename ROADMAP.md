@@ -32,7 +32,7 @@
 
 ### Others:<br />
  
-- check if changes in htaccess file can help resolving domainname<br />
+- check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
