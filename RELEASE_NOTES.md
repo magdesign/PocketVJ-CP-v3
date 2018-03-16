@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.5a 16.March 2018<br />
+changed memory settings in config.txt to auto allocate gpu ram <br />
+
 ## CP 2.3.5 07.March 2018<br />
 added a filename fixer script/function to rename incompatible files <br />
 

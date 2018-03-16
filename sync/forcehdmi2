@@ -10,7 +10,11 @@ disable_overscan=1
 
 
 # for more options see http://elinux.org/RPi_config.txt
-gpu_mem=512
+
+gpu_mem_256=128
+gpu_mem_512=256
+gpu_mem_1024=512
+
 max_usb_current=1
 dtoverlay=i2c-rtc,ds3231
 dtparam=i2c_arm=on

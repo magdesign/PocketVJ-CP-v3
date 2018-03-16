@@ -48,7 +48,9 @@ hdmi_force_hotplug=1
 #arm_freq=800
 
 # for more options see http://elinux.org/RPi_config.txt
-gpu_mem=512
+gpu_mem_256=128
+gpu_mem_512=256
+gpu_mem_1024=512
 max_usb_current=1
 dtparam=i2c_arm=on
 dtparam=audio=on
