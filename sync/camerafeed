@@ -2,6 +2,11 @@
 #kill all running tasks
 /var/www/sync/stopall
 
+#set efx
+EFX=none
+
 #start video live feed
 
-raspivid -t 0
+raspivid -t 0 -ifx ${EFX}
+
+

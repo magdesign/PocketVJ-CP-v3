@@ -1924,6 +1924,34 @@ if ($_GET['action'] == 'enablecamera') {
 	$outputtext =  "camera enabled, reboot";
 }
 
+//# enable camera efx
+
+if ($_GET['action'] == 'cameranone') {
+	system("sudo sed -ri 's/^EFX=.+$/EFX=none/' /var/www/sync/camerafeed");
+	$outputtext =  "camera efx = none";
+}
+
+if ($_GET['action'] == 'cameragpen') {
+	system("sudo sed -ri 's/^EFX=.+$/EFX=gpen/' /var/www/sync/camerafeed");
+	$outputtext =  "camera efx = gpen";
+}
+
+if ($_GET['action'] == 'camerasketch') {
+	system("sudo sed -ri 's/^EFX=.+$/EFX=sketch/' /var/www/sync/camerafeed");
+	$outputtext =  "camera efx = sketch";
+}
+
+if ($_GET['action'] == 'cameraemboss') {
+	system("sudo sed -ri 's/^EFX=.+$/EFX=emboss/' /var/www/sync/camerafeed");
+	$outputtext =  "camera efx = emboss";
+}
+
+if ($_GET['action'] == 'camerahatch') {
+	system("sudo sed -ri 's/^EFX=.+$/EFX=hatch/' /var/www/sync/camerafeed");
+	$outputtext =  "camera efx = hatch";
+}
+
+
 
 echo $outputtext;
 ?>
