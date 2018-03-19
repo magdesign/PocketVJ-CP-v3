@@ -1,0 +1,7 @@
+#!/bin/bash
+#kill all running tasks
+/var/www/sync/stopall
+
+#start video live feed
+
+raspivid -t 0

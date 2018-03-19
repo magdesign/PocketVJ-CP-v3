@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.6 16.March 2018<br />
+added camera live feed to work together with raspicam (thanks cornelius henke for testing) <br />
+
 ## CP 2.3.5a 16.March 2018<br />
 changed memory settings in config.txt to auto allocate gpu ram <br />
 

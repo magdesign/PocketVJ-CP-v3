@@ -1906,5 +1906,24 @@ if ($_GET['action'] == 'cpuusage') {
 	$outputtext = wordwrap($preoutputtext, 124, "<br />\n");
 }
 
+//# Camera Live Feed
+
+if ($_GET['action'] == 'camerafeed') {
+	$outputtext =  "start camerafeed";
+	system("sudo /var/www/sync/camerafeed");
+}
+//# enable camera in boot.config
+
+if ($_GET['action'] == 'disablecamera') {
+	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
+	$outputtext =  "camera disabled, reboot";
+}
+
+if ($_GET['action'] == 'enablecamera') {
+	system("sudo sed -ri 's/^start_x=.+$/start_x=1/' /boot/config.txt");
+	$outputtext =  "camera enabled, reboot";
+}
+
+
 echo $outputtext;
 ?>

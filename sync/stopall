@@ -30,6 +30,8 @@ sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Vi
 sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find > /dev/null 2>&1
 #kill superpikix pi
 sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
+#kill camerafeed
+sudo killall -9  /usr/bin/raspivid > /dev/null 2>&1
 
 
 #kill top command

@@ -16,3 +16,4 @@ max_usb_current=1
 dtoverlay=i2c-rtc,ds3231
 dtparam=i2c_arm=on
 dtparam=audio=on
+start_x=0
