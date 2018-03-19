@@ -57,6 +57,7 @@
 
 ### OS: <br />
 - add Fugio (https://www.bigfug.com)<br />
+- integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
 
