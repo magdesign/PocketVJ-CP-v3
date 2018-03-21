@@ -20,5 +20,7 @@ name: Administrator<br />
 password: blank<br />
 <br />
 Hitachi:<br />
-********<br />
+******** <br />
+name: Administrator <br />
+password: blank<br />
 
