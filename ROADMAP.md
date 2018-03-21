@@ -46,6 +46,7 @@
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
 - function to show CPU usage (top)<br />
 - function to display version of omxplayer, feh, tcpsyphon<br />
+- make an artnet/dmx script to control omxplayer: http://doityourselfchristmas.com/forums/archive/index.php/t-22092.html <br />
 - Integrate artnet player from aeby: https://github.com/atizo/epicwall/tree/master/standalone<br />
 - Integrate PiTunnel for remote management <br />
 - Hub75 library to be compatible with led panels and adafruit board <br />
