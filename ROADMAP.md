@@ -74,10 +74,9 @@
 ### Tutorials (Vimeo): <br />
 
 - Uplaod with Filezilla<br />
+- All autostart functions <br />
 - DMX functions<br />
 - Filename-Fixer<br />
-- new update CP tutorial<br />
-
 
 =======================<br />
 ©2018 marc-andré gasser
