@@ -17,10 +17,10 @@ Sony: <br />
 Christie:<br />
 ************<br />
 name: Administrator<br />
-password: blank<br />
+password: [blank] <br />
 <br />
 Hitachi:<br />
 ******** <br />
 name: Administrator <br />
-password: blank<br />
+password: [blank] <br />
 
