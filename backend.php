@@ -1264,27 +1264,24 @@ if ($_GET['action'] == 'namefixer') {
 //# conform images to hd
 
 if ($_GET['action'] == 'imageconform') {
+	system("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	//# this converts all to jpg
 	system("sudo mogrify -format jpg /media/internal/images/*.png");
 	system("sudo mogrify -format jpg /media/internal/images/*.tiff");
 	system("sudo mogrify -format jpg /media/internal/images/*.tif");
 	system("sudo mogrify -format jpg /media/internal/images/*.jpeg");
 	system("sudo mogrify -format jpg /media/internal/images/*.bmp");
 	system("sudo mogrify -format jpg /media/internal/images/*.gif");
-
+    //# this removes the original files
 	system("sudo rm /media/internal/images/*.png");
 	system("sudo rm /media/internal/images/*.tiff");
 	system("sudo rm /media/internal/images/*.tif");
 	system("sudo rm /media/internal/images/*.jpeg");
 	system("sudo rm /media/internal/images/*.bmp");
 	system("sudo rm /media/internal/images/*.gif");
-
+    //# this resizes all files
 	system("sudo mogrify -resize 1920x1080\> /media/internal/images/*.jpg");
 	$outputtext =  "FINISHED! all images converted to jpg and resized to HD";
-	
-	system("sudo killall fbi");
-	system("sudo /var/www/sync/omxkill");
-	system("sudo /var/www/sync/startimage > /dev/null 2>&1 & echo $!");
-	$outputtext =  "starting image player";
 }
 
 //# convert exported .svg from madmapper and mapio to mappersettings
