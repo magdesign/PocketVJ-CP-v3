@@ -4,7 +4,7 @@
 ### Video: <br />
 - test if gstreamer gst-omx is loading videos faster for GPIO implementations (compile: https://gist.github.com/Swap-File/ea4b7a4739ca8c859bd7c3c3d8b087e6) <br />
 - play movies and images after each other <br />
-- sync with USB alsa audio does not work, fix it! <br />
+- sync with USB alsa audio does not work, fix it! (is this needed in any way?)<br />
 - jump to next file button <br />
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)<br />
 - Master Slave auto-detection<br />
@@ -72,16 +72,18 @@
 - more description for tcpsclient, with example using syphoner to capture software <br />
 - correct errors concerning timer.txt (possible to seperate with commas? ) <br />
 - Add scheduler commands <br />
-- Tell something about GPIO, where is the script and how to connect buttons <br />
+- Something about GPIO, where is the script and how to connect buttons <br />
 
-### Tutorials (Vimeo): <br />
+### Tutorials (Pocketvj.com/Vimeo): <br />
 
 - Uplaod with Filezilla<br />
 - All autostart functions <br />
 - DMX functions<br />
 - Filename-Fixer<br />
+- Show the streamer function to stream audio over wifi<br /> 
 - Mapper remote versions<br />
 
 =======================<br />
+Opensource rocks, closedsource sucks<br />
 ©2018 marc-andré gasser
 
