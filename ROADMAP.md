@@ -19,13 +19,15 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
+- Test new version from kr15h with remote server and release with remote server package <br />
+- Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager <br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
 - audio usb alsa support<br />
 - compile shortcut for bigmove, make moves even bigger, also small moves<br />
-- make mapper working without mouse<br />
-- Make sync script compatible with video mapper <br />
+- make mapper working without mouse, might be solved soon :-) <br />
+- Make sync script compatible with video mapper, need new ofxomxplayer, find a coder who can do this! <br />
 
 ### Autostart
 - Autostart to Processing in fullscreen (still not sure how to execute command) <br />
@@ -57,15 +59,15 @@
 - https://github.com/scottlawsonbc/audio-reactive-led-strip<br />
 ...
 
-### OS: <br />
+### OS for PVJ 3.6: <br />
 - add Fugio (https://www.bigfug.com)<br />
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
 
-### Manual: <br />
+### Manual .pdf: <br />
 
-- update manual for CP2.0.x release, new screenshots <br />
+- update manual for CP2.0.x release, new screenshots, half way done...i hate office programs <br />
 - shortcuts for mapping mode with keyboard <br />
 - more description for tcpsclient, with example using syphoner to capture software <br />
 - correct errors concerning timer.txt (possible to seperate with commas? ) <br />
@@ -77,6 +79,7 @@
 - All autostart functions <br />
 - DMX functions<br />
 - Filename-Fixer<br />
+- Mapper remote versions<br />
 
 =======================<br />
 ©2018 marc-andré gasser
