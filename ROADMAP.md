@@ -72,6 +72,7 @@
 - more description for tcpsclient, with example using syphoner to capture software <br />
 - correct errors concerning timer.txt (possible to seperate with commas? ) <br />
 - Add scheduler commands <br />
+- Tell something about GPIO, where is the script and how to connect buttons <br />
 
 ### Tutorials (Vimeo): <br />
 
