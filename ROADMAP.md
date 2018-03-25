@@ -20,7 +20,7 @@
 
 ### Mapper: <br />
 - Test new version from kr15h with remote server and release with remote server package <br />
-- Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager <br />
+- Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager https://github.com/sticknor/ofxBezierWarpManager, both examples are openGL, but i hope there is a way without it<br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
