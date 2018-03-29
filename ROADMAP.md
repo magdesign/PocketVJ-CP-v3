@@ -19,22 +19,21 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Test new version from kr15h with remote server and release with remote server package <br />
+- New version from kr15h with remote server, make it compatible with CP (webbased) and release<br />
 - Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager https://github.com/sticknor/ofxBezierWarpManager, both examples are openGL, but i hope there is a way without it<br />
 - Grid mesh <br />
 - Website or screengrabber as source for mapper  <br />
 - Add playlist version of mapper (plays every video in /media/internal/video) <br />
 - audio usb alsa support<br />
-- compile shortcut for bigmove, make moves even bigger, also small moves<br />
-- make mapper working without mouse, might be solved soon :-) <br />
-- Make sync script compatible with video mapper, need new ofxomxplayer, find a coder who can do this! <br />
+- compile shortcut for bigmove, make moves even bigger, also small moves(not importand if remote server works <br />
+- Make sync script compatible with video mapper, need new ofxomxplayer, find a coder who can do this, payable! <br />
 
 ### Autostart
 - Autostart to Processing in fullscreen (still not sure how to execute command) <br />
 
 ### Others:<br />
  
-- buttons in cp for camera efx (already in backend implemented) <br />
+- buttons in CP for camera efx (already in backend implemented) <br />
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
