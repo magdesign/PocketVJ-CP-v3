@@ -44,7 +44,7 @@ https://github.com/kashimAstro/ofxUIJquery<br />
 https://github.com/fx-lange/ofxSyncedParams<br />
 https://github.com/armadillu/ofxRemoteUI<br />
 Any inputs very welcome, also looking for someone who is familiar with the materia and might solve this pretty fast.<br />
-
+<br />
 
 
 - Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager https://github.com/sticknor/ofxBezierWarpManager, both examples are openGL, but i hope there is a way without it<br />
