@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## Image 3.5a 18.April 2018<br />
+Updated image to run on RPi3 B+ (2018) <br />
+
 ## CP 2.3.6 19.March 2018<br />
 added camera live feed to work together with raspicam (thanks cornelius henke for testing) <br />
 
