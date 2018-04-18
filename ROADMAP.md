@@ -86,6 +86,8 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 ...
 
 ### OS for PVJ 3.6: <br />
+- upgrade to run on RPi3 B+
+- switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi
 - add Fugio (https://www.bigfug.com)<br />
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
