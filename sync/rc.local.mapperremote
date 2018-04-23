@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server -f &
+
+exit 0

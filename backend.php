@@ -540,6 +540,11 @@ if ($_GET['action'] == 'setmapper') {
 	system("sudo cp /var/www/sync/rc.local.mapper /etc/rc.local");
 }
 
+if ($_GET['action'] == 'setmapperremote') {
+	$outputtext =  "set to mappingremote mode";
+	system("sudo cp /var/www/sync/rc.local.mapperremote /etc/rc.local");
+}
+
 if ($_GET['action'] == 'setqlc') {
 	$outputtext =  "set to QLC+ DMX console";
 	system("sudo cp /var/www/sync/xsessionqlcplus /home/pi/.xsession");
@@ -966,6 +971,11 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+		//Add Mapper Remote
+    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
 	//TCPSyphon new tcpsyphon needs debian strech libs!!
 	//reinstalls TCPSyphon
 	system("sudo rm /usr/bin/TCPSClient.bin");
@@ -1948,6 +1958,17 @@ if ($_GET['action'] == 'camerahatch') {
 	$outputtext =  "camera efx = hatch";
 }
 
+//# Custom Buttons / Functions
+
+if ($_GET['action'] == 'customfunction1') {
+	system("sudo /var/www/sync/customfunction1");
+	$outputtext =  "customfunction1";
+}
+
+if ($_GET['action'] == 'customfunction2') {
+	system("sudo /var/www/sync/customfunction2");
+	$outputtext =  "customfunction2";
+}
 
 
 echo $outputtext;
