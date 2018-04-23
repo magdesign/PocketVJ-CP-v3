@@ -3,8 +3,8 @@
 ## CP 2.3.7 23.April 2018<br />
 Added FX to Camera Livefeed <br />
 Added 2 custom function buttons with custom functions <br />
-Added remote mapper (make "Update All" 2 x to get it installed!) <br />
-Get the Mapperremote here: pocketvj.com/downloads/MapperRemote.zip <br />
+Added remote mapper beta (make "Update All" 2 x to get it installed!) <br />
+Get the Mapperremote beat App here: pocketvj.com/downloads/MapperRemote.zip <br />
 
 ## Image 3.5a 18.April 2018<br />
 Updated image to run on RPi3 B+ (2018) <br />
