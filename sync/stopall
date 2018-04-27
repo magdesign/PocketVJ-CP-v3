@@ -1,10 +1,14 @@
 #!/bin/bash
 
+#kill videoplayer
 sudo /var/www/sync/omxkill > /dev/null 2>&1
 #kill mapper
 sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
 sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null 2>&1
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/./bin/example_camera > /dev/null 2>&1
+#kill Syphon
 sudo killall -9 /usr/bin/TCPSClient.bin > /dev/null 2>&1
+#kill clock and imageplayer
 sudo killall -9 tty-clock > /dev/null 2>&1
 sudo killall -9 mpg321 > /dev/null 2>&1
 sudo killall -9 feh > /dev/null 2>&1

@@ -4,10 +4,15 @@
 #made for PVJ 3.1
 
 sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null 2>&1
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/./bin/example_camera > /dev/null 2>&1
 
 sleep 0.5
 
 sudo cp /media/internal/mappersets/mappersetting5.xml /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/ofxpimapper.xml
+sudo cp /media/internal/mappersets/mappersetting5.xml /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/ofxpimapper.xml
+sudo cp /media/internal/mappersets/mappersetting5.xml /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/bin/data/ofxpimapper.xml
+
 
 sleep 0.5
 

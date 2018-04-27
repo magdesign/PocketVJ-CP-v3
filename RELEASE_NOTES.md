@@ -1,5 +1,12 @@
 # PocketVJ 3.x Control Panel
 
+
+## CP 2.3.8 27.April 2018<br />
+Fixed mapper presets to also work with mapper remote <br />
+Added Mapper Cam to use picam or hdmi input board <br />
+Added launch mappercam button (make sure to enable cam in aux settings) <br />
+Make "Update All" 2 x to get everything installed! <br />
+
 ## CP 2.3.7 23.April 2018<br />
 Added FX to Camera Livefeed <br />
 Added 2 custom function buttons with custom functions <br />

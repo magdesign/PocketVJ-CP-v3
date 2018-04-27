@@ -545,6 +545,11 @@ if ($_GET['action'] == 'setmapperremote') {
 	system("sudo cp /var/www/sync/rc.local.mapperremote /etc/rc.local");
 }
 
+if ($_GET['action'] == 'setmappercam') {
+	$outputtext =  "set to mapping with cam";
+	system("sudo cp /var/www/sync/rc.local.mappercam /etc/rc.local");
+}
+
 if ($_GET['action'] == 'setqlc') {
 	$outputtext =  "set to QLC+ DMX console";
 	system("sudo cp /var/www/sync/xsessionqlcplus /home/pi/.xsession");
@@ -971,11 +976,14 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-		//Add Mapper Remote
+	//Add Mapper Remote
     system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
 	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
+    //Add Mapper Camera
+    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_camera");
+	system("sudo unzip /var/www/sync/example_camera.zip -d /");
 	//TCPSyphon new tcpsyphon needs debian strech libs!!
 	//reinstalls TCPSyphon
 	system("sudo rm /usr/bin/TCPSClient.bin");
@@ -1377,6 +1385,11 @@ if ($_GET['action'] == 'relaunchmapper') {
 if ($_GET['action'] == 'launchmapper') {
 	$outputtext =  "PiMapper launched";
 	system("sudo /var/www/sync/launchmapper");
+}
+
+if ($_GET['action'] == 'launchmappercam') {
+	$outputtext =  "PiMapper Cam launched";
+	system("sudo /var/www/sync/launchmappercam");
 }
 
 if ($_GET['action'] == 'mapperplaymode') {
@@ -1905,7 +1918,6 @@ if ($_GET['action'] == 'getgpu') {
 	$outputtext = "$preoutputtext";
 }
 
-
 if ($_GET['action'] == 'cpuusage') {
 	$output = shell_exec('top');
 	system("sudo killall -9 top");
@@ -1923,12 +1935,12 @@ if ($_GET['action'] == 'camerafeed') {
 
 if ($_GET['action'] == 'disablecamera') {
 	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
-	$outputtext =  "camera disabled, reboot";
+	$outputtext =  "camera disabled, please reboot!";
 }
 
 if ($_GET['action'] == 'enablecamera') {
 	system("sudo sed -ri 's/^start_x=.+$/start_x=1/' /boot/config.txt");
-	$outputtext =  "camera enabled, reboot";
+	$outputtext =  "camera enabled, please reboot!";
 }
 
 //# enable camera efx
