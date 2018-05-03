@@ -1,5 +1,7 @@
 # PocketVJ 3.x Control Panel
 
+## Wait with any update.. there is again this anoying google font bug.. fixed sooooonn.
+
 
 ## CP 2.3.8 27.April 2018<br />
 Fixed mapper presets to also work with mapper remote <br />
@@ -11,7 +13,7 @@ Make "Update All" 2 x to get everything installed! <br />
 Added FX to Camera Livefeed <br />
 Added 2 custom function buttons with custom functions <br />
 Added remote mapper beta (make "Update All" 2 x to get it installed!) <br />
-Get the Mapperremote beat App here: pocketvj.com/downloads/MapperRemote.zip <br />
+Get the Mapperremote beta App here: pocketvj.com/downloads/MapperRemote.zip  (OSX/Linux, win in pipeline)<br />
 
 ## Image 3.5a 18.April 2018<br />
 Updated image to run on RPi3 B+ (2018) <br />
