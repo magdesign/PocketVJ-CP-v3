@@ -830,7 +830,7 @@ if ($_GET['action'] == 'firmwareupdate') {
 	//system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
   	//system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
   	//cleanup:
-	system("sudo apt-get clean");
+	system("sudo apt-get clea");n
     //system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
 	//system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
@@ -1007,14 +1007,17 @@ if ($_GET['action'] == 'factoryreset') {
 	$outputtext =  "factory reset system";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
-        system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-        system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
-        system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
-        system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-        system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
-        system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
+    system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+    system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
+    system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
+    system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
+    system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
+    system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
+	system("sudo rm -rf /tmp/*");
+    system("sudo rm -rf /var/log/*");
+    system("sudo rm -rf /var/tmp/*");
 }
 
 //# Set Wifi Channel
