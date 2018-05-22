@@ -1,7 +1,8 @@
 # PocketVJ 3.x Control Panel
 
-## Wait with any update.. there is again this anoying google font bug.. fixed sooooonn.
 
+## CP 2.3.8b 03.May 2018<br />
+Fixed google font issue... sorry guys for the trouble <br />
 
 ## CP 2.3.8 27.April 2018<br />
 Fixed mapper presets to also work with mapper remote <br />
