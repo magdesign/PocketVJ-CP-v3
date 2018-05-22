@@ -1,8 +1,5 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.3.8c 03.May 2018<br />
-added delete all logs to factory preset button <br />
-
 ## CP 2.3.8b 03.May 2018<br />
 Fixed google font issue... sorry guys for the trouble <br />
 

@@ -1015,10 +1015,6 @@ if ($_GET['action'] == 'factoryreset') {
     system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
-	system("sudo rm -rf /tmp/*");
-    system("sudo rm -rf /var/log/*");
-    system("sudo rm -rf /var/tmp/*");
-    system("sudo apt-get clean");
 }
 
 //# Set Wifi Channel
