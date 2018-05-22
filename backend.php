@@ -830,7 +830,7 @@ if ($_GET['action'] == 'firmwareupdate') {
 	//system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
   	//system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
   	//cleanup:
-	system("sudo apt-get clea");n
+	system("sudo apt-get clean");
     //system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
 	//system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
@@ -1015,6 +1015,10 @@ if ($_GET['action'] == 'factoryreset') {
     system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
+	system("sudo rm -rf /tmp/*");
+	system("sudo rm -rf /var/log/*");
+	system("sudo rm -rf /var/tmp/*");
+	system("sudo apt-get clean");
 }
 
 //# Set Wifi Channel
