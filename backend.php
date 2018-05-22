@@ -1018,6 +1018,7 @@ if ($_GET['action'] == 'factoryreset') {
 	system("sudo rm -rf /tmp/*");
     system("sudo rm -rf /var/log/*");
     system("sudo rm -rf /var/tmp/*");
+    system("sudo apt-get clean");
 }
 
 //# Set Wifi Channel
