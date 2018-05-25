@@ -1,9 +1,10 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.8b 25.May 2018<br />
+reverted the factory preset functions which clean /tmp/ folders since it messes something up with the webserver <br />
 
 ## CP 2.3.8b 22.May 2018<br />
 added delete all log files to factory preset button <br />
-
 
 ## CP 2.3.8a 03.May 2018<br />
 Fixed google font issue... sorry guys for the trouble <br />
