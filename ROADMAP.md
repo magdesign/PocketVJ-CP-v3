@@ -8,6 +8,7 @@
 - jump to next file button <br />
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)<br />
 - Master Slave auto-detection<br />
+- Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 
 ### Streaming: <br />
 - Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 <br />
