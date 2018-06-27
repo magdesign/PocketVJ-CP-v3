@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#launchmapper is used when not booted in mapper mode to force mouse just for remote control
+sudo /var/www/sync/stopall &
+
+#the two lines are not needed i guess...
+#rm /dev/input/by-id/usb-046a_0023-event-kbd
+#rm /dev/input/by-path/platform-bcm2708_usb-usb-0:1.2.4:1.0-event-kbd
+
+sleep 0.5
+
+#this simulates the fake mouse
+#creating folders
+#sudo mkdir /dev/input/by-id
+#sudo mkdir /dev/input/by-path
+#creating files
+#sudo touch /dev/input/by-path/platform-3f980000.usb-usb-0:1.2:1.0-event-mouse
+#sudo touch /dev/input/by-path/platform-3f980000.usb-usb-0:1.2:1.0-mouse
+#sudo touch /dev/input/by-path/platform-bcm2708_usb-usb-0:1.2.4:1.0$
+
+#sudo touch /dev/input/by-id/usb-Logitech_USB_Optical_Mouse-event-mouse
+#sudo touch /dev/input/by-id/usb-Logitech_USB_Optical_Mouse-mouse
+
+#not sure if this is needed as well:
+#sudo touch /dev/input/by-id/usb-046a_0023-event-kbd
+
+#this simulates the fake keyboard
+#/opt/fsaysuinput </dev/null &
+#ln -s /dev/input/event1 /dev/input/by-id/usb-046a_0023-event-kbd &
+#ln -s /dev/input/event1 /dev/input/by-path/platform-bcm2708_usb-usb-0:1.2.4:1.0$
+
+/home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server -f &

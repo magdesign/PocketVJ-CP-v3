@@ -308,6 +308,7 @@ a {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+  text-align: left;
 }
 
 .buttongray {
@@ -571,6 +572,20 @@ a {
 
 .row {
   font-family: OpensansPVJ, sans-serif;
+}
+
+.heading_white_right {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: OpensansBoldPVJ, sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.bold-text-2 {
+  font-weight: 800;
 }
 
 @media (max-width: 991px) {

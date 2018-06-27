@@ -38,7 +38,8 @@ sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find > /dev/n
 sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
 #kill camerafeed
 sudo killall -9  /usr/bin/raspivid > /dev/null 2>&1
-
+#kill superpikixpi
+sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
 
 #kill top command
 #sudo killall -9 top

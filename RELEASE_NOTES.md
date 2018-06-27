@@ -1,5 +1,13 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.9 27.Juni 2018<br />
+fixed mapperupdate which removed the remote mapper <br />
+added launch remote mapper button <br />
+fixed autostart to superpikixpi <br />
+autoforce resolution for superpikixpi to 1280x720 <br />
+added kill superpikixpi to global stop command <br />
+
+
 ## CP 2.3.8b 25.May 2018<br />
 reverted the factory preset functions which clean /tmp/ folders since it messes something up with the webserver <br />
 

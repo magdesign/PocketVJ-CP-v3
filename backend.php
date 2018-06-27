@@ -894,6 +894,11 @@ if ($_GET['action'] == 'mapperupdate') {
 	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+		//Add Mapper Remote
+    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
 }
 
 if ($_GET['action'] == 'mapperaudioupdate') {
@@ -906,6 +911,11 @@ if ($_GET['action'] == 'mapperaudioupdate') {
 	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	//Add Mapper Remote
+    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
 
 }
 
@@ -918,6 +928,11 @@ if ($_GET['action'] == 'mapperupdateold') {
 	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	//Add Mapper Remote
+    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
 }
 
 if ($_GET['action'] == 'mapperaudioupdateold') {
@@ -930,6 +945,11 @@ if ($_GET['action'] == 'mapperaudioupdateold') {
 	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	//Add Mapper Remote
+    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
 
 }
 
@@ -1394,6 +1414,11 @@ if ($_GET['action'] == 'launchmapper') {
 if ($_GET['action'] == 'launchmappercam') {
 	$outputtext =  "PiMapper Cam launched";
 	system("sudo /var/www/sync/launchmappercam");
+}
+
+if ($_GET['action'] == 'launchmapperremote') {
+	$outputtext =  "PiMapper Cam launched";
+	system("sudo /var/www/sync/launchmapperremote");
 }
 
 if ($_GET['action'] == 'mapperplaymode') {

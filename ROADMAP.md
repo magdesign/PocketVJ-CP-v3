@@ -40,12 +40,15 @@ Notes:  <br />
 - get list of all available sources. <br />
 <br />
 Or realize it with openframeworks ofxHTTP, ofxJSONRPC <br />
- https://github.com/bakercp/ofxJSONRPC <br />
+https://github.com/bakercp/ofxJSONRPC <br />
 https://github.com/kashimAstro/ofxUIJquery<br />
 https://github.com/fx-lange/ofxSyncedParams<br />
 https://github.com/armadillu/ofxRemoteUI<br />
 Any inputs very welcome, also looking for someone who is familiar with the materia and might solve this pretty fast.<br />
 <br />
+
+- Add pause button<br />
+
 
 
 - Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager https://github.com/sticknor/ofxBezierWarpManager, both examples are openGL, but i hope there is a way without it<br />
@@ -87,12 +90,17 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 ...
 
 ### OS for PVJ 3.6: <br />
-- switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi
 - add Fugio (https://www.bigfug.com)<br />
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
-- add htop for monitoring usage
+- add htop for monitoring usage <br />
+- resoze root partition +512 MB <br />
+- add cava equalizer https://github.com/karlstav/cava <br />
+- file which tells PVJ image version and build date <br />
+
+### OS for PVJ 3.8: <br />
+- switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
 
 ### Manual .pdf: <br />
 
