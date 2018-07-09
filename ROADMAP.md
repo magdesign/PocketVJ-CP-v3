@@ -16,7 +16,7 @@
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
 ### Image: <br />
-- Gif player <br />
+- Gif player, gif for cli<br />
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
@@ -61,7 +61,6 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 
 ### Others:<br />
  
-- buttons in CP for camera efx (already in backend implemented) <br />
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
@@ -93,6 +92,7 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
 - add htop for monitoring usage
+- https://github.com/google/gif-for-cli  <br />
 
 ### Manual .pdf: <br />
 
