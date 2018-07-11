@@ -64,6 +64,7 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 
 ### Others:<br />
  
+_ fix the port links that they are working as relative urls  <br />
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
