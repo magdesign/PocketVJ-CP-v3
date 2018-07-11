@@ -94,7 +94,7 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
 - add htop for monitoring usage <br />
-- update qlcplus for headless without hdmi  <br />
+- update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 - https://github.com/google/gif-for-cli  <br />
 - resize root partition +512MB <br />
 - add cava equalizer https://github.com/karlstav/cava<br />
