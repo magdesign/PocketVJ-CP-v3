@@ -20,7 +20,9 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- New version from kr15h with remote server, make it compatible with CP (webbased) and release<br />
+- Build a completely new version of Mapper with more performance, remote controllable, and full code based on java (start on 20.07.18) <br />
+
+- New version from kr15h with remote server, make it compatible with CP (webbased) and release <br />
 - inputs for this : <br />
 Basic communication: https://robots.thoughtbot.com/json-event-based-convention-websockets <br />
 Canvas:  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_canvas_fillrect <br />
@@ -48,8 +50,6 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 <br />
 
 - Add pause button<br />
-
-
 
 - Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager https://github.com/sticknor/ofxBezierWarpManager, both examples are openGL, but i hope there is a way without it<br />
 - Grid mesh <br />
@@ -93,7 +93,13 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
-- add htop for monitoring usage
+- add htop for monitoring usage <br />
+- update qlcplus for headless without hdmi  <br />
+- https://github.com/google/gif-for-cli  <br />
+- resize root partition +512MB <br />
+- add cava equalizer https://github.com/karlstav/cava<br />
+- file which tells PVJ image version and build date <br />
+
 
 ### OS for PVJ 3.8: <br />
 - switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
