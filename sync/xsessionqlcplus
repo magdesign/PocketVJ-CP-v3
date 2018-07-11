@@ -1,4 +1,4 @@
 
-# start qlc+ in fullscreen mode
+# start qlc+ in fullscreen mode and the webgui
 
-qlcplus -f
+qlcplus -w -f
