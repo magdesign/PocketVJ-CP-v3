@@ -91,8 +91,9 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library <br />
-- add htop for monitoring usage
+- add htop for monitoring usage <br />
 - https://github.com/google/gif-for-cli  <br />
+- update qlcplus for headless without hdmi  <br />
 
 ### Manual .pdf: <br />
 
