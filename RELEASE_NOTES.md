@@ -1,5 +1,9 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.3.9a 12.July 2018<br />
+fixed openOLA panel link to be a realtive url now <br />
+
+
 ## CP 2.3.9 11.July 2018<br />
 fixed mapperupdate which removed the remote mapper <br />
 added launch remote mapper button <br />
