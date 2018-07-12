@@ -100,6 +100,7 @@ _ fix the port links that they are working as relative urls  <br />
 - resize root partition +512MB <br />
 - add cava equalizer https://github.com/karlstav/cava<br />
 - file which tells PVJ image version and build date <br />
+- install handbrake for vido conversion https://www.raspberrypi.org/forums/viewtopic.php?t=142015 <br />
 
 
 ### OS for PVJ 3.8: <br />
