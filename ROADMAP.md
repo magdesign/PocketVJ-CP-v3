@@ -40,7 +40,7 @@
 ### Others:<br />
  
 - fix the port links that they are working as relative urls  <br />
-- Add osc support to control everything with osc, I guess this could be the solution: https://code.google.com/archive/p/udp-tcp-bridge/ <br />
+- Add osc support to control everything with osc, I guess this could be the solution: https://code.google.com/archive/p/udp-tcp-bridge/ https://github.com/Konstanty/udp-tcp-bridge https://unix.stackexchange.com/questions/267118/create-udp-to-tcp-bridge-with-socat-netcat-to-relay-control-commands-for-vlc-med<br />
 <br />
 
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
