@@ -64,13 +64,17 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 
 ### Others:<br />
  
-_ fix the port links that they are working as relative urls  <br />
+- fix the port links that they are working as relative urls  <br />
+- Add osc support to control everything with osc, I guess this could be the solution: https://code.google.com/archive/p/udp-tcp-bridge/ <br />
+<br />
+
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
-- include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
 - Add OLA DMX recorder script and DMX playback script to record and playback DMX commands <br />
 - Search for an DMX player, https://github.com/peterdikant/SimpleDmxEngine which could be synced to omxplayer <br />
+<br />
+- Check if processing is still working <br />
 - Add some processing demos in fullscreen <br />
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava<br />
 - sound reactive video effects https://github.com/karlstav/cava https://github.com/xdaimon/music_visualizer<br />
