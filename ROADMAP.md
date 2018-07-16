@@ -20,33 +20,8 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Build a completely new version of Mapper with more performance, remote controllable, and full code based on java (start on 20.07.18) <br />
+- Build a completely new version of Mapper with more performance, remote controllable, (syncable?) and full code based on java (start on 20.07.18) <br />
 
-- New version from kr15h with remote server, make it compatible with CP (webbased) and release <br />
-- inputs for this : <br />
-Basic communication: https://robots.thoughtbot.com/json-event-based-convention-websockets <br />
-Canvas:  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_canvas_fillrect <br />
-Drawing the rectangles:http://sigmajs.org/ , or using snap.svg-min.js<br />
-Others:<br />
-http://danielnill.com/nodejs-tutorial-with-socketio , https://github.com/sitepoint-editors/websocket-demo<br />
- A send event must look something like this: <br />
- { <br />
-   "button" : 0, <br />
-   "event" : "mouseDragged", <br />
-   "x" : 1434, <br />
-   "y" : 165 <br />
-} <br />
- <br />
-Notes:  <br />
-- First get canvas size from pocketVJ with: tvservice -s, parse the result to draw a canvas in website. <br />
-- get list of all available sources. <br />
-<br />
-Or realize it with openframeworks ofxHTTP, ofxJSONRPC <br />
-https://github.com/bakercp/ofxJSONRPC <br />
-https://github.com/kashimAstro/ofxUIJquery<br />
-https://github.com/fx-lange/ofxSyncedParams<br />
-https://github.com/armadillu/ofxRemoteUI<br />
-Any inputs very welcome, also looking for someone who is familiar with the materia and might solve this pretty fast.<br />
 <br />
 
 - Add pause button<br />
