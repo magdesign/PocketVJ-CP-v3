@@ -93,7 +93,7 @@ _ fix the port links that they are working as relative urls  <br />
 - add Fugio (https://www.bigfug.com)<br />
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
-- integrade HUB75 library <br />
+- integrade HUB75 library https://github.com/hzeller/rpi-rgb-led-matrix <br />
 - add htop for monitoring usage <br />
 - update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 - https://github.com/google/gif-for-cli  <br />
