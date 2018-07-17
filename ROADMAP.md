@@ -11,7 +11,8 @@
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 
 ### Streaming: <br />
-- Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 <br />
+- Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 new NDI version dies not compile on jessie <br />
+- Add knob to show NDI version <br />
 - Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK)
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
