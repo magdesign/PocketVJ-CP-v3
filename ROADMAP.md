@@ -98,9 +98,7 @@
 
 - Uplaod with Filezilla<br />
 - All autostart functions <br />
-- DMX functions<br />
 - Filename-Fixer<br />
-- Show the streamer function to stream audio over wifi<br /> 
 - Mapper remote versions<br />
 
 =======================<br />
