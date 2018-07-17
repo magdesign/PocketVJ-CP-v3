@@ -17,7 +17,7 @@
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
 ### Image: <br />
-- Gif player, gif for cli<br />
+- Gif player, gif for cli https://github.com/google/gif-for-cli <br />
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
