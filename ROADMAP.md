@@ -86,6 +86,9 @@
 ### OS for PVJ 3.8: <br />
 - switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
 
+### OPVJ 4.0: <br />
+- PocketVJ 4.0 might be based on a x86 platform. Will test UPcore soon: http://www.up-board.org/ai-edge/up-core-plus/
+
 ### Manual .pdf: <br />
 
 - update manual for CP2.0.x release, new screenshots, half way done...i hate office programs <br />
