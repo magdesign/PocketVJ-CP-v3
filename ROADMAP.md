@@ -70,6 +70,7 @@
 ...
 
 ### OS for PVJ 3.6: <br />
+- add chromium to get a browser with HW support for playing videos  <br />
 - add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
