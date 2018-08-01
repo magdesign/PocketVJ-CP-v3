@@ -21,7 +21,7 @@
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Build a completely new version of Mapper with more performance, remote controllable, (syncable?) and full code based on java (start on 20.07.18) <br />
+- Build a completely new version of Mapper with more performance, remote controllable, (syncable?) and full code based on java. Prototype availabe on my github. <br />
 
 <br />
 
@@ -87,7 +87,7 @@
 - switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
 
 ### OPVJ 4.0: <br />
-- PocketVJ 4.0 might be based on a x86 platform. Will test UPcore soon: http://www.up-board.org/ai-edge/up-core-plus/
+- PocketVJ 4.0 might be based on a x86 platform. Will test UPcore soon: http://www.up-board.org/ai-edge/up-core-plus/ or https://shop.udoo.org
 
 ### Manual .pdf: <br />
 
