@@ -12,6 +12,7 @@ added htop for monitoring<br />
 gif-for-cli (untested)<br />
 resized root partition<br />
 added cava equalizer<br />
+added Unclutter <br />
 added file which tells pvj image build version<br />
 wget installed<br />
 purged glediator and xlights to free some space<br />
