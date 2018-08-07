@@ -5,8 +5,8 @@ added pre alpha of magmapper to autostart custom1 buttom (only working on image 
 
 ## Image 3.6 07.August 2018<br />
 added Chromium browser<br />
-integrate webcam driver<br />
-integrate neopixel driver<br />
+integrated webcam driver<br />
+integrated neopixel driver<br />
 integrated HUB75 library<br />
 added htop for monitoring<br />
 gif-for-cli (untested)<br />
@@ -15,6 +15,7 @@ added cava equalizer<br />
 added file which tells pvj image build version<br />
 wget installed<br />
 purged glediator and xlights to free some space<br />
+added new testvideo by paavo<br />
 
 ## CP 2.3.9a 12.July 2018<br />
 fixed openOLA panel link to be a realtive url now <br />
