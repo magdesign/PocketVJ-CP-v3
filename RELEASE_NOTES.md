@@ -1,6 +1,6 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.3.9b 12.July 2018<br />
+## CP 2.3.9b 07.August 2018<br />
 added pre alpha of magmapper to autostart custom1 buttom (only working on image 3.6 and newer)
 
 ## Image 3.6 07.August 2018<br />
