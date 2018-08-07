@@ -1,0 +1,5 @@
+
+# start chromium in kiosk fullscreen
+
+
+chromium-browser --kiosk file:///home/pi/maptasticjs/example/index.html
