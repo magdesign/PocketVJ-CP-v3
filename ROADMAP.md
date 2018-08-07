@@ -11,42 +11,18 @@
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 
 ### Streaming: <br />
-- Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 <br />
+- Support NDI http://forums.newtek.com/showthread.php?150879-Not-able-to-open-NDI-receive-on-Linux http://mkto-q0143.com/WQ0aoaVif0k3CMg00x00e00 new NDI version dies not compile on jessie <br />
+- Add knob to show NDI version <br />
 - Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK)
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
 ### Image: <br />
-- Gif player, gif for cli<br />
+- Gif player, gif for cli https://github.com/google/gif-for-cli <br />
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Build a completely new version of Mapper with more performance, remote controllable, and full code based on java (start on 20.07.18) <br />
+- Build a completely new version of Mapper with more performance, remote controllable, (syncable?) and full code based on java. Prototype availabe on my github. <br />
 
-- New version from kr15h with remote server, make it compatible with CP (webbased) and release <br />
-- inputs for this : <br />
-Basic communication: https://robots.thoughtbot.com/json-event-based-convention-websockets <br />
-Canvas:  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_canvas_fillrect <br />
-Drawing the rectangles:http://sigmajs.org/ , or using snap.svg-min.js<br />
-Others:<br />
-http://danielnill.com/nodejs-tutorial-with-socketio , https://github.com/sitepoint-editors/websocket-demo<br />
- A send event must look something like this: <br />
- { <br />
-   "button" : 0, <br />
-   "event" : "mouseDragged", <br />
-   "x" : 1434, <br />
-   "y" : 165 <br />
-} <br />
- <br />
-Notes:  <br />
-- First get canvas size from pocketVJ with: tvservice -s, parse the result to draw a canvas in website. <br />
-- get list of all available sources. <br />
-<br />
-Or realize it with openframeworks ofxHTTP, ofxJSONRPC <br />
-https://github.com/bakercp/ofxJSONRPC <br />
-https://github.com/kashimAstro/ofxUIJquery<br />
-https://github.com/fx-lange/ofxSyncedParams<br />
-https://github.com/armadillu/ofxRemoteUI<br />
-Any inputs very welcome, also looking for someone who is familiar with the materia and might solve this pretty fast.<br />
 <br />
 
 - Add pause button<br />
@@ -64,13 +40,17 @@ Any inputs very welcome, also looking for someone who is familiar with the mater
 
 ### Others:<br />
  
-_ fix the port links that they are working as relative urls  <br />
+- fix the port links that they are working as relative urls  <br />
+- Add osc support to control everything with osc, I guess this could be the solution: https://code.google.com/archive/p/udp-tcp-bridge/ https://github.com/Konstanty/udp-tcp-bridge https://unix.stackexchange.com/questions/267118/create-udp-to-tcp-bridge-with-socat-netcat-to-relay-control-commands-for-vlc-med<br />
+<br />
+
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
-- include SuperPikixPi into update process<br />
 - move softedge file location to another place<br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
 - Add OLA DMX recorder script and DMX playback script to record and playback DMX commands <br />
 - Search for an DMX player, https://github.com/peterdikant/SimpleDmxEngine which could be synced to omxplayer <br />
+<br />
+- Check if processing is still working <br />
 - Add some processing demos in fullscreen <br />
 - integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava<br />
 - sound reactive video effects https://github.com/karlstav/cava https://github.com/xdaimon/music_visualizer<br />
@@ -90,7 +70,8 @@ _ fix the port links that they are working as relative urls  <br />
 ...
 
 ### OS for PVJ 3.6: <br />
-- add Fugio (https://www.bigfug.com)<br />
+- add chromium to get a browser with HW support for playing videos  <br />
+- add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - integrate driver for usb webcam: sudo apt-get install fswebcam<br />
 - integrate neopixel driver https://dordnung.de/raspberrypi-ledstrip/ws2812<br />
 - integrade HUB75 library https://github.com/hzeller/rpi-rgb-led-matrix <br />
@@ -106,6 +87,9 @@ _ fix the port links that they are working as relative urls  <br />
 ### OS for PVJ 3.8: <br />
 - switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
 
+### OPVJ 4.0: <br />
+- PocketVJ 4.0 might be based on a x86 platform. Will test UPcore soon: http://www.up-board.org/ai-edge/up-core-plus/ or https://shop.udoo.org
+
 ### Manual .pdf: <br />
 
 - update manual for CP2.0.x release, new screenshots, half way done...i hate office programs <br />
@@ -119,9 +103,7 @@ _ fix the port links that they are working as relative urls  <br />
 
 - Uplaod with Filezilla<br />
 - All autostart functions <br />
-- DMX functions<br />
 - Filename-Fixer<br />
-- Show the streamer function to stream audio over wifi<br /> 
 - Mapper remote versions<br />
 
 =======================<br />
