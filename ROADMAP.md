@@ -1,5 +1,9 @@
 ## Roadmap
 **********
+### fixes:  <br />
+- fix that no longer .xsession file says what to autostart, use /home/pi/.config/lxsession/LXDE/autostart instead.
+this might fix the problem when making apt upgrade and all the x functions do not work anymore.<br />
+- remove videomapper remote app button in CP and add magmapper button.<br />
 
 ### Video: <br />
 - test if gstreamer gst-omx is loading videos faster for GPIO implementations (compile: https://gist.github.com/Swap-File/ea4b7a4739ca8c859bd7c3c3d8b087e6) <br />
