@@ -4,7 +4,8 @@
 added pre alpha of magmapper to autostart custom1 buttom (only working on image 3.6 and newer)
 
 ## Image 3.6 07.August 2018<br />
-added Chromium browser<br />
+installed Chromium browser<br />
+installed node.js (for OSC support)<br />
 integrated webcam driver<br />
 integrated neopixel driver<br />
 integrated HUB75 library<br />
@@ -12,7 +13,7 @@ added htop for monitoring<br />
 gif-for-cli (untested)<br />
 resized root partition<br />
 added cava equalizer<br />
-added Unclutter <br />
+added unclutter <br />
 added file which tells pvj image build version<br />
 wget installed<br />
 purged glediator and xlights to free some space<br />
