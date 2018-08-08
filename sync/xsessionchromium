@@ -1,5 +1,0 @@
-
-# start chromium in kiosk fullscreen
-
-
-chromium-browser --kiosk --incognito file:///home/pi/magmapper/example/index.html

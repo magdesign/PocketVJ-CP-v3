@@ -1,0 +1,4 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+@xscreensaver -no-splash
+@chromium-browser --app=file:///home/pi/magmapper/example/index.html --start-fullscreen --disable-session-crashed-bubble
