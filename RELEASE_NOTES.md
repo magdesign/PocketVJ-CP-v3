@@ -6,6 +6,7 @@ added pre alpha of magmapper to autostart custom1 buttom (only working on image 
 ## Image 3.6 07.August 2018<br />
 installed Chromium browser<br />
 installed node.js (for OSC support)<br />
+installed npm socket.io node-omxplayer<br />
 integrated webcam driver<br />
 integrated neopixel driver<br />
 integrated HUB75 library<br />
