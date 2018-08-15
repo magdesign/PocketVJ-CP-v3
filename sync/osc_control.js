@@ -38,12 +38,10 @@ console.log('start videoplayer as master');
 exec("/var/www/sync/startmaster");
 });
 
-
 receiver.on('/startmaster01', function () {
 console.log('start seamless video_01 loop');
 exec("/var/www/sync/startmaster01");
 });
-
 
 receiver.on('/startmaster02', function () {
 console.log('start seamless video_02 loop');
@@ -55,15 +53,24 @@ console.log('start seamless video_03 loop');
 exec("/var/www/sync/startmaster03");
 });
 
-
 receiver.on('/startslave', function () {
 console.log('start player as slave');
 exec("/var/www/sync/startslave");
 });
 
+receiver.on('/pause', function () {
+console.log('pause videoplayer');
+exec("/var/www/sync/dbuscontrol.sh pause > /dev/null 2>&1");
+});
+
+receiver.on('/fastforward', function () {
+console.log('seek 10s forward videoplayer');
+exec("/var/www/sync/dbuscontrol.sh seek 10000000");
+});
+
+
 
 //# Imageplayer
-
 
 receiver.on('/image', function () {
 console.log('start imageplayer');
@@ -92,9 +99,6 @@ receiver.on('/beameroff', function () {
 console.log('turn Projector off');
 exec("/var/www/sync/beameroff");
 });
-
-
-
 
 
 

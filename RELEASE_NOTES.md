@@ -1,5 +1,9 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.0 15.August 2018<br />
+added full OSC support (only working on PVJ's 3.6 (and newer) released from today on)<br />
+if you bought your PVJ 3.6 before August 15th, you need to: npm install osc-receiver<br />
+
 ## CP 2.3.9b 07.August 2018<br />
 added pre alpha of magmapper to autostart custom1 buttom (only working on image 3.6 and newer)
 

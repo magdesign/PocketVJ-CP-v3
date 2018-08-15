@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Jun 27 2018 09:40:11 GMT+0000 (UTC)  -->
+<!--  Last Published: Wed Aug 15 2018 14:08:49 GMT+0000 (UTC)  -->
 <html data-wf-page="5913869e09b9f23ad6b314ee" data-wf-site="5913869e09b9f23ad6b314ed">
 <head>
   <meta charset="utf-8">
@@ -15,7 +15,8 @@
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/pocketvj-cp.webflow.css" rel="stylesheet" type="text/css">
   <script src="../js/webfont.js" type="text/javascript"></script>
-    <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon32.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/istore256.png" rel="apple-touch-icon">
   <!-- 
@@ -30,7 +31,7 @@ Code  below is for button tooltips
       <div class="w-row">
         <div class="w-col w-col-6"><a href="https://pocketvj.com/#Downloads" target="_blank" class="w-inline-block"><img src="images/pocketVJlogoS2.png" class="logo"></a></div>
         <div class="w-col w-col-6">
-          <div class="release">CP 2.3.9b</div>
+          <div class="release">CP 2.4.0</div>
         </div>
       </div>
     </div>
@@ -767,6 +768,12 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"><a href="?action=setqlc" class="buttongray action w-button">QLC+   DMX console</a></div>
             </div>
             <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=setosc" class="buttongray action w-button">OSC control</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">Control the whole CP over OSC instead of TCP<br>Standard port is: 9876</div>
+              </div>
+            </div>
+            <div class="w-row">
               <div class="w-col w-col-6"><a href="?action=setprocessing" class="buttongray action w-button">PROCESSING</a></div>
               <div class="w-col w-col-6"><a href="?action=setsuperpikixpi" class="buttongray action w-button">SUPER PIKIX Pi</a></div>
             </div>
@@ -842,6 +849,10 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
+              <div class="w-col w-col-6"><a href="?action=oscreceiver" class="buttonviolett2 action w-button">Start OSC listener on Port: 9876</a></div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
               <div class="w-col w-col-6">
                 <div class="heading_white">  <br><br>Set Audio Output:</div>
               </div>
@@ -860,6 +871,12 @@ Code  below is for button tooltips
             </div>
             <div class="w-row">
               <div class="w-col w-col-6">
+                <div class="regular-text">If you can not hear the audio of your video, make sure its AAC compressed with a maximum bitrate of 192kps. Higher bitrates are not supported!</div>
+              </div>
+              <div class="w-col w-col-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6">
                 <div class="heading_white">  <br><br>DMX / OLA:</div>
               </div>
               <div class="w-col w-col-6"></div>
@@ -867,19 +884,25 @@ Code  below is for button tooltips
             <div class="w-row">
               <div class="w-col w-col-6"><a href="?action=startola" class="buttonviolett2 action w-button">Start  OLA</a></div>
               <div class="w-col w-col-6">
-                <div class="regular-text">DMX / OLA is implemented since PocketVJ 3.5<br>If you have an earlier version you need to install manually</div>
+                <div class="regular-text">DMX / OLA is implemented since PocketVJ 3.5<br>If you have an earlier version you need to install it manually.</div>
               </div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6"><a href="#" onclick="window.open(`//${window.location.hostname}:9090`)" target="_blank" class="buttonviolett2 action w-button">Open  OLA Panel</a></div>
+              <div class="w-col w-col-6"><a href="#" onclick="window.open(`//${window.location.hostname}:9090`)" target="_blank" class="buttonviolett2 action w-button">Open  OLA Panel  (webinterface)</a></div>
               <div class="w-col w-col-6">
-                <div class="regular-text">If this knob does not work, just type :9090 behind the address.  e.g.:  http://2.0.0.101:9090</div>
+                <div class="regular-text"></div>
               </div>
             </div>
             <div class="w-row">
               <div class="w-col w-col-6"><a href="?action=startqlcplus" target="_blank" class="buttonviolett2 action w-button">Open  QLC+</a></div>
               <div class="w-col w-col-6">
                 <div class="regular-text">Run QLC+ to create Light Shows. <br>When using it, please donate the project: http://www.qlcplus.org</div>
+              </div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6"><a href="#" onclick="window.open(`//${window.location.hostname}:9999`)" target="_blank" class="buttonviolett2 action w-button">Open  QLC+ Panel (webinterface)</a></div>
+              <div class="w-col w-col-6">
+                <div class="regular-text">To control your QLC+ from here (headless).</div>
               </div>
             </div>
             <div class="w-row">
@@ -1170,9 +1193,7 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-              <div class="w-col w-col-6">
-                <div class="regular-text">To access the built in Terminal, type :4200 behind your IP in the browser. e.g.: 192.168.2.100:4200</div>
-              </div>
+              <div class="w-col w-col-6"><a href="#" onclick="window.open(`//${window.location.hostname}:4200`)" target="_blank" class="buttonred2 action w-button">Terminal</a></div>
               <div class="w-col w-col-6">
                 <div class="regular-text">Login: pi<br>Pass: pocketusr</div>
               </div>
@@ -1193,7 +1214,7 @@ Code  below is for button tooltips
   </div>
   <script src="../js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
-  <!-- [if lte IE 9]><script src="../js/jquery//placeholders.min.js"></script><![endif] -->
+  <!-- [if lte IE 9]><script src="../js/placeholders.min.js"></script><![endif] -->
   <!-- 
 Code below this line checks if user is online
  -->
