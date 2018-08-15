@@ -624,6 +624,13 @@ if ($_GET['action'] == 'setsuperpikixpi') {
 	system("sudo cp /var/www/sync/rc.local.superpikixpi /etc/rc.local");
 }
 
+if ($_GET['action'] == 'setosc') {
+	$outputtext = "autostart to OSC receiver";
+	system("sudo cp /var/www/sync/rc.local.osc /etc/rc.local");
+}
+
+
+
 
 //# AirPlay support
 //restart airplay daemon:
@@ -1017,6 +1024,9 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo unzip /var/www/sync/mappingconverter.zip -d /home/pi/openFrameworks/apps/myApps/");
 	//Update SuperPikixPi
 	//not implemented yet, create a zip and unpack
+	//
+	//Update OSC control in home folder
+	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
 	//remove old chunk form CP 1.14
 	system("sudo rm /var/www/sitemap.xml");
 	//Text Output
@@ -1027,7 +1037,7 @@ if ($_GET['action'] == 'factoryreset') {
 	$outputtext =  "factory reset system";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
-    	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
+    system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
   	system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
   	system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
  	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
@@ -1035,6 +1045,8 @@ if ($_GET['action'] == 'factoryreset') {
  	system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
+	//Update OSC control in home folder
+	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
 	//system("sudo rm -rf /tmp/*");
 	//system("sudo rm -rf /var/log/*");
 	//system("sudo rm -rf /var/tmp/*");
@@ -1953,6 +1965,15 @@ if ($_GET['action'] == 'cpuusage') {
 	$preoutputtext =  "<pre>$output</pre>";
 	$outputtext = wordwrap($preoutputtext, 124, "<br />\n");
 }
+
+
+//# OSC receiver
+
+if ($_GET['action'] == 'oscreceiver') {
+	system("sudo /var/www/sync/osc_start");
+	$outputtext =  "start OSC Control Receiver";
+}
+
 
 //# Camera Live Feed
 
