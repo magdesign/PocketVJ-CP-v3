@@ -1,3 +1,6 @@
+// This should be placed in /home/pi/osc/osc_control.js to work with webCP
+// or execute through via terminal 'node osc_control.js'
+
 var util = require('util')
 var exec = require('child_process').exec;
 var OscReceiver = require('osc-receiver')
@@ -29,7 +32,40 @@ console.log('deactivate testscreen');
 exec("/var/www/sync/testscreenoff");
 });
 
+//# Clock Display and color Changes
 
+receiver.on('/clockdisplay', function () {
+console.log('Display Clock');
+exec("/var/www/sync/clockdisplay");
+});
+
+receiver.on('/clockred', function () {
+console.log('Red Clock');
+exec("sudo /var/www/sync/stopall");
+exec("sudo sed -ri 's/^COLOR=.+$/COLOR=1/' /var/www/sync/clockdisplay");
+exec("sudo /var/www/sync/clockdisplay")
+});
+
+receiver.on('/clockgreen', function () {
+console.log('Green Clock');
+exec("sudo /var/www/sync/stopall");
+exec("sudo sed -ri 's/^COLOR=.+$/COLOR=2/' /var/www/sync/clockdisplay");
+exec("sudo /var/www/sync/clockdisplay")
+});
+
+receiver.on('/clockorange', function () {
+console.log('Orange Clock');
+exec("sudo /var/www/sync/stopall");
+exec("sudo sed -ri 's/^COLOR=.+$/COLOR=3/' /var/www/sync/clockdisplay");
+exec("sudo /var/www/sync/clockdisplay")
+});
+
+receiver.on('/clockorange', function () {
+console.log('Pink Clock');
+exec("sudo /var/www/sync/stopall");
+exec("sudo sed -ri 's/^COLOR=.+$/COLOR=5/' /var/www/sync/clockdisplay");
+exec("sudo /var/www/sync/clockdisplay")
+});
 
 //# Video Control Section
 
