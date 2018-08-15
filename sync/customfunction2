@@ -30,4 +30,4 @@ curl -s http://192.168.1.105/backend.php/?action=startslave &
 curl -s http://192.168.1.106/backend.php/?action=startslave &
 curl -s http://192.168.1.107/backend.php/?action=startslave &
 
-# "I hope this works...." - Marc ;  "Oh it works." -Cornelius
+# "I hope this works...." - Marc ;  "Oh it works." -Cornelius testing
