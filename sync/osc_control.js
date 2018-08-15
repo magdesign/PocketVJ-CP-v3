@@ -53,6 +53,51 @@ console.log('start seamless video_03 loop');
 exec("/var/www/sync/startmaster03");
 });
 
+receiver.on('/startmaster04', function () {
+console.log('start seamless video_04 loop');
+exec("/var/www/sync/startmaster04");
+});
+
+receiver.on('/startmaster05', function () {
+console.log('start seamless video_05 loop');
+exec("/var/www/sync/startmaster05");
+});
+
+receiver.on('/startmaster06', function () {
+console.log('start seamless video_06 loop');
+exec("/var/www/sync/startmaster06");
+});
+
+receiver.on('/startmaster07', function () {
+console.log('start seamless video_07 loop');
+exec("/var/www/sync/startmaster07");
+});
+
+receiver.on('/startmaster08', function () {
+console.log('start seamless video_08 loop');
+exec("/var/www/sync/startmaster08");
+});
+
+receiver.on('/startmaster09', function () {
+console.log('start seamless video_09 loop');
+exec("/var/www/sync/startmaster09");
+});
+
+receiver.on('/startmaster10', function () {
+console.log('start seamless video_10 loop');
+exec("/var/www/sync/startmaster10");
+});
+
+receiver.on('/startmaster11', function () {
+console.log('start seamless video_11 loop');
+exec("/var/www/sync/startmaster11");
+});
+
+receiver.on('/startmaster12', function () {
+console.log('start seamless video_12 loop');
+exec("/var/www/sync/startmaster12");
+});
+
 receiver.on('/startslave', function () {
 console.log('start player as slave');
 exec("/var/www/sync/startslave");
@@ -100,7 +145,17 @@ console.log('turn Projector off');
 exec("/var/www/sync/beameroff");
 });
 
+//# Custom Script Control
 
+receiver.on('/customfunction1', function () {
+console.log('Start All Cameras');
+exec("/var/www/sync/customfunction1");
+});
+
+receiver.on('/customfunction2', function () {
+console.log('Ready All Video Players');
+exec("/var/www/sync/customfunction2");
+});
 
 // this here i do not really know what for its stands..
 receiver.on('message', function() {
