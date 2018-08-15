@@ -21,6 +21,7 @@ purged glediator and xlights to free some space<br />
 added new testvideo by paavo<br />
 
 Update 15.08.2018<br />
+**********************
 added osc-receiver<br />
 customer how bought a PVJ3.6 before August 15, need to perform a npm install osc-receiver for OSC functionality.<br />
 
