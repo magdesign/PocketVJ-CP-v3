@@ -5,8 +5,8 @@
 #set efx
 EFX=none
 
-#start video live feed
+#start video live feed & turn off Auto-Exposure and Auto-Color
 
-raspivid -t 0 -ifx ${EFX}
+raspivid -t 0 -vf --exposure backlight  --exposure fixedfps --awb fluorescent
 
 
