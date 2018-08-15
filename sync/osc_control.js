@@ -67,6 +67,7 @@ exec("sudo sed -ri 's/^COLOR=.+$/COLOR=5/' /var/www/sync/clockdisplay");
 exec("sudo /var/www/sync/clockdisplay")
 });
 
+
 //# Video Control Section
 
 receiver.on('/startmaster', function () {
