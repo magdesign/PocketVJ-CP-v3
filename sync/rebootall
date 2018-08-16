@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#reboot all
+#put your custom code in here
+#if you write something, please contribute to PocketVJ!
+
+#This should reboot all the players connected
+
+#kill all running tasks on this PVJ
+/var/www/sync/stopall &
+
+#kill all running tasks on the 7 slaves
+curl -s http://192.168.1.101/backend.php/?action=stop &
+curl -s http://192.168.1.102/backend.php/?action=stop &
+curl -s http://192.168.1.103/backend.php/?action=stop &
+curl -s http://192.168.1.104/backend.php/?action=stop &
+curl -s http://192.168.1.105/backend.php/?action=stop &
+curl -s http://192.168.1.106/backend.php/?action=stop &
+curl -s http://192.168.1.107/backend.php/?action=stop &
+
+#reboot slaves
+curl -s http://192.168.1.101/backend.php/?action=reboot &
+curl -s http://192.168.1.102/backend.php/?action=reboot &
+curl -s http://192.168.1.103/backend.php/?action=reboot &
+curl -s http://192.168.1.104/backend.php/?action=reboot &
+curl -s http://192.168.1.105/backend.php/?action=reboot &
+curl -s http://192.168.1.106/backend.php/?action=reboot &
+curl -s http://192.168.1.107/backend.php/?action=reboot &
+
+#reboot master
+sudo reboot
+
+# "I hope this works...." - Marc ;  "Oh it works." -Cornelius

@@ -18,7 +18,7 @@ receiver.bind(9876);
 //# Global commands
 
 receiver.on('/stopall', function () {
-console.log('stopp every task');
+console.log('stop every task');
 exec("/var/www/sync/stopall");
 });
 
@@ -30,6 +30,26 @@ exec("/var/www/sync/testscreen");
 receiver.on('/testscreenoff', function () {
 console.log('deactivate testscreen');
 exec("/var/www/sync/testscreenoff");
+});
+
+receiver.on('/shutdown', function () {
+console.log('Shutting down');
+exec("sudo poweroff");
+});
+
+receiver.on('/reboot', function () {
+console.log('Rebooting...');
+exec("sudo reboot");
+});
+
+receiver.on('/rebootall', function () {
+console.log('Rebooting All');
+exec("/var/www/sync/rebootall");
+});
+
+receiver.on('/shutdownall', function () {
+console.log('Shutting down All');
+exec("/var/www/sync/shutdownall");
 });
 
 //# Clock Display and color Changes
