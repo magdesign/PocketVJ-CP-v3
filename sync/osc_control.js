@@ -22,6 +22,11 @@ console.log('stop every task');
 exec("/var/www/sync/stopall");
 });
 
+receiver.on('/stopvideo', function () {
+console.log('Stopping Video');
+exec("/var/www/sync/stopvideo");
+});
+
 receiver.on('/testscreen', function () {
 console.log('activate testscreen');
 exec("/var/www/sync/testscreen");
