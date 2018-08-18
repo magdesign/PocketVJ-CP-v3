@@ -15,16 +15,21 @@ receiver.bind(9876);
 // if you added commands to this script and they are working, please contribute via github or email
 // thanks for your help
 
+// ----- Sections to Add Roadmap -----
+// * add Mapping controls
+// ✓ add Syphon Receiver On/OFF
+// ✓ add NDI Send / Receive
+// * add Image player and controls (requires new TouchOSC tab)
+// ✓ add Pi Wall (*requires new TouchOSC tab)
+// * add set Audio Output and Testtone section
+// * (maybe) add Display adjustment section (requires, new TouchOSC tab)
+// ----- ======================= -----
+
 //# Global commands
 
 receiver.on('/stopall', function () {
 console.log('stop every task');
 exec("/var/www/sync/stopall");
-});
-
-receiver.on('/stopvideo', function () {
-console.log('Stopping Video');
-exec("/var/www/sync/stopvideo");
 });
 
 receiver.on('/testscreen', function () {
@@ -57,6 +62,10 @@ console.log('Shutting down All');
 exec("/var/www/sync/shutdownall");
 });
 
+//#  Audio Output and Testtone section
+
+
+// * (maybe) add Display adjustment section (requires, new TouchOSC tab)
 //# Clock Display and color Changes
 
 receiver.on('/clockdisplay', function () {
@@ -85,7 +94,7 @@ exec("sudo sed -ri 's/^COLOR=.+$/COLOR=3/' /var/www/sync/clockdisplay");
 exec("sudo /var/www/sync/clockdisplay")
 });
 
-receiver.on('/clockorange', function () {
+receiver.on('/clockpink', function () {
 console.log('Pink Clock');
 exec("sudo /var/www/sync/stopall");
 exec("sudo sed -ri 's/^COLOR=.+$/COLOR=5/' /var/www/sync/clockdisplay");
@@ -94,6 +103,21 @@ exec("sudo /var/www/sync/clockdisplay")
 
 
 //# Video Control Section
+
+receiver.on('/pause', function () {
+console.log('pause videoplayer');
+exec("/var/www/sync/dbuscontrol.sh pause > /dev/null 2>&1");
+});
+
+receiver.on('/fastforward', function () {
+console.log('seek 10s forward videoplayer');
+exec("/var/www/sync/dbuscontrol.sh seek 10000000");
+});
+
+receiver.on('/stopvideo', function () {
+console.log('Stopping Video');
+exec("/var/www/sync/stopvideo");
+});
 
 receiver.on('/startmaster', function () {
 console.log('start videoplayer as master');
@@ -165,18 +189,6 @@ console.log('start player as slave');
 exec("/var/www/sync/startslave");
 });
 
-receiver.on('/pause', function () {
-console.log('pause videoplayer');
-exec("/var/www/sync/dbuscontrol.sh pause > /dev/null 2>&1");
-});
-
-receiver.on('/fastforward', function () {
-console.log('seek 10s forward videoplayer');
-exec("/var/www/sync/dbuscontrol.sh seek 10000000");
-});
-
-
-
 //# Imageplayer
 
 receiver.on('/image', function () {
@@ -218,6 +230,86 @@ receiver.on('/customfunction2', function () {
 console.log('Ready All Video Players');
 exec("/var/www/sync/customfunction2");
 });
+
+//# Pi Camera settings
+
+receiver.on('/disablecamera', function () {
+console.log('Disable Pi Camera, please Reboot');
+exec("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
+});
+//# enables camera in boot.config
+receiver.on('/enablecamera', function () {
+console.log('Enable Pi Camera, please Reboot');
+exec("sudo sed -ri 's/^start_x=.+$/start_x=1/' /boot/config.txt");
+});
+
+receiver.on('/camera', function () {
+console.log('Running Camerafeed');
+exec("/var/www/sync/camerafeed");
+});
+
+//# Must Enable Pi camera and reboot before trying CamFX
+//# CamFX
+
+receiver.on('/cameranone', function () {
+console.log('NoFX Camera feed');
+exec("sudo sed -ri 's/^EFX=.+$/EFX=none/' /var/www/sync/camerafeed");
+});
+
+receiver.on('/cameragpen', function () {
+console.log('gPen CamFX');
+exec("sudo sed -ri 's/^EFX=.+$/EFX=gpen/' /var/www/sync/camerafeed");
+});
+
+receiver.on('/camerasketch', function () {
+console.log('Sketch CamFX');
+exec("sudo sed -ri 's/^EFX=.+$/EFX=sketch/' /var/www/sync/camerafeed");
+});
+
+receiver.on('/cameraemboss', function () {
+console.log('Emboss CamFX');
+exec("sudo sed -ri 's/^EFX=.+$/EFX=emboss/' /var/www/sync/camerafeed");
+});
+
+receiver.on('/camerahatch', function () {
+console.log('Hatch CamFX');
+exec("sudo sed -ri 's/^EFX=.+$/EFX=hatch/' /var/www/sync/camerafeed");
+});
+
+// * add Mapping controls
+
+// Syphon Receiver On/OFF
+
+receiver.on('/tcpsserver', function () {
+console.log('re/start TCPSyphon Reciver');
+exec("/var/www/sync/tcpsserver");
+});
+
+// NDI Send / Receive
+
+receiver.on('/ndireceiver', function () {
+console.log('NDI Receiver');
+exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find');
+});
+
+receiver.on('/ndisend', function () {
+console.log('NDI Sender');
+exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video /media/internal/video/* &');
+});
+
+//# Pi Wall
+
+receiver.on('/piwallmaster', function () {
+console.log('PiWall Master');
+exec("sudo /var/www/sync/piwall_masteronly > /dev/null &");
+});
+
+receiver.on('/piwallloop', function () {
+console.log('PiWall Master Loop');
+exec("sudo /var/www/sync/piwall_master > /dev/null &");
+});
+
+//# (maybe) Pi Wall Advanced Functions
 
 // this here i do not really know what for its stands..
 receiver.on('message', function() {
