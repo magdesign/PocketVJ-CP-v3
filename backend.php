@@ -35,7 +35,6 @@ if ($_GET['action'] == 'stopvideo') {
 }
 //# Video Control Section
 if ($_GET['action'] == 'getcontent') {
-	
 	system ("sudo /var/www/sync/getcontent");
 	system ("sudo chmod 777 /media/internal/video/*");
 	$outputtext =  "content from your defined websource downloaded";
@@ -55,7 +54,7 @@ if ($_GET['action'] == 'startslavewifi') {
 
 if ($_GET['action'] == 'setseamlessscript') {
 	$outputtext =  "set to seamless sync-script";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1"); 
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system ("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
 }
 
@@ -161,7 +160,6 @@ if ($_GET['action'] == 'startmaster12') {
 	$outputtext = "start video 12 loop";
 }
 
-
 if ($_GET['action'] == 'startmasteronce') {
 	exec("sudo /var/www/sync/startmasterone");
 	$outputtext = "start player as master once";
@@ -227,7 +225,6 @@ if ($_GET['action'] == 'startmasteronce12') {
 	$outputtext = "start video 12 once";
 }
 
-
 if ($_GET['action'] == 'startslave') {
 	exec("sudo /var/www/sync/startslave");
 	$outputtext =  "start player as slave";
@@ -235,14 +232,13 @@ if ($_GET['action'] == 'startslave') {
 
 if ($_GET['action'] == 'startmasterusb') {
 	exec("sudo /var/www/sync/startmasterusb");
-	$outputtext =  "start player in usb mode";	
+	$outputtext =  "start player in usb mode";
 }
 
 if ($_GET['action'] == 'starthplayer') {
 	exec("sudo /var/www/sync/starthplayer");
-	$outputtext =  "start hplayer with OSC control";	
+	$outputtext =  "start hplayer with OSC control";
 }
-
 
 if ($_GET['action'] == 'pause') {
 	exec("sudo /var/www/sync/pause.py");
@@ -344,7 +340,6 @@ if ($_GET['action'] == 'slidetime0') {
 	$outputtext =  "set slideshowtime to 15s";
 }
 
-
 //# PDF player
 
 if ($_GET['action'] == 'startpdf') {
@@ -357,12 +352,11 @@ if ($_GET['action'] == 'startpdfusb') {
 	system("sudo /var/www/sync/startpdfusb > /dev/null &");
 }
 
-
 //# Testscreen
 
 if ($_GET['action'] == 'testscreen') {
 	system("sudo /var/www/sync/testscreen &");
-        $outputtext =  "testscreen activated"; 
+        $outputtext =  "testscreen activated";
 }
 
 if ($_GET['action'] == 'testscreenoff') {
@@ -383,10 +377,9 @@ if ($_GET['action'] == 'startaudioslave') {
 	$outputtext = "start audio slave player";
 }
 
-
 if ($_GET['action'] == 'startaudiousb') {
 	$outputtext =  "start audio player in usb mode";
-	exec("sudo /var/www/startaudiosub");
+	exec("sudo /var/www/startaudiousb");
 }
 
 if ($_GET['action'] == 'stopaudio') {
@@ -414,7 +407,6 @@ if ($_GET['action'] == 'testtoneleft') {
 	$outputtext = "sinus testtone left";
 }
 
-
 //# DMX OLA stuff
 
 if ($_GET['action'] == 'startola') {
@@ -436,7 +428,7 @@ if ($_GET['action'] == 'reboot') {
 }
 
 if ($_GET['action'] == 'shutdown') {
-	$outputtext =  "shuting down";
+	$outputtext =  "shutting down";
 	system("sudo poweroff");
 }
 
@@ -631,7 +623,6 @@ if ($_GET['action'] == 'setosc') {
 
 
 
-
 //# AirPlay support
 //restart airplay daemon:
 
@@ -737,12 +728,12 @@ if ($_GET['action'] == 'clean') {
 	system("sudo rm -R /media/internal/audio/__MACOSX");
 //# also files on usb sticks
 	system("sudo rm -R /media/usb/.[DTf_]*");
-	system("sudo rm -R /media/usb/__MACOSX");	
+	system("sudo rm -R /media/usb/__MACOSX");
 }
 
 
 if ($_GET['action'] == 'screenon') {
-	$outputtext = shell_exec('sudo /opt/vc/bin/tvservice -p');	
+	$outputtext = shell_exec('sudo /opt/vc/bin/tvservice -p');
 }
 
 if ($_GET['action'] == 'screenoff') {
@@ -1038,8 +1029,8 @@ if ($_GET['action'] == 'factoryreset') {
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
     system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-  	system("sudo cp /var/www/sync/rc.local.master /etc/rc.local"); 
-  	system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh"); 
+  	system("sudo cp /var/www/sync/rc.local.master /etc/rc.local");
+  	system("sudo cp /var/www/sync/dbuscontrol.sh /usr/bin/dbuscontrol.sh");
  	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
   	system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
  	system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
@@ -1080,7 +1071,7 @@ if ($_GET['action'] == 'setwifi1') {
 	system("sudo sed -ri 's/^channel=.+$/channel=1/' /etc/hostapd/hostapd.conf");
 }
 
-//# Wifi 
+//# Wifi
 
 if ($_GET['action'] == 'wifiup') {
 	$outputtext =  "wifi on";
@@ -1226,7 +1217,7 @@ if ($_GET['action'] == 'both_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb01");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb02");	
+	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone");
 	//system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startslave");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster01");
@@ -1251,7 +1242,7 @@ if ($_GET['action'] == 'both_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone04");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone05");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone06");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone07");	
+	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone07");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone08");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone09");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone10");
@@ -1270,7 +1261,7 @@ if ($_GET['action'] == 'alsa_out') {
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb01");
-	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb02");	
+	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb02");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone");
 	//system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startslave");
 	system("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster01");
@@ -1906,7 +1897,7 @@ if ($_GET['action'] == 'audiostreamslave') {
 
 if ($_GET['action'] == 'audiostreamseamless') {
 	system("sudo /var/www/sync/startseamlessstream");
-	$outputtext =  "start video seamless and send audio to server";	
+	$outputtext =  "start video seamless and send audio to server";
 }
 
 if ($_GET['action'] == 'startaudiostream') {

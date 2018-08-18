@@ -21,8 +21,8 @@ receiver.bind(9876);
 // ✓ add NDI Send / Receive
 // * add Image player and controls (requires new TouchOSC tab)
 // ✓ add Pi Wall (*requires new TouchOSC tab)
-// * add set Audio Output and Testtone section
-// * (maybe) add Display adjustment section (requires, new TouchOSC tab)
+// ✓ add set Audio Output and Testtone section (* need to add to TouchOSC)
+// ✓ add Display adjustment section (requires, new TouchOSC tab)
 // ----- ======================= -----
 
 //# Global commands
@@ -62,9 +62,241 @@ console.log('Shutting down All');
 exec("/var/www/sync/shutdownall");
 });
 
+
 //#  Audio Output and Testtone section
 
+receiver.on('/testtone', function () {
+console.log('Sinus 440 test tone playing');
+exec("sudo /var/www/sync/omxkill");
+exec("sudo omxplayer-sync -mu /var/www/sync/testtone.mp3 > /dev/null 2>&1 & echo $!");
+});
+
+receiver.on('/testtoneright', function () {
+console.log('Sinus test tone right');
+exec("sudo /var/www/sync/omxkill");
+exec("sudo omxplayer-sync -mu /var/www/sync/testtone_right.mp3 > /dev/null 2>&1 & echo $!");
+});
+
+receiver.on('/testtoneleft', function () {
+console.log('Sinus test tone left');
+exec("sudo /var/www/sync/omxkill");
+exec("sudo omxplayer-sync -mu /var/www/sync/testtone_left.mp3 > /dev/null 2>&1 & echo $!");
+});
+
+receiver.on('/volumeup', function () {
+console.log('Volume Up');
+exec("sudo su - pi -c 'amixer set Master 10%+'");
+});
+
+receiver.on('/volumedown', function () {
+console.log('Volume Down');
+exec("sudo su - pi -c 'amixer set Master 10%-'");
+});
+
+receiver.on('/audiohdmiout', function () {
+console.log('Audio HDMI Output');
+//exec("sudo sed -ri 's/-o [a-z]+/-o hdmi/' /etc/rc.local");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone");
+//exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster13");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster14");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster15");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster16");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startseamless");
+//#exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startaudio");
+//#exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startaudioslave");
+//#exec("sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startaudiousb");
+});
+
+receiver.on('/audiojack', function () {
+console.log('3.5mm Audio Jack Output');
+//#exec("sudo sed -ri 's/-o [a-z]+/-o local/' /etc/rc.local");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterusb");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterusb01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterusb02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone");
+//exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster13");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster14");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster15");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmaster16");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startmasterone12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startseamless");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startaudio");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startaudioslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o local/' /var/www/sync/startaudiousb");
+});
+
+receiver.on('/audioboth', function () {
+console.log('Audio Out Both 3.5mm Jack & HDMI');
+//#exec("sudo sed -ri 's/-o [a-z]+/-o both/' /etc/rc.local");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterusb02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone");
+//exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster13");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster14");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster15");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmaster16");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startmasterone12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startseamless");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startaudio");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startaudioslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o both/' /var/www/sync/startaudiousb");
+});
+
+receiver.on('/audiousb', function () {
+console.log('Audio Out USB device alsa:hw:1,0');
+//#exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/g' /etc/rc.local");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterusb02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone");
+//exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster13");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster14");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster15");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmaster16");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone01");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone02");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone03");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone04");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone05");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone06");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone07");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone08");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone09");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone10");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone11");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startmasterone12");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startseamless");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startaudio");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startaudioslave");
+exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startaudiousb");
+});
+
+
 //# Display adjustments section (*requires, new TouchOSC tab)
+
+receiver.on('/rotate0', function () {
+console.log('Display Rotation = Normal, Reboot');
+exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0/' /boot/config.txt");
+});
+
+receiver.on('/rotate90', function () {
+console.log('Display Rotation = 90°, Reboot');
+exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=1/' /boot/config.txt");
+});
+
+receiver.on('/rotate180', function () {
+console.log('Display Rotation = 180°, Reboot');
+exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=2/' /boot/config.txt");
+});
+
+receiver.on('/rotate270', function () {
+console.log('Display Rotation = 270°, Reboot');
+exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=3/' /boot/config.txt");
+});
+
+receiver.on('/fliph', function () {
+console.log('Display Flip Horizontally, Reboot');
+exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0x10000/' /boot/config.txt");
+});
+
+receiver.on('/flipv', function () {
+console.log('Display Flip Vertically, Reboot');
+exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0x20000/' /boot/config.txt");
+});
 
 //# Clock Display and color Changes
 
@@ -222,13 +454,46 @@ console.log('Stop .png Overlay');
 exec("sudo /var/www/sync/overlaystop");
 });
 
+//# PDF Player
+
+receiver.on('/startpdf', function () {
+console.log('Start PDF Player');
+exec("sudo /var/www/sync/startpdf > /dev/null &");
+});
+
+receiver.on('/startpdfusb', function () {
+console.log('Start PDF USB Player');
+exec("sudo /var/www/sync/startpdfusb > /dev/null &");
+});
+
+//# Audio Player(s)
+
+receiver.on('/startaudio', function () {
+console.log('Start Audio Player');
+exec("sudo /var/www/sync/startaudio");
+});
+
+receiver.on('/startaudioslave', function () {
+console.log('Start Audio Player Slave');
+exec("sudo /var/www/sync/startaudioslave");
+});
+
+receiver.on('/startaudiousb', function () {
+console.log('Start audio player in USB mode');
+exec("sudo /var/www/sync/startaudiousb");
+});
+
+receiver.on('/stopaudio', function () {
+console.log('Stop audio player only');
+exec("sudo killall -9 mpg321");
+});
+
 //# Projector Control
 
 receiver.on('/beameron', function () {
 console.log('turn Projector on');
 exec("/var/www/sync/beameron");
 });
-
 
 receiver.on('/beameroff', function () {
 console.log('turn Projector off');
@@ -293,6 +558,28 @@ exec("sudo sed -ri 's/^EFX=.+$/EFX=hatch/' /var/www/sync/camerafeed");
 });
 
 // * add Mapping controls
+
+//# Softedge settings
+
+receiver.on('/softedge100h', function () {
+console.log('Softedge 100px Horizonal');
+exec("sudo /var/www/sync/softedge100h");
+});
+
+receiver.on('/softedge200h', function () {
+console.log('Softedge 200px Horizonal');
+exec("sudo /var/www/sync/softedge200h");
+});
+
+receiver.on('/softedge100v', function () {
+console.log('Softedge 100px Vertical');
+exec("sudo /var/www/sync/softedge100v");
+});
+
+receiver.on('/softedge200v', function () {
+console.log('Softedge 200px Vertical');
+exec("sudo /var/www/sync/softedge200v");
+});
 
 // Syphon Receiver On/OFF
 
