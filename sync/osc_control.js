@@ -64,8 +64,8 @@ exec("/var/www/sync/shutdownall");
 
 //#  Audio Output and Testtone section
 
+//# Display adjustments section (*requires, new TouchOSC tab)
 
-// * (maybe) add Display adjustment section (requires, new TouchOSC tab)
 //# Clock Display and color Changes
 
 receiver.on('/clockdisplay', function () {
@@ -196,15 +196,31 @@ console.log('start imageplayer');
 exec("/var/www/sync/startimage > /dev/null &");
 });
 
-
-
-//# Overlay (Imageplayer)
-
-receiver.on('/overlay', function () {
-console.log('start png overlay');
-exec("/var/www/sync/overlay");
+receiver.on('/stopimage', function () {
+console.log('Stop ImagePlayer');
+exec("sudo killall fbi");
 });
 
+receiver.on('/imageusb', function () {
+console.log('Imageplayer from USB');
+exec("sudo /var/www/sync/startimageusb");
+});
+
+receiver.on('/imagemanual', function () {
+console.log('Start Manual Imageplayer');
+exec("sudo /var/www/sync/startimagemanual");
+});
+
+receiver.on('/overlay', function () {
+console.log('Start .png Overlay');
+exec("sudo /var/www/sync/overlay");
+});
+
+receiver.on('/stopoverlay', function () {
+console.log('Stop .png Overlay');
+//exec("sudo killall -9 /home/pi/raspidmx/pngview/./pngview");
+exec("sudo /var/www/sync/overlaystop");
+});
 
 //# Projector Control
 
