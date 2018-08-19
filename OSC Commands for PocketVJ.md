@@ -375,3 +375,7 @@ You can change these values and commands in **/sync/osc_control.js**
 `/piwallloop`
 
 - Starts pi wall Master loop
+
+
+
+written by Cornelius Henke III a.k.a. ProjectileObjects
