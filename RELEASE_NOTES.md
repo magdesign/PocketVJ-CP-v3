@@ -1,7 +1,8 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.4.0a 15.August 2018<br />
-merged pull request from ProjectileObjects. More OSC commands added <br />
+## CP 2.4.0a 19.August 2018<br />
+merged pull request from ProjectileObjects <br />
+More OSC commands added <br />
 better documentation on how to update older PVJ versions <br />
 
 ## CP 2.4.0 15.August 2018<br />
