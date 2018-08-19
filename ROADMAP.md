@@ -6,9 +6,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - remove videomapper remote app button in CP and add magmapper button (when the prototype runs).<br />
 
 ### OSC: <br />
-- merge osc_control.js from Cornelius: https://github.com/ProjectileObjects/PocketVJ-CP-v3/tree/master/sync when he has finished updating it (you are amazing!) <br />
-- provide the TouchOSC layout on pocketVJ.com <br />
-
+- provide the TouchOSC layout from Cornelius on PocketVJ.com <br />
 
 ### Video: <br />
 - play movies and images after each other <br />
