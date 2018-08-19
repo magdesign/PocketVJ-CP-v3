@@ -7,7 +7,7 @@ Simon Josi, https://github.com/turingmachine               (Sync Script,Omxplaye
 
 Cornelius Henke, https://projectileobjects.com             (help files, osc additions)
 
-Jan Kuonen                                                 (MAGmapper, JS support,  work in progress)
+Jan Kuonen, https://github.com/Jaun1011                    (MAGmapper, Three.js support)
 
 Marco Schmalz                                              (Projector Power Scripts)
 
