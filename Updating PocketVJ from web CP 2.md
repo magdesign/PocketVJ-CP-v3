@@ -76,7 +76,7 @@ Right now it is in: `cd ~/www/sync/ `
 
 and we want to move it to: `/home/pi/osc/`
 
-First we will make the directory:
+So lets make a directory called osc and move the file into it:
 
 ```
 mkdir -p /home/pi/osc/ && sudo mv /var/www/sync/osc_control.js /home/pi/osc/
