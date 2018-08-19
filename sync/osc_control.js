@@ -22,7 +22,7 @@ receiver.bind(9876);
 // * add Image player and controls (requires new TouchOSC tab)
 // ✓ add Pi Wall (*requires new TouchOSC tab)
 // ✓ add set Audio Output and Testtone section (* need to add to TouchOSC)
-// ✓ add Display adjustment section (requires, new TouchOSC tab)
+// ✓ (add Display adjustment section (requires, new TouchOSC tab)
 // ----- ======================= -----
 
 //# Global commands
@@ -584,7 +584,7 @@ exec("sudo /var/www/sync/softedge200v");
 // Syphon Receiver On/OFF
 
 receiver.on('/tcpsserver', function () {
-console.log('re/start TCPSyphon Reciver');
+console.log('re/start TCPSyphon Receiver');
 exec("/var/www/sync/tcpsserver");
 });
 
