@@ -46,11 +46,11 @@ if this installs correctly, then we can proceed.
 
 Next we will install 3 packages necessary to run OSC
 
-`npm install socket.io`
+`sudo npm install socket.io -g`
 
-`npm install  node-omxplayer`
+`sudo npm install  node-omxplayer -g`
 
-`npm install osc-receiver`
+`sudo npm install osc-receiver -g`
 
 
 
