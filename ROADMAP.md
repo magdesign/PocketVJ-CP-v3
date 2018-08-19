@@ -9,6 +9,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - provide the TouchOSC layout from Cornelius on PocketVJ.com <br />
 
 ### Video: <br />
+- remove hplayer since now everything works with osc <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! (is this needed in any way?)<br />
 - jump to next file button <br />
