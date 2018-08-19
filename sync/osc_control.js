@@ -3,13 +3,15 @@
 
 var util = require('util')
 var exec = require('child_process').exec;
+var ip = require("ip");
 var OscReceiver = require('osc-receiver')
   , receiver = new OscReceiver();
 
 // here you can define the OSC port number
 
 receiver.bind(9876);
-console.log('Listening port 9876');
+console.log("Running OSC");
+console.log("Config TouchOSC Host to " + ip.address() + " and Port(outgoing) to 9876");
 
 // here are all the commands listed which can be executed via OSC
 // if there are missing commands, which for sure are, you will find them in /var/www/backend.php
