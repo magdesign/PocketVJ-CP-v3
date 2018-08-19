@@ -9,10 +9,14 @@
 #kill all running tasks
 /var/www/sync/stopall &
 
-#kill all running tasks on the slaves
+#kill all running tasks on the 7 slaves
 curl -s http://192.168.1.101/backend.php/?action=stop &
 curl -s http://192.168.1.102/backend.php/?action=stop &
 curl -s http://192.168.1.103/backend.php/?action=stop &
+curl -s http://192.168.1.104/backend.php/?action=stop &
+curl -s http://192.168.1.105/backend.php/?action=stop &
+curl -s http://192.168.1.106/backend.php/?action=stop &
+curl -s http://192.168.1.107/backend.php/?action=stop &
 
 #start camera on master
 /var/www/sync/camerafeed &
@@ -21,5 +25,9 @@ curl -s http://192.168.1.103/backend.php/?action=stop &
 curl -s http://192.168.1.101/backend.php/?action=camerafeed &
 curl -s http://192.168.1.102/backend.php/?action=camerafeed &
 curl -s http://192.168.1.103/backend.php/?action=camerafeed &
+curl -s http://192.168.1.104/backend.php/?action=camerafeed &
+curl -s http://192.168.1.105/backend.php/?action=camerafeed &
+curl -s http://192.168.1.106/backend.php/?action=camerafeed &
+curl -s http://192.168.1.107/backend.php/?action=camerafeed &
 
-#I hope this works....
+# "I hope this works...." -Marc -- "Oh it works." -Cornelius
