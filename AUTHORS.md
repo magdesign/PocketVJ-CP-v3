@@ -5,6 +5,10 @@ Marc-André Gasser, http://www.magdesign.ch                 (Idea, support and c
 
 Simon Josi, https://github.com/turingmachine               (Sync Script,Omxplayer fork, overall help)
 
+Cornelius Henke, https://projectileobjects.com             (help files, osc additions)
+
+Jan Kuonen                                                 (MAGmapper, JS support,  work in progress)
+
 Marco Schmalz                                              (Projector Power Scripts)
 
 Krisjanis Rijnieks, https://github.com/kr15h               (Pi-Mapper)
@@ -25,4 +29,4 @@ Cris(tobal) Mendoza                                       (slideshow for mapper)
 
 Marcel Bieri, https://facebook.com/casashowband				(testaudio)
 
-vj mag                          					(testvideo)
+vj mag & Paavo Schweizer                        					(testvideo)
