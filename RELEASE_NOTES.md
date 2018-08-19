@@ -1,5 +1,9 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.0a 15.August 2018<br />
+merged pull request from ProjectileObjects. More OSC commands added <br />
+better documentation on how to update older PVJ versions <br />
+
 ## CP 2.4.0 15.August 2018<br />
 added full OSC support (only working on PVJ's 3.6 (and newer) released from today on)<br />
 if you bought your PVJ 3.6 before August 15th, you need to: npm install osc-receiver<br />
