@@ -18,7 +18,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 
 ### Streaming: <br />
-- Remove NDI since NewTek seems to discountinue ARM support.
+- Remove NDI since NewTek seems to discountinue ARM support (There might be a little change to make it running with compiling a new ffmpeg version with ndi enable, but could not figure out so far how do achieve this compilation).
 - Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK) to newest version.
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
