@@ -44,13 +44,15 @@ Now we will install node js. This is for Raspberry Pi 3, I used `name -a` to rev
 
 if this installs correctly, then we can proceed.
 
-Next we will install 3 packages necessary to run OSC
+Next we will install 4 packages necessary to run OSC
 
-`npm install socket.io`
+`sudo npm install socket.io `
 
-`npm install  node-omxplayer`
+`sudo npm install  node-omxplayer`
 
-`npm install osc-receiver`
+`sudo npm install osc-receiver`
+
+`sudo npm install ip`
 
 
 
@@ -72,7 +74,25 @@ Now to properly setup the Osc_control.js file, it will need to be in the right d
 
 Right now it is in: `cd ~/www/sync/ `
 
-and we want to move it to: 
+and we want to move it to: `/home/pi/osc/`
+
+So lets make a directory called osc and move the file into it:
+
+```
+mkdir -p /home/pi/osc/ && sudo mv /var/www/sync/osc_control.js /home/pi/osc/
+```
+
+Then you can start it manually and see if your OSC commands are making it through.
+
+![Screen Shot 2018-08-19 at 2.36.01 PM](https://ws2.sinaimg.cn/large/006tNbRwly1fufleprnpyj311w0qkjv8.jpg) 
+
+If should say something similar if it is running correctly.
+
+```
+pi@pocketvj-100:~ $ node /home/pi/osc/osc_control.js
+Running OSC
+Config TouchOSC Host to 192.168.1.101 and Port(outgoing) to 9876
+```
 
 
 
@@ -80,7 +100,9 @@ and we want to move it to:
 
 
 
+**<u>Troubleshooting:</u>**
 
+-----
 
 If your RPi is connected via ethernet or wifi to a router with internet access, but is unable to download using wget, then you may have set a manual IP address.  
 
@@ -137,7 +159,15 @@ hit Control+O to WriteOut, hit Enter to confirm and save.
 
 Then hit Control+X to exit, type `reboot` and try again.
 
+-----
 
+
+
+Don't know your ip address try: `ssh pi@pocketvj-100.local`
+
+
+
+-----
 
 
 
