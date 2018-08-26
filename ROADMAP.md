@@ -26,25 +26,20 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 ### Mapper: <br />
 - Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github. <br />
-<br />
-- Bezier Warp, as seen here: https://github.com/TsubokuLab/ofxBezierWarpManager https://github.com/sticknor/ofxBezierWarpManager, both examples are openGL, but i hope there is a way without it<br />
-
 
 ### Autostart
 - Autostart OSC listener  <br />
 - Autostart to Processing in fullscreen (still not sure how to execute command, any help from a processing pro?) <br />
+- Autostart to sound analyzer (cava)  <br />
 
 ### Others:<br />
-- tmporary shutdown webserver function to gain more ressources when using OSC or pixi.
+- temporary shutdown webserver function to gain more ressources when using OSC or pixi.
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - move softedge file location to another place<br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
 - Add OLA DMX recorder script and DMX playback script to record and playback DMX commands <br />
 - Search for an DMX player, https://github.com/peterdikant/SimpleDmxEngine which could be synced to omxplayer <br />
-<br />
-- Check if processing is still working <br />
-- Add some processing demos in fullscreen <br />
-- integrate sound analyzer for use with mic or soundfile: https://github.com/karlstav/cava<br />
+- Check if processing is still working and add some processing demos in fullscreen <br />
 - sound reactive video effects https://github.com/karlstav/cava https://github.com/xdaimon/music_visualizer<br />
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
 - function to show CPU usage (top is loded, just need to implement in CP now)<br />
