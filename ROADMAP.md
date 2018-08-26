@@ -59,18 +59,9 @@ this might fix the problem when making apt upgrade and all the x functions do no
 ### OS for PVJ 3.8: <br />
 - switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
 
-### PVJ 4k: <br />
-- PocketVJ 4k will have a resolution of 4k and fully syncable and remote controllable mapper. Release date around March 2019. 
-
 ### Manual .pdf: <br />
 
-- update manual for CP2.0.x release, new screenshots, half way done...I hate office programs <br />
-- shortcuts for mapping mode with keyboard <br />
-- more description for tcpsclient, with example using syphoner to capture software <br />
-- correct errors concerning timer.txt (possible to seperate with commas? ) <br />
-- Add scheduler commands <br />
 - Something about GPIO, where is the script and how to connect buttons <br />
-- how to use OSC <br />
 
 ### Tutorials (Pocketvj.com/Vimeo): <br />
 
