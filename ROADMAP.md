@@ -5,8 +5,6 @@
 this might fix the problem when making apt upgrade and all the x functions do not work anymore.<br />
 - remove videomapper remote app button in CP and add magmapper button (when the prototype runs).<br />
 
-### OSC: <br />
-- provide the TouchOSC layout from Cornelius on PocketVJ.com <br />
 
 ### Video: <br />
 - remove hplayer since now everything works with osc <br />
@@ -18,7 +16,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 
 ### Streaming: <br />
-- Remove NDI since NewTek seems to discountinue ARM support (There might be a little change to make it running with compiling a new ffmpeg version with ndi enable, but could not figure out so far how do achieve this compilation).
+- Remove NDI since NewTek discountinued ARM support.
 - Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK) to newest version.
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
 
@@ -33,9 +31,11 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 
 ### Autostart
+- Autostart OSC listener  <br />
 - Autostart to Processing in fullscreen (still not sure how to execute command, any help from a processing pro?) <br />
 
 ### Others:<br />
+- tmporary shutdown webserver function to gain more ressources when using OSC or pixi.
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - move softedge file location to another place<br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
@@ -77,8 +77,10 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Uplaod with Filezilla<br />
 - All autostart functions <br />
 - Filename-Fixer<br />
+- new promo video which features the product <br />
 
 =======================<br />
+
 Opensource rocks, closedsource sucks<br />
 ©2018 marc-andré gasser
 
