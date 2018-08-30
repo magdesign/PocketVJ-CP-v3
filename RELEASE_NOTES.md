@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.0b 30.August 2018<br />
+added autostart to OSC when hitting autostart to scheduler <br />
+
 ## CP 2.4.0a 19.August 2018<br />
 merged pull request from ProjectileObjects <br />
 More OSC commands added <br />
