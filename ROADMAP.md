@@ -8,6 +8,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 ### Video: <br />
 - remove hplayer since now everything works with osc <br />
+- fade in out for movies <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! (is this needed in any way?)<br />
 - jump to next file button <br />
@@ -28,7 +29,6 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github. <br />
 
 ### Autostart
-- Autostart OSC listener  <br />
 - Autostart to Processing in fullscreen (still not sure how to execute command, any help from a processing pro?) <br />
 - Autostart to sound analyzer (cava)  <br />
 
