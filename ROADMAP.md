@@ -8,6 +8,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 ### Video: <br />
 - remove hplayer since now everything works with osc <br />
+- add more play video _0x scripts  <br />
 - fade in out for movies <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! (is this needed in any way?)<br />
