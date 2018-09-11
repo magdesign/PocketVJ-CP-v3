@@ -245,6 +245,47 @@ if ($_GET['action'] == 'startmasteronce12') {
 	$outputtext = "start video 12 once";
 }
 
+if ($_GET['action'] == 'startmasteronce13') {
+	exec("sudo /var/www/sync/startmasterone13");
+	$outputtext = "start video 13 once";
+}
+
+if ($_GET['action'] == 'startmasteronce14') {
+	exec("sudo /var/www/sync/startmasterone14");
+	$outputtext = "start video 14 once";
+}
+
+if ($_GET['action'] == 'startmasteronce15') {
+	exec("sudo /var/www/sync/startmasterone15");
+	$outputtext = "start video 15 once";
+}
+
+if ($_GET['action'] == 'startmasteronce16') {
+	exec("sudo /var/www/sync/startmasterone16");
+	$outputtext = "start video 16 once";
+}
+
+if ($_GET['action'] == 'startmasteronce17') {
+	exec("sudo /var/www/sync/startmasterone17");
+	$outputtext = "start video 17 once";
+}
+
+if ($_GET['action'] == 'startmasteronce18') {
+	exec("sudo /var/www/sync/startmasterone18");
+	$outputtext = "start video 18 once";
+}
+
+if ($_GET['action'] == 'startmasteronce19') {
+	exec("sudo /var/www/sync/startmasterone19");
+	$outputtext = "start video 19 once";
+}
+
+if ($_GET['action'] == 'startmasteronce20') {
+	exec("sudo /var/www/sync/startmasterone20");
+	$outputtext = "start video 20 once";
+}
+
+
 if ($_GET['action'] == 'startslave') {
 	exec("sudo /var/www/sync/startslave");
 	$outputtext =  "start player as slave";

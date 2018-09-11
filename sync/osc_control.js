@@ -514,6 +514,110 @@ console.log('start player as slave');
 exec("/var/www/sync/startslave");
 });
 
+//# Video Control Section play only once
+
+receiver.on('/startmasteronce01', function () {
+console.log('start video_01 once');
+exec("/var/www/sync/startmasterone01");
+});
+
+receiver.on('/startmasteronce02', function () {
+console.log('start video_02 once');
+exec("/var/www/sync/startmasterone02");
+});
+
+receiver.on('/startmasteronce03', function () {
+console.log('start video_03 once');
+exec("/var/www/sync/startmasterone03");
+});
+
+receiver.on('/startmasteronce04', function () {
+console.log('start video_04 once');
+exec("/var/www/sync/startmasterone04");
+});
+
+receiver.on('/startmasteronce05', function () {
+console.log('start video_05 once');
+exec("/var/www/sync/startmasterone05");
+});
+
+receiver.on('/startmasteronce06', function () {
+console.log('start video_06 once');
+exec("/var/www/sync/startmasterone06");
+});
+
+receiver.on('/startmasteronce07', function () {
+console.log('start video_07 once');
+exec("/var/www/sync/startmasterone07");
+});
+
+receiver.on('/startmasteronce08', function () {
+console.log('start video_08 once');
+exec("/var/www/sync/startmasterone08");
+});
+
+receiver.on('/startmasteronce09', function () {
+console.log('start video_09 once');
+exec("/var/www/sync/startmasterone09");
+});
+
+receiver.on('/startmasteronce10', function () {
+console.log('start video_10 once');
+exec("/var/www/sync/startmasterone10");
+});
+
+receiver.on('/startmasteronce11', function () {
+console.log('start video_11 once');
+exec("/var/www/sync/startmasterone11");
+});
+
+receiver.on('/startmasteronce12', function () {
+console.log('start video_12 once');
+exec("/var/www/sync/startmasterone12");
+});
+
+receiver.on('/startmasteronce13', function () {
+console.log('start video_13 once');
+exec("/var/www/sync/startmasterone13");
+});
+
+receiver.on('/startmasteronce14', function () {
+console.log('start video_14 once');
+exec("/var/www/sync/startmasterone14");
+});
+
+receiver.on('/startmasteronce15', function () {
+console.log('start video_15 once');
+exec("/var/www/sync/startmasterone15");
+});
+
+receiver.on('/startmasteronce16', function () {
+console.log('start video_16 once');
+exec("/var/www/sync/startmasterone16");
+});
+
+receiver.on('/startmasteronce17', function () {
+console.log('start video_17 once');
+exec("/var/www/sync/startmasterone17");
+});
+
+receiver.on('/startmasteronce18', function () {
+console.log('start video_18 once');
+exec("/var/www/sync/startmasterone18");
+});
+
+receiver.on('/startmasteronce19', function () {
+console.log('start video_19 once');
+exec("/var/www/sync/startmasterone19");
+});
+
+receiver.on('/startmasteronce20', function () {
+console.log('start video_20 once');
+exec("/var/www/sync/startmasterone20");
+});
+
+
+
 //# Imageplayer
 
 receiver.on('/image', function () {
