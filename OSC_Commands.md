@@ -196,6 +196,11 @@ You can change these values and commands in **/sync/osc_control.js**
 
 - Plays Video 12
 
+
+and so on, currently up to  `/startmaster30`
+
+
+
 `/startslave`
 
 - Sets 'this' device to slave (will wait for Master video to begin)

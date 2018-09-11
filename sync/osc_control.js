@@ -419,6 +419,96 @@ console.log('start seamless video_12 loop');
 exec("/var/www/sync/startmaster12");
 });
 
+receiver.on('/startmaster13', function () {
+console.log('start seamless video_13 loop');
+exec("/var/www/sync/startmaster13");
+});
+
+receiver.on('/startmaster14', function () {
+console.log('start seamless video_14 loop');
+exec("/var/www/sync/startmaster14");
+});
+
+receiver.on('/startmaster15', function () {
+console.log('start seamless video_15 loop');
+exec("/var/www/sync/startmaster15");
+});
+
+receiver.on('/startmaster16', function () {
+console.log('start seamless video_16 loop');
+exec("/var/www/sync/startmaster16");
+});
+
+receiver.on('/startmaster17', function () {
+console.log('start seamless video_17 loop');
+exec("/var/www/sync/startmaster17");
+});
+
+receiver.on('/startmaster18', function () {
+console.log('start seamless video_18 loop');
+exec("/var/www/sync/startmaster18");
+});
+
+receiver.on('/startmaster19', function () {
+console.log('start seamless video_19 loop');
+exec("/var/www/sync/startmaster19");
+});
+
+receiver.on('/startmaster20', function () {
+console.log('start seamless video_20 loop');
+exec("/var/www/sync/startmaster20");
+});
+
+receiver.on('/startmaster21', function () {
+console.log('start seamless video_21 loop');
+exec("/var/www/sync/startmaster21");
+});
+
+receiver.on('/startmaster22', function () {
+console.log('start seamless video_22 loop');
+exec("/var/www/sync/startmaster22");
+});
+
+receiver.on('/startmaster23', function () {
+console.log('start seamless video_23 loop');
+exec("/var/www/sync/startmaster23");
+});
+
+receiver.on('/startmaster24', function () {
+console.log('start seamless video_24 loop');
+exec("/var/www/sync/startmaster24");
+});
+
+receiver.on('/startmaster25', function () {
+console.log('start seamless video_25 loop');
+exec("/var/www/sync/startmaster25");
+});
+
+receiver.on('/startmaster26', function () {
+console.log('start seamless video_26 loop');
+exec("/var/www/sync/startmaster26");
+});
+
+receiver.on('/startmaster27', function () {
+console.log('start seamless video_27 loop');
+exec("/var/www/sync/startmaster27");
+});
+
+receiver.on('/startmaster28', function () {
+console.log('start seamless video_28 loop');
+exec("/var/www/sync/startmaster28");
+});
+
+receiver.on('/startmaster29', function () {
+console.log('start seamless video_29 loop');
+exec("/var/www/sync/startmaster29");
+});
+
+receiver.on('/startmaster30', function () {
+console.log('start seamless video_30 loop');
+exec("/var/www/sync/startmaster30");
+});
+
 receiver.on('/startslave', function () {
 console.log('start player as slave');
 exec("/var/www/sync/startslave");

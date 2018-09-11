@@ -160,6 +160,26 @@ if ($_GET['action'] == 'startmaster12') {
 	$outputtext = "start video 12 loop";
 }
 
+if ($_GET['action'] == 'startmaster13') {
+	exec("sudo /var/www/sync/startmaster13");
+	$outputtext = "start video 13 loop";
+}
+
+if ($_GET['action'] == 'startmaster14') {
+	exec("sudo /var/www/sync/startmaster14");
+	$outputtext = "start video 14 loop";
+}
+
+if ($_GET['action'] == 'startmaster15') {
+	exec("sudo /var/www/sync/startmaster15");
+	$outputtext = "start video 15 loop";
+}
+
+if ($_GET['action'] == 'startmaster16') {
+	exec("sudo /var/www/sync/startmaster16");
+	$outputtext = "start video 16 loop";
+}
+
 if ($_GET['action'] == 'startmasteronce') {
 	exec("sudo /var/www/sync/startmasterone");
 	$outputtext = "start player as master once";
