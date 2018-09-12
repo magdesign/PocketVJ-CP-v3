@@ -509,6 +509,202 @@ console.log('start seamless video_30 loop');
 exec("/var/www/sync/startmaster30");
 });
 
+
+receiver.on('/startmaster31', function () {
+console.log('start seamless video_31 loop');
+exec("/var/www/sync/startmaster31");
+});
+
+receiver.on('/startmaster32', function () {
+console.log('start seamless video_32 loop');
+exec("/var/www/sync/startmaster32");
+});
+
+receiver.on('/startmaster33', function () {
+console.log('start seamless video_33 loop');
+exec("/var/www/sync/startmaster33");
+});
+
+receiver.on('/startmaster34', function () {
+console.log('start seamless video_34 loop');
+exec("/var/www/sync/startmaster34");
+});
+
+receiver.on('/startmaster35', function () {
+console.log('start seamless video_35 loop');
+exec("/var/www/sync/startmaster35");
+});
+
+receiver.on('/startmaster36', function () {
+console.log('start seamless video_36 loop');
+exec("/var/www/sync/startmaster36");
+});
+
+receiver.on('/startmaster37', function () {
+console.log('start seamless video_37 loop');
+exec("/var/www/sync/startmaster37");
+});
+
+receiver.on('/startmaster38', function () {
+console.log('start seamless video_38 loop');
+exec("/var/www/sync/startmaster38");
+});
+
+receiver.on('/startmaster39', function () {
+console.log('start seamless video_39 loop');
+exec("/var/www/sync/startmaster39");
+});
+
+receiver.on('/startmaster40', function () {
+console.log('start seamless video_40 loop');
+exec("/var/www/sync/startmaster40");
+});
+
+receiver.on('/startmaster41', function () {
+console.log('start seamless video_41 loop');
+exec("/var/www/sync/startmaster41");
+});
+
+receiver.on('/startmaster42', function () {
+console.log('start seamless video_42 loop');
+exec("/var/www/sync/startmaster42");
+});
+
+receiver.on('/startmaster43', function () {
+console.log('start seamless video_43 loop');
+exec("/var/www/sync/startmaster43");
+});
+
+receiver.on('/startmaster44', function () {
+console.log('start seamless video_44 loop');
+exec("/var/www/sync/startmaster44");
+});
+
+receiver.on('/startmaster45', function () {
+console.log('start seamless video_45 loop');
+exec("/var/www/sync/startmaster45");
+});
+
+receiver.on('/startmaster46', function () {
+console.log('start seamless video_46 loop');
+exec("/var/www/sync/startmaster46");
+});
+
+receiver.on('/startmaster47', function () {
+console.log('start seamless video_47 loop');
+exec("/var/www/sync/startmaster47");
+});
+
+receiver.on('/startmaster48', function () {
+console.log('start seamless video_48 loop');
+exec("/var/www/sync/startmaster48");
+});
+
+receiver.on('/startmaster49', function () {
+console.log('start seamless video_49 loop');
+exec("/var/www/sync/startmaster49");
+});
+
+receiver.on('/startmaster50', function () {
+console.log('start seamless video_50 loop');
+exec("/var/www/sync/startmaster50");
+});
+
+receiver.on('/startmaster51', function () {
+console.log('start seamless video_51 loop');
+exec("/var/www/sync/startmaster51");
+});
+
+receiver.on('/startmaster52', function () {
+console.log('start seamless video_52 loop');
+exec("/var/www/sync/startmaster52");
+});
+
+receiver.on('/startmaster53', function () {
+console.log('start seamless video_53 loop');
+exec("/var/www/sync/startmaster53");
+});
+
+receiver.on('/startmaster54', function () {
+console.log('start seamless video_54 loop');
+exec("/var/www/sync/startmaster54");
+});
+
+receiver.on('/startmaster55', function () {
+console.log('start seamless video_55 loop');
+exec("/var/www/sync/startmaster55");
+});
+
+receiver.on('/startmaster56', function () {
+console.log('start seamless video_56 loop');
+exec("/var/www/sync/startmaster56");
+});
+
+receiver.on('/startmaster57', function () {
+console.log('start seamless video_57 loop');
+exec("/var/www/sync/startmaster57");
+});
+
+receiver.on('/startmaster58', function () {
+console.log('start seamless video_58 loop');
+exec("/var/www/sync/startmaster58");
+});
+
+receiver.on('/startmaster59', function () {
+console.log('start seamless video_59 loop');
+exec("/var/www/sync/startmaster59");
+});
+
+receiver.on('/startmaster60', function () {
+console.log('start seamless video_60 loop');
+exec("/var/www/sync/startmaster60");
+});
+
+receiver.on('/startmaster61', function () {
+console.log('start seamless video_61 loop');
+exec("/var/www/sync/startmaster61");
+});
+
+receiver.on('/startmaster62', function () {
+console.log('start seamless video_62 loop');
+exec("/var/www/sync/startmaster62");
+});
+
+receiver.on('/startmaster63', function () {
+console.log('start seamless video_63 loop');
+exec("/var/www/sync/startmaster63");
+});
+
+receiver.on('/startmaster64', function () {
+console.log('start seamless video_64 loop');
+exec("/var/www/sync/startmaster64");
+});
+
+receiver.on('/startmaster65', function () {
+console.log('start seamless video_65 loop');
+exec("/var/www/sync/startmaster65");
+});
+
+receiver.on('/startmaster66', function () {
+console.log('start seamless video_66 loop');
+exec("/var/www/sync/startmaster66");
+});
+
+receiver.on('/startmaster67', function () {
+console.log('start seamless video_67 loop');
+exec("/var/www/sync/startmaster67");
+});
+
+receiver.on('/startmaster68', function () {
+console.log('start seamless video_68 loop');
+exec("/var/www/sync/startmaster68");
+});
+
+receiver.on('/startmaster69', function () {
+console.log('start seamless video_69 loop');
+exec("/var/www/sync/startmaster69");
+});
+
 receiver.on('/startslave', function () {
 console.log('start player as slave');
 exec("/var/www/sync/startslave");
@@ -616,7 +812,250 @@ console.log('start video_20 once');
 exec("/var/www/sync/startmasterone20");
 });
 
+receiver.on('/startmasteronce21', function () {
+console.log('start video_21 once');
+exec("/var/www/sync/startmasterone21");
+});
 
+receiver.on('/startmasteronce22', function () {
+console.log('start video_22 once');
+exec("/var/www/sync/startmasterone22");
+});
+
+receiver.on('/startmasteronce23', function () {
+console.log('start video_23 once');
+exec("/var/www/sync/startmasterone23");
+});
+
+receiver.on('/startmasteronce24', function () {
+console.log('start video_24 once');
+exec("/var/www/sync/startmasterone24");
+});
+
+receiver.on('/startmasteronce25', function () {
+console.log('start video_25 once');
+exec("/var/www/sync/startmasterone25");
+});
+
+receiver.on('/startmasteronce26', function () {
+console.log('start video_26 once');
+exec("/var/www/sync/startmasterone26");
+});
+
+receiver.on('/startmasteronce27', function () {
+console.log('start video_27 once');
+exec("/var/www/sync/startmasterone27");
+});
+
+receiver.on('/startmasteronce28', function () {
+console.log('start video_28 once');
+exec("/var/www/sync/startmasterone28");
+});
+
+receiver.on('/startmasteronce29', function () {
+console.log('start video_29 once');
+exec("/var/www/sync/startmasterone29");
+});
+
+receiver.on('/startmasteronce30', function () {
+console.log('start video_30 once');
+exec("/var/www/sync/startmasterone30");
+});
+
+receiver.on('/startmasteronce31', function () {
+console.log('start video_31 once');
+exec("/var/www/sync/startmasterone31");
+});
+
+receiver.on('/startmasteronce32', function () {
+console.log('start video_32 once');
+exec("/var/www/sync/startmasterone32");
+});
+
+receiver.on('/startmasteronce33', function () {
+console.log('start video_33 once');
+exec("/var/www/sync/startmasterone33");
+});
+
+receiver.on('/startmasteronce34', function () {
+console.log('start video_34 once');
+exec("/var/www/sync/startmasterone34");
+});
+
+receiver.on('/startmasteronce35', function () {
+console.log('start video_35 once');
+exec("/var/www/sync/startmasterone35");
+});
+
+receiver.on('/startmasteronce36', function () {
+console.log('start video_36 once');
+exec("/var/www/sync/startmasterone36");
+});
+
+receiver.on('/startmasteronce37', function () {
+console.log('start video_37 once');
+exec("/var/www/sync/startmasterone37");
+});
+
+receiver.on('/startmasteronce38', function () {
+console.log('start video_38 once');
+exec("/var/www/sync/startmasterone38");
+});
+
+receiver.on('/startmasteronce39', function () {
+console.log('start video_39 once');
+exec("/var/www/sync/startmasterone39");
+});
+
+receiver.on('/startmasteronce40', function () {
+console.log('start video_40 once');
+exec("/var/www/sync/startmasterone40");
+});
+
+receiver.on('/startmasteronce41', function () {
+console.log('start video_41 once');
+exec("/var/www/sync/startmasterone41");
+});
+
+receiver.on('/startmasteronce42', function () {
+console.log('start video_42 once');
+exec("/var/www/sync/startmasterone42");
+});
+
+receiver.on('/startmasteronce43', function () {
+console.log('start video_43 once');
+exec("/var/www/sync/startmasterone43");
+});
+
+receiver.on('/startmasteronce44', function () {
+console.log('start video_44 once');
+exec("/var/www/sync/startmasterone44");
+});
+
+receiver.on('/startmasteronce45', function () {
+console.log('start video_45 once');
+exec("/var/www/sync/startmasterone45");
+});
+
+receiver.on('/startmasteronce46', function () {
+console.log('start video_46 once');
+exec("/var/www/sync/startmasterone46");
+});
+
+receiver.on('/startmasteronce47', function () {
+console.log('start video_47 once');
+exec("/var/www/sync/startmasterone47");
+});
+
+receiver.on('/startmasteronce48', function () {
+console.log('start video_48 once');
+exec("/var/www/sync/startmasterone48");
+});
+
+receiver.on('/startmasteronce49', function () {
+console.log('start video_49 once');
+exec("/var/www/sync/startmasterone49");
+});
+
+receiver.on('/startmasteronce50', function () {
+console.log('start video_50 once');
+exec("/var/www/sync/startmasterone50");
+});
+
+receiver.on('/startmasteronce51', function () {
+console.log('start video_51 once');
+exec("/var/www/sync/startmasterone51");
+});
+
+receiver.on('/startmasteronce52', function () {
+console.log('start video_52 once');
+exec("/var/www/sync/startmasterone52");
+});
+
+receiver.on('/startmasteronce53', function () {
+console.log('start video_53 once');
+exec("/var/www/sync/startmasterone53");
+});
+
+receiver.on('/startmasteronce54', function () {
+console.log('start video_54 once');
+exec("/var/www/sync/startmasterone54");
+});
+
+receiver.on('/startmasteronce55', function () {
+console.log('start video_55 once');
+exec("/var/www/sync/startmasterone55");
+});
+
+receiver.on('/startmasteronce56', function () {
+console.log('start video_56 once');
+exec("/var/www/sync/startmasterone56");
+});
+
+receiver.on('/startmasteronce57', function () {
+console.log('start video_57 once');
+exec("/var/www/sync/startmasterone57");
+});
+
+receiver.on('/startmasteronce58', function () {
+console.log('start video_58 once');
+exec("/var/www/sync/startmasterone58");
+});
+
+receiver.on('/startmasteronce59', function () {
+console.log('start video_59 once');
+exec("/var/www/sync/startmasterone59");
+});
+
+receiver.on('/startmasteronce60', function () {
+console.log('start video_60 once');
+exec("/var/www/sync/startmasterone60");
+});
+
+receiver.on('/startmasteronce61', function () {
+console.log('start video_61 once');
+exec("/var/www/sync/startmasterone61");
+});
+
+receiver.on('/startmasteronce62', function () {
+console.log('start video_62 once');
+exec("/var/www/sync/startmasterone62");
+});
+
+receiver.on('/startmasteronce63', function () {
+console.log('start video_63 once');
+exec("/var/www/sync/startmasterone63");
+});
+
+receiver.on('/startmasteronce64', function () {
+console.log('start video_64 once');
+exec("/var/www/sync/startmasterone64");
+});
+
+receiver.on('/startmasteronce65', function () {
+console.log('start video_65 once');
+exec("/var/www/sync/startmasterone65");
+});
+
+receiver.on('/startmasteronce66', function () {
+console.log('start video_66 once');
+exec("/var/www/sync/startmasterone66");
+});
+
+receiver.on('/startmasteronce67', function () {
+console.log('start video_67 once');
+exec("/var/www/sync/startmasterone67");
+});
+
+receiver.on('/startmasteronce68', function () {
+console.log('start video_68 once');
+exec("/var/www/sync/startmasterone68");
+});
+
+receiver.on('/startmasteronce69', function () {
+console.log('start video_69 once');
+exec("/var/www/sync/startmasterone69");
+});
 
 //# Imageplayer
 

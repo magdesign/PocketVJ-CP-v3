@@ -1,8 +1,9 @@
 # PocketVJ 3.x Control Panel
 
-## CP 2.4.0c 11.September 2018<br />
-added more startmaster_0x scripts to OSC, now up to 30 movies <br />
-added startmasteronce to OSC, up to 20 movies  <br />
+## CP 2.4.0c 12.September 2018<br />
+added more startmaster_0x scripts to OSC, now up to 69 movies <br />
+added startmasteronce to OSC, up to 69 movies  <br />
+Thanks to François Malnovic for contributing!  <br />
 
 ## CP 2.4.0b 30.August 2018<br />
 added autostart to OSC when hitting autostart to scheduler <br />

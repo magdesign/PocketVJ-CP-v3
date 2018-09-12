@@ -3,5 +3,5 @@
 #kill all running tasks
 /var/www/sync/stopall
 
-#start video 15 once
-/usr/bin/omxplayer-sync -m -o both /media/internal/video/15* > /dev/null 2>&1 & echo $! &
+#start video 14 once
+/usr/bin/omxplayer-sync -m -o both /media/internal/video/14* > /dev/null 2>&1 & echo $! &

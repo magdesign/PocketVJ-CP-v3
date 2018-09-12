@@ -1,5 +1,3 @@
-#!/bin/bash
-
 #kill all running tasks
 /var/www/sync/stopall
 
