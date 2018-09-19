@@ -26,11 +26,7 @@ Now we will install node js. This is for Raspberry Pi 3, I used `name -a` to rev
 
 	cd to open the folder
 
-`cd node-v8.11.3-linux-armv7l/ `
-
-	cp to copy the files to the /usr/local/   directory
-
-`sudo cp -R * /usr/local/ `
+`cd node-v8.11.3-linux-armv7l/`
 
 	use node -v to check the installed version
 
@@ -48,11 +44,19 @@ Next we will install 4 packages necessary to run OSC
 
 `sudo npm install socket.io `
 
-`sudo npm install  node-omxplayer`
+`sudo npm install node-omxplayer`
 
 `sudo npm install osc-receiver`
 
 `sudo npm install ip`
+
+ 
+
+Move all the files to the proper directory for the webCP to control
+
+​	cp to copy the files to the /usr/local/   directory
+
+`sudo cp -R * /usr/local/ `
 
 
 
@@ -161,11 +165,54 @@ Then hit Control+X to exit, type `reboot` and try again.
 
 -----
 
+If you try to run `node /home/pi/osc/osc_control.js`
+
+and encounter an error like:
+
+```
+pi@xx: ~ $ node /home/pi/osc/osc_control.js
+module.js:549
+    throw err;
+    ^
+
+Error: Cannot find module 'ip'
+    at Function.Module._resolveFilename (module.js:547:15)
+    at Function.Module._load (module.js:474:25)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at Object.<anonymous> (/home/pi/osc/osc_control.js:6:10)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+```
+
+It's because the `node_modules` are not in the `/home/pi/` directory. Check for that folder, if it is there and still not working, then they may not be installed. Type in `npm ls` to see which modules are availible. 
+
+A fix for this: type `cd` and hit enter.  To make sure your at the Pi home dir.
+
+Then type: `cd node-v8.11.3-linux-armv7l/`
+
+type `ls` again to make sure that the `node_modules` is in this dir. You may have moved it, if not.
+
+If it is type: `sudo cp -R * /home/pi/ ` to these folders to the home dir. Type `cd` to go back and then type `npm ls` again to see if the modules are listed.
+
+-----
+
 
 
 Don't know your ip address try: `ssh pi@pocketvj-100.local`
 
 
+
+-----
+
+Newer version of node.js
+
+`wget https://nodejs.org/dist/v8.12.0/node-v8.12.0-linux-armv7l.tar.xz`
+
+`tar -xf node-v8.12.0-linux-armv7l.tar.xz`
 
 -----
 
