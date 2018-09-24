@@ -80,6 +80,14 @@ You can change these values and commands in **/sync/osc_control.js**
 
 **//# Display adjustments**
 
+`/screenon`
+
+- Wakes up display
+
+`/screenoff`
+
+- Puts display to sleep
+
 `/rotate0`
 
 - Sets screen rotation to normal
