@@ -271,6 +271,17 @@ exec("sudo sed -ri 's/-o [[:graph:]]+/-o alsa:hw:1,0/' /var/www/sync/startaudiou
 
 //# Display adjustments section (*requires, new TouchOSC tab)
 
+
+receiver.on('/screenon', function () {
+console.log('Wakup Screen');
+exec("sudo /opt/vc/bin/tvservice -p");
+});
+
+receiver.on('/screenoff', function () {
+console.log('Sleep Screen');
+exec("sudo /opt/vc/bin/tvservice -o");
+});
+
 receiver.on('/rotate0', function () {
 console.log('Display Rotation = Normal, Reboot');
 exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0/' /boot/config.txt");
@@ -300,6 +311,7 @@ receiver.on('/flipv', function () {
 console.log('Display Flip Vertically, Reboot');
 exec("sudo sed -ri 's/^display_rotate=.+$/display_rotate=0x20000/' /boot/config.txt");
 });
+
 
 //# Clock Display and color Changes
 

@@ -1,5 +1,9 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.0d 24.September 2018<br />
+
+added /screenon and /screenoff to OSC <br />
+
 ## CP 2.4.0c 12.September 2018<br />
 added more startmaster_0x scripts to OSC, now up to 69 movies <br />
 added startmasteronce to OSC, up to 69 movies  <br />
