@@ -8,8 +8,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 ### Video: <br />
 - remove hplayer since now everything works with osc <br />
-- add more play video _0x scripts  <br />
-- fade in out for movies <br />
+- fade in/out for movies <br />
 - play movies and images after each other <br />
 - sync with USB alsa audio does not work, fix it! (is this needed in any way?)<br />
 - jump to next file button <br />
@@ -27,13 +26,14 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
 
 ### Mapper: <br />
-- Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github. <br />
+- Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github https://github.com/magdesign/MAGmapper. <br />
 
 ### Autostart
 - Autostart to Processing in fullscreen (still not sure how to execute command, any help from a processing pro?) <br />
 - Autostart to sound analyzer (cava)  <br />
 
 ### Others:<br />
+- add download button to get the TouchOSC file from the CP directly. <br />
 - temporary shutdown webserver function to gain more ressources when using OSC or pixi.
 - check if changes in htaccess file can help resolving functions e.g. 2.0.0.100/update <br />
 - move softedge file location to another place<br />
