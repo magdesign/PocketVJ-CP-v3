@@ -3,8 +3,8 @@
 spawn /opt/fsayskeyboard
 expect "background handler\r"
 
-send -- "n"
-expect -exact "\[n\]\r"
+send -- "m"
+expect -exact "\[m\]\r"
 
-send -- "n"
-expect -exact "\[n\]\r"
+send -- "m"
+expect -exact "\[m\]\r"

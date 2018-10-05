@@ -1,5 +1,10 @@
 # PocketVJ 3.x Control Panel
 
+
+## CP 2.4.0e 05.October 2018<br />
+fixed mapper: add/remove row and add/remove clumn
+
+
 ## CP 2.4.0d 24.September 2018<br />
 
 added /screenon and /screenoff to OSC <br />

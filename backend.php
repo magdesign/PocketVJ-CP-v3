@@ -1663,7 +1663,7 @@ if ($_GET['action'] == 'mapperaddcolumn') {
 
 if ($_GET['action'] == 'mapperrmcolumn') {
 	$outputtext =  "remove column gridwarp only";
-	system("sudo /var/www/sync/mapperaddcolumn");
+	system("sudo /var/www/sync/mapperrmcolumn");
 	system("killall -9 /opt/fsayskeyboard");
 }
 
