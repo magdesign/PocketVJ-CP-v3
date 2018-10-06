@@ -49,6 +49,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Integrate PiTunnel for remote management (is this needed? what about security, fireall etc?) <br />
 
 ### OS for PVJ 3.7: <br />
+- add docker to run resin https://github.com/resin-io-projects/resin-wpe for enough performance for the new magmapper.<br />
 - add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 
