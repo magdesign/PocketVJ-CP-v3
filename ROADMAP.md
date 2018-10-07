@@ -49,12 +49,12 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Integrate PiTunnel for remote management (is this needed? what about security, fireall etc?) <br />
 
 ### OS for PVJ 3.7: <br />
-- add docker to run resin https://github.com/resin-io-projects/resin-wpe for enough performance for the new magmapper.<br />
+- add docker to run resin https://github.com/resin-io-projects/resin-wpe for enough performance for the new magmapper, maybe not the way to go....<br />
 - add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 
-### OS for PVJ 3.8: <br />
-- switch to alpinelinux: https://wiki.alpinelinux.org/wiki/Raspberry_Pi<br />
+### OS for PVJ 4: <br />
+- switch to WPE https://wpewebkit.org/, redesign to totally new approach: "everything runs in a browser", use node-omx instead of omxplayer, remove unnecessary tools like piWall, impress, ofxPimapper, add MAGmapper with sync function and videowall function, slideshows with html5 effects. Keep all the other stuff like resolution settings, projector control, TCPSyphon (and a Linux Syphon derrivate. (Dont wait for this, it may take a several months to finalize and it may break the compatibility to PVJ 3.x, hopefully I can create a layer to stay compatible...<br />
 
 ### Manual .pdf: <br />
 
