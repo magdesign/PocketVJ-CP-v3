@@ -33,6 +33,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Autostart to sound analyzer (cava)  <br />
 
 ### Others:<br />
+- add node dmx artnet support:https://www.npmjs.com/package/osc2artnet 
 - add support for infrared transmitter boards to remotely turn on/off TV's and Projectors without RJ45. <br />
 - add download button to get the TouchOSC file from the CP directly. <br />
 - temporary shutdown webserver function to gain more ressources when using OSC or pixi.
