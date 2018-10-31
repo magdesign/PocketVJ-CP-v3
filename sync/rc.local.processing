@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#enter your custom startup application below this line:
+#kill all running tasks
+
+/var/www/sync/stopall
+
+#write to .xsession that chromium shall start
+#sudo cp /var/www/sync/xsessionchromium /home/pi/.xsession
+sudo rm /home/pi/.xsession
+sudo cp /var/www/sync/lxdeautoprocessing /home/pi/.config/lxsession/LXDE/autostart
+
+#start x and run chromium
+su -s /bin/bash -c startx pi &
+
+
+
+exit 0

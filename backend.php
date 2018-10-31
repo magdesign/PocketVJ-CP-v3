@@ -668,8 +668,8 @@ if ($_GET['action'] == 'custom') {
 }
 
 if ($_GET['action'] == 'setprocessing') {
-	$outputtext = "this is not coded yet, coming soon";
-	//system("sudo cp /var/www/sync/rc.local.processing /etc/rc.local");
+	$outputtext = "autostart processing";
+	system("sudo cp /var/www/sync/rc.local.processing /etc/rc.local");
 }
 
 if ($_GET['action'] == 'setsuperpikixpi') {

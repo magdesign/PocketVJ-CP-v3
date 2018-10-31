@@ -1,6 +1,12 @@
 # PocketVJ 3.x Control Panel
 
 
+## CP 2.4.0f 31.October 2018<br />
+fixed autostart to processing
+added startmaster and startmasteronce to OSC, up to 99 movies, Thanks to François Malnovic for contributing!  <br />
+
+
+
 ## CP 2.4.0e 05.October 2018<br />
 fixed mapper: add/remove row and add/remove clumn
 
