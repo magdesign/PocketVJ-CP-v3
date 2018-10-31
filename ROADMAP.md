@@ -55,6 +55,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 - add keystone library for processing http://keystonep5.sourceforge.net/ <br />
+- add https://www.oracle.com/technetwork/java/install-141102.html <br />
 
 ### OS for PVJ 4: <br />
 - switch to debian stretch or use http://raspex.exton.se/ <br />
