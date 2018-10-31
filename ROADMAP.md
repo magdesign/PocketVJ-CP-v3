@@ -4,7 +4,7 @@
 - fix that no longer .xsession file says what to autostart, use /home/pi/.config/lxsession/LXDE/autostart instead.
 this might fix the problem when making apt upgrade and all the x functions do not work anymore.<br />
 - remove videomapper remote app button in CP and add magmapper button (when the prototype runs).<br />
-
+- fix autostart to processing and update to newest version.<br />
 
 ### Video: <br />
 - remove hplayer since now everything works with osc <br />
