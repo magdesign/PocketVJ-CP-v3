@@ -2,7 +2,7 @@
 
 
 ## CP 2.4.0f 31.October 2018<br />
-fixed autostart to processing
+fixed autostart to processing <br />
 added startmaster and startmasteronce to OSC, up to 99 movies, Thanks to François Malnovic for contributing!  <br />
 
 
