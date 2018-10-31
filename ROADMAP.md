@@ -22,7 +22,8 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 ### Image: <br />
 - Gif player, gif for cli https://github.com/google/gif-for-cli <br />
-- slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage)<br />
+- slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage) <br />
+- make a new slideshow function based on webbrowser so we could use transition effects <br />
 
 ### Mapper: <br />
 - Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github https://github.com/magdesign/MAGmapper. <br />
