@@ -4,7 +4,6 @@
 - fix that no longer .xsession file says what to autostart, use /home/pi/.config/lxsession/LXDE/autostart instead.
 this might fix the problem when making apt upgrade and all the x functions do not work anymore.<br />
 - remove videomapper remote app button in CP and add magmapper button (when the prototype runs).<br />
-- fix autostart to processing and update to newest version.<br />
 
 ### Video: <br />
 - remove hplayer since now everything works with osc <br />
@@ -51,15 +50,15 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Integrate PiTunnel for remote management (is this needed? what about security, fireall etc?) <br />
 
 ### OS for PVJ 3.7: <br />
-- add docker to run resin https://github.com/resin-io-projects/resin-wpe for enough performance for the new magmapper, maybe not the way to go....<br />
+- add docker <br />
 - add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 
 ### OS for PVJ 4: <br />
-- switch to WPE https://wpewebkit.org/, redesign to totally new approach: "everything runs in a browser", use node-omx instead of omxplayer, remove unnecessary tools like piWall, impress, ofxPimapper, add MAGmapper with sync function and videowall function, slideshows with html5 effects. Keep all the other stuff like resolution settings, projector control, TCPSyphon (and a Linux Syphon derrivate. (Dont wait for this, it may take a several months to finalize and it may break the compatibility to PVJ 3.x, hopefully I can create a layer to stay compatible...<br />
+- switch to debian stretch or use http://raspex.exton.se/ <br />
+- change to nanopi m4 for 4k resolution?  <br />
 
 ### Manual .pdf: <br />
-
 - Something about GPIO, where is the script and how to connect buttons <br />
 
 ### Tutorials (Pocketvj.com/Vimeo): <br />
