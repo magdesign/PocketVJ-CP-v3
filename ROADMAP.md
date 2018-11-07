@@ -28,6 +28,10 @@ this might fix the problem when making apt upgrade and all the x functions do no
 ### Mapper: <br />
 - Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github https://github.com/magdesign/MAGmapper. <br />
 
+### Filebrowser: <br />
+- Simplified filebrowser to upload files with drag'n'drop (anyone an idea?) <br />
+
+
 ### Autostart
 - Autostart to Processing in fullscreen (still not sure how to execute command, any help from a processing pro?) <br />
 - Autostart to sound analyzer (cava)  <br />
@@ -51,18 +55,24 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - Integrate PiTunnel for remote management (is this needed? what about security, fireall etc?) <br />
 
 ### OS for PVJ 3.7: <br />
-- add docker <br />
-- add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
-- update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
+- add lirc (http://www.lirc.org/) <br />
 - add keystone library for processing http://keystonep5.sourceforge.net/ <br />
-- add https://www.oracle.com/technetwork/java/install-141102.html <br />
+- update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
 
 ### OS for PVJ 4: <br />
 - switch to debian stretch or use http://raspex.exton.se/ <br />
+- add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
 - change to nanopi m4 for 4k resolution?  <br />
+- add docker ? <br />
 
 ### Manual .pdf: <br />
 - Something about GPIO, where is the script and how to connect buttons <br />
+
+
+### Others, Website (Pocketvj.com): <br />
+
+- make a contest for more opensource case designs, e.g. camera case, ir case... <br />
+- people who can't afford PocketVJ can promote it on socialmedia and make tutorials for discounts.  <br />
 
 ### Tutorials (Pocketvj.com/Vimeo): <br />
 
