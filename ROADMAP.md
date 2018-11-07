@@ -73,6 +73,8 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 - make a contest for more opensource case designs, e.g. camera case, ir case... <br />
 - people who can't afford PocketVJ can promote it on socialmedia and make tutorials for discounts.  <br />
+- add more info about the projects i am donationg to. <br />
+
 
 ### Tutorials (Pocketvj.com/Vimeo): <br />
 
