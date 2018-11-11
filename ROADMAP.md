@@ -57,17 +57,16 @@ this might fix the problem when making apt upgrade and all the x functions do no
 ### OS for PVJ 3.7: <br />
 - add lirc (http://www.lirc.org/) <br />
 - add keystone library for processing http://keystonep5.sourceforge.net/ <br />
-- update qlcplus for headless without hdmi (run with -n or --nogui), need to compile newest version <br />
+- update qlcplus for headless without hdmi (run with -n or --nogui), https://qlcplus.us12.list-manage.com/track/click?u=b402532ec295d8806d1100444&id=7880822305&e=25b078820e <br />
 
 ### OS for PVJ 4: <br />
 - switch to debian stretch or use http://raspex.exton.se/ <br />
 - add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
-- change to nanopi m4 for 4k resolution?  <br />
+- change to nanopi m4 for 4k resolution, or UPcore ?  <br />
 - add docker ? <br />
 
 ### Manual .pdf: <br />
 - Something about GPIO, where is the script and how to connect buttons <br />
-
 
 ### Others, Website (Pocketvj.com): <br />
 
