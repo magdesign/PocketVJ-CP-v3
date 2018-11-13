@@ -58,6 +58,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 - add lirc (http://www.lirc.org/) <br />
 - add keystone library for processing http://keystonep5.sourceforge.net/ <br />
 - update qlcplus for headless without hdmi (run with -n or --nogui), https://qlcplus.us12.list-manage.com/track/click?u=b402532ec295d8806d1100444&id=7880822305&e=25b078820e <br />
+- https://gpiozero.readthedocs.io/en/stable/ <br />
 
 ### OS for PVJ 4: <br />
 - switch to debian stretch or use http://raspex.exton.se/ <br />
