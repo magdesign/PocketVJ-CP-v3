@@ -27,6 +27,7 @@ this might fix the problem when making apt upgrade and all the x functions do no
 
 ### Mapper: <br />
 - Build a completely new version of Mapper with more performance, remote controllable, syncable, edge blending. Prototype availabe on my github https://github.com/magdesign/MAGmapper. <br />
+- Find a way to make the B101 CSI HDMI brige working again in ofxMapperCam.
 
 ### Filebrowser: <br />
 - Simplified filebrowser to upload files with drag'n'drop (dropzone.js, but how to configure server?) <br />
