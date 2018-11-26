@@ -1,4 +1,4 @@
 
-# start qlc+ in fullscreen mode and the webgui
+#start qlc+ in fullscreen mode and the webgui with LXDE autostart file
 
-qlcplus -w -f
+@qlcplus -w -f

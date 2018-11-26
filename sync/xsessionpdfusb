@@ -1,4 +1,4 @@
 
 # start xpdf usb
 
-okular --presentation /media/usb/*.pdf
+@okular --presentation /media/usb/*.pdf

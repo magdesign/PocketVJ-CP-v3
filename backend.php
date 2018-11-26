@@ -584,7 +584,7 @@ if ($_GET['action'] == 'setaudiousb') {
 
 if ($_GET['action'] == 'screenshare') {
 	$outputtext =  "set to screenshare mode";
-	system("sudo cp /var/www/sync/xsession /home/pi/.xsession");
+	system("sudo cp /var/www/sync/vncstartup /home/pi/.config/lxsession/LXDE/autostart");
 	system("sudo cp /var/www/sync/rc.local.screenshare /etc/rc.local");
 }
 
@@ -605,19 +605,19 @@ if ($_GET['action'] == 'setmappercam') {
 
 if ($_GET['action'] == 'setqlc') {
 	$outputtext =  "set to QLC+ DMX console";
-	system("sudo cp /var/www/sync/xsessionqlcplus /home/pi/.xsession");
+	system("sudo cp /var/www/sync/xsessionqlcplus /home/pi/.config/lxsession/LXDE/autostart");
 	system("sudo cp /var/www/sync/rc.local.qlcplus /etc/rc.local");
 }
 
 if ($_GET['action'] == 'powerpoint') {
 	$outputtext =  "set to presentationmode";
-	system("sudo cp /var/www/sync/xsessionppt /home/pi/.xsession");
+	system("sudo cp /var/www/sync/xsessionppt /home/pi/.config/lxsession/LXDE/autostart");
 	system("sudo cp /var/www/sync/rc.local.impress /etc/rc.local");
 }
 
 if ($_GET['action'] == 'setimagemanual') {
 	$outputtext =  "set to manual imageplayer";
-	system("sudo cp /var/www/sync/xsessionimage /home/pi/.xsession");
+	system("sudo cp /var/www/sync/xsessionimage /home/pi/.config/lxsession/LXDE/autostart");
 	system("sudo cp /var/www/sync/rc.local.screenshare /etc/rc.local");
 }
 
@@ -1081,6 +1081,8 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
 	//remove old chunk form CP 1.14
 	system("sudo rm /var/www/sitemap.xml");
+	//remove .xsession file
+	system("sudo rm -rf /home/pi/.xsession");
 	//Text Output
 	$outputtext =  "Update Controlpanel, Mapper, OMXPLAYER, Timer, Boot";
 }
@@ -1099,6 +1101,8 @@ if ($_GET['action'] == 'factoryreset') {
 	system("sudo chmod 777 -R /media");
 	//Update OSC control in home folder
 	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
+	//remove .xsession file
+	system("sudo rm -rf /home/pi/.xsession");
 	//system("sudo rm -rf /tmp/*");
 	//system("sudo rm -rf /var/log/*");
 	//system("sudo rm -rf /var/tmp/*");
@@ -2018,6 +2022,12 @@ if ($_GET['action'] == 'cpuusage') {
 	$outputtext = wordwrap($preoutputtext, 124, "<br />\n");
 }
 
+//# Stop Webserver
+
+if ($_GET['action'] == 'stopwebserver'){
+	$outputtext =  "CP - Webserver down";
+	system("sudo systemctl stop hostapd.service");
+}
 
 //# OSC receiver
 

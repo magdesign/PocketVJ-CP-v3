@@ -1,15 +1,39 @@
 # PocketVJ 3.x Control Panel
 
 
-## CP 2.4.0f 31.October 2018<br />
-fixed autostart to processing
-added startmaster and startmasteronce to OSC, up to 99 movies, Thanks to François Malnovic for contributing!  <br />
+## CP 2.4.1 26.November 2018<br />
 
+Removed HPlayer<br />
+Changed QLC+ Autostart from .xsession to /home/pi/.confi/lxsession/LXDE/autostart<br />
+Changed Imageplayer Autostart from .xsession to /home/pi/.confi/lxsession/LXDE/autostart<br />
+Changed Presenter Autostart from .xsession to /home/pi/.confi/lxsession/LXDE/autostart<br />
+Added Stop Webserver button/function<br />
+Moved touchOSC to sync folder<br />
+
+
+
+## Image 3.7 26.November 2018<br />
+
+Installed and configured lirc, placed lirc daemon file in /var/www/sync, for usage uncomment in /etc/modules-load.d/modules.conf <br />
+Compiled new QLC+ version 4.12.1<br />
+Changed factory preset to remove old .xsession file<br />
+Updated Processing from 3.3.6 to 3.4<br />
+Added Processing_examples folder with some mapping tools<br />
+Installed node osc2artnet<br />
+Installed backports<br />
+Updated Cava to 0.6.0<br />
+Removed HPlayer<br />
+Removed gif_for_cli<br />
+Resized Partition Size to gain 500MB more storage<br />
+
+
+## CP 2.4.0f 31.October 2018<br />
+fixed autostart to processing <br />
+added startmaster and startmasteronce to OSC, up to 99 movies, Thanks to François Malnovic for contributing!  <br />
 
 
 ## CP 2.4.0e 05.October 2018<br />
 fixed mapper: add/remove row and add/remove clumn
-
 
 ## CP 2.4.0d 24.September 2018<br />
 

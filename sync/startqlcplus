@@ -4,7 +4,7 @@
 /var/www/sync/stopall
 
 #write to .xsession that qlc+ shall start
-sudo cp /var/www/sync/xsessionqlcplus /home/pi/.xsession
+sudo cp /var/www/sync/xsessionqlcplus /home/pi/.config/lxsession/LXDE/autostart
 
 #start x and run qlc+ as pi user
 su -s /bin/bash -c startx pi &
