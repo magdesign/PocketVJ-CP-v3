@@ -31,6 +31,8 @@
 - Autostart to sound analyzer (cava)  <br />
 
 ### Others:<br />
+- Integrate PiTunnel for remote management ( what about security, fireall etc?) <br />
+- Integrate remote webcam control  <br />
 - configure a libray and button for lirc to remotely turn on/off TV's and Projectors without RJ45. <br />
 - move softedge file location to another place<br />
 - Add OLA DMX trigger scripts to control PVJ with DMX commands<br />
@@ -40,7 +42,7 @@
 - screen controls for color, brightness, contrast (openframeworks solution?) <br />
 - function to show CPU usage (top is loded, just need to implement in CP now)<br />
 - function to display version of omxplayer, feh, tcpsyphon<br />
-- Integrate PiTunnel for remote management (is this needed? what about security, fireall etc?) <br />
+
 
 ### OS for PVJ xxx: <br />
 - switch to debian stretch or use http://raspex.exton.se/ <br />
