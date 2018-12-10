@@ -1103,6 +1103,8 @@ if ($_GET['action'] == 'factoryreset') {
 	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
 	//remove .xsession file
 	system("sudo rm -rf /home/pi/.xsession");
+	//remove lost&found files
+	system ("rm -rf /media/lost+found/")
 	//system("sudo rm -rf /tmp/*");
 	//system("sudo rm -rf /var/log/*");
 	//system("sudo rm -rf /var/tmp/*");
