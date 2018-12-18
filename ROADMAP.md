@@ -1,5 +1,8 @@
 ## Roadmap
 **********
+### IMportant:<br />
+- fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Think its about re-routing net traffic.<br />
+
 
 ### Video: <br />
 - fade in/out for movies <br />
