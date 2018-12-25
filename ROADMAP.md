@@ -1,7 +1,7 @@
 ## Roadmap
 **********
 ### IMportant:<br />
-- fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Think its about re-routing net traffic.<br />
+- fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Think its about re-routing net traffic, try this approch: https://github.com/arpitjindal97/raspbian-recipes/blob/master/wifi-to-eth-route.sh<br />
 
 
 ### Video: <br />
