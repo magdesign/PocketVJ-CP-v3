@@ -1,4 +1,4 @@
-Updating PocketVJ from web CP 2.3.7 - 2.4.0 adding OSC control.
+Updating PocketVJ 3.5 or older for OSC control.
 
 ![Screen Shot 2018-08-16 at 9.29.42 AM](https://ws3.sinaimg.cn/large/006tNbRwly1fueo4ma5hsj31gg19udoq.jpg)
 
