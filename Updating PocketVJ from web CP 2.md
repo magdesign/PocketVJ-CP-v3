@@ -1,4 +1,5 @@
-Updating PocketVJ 3.5 or older for OSC control.
+## Updating PocketVJ 3.5 or older for OSC control.
+OSC is aready implemented on PocketVJ 3.6 or newer
 
 ![Screen Shot 2018-08-16 at 9.29.42 AM](https://ws3.sinaimg.cn/large/006tNbRwly1fueo4ma5hsj31gg19udoq.jpg)
 
