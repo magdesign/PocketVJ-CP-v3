@@ -1,6 +1,12 @@
 # PocketVJ 3.x Control Panel
 
-## PLEASE DO NOT UPDATE IF YOUR SYSTEM IS RUNNING, I NEED TO DEBUG A MALFUNCTION, SHOULD BE FIXED IN THE NEXT 36H, SORRY!
+## CP 2.4.1a 30.Dezember 2018<br />
+Fixed a webfont link in CP. https://github.com/magdesign/PocketVJ-CP-v3/commit/94a42a3811755a6e1ff9f4489a8d6370838d0998#diff-eacf331f0ffc35d4b482f1d15a887d3b
+People who where offline could not navigate in the ControlPanel since it could not load the related fonts.
+If you can not navigate in the CP and want to fix the issue with an update: https://github.com/magdesign/PocketVJ-CP-v3/issues/38
+Please also post your questions there instead of sending emails.
+sry&Thx!
+
 
 ## CP 2.4.1 26.November 2018<br />
 
