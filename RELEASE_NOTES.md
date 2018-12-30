@@ -3,7 +3,7 @@
 ## CP 2.4.1a 30.Dezember 2018<br />
 Fixed a typo which made the control panel not responding anymore.<br />
 If you are in this situation, you need to update via Filezilla: https://vimeo.com/308801484 <br />
-Please post your questions there instead of sending emails: https://github.com/magdesign/PocketVJ-CP-v3/issues/38<br />
+Please post your questions here instead of sending emails: https://github.com/magdesign/PocketVJ-CP-v3/issues/38<br />
 sry&Thx!<br />
 
 
