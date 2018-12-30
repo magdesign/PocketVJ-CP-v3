@@ -8,7 +8,7 @@ Works only with PocketVJ 3.x
 These files are used to control the PocketVJ 3.x via webbrowser. \
 Clone everything into the `/var/www` directory.
 
-Always read the release notes before you update: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/RELEASE_NOTES.md
+## Always read the release notes before you update: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/RELEASE_NOTES.md
 
 ![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
 
