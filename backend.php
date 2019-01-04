@@ -2045,6 +2045,13 @@ if ($_GET['action'] == 'camerafeed') {
 	$outputtext =  "start camerafeed";
 	system("sudo /var/www/sync/camerafeed");
 }
+
+if ($_GET['action'] == 'camerapicture') {
+	$outputtext =  "snap a picture with camera and store in /internal/images";
+	system("sudo /var/www/sync/camerapicture");
+}
+
+
 //# enable camera in boot.config
 
 if ($_GET['action'] == 'disablecamera') {

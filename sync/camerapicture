@@ -1,0 +1,13 @@
+#!/bin/bash
+#kill all running tasks
+#/var/www/sync/stopall
+
+
+#set naming
+
+DATE=$(date +"%Y%m%d%H%M%S")
+
+
+#take a picture with camera and store it in /internal/images
+
+raspistill -w 1920 -h 1080 -t 1500 -vf -hf -n -o /media/internal/images/$DATE.jpg
