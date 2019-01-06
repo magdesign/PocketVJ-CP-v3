@@ -1,8 +1,10 @@
 ## Roadmap
 **********
-### IMportant:<br />
-- fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Think its about re-routing net traffic, try this approch: https://github.com/arpitjindal97/raspbian-recipes/blob/master/wifi-to-eth-route.sh<br />
+### Important:<br />
+- fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Try it with node-omxhttps://github.com/bmoren/node-omxplayer-sync <br />
 
+- add pure data: https://puredata.info/downloads/pd-extended-0-43-3-on-raspberry-pi-raspbian-wheezy-armhf<br />
+- add button in CP for taking pictures with camera, script already in sync folder. <br />
 
 ### Video: <br />
 - fade in/out for movies <br />
