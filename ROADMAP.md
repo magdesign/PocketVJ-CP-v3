@@ -2,13 +2,9 @@
 **********
 ### Important:<br />
 - fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Try it with node-omxhttps://github.com/bmoren/node-omxplayer-sync <br />
+Is now installed, need to test how accurate it works and how it works over wifi <br />
 
-- add pure data: https://puredata.info/downloads/pd-extended-0-43-3-on-raspberry-pi-raspbian-wheezy-armhf or
-
-https://puredata.info/docs/raspberry-pi<br />
-- add button in CP for taking pictures with camera, script already in sync folder. <br />
-
-- midi support for usb midi devices and mapping to CP.<br />
+- midi support for usb midi devices and mapping to CP (could be solved with puredata?), usb drivers needed?.<br />
 
 ### Video: <br />
 - fade in/out for movies <br />
