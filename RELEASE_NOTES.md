@@ -1,11 +1,10 @@
 # PocketVJ 3.x Control Panel
 
 ## CP 2.4.3 07.January 2019<br />
-Changed QLC+ autostart to load example file at start.<br />
-Added puredata to  Autostart and Stop button (users with PVJ 3.7 or older need to install manually if needed:  <br />
-Added take a picture button in CP under AUX (for taking pictures with the piCam).<br />
-Fixed Autostart to VIDEOMAPPER CameraFeed.<br />
-
+Changed QLC+ autostart to load example file (/media/internal/dmx/autostart.qxw) at start.<br />
+Added Puredata to  Autostart and to Stop button (users with PVJ 3.7 or older need to install manually if needed: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/PureData_install.md <br />
+Added "take a picture with camera" button in CP under AUX (for taking pictures with the piCam).<br />
+Fixed Autostart to VIDEOMAPPER CameraFeed, link was somehow broken.<br />
 
 ## Image 3.75 07.January 2019<br />
 Installed puredata.<br />
@@ -29,8 +28,6 @@ Changed Imageplayer Autostart from .xsession to /home/pi/.confi/lxsession/LXDE/a
 Changed Presenter Autostart from .xsession to /home/pi/.confi/lxsession/LXDE/autostart<br />
 Added Stop Webserver button/function<br />
 Moved touchOSC to sync folder<br />
-
-
 
 ## Image 3.7 26.November 2018<br />
 
