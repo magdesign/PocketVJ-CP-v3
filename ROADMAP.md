@@ -8,6 +8,8 @@
 https://puredata.info/docs/raspberry-pi<br />
 - add button in CP for taking pictures with camera, script already in sync folder. <br />
 
+- midi support for usb midi devices and mapping to CP.<br />
+
 ### Video: <br />
 - fade in/out for movies <br />
 - play movies and images after each other <br />
