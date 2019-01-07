@@ -1,6 +1,8 @@
 ## Update PVJ 3.7 or older to use PureData
 
-Make sure your PocketVJ is connected to the internet, use ssh or the "Access the Heart" function in Control Panel.
+Make sure your PocketVJ is connected to the internet (you can use RJ45 and switch to DHCP). 
+
+Then use SSH or the "Access the Heart" function in Control Panel.
 
 Go to the home folder:
 `cd /home/pi/`
