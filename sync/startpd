@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#write to autostart that puredata shall start
+sudo cp /var/www/sync/xsessionpd /home/pi/.config/lxsession/LXDE/autostart
+
+#start x and run puredata as pi user
+su -s /bin/bash -c startx pi &

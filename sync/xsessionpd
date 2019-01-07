@@ -1,0 +1,3 @@
+#start puredata  (with LXDE autostart)
+
+@/usr/bin/pd-extended

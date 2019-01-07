@@ -480,6 +480,12 @@ if ($_GET['action'] == 'startqlcplus') {
 	system("sudo /var/www/sync/startqlcplus");
 }
 
+//# Puredata stuff
+
+if ($_GET['action'] == 'startpd') {
+	$outputtext =  "start puredata";
+	system("sudo /var/www/sync/startpd");
+}
 
 //# USB Stick mount
 
@@ -607,6 +613,12 @@ if ($_GET['action'] == 'setqlc') {
 	$outputtext =  "set to QLC+ DMX console";
 	system("sudo cp /var/www/sync/xsessionqlcplus /home/pi/.config/lxsession/LXDE/autostart");
 	system("sudo cp /var/www/sync/rc.local.qlcplus /etc/rc.local");
+}
+
+if ($_GET['action'] == 'setpd') {
+	$outputtext =  "set to puredata";
+	system("sudo cp /var/www/sync/xsessionpd /home/pi/.config/lxsession/LXDE/autostart");
+	system("sudo cp /var/www/sync/rc.local.pd /etc/rc.local");
 }
 
 if ($_GET['action'] == 'powerpoint') {

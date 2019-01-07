@@ -40,7 +40,8 @@ sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
 sudo killall -9  /usr/bin/raspivid > /dev/null 2>&1
 #kill superpikixpi
 sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
-
+#kill puredata
+sudo killall -9 /usr/bin/pd-extended > /dev/null 2>&1
 #kill top command
 #sudo killall -9 top
 

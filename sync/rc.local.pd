@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#do nothing so far, this might be used to load some stuff to use in puredata at boot
+
+
+
+exit 0
