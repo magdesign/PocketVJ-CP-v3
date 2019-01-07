@@ -188,6 +188,7 @@ html[data-w-dynpage] [data-w-cloak] {
   overflow: visible !important;
   white-space: nowrap;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .w-webflow-badge > img {
   display: inline-block !important;

@@ -2,6 +2,8 @@
 #kill all running tasks
 #/var/www/sync/stopall
 
+# Kill camera in case raspivid for livestreaming is running
+sudo killall -9 raspivid
 
 #set naming
 

@@ -1,5 +1,19 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.3 07.January 2019<br />
+Changed QLC+ autostart to load example file at start.<br />
+Added puredata to  Autostart and Stop button (users with PVJ 3.7 or older need to install manually if needed:  <br />
+Added take a picture button in CP under AUX (for taking pictures with the piCam).<br />
+Fixed Autostart to VIDEOMAPPER CameraFeed.<br />
+
+
+## Image 3.75 07.January 2019<br />
+Installed puredata.<br />
+Added "dmx" folder to /media/internal/<br />
+Added QLC+ autostart.qxw to /media/internal/dmx/<br />
+Installed node-omxplayer-sync (https://github.com/bmoren/node-omxplayer-sync) in /var/www/sync/node-omxplayer-sync<br />
+Updated npm to version 6.4.1 (sudo npm install -g npm) (sudo npm audit fix --force)<br />
+
 ## CP 2.4.1a 30.Dezember 2018<br />
 Fixed a typo which made the control panel not responding anymore.<br />
 If you are in this situation, you need to update via Filezilla: https://vimeo.com/308801484 <br />
