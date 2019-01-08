@@ -89,7 +89,7 @@ gif-for-cli (untested)<br />
 resized root partition<br />
 added cava equalizer<br />
 added unclutter <br />
-added file which tells pvj image build version<br />
+added file which tells pvj image build version in /etc/pvj_version<br />
 wget installed<br />
 purged glediator and xlights to free some space<br />
 added new testvideo by paavo<br />
