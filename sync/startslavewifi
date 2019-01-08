@@ -9,13 +9,11 @@ sudo systemctl stop hostapd.service
 #first shutdown interface
 sudo ifdown -a --exclude=lo
 #then reload new one
-ifup -i /etc/network/interfaceswifi -a
+ifup -i /var/www/sync/interfaceswifi -a
 
 #wait a while for all to be done and beeing initialized
 sleep 10
 
-#start video as slave
-#maybe the changeing omxplayer-sync to: SYNC_TOLERANCE = .2
-#or even create a custom omxplayer-sync-wifi file with this tolerance
-#remove the -o hdmi flag, since this breaks sync function
-/usr/bin/omxplayer-sync -lu /media/internal/video/* > /dev/null 2>&1 & echo $! &
+#start video as slave with node-omxplayer-sync
+
+node /home/pi/node-omxplayer-sync/omx-sync-wifi.js /media/internal/video/wifisync.mp4

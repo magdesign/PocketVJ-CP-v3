@@ -47,6 +47,11 @@ if ($_GET['action'] == 'startseamless') {
 	system ("sudo /var/www/sync/startseamless");
 }
 
+if ($_GET['action'] == 'startmasterwifi') {
+	$outputtext =  "start master over wifi sync, be patient";
+	system ("sudo /var/www/sync/startmasterwifi");
+}
+
 if ($_GET['action'] == 'startslavewifi') {
 	$outputtext =  "start slave over wifi sync, be patient";
 	system ("sudo /var/www/sync/startslavewifi");
