@@ -6,6 +6,11 @@ Panasonic <br />
 name: user1 <br />
 password: panasonic <br />
 
+Panasonic PT-D5000 and PT-D6000 <br />
+********* <br />
+name: admin1 <br />
+password: panasonic <br />
+
 Epson: <br />
 ****** <br />
 name: EPSONWEB <br />

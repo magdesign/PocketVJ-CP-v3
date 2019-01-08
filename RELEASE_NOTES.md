@@ -6,12 +6,14 @@ Added Puredata to  Autostart and to Stop button (users with PVJ 3.7 or older nee
 Added "take a picture with camera" button in CP under AUX (for taking pictures with the piCam).<br />
 Fixed Autostart to VIDEOMAPPER CameraFeed, link was somehow broken.<br />
 
-## Image 3.75 07.January 2019<br />
+## Image 3.8 07.January 2019<br />
 Installed puredata.<br />
 Added "dmx" folder to /media/internal/<br />
 Added QLC+ autostart.qxw to /media/internal/dmx/<br />
-Installed node-omxplayer-sync (https://github.com/bmoren/node-omxplayer-sync) in /var/www/sync/node-omxplayer-sync<br />
+Installed node-omxplayer-sync (https://github.com/bmoren/node-omxplayer-sync) in /home/pi/node-omxplayer-sync<br />
 Updated npm to version 6.4.1 (sudo npm install -g npm) (sudo npm audit fix --force)<br />
+Cec-utils installed (sudo apt-get install cec-utils)<br />
+changed content of build number in /etc/pvj_version<br />
 
 ## CP 2.4.1a 30.Dezember 2018<br />
 Fixed a typo which made the control panel not responding anymore.<br />
@@ -88,7 +90,7 @@ gif-for-cli (untested)<br />
 resized root partition<br />
 added cava equalizer<br />
 added unclutter <br />
-added file which tells pvj image build version<br />
+added file which tells pvj image build version in /etc/pvj_version<br />
 wget installed<br />
 purged glediator and xlights to free some space<br />
 added new testvideo by paavo<br />
