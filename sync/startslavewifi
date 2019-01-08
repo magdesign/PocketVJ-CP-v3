@@ -9,11 +9,11 @@ sudo systemctl stop hostapd.service
 #first shutdown interface
 sudo ifdown -a --exclude=lo
 #then reload new one
-ifup -i /var/www/sync/interfaceswifi -a
+sudo ifup -i /var/www/sync/interfaceswifi -a
 
 #wait a while for all to be done and beeing initialized
 sleep 10
 
 #start video as slave with node-omxplayer-sync
-
-node /home/pi/node-omxplayer-sync/omx-sync-wifi.js /media/internal/video/wifisync.mp4
+#sudo -H -u pi bash -c "node /home/pi/node-omxplayer-sync/omx-sync-wifi.js /media/internal/video/wifisync.mp4"
+su - pi -c "node /home/pi/node-omxplayer-sync/omx-sync-wifi.js /media/internal/video/wifisync.mp4"
