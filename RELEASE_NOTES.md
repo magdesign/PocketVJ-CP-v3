@@ -5,8 +5,6 @@ Changed QLC+ autostart to load example file (/media/internal/dmx/autostart.qxw) 
 Added Puredata to  Autostart and to Stop button (users with PVJ 3.7 or older need to install manually if needed: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/PureData_install.md <br />
 Added "take a picture with camera" button in CP under AUX (for taking pictures with the piCam).<br />
 Fixed Autostart to VIDEOMAPPER CameraFeed, link was somehow broken.<br />
-Added https://github.com/gbevin/ReceiveMIDI/releases.<br />
-Added https://github.com/gbevin/SendMIDI/releases.<br />
 
 ## Image 3.75 07.January 2019<br />
 Installed puredata.<br />
