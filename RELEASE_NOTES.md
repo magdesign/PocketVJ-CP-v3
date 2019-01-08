@@ -6,7 +6,7 @@ Added Puredata to  Autostart and to Stop button (users with PVJ 3.7 or older nee
 Added "take a picture with camera" button in CP under AUX (for taking pictures with the piCam).<br />
 Fixed Autostart to VIDEOMAPPER CameraFeed, link was somehow broken.<br />
 
-## Image 3.75 07.January 2019<br />
+## Image 3.8 07.January 2019<br />
 Installed puredata.<br />
 Added "dmx" folder to /media/internal/<br />
 Added QLC+ autostart.qxw to /media/internal/dmx/<br />
