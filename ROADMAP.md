@@ -1,10 +1,7 @@
 ## Roadmap
 **********
 ### Important:<br />
-- fix WIFI sync since it only works on RPI Zero which do not have a RJ45 port. Try it with node-omxhttps://github.com/bmoren/node-omxplayer-sync <br />
-Is now installed, need to test how accurate it works and how it works over wifi <br />
-
-- midi support for usb midi devices and mapping to CP (could be solved with puredata?), usb drivers needed?.<br />
+- midi support for usb midi devices and mapping to CP (could be solved with puredata?, anyone can help?).<br />
 
 ### Video: <br />
 - fade in/out for movies <br />
@@ -16,9 +13,10 @@ Is now installed, need to test how accurate it works and how it works over wifi 
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 
 ### Streaming: <br />
-- Remove NDI since NewTek discountinued ARM support.
-- Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK) to newest version.
-- uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)
+- Remove NDI since NewTek discountinued ARM support.<br />
+- add TCPSyphon parts for video wall: https://github.com/magdesign/PocketVJ-CP-v3/issues/5#issuecomment-452022353<br />
+- Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK) to newest version.<br />
+- uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)<br />
 
 ### Image: <br />
 - slideshow with ken burns effect (maybe with QT: https://gist.github.com/nbergont/8963892, or openFramworks ofImage) <br />
