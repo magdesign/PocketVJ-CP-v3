@@ -12,6 +12,7 @@ Added "dmx" folder to /media/internal/<br />
 Added QLC+ autostart.qxw to /media/internal/dmx/<br />
 Installed node-omxplayer-sync (https://github.com/bmoren/node-omxplayer-sync) in /var/www/sync/node-omxplayer-sync<br />
 Updated npm to version 6.4.1 (sudo npm install -g npm) (sudo npm audit fix --force)<br />
+Cec-utils installed (sudo apt-get install cec-utils)<br />
 
 ## CP 2.4.1a 30.Dezember 2018<br />
 Fixed a typo which made the control panel not responding anymore.<br />
