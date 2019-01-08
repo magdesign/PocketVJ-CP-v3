@@ -1,5 +1,8 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.3a 07.January 2019<br />
+Added "Play as Master wifi" and "Play as Slave Wifi" button (works from PVJ 3.8 or newer, see image 3.8 release notes).<br />
+
 ## CP 2.4.3 07.January 2019<br />
 Changed QLC+ autostart to load example file (/media/internal/dmx/autostart.qxw) at start.<br />
 Added Puredata to  Autostart and to Stop button (users with PVJ 3.7 or older need to install manually if needed: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/PureData_install.md <br />
@@ -20,7 +23,6 @@ Fixed a typo which made the control panel not responding anymore.<br />
 If you are in this situation, you need to update via Filezilla: https://vimeo.com/308801484 <br />
 Please post your questions here instead of sending emails: https://github.com/magdesign/PocketVJ-CP-v3/issues/38<br />
 sry&Thx!<br />
-
 
 ## CP 2.4.1 26.November 2018<br />
 
