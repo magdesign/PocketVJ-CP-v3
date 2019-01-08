@@ -10,7 +10,7 @@ Fixed Autostart to VIDEOMAPPER CameraFeed, link was somehow broken.<br />
 Installed puredata.<br />
 Added "dmx" folder to /media/internal/<br />
 Added QLC+ autostart.qxw to /media/internal/dmx/<br />
-Installed node-omxplayer-sync (https://github.com/bmoren/node-omxplayer-sync) in /var/www/sync/node-omxplayer-sync<br />
+Installed node-omxplayer-sync (https://github.com/bmoren/node-omxplayer-sync) in /home/pi/node-omxplayer-sync<br />
 Updated npm to version 6.4.1 (sudo npm install -g npm) (sudo npm audit fix --force)<br />
 Cec-utils installed (sudo apt-get install cec-utils)<br />
 
