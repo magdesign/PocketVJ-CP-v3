@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#kill all running tasks exept .mp3 player
+/var/www/sync/stopall
+
+#start TCPS
+
+sudo -u pi /usr/bin/TCPSClient.bin  -s 0.5,0.5,1,1 &

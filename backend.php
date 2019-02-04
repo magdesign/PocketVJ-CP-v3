@@ -971,7 +971,7 @@ if ($_GET['action'] == 'mapperupdate') {
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 		//Add Mapper Remote
-    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+  system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
 	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
@@ -988,7 +988,7 @@ if ($_GET['action'] == 'mapperaudioupdate') {
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	//Add Mapper Remote
-    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
+  system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
 	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
@@ -2003,6 +2003,26 @@ if ($_GET['action'] == 'tcpsserver') {
 	system("sudo /var/www/sync/tcpsserver");
 	$outputtext =  "re/start TCPSyphon Receiver";
 }
+
+if ($_GET['action'] == 'tcpsserver_downleft') {
+	system("sudo /var/www/sync/tcpsserver_downleft");
+	$outputtext =  "re/start TCPSyphon Receiver downleft";
+}
+
+if ($_GET['action'] == 'tcpsserver_downright') {
+	system("sudo /var/www/sync/tcpsserver_downright");
+	$outputtext =  "re/start TCPSyphon Receiver downright";
+}
+
+if ($_GET['action'] == 'tcpsserver_topright') {
+	system("sudo /var/www/sync/tcpsserver_topright");
+	$outputtext =  "re/start TCPSyphon Receiver topright";
+}
+if ($_GET['action'] == 'tcpsserver_topleft') {
+	system("sudo /var/www/sync/tcpsserver_topleft");
+	$outputtext =  "re/start TCPSyphon Receiver topleft";
+}
+
 
 //# NDI Receiver
 

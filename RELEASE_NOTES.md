@@ -1,5 +1,9 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.3b 07.January 2019<br />
+Fixed MapperAudio (installing MapperAudio now plays audio over jack plug).<br />
+
+
 ## CP 2.4.3a 07.January 2019<br />
 Added "Play as Master wifi" and "Play as Slave Wifi" button (works from PVJ 3.8 or newer, see image 3.8 release notes).<br />
 
