@@ -2,6 +2,7 @@
 
 ## CP 2.4.3b 07.January 2019<br />
 Fixed MapperAudio (installing MapperAudio now plays audio over jack plug).<br />
+Prepared syphon video wall scripts.<br />
 
 
 ## CP 2.4.3a 07.January 2019<br />

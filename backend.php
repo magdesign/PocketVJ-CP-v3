@@ -983,8 +983,8 @@ if ($_GET['action'] == 'mapperaudioupdate') {
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
 	system("sudo unzip /var/www/sync/mapperAudio.zip -d /");
 	//following two lines are only used when .zipped different, as on this release
-	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system ("sudo rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("sudo rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	//Add Mapper Remote
