@@ -1,7 +1,6 @@
 ## Roadmap
 **********
 ### Important:<br />
-- Audio in mapping seems to be broken, fix this!! <br />
 
 - midi support for usb midi devices https://github.com/magdesign/PocketVJ-CP-v3/issues/5#issuecomment-453174457 (thanks to frankbash).<br />
 
