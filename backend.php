@@ -779,7 +779,7 @@ if ($_GET['action'] == 'forcevga') {
 
 
 if ($_GET['action'] == 'force1200') {
-	$outputtext =  "force 1920x1200 rgb";
+	$outputtext =  "force 1680 x 1050 rgb";
 	system("sudo cp /var/www/sync/force1200 /boot/config.txt");
 }
 
