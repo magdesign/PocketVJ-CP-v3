@@ -52,7 +52,7 @@
 
 ### OS for PVJ xxx: <br />
 - switch to debian stretch or use http://raspex.exton.se/ <br />
-- add Fugio (https://www.bigfug.com) Update: not installable nor compilable on raspian jessie :( <br />
+- add Fugio (https://www.bigfug.com) Update: https://github.com/bigfug/Fugio/issues/46#issuecomment-464824307 <br />
 - add docker ? <br />
 
 ### Manual .pdf: <br />
