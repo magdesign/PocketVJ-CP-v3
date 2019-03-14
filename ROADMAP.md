@@ -2,6 +2,7 @@
 **********
 ### Important:<br />
 
+- fix terminal square blink when nothing is playing (in osc mode, also in standard mode?) <br />
 - midi support for usb midi devices https://github.com/magdesign/PocketVJ-CP-v3/issues/5#issuecomment-453174457 (thanks to frankbash).<br />
 
 - add dmx in scripts to trigger videos via dmx: https://wiki.openlighting.org/index.php/OLA_DMX_Trigger <br />
