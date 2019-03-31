@@ -15,7 +15,7 @@
 - Slow motion function (1 Increase Speed 2 Decrease Speed) (dbus control no ready yet, waiting for new omxplayer version https://github.com/popcornmix/omxplayer)<br />
 - Master Slave auto-detection<br />
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
-
+– check this: https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=199775&sid=dd74ed7acb6a1eaa3f21ec4753fed07
 ### Streaming: <br />
 - Remove NDI since NewTek discountinued ARM support.<br />
 - add TCPSyphon parts for video wall: https://github.com/magdesign/PocketVJ-CP-v3/issues/5#issuecomment-452022353<br />
