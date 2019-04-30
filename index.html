@@ -1231,7 +1231,7 @@ Code  below is for button tooltips
   <!--
 Code below this line checks if user is online
  -->
-  <head>
+  <div>
     <script src="../offline.min.js"></script>
     <link rel="stylesheet" href="../themes/offline-theme-chrome.css">
     <link rel="stylesheet" href="../themes/offline-language-english.css">
@@ -1242,7 +1242,7 @@ var run = function(){
   req.open('GET', 'http://localhost:8888/walter/0', true);
   req.send();
 }
-setInterval(run, 3000);
+//setInterval(run, 3000);
 </script>
     <!--
 Code below disabling resend of functions after lost connection
@@ -1267,4 +1267,8 @@ Code below is for button actions
 Code  below is for button tooltips
  -->
     <script src="../themes/tooltipster.bundle.min.js"></script>
-    <script src="../themes/tooltipster-for-webflow.js"></scr</body></html></script></head></body></html>
+    <script src="../themes/tooltipster-for-webflow.js"></script>
+  </div>
+  
+  </body>
+</html>
