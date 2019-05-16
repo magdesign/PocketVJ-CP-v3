@@ -8,6 +8,14 @@ Works only with PocketVJ 3.x
 These files are used to control the PocketVJ 3.x via webbrowser. \
 Clone everything into the `/var/www` directory.
 
+*****************************
+## We are looking for a JavaScript developer, 
+- node.js
+- web: file handling, dropzones, php scripts, websockets, slideshows
+
+send your application to: info_at_magdesign.ch
+***************************
+
 ## Always read the release notes before you update: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/RELEASE_NOTES.md
 
 ![Alt text](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/05_mapper.png?raw=true "Optional Title")
