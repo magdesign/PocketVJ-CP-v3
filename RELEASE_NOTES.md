@@ -1,5 +1,10 @@
 # PocketVJ 3.x Control Panel
 
+## CP 2.4.4 17.Mai 2019<br />
+Fixed force HD resolution from 1080i to 1080p
+Added Syphon wall buttons
+Fixed some typos in index.html
+
 ## CP 2.4.3b 07.January 2019<br />
 Fixed MapperAudio (installing MapperAudio now plays audio over jack plug).<br />
 Prepared syphon video wall scripts.<br />
@@ -222,15 +227,15 @@ Fixed some button links <br />
 
 ## CP 2.0.0 26.November 2017<br />
   This is a massive release with a completely new look and feel :-)<br />
-  
+
   To Update: <br />
   0. Stop all tasks<br />
   1. Download PocketVJ-CP-v3-master.zip and place it in /internal/ on your PocketVJ 3.x
   2. Update CP (wait!! until you get message, approx. 5 minutes) <br />
   3. Refresh browser, then select UPDATE Mapper (wait 5minutes)<br />
   4. If CP is not working ore behaves strange, the device you are connection to the CP has also internet access, then imidiately update to CP 2.0.1<br />
-  
-  
+
+
 ### Whats new: <br />
   Completely redesigned CP from scratch, now fully responsive :-) <br />
   CP output is now scrollable, better line breaks <br />
@@ -249,7 +254,7 @@ Fixed some button links <br />
   Get CPU temperature <br />
   Updated License file <br />  
   Overall bugfixes <br />
-  
+
 <br />
 
 ### CP 1.14e 20.November 2017<br />
@@ -260,19 +265,19 @@ Fixed some button links <br />
 
 ### CP 1.14c 18.September 2017<br />
   fixed force hdmi mode to get audio over hdmi, even if EDID of screen does not report compatibility <br />
-  
+
 ### CP 1.14b 15.August 2017<br />
   fixed wrong link for piwall_topright, thanks to francoestrubia <br />
   updated readme (pull request from Aaron Israel, thanks!)
-  
+
 ### CP 1.14a 19.Juni 2017<br />
   fixed the issue when you set network to dhcp you where not able to connect via wifi anymore<br />
-  
+
 ### CP 1.14 30.April 2017<br />
   function to change between seamless and gap-list sync<br />
   added more numbered startmaser09-12<br />
   moved OSCplayer under startmaster button<br />
-  
+
 ### CP 1.13b 25.April 2017<br />
   fixed the cursor blinking when nothing was running<br />
   fixed streaming page button was not linked<br />
@@ -294,7 +299,7 @@ Fixed some button links <br />
 ### CP 1.11 23.Januar 2017<br />
   updated with new functions of PVJ 3.2<br />
   if you have an older (3.0/3.1) version, audio streaming will not work<br />
-  
+
 ### CP 1.10 12.Januar 2017<br />
   merged presenter and imageviewer together<br />
   added launch/relaunch mapper knobs<br />
@@ -302,7 +307,7 @@ Fixed some button links <br />
   added audio slave<br />
   changed audioplayer to omxplayer, so its possible to use usb soundcards and sync<br />
   added stopall function to mappersettings, so it does not need stop command in scheduler<br />
-  
+
 
 ### CP 1.09a 04.Januar 2017<br />
   fixed mapper relaunch function, remote did not work after clicking relauch<br />
@@ -318,10 +323,10 @@ Fixed some button links <br />
   Pause in shortcuts now also works for mapper<br />
   Removed Terminal link and wrote which port you can access Terminal<br />
   Fixed Status Monitor size
-    
+
 ### CP 1.07b 16.December 2016<br />
   Stability improvements for loading and saving mapper presets<br />
-  
+
 ### CP 1.07a 13.December 2016<br />
   Fixed Screenshot function<br />
 
@@ -350,7 +355,7 @@ Fixed some button links <br />
    Fixed audioplayer, did not workd because dtoverlay in config.txt was missing<br />
    Updated the timer.txt example file (make a factory preset to get it)<br />
    Added projector power on/off script which works with scheduler<br />
-   
+
 ### CP 1.03b 03.November 2016<br />
    Fixed PJLink Projector remote On/Off, was missing direct file path<br />
    Fixed startmasterusb
@@ -378,12 +383,12 @@ Fixed some button links <br />
 
    make sure that after updating the CP, you go to system and hit Update Firmware and Update Mapper to use all the new functions.<br />
    Be patient, updating takes several minutes!
-    
+
     - Added seamless loop
     - Sections are now color coded
     - New Sync script and new Player
     - many new feuatures and little bugfixes
-    
+
 
 ### CP 0.97a 15.March 2016<br />
    Added missing up down left right commands for mapper
@@ -391,9 +396,9 @@ Fixed some button links <br />
 
 ### CP 0.97 10.March 2016<br />
    Fixed update function
-   
+
    Updated Mapper Controls
-   
+
    added function to change wifi channel
 
    Notes for users with version 0.96:
@@ -403,5 +408,5 @@ Fixed some button links <br />
 
 ### CP 0.96 26.Feb. 2016<br />
    Official Release of PocketVJ 3.0 RTC Version
-   
+
    incl. many new features
