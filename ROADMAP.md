@@ -2,10 +2,8 @@
 **********
 ### Important:<br />
 
-- fix force to 1920x1080, to progressive: hdmi_group=2    hdmi_mode=82
 - fix [terminal square blink](https://raspberrypi.stackexchange.com/questions/3268/how-to-disable-local-terminal-showing-through-when-playing-video) when nothing is playing (in osc mode, also in standard mode?) <br />
 - midi support for usb midi devices https://github.com/magdesign/PocketVJ-CP-v3/issues/5#issuecomment-453174457 (thanks to frankbash).<br />
-- add psutil for pir trigger script: pip install psutil
 - add dmx in scripts to trigger videos via dmx: https://wiki.openlighting.org/index.php/OLA_DMX_Trigger <br />
 
 ### Video: <br />
@@ -19,7 +17,6 @@
 – check this: https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=199775&sid=dd74ed7acb6a1eaa3f21ec4753fed07
 ### Streaming: <br />
 - Remove NDI since NewTek discountinued ARM support.<br />
-- add TCPSyphon parts for video wall: https://github.com/magdesign/PocketVJ-CP-v3/issues/5#issuecomment-452022353<br />
 - Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK) to newest version.<br />
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)<br />
 
@@ -60,19 +57,13 @@
 ### Manual .pdf: <br />
 - Something about GPIO, where is the script and how to connect buttons <br />
 
-### Others, Website (Pocketvj.com): <br />
-
-- make a contest for more opensource case designs, e.g. camera case, ir case... <br />
-- people who can't afford PocketVJ can promote it on socialmedia and make tutorials for discounts.  <br />
-- add more info about the projects i am donationg to. <br />
-
 
 ### Tutorials (Pocketvj.com/Vimeo): <br />
 
-- Uplaod with Filezilla<br />
+- New video which features the product and its functions<br />
 - All autostart functions <br />
 - Filename-Fixer<br />
-- new promo video which features the product <br />
+
 
 =======================<br />
 
