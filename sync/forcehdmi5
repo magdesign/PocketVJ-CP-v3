@@ -7,8 +7,8 @@ hdmi_force_hotplug=1
 disable_overscan=1
 
 
-hdmi_group=1
-hdmi_mode=5
+hdmi_group=2
+hdmi_mode=82
 
 #This setting should force hdmi audio output
 hdmi_drive=2
