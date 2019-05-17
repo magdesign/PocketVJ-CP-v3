@@ -1,9 +1,9 @@
 # PocketVJ 3.x Control Panel
 
 ## CP 2.4.4 17.Mai 2019<br />
-Fixed force HD resolution from 1080i to 1080p
-Added Syphon wall buttons
-Fixed some typos in index.html
+Fixed force HD resolution from 1080i to 1080p<br />
+Added Syphon wall buttons <br />
+Fixed some typos in index.html<br />
 
 ## CP 2.4.3b 07.January 2019<br />
 Fixed MapperAudio (installing MapperAudio now plays audio over jack plug).<br />
