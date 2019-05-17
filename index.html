@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Jan 08 2019 09:26:20 GMT+0000 (UTC)  -->
+<!--  Last Published: Fri May 17 2019 21:09:34 GMT+0000 (UTC)  -->
 <html data-wf-page="5913869e09b9f23ad6b314ee" data-wf-site="5913869e09b9f23ad6b314ed">
 <head>
   <meta charset="utf-8">
@@ -31,7 +31,7 @@ Code  below is for button tooltips
       <div class="w-row">
         <div class="w-col w-col-6"><a href="https://pocketvj.com/#Downloads" target="_blank" class="w-inline-block"><img src="images/pocketVJlogoS2.png" alt="" class="logo"></a></div>
         <div class="w-col w-col-6">
-          <div class="release">CP 2.4.3b</div>
+          <div class="release">CP 2.4.4</div>
         </div>
       </div>
     </div>
@@ -618,6 +618,31 @@ Code  below is for button tooltips
           <div data-w-tab="Tab 6" class="grey_pane w-tab-pane">
             <div class="w-row">
               <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                <div class="heading_white"> <br>Syphon-Wall:</div>
+              </div>
+              <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-4"></div>
+              <div class="w-col w-col-4">
+                <div class="regular-textcentered">4 Screen Setup<br>as Syphon Slave:</div>
+              </div>
+              <div class="w-col w-col-4"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=tcpsserver_topleft" class="buttonbrown action w-button">1 Top Left Syphon</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=tcpsserver_topright" class="buttonbrown action w-button">2 Top Right Syphon</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=tcpsserver_downleft" class="buttonbrown action w-button">3 Buttom Left Syphon</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"><a href="?action=tcpsserver_downright" class="buttonbrown action w-button">4 Buttom Right Syphon</a></div>
+              <div class="w-col w-col-3 w-col-small-3 w-col-tiny-3"></div>
+            </div>
+            <div class="w-row">
+              <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
                 <div class="heading_white"> <br>Pi-Wall:</div>
               </div>
               <div class="column w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
@@ -850,7 +875,7 @@ Code  below is for button tooltips
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
-               <div class="w-col w-col-6"><a href="sync/PocketVJ_OSC.touchosc" class="buttonviolett2 w-button">Download OSC Preset for TouchOSC</a></div>
+              <div class="w-col w-col-6"><a href="sync/PocketVJ_OSC.touchosc" class="buttonviolett2 w-button">Download OSC Preset for TouchOSC</a></div>
               <div class="w-col w-col-6"></div>
             </div>
             <div class="w-row">
@@ -1231,12 +1256,11 @@ Code  below is for button tooltips
   <!--
 Code below this line checks if user is online
  -->
-  <head>
-    <script src="../offline.min.js"></script>
-    <link rel="stylesheet" href="../themes/offline-theme-chrome.css">
-    <link rel="stylesheet" href="../themes/offline-language-english.css">
-    <script>
-var run = function(){
+  <script src="../offline.min.js"></script>
+  <link rel="stylesheet" href="../themes/offline-theme-chrome.css">
+  <link rel="stylesheet" href="../themes/offline-language-english.css">
+  <script>
+  var run = function(){
   var req = new XMLHttpRequest();
   req.timeout = 5000;
   req.open('GET', 'http://localhost:8888/walter/0', true);
@@ -1244,18 +1268,18 @@ var run = function(){
 }
 setInterval(run, 3000);
 </script>
-    <!--
+  <!--
 Code below disabling resend of functions after lost connection
   -->
-    <script>
+  <script>
         Offline.options = {
-      requests: false
-    }
-  </script>
-    <!--
+        requests: false
+        }
+</script>
+  <!--
 Code below is for button actions
  -->
-    <script type="text/javascript">
+  <script type="text/javascript">
    $("a.action").on("click", function(event) {
        event.preventDefault();
        $.get( "backend.php" + $(this).attr('href'), function(data) {
@@ -1263,8 +1287,10 @@ Code below is for button actions
        });
    });
    </script>
-    <!--
+  <!--
 Code  below is for button tooltips
  -->
-    <script src="../themes/tooltipster.bundle.min.js"></script>
-    <script src="../themes/tooltipster-for-webflow.js"></scr</body></html></script></head></body></html>
+  <script src="../themes/tooltipster.bundle.min.js"></script>
+  <script src="../themes/tooltipster-for-webflow.js"></script>
+</body>
+</html>

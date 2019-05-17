@@ -372,8 +372,7 @@ textarea.w-select {
   height: auto;
 }
 .w-select {
-  background-image: -webkit-linear-gradient(white 0%, #f3f3f3 100%);
-  background-image: linear-gradient(white 0%, #f3f3f3 100%);
+  background-color: #f3f3f3;
 }
 .w-select[multiple] {
   height: auto;
@@ -778,16 +777,10 @@ textarea.w-select {
   max-width: inherit;
 }
 .w-widget-map .gm-style-iw {
-  width: 90% !important;
-  height: auto !important;
-  top: 7px !important;
-  left: 6% !important;
-  display: inline;
   text-align: center;
-  overflow: hidden;
 }
-.w-widget-map .gm-style-iw + div {
-  display: none;
+.w-widget-map .gm-style-iw > button {
+  display: none !important;
 }
 .w-widget-twitter {
   overflow: hidden;
