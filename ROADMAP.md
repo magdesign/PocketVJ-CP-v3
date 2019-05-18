@@ -16,7 +16,8 @@
 - Audio reactive effects, like RGB change to beat, pulsating brightness, some efx similar to camera effects<br />
 – check this: https://www.raspberrypi.org/forums/viewtopic.php?f=38&t=199775&sid=dd74ed7acb6a1eaa3f21ec4753fed07
 ### Streaming: <br />
-- Remove NDI since NewTek discountinued ARM support.<br />
+- advanced HTML5 contents (maybe insta & twitter feeds)<br />
+- Remove NDI since NewTek discountinued ARM support<br />
 - Update Tcpsyphon (https://github.com/z37soft/INetSyphon_RaspberryPi_SDK) to newest version.<br />
 - uv4l (https://www.linux-projects.org/uv4l/tutorials/desktop-streaming/)<br />
 
