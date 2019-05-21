@@ -37,7 +37,7 @@
 - Autostart to sound analyzer (cava)  <br />
 
 ### Others:<br />
-- Integrate some sort of remote management (what about security, fireall etc?) <br />
+- Integrate some sort of remote management (https://www.raspberrypi.org/documentation/remote-access/access-over-Internet/) <br />
 - Integrate remote webcam control  <br />
 - configure a libray and button for lirc to remotely turn on/off TV's and Projectors without RJ45. <br />
 - move softedge file location to another place<br />
