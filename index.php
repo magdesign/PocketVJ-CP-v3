@@ -192,56 +192,19 @@ Code  below is for button tooltips
               </div>
               <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6"></div>
             </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster01" class="buttonblue action w-button">Play_01 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce01" class="buttonblue action w-button">Play_01 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster02" class="buttonblue action w-button">Play_02 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce02" class="buttonblue action w-button">Play_02 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster03" class="buttonblue action w-button">Play_03 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce03" class="buttonblue action w-button">Play_03 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster04" class="buttonblue action w-button">Play_04 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce04" class="buttonblue action w-button">Play_04 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster05" class="buttonblue action w-button">Play_05 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce05" class="buttonblue action w-button">Play_05 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster06" class="buttonblue action w-button">Play_06 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce06" class="buttonblue action w-button">Play_06 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster07" class="buttonblue action w-button">Play_07 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce07" class="buttonblue action w-button">Play_07 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster08" class="buttonblue action w-button">Play_08 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce08" class="buttonblue action w-button">Play_08 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster09" class="buttonblue action w-button">Play_09 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce09" class="buttonblue action w-button">Play_09 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster10" class="buttonblue action w-button">Play_10 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce10" class="buttonblue action w-button">Play_10 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster11" class="buttonblue action w-button">Play_11 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce11" class="buttonblue action w-button">Play_11 Once</a></div>
-            </div>
-            <div class="w-row">
-              <div class="w-col w-col-6"><a href="?action=startmaster12" class="buttonblue action w-button">Play_12 Loop</a></div>
-              <div class="w-col w-col-6"><a href="?action=startmasteronce12" class="buttonblue action w-button">Play_12 Once</a>
-                <div class="regular-text"><br> .</div>
-              </div>
-            </div>
+            <?php
+			$codes = Array('01','02','03','04','05','06','07','08','09','10','11','12');
+			$text = '<br> .';
+			foreach ($codes as $idx => $c) {
+				?>
+            	<div class="w-row">
+            	  <div class="w-col w-col-6"><a href="?action=startmaster<?=$c?>" class="buttonblue action w-button">Play_<?=$c?> Loop</a></div>
+            	  <div class="w-col w-col-6"><a href="?action=startmasteronce<?=$c?>" class="buttonblue action w-button">Play_<?=$c?> Once</a></div>
+            	  <?php if ($item === end($myArray)) { print('<div class="regular-text"><br>'.$text.'</div>'); } ?>
+            	</div>
+				<?php
+			}
+			?>
           </div>
           <div data-w-tab="Tab 4" class="green_pane w-tab-pane">
             <div class="w-row">

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+	echo "Please specify the video to start in loop, eg: 01";
+	exit 2;
+fi;
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#play master xx in loop
+/usr/bin/omxplayer-sync -mu -o both /media/internal/video/$1* > /dev/null 2>&1 & echo $! &
+
+exit 0;
