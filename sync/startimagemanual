@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#kill all running tasks 
+/var/www/sync/stopall
+
+#write to autostart that feh shall start
+sudo cp /var/www/sync/slidestartupmanual /home/pi/.config/lxsession/LXDE/autostart
+
+
+#start x and run feh
+su -s /bin/bash -c startx pi &

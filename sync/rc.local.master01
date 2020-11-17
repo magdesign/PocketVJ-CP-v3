@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+/var/www/sync/startmaster01 &
+
+exit 0

@@ -1,0 +1,93 @@
+
+#!/bin/bash
+
+su pi <<'EOF'
+
+# This script fixes filenames
+# written by marc-andre gasser, pocketvj.com
+
+# This command block fixes the empty spaces with underscores
+
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i// /_}";done) ; cd - 
+
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i// /_}";done) ; cd - 
+
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i// /_}";done) ; cd - 
+
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i// /_}";done) ; cd - 
+
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i// /_}";done) ; cd - 
+
+
+
+# This command block fixes umlauts
+
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i//ä/a}";done) ; cd - 
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i//à/a}";done) ; cd -
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i//ö/o}";done) ; cd - 
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i//ü/u}";done) ; cd - 
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i//é/e}";done) ; cd -
+cd /media/internal/audio/ && (for i in *;do mv -i  "$i" "${i//è/e}";done) ; cd -
+
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i//ä/a}";done) ; cd - 
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i//à/a}";done) ; cd -
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i//ö/o}";done) ; cd - 
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i//ü/u}";done) ; cd - 
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i//é/e}";done) ; cd -
+cd /media/internal/images/ && (for i in *;do mv -i  "$i" "${i//è/e}";done) ; cd -
+
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i//ä/a}";done) ; cd - 
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i//à/a}";done) ; cd -
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i//ö/o}";done) ; cd - 
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i//ü/u}";done) ; cd - 
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i//é/e}";done) ; cd -
+cd /media/internal/pdf/ && (for i in *;do mv -i  "$i" "${i//è/e}";done) ; cd -
+
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i//ä/a}";done) ; cd - 
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i//à/a}";done) ; cd -
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i//ö/o}";done) ; cd - 
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i//ü/u}";done) ; cd - 
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i//é/e}";done) ; cd -
+cd /media/internal/presentations/ && (for i in *;do mv -i  "$i" "${i//è/e}";done) ; cd -
+
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i//ä/a}";done) ; cd - 
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i//à/a}";done) ; cd -
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i//ö/o}";done) ; cd - 
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i//ü/u}";done) ; cd - 
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i//é/e}";done) ; cd -
+cd /media/internal/video/ && (for i in *;do mv -i  "$i" "${i//è/e}";done) ; cd -
+
+
+# This command block removes () and []
+
+cd /media/internal/audio/ && (rename 's/\s*\[.*?\]\s*//g' *) ; cd - 
+cd /media/internal/audio/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd - 
+
+cd /media/internal/images/ && (rename 's/\s*\[.*?\]\s*//g' *) ; cd - 
+cd /media/internal/images/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd - 
+
+cd /media/internal/pdf/ && (rename 's/\s*\[.*?\]\s*//g' *) ; cd - 
+cd /media/internal/pdf/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd - 
+
+cd /media/internal/presentations/ && (rename 's/\s*\[.*?\]\s*//g' *) ; cd - 
+cd /media/internal/presentations/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd - 
+
+cd /media/internal/video/ && (rename 's/\s*\[.*?\]\s*//g' *) ; cd - 
+cd /media/internal/video/ && (rename 's/\s*\(.*?\)\s*//g' *) ; cd - 
+
+# This command block shortens all file names to 16 characters
+
+cd /media/internal/audio/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/images/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/pdf/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/presentations/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+cd /media/internal/video/ && (rename 's/^(.{16}).*(\..*)$/$1$2/' *) ; cd - 
+
+EOF
+
+exit 0
+

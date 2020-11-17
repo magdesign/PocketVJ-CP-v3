@@ -1,0 +1,6 @@
+#!/bin/bash
+#kill all running tasks
+sudo /var/www/sync/stopall
+
+#display testscreen
+sudo fbi -T 1 -noverbose /var/www/sync/testscreen.png &

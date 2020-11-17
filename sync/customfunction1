@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#customfunction1
+#put your custom code in here
+#if you write something, please contribute to PocketVJ!
+
+#this example stops all running tasks, starts the pi camera on master and all slaves with the ip
+
+#kill all running tasks
+/var/www/sync/stopall &
+
+#kill all running tasks on the 7 slaves
+curl -s http://192.168.1.101/backend.php/?action=stop &
+curl -s http://192.168.1.102/backend.php/?action=stop &
+curl -s http://192.168.1.103/backend.php/?action=stop &
+curl -s http://192.168.1.104/backend.php/?action=stop &
+curl -s http://192.168.1.105/backend.php/?action=stop &
+curl -s http://192.168.1.106/backend.php/?action=stop &
+curl -s http://192.168.1.107/backend.php/?action=stop &
+
+#start camera on master
+/var/www/sync/camerafeed &
+
+#start camera on slaves
+curl -s http://192.168.1.101/backend.php/?action=camerafeed &
+curl -s http://192.168.1.102/backend.php/?action=camerafeed &
+curl -s http://192.168.1.103/backend.php/?action=camerafeed &
+curl -s http://192.168.1.104/backend.php/?action=camerafeed &
+curl -s http://192.168.1.105/backend.php/?action=camerafeed &
+curl -s http://192.168.1.106/backend.php/?action=camerafeed &
+curl -s http://192.168.1.107/backend.php/?action=camerafeed &
+
+# "I hope this works...." -Marc -- "Oh it works." -Cornelius

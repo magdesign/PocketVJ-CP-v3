@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   viewBox="0 0 7.9374996 7.9375002"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (1.0.1+r73)"
+   sodipodi:docname="mapping_icon.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="6.745"
+     inkscape:cx="23.51742"
+     inkscape:cy="20.930319"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1021"
+     inkscape:window-x="0"
+     inkscape:window-y="35"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(0,-283.77081)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 5.4090461,285.05916 -2.9221682,0.78021 a 0.65884319,0.65884319 0 0 1 0.02309,0.17014 0.65884319,0.65884319 0 0 1 -0.6586878,0.6587 0.65884319,0.65884319 0 0 1 -0.1348975,-0.014 l -0.6981848,3.34266 a 0.65884319,0.65884319 0 0 1 0.5164988,0.54687 l 4.7329521,-0.71397 a 0.65884319,0.65884319 0 0 1 -0.0079,-0.0978 0.65884319,0.65884319 0 0 1 0.54202,-0.64835 l -0.6398491,-3.5468 a 0.65884319,0.65884319 0 0 1 -0.1166679,0.011 0.65884319,0.65884319 0 0 1 -0.6362046,-0.48856 z"
+       id="rect13"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000000;stroke:none;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 3.9008695,287.76562 -2.5332749,0.56023 -0.3493963,1.67164 a 0.65884319,0.65884319 0 0 1 0.5164988,0.54628 l 2.3661724,-0.3567 z"
+       id="rect10"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#000000;stroke:none;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 5.4090461,285.05916 -1.4607801,0.3901 -0.049826,2.31513 2.5837096,-0.45391 -0.3202294,-1.77371 a 0.65884319,0.65884319 0 0 1 -0.1166679,0.011 0.65884319,0.65884319 0 0 1 -0.6362049,-0.48855 z"
+       id="rect10-3"
+       inkscape:connector-curvature="0" />
+    <circle
+       r="0.65884316"
+       cy="289.73175"
+       cx="6.9186611"
+       id="circle72"
+       style="fill:none;stroke:#000000;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none" />
+    <circle
+       r="0.65884316"
+       cy="290.64203"
+       cx="0.88346469"
+       id="circle76"
+       style="fill:none;stroke:#000000;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none"
+       id="circle846"
+       cx="1.8511255"
+       cy="286.00949"
+       r="0.65884316" />
+    <circle
+       r="0.65884322"
+       cy="284.87799"
+       cx="6.1619167"
+       id="circle72-3"
+       style="fill:none;stroke:#000000;stroke-width:0.253097;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>

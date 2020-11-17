@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+
+sleep 4
+/usr/bin/TCPSClient.bin &
+
+
+
+exit 0

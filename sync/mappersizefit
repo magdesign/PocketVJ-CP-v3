@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#kill all running tasks
+#/var/www/sync/stopall
+
+#Set mapper slideshow to proportional
+
+sudo sed -ri 's@(<ResizeOption>).*(</ResizeOption>)@\1Fit\2@' '/home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/magslideshow_settings.xml'
+

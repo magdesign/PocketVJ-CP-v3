@@ -1,0 +1,4 @@
+
+# start xpdf
+
+@okular --presentation /media/internal/pdf/*

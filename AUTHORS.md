@@ -1,0 +1,32 @@
+Credits, Authors
+****************
+
+Marc-André Gasser, http://www.magdesign.ch                 (Idea, support and concept)
+
+Simon Josi, https://github.com/turingmachine               (Sync Script,Omxplayer fork, overall help)
+
+Cornelius Henke, https://projectileobjects.com             (help files, osc additions)
+
+Jan Kuonen, https://github.com/Jaun1011                    (MAGmapper, Three.js support)
+
+Marco Schmalz                                              (Projector Power Scripts)
+
+Krisjanis Rijnieks, https://github.com/kr15h               (Pi-Mapper)
+
+Nozomu Miura, http://techlife.sg/TCPSClient/index.html     (TCPSyphon)
+
+Erwin van Dijk, http://www.fsays.eu/                       (Virtual Keyboard)
+
+xorg62, https://github.com/xorg62/tty-clock                (TTY Clock)
+
+Alex Goodyear, http://www.piwall.co.uk                     (pwomxplayer)
+
+Atelier de Dispositifs Numériques ,http://www.hemisphere-project.com/   (HPlayer)
+
+Leon Adolf,                                             (Streaming page mod)
+
+Cris(tobal) Mendoza                                       (slideshow for mapper)
+
+Marcel Bieri, https://facebook.com/casashowband				(testaudio)
+
+vj mag & Paavo Schweizer                        					(testvideo)

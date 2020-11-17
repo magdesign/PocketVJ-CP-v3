@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#this converts svg to xml for use with ofxPiMapper
+
+
+/home/pi/openFrameworks/apps/myApps/mapping-converter2/bin/./mapping-converter2 /media/internal/converter/convert.svg /media/internal/mappersets/mappersetting1.xml

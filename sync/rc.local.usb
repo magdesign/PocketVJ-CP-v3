@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+/var/www/sync/startmasterusb &
+
+exit 0

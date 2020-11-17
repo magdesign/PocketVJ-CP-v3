@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0alpha (9dee831, 2019-01-15)"
+   sodipodi:docname="Presenter_icon_02.svg"
+   version="1.1"
+   viewBox="0 0 30 30.000001"
+   height="30"
+   width="30"
+   data-name="Layer 2"
+   id="Layer_2">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Presenter_icon_02</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     inkscape:current-layer="Layer_2"
+     inkscape:window-maximized="0"
+     inkscape:window-y="33"
+     inkscape:window-x="0"
+     inkscape:cy="13.28"
+     inkscape:cx="15"
+     inkscape:zoom="33.166667"
+     showgrid="false"
+     id="namedview7"
+     inkscape:window-height="480"
+     inkscape:window-width="790"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title2">Presenter_icon_02</title>
+  <path
+     inkscape:connector-curvature="0"
+     id="path4"
+     transform="translate(0,-1)"
+     d="M 29.32,6.05 A 0.66,0.66 0 0 0 30,5.39 V 1.66 A 0.67,0.67 0 0 0 29.32,1 H 0.66 A 0.67,0.67 0 0 0 0,1.66 V 5.39 A 0.66,0.66 0 0 0 0.66,6.05 H 1.85 V 20 H 0.66 C 0.66,20 0,20.26 0,20.62 a 0.78,0.78 0 0 0 0.66,0.73 h 13.66 v 2.06 a 2.12,2.12 0 1 0 1.34,0 V 21.38 H 29.34 A 0.78,0.78 0 0 0 30,20.65 c 0,-0.36 -0.66,-0.62 -0.66,-0.62 h -1.22 v -14 z M 15.79,25.45 A 0.79,0.79 0 1 1 15,24.66 0.79,0.79 0 0 1 15.79,25.45 Z M 27,20 H 3.2 V 6 H 27 Z M 1.35,4.71 V 2.35 h 27.28 v 2.36 z" />
+</svg>

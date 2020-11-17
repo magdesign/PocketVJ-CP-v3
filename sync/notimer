@@ -1,0 +1,57 @@
+#######################################
+# Edit this file for scheduling tasks #
+#######################################
+#
+# * * * * *  command
+# ┬ ┬ ┬ ┬ ┬
+# │ │ │ │ │
+# │ │ │ │ │
+# │ │ │ │ └───── day of week (0 - 7) (0 to 6 are Sunday to Saturday, or use names; 7 is Sunday, the same as 0)
+# │ │ │ └────────── month (1 - 12)
+# │ │ └─────────────── day of month (1 - 31)
+# │ └──────────────────── hour (0 - 23)
+# └───────────────────────── min (0 - 59)
+#
+#
+#
+#───────────────────────────────────────────────────────────────────────────────────#
+# command for starting the videoplayer:                                             #
+#                                                                                   #
+# /var/www/sync/startmaster.py                                                      #
+#───────────────────────────────────────────────────────────────────────────────────#
+# command for stopping the videoplayer:                                             #
+#                                                                                   #
+# /var/www/sync/omxkill.py                                                          #
+#───────────────────────────────────────────────────────────────────────────────────#
+# command for starting the videoplayer only playing video 01_*:                     #
+#                                                                                   #
+# /var/www/sync/startmaster01.py                                                    #
+#                                                                                   #
+# this works from 01 up to 06, more to be implemented on request                    #
+#───────────────────────────────────────────────────────────────────────────────────#
+# command for starting the slideshow:                                               #
+#                                                                                   #
+# /var/www/sync/startimage.py                                                       #
+#───────────────────────────────────────────────────────────────────────────────────#
+# command for stopping the slideshow:                                 			    #
+#                                                                                   #
+# /var/www/sync/testscreenoff.py                                                    #
+#───────────────────────────────────────────────────────────────────────────────────#
+# IMPORTANT:                                                                        #
+# If you have more than one task, you have to stop the previous task before         #
+# starting a new one!                                                               #
+#───────────────────────────────────────────────────────────────────────────────────#
+#                                                                                   #
+#                                                                                   #
+# EXAMPLE:                                                                          #
+# Following entry would start the videoplayer every day at midnight and stop it     #
+# every day at noon (for testing this, remove both # ):                             #
+
+
+# 0 0 * * *  /var/www/sync/startmaster.py
+# 0 12 * * *  /var/www/sync/omxkill.py
+
+
+
+
+

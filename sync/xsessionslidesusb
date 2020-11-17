@@ -1,0 +1,7 @@
+#!/bin/bash
+# start picture viewer in x with auto slidshow
+
+DELAY=10
+feh -FD${DELAY} -Z -q -Y  /media/usb/*
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0alpha (9dee831, 2019-01-15)"
+   sodipodi:docname="Filehandling_icon_01.svg"
+   version="1.1"
+   viewBox="0 0 29.82 30"
+   height="30"
+   width="29.82"
+   data-name="Layer 3"
+   id="Layer_3">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Filehandling_icon_01</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="Layer_3"
+     inkscape:window-maximized="0"
+     inkscape:window-y="33"
+     inkscape:window-x="0"
+     inkscape:cy="12.5"
+     inkscape:cx="14.91"
+     inkscape:zoom="33.366868"
+     showgrid="false"
+     id="namedview11"
+     inkscape:window-height="480"
+     inkscape:window-width="790"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">.cls-1{fill:#000002;}</style>
+  </defs>
+  <title
+     id="title6">Filehandling_icon_01</title>
+  <path
+     inkscape:connector-curvature="0"
+     id="path8"
+     transform="translate(0,-1)"
+     d="M 29.49,9.48 A 1.94,1.94 0 0 0 27.85,8.68 H 25.22 V 5 A 1.2,1.2 0 0 0 24,3.81 H 13.69 A 1,1 0 0 1 13,3.45 L 11.7,1.76 A 2.12,2.12 0 0 0 10.19,1 H 5.63 A 1.59,1.59 0 0 0 4.23,2 L 3.69,3.47 A 0.53,0.53 0 0 1 3.21,3.81 h -2 A 1.19,1.19 0 0 0 0,5 v 19 a 0.81,0.81 0 0 0 0.05,0.27 1.83,1.83 0 0 0 0.33,1 A 2,2 0 0 0 2,26 H 22.38 A 3.27,3.27 0 0 0 25.3,23.92 L 29.69,11.3 A 2,2 0 0 0 29.49,9.48 Z M 2,5.44 H 3.46 A 1.92,1.92 0 0 0 5.14,4.25 L 5.57,3 A 0.66,0.66 0 0 1 6.15,2.58 h 3.52 a 1.23,1.23 0 0 1 0.88,0.45 l 1.06,1.45 a 2.54,2.54 0 0 0 1.81,0.92 h 9.79 a 0.38,0.38 0 0 1 0.38,0.38 v 2.9 H 7.49 A 3.28,3.28 0 0 0 4.57,10.76 L 1.62,19.21 V 5.82 A 0.38,0.38 0 0 1 2,5.44 Z m 26.2,5.32 -4.42,12.62 a 1.67,1.67 0 0 1 -1.4,1 H 1.9 a 0.41,0.41 0 0 1 -0.33,-0.11 0.47,0.47 0 0 1 0,-0.35 L 6,11.3 a 1.66,1.66 0 0 1 1.4,-1 h 20.48 a 0.38,0.38 0 0 1 0.32,0.11 0.39,0.39 0 0 1 0,0.35 z"
+     class="cls-1" />
+</svg>

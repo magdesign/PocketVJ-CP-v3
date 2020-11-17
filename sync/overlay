@@ -1,0 +1,4 @@
+#!/bin/bash
+#start .png overlay over video
+
+sudo /home/pi/raspidmx/pngview/./pngview /media/internal/images/overlay.png &

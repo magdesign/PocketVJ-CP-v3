@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+
+spawn pjlink -p {*}[lrange $argv 0 end]
+set timeout 5
+expect "Password:"
+send "\r"
+interact

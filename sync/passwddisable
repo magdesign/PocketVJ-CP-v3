@@ -1,0 +1,52 @@
+server.modules = (
+	"mod_access",
+	"mod_alias",
+	"mod_compress",
+ 	"mod_redirect",
+	"mod_auth",
+	"mod_fastcgi",
+	"mod_setenv",
+#       "mod_rewrite",
+)
+
+server.document-root        = "/var/www/"
+server.upload-dirs          = ( "/var/cache/lighttpd/uploads" )
+server.errorlog             = "/var/log/lighttpd/error.log"
+server.pid-file             = "/var/run/lighttpd.pid"
+server.username             = "www-data"
+server.groupname            = "www-data"
+server.port                 = 80
+server.dir-listing          = "disable"
+#server.dir-listing          = "enable"
+
+
+#following lines protect the whole directory with a password which is saved in /etc/lighttpd/.htpasswd
+
+#auth.debug = 2
+#auth.backend = "plain"
+#auth.backend.plain.userfile = "/etc/lighttpd/.htpasswd"
+#    auth.require = ( 
+#        "" => (
+#            "method" => "basic",
+#            "realm" => "Password protected area",
+#            "require" => "user=pocketvj" 
+#        )
+#    )
+
+
+
+
+index-file.names            = ( "index.php", "index.html", "index.lighttpd.html" )
+url.access-deny             = ( "~", ".inc" )
+static-file.exclude-extensions = ( ".php", ".pl", ".fcgi" )
+ 
+
+compress.cache-dir          = "/var/cache/lighttpd/compress/"
+compress.filetype           = ( "application/javascript", "text/css", "text/html", "text/plain" )
+
+# default listening port for IPv6 falls back to the IPv4 port
+include_shell "/usr/share/lighttpd/use-ipv6.pl " + server.port
+include_shell "/usr/share/lighttpd/create-mime.assign.pl"
+include_shell "/usr/share/lighttpd/include-conf-enabled.pl"
+
+

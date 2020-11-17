@@ -1,0 +1,15 @@
+#!/bin/bash
+#kill all running tasks
+/var/www/sync/stopall
+#sleep 0.5
+
+#start video master with audio stream
+#/usr/bin/omxplayer-sync -mu -o hdmi /media/internal/video/* > /dev/null 2>&1 & echo $! &
+
+sudo modprobe snd-aloop
+
+sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &
+
+sudo /usr/bin/omxplayer-sync -mu -o alsa:hw:1,1 /media/internal/video/* &
+
+sudo -u root /usr/bin/gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#play master 21
+
+/usr/bin/omxplayer-sync -mu -o both /media/internal/video/21* > /dev/null 2>&1 & echo $! &

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+expect /var/www/sync/mappergride > /dev/null 2>&1

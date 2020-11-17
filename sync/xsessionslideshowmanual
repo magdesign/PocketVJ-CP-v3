@@ -1,0 +1,4 @@
+#!/bin/bash
+# start picture viewer in x with auto slidshow
+
+feh -FZqY  /media/internal/images/*

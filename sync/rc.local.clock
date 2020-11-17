@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/var/www/sync/autostartclock &
+
+exit 0

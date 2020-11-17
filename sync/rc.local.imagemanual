@@ -1,0 +1,8 @@
+#!/bin/bash
+
+setterm $* | sudo tee /dev/tty0 > /dev/null
+
+/var/www/sync/startimagemanual &
+
+
+exit 0

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+sudo modprobe snd-aloop > /dev/null &
+sudo /opt/janus/bin/janus -F /opt/janus/etc/janus > /dev/null &
+sudo /usr/bin/omxplayer-sync -lu -o alsa:hw:1,1 /media/internal/video/* &
+sudo gst-launch-1.0 -v alsasrc device=plughw:1,0 ! audioconvert ! audioresample ! opusenc ! rtpopuspay ! udpsink host=127.0.0.1 port=8005 > /dev/null &
+
+
+
+exit 0
+

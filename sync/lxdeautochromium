@@ -1,0 +1,1 @@
+@chromium-browser --app=file:///home/pi/magmapper/example/index.html --start-fullscreen --disable-session-crashed-bubble

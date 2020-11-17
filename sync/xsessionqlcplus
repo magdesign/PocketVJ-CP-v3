@@ -1,0 +1,5 @@
+#start qlc+ in fullscreen mode, load the autostart.qxw file and the webgui (with LXDE autostart)
+
+
+@/usr/bin/qlcplus -f --web --operate --overscan --open /media/internal/dmx/autostart.qxw
+

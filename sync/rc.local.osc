@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+/var/www/sync/osc_start
+
+
+exit 0

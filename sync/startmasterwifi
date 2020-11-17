@@ -1,0 +1,8 @@
+#!/bin/bash
+#kill all running tasks
+/var/www/sync/stopall
+
+#start video as master with node-omxplayer-sync (must be pocketvj-100)
+
+#sudo -H -u pi bash -c "node /home/pi/node-omxplayer-sync/omx-sync-wifi.js /media/internal/video/wifisync.mp4"
+su - pi -c "node /home/pi/node-omxplayer-sync/omx-sync-wifi.js /media/internal/video/wifisync.mp4"

@@ -1,0 +1,11 @@
+auto lo
+auto eth0
+
+allow-hotplug wlan0
+auto wlan0
+iface wlan0 inet dhcp
+        wpa-ssid "vj100"
+        wpa-psk "pocketvj"
+
+
+up iptables-restore < /etc/iptables.ipv4.nat

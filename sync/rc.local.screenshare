@@ -1,0 +1,6 @@
+#!/bin/bash
+
+su -s /bin/bash -c startx pi&
+
+
+exit 0

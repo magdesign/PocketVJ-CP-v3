@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0alpha (9dee831, 2019-01-15)"
+   sodipodi:docname="Display_icon_01.svg"
+   version="1.1"
+   viewBox="0 0 30 29.999999"
+   height="30"
+   width="30"
+   data-name="Layer 3"
+   id="Layer_3">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Display_icon_01</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     inkscape:current-layer="Layer_3"
+     inkscape:window-maximized="0"
+     inkscape:window-y="33"
+     inkscape:window-x="0"
+     inkscape:cy="13.43"
+     inkscape:cx="15"
+     inkscape:zoom="33.166667"
+     showgrid="false"
+     id="namedview7"
+     inkscape:window-height="1519"
+     inkscape:window-width="1914"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title2">Display_icon_01</title>
+  <path
+     inkscape:connector-curvature="0"
+     id="path4"
+     transform="translate(0,-1)"
+     d="M 26.31,1 H 3.69 A 3.68,3.68 0 0 0 0,4.67 V 18.9 a 3.68,3.68 0 0 0 3.69,3.67 H 14.12 V 26.1 H 8.93 a 0.76,0.76 0 0 0 -0.84,0.79 1.07,1.07 0 0 0 0.84,1 H 21 a 1.08,1.08 0 0 0 0.84,-1 A 0.77,0.77 0 0 0 21,26.1 H 15.88 V 22.57 H 26.31 A 3.69,3.69 0 0 0 30,18.9 V 4.69 A 3.69,3.69 0 0 0 26.31,1 Z M 1.76,4.58 a 2,2 0 0 1 2,-2 h 22.47 a 2,2 0 0 1 2,2 V 16.49 H 1.76 Z M 26.23,20.8 H 3.77 a 2,2 0 0 1 -2,-2.05 v -0.69 h 26.47 v 0.69 a 2,2 0 0 1 -2.01,2.05 z" />
+</svg>

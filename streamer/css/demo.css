@@ -1,0 +1,99 @@
+.rounded {
+	border-radius: 5px;
+}
+
+.centered {
+	display: block;
+	margin: auto;
+}
+
+.relative {
+	position: relative;
+}
+
+.navbar-brand {
+	margin-left: 0px !important;
+}
+
+.navbar-default {
+	-webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+	-moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
+	box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
+}
+
+.navbar-header {
+	padding-left: 40px;
+}
+
+.margin-sm {
+	margin: 5px !important;
+}
+.margin-md {
+	margin: 10px !important;
+}
+.margin-xl {
+	margin: 20px !important;
+}
+.margin-bottom-sm {
+	margin-bottom: 5px !important;
+}
+.margin-bottom-md {
+	margin-bottom: 10px !important;
+}
+.margin-bottom-xl {
+	margin-bottom: 20px !important;
+}
+
+.divider {
+	width: 100%;
+	text-align: center;
+}
+
+.divider hr {
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+}
+
+.fa-2 {
+	font-size: 2em !important;
+}
+.fa-3 {
+	font-size: 4em !important;
+}
+.fa-4 {
+	font-size: 7em !important;
+}
+.fa-5 {
+	font-size: 12em !important;
+}
+.fa-6 {
+	font-size: 20em !important;
+}
+
+div.no-video-container {
+	position: relative;
+}
+
+.no-video-icon {
+	width: 100%;
+	height: 240px;
+	text-align: center;
+}
+
+.no-video-text {
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	font-size: 24px;
+}
+
+.meetecho-logo {
+	padding: 12px !important;
+}
+
+.meetecho-logo > img {
+	height: 26px;
+}

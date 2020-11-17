@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#force resolution to 720p
+
+tvservice -e "CEA 19"
+
+sleep 1
+
+#clears the screen
+sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
+
+#starts to Super Pikix Pi from http://pikilipita.com/ (please donate when you like it)
+
+/home/pi/superpikix/./superPikixOf &
+
+exit 0

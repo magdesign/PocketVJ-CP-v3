@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo /var/www/sync/beamer_on_off.sh --off

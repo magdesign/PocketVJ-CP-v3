@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+/var/www/sync/startseamless &
+
+
+exit 0

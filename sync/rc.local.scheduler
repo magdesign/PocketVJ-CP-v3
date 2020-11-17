@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#setterm $* | sudo tee /dev/tty0 > /dev/null
+# run osc control with node.js as pi user
+node /home/pi/osc/osc_control.js &
+
+exit 0

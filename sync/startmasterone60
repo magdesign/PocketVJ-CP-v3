@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#start video 60 once
+/usr/bin/omxplayer-sync -m -o both /media/internal/video/60* > /dev/null 2>&1 & echo $! &

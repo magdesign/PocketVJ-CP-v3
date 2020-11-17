@@ -1,0 +1,4 @@
+
+
+@/var/www/sync/showip
+@xvncviewer -listen -fullscreen -x11cursor -nocursorshape

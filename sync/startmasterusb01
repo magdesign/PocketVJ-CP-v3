@@ -1,0 +1,12 @@
+#!/bin/bash
+#kill all running tasks
+/var/www/sync/stopall
+
+#remove hidden files produced by osx
+sudo rm -R /media/usb/.[DTf_]*
+sudo rm -R /media/usb/__MACOSX
+sudo rm -Rf /media/usb/.Spotlight-V100/
+
+
+#start video01 from usb
+/usr/bin/omxplayer-sync -mu -o both /media/usb/01* > /dev/null 2>&1 & echo $! &

@@ -1,0 +1,20 @@
+# Determine the IP address of the "wlan0" network interface
+export IP=`ip addr show wlan0 | grep -oP '(?<=inet )(\d+\.){3}\d+'`
+
+# Determine the IP address of the "eth0" network interface
+export IPRJ=`ip addr show eth0 | grep -oP '(?<=inet )(\d+\.){3}\d+'`
+
+
+
+# Display the IP address, so people know where to connect
+wish <<END &
+pack [label .ip -text "wifi VNC=> $IP:5500" -font "Helvetica 72" -fg grey -bg black]
+END
+
+wish <<END &
+pack [label .ip -text "RJ45 VNC=> $IPRJ:5500" -font "Helvetica 72" -fg grey -bg black]
+END
+
+
+
+

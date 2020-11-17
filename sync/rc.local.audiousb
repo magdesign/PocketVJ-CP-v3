@@ -1,0 +1,7 @@
+#!/bin/bash
+
+/var/www/sync/startaudiousb &
+
+
+
+exit 0
