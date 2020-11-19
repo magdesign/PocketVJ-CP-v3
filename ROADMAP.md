@@ -1,7 +1,7 @@
 ## Roadmap
 **********
 ### Priority:
-- clean up the .git folder to reduce file size of update
+- add countdown with processing and input variables
 - set static IP resp. set to dhcp, resp, the deplay ip script does not change the ip on those! implement the fix in backend.php under updateall
 - add the startlesseronce scripts for faster video start via OSC
 - Update the osc_control.js 
