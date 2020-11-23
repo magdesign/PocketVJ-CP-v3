@@ -1,6 +1,7 @@
 ## Roadmap
 **********
 ### Priority:
+- sync stop: when in sync mode, send stop from master over network to all slaves
 - add countdown with processing and input variables
 - set static IP resp. set to dhcp, resp, the deplay ip script does not change the ip on those! implement the fix in backend.php under updateall
 - add the startlesseronce scripts for faster video start via OSC
