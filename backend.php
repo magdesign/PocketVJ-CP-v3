@@ -1102,6 +1102,8 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo rm /var/www/sitemap.xml");
 	//remove .xsession file
 	system("sudo rm -rf /home/pi/.xsession");
+	//remove git folder
+	system("sudo rm -rf /var/www/.git");
 	//Text Output
 	$outputtext =  "Update Controlpanel, Mapper, OMXPLAYER, Timer, Boot";
 }
