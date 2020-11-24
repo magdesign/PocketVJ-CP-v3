@@ -2,6 +2,7 @@
 **********
 ### Priority:
 - check multiscreen when all slaves and master have audio over usb, does it stay sync?
+- disable splash option? 
 - sync stop: when in sync mode, send stop from master over network to all slaves
 - add countdown with processing and input variables
 - set static IP resp. set to dhcp, resp, the deplay ip script does not change the ip on those! implement the fix in backend.php under updateall
