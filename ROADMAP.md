@@ -2,6 +2,8 @@
 **********
 ### Priority:
 - check multiscreen when all slaves and master have audio over usb, does it stay sync?
+- fix mapper audio volume
+- add mapper hdmi audio
 - disable splash option? 
 - sync stop: when in sync mode, send stop from master over network to all slaves
 - add countdown with processing and input variables
