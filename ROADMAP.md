@@ -1,7 +1,7 @@
 ## Roadmap
 **********
 ### Priority:
-- check multiscreen when all slaves and master have audio over usb, does it stay sync?
+- check multiscreen when all slaves and master have audio over usb, does it stay sync => make a function to change the sleep function on line 85 for short files to a shorter time!!
 - fix mapper audio volume
 - add mapper hdmi audio
 - disable splash option? 
