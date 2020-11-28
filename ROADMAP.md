@@ -1,5 +1,7 @@
 ## Roadmap
 **********
+##release new CP and name number it up to CP 3.0.0 so it correspondens to PVJ 3.9, would that make sense ?
+
 ### Priority:
 - check multiscreen when all slaves and master have audio over usb, does it stay sync => make a function to change the sleep function on line 85 for short files to a shorter time!!
 - fix mapper audio volume
@@ -7,7 +9,7 @@
 - disable splash option? 
 - sync stop: when in sync mode, send stop from master over network to all slaves
 - add countdown with processing and input variables
-- set static IP resp. set to dhcp, resp, the deplay ip script does not change the ip on those! implement the fix in backend.php under updateall
+- set static IP resp. set to dhcp, resp, the deplay ip script does not change the ip on those! implement the fix in backend.php under updateall use iprange script from exh
 - add the startlesseronce scripts for faster video start via OSC
 - Update the osc_control.js 
 - add wireless-power off to interfaces ?
