@@ -869,22 +869,19 @@ if ($_GET['action'] == 'parser') {
 }
 
 if ($_GET['action'] == 'codecinfo') {
-	$output = shell_exec('mediainfo --Inform="General;%CompleteName%  Format: %Format% Codec: %CodecID%  Bitrate: %OverallBitRate%  " /media/internal/video/*');
-	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 50, "<br />\n");
+	$output = shell_exec('mediainfo --Inform="General;%FileName% \n Format: %Format% Codec: %CodecID% Bitrate: %OverallBitRate% \\n \\n" /media/internal/video/*');
+	$outputtext = "<pre>$output</pre>";
 }
 
 if ($_GET['action'] == 'movieinfo') {
-	$output = shell_exec('mediainfo --Inform="Video;Videosize: %Width%x%Height% pixel  " /media/internal/video/*');
-	$preoutputtext2 = "<pre>$output</pre>";
-	$newtext = wordwrap($preoutputtext2, 32, "<br />\n");
-	$outputtext = "$newtext\n";
+	//$output = shell_exec("mediainfo --Output=$'General;File=%FileName%\\nDuration=%Duration/String3%\\nFile size=%FileSize/String1% \nVideo;Resolution=%Width%x%Height%\\nCodec=%CodecID%\\n\\n' /media/internal/video/*");
+	$output = shell_exec('mediainfo /media/internal/video/* | egrep "(name|Width|Height)"');
+	$outputtext = "<pre>$output</pre>";
 }
 
 if ($_GET['action'] == 'diskspace') {
-    $output = shell_exec('df -h /media');
-	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = wordwrap($preoutputtext, 124, "<br />\n");
+	$output = shell_exec('df -h --output=size --output=used --output=avail /media');
+    $outputtext = "<pre>$output</pre>";
 }
 
 
