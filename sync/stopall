@@ -1,47 +1,48 @@
 #!/bin/bash
 
 #kill videoplayer
-sudo /var/www/sync/omxkill > /dev/null 2>&1
+sudo /var/www/sync/omxkill > /dev/null &
 #kill mapper
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null 2>&1
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/./bin/example_camera > /dev/null 2>&1
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null &
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null &
+sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/./bin/example_camera > /dev/null &
 #kill Syphon
-sudo killall -9 /usr/bin/TCPSClient.bin > /dev/null 2>&1
+sudo killall -9 /usr/bin/TCPSClient.bin > /dev/null &
 #kill clock and imageplayer
-sudo killall -9 tty-clock > /dev/null 2>&1
-sudo killall -9 mpg321 > /dev/null 2>&1
-sudo killall -9 feh > /dev/null 2>&1
-sudo kill $(pidof X) > /dev/null 2>&1
+sudo killall -9 tty-clock > /dev/null &
+sudo killall -9 mpg321 > /dev/null &
+sudo killall -9 feh > /dev/null &
+sudo kill $(pidof X) > /dev/null &
 #kill overlay and softedge
-sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/overlay.png > /dev/null 2>&1
-sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/softedge* > /dev/null 2>&1
+sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/overlay.png > /dev/null &
+sudo killall -9 /home/pi/raspidmx/pngview/./pngview /media/internal/images/softedge* > /dev/null &
 #dont know if I have to kill this:
-sudo killall -9 fsaysuinput > /dev/null 2>&1
-sudo /var/www/sync/testscreenoff > /dev/null 2>&1
-sudo killall -9 avconv > /dev/null 2>&1
-sudo killall -9 pwomxplayer.bin > /dev/null 2>&1
-sudo /var/www/sync/clearscreen.sh > /dev/null 2>&1
-sudo rm /var/www/*.log > /dev/null 2>&1
-sudo pkill gst-launch > /dev/null 2>&1
+sudo killall -9 fsaysuinput > /dev/null &
+sudo /var/www/sync/testscreenoff > /dev/null &
+sudo killall -9 avconv > /dev/null &
+sudo killall -9 pwomxplayer.bin > /dev/null &
+sudo /var/www/sync/clearscreen.sh > /dev/null &
+sudo rm /var/www/*.log > /dev/null &
+sudo pkill gst-launch > /dev/null &
 #Kill hPlayer
-killall -9 /home/pi/HPlayer/./HPlayer > /dev/null 2>&1
+killall -9 /home/pi/HPlayer/./HPlayer > /dev/null &
 #Kill janus server:
-sudo killall -9 janus > /dev/null 2>&1
+sudo killall -9 janus > /dev/null &
 #Remove Loopback device:
-sudo modprobe -r snd-loop > /dev/null 2>&1
+sudo modprobe -r snd-loop > /dev/null &
 #kill NDI sender
-sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video > /dev/null 2>&1
+sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video > /dev/null &
 #kill NDI finder
-sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find > /dev/null 2>&1
+sudo killall -9 /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find > /dev/null &
 #kill superpikix pi
-sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
+sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null &
 #kill camerafeed
-sudo killall -9  /usr/bin/raspivid > /dev/null 2>&1
+sudo killall -9  /usr/bin/raspivid > /dev/null &
 #kill superpikixpi
-sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null 2>&1
+sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null &
 #kill puredata
-sudo killall -9 /usr/bin/pd-extended > /dev/null 2>&1
+sudo killall -9 /usr/bin/pd-extended > /dev/null &
 #kill top command
 #sudo killall -9 top
-
+#without sleep its faster thean loading a new instance of omxplayer and would kill itself
+sleep 0.5

@@ -8,6 +8,7 @@ disable webfonts to prevent annoying loading timeout (hope this helped)<br />
 fixed diskspace and move resolution query<br />
 set audio is now on scripts and when factory preset it will set to both<br />
 some first code cleaning <br />
+tweaked stop button, now every task is 1 second faster!! <br />
 
 
 ## CP 2.5.2a 5.November 2020<br />
