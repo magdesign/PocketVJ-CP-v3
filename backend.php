@@ -17,30 +17,26 @@ if ($_GET['action'] == 'fastforward') {
 if ($_GET['action'] == 'stop') {
 	$outputtext =  "all players stopped";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	#system("sudo /var/www/sync/omxkill");
-	#system("sudo /var/www/sync/testscreenoff.py &");
-	#system("sudo killall -9 /home/pi/of_v0.8.4/addons/ofxPiMapper/example/./bin/example");
-	#system("sudo killall -9 /usr/bin/TCPSClient.bin");
-	#system("sudo /var/www/sync/rplay stop");
-	#system("sudo killall -9 tty-clock");
-	#system("sudo killall -9 mpg321");
-	#system("sudo killall -9 feh");
-	#system("sudo kill $(pidof X");
-	#system("sudo /var/www/sync/clearscreen.sh");
+
 }
 
 if ($_GET['action'] == 'stopvideo') {
 	$outputtext =  "stop video player only";
 	system ("sudo /var/www/sync/stopvideo > /dev/null 2>&1");
 }
-//# Video Control Section
+
+
 if ($_GET['action'] == 'getcontent') {
 	system ("sudo /var/www/sync/getcontent");
 	system ("sudo chmod 777 /media/internal/video/*");
 	$outputtext =  "content from your defined websource downloaded";
 }
 
+//////////////////////////
 //# Video Control Section
+//////////////////////////////
+
+
 
 if ($_GET['action'] == 'startseamless') {
 	$outputtext =  "start seamless video loop player";
@@ -700,26 +696,6 @@ if ($_GET['action'] == 'setosc') {
 }
 
 
-
-//# AirPlay support
-//restart airplay daemon:
-
-if ($_GET['action'] == 'airplayrestart') {
-	$outputtext =  "restart airplay service";
-	system("sudo /var/www/sync/rplay stop");
-	system("sudo /var/www/sync/rplay start");
-}
-
-//# RaspberryCast support
-
-//restart raspberrycast daemon:
-
-if ($_GET['action'] == 'picastrestart') {
-	$outputtext =  "restart raspberry cast service";
-	system("/home/pi/RaspberryCast/./RaspberryCast.sh stop");
-	system("/home/pi/RaspberryCast/./RaspberryCast.sh start");
-}
-
 //# Display IP
 
 if ($_GET['action'] == 'ipwifi') {
@@ -793,7 +769,6 @@ if ($_GET['action'] == 'analog2') {
 	system("sudo cp /var/www/sync/analog2 /boot/config.txt");
 }
 
-
 if ($_GET['action'] == 'clean') {
 	$outputtext =  "clean hidden files";
 	system("sudo rm -R /media/internal/.[DTf_]*");
@@ -808,9 +783,7 @@ if ($_GET['action'] == 'clean') {
 	system("sudo rm -R /media/usb/.[DTf_]*");
 	system("sudo rm -R /media/usb/__MACOSX");
 	system("sudo rm -Rf /media/usb/.Spotlight-V100/");
-
 }
-
 
 if ($_GET['action'] == 'screenon') {
 	$outputtext = shell_exec('sudo /opt/vc/bin/tvservice -p');
@@ -1090,11 +1063,12 @@ if ($_GET['action'] == 'updateall') {
 	//Update mappingconverter
 	system("sudo rm -rf /home/pi/openFrameworks/apps/myApps/mapping-converter2");
 	system("sudo unzip /var/www/sync/mappingconverter.zip -d /home/pi/openFrameworks/apps/myApps/");
-	//Update SuperPikixPi
-	//not implemented yet, create a zip and unpack
-	//
 	//Update OSC control in home folder
 	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
+	// disable camera on boot
+	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
+	// set audio to jack and hdmi
+	system("sudo /var/www/sync/setaudio_both");
 	//remove old chunk form CP 1.14
 	system("sudo rm /var/www/sitemap.xml");
 	//remove .xsession file
@@ -1123,26 +1097,15 @@ if ($_GET['action'] == 'factoryreset') {
 	system("sudo rm -rf /home/pi/.xsession");
 	//remove lost&found files
 	system ("rm -rf /media/lost+found/");
+	//disable camera on boot
+	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
+	// set audio to jack and hdmi
+	system("sudo /var/www/sync/setaudio_both");
 	//system("sudo rm -rf /tmp/*");
 	//system("sudo rm -rf /var/log/*");
 	//system("sudo rm -rf /var/tmp/*");
 	//system("sudo apt-get clean");
 }
-
-
-
-//# Set PocketVJ version
-
-if ($_GET['action'] == 'settoexhibition') {
-	$outputtext =  "Set to Exhibition";
-	//system("to be defined");
-}
-
-if ($_GET['action'] == 'settortc') {
-	$outputtext =  "Set to RTC";
-	//system("to be defined");
-}
-
 
 
 //# Set Wifi Channel
@@ -1783,18 +1746,6 @@ if ($_GET['action'] == 'setstatic102') {
 	system("sudo cp /var/www/sync/interfaces.static102 /etc/network/interfaces");
 }
 
-//# Expansion Board
-
-if ($_GET['action'] == 'setrtc') {
-	$outputtext =  "set to PocketVJ RTC";
-	system("sudo sed -ri 's/^dtoverlay=.+$/dtoverlay=i2c-rtc,ds1307/' /boot/config.txt");
-}
-
-if ($_GET['action'] == 'setexpansion') {
-	$outputtext =  "set to PocketVJ Expansion";
-	system("sudo sed -ri 's/^dtoverlay=.+$/dtoverlay=i2c-rtc,mcp7941x/' /boot/config.txt");
-}
-
 
 //# PiWall 4 Screen setup
 
@@ -1981,18 +1932,6 @@ if ($_GET['action'] == 'oscreceiver') {
 	$outputtext =  "start OSC Control Receiver";
 }
 
-
-//# Remote Access over Internet
-
-if ($_GET['action'] == 'remoteaccesson'){
-	$outputtext =  "empty";
-	//system("sudo needs to be defined");
-}
-
-if ($_GET['action'] == 'remoteaccessoff'){
-	$outputtext =  "empty";
-	//system("sudo needs to be defined");
-}
 
 
 //# Camera Live Feed
