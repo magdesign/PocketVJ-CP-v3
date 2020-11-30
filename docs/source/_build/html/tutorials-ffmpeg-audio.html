@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html4" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Muxing Audio &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Muxing Audio</a><ul>
+<li><a class="reference internal" href="#merging-video-and-audio-with-audio-re-encoding">Merging video and audio, with audio re-encoding</a></li>
+<li><a class="reference internal" href="#copying-the-audio-without-re-encoding">Copying the audio without re-encoding</a></li>
+<li><a class="reference internal" href="#replacing-audio-stream">Replacing audio stream</a></li>
+<li><a class="reference internal" href="#combine-6-mono-inputs-into-one-5-1-6-channel-audio-output">Combine 6 mono inputs into one 5.1 (6 channel) audio output</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Muxing Audio</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tutorials-ffmpeg-audio.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="muxing-audio">
+<h1>Muxing Audio<a class="headerlink" href="#muxing-audio" title="Permalink to this headline">¶</a></h1>
+<p>Muxing audio is a process to add audio to a video without re-rendering the whole video again.</p>
+<p>Muxing is less time consuming and keeps the video/audio quality of the original files.</p>
+<div class="section" id="merging-video-and-audio-with-audio-re-encoding">
+<h2>Merging video and audio, with audio re-encoding<a class="headerlink" href="#merging-video-and-audio-with-audio-re-encoding" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ffmpeg</span> <span class="pre">-i</span> <span class="pre">video.mp4</span> <span class="pre">-i</span> <span class="pre">audio.wav</span> <span class="pre">-c:v</span> <span class="pre">copy</span> <span class="pre">-c:a</span> <span class="pre">aac</span> <span class="pre">output.mp4</span></code></p>
+<p>We assume that the video file does not contain any audio stream yet and that the output format stays the same as the input format.</p>
+<p>The above command transcodes the audio, since MP4s cannot carry PCM audio streams. You can use any other desired audio codec if you want.
+See the FFmpeg Wiki: AAC Encoding Guide for more info.</p>
+<p>If your audio or video stream is longer, you can add the <code class="docutils literal notranslate"><span class="pre">-shortest</span></code> option so that ffmpeg will stop encoding once one file ends.</p>
+</div>
+<div class="section" id="copying-the-audio-without-re-encoding">
+<h2>Copying the audio without re-encoding<a class="headerlink" href="#copying-the-audio-without-re-encoding" title="Permalink to this headline">¶</a></h2>
+<p>If your output container can handle any codec (e.g. .mkv) then you can simply copy both audio and video streams:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ffmpeg</span> <span class="pre">-i</span> <span class="pre">video.mp4</span> <span class="pre">-i</span> <span class="pre">audio.wav</span> <span class="pre">-c</span> <span class="pre">copy</span> <span class="pre">output.mkv</span></code></p>
+</div>
+<div class="section" id="replacing-audio-stream">
+<h2>Replacing audio stream<a class="headerlink" href="#replacing-audio-stream" title="Permalink to this headline">¶</a></h2>
+<p>If your input video already contains an audio stream and you want to replace it, you need to tell ffmpeg which audio stream to take:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ffmpeg</span> <span class="pre">-i</span> <span class="pre">video.mp4</span> <span class="pre">-i</span> <span class="pre">audio.wav</span> <span class="pre">-c:v</span> <span class="pre">copy</span> <span class="pre">-c:a</span> <span class="pre">aac</span> <span class="pre">-map</span> <span class="pre">0:v:0</span> <span class="pre">-map</span> <span class="pre">1:a:0</span> <span class="pre">output.mp4</span></code></p>
+<p>The -map option makes ffmpeg only use the first video stream from the first input and the first audio stream from the second input for the output file.</p>
+</div>
+<div class="section" id="combine-6-mono-inputs-into-one-5-1-6-channel-audio-output">
+<h2>Combine 6 mono inputs into one 5.1 (6 channel) audio output<a class="headerlink" href="#combine-6-mono-inputs-into-one-5-1-6-channel-audio-output" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">ffmpeg</span> <span class="pre">-i</span> <span class="pre">front_left.wav</span> <span class="pre">-i</span> <span class="pre">front_right.wav</span> <span class="pre">-i</span> <span class="pre">front_center.wav</span> <span class="pre">-i</span> <span class="pre">lfe.wav</span> <span class="pre">-i</span> <span class="pre">back_left.wav</span> <span class="pre">-i</span> <span class="pre">back_right.wav</span> <span class="pre">\</span>
+<span class="pre">-filter_complex</span> <span class="pre">&quot;[0:a][1:a][2:a][3:a][4:a][5:a]join=inputs=6:channel_layout=5.1[a]&quot;</span> <span class="pre">-map</span> <span class="pre">&quot;[a]&quot;</span> <span class="pre">output.wav</span></code></p>
+<p>The join audio filter also allows you to manually choose the layout:</p>
+<p><code class="docutils literal notranslate"><span class="pre">ffmpeg</span> <span class="pre">-i</span> <span class="pre">front_left.wav</span> <span class="pre">-i</span> <span class="pre">front_right.wav</span> <span class="pre">-i</span> <span class="pre">front_center.wav</span> <span class="pre">-i</span> <span class="pre">lfe.wav</span> <span class="pre">-i</span> <span class="pre">back_left.wav</span> <span class="pre">-i</span> <span class="pre">back_right.wav</span> <span class="pre">\</span>
+<span class="pre">-filter_complex</span> <span class="pre">&quot;[0:a][1:a][2:a][3:a][4:a][5:a]join=inputs=6:channel_layout=5.1:map=0.0-FL|1.0-FR|2.0-FC|3.0-LFE|4.0-BL|5.0-BR[a]&quot;</span> <span class="pre">-map</span> <span class="pre">&quot;[a]&quot;</span> <span class="pre">output.wav</span></code></p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

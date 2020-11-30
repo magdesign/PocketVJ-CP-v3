@@ -1,0 +1,22 @@
+Content
+========
+
+Thank you for buying a PocketVJ, you are fantastic !
+
+
+
+.. toctree::
+   :maxdepth: 3
+  
+   01_
+   01_first_steps
+   tutorials
+   compositing
+
+
+
+
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
