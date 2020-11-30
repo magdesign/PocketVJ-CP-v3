@@ -1,13 +1,20 @@
 ## Roadmap
 **********
-##release new CP and name number it up to CP 3.0.0 so it correspondens to PVJ 3.9, would that make sense ?
+##
+
+- release new CP and name number it up to CP 3.0.0 so it correspondens to PVJ 3.9, would that make sense ?
 
 ### Priority:
+- check if any unnecessary daemons are running
+- add "fix permissions" button, when internal storage is not writable, add fix permissions to "update all"
+- speed up the stopall script to speed up all available functions
+- add omxplayer error output when setting to alsa/usb audio but no soundcard is recognized
+- add set audio to "both" when "factory reset" and "update all"
+- make elFinder as default
 - check multiscreen when all slaves and master have audio over usb, does it stay sync => make a function to change the sleep function on line 85 for short files to a shorter time!!
 - fix mapper audio volume
 - add mapper hdmi audio
-- disable splash option? 
-- sync stop: when in sync mode, send stop from master over network to all slaves
+- sync stop: when in sync mode, send stop from master over network to all slaves (tcp. commands, is currently on a custom button)
 - add countdown with processing and input variables
 - set static IP resp. set to dhcp, resp, the deplay ip script does not change the ip on those! implement the fix in backend.php under updateall use iprange script from exh
 - add the startlesseronce scripts for faster video start via OSC
