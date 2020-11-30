@@ -1,0 +1,73 @@
+#!/bin/bash
+
+#set to audio hdmi
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterusb &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster03 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster04 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster05 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster06 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster07 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster08 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster09 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster10 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster11 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster12 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster13 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster14 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster15 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmaster16 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone03 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone04 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone05 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone06 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone07 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone08 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone09 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone10 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone11 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmasterone12 &
+#looped without sync
+	sudo sed -ri 's/PLAYER=.*/PLAYER="omxplayer -o hdmi"/' /var/www/sync/startlesshelper &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless03 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless04 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless05 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless06 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless07 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless08 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless09 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless10 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless11 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startless12 &
+#special looped without sync without stop
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser03 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser04 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser05 &
+#set the audio on dmx scripts
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio03 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio04 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio05 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid02 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid03 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid04 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid05 &
+#set the audio for midi script
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmididmxvideoplay01 &
+	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmididmxaudioplay01 &
+#set on pir 
+    sudo sed -ri "/^OMXPLAYER = \['omxplayer', '-o',/c\OMXPLAYER = ['omxplayer', '-o', 'hdmi', '--no-osd']" /var/www/sync/startpir1.py &
+

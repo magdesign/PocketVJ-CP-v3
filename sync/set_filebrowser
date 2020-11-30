@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#switch to filebrowser as standard filebrowser
+
+#set extplorer to filebrowser:
+sudo sed -i 's#<div class="col"><a class="d-xl-flex justify-content-xl-center" href="/eXtplorer/" target="_blank"><img class="d-xl-flex justify-content-xl-center shortcuts_header" src="assets/img/filebrowser_icon.svg" data-toggle="tooltip" title="filebrowser"></a></div>#<div class="col"><a class="d-xl-flex justify-content-xl-center" target="_blank" onclick="window.open(`//${window.location.hostname}:8060`)"><img class="d-xl-flex justify-content-xl-center shortcuts_header" src="assets/img/filebrowser_icon.svg" data-toggle="tooltip" title="filebrowser"></a></div>#g' /var/www/index.php
+
+#set elFinder to filebrowser:
+sudo sed -i 's#<div class="col"><a class="d-xl-flex justify-content-xl-center" href="/elFinder/elfinder.src.html" target="_blank"><img class="d-xl-flex justify-content-xl-center shortcuts_header" src="assets/img/filebrowser_icon.svg" data-toggle="tooltip" title="filebrowser"></a></div>#<div class="col"><a class="d-xl-flex justify-content-xl-center" target="_blank" onclick="window.open(`//${window.location.hostname}:8060`)"><img class="d-xl-flex justify-content-xl-center shortcuts_header" src="assets/img/filebrowser_icon.svg" data-toggle="tooltip" title="filebrowser"></a></div>#g' /var/www/index.php
+
+
+#enable filebrowser at boot
+sudo systemctl start filebrowser.service
+sudo systemctl enable filebrowser.service
+
+
