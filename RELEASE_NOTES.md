@@ -1,8 +1,18 @@
 # PocketVJ 3.x /  Control Panel 2.x.x
 
+
+
+## CP 2.5.2b 30.November 2020<br />
+
+disable webfonts to prevent annoying loading timeout (hope this helped)<br />
+fixed diskspace and move resolution query<br />
+set audio is now on scripts and when factory preset it will set to both<br />
+some first code cleaning <br />
+
+
 ## CP 2.5.2a 5.November 2020<br />
 
-fixed usb mount trouble, mounting mount /dev/sda2 /media/usb/ instead of sda1 seems to fix the problem
+fixed usb mount trouble, mounting mount /dev/sda2 /media/usb/ instead of sda1 seems to fix the problem<br />
 
 ## CP 2.5.2 14.October 2020<br />
 

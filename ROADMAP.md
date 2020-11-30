@@ -5,12 +5,10 @@
 - release new CP and name number it up to CP 3.0.0 so it correspondens to PVJ 3.9, would that make sense ?
 
 ### Priority:
-- check if any unnecessary daemons are running
+
 - add "fix permissions" button, when internal storage is not writable, add fix permissions to "update all"
 - speed up the stopall script to speed up all available functions
 - add omxplayer error output when setting to alsa/usb audio but no soundcard is recognized
-- add set audio to "both" when "factory reset" and "update all"
-- make elFinder as default
 - check multiscreen when all slaves and master have audio over usb, does it stay sync => make a function to change the sleep function on line 85 for short files to a shorter time!!
 - fix mapper audio volume
 - add mapper hdmi audio
