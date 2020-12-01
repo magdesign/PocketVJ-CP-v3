@@ -5,7 +5,7 @@
 - release new CP and name number it up to CP 3.0.0 so it correspondens to PVJ 3.9, would that make sense ?
 
 ### Priority:
-
+- with elFInder upload is limited to 2GB, find a fix: https://github.com/Studio-42/elFinder/issues/3231 or change browser again... :(
 - add "fix permissions" button, when internal storage is not writable, add fix permissions to "update all"
 - speed up the stopall script to speed up all available functions
 - add omxplayer error output when setting to alsa/usb audio but no soundcard is recognized
