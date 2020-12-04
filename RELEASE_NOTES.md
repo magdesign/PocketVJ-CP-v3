@@ -1,6 +1,8 @@
 # PocketVJ 3.x /  Control Panel 2.x.x
 
+## CP 2.5.2c 04. Decemeber 2020<br />
 
+added 0.5 seconds more to stopall, since it was faster than loading omxplayer<br />
 
 ## CP 2.5.2b 30.November 2020<br />
 
