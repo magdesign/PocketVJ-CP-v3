@@ -45,4 +45,4 @@ sudo killall -9 /usr/bin/pd-extended > /dev/null &
 #kill top command
 #sudo killall -9 top
 #without sleep its faster thean loading a new instance of omxplayer and would kill itself
-sleep 0.5
+sleep 1
