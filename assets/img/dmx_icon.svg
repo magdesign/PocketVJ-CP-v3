@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 7.9375002 7.9375002"
+   height="30"
+   width="30">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-140.1831,-66.494875)" />
+  <g
+     id="layer2"
+     transform="translate(-140.1831,-66.494875)">
+    <g
+       id="g868"
+       transform="matrix(0.10195269,0,0,0.10195269,125.89105,59.715543)">
+      <path
+         id="path845"
+         style="fill:#000000;stroke:#000000;stroke-width:0"
+         d="m 178.92647,66.494885 a 38.800225,38.800225 0 0 0 -38.74337,38.800215 38.800225,38.800225 0 0 0 38.80021,38.80022 38.800225,38.800225 0 0 0 38.80022,-38.80022 38.800225,38.800225 0 0 0 -38.80022,-38.800215 38.800225,38.800225 0 0 0 -0.0568,0 z m -0.0305,5.250326 a 33.549979,33.549979 0 0 1 0.0873,0 33.549979,33.549979 0 0 1 33.55041,33.549889 33.549979,33.549979 0 0 1 -33.55041,33.54989 33.549979,33.549979 0 0 1 -33.54989,-33.54989 33.549979,33.549979 0 0 1 33.46256,-33.549889 z" />
+      <circle
+         style="fill:#000000;stroke:#000000;stroke-width:0"
+         id="path852"
+         cx="161.2921"
+         cy="97.522392"
+         r="5.7237749" />
+      <circle
+         style="fill:#000000;stroke:#000000;stroke-width:0"
+         id="circle854"
+         cx="197.74977"
+         cy="97.522392"
+         r="5.7237749" />
+      <circle
+         style="fill:#000000;stroke:#000000;stroke-width:0"
+         id="circle856"
+         cx="196.259"
+         cy="116.34335"
+         r="5.7237749" />
+      <circle
+         style="fill:#000000;stroke:#000000;stroke-width:0"
+         id="circle858"
+         cx="162.90039"
+         cy="116.34335"
+         r="5.7237749" />
+      <circle
+         style="fill:#000000;stroke:#000000;stroke-width:0"
+         id="circle860"
+         cx="179.6496"
+         cy="126.72054"
+         r="5.7237749" />
+    </g>
+  </g>
+</svg>

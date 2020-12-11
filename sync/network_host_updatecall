@@ -1,0 +1,65 @@
+#!/bin/sh -e
+
+
+#Deploy script for PocketVJ exhibition
+
+test `id -ru` -ne 0 && {
+  exit "error: must run with sudo"
+}
+
+test -z "$1" && {
+  exit "error: must provide pi number"
+}
+
+
+# unit id
+id="$1"
+
+
+
+
+#configure static network script
+cat <<-EOD > /var/www/sync/interfaces.static
+auto lo
+auto eth0
+iface lo inet loopback
+iface eth0 inet static
+address 192.168.2.$id
+netmask 255.255.255.0
+gateway 192.168.2.1
+
+
+allow-hotplug wlan0
+iface wlan0 inet static
+address 2.0.0.$id
+netmask 255.255.255.0
+
+dns-nameservers 8.8.4.4 8.8.8.8
+up iptables-restore < /etc/iptables.ipv4.nat
+
+EOD
+
+
+#configure dhcp network script
+cat <<-EOD > /var/www/sync/interfaces.dhcp
+auto lo
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+
+iface wlan0 inet static
+address 2.0.0.$id
+netmask 255.255.255.0
+gateway 2.0.0.1
+network 2.0.0.0
+
+dns-nameservers 8.8.4.4 8.8.8.8
+up iptables-restore < /etc/iptables.ipv4.nat
+
+EOD
+
+
+
+# EOF
+

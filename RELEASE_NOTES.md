@@ -1,4 +1,18 @@
-# PocketVJ 3.x /  Control Panel 2.x.x
+# PocketVJ 3.x /  Control Panel 3.x.x
+
+## CP 3.0.0 11. December 2020<br />
+
+complete rewrite of CP, massive UI improvements<br />
+added video without sync<br />
+new filebrowser (if it is working?)<br />
+
+## Image 3.91 11.December 2020<br />
+
+added python3-pygame python-pygame python3-tk python-tk<br />
+increased swap to 1024<br />
+resized partitions for more space on SYSTEM<br />
+cleaned up some stuff<br />
+removed streamer since modern browsers do not support anymore<br />
 
 ## CP 2.5.2c 04. Decemeber 2020<br />
 

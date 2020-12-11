@@ -2,6 +2,10 @@
 
 #kill videoplayer
 sudo /var/www/sync/omxkill > /dev/null &
+
+#kill omxplayer less loop file, player will be killed later on
+sudo kill $(pgrep 'startlesshelper')  > /dev/null 2>&1 &
+
 #kill mapper
 sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null &
 sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null &

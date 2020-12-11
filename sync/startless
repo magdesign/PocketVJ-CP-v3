@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+#kill all running tasks
+/var/www/sync/stopall
+#sleep 3
+
+#start the lesshelper script which will play all files in folder
+sudo /var/www/sync/startlesshelper > /dev/null 2>&1 & echo $! &
+

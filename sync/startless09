@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#play vido 09 seamless looped without sync
+
+/usr/bin/omxplayer --no-osd --loop -o both /media/internal/video/09* > /dev/null 2>&1 & echo $! &

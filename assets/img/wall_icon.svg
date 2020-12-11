@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 7.9375002 7.9375002"
+   height="30"
+   width="30"
+   sodipodi:docname="wall_icon.svg"
+   inkscape:version="1.0.1 (1.0.1+r74)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="1527"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="33.6"
+     inkscape:cx="15"
+     inkscape:cy="15"
+     inkscape:window-x="0"
+     inkscape:window-y="49"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-140.1831,-66.494875)" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.337075;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect839"
+     width="3.2348309"
+     height="3.2700782"
+     x="0.47641712"
+     y="0.41889077" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.337075;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect839-3"
+     width="3.2348309"
+     height="3.2700782"
+     x="4.1661382"
+     y="0.41889077" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.337074;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect839-5"
+     width="3.2348309"
+     height="3.2700782"
+     x="0.47641683"
+     y="4.2181354" />
+  <rect
+     style="fill:none;stroke:#000000;stroke-width:0.337074;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect839-3-3"
+     width="3.2348309"
+     height="3.2700782"
+     x="4.1661382"
+     y="4.2181354" />
+</svg>

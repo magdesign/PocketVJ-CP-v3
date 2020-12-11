@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 # Determine the IP address of the "wlan0" network interface
 export IP=`ip addr show wlan0 | grep -oP '(?<=inet )(\d+\.){3}\d+'`
 

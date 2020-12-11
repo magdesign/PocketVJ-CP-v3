@@ -32,11 +32,19 @@ if ($_GET['action'] == 'getcontent') {
 	$outputtext =  "content from your defined websource downloaded";
 }
 
-//////////////////////////
-//# Video Control Section
-//////////////////////////////
+//////////////////
+//# Video Section
+/////////////////
 
+if ($_GET['action'] == 'setsync_long') {
+	$outputtext =  "set sync script to long videos";
+	system ("sudo cp /var/www/sync/omxplayer-sync-long /usr/bin/omxplayer-sync");
+}
 
+if ($_GET['action'] == 'setsync_short') {
+	$outputtext =  "stet sync script to short videos";
+	system ("sudo cp /var/www/sync/omxplayer-sync-short /usr/bin/omxplayer-sync");
+}
 
 if ($_GET['action'] == 'startseamless') {
 	$outputtext =  "start seamless video loop player";
@@ -286,10 +294,146 @@ if ($_GET['action'] == 'startmasteronce20') {
 	$outputtext = "start video 20 once";
 }
 
+///////////////////////
+//# Video without sync
+///////////////////////
+
+if ($_GET['action'] == 'startless') {
+	exec("sudo /var/www/sync/startless > /dev/null 2>&1");
+	$outputtext = "start video without sync";
+}
+
+if ($_GET['action'] == 'startless01') {
+	exec("sudo /var/www/sync/startless01");
+	$outputtext = "start video 01";
+}
+
+if ($_GET['action'] == 'startless02') {
+	exec("sudo /var/www/sync/startless02");
+	$outputtext = "start video 02";
+}
+
+if ($_GET['action'] == 'startless03') {
+	exec("sudo /var/www/sync/startless03");
+	$outputtext = "start video 03";
+}
+
+if ($_GET['action'] == 'startless04') {
+	exec("sudo /var/www/sync/startless04");
+	$outputtext = "start video 04";
+}
+
+if ($_GET['action'] == 'startless05') {
+	exec("sudo /var/www/sync/startless05");
+	$outputtext = "start video 05";
+}
+
+if ($_GET['action'] == 'startless06') {
+	exec("sudo /var/www/sync/startless06");
+	$outputtext = "start video 06";
+}
+
+if ($_GET['action'] == 'startless07') {
+	exec("sudo /var/www/sync/startless07");
+	$outputtext = "start video 07";
+}
+
+if ($_GET['action'] == 'startless08') {
+	exec("sudo /var/www/sync/startless08");
+	$outputtext = "start video 08";
+}
+
+if ($_GET['action'] == 'startless09') {
+	exec("sudo /var/www/sync/startless09");
+	$outputtext = "start video 09";
+}
+
+if ($_GET['action'] == 'startless10') {
+	exec("sudo /var/www/sync/startless10");
+	$outputtext = "start video 10";
+}
+
+if ($_GET['action'] == 'startless11') {
+	exec("sudo /var/www/sync/startless11");
+	$outputtext = "start video 11";
+}
+
+if ($_GET['action'] == 'startless12') {
+	exec("sudo /var/www/sync/startless12");
+	$outputtext = "start video 12";
+}
+
+
+//////////////////////////
+// Video once without sync
+//////////////////////////
+
+if ($_GET['action'] == 'startlessonce01') {
+	exec("sudo /var/www/sync/startlessonce01");
+	$outputtext = "start video 01 once";
+}
+
+if ($_GET['action'] == 'startlessonce02') {
+	exec("sudo /var/www/sync/startlessonce02");
+	$outputtext = "start video 02 once";
+}
+
+if ($_GET['action'] == 'startlessonce03') {
+	exec("sudo /var/www/sync/startlessonce03");
+	$outputtext = "start video 03 once";
+}
+
+if ($_GET['action'] == 'startlessonce04') {
+	exec("sudo /var/www/sync/startlessonce04");
+	$outputtext = "start video 04 once";
+}
+
+if ($_GET['action'] == 'startlessonce05') {
+	exec("sudo /var/www/sync/startlessonce05");
+	$outputtext = "start video 05 once";
+}
+
+if ($_GET['action'] == 'startlessonce06') {
+	exec("sudo /var/www/sync/startlessonce06");
+	$outputtext = "start video 06 once";
+}
+
+if ($_GET['action'] == 'startlessonce07') {
+	exec("sudo /var/www/sync/startlessonce07");
+	$outputtext = "start video 07 once";
+}
+
+if ($_GET['action'] == 'startlessonce08') {
+	exec("sudo /var/www/sync/startlessonce08");
+	$outputtext = "start video 08 once";
+}
+
+if ($_GET['action'] == 'startlessonce09') {
+	exec("sudo /var/www/sync/startlessonce09");
+	$outputtext = "start video 09 once";
+}
+
+if ($_GET['action'] == 'startlessonce10') {
+	exec("sudo /var/www/sync/startlessonce10");
+	$outputtext = "start video 10 once";
+}
+
+//// video slave
+/////
+
+if ($_GET['action'] == 'stopslaves') {
+	$outputtext =  "stop to all slaves sent";
+	system ("sudo /var/www/sync/stopslaves > /dev/null 2>&1");
+}
 
 if ($_GET['action'] == 'startslave') {
 	exec("sudo /var/www/sync/startslave");
 	$outputtext =  "start player as slave";
+}
+
+if ($_GET['action'] == 'startslaveonce') {
+	exec("sudo /var/www/sync/startslaveonce");
+	$outputtext =  "start player as slave once";
 }
 
 if ($_GET['action'] == 'startmasterusb') {
@@ -370,6 +514,14 @@ if ($_GET['action'] == 'softedge200v') {
 
 //# Slideshow Time
 
+if ($_GET['action'] == 'slidetime0') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslidesusb");
+	system("sudo /var/www/sync/startimage > /dev/null &");
+	$outputtext =  "set slideshowtime to 15s";
+}
+
 if ($_GET['action'] == 'slidetime5') {
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo sed -ri 's/^DELAY=.+$/DELAY=5/' /var/www/sync/xsessionslideshow");
@@ -394,13 +546,22 @@ if ($_GET['action'] == 'slidetime15') {
 	$outputtext =  "set slideshowtime to 15s";
 }
 
-if ($_GET['action'] == 'slidetime0') {
+if ($_GET['action'] == 'slidetime30') {
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslideshow");
-	system("sudo sed -ri 's/^DELAY=.+$/DELAY=0.1/' /var/www/sync/xsessionslidesusb");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=30/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=30/' /var/www/sync/xsessionslidesusb");
 	system("sudo /var/www/sync/startimage > /dev/null &");
-	$outputtext =  "set slideshowtime to 15s";
+	$outputtext =  "set slideshowtime to 30s";
 }
+
+if ($_GET['action'] == 'slidetime60') {
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=60/' /var/www/sync/xsessionslideshow");
+	system("sudo sed -ri 's/^DELAY=.+$/DELAY=60/' /var/www/sync/xsessionslidesusb");
+	system("sudo /var/www/sync/startimage > /dev/null &");
+	$outputtext =  "set slideshowtime to 60s";
+}
+
 
 //# PDF player
 
@@ -469,11 +630,22 @@ if ($_GET['action'] == 'testtoneleft') {
 	$outputtext = "sinus testtone left";
 }
 
+if ($_GET['action'] == 'volume_up') {
+	system("sudo su - pvj -c 'amixer set Master 100%'");
+	system("sudo alsactl store");
+	$outputtext =  "<pre>$output</pre>";
+}
+
 //# DMX OLA stuff
 
 if ($_GET['action'] == 'startola') {
 	exec("sudo /etc/init.d/olad start");
 	$outputtext = "OLA Daemon started, ready on port :9090";
+}
+
+if ($_GET['action'] == 'stopola') {
+	exec("sudo /etc/init.d/olad stop");
+	$outputtext = "OLA Daemon stopped";
 }
 
 if ($_GET['action'] == 'startqlcplus') {
@@ -513,7 +685,7 @@ if ($_GET['action'] == 'mount') {
 
 //# Autostart behaviour
 
-if ($_GET['action'] == 'master') {
+if ($_GET['action'] == 'setmaster') {
 	$outputtext = "master set";
 	system("sudo cp /var/www/sync/rc.local.master /etc/rc.local");
 }
@@ -529,10 +701,17 @@ if ($_GET['action'] == 'autostartloop02') {
 }
 
 
-if ($_GET['action'] == 'slave') {
+if ($_GET['action'] == 'setslave') {
 	$outputtext =  "slave set";
 	system("sudo cp /var/www/sync/rc.local.slave /etc/rc.local");
 }
+
+if ($_GET['action'] == 'setslaveonce') {
+	$outputtext =  "slaveonce set";
+	system("sudo cp /var/www/sync/rc.local.slaveonce /etc/rc.local");
+}
+
+
 
 if ($_GET['action'] == 'seamless') {
 	$outputtext =  "set to seamless player";
@@ -644,21 +823,6 @@ if ($_GET['action'] == 'setsyphon') {
 	system("sudo cp /var/www/sync/rc.local.syphon /etc/rc.local");
 }
 
-if ($_GET['action'] == 'sethplayer') {
-	$outputtext =  "set to hPlayer OSC";
-	system("sudo cp /var/www/sync/rc.local.hplayer /etc/rc.local");
-}
-
-if ($_GET['action'] == 'setairplay') {
-	$outputtext =  "set to Airplay Mirror";
-	system("sudo cp /var/www/sync/rc.local.airplay /etc/rc.local");
-	system("sudo rm /home/pi/.xsession");
-}
-
-if ($_GET['action'] == 'setpicast') {
-	$outputtext =  "set to RaspberryCast Mirror";
-	system("sudo cp /var/www/sync/rc.local.picast /etc/rc.local");
-}
 
 if ($_GET['action'] == 'autostartclock') {
 	$outputtext =  "set to autostart with clock display";
@@ -785,6 +949,38 @@ if ($_GET['action'] == 'clean') {
 	system("sudo rm -Rf /media/usb/.Spotlight-V100/");
 }
 
+//////
+/// Filehandling
+
+if ($_GET['action'] == 'defaultelfinder') {
+	system ("sudo /var/www/sync/set_elfinder");
+		//this is to disable filebrowser daemon
+	//system ("sudo systemctl stop filebrowser.service");
+	//system ("sudo systemctl disable filebrowser.service");
+	$outputtext =  "elFinder default";
+}
+
+if ($_GET['action'] == 'defaultextplorer') {
+	system ("sudo /var/www/sync/set_extplorer");
+	//this is to disable filebrowser daemon
+	//system ("sudo systemctl stop filebrowser.service");
+	//system ("sudo systemctl disable filebrowser.service");
+	$outputtext =  "eXtplorer default";
+}
+
+if ($_GET['action'] == 'defaultfilebrowser') {
+	system ("sudo /var/www/sync/set_filebrowser");
+	$outputtext =  "filebrowser default";
+}
+
+if ($_GET['action'] == 'openfilebrowser') {
+	system ("sudo systemctl start filebrowser.service");
+	$outputtext =  "filebrowser open";
+}
+
+// Screen
+//////
+
 if ($_GET['action'] == 'screenon') {
 	$outputtext = shell_exec('sudo /opt/vc/bin/tvservice -p');
 }
@@ -834,6 +1030,18 @@ if ($_GET['action'] == 'getresolution') {
 	$outputtext = wordwrap($preoutputtext, 50, "<br />\n");
 }
 
+if ($_GET['action'] == 'resolutionquery_dmt') {
+    //$output = shell_exec('sudo tvservice -d edid.dat');
+	//$output = shell_exec('sudo edidparser edid.dat');
+	$output = shell_exec('sudo /opt/vc/bin/tvservice -m DMT');
+	$outputtext = "<pre>$output</pre>";
+}
+
+if ($_GET['action'] == 'resolutionquery_cea') {
+	$output = shell_exec('sudo /opt/vc/bin/tvservice -m CEA');
+	$outputtext = "<pre>$output</pre>";
+}
+
 if ($_GET['action'] == 'parser') {
     $output = shell_exec('sudo tvservice -d edid.dat');
     $output = shell_exec('sudo edidparser edid.dat');
@@ -857,151 +1065,30 @@ if ($_GET['action'] == 'diskspace') {
     $outputtext = "<pre>$output</pre>";
 }
 
-
-//# Update & Firmmare Stuff
-
-if ($_GET['action'] == 'firmwareupdate') {
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo apt-get remove omxplayer");
-	system("rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer");
-	system("rm -f /usr/bin/omxplayer-sync");
-	system ("rm -f /usr/bin/dbuscontrol.sh");
-	system("sudo apt-get clean");
-    system("sudo cp /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
-    system("sudo dpkg -i *.deb /var/cache/apt/archives/python3-dbus_1.2.0-2+b1_armhf.deb");
-    system("sudo cp /var/www/sync/libssh-4_armhf.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
-   	system("sudo dpkg -i *.deb /var/cache/apt/archives/libssh-4_0.6.3-4+deb8u2_armhf.deb");
-	//new omxplayer version:
-	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
-  	system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
-  	//old omxplayer version:
-	//system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
-  	//system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
-  	//cleanup:
-	system("sudo apt-get clean");
-    //system("sudo cp /var/www/sync/omxplayer /usr/bin/omxplayer");
-	//system("sudo cp /var/www/sync/omxplayer.bin /usr/bin/omxplayer.bin");
-	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
-	system("sudo chmod a+x /usr/bin/omxplayer");
-	system("sudo chmod a+x /usr/bin/omxplayer.bin");
-	system("sudo chmod a+x /usr/bin/omxplayer-sync");
-	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	$outputtext =  "Player & Sync to PVJ v3.x";
+if ($_GET['action'] == 'buildversion') {
+	$outputtext = shell_exec('cat /etc/pvj_version');
 }
 
-if ($_GET['action'] == 'controlpanel') {
-	$outputtext =  "update ControlPanel USB";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo cp -r /media/usb/PocketVJ-CP-v3-master.zip /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www");
-	system("sudo chmod 755 -R /var/www");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
-	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	$outputtext =  "ControlPanel Updated";
-}
-
-if ($_GET['action'] == 'controlpanelintern') {
-	$outputtext =  "update ControlPanel internal, .zip must be provided";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
-	system("sudo chmod 755 -R /var/www/");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
-	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	$outputtext =  "ControlPanel Update";
-
-}
-
-if ($_GET['action'] == 'controlpanelweb') {
-	$outputtext =  "update ControlPanel via internet";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo wget https://github.com/magdesign/PocketVJ-CP-v3/archive/master.zip -O /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
-	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
-	system("sudo chmod 755 -R /var/www/");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master.zip");
-	system("sudo rm -r /media/internal/PocketVJ-CP-v3-master");
-	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	$outputtext =  "ControlPanel Update";
-
-}
+//# Update Mapper
 
 if ($_GET['action'] == 'mapperupdate') {
 	$outputtext =  "update mapper";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /");
-	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-		//Add Mapper Remote
-  system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
-	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
-}
-
-if ($_GET['action'] == 'mapperaudioupdate') {
-	$outputtext =  "update mapper";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperAudio.zip -d /");
-	//following two lines are only used when .zipped different, as on this release
-	system ("sudo rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("sudo rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	system("sudo unzip /var/www/sync/mapper_all.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
 	//Add Mapper Remote
-  system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
-	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
-
-}
-
-if ($_GET['action'] == 'mapperupdateold') {
-	$outputtext =  "update mapper performance";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperNoAudioold.zip -d /");
-	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	//system ("rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	//Add Mapper Remote
-    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
-	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
 }
 
-if ($_GET['action'] == 'mapperaudioupdateold') {
-	$outputtext =  "update mapper performance";
-	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
-	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperAudioold.zip -d /");
-	//following two lines are only used when .zipped different, as on this release
-	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	//Add Mapper Remote
-    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
-	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
-
+if ($_GET['action'] == 'mapperupdatehdmi') {
+	$outputtext =  "not working yet";
 }
 
-
+// Update All
+//////////////
 
 if ($_GET['action'] == 'updateall') {
 	//Update CP
@@ -1024,10 +1111,7 @@ if ($_GET['action'] == 'updateall') {
 	//new omxplayer version:
 	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
   	system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
-  	//old omxplayer version:
-	//system("sudo cp /var/www/sync/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
-	//system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20160923-dfea8c9_armhf.deb");
-	//cleanup:
+  	//cleanup:
 	system("sudo apt-get clean");
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
 	system("sudo chmod a+x /usr/bin/omxplayer");
@@ -1039,19 +1123,13 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
 	//Update timer.txt
 	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	//Update Mapper
+	//Update Mappers
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapperNoAudio.zip -d /");
+	system("sudo unzip /var/www/sync/mapper_all.zip -d /");
 	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
 	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	//Add Mapper Remote
-    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server");
-	system("sudo unzip /var/www/sync/example_remote-server.zip -d /");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
-    //Add Mapper Camera
-    system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper/example_camera");
-	system("sudo unzip /var/www/sync/example_camera.zip -d /");
+	//set ip on network scripts to match pvj current ip
+	system("sudo /var/www/sync/iprangeUpdatecall");
 	//TCPSyphon new tcpsyphon needs debian strech libs!!
 	//reinstalls TCPSyphon
 	system("sudo rm /usr/bin/TCPSClient.bin");
@@ -1075,8 +1153,19 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo rm -rf /home/pi/.xsession");
 	//remove git folder
 	system("sudo rm -rf /var/www/.git");
+	//remove chunk from webflow
+	system("sudo rm -rf /var/www/icons");
+	system("sudo rm -rf /var/www/streamer");
+	system("sudo rm -rf /var/www/css");
+	system("sudo rm -rf /var/www/images");
+	//remove filebrowser, if there is one
+	system("sudo rm -rf /var/www/filebrowser");
+	//install filebrowser from zip
+	system("sudo unzip /var/www/sync/filebrowser -d /");
+	//copy filebrowser daemon
+	system("sudo cp /var/www/filebrowser/filebrowser.service /etc/systemd/system/filebrowser.service");
 	//Text Output
-	$outputtext =  "Update Controlpanel, Mapper, OMXPLAYER, Timer, Boot";
+	$outputtext =  "Updated all, refresh browser";
 }
 
 if ($_GET['action'] == 'factoryreset') {
@@ -1105,6 +1194,13 @@ if ($_GET['action'] == 'factoryreset') {
 	//system("sudo rm -rf /var/log/*");
 	//system("sudo rm -rf /var/tmp/*");
 	//system("sudo apt-get clean");
+	//check if this is still relevant for stopping
+	exec("sudo update-rc.d olad disable");
+	exec("sudo killall -9 /usr/bin/olad");
+	//disable camera
+	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
+	//set audio to jack and hdmi
+	system("sudo /var/www/sync/setaudio_both");
 }
 
 
@@ -1229,13 +1325,17 @@ if ($_GET['action'] == 'alsa_out') {
 	$outputtext =  "Audio set to alsa:hw:1,0";
 }
 
-
 //# filename fixer
 if ($_GET['action'] == 'namefixer') {
 	system("sudo /var/www/sync/./namefixer > /dev/null 2>&1");
         $outputtext =  "fixed all filenames";
-
 }
+
+if ($_GET['action'] == 'permissionfixer') {
+	system("sudo chmod 777 -R /media > /dev/null 2>&1");
+        $outputtext =  "fixed all permissions";
+}
+
 
 //# conform images to hd
 
@@ -1429,22 +1529,22 @@ if ($_GET['action'] == 'mappergrid') {
 
 if ($_GET['action'] == 'mapperimport1') {
 	$outputtext =  "import mappersetting1.xml";
-	system("sudo /var/www/sync/mapperimport1");
+	system("sudo /var/www/sync/mapperimport1  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport2') {
 	$outputtext =  "import mappersetting2.xml";
-	system("sudo /var/www/sync/mapperimport2");
+	system("sudo /var/www/sync/mapperimport2  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport3') {
 	$outputtext =  "import mappersetting3.xml";
-	system("sudo /var/www/sync/mapperimport3");
+	system("sudo /var/www/sync/mapperimport3  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport4') {
 	$outputtext =  "import mappersetting4.xml";
-	system("sudo /var/www/sync/mapperimport4");
+	system("sudo /var/www/sync/mapperimport4  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport5') {
@@ -1672,8 +1772,9 @@ if ($_GET['action'] == 'impresslast') {
 }
 
 if ($_GET['action'] == 'impressrelaunch') {
-	$outputtext =  "Relaunch Impress";
-	system("sudo pkill soffice.bin");
+	$outputtext =  "Launch Impress";
+	system("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	//system("sudo pkill soffice.bin");
 	system("sudo su -s /bin/bash -c startx pi&");
 }
 
@@ -1798,39 +1899,6 @@ if ($_GET['action'] == 'piwall_masterloop') {
 	system("sudo /var/www/sync/piwall_master > /dev/null &");
 }
 
-//# Stream Audio from ALSA to Janus server only available in PocketVJ 3.2
-//# does not work when usb soundcard is connected, due indexing of devices, loopback must be device 2
-//# check with cat /proc/asound/modules
-//# Access with link: http://192.168.2.100/streamer/index.html
-
-if ($_GET['action'] == 'audiostream') {
-	system("sudo /var/www/sync/startmasterstream");
-	$outputtext =  "start video master loop and send audio to server";
-}
-
-if ($_GET['action'] == 'audiostreamslave') {
-	system("sudo /var/www/sync/startslavestream");
-	$outputtext =  "start video slave loop and send audio to server";
-}
-
-if ($_GET['action'] == 'audiostreamseamless') {
-	system("sudo /var/www/sync/startseamlessstream");
-	$outputtext =  "start video seamless and send audio to server";
-}
-
-if ($_GET['action'] == 'startaudiostream') {
-	exec("sudo /var/www/sync/startaudiostream");
-	$outputtext = "start audio streaming player";
-}
-
-if ($_GET['action'] == 'audiostreamstop') {
-	$outputtext =  "stop video master loop and stop audio server";
-	system("sudo /var/www/sync/omxkill");
-	system("sudo pkill gst-launch");
-	system("sudo killall -9 janus");
-	system("sudo modprobe -r snd-aloop");
-}
-
 //# TCPSyphon Receiver
 
 if ($_GET['action'] == 'tcpsserver') {
@@ -1855,23 +1923,6 @@ if ($_GET['action'] == 'tcpsserver_topright') {
 if ($_GET['action'] == 'tcpsserver_topleft') {
 	system("sudo /var/www/sync/tcpsserver_topleft");
 	$outputtext =  "re/start TCPSyphon Receiver topleft";
-}
-
-
-//# NDI Receiver
-
-if ($_GET['action'] == 'ndireceiver') {
-	$output = shell_exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Find/./NDIlib_Find');
-	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = "$preoutputtext";
-}
-
-//# NDI sender
-
-if ($_GET['action'] == 'ndisend') {
-	$output = shell_exec('sudo /home/pi/NDI_SDK/examples/C++/NDIlib_Send_Video/./NDIlib_Send_Video /media/internal/video/* &');
-	$preoutputtext =  "<pre>$output</pre>";
-	$outputtext = "$preoutputtext";
 }
 
 //# Start Screenshare
@@ -1917,8 +1968,6 @@ if ($_GET['action'] == 'passwdenable'){
 	system("sudo cp /var/www/sync/passwdenable /etc/lighttpd/lighttpd.conf");
 	system("sudo service lighttpd restart");
 }
-
-
 
 if ($_GET['action'] == 'stopwebserver'){
 	$outputtext =  "CP - Webserver down";

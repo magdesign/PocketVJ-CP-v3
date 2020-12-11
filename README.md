@@ -1,11 +1,12 @@
-This is not compatible with PocketVJ 2.0 \
-Works only with PocketVJ 3.x
+This is not compatible with PocketVJ 0.1x / 1.x / 2.x \
 
-# PocketVJ Control Panel 2.x.x
+## Works only with PocketVJ 3.x !!
+
+# PocketVJ Control Panel 3.x.x
 
 ### https://www.pocketvj.com
 
-These files are used to control the PocketVJ 3.x via webbrowser. \
+These files are used to control the PocketVJ 3.xx via webbrowser. \
 Clone everything into the `/var/www/` directory.
 
 *****************************
@@ -24,23 +25,19 @@ Clone everything into the `/var/www/` directory.
 <br />
 <br />
 
-<br />
-<br />
-<br />
 
 
 
 #### If you Build it from scratch:<br />
-use the Raspian Jessie Lite image together with RPi3b+<br />
+keep in mind that some dependencies are outdated and the whole process may take a lot of time!!
+use the Raspian Jessie Lite image 8.0 (jessie) together with RPi3b+<br />
 
 - Add www-data to your sudoers list with:\
    `visudo` add this line at the end: `www-data ALL=(ALL) NOPASSWD: ALL`
 - Allow php with: `sudo lighty-enable-mod fastcgi-php`
 
 
-
 #### Dependencies to install:
-
 
 `sudo apt-get -y install avahi-daemon avahi-utils dosfstools exfat-fuse exfat-utils expect expect-dev fbi feh figlet firmware-ralink git-core gparted hfsplus hfsprogs hfsutils hostapd iceweasel imagemagick iptables isc-dhcp-server libao-dev libavahi-compat-libdnssd-dev libavahi-compat-libdnssd-dev libgstreamer-plugins-base0.10-dev libgstreamer-plugins-base1.0-dev libgstreamer0.10-0 libgstreamer0.10-dev libjpeg8 libjpeg8-dev libncurses5-dev libopenblas-dev libreoffice-impress libva-dev lightdm lighttpd lxappearance lxde-core lxterminal mediainfo mpg123 mpg321 ntfs-3g okular php php-cgi php-cli php-common php-mysql python-dbus python-dev python-pexpect python-pip python-smbus rc-gui samba samba-common-bin screen shellinabox tk ttf-mscorefonts-installer usbmount vim x11-xserver-utils xdotool xinit xpdf xtightvncviewer youtube-dl gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-tools gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad gstreamer1.0 subversion libfreeimage3 libcppunit-1.13-0v5 libcppunit-dev ola ola-python g++ make git build-essential libqt4-dev qt4-dev-tools fakeroot debhelper devscripts pkg-config libasound2-dev libusb-dev libftdi-dev libudev-dev libmad0-dev libsndfile1-dev libfftw3-dev`
 

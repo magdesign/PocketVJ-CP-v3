@@ -54,20 +54,3 @@
 	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser03 &
 	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser04 &
 	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startlesser05 &
-#set the audio on dmx scripts
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio01 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio02 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio03 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio04 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackaudio05 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid01 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid02 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid03 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid04 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startdmxplaybackvid05 &
-#set the audio for midi script
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmididmxvideoplay01 &
-	sudo sed -ri 's/-o [[:graph:]]+/-o hdmi/' /var/www/sync/startmididmxaudioplay01 &
-#set on pir 
-    sudo sed -ri "/^OMXPLAYER = \['omxplayer', '-o',/c\OMXPLAYER = ['omxplayer', '-o', 'hdmi', '--no-osd']" /var/www/sync/startpir1.py &
-

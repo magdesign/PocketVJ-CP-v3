@@ -1,0 +1,10 @@
+
+#!/bin/bash
+
+#kill all running tasks
+/var/www/sync/stopall
+
+#play video 04 without sync&loop
+
+/usr/bin/omxplayer -o both /media/internal/video/04* > /dev/null 2>&1 & echo $! &
+

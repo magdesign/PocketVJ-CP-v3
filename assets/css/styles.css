@@ -1,0 +1,342 @@
+.logo {
+  width: 220px;
+  margin-top: 12px;
+}
+
+.output_window {
+  height: 110px;
+  min-height: 90px;
+  font-weight: 600;
+  text-align: center;
+}
+
+body {
+  border-style: none;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: rgb(102,108,113);
+  border-style: solid;
+  border-color: rgb(102,108,113);
+}
+
+.nav-tabs .nav-link {
+  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.nav-tabs .nav-item {
+  border-style: none;
+  background: rgb(217,217,217);
+}
+
+/* Headings */
+
+.h1, h1 {
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 10px;
+  color: rgb(255,255,255);
+}
+
+.h2, h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: rgb(255,255,255);
+  padding-left: 15px;
+}
+
+.h3, h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(65,65,65);
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.h4, h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+.col.blue_vid {
+  background: #6cc6d9;
+}
+
+.autostart_icons {
+  margin-top: 15px;
+}
+
+/* Tabs */
+
+#tab-1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-2 {
+  padding-left: 15px;
+  background: #666c71;
+  padding-right: 15px;
+  margin-top: 1px;
+}
+
+#tab-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-5 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-7 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-8 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-9 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-10 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+#tab-11 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #666c71;
+  margin-top: 1px;
+}
+
+.row.green {
+  background: #08be75;
+}
+
+.col.colforbutton {
+  padding: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+body {
+}
+
+/* Button Original */
+
+.btn:not(:disabled):not(.disabled) {
+  margin-left: 10px;
+  max-width: 200px;
+  width: 90%;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  border-color: #0062cc;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background: #2d2e30;
+  border-color: #19dc38;
+}
+
+.btn-primary green:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background: #2d2e30;
+  border-color: #19dc38;
+}
+
+#tab-12 {
+  background: #666c71;
+  margin-top: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* my custom grey button */
+
+#greybutton {
+  background: #414141;
+  border-color: #414141;
+}
+
+#greybutton:hover {
+  background: #2b2a2a;
+}
+
+#greybutton:not(:disabled):not(.disabled):active {
+  background: #292929;
+}
+
+#dmxbuttoncolor {
+  background: #d25299;
+  border-color: #d25299;
+}
+
+#dmxbuttoncolor:hover {
+  background: #c23482;
+}
+
+#dmxbuttoncolor:not(:disabled):not(.disabled):active {
+  background: #292929;
+}
+
+#submitdelayFormData {
+  background: #d25299;
+  border-color: #d25299;
+}
+
+#submitdelayFormData:hover {
+  background: #c23482;
+}
+
+#submitdelayFormData:not(:disabled):not(.disabled):active {
+  background: #292929;
+}
+
+#networkbutton {
+  background: #ee703f;
+  border-color: #ee703f;
+}
+
+#networkbutton:hover {
+  background: #e65f29;
+}
+
+#networkbutton:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
+#submitcpFormData {
+  background: #ee703f;
+  border-color: #ee703f;
+}
+
+#submitcpFormData:hover {
+  background: #e65f29;
+}
+
+#submitcpFormData:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
+#submitwifiFormData {
+  background: #ee703f;
+  border-color: #ee703f;
+}
+
+#submitwifiFormData:hover {
+  background: #e65f29;
+}
+
+#submitwifiFormData:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
+#submitwifipassFormData {
+  background: #ee703f;
+  border-color: #ee703f;
+}
+
+#submitwifipassFormData:hover {
+  background: #e65f29;
+}
+
+#submitwifipassFormData:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
+#settingsbutton {
+  background: #ff8c3a;
+  border-color: #ff8c3a;
+}
+
+#settingsbutton:hover {
+  background: #dd7124;
+}
+
+#settingsbutton:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
+#expansionbutton {
+  background: #7c73b3;
+  border-color: #7c73b3;
+}
+
+#expansionbutton:hover {
+  background: #7c73b3;
+}
+
+#expansionbutton:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
+#schedulerbutton {
+  background: #665ba6;
+  border-color: #665ba6;
+}
+
+#schedulerbutton:hover {
+  background: #4f419c;
+}
+
+#schedulerbutton:not(:disabled):not(.disabled):active {
+  background: #292929;
+  color: #cccccc;
+}
+
