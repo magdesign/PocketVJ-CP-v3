@@ -918,9 +918,9 @@ if ($_GET['action'] == 'forcevga') {
 }
 
 
-if ($_GET['action'] == 'force1200') {
+if ($_GET['action'] == 'force1680') {
 	$outputtext =  "force 1680 x 1050 rgb";
-	system("sudo cp /var/www/sync/force1200 /boot/config.txt");
+	system("sudo cp /var/www/sync/force1680 /boot/config.txt");
 }
 
 if ($_GET['action'] == 'analog1') {
