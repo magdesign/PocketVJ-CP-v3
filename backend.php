@@ -1111,12 +1111,15 @@ if ($_GET['action'] == 'updateall') {
 	//new omxplayer version:
 	system("sudo cp /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
   	system("sudo dpkg -i *.deb /var/cache/apt/archives/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
-  	//cleanup:
-	system("sudo apt-get clean");
+    // Copy omxplayer-sync scripts to /usr/bin  & set permissions
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
+	system("sudo cp /var/www/sync/omxplayer-sync-old /usr/bin/omxplayer-sync-old");
 	system("sudo chmod a+x /usr/bin/omxplayer");
 	system("sudo chmod a+x /usr/bin/omxplayer.bin");
 	system("sudo chmod a+x /usr/bin/omxplayer-sync");
+	system("sudo chmod a+x /usr/bin/omxplayer-sync-old");
+	//cleanup:
+	system("sudo apt-get clean");
 	//Update Interfaceswifi
 	system("sudo cp /var/www/sync/interfaceswifi /etc/network/interfaceswifi");
 	//Update Boot config
