@@ -1,10 +1,13 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## User Manual 17. December 2020
+
+complete update of the user manual, its now an online version:  https://www.pocketvj.com/manual_rtc/index.html   <br />
+
 ## CP 3.0.0 11. December 2020<br />
 
 complete rewrite of CP, massive UI improvements<br />
 added video without sync<br />
-new filebrowser (if it is working?)<br />
 
 ## Image 3.91 11.December 2020<br />
 
