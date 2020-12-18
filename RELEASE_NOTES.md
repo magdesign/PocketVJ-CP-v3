@@ -1,5 +1,9 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.0a 18. December 2020<br />
+
+fixed missleading interpretation when set to dhcp and reverted to static ip address <br />
+
 ## User Manual 17. December 2020
 
 complete update of the user manual, its now an online version:  https://www.pocketvj.com/manual_rtc/index.html   <br />
