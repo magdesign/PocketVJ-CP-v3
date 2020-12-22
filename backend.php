@@ -105,7 +105,8 @@ if ($_GET['action'] == 'startseamless05') {
 }
 
 if ($_GET['action'] == 'startmaster') {
-	exec("sudo /var/www/sync/startmaster");
+	#exec("sudo /var/www/sync/startmaster");
+	exec("sudo /var/www/sync/alsatester");
 	$outputtext = "start player as master";
 }
 

@@ -1,10 +1,6 @@
 #!/bin/bash
 
 
-#kill all running tasks
-/var/www/sync/stopall > /dev/null 2>&1 & echo $! &
-#sleep 3
-
 ########################################################################
 # it checks if usb alsa is present,if not, switches to both and play   #
 # is a wrapper for startmaster since a lot of errors where due missing #
@@ -14,40 +10,37 @@
 if  cat /var/www/sync/startmaster | grep -q 'alsa' && cat /proc/asound/cards | grep -q 'USB' 
 then
   echo "audio usb all good"
-  /var/www/sync/startlesshelper
+  /var/www/sync/startmaster
   exit 0
 
 elif  cat /var/www/sync/startmaster | grep -q 'local'
 then
   echo "play its local"
-  /var/www/sync/startlesshelper
+  /var/www/sync/startmaster
   exit 0
 
 elif  cat /var/www/sync/startmaster | grep -q 'hdmi'
 then 
   echo "play its hdmi"
-  /var/www/sync/startlesshelper
+  /var/www/sync/startmaster
   exit 0
 
 elif  cat /var/www/sync/startmaster | grep -q 'both'
 then 
   echo "play its both"
-  /var/www/sync/startlesshelper
+  /var/www/sync/startmaster
   exit 0
 
 else
  echo "no usb found, revert all to hdmi and play"
  /var/www/sync/setaudio_both &
- sleep 2
+ sleep 1
  echo "play"
- /var/www/sync/startlesshelper
+ /var/www/sync/startmaster
  exit 0
 
 fi
 
 
 
-
-#start the lesshelper script which will play all files in folder
-#sudo /var/www/sync/startlesshelper > /dev/null 2>&1 & echo $! &
 

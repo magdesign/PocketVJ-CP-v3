@@ -1,5 +1,11 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.0b 22. December 2020<br />
+
+added alsatester to test if usb soundcard is present, if not switch to both (only working within CP "Start All")
+fixed "Play All" without sync did not work when set to alsa/usb
+
+
 ## CP 3.0.0a 18. December 2020<br />
 
 fixed missleading interpretation when set to dhcp and reverted to static ip address <br />
