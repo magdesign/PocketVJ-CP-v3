@@ -1,5 +1,9 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.1 10. Februar 2021<br />
+
+added getcontent from web button again
+
 ## CP 3.0.0b 22. December 2020<br />
 
 added alsatester to test if usb soundcard is present, if not switch to both (only working within CP "Start All")
