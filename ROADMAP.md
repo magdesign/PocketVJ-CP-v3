@@ -2,6 +2,9 @@
 **********
 
 ### Priority:
+- rewrite update script to force remove content in ofxPiMapper/example/bin/data/sources/videos, recheck to mapper update process!
+
+
 
 - prevent bootloops when pusing reboot and browser reconnects (anyone a hint?)
 - add omxplayer error output when setting to alsa/usb audio but no soundcard is recognized
