@@ -1,11 +1,12 @@
 #!/bin/bash
 
-#this script exorts the mapper settings to /media/internal/mappersettings.xml
-#made for PVJ 2.0
+#settings to /media/internal/mappersettings.xml
 
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null 2>&1
-sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/./bin/example_camera > /dev/null 2>&1
+#the kill command will be executed from backend as stopall
+
+#sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example > /dev/null 2>&1
+#sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/./bin/example_remote-server > /dev/null 2>&1
+#sudo killall -9 /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/./bin/example_camera > /dev/null 2>&1
 
 sleep 0.5
 
@@ -14,5 +15,7 @@ sudo cp /media/internal/mappersets/mappersetting1.xml /home/pi/openFrameworks/ad
 sudo cp /media/internal/mappersets/mappersetting1.xml /home/pi/openFrameworks/addons/ofxPiMapper/example_camera/bin/data/ofxpimapper.xml
 
 sleep 0.5
+
+#/opt/fsaysuinput &
 
 /home/pi/openFrameworks/addons/ofxPiMapper/example/./bin/example -f &

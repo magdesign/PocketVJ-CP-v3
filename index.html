@@ -38,7 +38,7 @@ Code below loads custom js for form submission without reload-->
                 <div class="col d-flex justify-content-end">
                     <div class="row">
                         <div class="col">
-                            <p class="text-center" id="version_text" style="font-weight: normal;padding-top: 12px;color: rgb(0,0,0);">CP 3.0.1<br><a href="https://github.com/magdesign/PocketVJ-CP-v3/issues" style="text-align: right;" target="_blank"><img class="help_logo" src="assets/img/help.svg" style="text-align: right;padding: 8px;max-width: 60%;"></a><br><br></p>
+                            <p class="text-center" id="version_text" style="font-weight: normal;padding-top: 12px;color: rgb(0,0,0);">CP 3.0.2<br><a href="https://github.com/magdesign/PocketVJ-CP-v3/issues" style="text-align: right;" target="_blank"><img class="help_logo" src="assets/img/help.svg" style="text-align: right;padding: 8px;max-width: 60%;"></a><br><br></p>
                         </div>
                     </div>
                 </div>
@@ -1391,9 +1391,7 @@ Code below loads custom js for form submission without reload-->
                                 <div>
                                     <h2>&nbsp;UPDATE MAPPER</h2>
                                     <div class="col colforbutton"><a class="btn btn-warning action" role="button" id="settingsbutton" data-toggle="tooltip" title="" href="?action=mapperaudioupdate">Update Mapper<br></a></div>
-                                    <div class="col colforbutton">
-                                        <h3>&nbsp;</h3>
-                                    </div>
+                                    <div class="col colforbutton"><a class="btn btn-warning action" role="button" id="settingsbutton" data-toggle="tooltip" title="" href="?action=mapperupdate">Update MapperPerf<br></a></div>
                                 </div>
                             </div>
                             <div class="col">
@@ -1454,22 +1452,19 @@ Code below loads custom js for form submission without reload-->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-
-    <!-- Code below sets the "Set Time" button function--> 
-  <script type="text/javascript">
-
+<!-- Code below sets the "Set Time" button function--> 
+ 
+<script type="text/javascript">
     function settime() {
-   
        window.open('time_change.php');
        document.getElementById('actions_output').innerHTML = ("time set");
      } 
-   
    </script>
    
    
-   <!--this lines check if user is online-->
+   <!--Code below this line checks if user is online-->
    
-   <script src="../offline.min.js"></script>
+   <script src="js/offline.min.js"></script>
    <link rel="stylesheet" href="../themes/offline-theme-chrome.css" />
    <link rel="stylesheet" href="../themes/offline-language-english.css" />
    
@@ -1480,23 +1475,16 @@ Code below loads custom js for form submission without reload-->
      req.open('GET', 'http://localhost:8888/walter/0', true);
      req.send();
    }
-   
    setInterval(run, 3000);
-   </script>
    
-   <!-- 
-   Code below disabling resend of functions after lost connection,
-   guess this is not really working?
-    -->
-   
-   <script>
            Offline.options = {
            requests: false
            }
+           
    </script>
    
    
-   <!--Code below is for button actions -->
+   <!--Code below is for button actions-->
    
      <script type="text/javascript">
       $("a.action").on("click", function(event) { 
@@ -1506,6 +1494,8 @@ Code below loads custom js for form submission without reload-->
           });
       });
       </script>
+
+
 
 </body>
 

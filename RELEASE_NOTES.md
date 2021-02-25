@@ -1,5 +1,12 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.2 25. Februar 2021<br />
+
+- fixed autostart master did not start in some cirumstances (permission issue)
+- fixed when open mapper set, it did not kill other running tasks
+- re-added performace mapper without FBO sources 
+
+
 ## CP 3.0.1 10. Februar 2021<br />
 
 added getcontent from web button again

@@ -1072,7 +1072,7 @@ if ($_GET['action'] == 'buildversion') {
 
 //# Update Mapper
 
-if ($_GET['action'] == 'mapperupdate') {
+if ($_GET['action'] == 'mapperaudioupdate') {
 	$outputtext =  "update mapper";
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
 	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
@@ -1085,8 +1085,23 @@ if ($_GET['action'] == 'mapperupdate') {
 }
 
 if ($_GET['action'] == 'mapperupdatehdmi') {
-	$outputtext =  "not working yet";
+	$outputtext =  "does not work on rtc";
 }
+
+
+if ($_GET['action'] == 'mapperupdate') {
+	$outputtext =  "update mapper no FBO";
+	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
+	system("sudo unzip /var/www/sync/mapper_noFBO.zip -d /");
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
+	//Add Mapper Remote
+	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/videos");
+	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example_remote-server/bin/data/sources/images");
+}
+
+
 
 // Update All
 //////////////
@@ -1184,7 +1199,8 @@ if ($_GET['action'] == 'factoryreset') {
  	system("sudo chmod +rx /usr/bin/dbuscontrol.sh");
 	system("sudo chmod 755 -R /var/www");
 	system("sudo chmod 777 -R /media");
-	//Update OSC control in home folder
+	system("sudo chmod +x /var/www/sync/startmaster");
+		//Update OSC control in home folder
 	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
 	//remove .xsession file
 	system("sudo rm -rf /home/pi/.xsession");
@@ -1533,26 +1549,31 @@ if ($_GET['action'] == 'mappergrid') {
 
 if ($_GET['action'] == 'mapperimport1') {
 	$outputtext =  "import mappersetting1.xml";
+	system("sudo /var/www/sync/stopall  > /dev/null 2>&1");
 	system("sudo /var/www/sync/mapperimport1  > /dev/null 2>&1");
-}
+	}
 
 if ($_GET['action'] == 'mapperimport2') {
 	$outputtext =  "import mappersetting2.xml";
+	system("sudo /var/www/sync/stopall  > /dev/null 2>&1");
 	system("sudo /var/www/sync/mapperimport2  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport3') {
 	$outputtext =  "import mappersetting3.xml";
+	system("sudo /var/www/sync/stopall  > /dev/null 2>&1");
 	system("sudo /var/www/sync/mapperimport3  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport4') {
 	$outputtext =  "import mappersetting4.xml";
+	system("sudo /var/www/sync/stopall  > /dev/null 2>&1");
 	system("sudo /var/www/sync/mapperimport4  > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'mapperimport5') {
 	$outputtext =  "import mappersetting5.xml";
+	system("sudo /var/www/sync/stopall  > /dev/null 2>&1");
 	system("sudo /var/www/sync/mapperimport5");
 }
 
