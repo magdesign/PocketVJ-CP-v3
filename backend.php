@@ -1980,6 +1980,14 @@ if ($_GET['action'] == 'cpuusage') {
 	$outputtext = wordwrap($preoutputtext, 124, "<br />\n");
 }
 
+if ($_GET['action'] == 'powersupply') {
+	$outputtext = shell_exec('/var/www/sync/powersupply | grep Power');
+}
+
+
+
+
+
 //# Webserver
 
 if ($_GET['action'] == 'passwddissable'){

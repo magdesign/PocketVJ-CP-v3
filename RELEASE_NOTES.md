@@ -1,5 +1,11 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.3 23. April 2021<br />
+
+- fixed the issue that mapper was not controllable without mouse, now you are able to control it from CP ;-), massive thanks to [BjarneJensen](https://github.com/BjarneJensen)!<br />
+- added a dialog when clicking power down, to ask if user really is sure to do so <br />
+- added powersupply check to check if you get enough amps or if you should replace it  <br />
+
 ## CP 3.0.2 25. Februar 2021<br />
 
 - fixed autostart master did not start in some cirumstances (permission issue)

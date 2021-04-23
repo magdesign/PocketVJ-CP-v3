@@ -1,3 +1,18 @@
 #!/bin/bash
 
-expect /var/www/sync/mapper3e > /dev/null 2>&1
+
+#working method:	expect /var/www/sync/mapper3e > /dev/null 2>&1;
+
+#detect if a usb mouse is there or not:
+
+if sudo lsusb | grep Mouse; then 
+        echo "YES! => there is a mouse <=";
+        expect /var/www/sync/mapper3e > /dev/null 2>&1;
+        exit
+else
+        echo "NO mouse detected => lets fake one <="; 
+        /var/www/sync/startmouse
+        expect /var/www/sync/mapper3e > /dev/null 2>&1;
+fi
+
+exit 0

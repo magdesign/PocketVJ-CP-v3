@@ -3,9 +3,7 @@
 
 ### Priority:
 
-- fix the mapper mouse requiremnet with fix from [BjarneJensen](https://github.com/magdesign/PocketVJ-CP-v3/issues/92#issuecomment-787531172)
 - rewrite update script to force remove content in ofxPiMapper/example/bin/data/sources/videos, recheck to mapper update process!
-- port the powersupply check script from Exhibition
 - port the new pjlink commands from Exhibition
 
 - prevent bootloops when pusing reboot and browser reconnects (anyone a hint?)
@@ -19,6 +17,7 @@
 
 ### Tutorials: <br />
 
+- Show how to use mapper without mouse  <br />
 - All autostart functions <br />
 
 

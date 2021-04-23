@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#/opt/fsaysuinput &
+mv /dev/input/event1 /dev/input/event7
+ln -s -f /dev/input/event0 /dev/input/event1

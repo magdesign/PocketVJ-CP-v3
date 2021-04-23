@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#check if powersupply gives enough current
+
+
+if sudo /opt/vc/bin/vcgencmd get_throttled | grep throttled=0x0; then 
+        echo "Power is good";
+
+elif sudo /opt/vc/bin/vcgencmd get_throttled | grep throttled=0x50000; then 
+        echo "Power is bad; replace powersupply"; 
+
+fi
+exit 0
+
