@@ -13,6 +13,7 @@
 - add wireless-power off to interfaces ?
 - fix the new filebrowser, is it a permission issue or a service issue?
 - add mapper hdmi audio, where is the bug?
+- create my own gitea server on pocketvj domain, move everything from here to gitea to be more free
 
 
 ### Tutorials: <br />
