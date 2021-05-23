@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# this script counts up for fading from black,
+# for faster count change ((i=i+1)) to  ((i=i+10)) or similar
+
+# here we could check if player is in pause mode, if yes unpause and do the fade,
+#if no, just do the fade
+
+# following code does not set the last value to 255, it falls back to 0
+# which is annoying:
+
+
+#counter
+i=1
+until [ $i = 255 ]
+do
+  echo  $i
+  ((i=i+1))
+sudo /var/www/sync/dbuscontrol.sh setalpha $i
+done
+
+echo "we are done fading"
+
+#here we could a a pause, play or similiar function

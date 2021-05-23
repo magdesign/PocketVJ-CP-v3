@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# this script counts up for fading from black,
+# for faster count change ((i=i+1)) to  ((i=i+10)) or similar
+
+#Set initial alpha
+sudo /var/www/sync/dbuscontrol.sh setalpha 255
+sleep 0.05
+
+#counter
+i=255
+until [ $i = 0 ]
+do
+  echo  $i
+  ((i=i-1))
+sudo /var/www/sync/dbuscontrol.sh setalpha $i
+done
+
+echo "we are done fading"
+
+#here we could a a pause, play or similiar function

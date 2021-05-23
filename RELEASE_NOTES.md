@@ -1,5 +1,9 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.3a 23. Mai 2021<br />
+
+- updated to newer omxplayer, needs 2x "update all" function to be active  <br />
+
 ## CP 3.0.3 23. April 2021<br />
 
 - fixed the issue that mapper was not controllable without mouse, now you are able to control it from CP ;-), massive thanks to [BjarneJensen](https://github.com/BjarneJensen)!<br />
