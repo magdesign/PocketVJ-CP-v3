@@ -1121,11 +1121,11 @@ if ($_GET['action'] == 'updateall') {
 	system("rm -f /usr/bin/dbuscontrol.sh");
 	system("sudo apt-get clean");
 	//Install omxplayer dependencies
-  	system("sudo dpkg -i *.deb /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb");
-   	system("sudo dpkg -i *.deb /var/www/sync/libssh-4_0.6.3-4+deb8u2_armhf.deb");
+  	system("sudo dpkg -i /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb");
+   	system("sudo dpkg -i /var/www/sync/libssh-4_0.6.3-4+deb8u2_armhf.deb");
 	//install omxplayer version:
-  	#system("sudo dpkg -i *.deb /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
-	system("sudo dpkg -i *.deb /var/www/sync/omxplayer_0.3.7-git20180910-7f3faf6-jessie_armhf.deb");
+  	#system("sudo dpkg -i /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
+	system("sudo dpkg -i /var/www/sync/omxplayer_0.3.7-git20180910-7f3faf6-jessie_armhf.deb");
     // Copy omxplayer-sync scripts to /usr/bin  & set permissions
 	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
 	system("sudo cp /var/www/sync/omxplayer-sync-old /usr/bin/omxplayer-sync-old");
