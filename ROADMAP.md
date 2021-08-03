@@ -3,12 +3,9 @@
 
 ### Priority:
 
-- function to check omxplayer version
-- fadein/out videos function
+
 - rewrite update script to force remove content in ofxPiMapper/example/bin/data/sources/videos, recheck to mapper update process!
 - port the new pjlink commands from Exhibition
-
-
 - moving big steps for mapper witout mouse
 - prevent bootloops when pusing reboot and browser reconnects (anyone a hint?)
 - add omxplayer error output when setting to alsa/usb audio but no soundcard is recognized
