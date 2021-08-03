@@ -6,8 +6,6 @@
 # here we could check if player is in pause mode, if yes unpause and do the fade,
 #if no, just do the fade
 
-# following code does not set the last value to 255, it falls back to 0
-# which is annoying:
 
 
 #counter

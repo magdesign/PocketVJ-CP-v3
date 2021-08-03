@@ -457,6 +457,21 @@ if ($_GET['action'] == 'screenshot') {
 	$outputtext = "Printscreen saved in /media/internal/images";
 }
 
+//////////////////////
+// Video fader
+////////////////////////
+
+if ($_GET['action'] == 'videofadeout') {
+	exec("sudo /var/www/sync/fadeOUTscript");
+	$outputtext = "Fade video to black (still playing)";
+}
+
+if ($_GET['action'] == 'videofadein') {
+	exec("sudo /var/www/sync/fadeINscript");
+	$outputtext = "Fade video In (still playing)";
+}
+
+
 //# Imageplayer
 
 if ($_GET['action'] == 'stopimage') {
@@ -1069,6 +1084,11 @@ if ($_GET['action'] == 'diskspace') {
 if ($_GET['action'] == 'buildversion') {
 	$outputtext = shell_exec('cat /etc/pvj_version');
 }
+
+if ($_GET['action'] == 'omxversion') {
+	$outputtext = shell_exec('/usr/bin/omxplayer --version');
+}
+
 
 //# Update Mapper
 

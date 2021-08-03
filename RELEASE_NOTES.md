@@ -1,8 +1,15 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+
+## CP 3.0.4 03. August 2021<br />
+
+- added help sign on top right which links to usermanual <br />
+- added function to show omx version <br />
+- added video fader (make sure omx version is 2018)<br />
+
 ## CP 3.0.3a 23. Mai 2021<br />
 
-- updated to newer omxplayer, needs 2x "update all" function to be active  <br />
+- updated to newer omxplayer (2018), needs 2x "update all" function to be active  <br />
 
 ## CP 3.0.3 23. April 2021<br />
 
