@@ -3,6 +3,7 @@
 
 ### Priority:
 
+- mak elFinder default seems to be broken, fix this!<br />
 - feedback in cp when moving speed or opacity slider <br />
 - rewrite update script to force remove content in ofxPiMapper/example/bin/data/sources/videos, recheck to mapper update process! <br />
 - port the new pjlink commands from Exhibition <br />
