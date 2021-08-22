@@ -2,13 +2,21 @@
 
 #check if powersupply gives enough current
 
+POWERSUPPLY="$(sudo /opt/vc/bin/vcgencmd get_throttled)"
 
-if sudo /opt/vc/bin/vcgencmd get_throttled | grep throttled=0x0; then 
+if [ "${POWERSUPPLY}" = "throttled=0x0" ]; then 
         echo "Power is good";
 
-elif sudo /opt/vc/bin/vcgencmd get_throttled | grep throttled=0x50000; then 
-        echo "Power is bad; replace powersupply"; 
 
+elif [ "${POWERSUPPLY}" = "throttled=0x50000" ]; then 
+        echo "Power is bad; replace powersupply";
+
+elif [ "${POWERSUPPLY}" = "throttled=0x10000;" ]; then 
+        echo "Power Undervoltage";
+
+elif [ "${POWERSUPPLY}" = "throttled=0x80000;" ]; then 
+        echo "Power OK, but Soft Temperature Limit";
 fi
+
 exit 0
 

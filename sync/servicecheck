@@ -1,0 +1,74 @@
+#!/bin/bash
+
+#list important services of they are running or not on PocketVJ Exhibition
+#written by marc-andre gasser 2021
+#you may use this code :)
+
+LIRCD="$(systemctl is-active lircd.service)"
+SAMBA="$(systemctl is-active smbd.service)"
+SHELL="$(systemctl is-active shellinabox.service)"
+OLAD="$(systemctl is-active olad.service)"
+GPU="$(tvservice -s)"
+WIFI="$(ifconfig | grep -o wlan0)"
+POWER="$(sudo /var/www/sync/powersupply)"
+
+
+#infrared
+if [ "${LIRCD}" = "active" ]; then
+    echo "LIRCD = on"
+fi
+if [ "${LIRCD}" = "inactive" ]; then
+    echo "LIRCD = off"
+fi
+
+#samba
+if [ "${SAMBA}" = "active" ]; then
+    echo "SAMBA = on"
+fi
+if [ "${SAMBA}" = "inactive" ]; then
+    echo "SAMBA = off"
+fi
+
+#shellinabox
+if [ "${SHELL}" = "active" ]; then
+    echo "SHELL = on"
+fi
+if [ "${SHELL}" = "inactive" ]; then
+    echo "SHELL = off"
+fi
+
+#olad
+if [ "${OLAD}" = "active" ]; then
+    echo "OLAD dmx = on"
+else
+    echo "OLAD dmx = off"
+fi
+
+
+#GPU
+if [ "${GPU}" = "state 0x2 [TV is off]" ]; then
+    echo "GPU = off"
+else echo "GPU = on"
+fi
+
+
+#Wifi
+if [ "${WIFI}" = "wlan0" ]; then
+    echo "WIFI = enabled"
+else echo "WIFI = disabled"
+fi
+
+#Internet
+
+if ping -q -w1 -c1 pocketvj.com >/dev/null; then
+ echo "INTERNET = online"
+else
+ echo "INTERNET = offline"
+fi
+
+
+#Power
+
+echo POWER = "${POWER}" 
+
+exit 0

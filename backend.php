@@ -2003,8 +2003,10 @@ if ($_GET['action'] == 'powersupply') {
 	$outputtext = shell_exec('/var/www/sync/powersupply | grep Power');
 }
 
-
-
+if ($_GET['action'] == 'servicecheck'){
+	$output = shell_exec('sudo /var/www/sync/servicecheck');
+	$outputtext = "<pre>$output</pre>";
+}
 
 
 //# Webserver

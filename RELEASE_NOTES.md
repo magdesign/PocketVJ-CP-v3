@@ -1,5 +1,13 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.5 22. August 2021<br />
+
+- added fader for video opacity<br />
+- added fader for video speed<br />
+- added "Check Services" to see whats running<br />
+- fixed output of Powersupply check<br />
+- make sure you have omxplayer version 2018, if not, click "Update Everything" again<br />
+- If you like the new features, let me know :-) <br />
 
 ## CP 3.0.4 03. August 2021<br />
 
