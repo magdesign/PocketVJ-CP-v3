@@ -20,8 +20,7 @@
 
 ### Manual: <br />
 
-- Add service Check description <br />
-- Add info about speed and opacity blending <br />
+
 
 =======================<br />
 
