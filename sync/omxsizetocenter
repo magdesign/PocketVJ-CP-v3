@@ -1,0 +1,37 @@
+#!/bin/bash
+
+#define command line argument 1 as input (here it defines the scaling percentage):
+SCALER=$1
+
+#read current display resolution to define what is 100% of scaling
+X="$(fbset | grep -o "mode \"[^\"]\+"  | grep -o "[^\"]\+$" | cut -d x -f 1)"
+Y="$(fbset | grep -o "mode \"[^\"]\+"  | grep -o "[^\"]\+$" | cut -d x -f 2)"
+
+#Define center point according current resolution
+
+Xcenter="$(($X / 2))"
+Ycenter="$(($Y / 2))"
+#what would be the video size according to scaler input
+
+VsizeX="$(($X * $SCALER / 100))"
+VsizeY="$(($Y * $SCALER / 100))"
+
+#since I dont know how to divide a result within a task, I just made 2 variables 
+X1pre="$(($X - $VsizeX))"
+Y1pre="$(($Y - $VsizeY))"
+
+#the first point of the drawn video
+X1="$(($X1pre / 2))"
+Y1="$(($Y1pre / 2))"
+
+#the second point of the drawn video
+X2="$(($X1 + $VsizeX))"
+Y2="$(($Y1 + $VsizeY))"
+
+
+#the final command to always scale to center, zero point is top left!!:
+
+/var/www/sync/dbuscontrol.sh setvideopos $X1 $Y1 $X2 $Y2
+
+
+

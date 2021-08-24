@@ -1,5 +1,11 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+
+## CP 3.0.6 24. August 2021<br />
+
+- added fader for video size, just because I can<br />
+
+
 ## CP 3.0.5 22. August 2021<br />
 
 - added fader for video opacity<br />

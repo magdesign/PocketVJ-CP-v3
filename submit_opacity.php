@@ -1,9 +1,7 @@
 <?php
-
-// das grift dr input vom js script im CP ab:
-    $usgab = $_POST['opacityValue'];
-    echo $usgab;
-    
-    shell_exec("sudo /var/www/sync/dbuscontrol.sh setalpha $usgab");
+// ds grift dr input vom js script opacity alpha im CP ab:
+    $alphavalue = $_POST['opacityValue'];
+// u ds fuert naer us
+    shell_exec("sudo /var/www/sync/dbuscontrol.sh setalpha $alphavalue");
 
 ?>
