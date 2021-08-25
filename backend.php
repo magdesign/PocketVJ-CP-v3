@@ -969,7 +969,7 @@ if ($_GET['action'] == 'clean') {
 /// Filehandling
 
 if ($_GET['action'] == 'defaultelfinder') {
-	system ("sudo /var/www/sync/set_elfinder");
+	shell_exec ("sudo /var/www/sync/set_elfinder");
 		//this is to disable filebrowser daemon
 	//system ("sudo systemctl stop filebrowser.service");
 	//system ("sudo systemctl disable filebrowser.service");
@@ -977,25 +977,25 @@ if ($_GET['action'] == 'defaultelfinder') {
 }
 
 if ($_GET['action'] == 'defaultextplorer') {
-	system ("sudo /var/www/sync/set_extplorer");
+	shell_exec ("sudo /var/www/sync/set_extplorer");
 	//this is to disable filebrowser daemon
 	//system ("sudo systemctl stop filebrowser.service");
 	//system ("sudo systemctl disable filebrowser.service");
 	$outputtext =  "eXtplorer default";
 }
 
-if ($_GET['action'] == 'defaultfilebrowser') {
-	system ("sudo /var/www/sync/set_filebrowser");
-	$outputtext =  "filebrowser default";
-}
+//if ($_GET['action'] == 'defaultfilebrowser') {
+//	system ("sudo /var/www/sync/set_filebrowser");
+//	$outputtext =  "filebrowser default";
+//}
 
-if ($_GET['action'] == 'openfilebrowser') {
-	system ("sudo systemctl start filebrowser.service");
-	$outputtext =  "filebrowser open";
-}
+//if ($_GET['action'] == 'openfilebrowser') {
+//	system ("sudo systemctl start filebrowser.service");
+//	$outputtext =  "filebrowser open";
+//}
 
-// Screen
-//////
+//Screen//
+//////////
 
 if ($_GET['action'] == 'screenon') {
 	$outputtext = shell_exec('sudo /opt/vc/bin/tvservice -p');

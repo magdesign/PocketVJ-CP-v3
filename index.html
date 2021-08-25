@@ -8,25 +8,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Open%20Sans.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-<!--
-Code below loads custom js for form submission without reload-->
-<script src="js/submitcppw.js"></script>
- <!--Code  below is for beamer IP infos-->
- <script src="js/submitbeamerip.js"></script>
-
- <!--Code below is for setting dmx delay-->
-<script src="js/submitdelay.js"></script>
-
- <!--Code below is for wifi infos-->
-<script src="js/submitwifi.js"></script>
-<script src="js/submitwifipass.js"></script>
-
- <!--Code below is for expansion buttons1-->
-<script src="js/submitbutton1.js"></script>
-<script src="js/submitbutton2.js"></script>
-<script src="js/submitbutton3.js"></script>
-
- <!--Code below loads my custom bootstrap colors-->
+<!--loads my custom bootstrap colors-->
 <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 
@@ -38,7 +20,7 @@ Code below loads custom js for form submission without reload-->
                 <div class="col d-flex justify-content-end">
                     <div class="row">
                         <div class="col">
-                            <p class="text-center" id="version_text" style="font-weight: normal;padding-top: 12px;color: rgb(0,0,0);">CP 3.0.6<a href="https://www.pocketvj.com/manual_rtc/index.html" style="text-align: right;" target="_blank"><img class="help_logo" src="assets/img/help.svg" style="text-align: right;padding: 8px;max-width: 60%;width: 40px;" data-toggle="tooltip" title="read the f**king docs !!"></a><br><br></p>
+                            <p class="text-center" id="version_text" style="font-weight: normal;padding-top: 12px;color: rgb(0,0,0);">CP 3.0.7<a href="https://github.com/magdesign/PocketVJ-CP-v3/issues" style="text-align: right;" target="_blank"><img class="help_logo" src="assets/img/help_issue.svg" style="text-align: right;padding: 8px;max-width: 60%;width: 40px;" data-toggle="tooltip" title="report a bug"></a><a href="https://www.pocketvj.com/manual_rtc/index.html" style="text-align: right;" target="_blank"><img class="help_logo" src="assets/img/help.svg" style="text-align: right;padding: 8px;max-width: 60%;width: 40px;" data-toggle="tooltip" title="read the f**king docs !!"></a><br><br></p>
                         </div>
                     </div>
                 </div>
@@ -295,8 +277,8 @@ Code below loads custom js for form submission without reload-->
                             <div class="col">
                                 <div>
                                     <h2>&nbsp;&nbsp;</h2>
-                                    <div class="col colforbutton"><a class="btn btn-dark action" role="button" href="?action=defaultelfinder">make default</a></div>
-                                    <div class="col colforbutton"><a class="btn btn-dark action" role="button" href="?action=defaultextplorer">make default</a></div>
+                                    <div class="col colforbutton"><a class="btn btn-dark action" role="button" onclick="window.location.reload();" href="?action=defaultelfinder">&lt;= make default</a></div>
+                                    <div class="col colforbutton"><a class="btn btn-dark action" role="button" onclick="window.location.reload();" href="?action=defaultextplorer">&lt;= make default</a></div>
                                     <div class="col colforbutton">
                                         <h3>&nbsp;</h3>
                                     </div>
@@ -605,13 +587,10 @@ elem.addEventListener('input', rangeValue);
                                 <div>
                                     <h2 data-toggle="tooltip" title="change video size">SIZE</h2>
                                     <div class="col colforbutton"><div>
-<!--this shows the value -->
-    
 <div id="videosize2" class="sizevalue">100</div>
-    
-<!--this defines the slider type-->
+<!--defines the slider type-->
 <input id="videosize" type="range" min="0" max="200" step="1" value=100>
-<!--this is the js script to upddate the value on html--> 
+<!--js script to upddate the value on html--> 
 <script>
 var elem3 = document.querySelector('input[id="videosize"]');
 
@@ -619,7 +598,7 @@ var range3Value = function(){
   var sizeValue = elem3.value;
   var target3 = document.querySelector('.sizevalue');
   target3.innerHTML = sizeValue;
-<!--this line is needed to be able to make the console log-->
+    <!--this line is needed to be able to make the console log-->
   test3(sizeValue); 
 }
 
@@ -633,14 +612,47 @@ $.post("submit_size.php", { sizeValue: sizeValue },
 elem3.addEventListener('input', range3Value);
 </script>
 
+    
+
+</div></div>
+                                </div>
+                                <div>
+                                    <h2 data-toggle="tooltip" title="change video X position">X Position</h2>
+                                    <div class="col colforbutton"><div>
+<!--this shows the value -->
+    
+<div id="videoXposition2" class="Xpositionvalue">100</div>
+    
+<!--this defines the slider type-->
+<input id="videoXposition" type="range" min="-1000" max="1000" step="1" value=500>
+<!--this is the js script to upddate the value on html--> 
+<script>
+var elem4 = document.querySelector('input[id="videoXposition"]');
+
+var range4Value = function(){
+  var XpositionValue = elem4.value;
+  var target4 = document.querySelector('.Xpositionvalue');
+  target4.innerHTML = XpositionValue;
+<!--this line is needed to be able to make the console log-->
+  test4(XpositionValue); 
+}
+
+function test4(XpositionValue){
+<!--you can uncomment this, is only for debugging-->
+  <!--console.log (XpositionValue);-->
+$.post("submit_Xposition.php", { XpositionValue: XpositionValue },
+	   function(data) {});
+	}
+
+elem4.addEventListener('input', range4Value);
+</script>
+
 </div></div>
                                 </div>
                             </div>
                             <div class="col">
                                 <div>
-                                    <div class="col colforbutton">
-                                        <h2 data-toggle="tooltip" title="change speed of playing video 1=default">SPEED</h2>
-                                    </div>
+                                    <h2 data-toggle="tooltip" title="change speed of playing video 1=default">SPEED</h2>
                                     <div class="col colforbutton"><div>
 <!--this shows the value -->
 <div id="videospeed2" class="speedvalue">1</div>
@@ -1570,7 +1582,7 @@ elem2.addEventListener("input", range2Value);
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
- <!-- Code below sets the "Set Time" button function--> 
+ <!-- sets the "Set Time" button function--> 
  
  <script type="text/javascript">
 
@@ -1583,7 +1595,7 @@ elem2.addEventListener("input", range2Value);
    </script>
    
    
-   <!--this lines check if user is online-->
+   <!--check if user is online-->
    
    <script src="../offline.min.js"></script>
    <link rel="stylesheet" href="../themes/offline-theme-chrome.css" />
@@ -1622,7 +1634,6 @@ elem2.addEventListener("input", range2Value);
           });
       });
       </script>
-
 
 </body>
 

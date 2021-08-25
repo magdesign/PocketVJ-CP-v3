@@ -1,9 +1,16 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.7 25. August 2021<br />
+
+- added fader for video X position <br />
+- fixed some js error causing CP to slow down <br />
+- fixed "make elFinder" as default filebrowser (might need a second growser refresh)<br />
+- symbols to report bug or visit usermanual<br />
+- prepared script for Y position of video, but need some help to put multiple commands into one php file instead of creating several, anyone?<br />
 
 ## CP 3.0.6 24. August 2021<br />
 
-- added fader for video size, just because I can<br />
+- added fader for video size<br />
 
 
 ## CP 3.0.5 22. August 2021<br />
