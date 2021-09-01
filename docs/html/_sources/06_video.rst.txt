@@ -48,6 +48,7 @@ PLAYER SYNC ONCE
     - To be able to sync, the file names on master and slave must be exactly the same!
 
    
+.. image:: _images/06_CP_video_sync.png
 
 SYNC WIFI
 *********
@@ -143,14 +144,14 @@ Diables slideshow
 
 
 .. note::
-    To stop you need push STOP 2x, first will kill video, second kill imageplayer.
+    To stop you need push STOP 2x, first will stop video, second stops imageplayer.
 
     Set the slideshow time in the green PRESENTER section.
 
     If you only want one slide to display, just add one slide to the images folder.
 
  
-
+.. image:: _images/06_CP_video_fade.png
 
 FADE
 ****
