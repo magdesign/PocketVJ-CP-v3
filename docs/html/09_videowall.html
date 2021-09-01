@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>VIDEO WALL &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SCHEDULER" href="10_scheduler.html" />
+    <link rel="prev" title="MAPPING" href="08_mapping.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VIDEO WALL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syphon">SYPHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#screen">4 SCREEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3 SCREEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sender">SENDER</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>VIDEO WALL</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/09_videowall.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="video-wall">
+<h1>VIDEO WALL<a class="headerlink" href="#video-wall" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/09_CP_videowall.png" src="_images/09_CP_videowall.png" />
+<p>Make sure that you have placed a 1920x1080 video named:</p>
+<p><code class="docutils literal notranslate"><span class="pre">piwall.mp4</span></code>   in   <code class="docutils literal notranslate"><span class="pre">/media/internal/video</span></code></p>
+<div class="section" id="syphon">
+<h2>SYPHON<a class="headerlink" href="#syphon" title="Permalink to this headline">¶</a></h2>
+<p>Here you can select the syphon slave screen</p>
+</div>
+<div class="section" id="screen">
+<h2>4 SCREEN<a class="headerlink" href="#screen" title="Permalink to this headline">¶</a></h2>
+<p>Select the slave screen for a 4 screen setup</p>
+</div>
+<div class="section" id="id1">
+<h2>3 SCREEN<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Select the slave screen for a 3 screen setup</p>
+<p>see video tutorial:</p>
+</div>
+<div class="section" id="sender">
+<h2>SENDER<a class="headerlink" href="#sender" title="Permalink to this headline">¶</a></h2>
+<p>Select this to stream a master video to PiWall slaves</p>
+<p>Make sure that you started slaves before the master!</p>
+<p>You can also use any <strong>Linux</strong> computer to be master
+enable broadcast:</p>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">route</span> <span class="pre">add</span> <span class="pre">-net</span> <span class="pre">224.0.0.0</span> <span class="pre">netmask</span> <span class="pre">240.0.0.0</span> <span class="pre">eth0</span></code></p>
+<p>and then stream as master:</p>
+<p><code class="docutils literal notranslate"><span class="pre">avconv</span> <span class="pre">-re</span> <span class="pre">-i</span> <span class="pre">/your/movie.mp4</span> <span class="pre">-vcodec</span> <span class="pre">copy</span> <span class="pre">-f</span> <span class="pre">avi</span> <span class="pre">-an</span> <span class="pre">udp://239.0.1.23:1234</span></code></p>
+<p>make your mac computer as server to serve the video files for Pi-Wall:</p>
+<p>to make your Mac <strong>OSX</strong> the PiWall Master, first install <code class="docutils literal notranslate"><span class="pre">wget</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">rudix</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="n">wget</span><span class="o">.</span><span class="n">html</span>
+
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">ftp</span><span class="o">.</span><span class="n">gnu</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">gnu</span><span class="o">/</span><span class="n">wget</span><span class="o">/</span><span class="n">wget</span><span class="o">-</span><span class="mf">1.15</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<p>then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">libav</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">libav</span><span class="o">-</span><span class="mf">10.1</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xvzf</span> <span class="n">libav</span><span class="o">-</span><span class="mf">10.1</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="n">libav</span><span class="o">-</span><span class="mf">10.1</span>
+<span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">yasm</span> <span class="n">zlib</span> <span class="n">bzip2</span> <span class="n">faac</span> <span class="n">lame</span> <span class="n">speex</span> <span class="n">libogg</span> <span class="n">libvorbis</span> <span class="n">libtheora</span> <span class="n">libvpx</span> <span class="n">x264</span> <span class="n">XviD</span> <span class="n">openjpeg15</span> <span class="n">opencore</span><span class="o">-</span><span class="n">amr</span> <span class="n">freetype</span>
+</pre></div>
+</div>
+<p>Build libav:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">configure</span> \
+<span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">cflags</span><span class="o">=-</span><span class="n">I</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span> <span class="o">--</span><span class="n">extra</span><span class="o">-</span><span class="n">ldflags</span><span class="o">=-</span><span class="n">L</span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span> \
+<span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gpl</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libx264</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libxvid</span> \
+<span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">version3</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libopencore</span><span class="o">-</span><span class="n">amrnb</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libopencore</span><span class="o">-</span><span class="n">amrwb</span> \
+<span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">nonfree</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libfaac</span> \
+<span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libmp3lame</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libspeex</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libvorbis</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libtheora</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libvpx</span> \
+<span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libopenjpeg</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">libfreetype</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">doc</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">gnutls</span> <span class="o">--</span><span class="n">enable</span><span class="o">-</span><span class="n">shared</span>
+<span class="n">make</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</pre></div>
+</div>
+<p>Finally run as master:</p>
+<p><code class="docutils literal notranslate"><span class="pre">avconv</span> <span class="pre">-re</span> <span class="pre">-i</span> <span class="pre">/Users/path/to/video/testfile10.mp4</span> <span class="pre">-f</span> <span class="pre">avi</span> <span class="pre">-an</span> <span class="pre">udp://239.0.1.23:1234</span></code></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="10_scheduler.html" class="btn btn-neutral float-right" title="SCHEDULER" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="08_mapping.html" class="btn btn-neutral float-left" title="MAPPING" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

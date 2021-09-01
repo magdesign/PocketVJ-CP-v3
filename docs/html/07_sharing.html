@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>SHARING &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MAPPING" href="08_mapping.html" />
+    <link rel="prev" title="VIDEO" href="06_video.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SHARING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#screen-sharing">SCREEN SHARING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vnc-screensharing">VNC SCREENSHARING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tcpsyphon">TCPSYPHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#picamera">piCAMERA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fx">FX</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>SHARING</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/07_sharing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sharing">
+<h1>SHARING<a class="headerlink" href="#sharing" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/07_CP_sharing.png" src="_images/07_CP_sharing.png" />
+<div class="section" id="screen-sharing">
+<h2>SCREEN SHARING<a class="headerlink" href="#screen-sharing" title="Permalink to this headline">¶</a></h2>
+<p><strong>VNC ON</strong> =&gt; Enables VNC screensharing</p>
+<p><strong>TCPSyphon</strong> =&gt; Enables TCPSyphon display</p>
+</div>
+<div class="section" id="vnc-screensharing">
+<h2>VNC SCREENSHARING<a class="headerlink" href="#vnc-screensharing" title="Permalink to this headline">¶</a></h2>
+<p><strong>Mac OSX:</strong></p>
+<ol class="arabic simple">
+<li><p>Download Vine Server from <a class="reference external" href="http://www.testplant.com/dlds/vine/">http://www.testplant.com/dlds/vine/</a> and install it.</p></li>
+<li><p>Start Vine Server, in the menu select Server / Reverse Connection.</p></li>
+<li><p>Fill in the IP which is displayed on the screen of the PocketVJ.</p></li>
+<li><p>Voilà, you should have your computer display mirrored.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your computer display must have the same resolution as the screen connected to the PocketVJ.
+If the display is confusingly stretched, it might be that your computers resolution is set too high.</p>
+<p>Set your computers resolution to max. 1920x1080 pixel and try it again.</p>
+<p>If you use a Retina Macbook, install RetinaDisplay Menu from www.phoenix-dev.com to change your resolution to low DPI.</p>
+</div>
+<p><strong>Windows:</strong></p>
+<ol class="arabic simple">
+<li><p>Download TightVNC for Windows from <a class="reference external" href="http://www.tightvnc.com/">http://www.tightvnc.com/</a> and install it. Make sure you select complete installation!</p></li>
+<li><p>You should find the TightVNC symbol in the taskbar, right-click it and select “Attach Listening viewer” and type in the address which is showing on the screen, without :5500.</p></li>
+</ol>
+<img alt="_images/07_screensharing.png" src="_images/07_screensharing.png" />
+<p><strong>Linux (Debian/Ubuntu):</strong></p>
+<ol class="arabic simple">
+<li><p>Install vnc4server: sudo apt-get install vnc4server</p></li>
+<li><p>Open a terminal and type:</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">vnc4server</span> <span class="pre">-connect</span> <span class="pre">2.0.0.100:5500</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">x11vnc</span> <span class="pre">-connect</span> <span class="pre">2.0.0.100:5500</span></code></p>
+<p>3. If you have a second monitor attached where the mapping is visible,
+and you want to display this part of screen, use the -clip option:</p>
+<p><code class="docutils literal notranslate"><span class="pre">x11vnc</span> <span class="pre">-connect</span> <span class="pre">2.0.0.100:5500</span> <span class="pre">-clip</span> <span class="pre">1920x1080+1920+0</span></code></p>
+</div>
+<div class="section" id="tcpsyphon">
+<h2>TCPSYPHON<a class="headerlink" href="#tcpsyphon" title="Permalink to this headline">¶</a></h2>
+<p>See tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/18/pocketvj_tcpsyphon">https://video.pocketvj.com/AVideo/video/18/pocketvj_tcpsyphon</a></p>
+<p>Very useful if you want to use PocketVJ as a second screen for VJ applications supporting Syphon or Spout.</p>
+<ol class="arabic simple">
+<li><p>OSX: Download TCPSyphon Server <a class="reference external" href="http://techlife.sg/TCPSyphon/">http://techlife.sg/TCPSyphon/</a>
+Win: Download TCPSpout Server <a class="reference external" href="http://techlife.sg/TCPSpout/">http://techlife.sg/TCPSpout/</a>
+and install it on your Computer.
+Mirrors: <a class="reference external" href="https://pocketvj.com/downloads/syphon.zip">https://pocketvj.com/downloads/syphon.zip</a>
+<a class="reference external" href="https://pocketvj.com/downloads/TCPSpout.zip">https://pocketvj.com/downloads/TCPSpout.zip</a></p></li>
+<li><p>Connect your computer to the same network as the PocketVJ.
+(make sure you are not connected to another network as well!).</p></li>
+<li><p>Start TCPSyphon server, select the input under Syphon Server List.</p></li>
+<li><p>Boot PocketVJ into TCPSClient mode and if your networksettings are right, your PocketVJ should automatically act as a Syphon display.</p></li>
+</ol>
+<img alt="_images/07_tcpsyphon.png" src="_images/07_tcpsyphon.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>TCPSyphon Server should be running before you boot up the PocketVJ.
+Only use it if you have a RJ45 connection to the PocketVJ, we tested with Wifi and it is laggy.</p>
+<p>Max. numbers of TCPSyphon clients are 10.
+Your video application must support a Syphon output.</p>
+<p>Alternatively you can use Screen Capture Syphon <a class="reference external" href="http://techlife.sg/ScreenCaptureSyphon/">http://techlife.sg/ScreenCaptureSyphon/</a> to define an area to be mirrored to the PocketVJ.</p>
+<p>For Linux: use Screensharing (VNC) with the -clip option which works pretty well.
+Instead of a second screen, attach a HD gameplay recorder to the HDMI port.</p>
+</div>
+</div>
+<div class="section" id="picamera">
+<h2>piCAMERA<a class="headerlink" href="#picamera" title="Permalink to this headline">¶</a></h2>
+<p><strong>Enable</strong> =&gt; Enables a connected picam</p>
+</div>
+<div class="section" id="fx">
+<h2>FX<a class="headerlink" href="#fx" title="Permalink to this headline">¶</a></h2>
+<p>used for fx to the piCam.
+Needs some updates and coding work for an USB cam.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="08_mapping.html" class="btn btn-neutral float-right" title="MAPPING" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="06_video.html" class="btn btn-neutral float-left" title="VIDEO" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

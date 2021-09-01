@@ -1,0 +1,109 @@
+SHARING
+===========
+
+.. image:: _images/07_CP_sharing.png
+
+
+SCREEN SHARING
+***************
+
+**VNC ON** => Enables VNC screensharing
+
+**TCPSyphon** => Enables TCPSyphon display
+
+VNC SCREENSHARING
+*****************
+
+**Mac OSX:**
+
+1.  Download Vine Server from http://www.testplant.com/dlds/vine/ and install it.
+2.  Start Vine Server, in the menu select Server / Reverse Connection.
+
+3.  Fill in the IP which is displayed on the screen of the PocketVJ.
+
+4.  Voilà, you should have your computer display mirrored.
+
+
+.. note::
+    Your computer display must have the same resolution as the screen connected to the PocketVJ.
+    If the display is confusingly stretched, it might be that your computers resolution is set too high.
+    
+    Set your computers resolution to max. 1920x1080 pixel and try it again.
+
+    If you use a Retina Macbook, install RetinaDisplay Menu from www.phoenix-dev.com to change your resolution to low DPI.
+
+**Windows:**
+
+1. Download TightVNC for Windows from http://www.tightvnc.com/ and install it. Make sure you select complete installation!
+
+2. You should find the TightVNC symbol in the taskbar, right-click it and select “Attach Listening viewer” and type in the address which is showing on the screen, without :5500.
+
+
+.. image:: _images/07_screensharing.png
+
+**Linux (Debian/Ubuntu):**
+
+1. Install vnc4server: sudo apt-get install vnc4server
+2. Open a terminal and type:
+
+``vnc4server -connect 2.0.0.100:5500``
+
+``x11vnc -connect 2.0.0.100:5500``
+
+3. If you have a second monitor attached where the mapping is visible,
+and you want to display this part of screen, use the -clip option:
+
+``x11vnc -connect 2.0.0.100:5500 -clip 1920x1080+1920+0``
+
+
+TCPSYPHON
+**********
+
+See tutorial: https://video.pocketvj.com/AVideo/video/18/pocketvj_tcpsyphon
+
+Very useful if you want to use PocketVJ as a second screen for VJ applications supporting Syphon or Spout.
+
+1.  OSX: Download TCPSyphon Server http://techlife.sg/TCPSyphon/
+    Win: Download TCPSpout Server http://techlife.sg/TCPSpout/ 
+    and install it on your Computer.
+    Mirrors: https://pocketvj.com/downloads/syphon.zip
+    https://pocketvj.com/downloads/TCPSpout.zip
+
+2.  Connect your computer to the same network as the PocketVJ.
+    (make sure you are not connected to another network as well!).
+
+3. Start TCPSyphon server, select the input under Syphon Server List.
+
+4. Boot PocketVJ into TCPSClient mode and if your networksettings are right, your PocketVJ should automatically act as a Syphon display.
+
+
+.. image:: _images/07_tcpsyphon.png
+
+.. note::
+    TCPSyphon Server should be running before you boot up the PocketVJ.
+    Only use it if you have a RJ45 connection to the PocketVJ, we tested with Wifi and it is laggy.
+
+    Max. numbers of TCPSyphon clients are 10.
+    Your video application must support a Syphon output.
+
+    Alternatively you can use Screen Capture Syphon http://techlife.sg/ScreenCaptureSyphon/ to define an area to be mirrored to the PocketVJ.
+
+    For Linux: use Screensharing (VNC) with the -clip option which works pretty well.
+    Instead of a second screen, attach a HD gameplay recorder to the HDMI port.
+
+
+
+piCAMERA
+********
+
+**Enable** => Enables a connected picam
+
+FX
+******
+
+used for fx to the piCam.
+Needs some updates and coding work for an USB cam.
+
+
+
+

@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DMX OSC MIDI &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DISPLAY" href="12_display.html" />
+    <link rel="prev" title="SCHEDULER" href="10_scheduler.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DMX OSC MIDI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ola">OLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#osc">OSC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qlc">QLC+</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>DMX OSC MIDI</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/11_dmxoscmidi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dmx-osc-midi">
+<h1>DMX OSC MIDI<a class="headerlink" href="#dmx-osc-midi" title="Permalink to this headline">¶</a></h1>
+<p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/24/dmx%C2%A0on-pocketvj-rtc">https://video.pocketvj.com/AVideo/video/24/dmx%C2%A0on-pocketvj-rtc</a></p>
+<div class="section" id="ola">
+<h2>OLA<a class="headerlink" href="#ola" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/11_CP_dmx_osc.png" src="_images/11_CP_dmx_osc.png" />
+<p><strong>Start</strong> =&gt; Start OLA, this is necessary to activate DMX, ArtNet, sACN</p>
+<p><strong>Open Panel</strong> =&gt; Opens the seperate control panel to create Universes</p>
+</div>
+<div class="section" id="osc">
+<h2>OSC<a class="headerlink" href="#osc" title="Permalink to this headline">¶</a></h2>
+<p><strong>Start Listen</strong> =&gt; Starts to listen for OSC commands on port <code class="docutils literal notranslate"><span class="pre">9876</span></code></p>
+<p>List of OSC commands: <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/osc_control.js">https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/osc_control.js</a></p>
+<p><strong>Download TouchOSC</strong> =&gt; Download the TouchOSC layout contributed by Cornelius Henke:
+<a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-v3/raw/master/sync/PocketVJ_OSC.touchosc">https://github.com/magdesign/PocketVJ-CP-v3/raw/master/sync/PocketVJ_OSC.touchosc</a></p>
+<a class="reference internal image-reference" href="_images/11_osc_app.png"><img alt="_images/11_osc_app.png" src="_images/11_osc_app.png" style="width: 300px;" /></a>
+<p>There are many tools on the market which can send OSC commands.
+For example OSCulator or QLAB.
+Make sure you are not blocked by a firewall if the command does not get through to the player</p>
+<p>If you want to send commands from terminal
+(sudo apt install liblo-tools):</p>
+<p><code class="docutils literal notranslate"><span class="pre">oscsend</span> <span class="pre">192.168.2.100</span> <span class="pre">9876</span> <span class="pre">/pause</span></code></p>
+<p>or sendosc for all platformas: <a class="reference external" href="https://github.com/yoggy/sendosc">https://github.com/yoggy/sendosc</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">sendosc</span> <span class="pre">2.0.10.102</span> <span class="pre">9876</span> <span class="pre">/testscreen</span></code></p>
+</div>
+<div class="section" id="qlc">
+<h2>QLC+<a class="headerlink" href="#qlc" title="Permalink to this headline">¶</a></h2>
+<p>see video tutorial:</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="12_display.html" class="btn btn-neutral float-right" title="DISPLAY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="10_scheduler.html" class="btn btn-neutral float-left" title="SCHEDULER" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

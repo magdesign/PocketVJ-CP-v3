@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TROUBLESHOOTING &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CREATE CONTENT" href="16_create_content.html" />
+    <link rel="prev" title="SYSTEM SETTINGS" href="14_systemsettings.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">TROUBLESHOOTING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#not-able-to-connect-cp-via-browser">Not able to connect CP via browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#movie-plays-but-stutters"><strong>Movie plays, but stutters</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-dont-get-an-ip-address-from-the-pocketvj"><strong>I dont get an IP address from the PocketVJ</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-t-connect-via-wifi-or-constantly-loosing-wifi-connection"><strong>Can’t connect via WIFI or constantly loosing WIFI connection</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#movie-is-not-playing"><strong>Movie is not playing</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usb-stick-does-not-work-anymore-on-my-computer"><strong>USB-Stick does not work anymore on my computer</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connected-several-pocketvjs-over-a-router"><strong>Connected several PocketVJs over a router</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remote-power-on-projector-does-not-work"><strong>Remote “Power On Projector” does not work</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#special-functions"><strong>Special Functions</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-help-online"><strong>Get help online:</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="16_create_content.html">CREATE CONTENT</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>TROUBLESHOOTING</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/15_troubleshooting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="troubleshooting">
+<h1>TROUBLESHOOTING<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<p><strong>Get help online:</strong> <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-v3/issues">https://github.com/magdesign/PocketVJ-CP-v3/issues</a></p>
+<p>There will always be a solution :-)</p>
+<div class="section" id="not-able-to-connect-cp-via-browser">
+<h2>Not able to connect CP via browser<a class="headerlink" href="#not-able-to-connect-cp-via-browser" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some browsers force a <a class="reference external" href="https://">https://</a> connection, which is not possible on PocketVJ and will cause trouble to not be able to connect.</p>
+</div>
+<p>If you try to connect the CP via webbrowser and get an error like this:</p>
+<img alt="_images/15_unable_to_connect.png" src="_images/15_unable_to_connect.png" />
+<p>then all you have to do is to remove the  <a class="reference external" href="https://">https://</a> in the addressbar:</p>
+<img alt="_images/15_disable_https.png" src="_images/15_disable_https.png" />
+<p><strong>After update CP is showing a blank page</strong></p>
+<p>=&gt; Do again an update, but with the alternative method:
+<a class="reference external" href="https://video.pocketvj.com/AVideo/video/41/pocketvj-rtc-alternative-update">https://video.pocketvj.com/AVideo/video/41/pocketvj-rtc-alternative-update</a></p>
+</div>
+<div class="section" id="movie-plays-but-stutters">
+<h2><strong>Movie plays, but stutters</strong><a class="headerlink" href="#movie-plays-but-stutters" title="Permalink to this headline">¶</a></h2>
+<p>=&gt; Check if it is really a h.264 compressed movie.</p>
+</div>
+<div class="section" id="i-dont-get-an-ip-address-from-the-pocketvj">
+<h2><strong>I dont get an IP address from the PocketVJ</strong><a class="headerlink" href="#i-dont-get-an-ip-address-from-the-pocketvj" title="Permalink to this headline">¶</a></h2>
+<p>=&gt; Be patient, try again. Check the preferences on your device.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sometimes there are power peaks which can cause that the Wifi signal is not strong enough.
+Known are some issues with Hdmi to VGA adapters with old VGA devices who suck a lot of power.
+Also after plugging in some USB sticks. If there are many wireless devices in the room, change the wifi channel, since most units use channel 6 as standard.</p>
+</div>
+</div>
+<div class="section" id="can-t-connect-via-wifi-or-constantly-loosing-wifi-connection">
+<h2><strong>Can’t connect via WIFI or constantly loosing WIFI connection</strong><a class="headerlink" href="#can-t-connect-via-wifi-or-constantly-loosing-wifi-connection" title="Permalink to this headline">¶</a></h2>
+<p>=&gt; Not enough power from the powersupply, connect via RJ45 and check if you get enough power in SYSTEM SETTINGS.
+You need 5V and 3A, lower Amps will not work!</p>
+<p>=&gt; Try connecting via direct RJ45 <a class="reference external" href="https://video.pocketvj.com/AVideo/video/20/direct-rj45-to-your-pocketvj">https://video.pocketvj.com/AVideo/video/20/direct-rj45-to-your-pocketvj</a></p>
+</div>
+<div class="section" id="movie-is-not-playing">
+<h2><strong>Movie is not playing</strong><a class="headerlink" href="#movie-is-not-playing" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Make sure that there is no space or special character in the filename and it is not longer than 16 characters, my_video_file.mp4 not: my video file.mp4.</p></li>
+<li><p>Make sure your video is converted with the h264 codec (this causes in most cases the error)</p></li>
+<li><p>Make sure your video data is in the correct folder (/media/internal/video/).</p></li>
+<li><p>Make sure your PocketVJ is not configured to ‘Slideshow’ mode.</p></li>
+<li><p>Make sure audio output is set to HDMI/ Jack or both if there is no external soundcard connected, otherwise it will search for the ALSA device and will not start.</p></li>
+</ul>
+</div>
+<div class="section" id="usb-stick-does-not-work-anymore-on-my-computer">
+<h2><strong>USB-Stick does not work anymore on my computer</strong><a class="headerlink" href="#usb-stick-does-not-work-anymore-on-my-computer" title="Permalink to this headline">¶</a></h2>
+<p>=&gt; Plug it back into the PocketVJ and Click UNMOUNT in the control panel.</p>
+<p>Make sure to always mount and unmount your USB devices!</p>
+</div>
+<div class="section" id="connected-several-pocketvjs-over-a-router">
+<h2><strong>Connected several PocketVJs over a router</strong><a class="headerlink" href="#connected-several-pocketvjs-over-a-router" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Check the Gateway settings of your router, in original mode the PocketVJ runs in 192.168.2.1</p></li>
+</ul>
+</div>
+<div class="section" id="remote-power-on-projector-does-not-work">
+<h2><strong>Remote “Power On Projector” does not work</strong><a class="headerlink" href="#remote-power-on-projector-does-not-work" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Login to projector, enable PJLink, disable all passwords</p></li>
+<li><p>Under Service, enable DDDP and set the Crestron control IP to: 192.168.2.254</p></li>
+<li><p>make sure the Projector has following network info:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">IP:</span> <span class="pre">192.168.2.254</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Subnet:</span> <span class="pre">255.255.255.0</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Gateway:</span> <span class="pre">192.168.2.1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">DNS</span> <span class="pre">Server:</span> <span class="pre">192.168.2.1</span></code></p>
+<ul class="simple">
+<li><p>check this troubleshoot video: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector">https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector</a></p></li>
+<li><p>make sure the computer which is connected to the PocketVJ CP is not connected to second network, for example RJ45 in your local network and wifi to PocketVJ,</p></li>
+</ul>
+<p>if this is the case, unplug rj45 until it finds the projector, then you can plug it in again. Get a list of standard passwords for projectors here: <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-v3/blob/master/projector_passwords.md">https://github.com/magdesign/PocketVJ-CP-v3/blob/master/projector_passwords.md</a></p>
+</div>
+<div class="section" id="special-functions">
+<h2><strong>Special Functions</strong><a class="headerlink" href="#special-functions" title="Permalink to this headline">¶</a></h2>
+<p>Nearly everything is possible ;)</p>
+<p>Open an issue on github and your desired function it will be available on the next update ;)</p>
+<p>If you are in a hurry, you might drop me a donation to get things coded fast…</p>
+</div>
+<div class="section" id="get-help-online">
+<h2><strong>Get help online:</strong><a class="headerlink" href="#get-help-online" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-v3/issues">https://github.com/magdesign/PocketVJ-CP-v3/issues</a></p>
+<p>There will always be a solution :-)</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="16_create_content.html" class="btn btn-neutral float-right" title="CREATE CONTENT" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="14_systemsettings.html" class="btn btn-neutral float-left" title="SYSTEM SETTINGS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

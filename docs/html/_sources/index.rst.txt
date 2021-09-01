@@ -1,0 +1,56 @@
+PocketVJ RTC User Manual
+=========================
+
+
+.. image:: _images/00_PocketVJ_RTC.jpg
+
+
+Version 05/2021
+
+This user manual is published by magdesign.ch without any warranty.
+
+Improvements and changes to this manual necessitated by typographical errors,
+inaccuracies of current information, or improvements to
+programs and hardware, may be made by MAG Design at any time and without notice.
+Such changes will, however, be incorporated into new editions of this User guide.
+
+
+Under the copyright laws, this manual may not be copied in whole or in part 
+without the written consent of the owner.
+
+No worries, just ask me politely :-)
+
+If you prefer videotutorials:
+https://tutorials.pocketvj.com
+
+Content
+========
+
+**Thank you for buying a PocketVJ, you are fantastic!**
+
+
+
+.. toctree::
+   :maxdepth: 3
+  
+  
+   01_first_steps
+   02_controlpanel
+   03_autostart
+   04_filemanagement
+   05_presenter
+   06_video
+   07_sharing
+   08_mapping
+   09_videowall
+   10_scheduler
+   11_dmxoscmidi
+   12_display
+   13_networksettings
+   14_systemsettings
+   15_troubleshooting
+   16_create_content
+
+
+
+

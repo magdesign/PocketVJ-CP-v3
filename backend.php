@@ -32,6 +32,16 @@ if ($_GET['action'] == 'getcontent') {
 	$outputtext =  "content from your defined websource downloaded";
 }
 
+if ($_GET['action'] == 'pause') {
+	exec("sudo /var/www/sync/pause.py");
+	$outputtext = "Pause, click again to resume";
+}
+
+if ($_GET['action'] == 'screenshot') {
+	exec("sudo /var/www/sync/screenshot");
+	$outputtext = "Printscreen saved in /media/internal/images";
+}
+
 //////////////////
 //# Video Section
 /////////////////
@@ -196,8 +206,8 @@ if ($_GET['action'] == 'startmasteronce') {
 }
 
 if ($_GET['action'] == 'startmasteronce01') {
-	exec("sudo /var/www/sync/startmasterone01");
 	$outputtext = "start video 01 once";
+	exec("sudo /var/www/sync/startmasterone01 > /dev/null 2>&1");
 }
 
 if ($_GET['action'] == 'startmasteronce02') {
@@ -305,62 +315,62 @@ if ($_GET['action'] == 'startless') {
 }
 
 if ($_GET['action'] == 'startless01') {
-	exec("sudo /var/www/sync/startless01");
+	exec("sudo /var/www/sync/startless01 > /dev/null 2>&1");
 	$outputtext = "start video 01";
 }
 
 if ($_GET['action'] == 'startless02') {
-	exec("sudo /var/www/sync/startless02");
+	exec("sudo /var/www/sync/startless02 > /dev/null 2>&1");
 	$outputtext = "start video 02";
 }
 
 if ($_GET['action'] == 'startless03') {
-	exec("sudo /var/www/sync/startless03");
+	exec("sudo /var/www/sync/startless03 > /dev/null 2>&1");
 	$outputtext = "start video 03";
 }
 
 if ($_GET['action'] == 'startless04') {
-	exec("sudo /var/www/sync/startless04");
+	exec("sudo /var/www/sync/startless04 > /dev/null 2>&1");
 	$outputtext = "start video 04";
 }
 
 if ($_GET['action'] == 'startless05') {
-	exec("sudo /var/www/sync/startless05");
+	exec("sudo /var/www/sync/startless05 > /dev/null 2>&1");
 	$outputtext = "start video 05";
 }
 
 if ($_GET['action'] == 'startless06') {
-	exec("sudo /var/www/sync/startless06");
+	exec("sudo /var/www/sync/startless06 > /dev/null 2>&1");
 	$outputtext = "start video 06";
 }
 
 if ($_GET['action'] == 'startless07') {
-	exec("sudo /var/www/sync/startless07");
+	exec("sudo /var/www/sync/startless07 > /dev/null 2>&1");
 	$outputtext = "start video 07";
 }
 
 if ($_GET['action'] == 'startless08') {
-	exec("sudo /var/www/sync/startless08");
+	exec("sudo /var/www/sync/startless08 > /dev/null 2>&1");
 	$outputtext = "start video 08";
 }
 
 if ($_GET['action'] == 'startless09') {
-	exec("sudo /var/www/sync/startless09");
+	exec("sudo /var/www/sync/startless09 > /dev/null 2>&1");
 	$outputtext = "start video 09";
 }
 
 if ($_GET['action'] == 'startless10') {
-	exec("sudo /var/www/sync/startless10");
+	exec("sudo /var/www/sync/startless10 > /dev/null 2>&1");
 	$outputtext = "start video 10";
 }
 
 if ($_GET['action'] == 'startless11') {
-	exec("sudo /var/www/sync/startless11");
+	exec("sudo /var/www/sync/startless11 > /dev/null 2>&1");
 	$outputtext = "start video 11";
 }
 
 if ($_GET['action'] == 'startless12') {
-	exec("sudo /var/www/sync/startless12");
+	exec("sudo /var/www/sync/startless12 > /dev/null 2>&1");
 	$outputtext = "start video 12";
 }
 
@@ -370,52 +380,52 @@ if ($_GET['action'] == 'startless12') {
 //////////////////////////
 
 if ($_GET['action'] == 'startlessonce01') {
-	exec("sudo /var/www/sync/startlessonce01");
+	exec("sudo /var/www/sync/startlessonce01 > /dev/null 2>&1");
 	$outputtext = "start video 01 once";
 }
 
 if ($_GET['action'] == 'startlessonce02') {
-	exec("sudo /var/www/sync/startlessonce02");
+	exec("sudo /var/www/sync/startlessonce02 > /dev/null 2>&1");
 	$outputtext = "start video 02 once";
 }
 
 if ($_GET['action'] == 'startlessonce03') {
-	exec("sudo /var/www/sync/startlessonce03");
+	exec("sudo /var/www/sync/startlessonce03> /dev/null 2>&1");
 	$outputtext = "start video 03 once";
 }
 
 if ($_GET['action'] == 'startlessonce04') {
-	exec("sudo /var/www/sync/startlessonce04");
+	exec("sudo /var/www/sync/startlessonce04 > /dev/null 2>&1");
 	$outputtext = "start video 04 once";
 }
 
 if ($_GET['action'] == 'startlessonce05') {
-	exec("sudo /var/www/sync/startlessonce05");
+	exec("sudo /var/www/sync/startlessonce05 > /dev/null 2>&1");
 	$outputtext = "start video 05 once";
 }
 
 if ($_GET['action'] == 'startlessonce06') {
-	exec("sudo /var/www/sync/startlessonce06");
+	exec("sudo /var/www/sync/startlessonce06 > /dev/null 2>&1");
 	$outputtext = "start video 06 once";
 }
 
 if ($_GET['action'] == 'startlessonce07') {
-	exec("sudo /var/www/sync/startlessonce07");
+	exec("sudo /var/www/sync/startlessonce07 > /dev/null 2>&1");
 	$outputtext = "start video 07 once";
 }
 
 if ($_GET['action'] == 'startlessonce08') {
-	exec("sudo /var/www/sync/startlessonce08");
+	exec("sudo /var/www/sync/startlessonce08 > /dev/null 2>&1");
 	$outputtext = "start video 08 once";
 }
 
 if ($_GET['action'] == 'startlessonce09') {
-	exec("sudo /var/www/sync/startlessonce09");
+	exec("sudo /var/www/sync/startlessonce09 > /dev/null 2>&1");
 	$outputtext = "start video 09 once";
 }
 
 if ($_GET['action'] == 'startlessonce10') {
-	exec("sudo /var/www/sync/startlessonce10");
+	exec("sudo /var/www/sync/startlessonce10 > /dev/null 2>&1");
 	$outputtext = "start video 10 once";
 }
 
@@ -428,12 +438,12 @@ if ($_GET['action'] == 'stopslaves') {
 }
 
 if ($_GET['action'] == 'startslave') {
-	exec("sudo /var/www/sync/startslave");
+	exec("sudo /var/www/sync/startslave > /dev/null 2>&1");
 	$outputtext =  "start player as slave";
 }
 
 if ($_GET['action'] == 'startslaveonce') {
-	exec("sudo /var/www/sync/startslaveonce");
+	exec("sudo /var/www/sync/startslaveonce > /dev/null 2>&1");
 	$outputtext =  "start player as slave once";
 }
 
@@ -447,14 +457,20 @@ if ($_GET['action'] == 'starthplayer') {
 	$outputtext =  "start hplayer with OSC control";
 }
 
-if ($_GET['action'] == 'pause') {
-	exec("sudo /var/www/sync/pause.py");
-	$outputtext = "Pause, click again to resume";
+
+
+/////////////////////////////
+// Slideshow after video once
+/////////////////////////////
+
+if ($_GET['action'] == 'enableslideafter') {
+	$outputtext =  "enable slideshow after video played once";
+	system ("sudo /var/www/sync/set_enableslideafter > /dev/null 2>&1");
 }
 
-if ($_GET['action'] == 'screenshot') {
-	exec("sudo /var/www/sync/screenshot");
-	$outputtext = "Printscreen saved in /media/internal/images";
+if ($_GET['action'] == 'disableslideafter') {
+	$outputtext =  "disable slideshow after video played once";
+	system ("sudo /var/www/sync/set_disableslideafter > /dev/null 2>&1");
 }
 
 //////////////////////

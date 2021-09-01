@@ -1,5 +1,13 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+
+## CP 3.0.8 01. September 2021<br />
+
+- fixed start PLAYER once (scripts where missing)<br />
+- added SLIDESHOW after feature, this will play slideshow after video played once<br />
+- added soft temp limit to 70° (please enable in red section=> DISPLAY => RESOLUTION => default or any other<br />
+- added usermanual to CP, so it can be viewed without internet<br />
+
 ## CP 3.0.7 25. August 2021<br />
 
 - added fader for video X position <br />

@@ -35,3 +35,5 @@ dtparam=act_led_activelow=off
 dtparam=pwr_led_trigger=none
 dtparam=pwr_led_activelow=off
 
+temp_soft_limit=70
+

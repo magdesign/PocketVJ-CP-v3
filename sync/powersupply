@@ -16,6 +16,9 @@ elif [ "${POWERSUPPLY}" = "throttled=0x10000;" ]; then
 
 elif [ "${POWERSUPPLY}" = "throttled=0x80000;" ]; then 
         echo "Power OK, but Soft Temperature Limit";
+
+elif [ "${POWERSUPPLY}" = "throttled=0x80008;" ]; then 
+        echo "Soft Temperature Limit and Throtteling";
 fi
 
 exit 0

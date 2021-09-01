@@ -1,0 +1,138 @@
+FILE MANAGEMENT
+===============
+
+Here you can manage the files of the internal storge.
+
+.. image:: _images/04_CP_filemanagement.png
+
+
+
+INFO
+*****
+
+- **Diskspace** => Show the diskspace
+- **Movie Codec** => Show movie codec infos
+- **Movie Resolution** => Show movie resolution
+
+USB
+****
+
+- **Mount** => Mount an USB stick
+- **Unmount** => Unmount an USB stick
+
+
+BROWSER
+*********
+
+- select one of the 3 available filebrowsers
+- make the one you like as default
+
+
+.. note::
+    - **filebrowser** is not accessible over the internet
+    - **elFinder** has a max. upload size of 2GB
+    - **eXtplorer** is default, but might cause trouble with touch devices
+    
+TOOLS
+******
+
+- **Permission Fixer** => if you lost write access to the storage, press this button
+- **Filename Fixer** => removes whitespaces, unreadable characters like à è é ö ä ü and shortens the Filename
+- **Clean Hidden** => especially when copying files vie Samba from OSX, you will get som .file files which cause the player to struggle, just click here to get rid of them
+- **Conform Images** => resizes all images to max. 1920 x 1080 and converts them to .jpg
+- **Mapping Converter** => Import mappings made in Mapio or Madmapper, `see tutorial  <https://video.pocketvj.com/AVideo/video/17/pocketvj-mapping-converter>`_
+- **Get Content** => Get content from websource (since CP3.0.1), `see tutorial <https://video.pocketvj.com/AVideo/video/33/pocketvj_get_web_content>`_
+  , to shedule get content, use /var/www/sync/getcontent
+
+
+UPLOAD FILES
+*************
+
+To upload new content, follow this procedure:
+
+1. In the shortlinks, click **STOP** to free all resources
+
+2. Click the 'Filebrowser shortlink'
+
+3. There opens up a new tab with an eXtplorer window 
+
+4. Upload and manage your files in the :code:`/internal`
+
+5. Be patient while uploading and do not disconnect the power!
+
+
+.. image:: _images/04_extplorer.png
+
+
+
+
+
+.. note::
+    - For uploading large files (>400MB) `copy from a connected USB stick <https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting>`_  
+
+    - Filezilla for fast uploading via sftp://
+
+    - Do not use empty spaces or special characters in your filenames, use `TOOLS`_ =>  **Filename Fixer** 
+    
+    - Use the folder structure as given
+
+    - If you are not able to up/download files, use `TOOLS`_ => **Permission Fixer**
+
+    - Stop the player before uploading and managing content
+
+
+
+FILEZILLA
+**********
+
+Use ``sftp://``
+
+1. Open Filezilla, under Server enter the IP: sftp://2.0.0.*** (replace the asterix with the number of your PocketVJ WiFi name)
+
+2. Hit Enter and you should be able to navigate to the folder
+
+``/media/internal/``
+
+3. Load or edit your files, be sure not to modify any other directories!
+
+
+
+LOADING FROM USB TO INTERNAL
+*****************************
+
+
+Supported file systems are: vFAT, FAT32, exFAT, HFS, NTFS, EXT4
+
+
+See tutorial: https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting
+
+
+SAMBA
+******
+
+
+.. image:: _images/04_samba.png
+
+
+
+1. In Finder go to: GO > Connect to Server
+
+2. In the Server address bar type : smb://2.0.0.*** (replace the ***
+with the number of your PocketVJ WiFi name).
+
+3. Connect, in the Password Prompt select Guest.
+
+7. Your Finder mounts a Network device named: media
+   Load and edit your files with finder.
+
+
+.. note::
+    - If you move large files, finder may tell you: copy zero bytes of.... Estimating time remaining... and it looks like finder hangs showing turning colorball, then just go and grab a coffee, it is copying in the background :-)
+    
+    - 600MB may take around 16 minutes.
+
+    - After uploading files via same, make sure to use **Clean Hidden Files** function to get rid of hidden files
+
+
+See tutorial: https://video.pocketvj.com/AVideo/video/32/pocketvj_samba_share
+

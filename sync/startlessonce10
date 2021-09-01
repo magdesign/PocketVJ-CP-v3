@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#set variable for afterslide
+AFTERSLIDE=False
+
+#kill all running tasks
+/var/www/sync/stopall
+
+if [[ $AFTERSLIDE == "True" ]]; then 
+#play video without sync
+/usr/bin/omxplayer --no-osd -o both /media/internal/video/10*
+/var/www/sync/startimage > /dev/null &
+fi
+
+if  [[ $AFTERSLIDE == "False" ]]; then 
+#play video without sync
+/usr/bin/omxplayer --no-osd -o both /media/internal/video/10* > /dev/null 2>&1 & echo $! &
+fi
+
+
+exit 0

@@ -1,0 +1,49 @@
+#!/bin/bash
+#disable slideshow after video played once in all once scripts until 20*
+
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce01
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce02
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce03
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce04
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce05
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce06
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce07
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce08
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce09
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce10
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce11
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce12
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce13
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce14
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce15
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce16
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce17
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce18
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce19
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startlessonce20
+
+
+
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone01
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone02
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone03
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone04
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone05
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone06
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone07
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone08
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone09
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone10
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone11
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone12
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone13
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone14
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone15
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone16
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone17
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone18
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone19
+sed -i '/^AFTERSLIDE=/c\AFTERSLIDE=False' /var/www/sync/startmasterone20
+
+exit 0

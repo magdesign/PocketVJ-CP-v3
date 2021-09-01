@@ -1,7 +1,23 @@
 #!/bin/bash
 
+#set variable for afterslide
+AFTERSLIDE=False
+
 #kill all running tasks
 /var/www/sync/stopall
 
+if [[ $AFTERSLIDE == "True" ]]; then 
+#start video 15 once
+/usr/bin/omxplayer-sync -m -o both /media/internal/video/15*
+/var/www/sync/startimage > /dev/null &
+fi
+
+if  [[ $AFTERSLIDE == "False" ]]; then 
 #start video 15 once
 /usr/bin/omxplayer-sync -m -o both /media/internal/video/15* > /dev/null 2>&1 & echo $! &
+fi
+
+
+exit 0
+
+

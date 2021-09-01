@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FILE MANAGEMENT &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PRESENTER" href="05_presenter.html" />
+    <link rel="prev" title="AUTOSTART" href="03_autostart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FILE MANAGEMENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#info">INFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usb">USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#browser">BROWSER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tools">TOOLS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-files">UPLOAD FILES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filezilla">FILEZILLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-from-usb-to-internal">LOADING FROM USB TO INTERNAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#samba">SAMBA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>FILE MANAGEMENT</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/04_filemanagement.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="file-management">
+<h1>FILE MANAGEMENT<a class="headerlink" href="#file-management" title="Permalink to this headline">¶</a></h1>
+<p>Here you can manage the files of the internal storge.</p>
+<img alt="_images/04_CP_filemanagement.png" src="_images/04_CP_filemanagement.png" />
+<div class="section" id="info">
+<h2>INFO<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Diskspace</strong> =&gt; Show the diskspace</p></li>
+<li><p><strong>Movie Codec</strong> =&gt; Show movie codec infos</p></li>
+<li><p><strong>Movie Resolution</strong> =&gt; Show movie resolution</p></li>
+</ul>
+</div>
+<div class="section" id="usb">
+<h2>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Mount</strong> =&gt; Mount an USB stick</p></li>
+<li><p><strong>Unmount</strong> =&gt; Unmount an USB stick</p></li>
+</ul>
+</div>
+<div class="section" id="browser">
+<h2>BROWSER<a class="headerlink" href="#browser" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>select one of the 3 available filebrowsers</p></li>
+<li><p>make the one you like as default</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p><strong>filebrowser</strong> is not accessible over the internet</p></li>
+<li><p><strong>elFinder</strong> has a max. upload size of 2GB</p></li>
+<li><p><strong>eXtplorer</strong> is default, but might cause trouble with touch devices</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tools">
+<h2>TOOLS<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Permission Fixer</strong> =&gt; if you lost write access to the storage, press this button</p></li>
+<li><p><strong>Filename Fixer</strong> =&gt; removes whitespaces, unreadable characters like à è é ö ä ü and shortens the Filename</p></li>
+<li><p><strong>Clean Hidden</strong> =&gt; especially when copying files vie Samba from OSX, you will get som .file files which cause the player to struggle, just click here to get rid of them</p></li>
+<li><p><strong>Conform Images</strong> =&gt; resizes all images to max. 1920 x 1080 and converts them to .jpg</p></li>
+<li><p><strong>Mapping Converter</strong> =&gt; Import mappings made in Mapio or Madmapper, <a class="reference external" href="https://video.pocketvj.com/AVideo/video/17/pocketvj-mapping-converter">see tutorial</a></p></li>
+<li><p><strong>Get Content</strong> =&gt; Get content from websource (since CP3.0.1), <a class="reference external" href="https://video.pocketvj.com/AVideo/video/33/pocketvj_get_web_content">see tutorial</a>
+, to shedule get content, use /var/www/sync/getcontent</p></li>
+</ul>
+</div>
+<div class="section" id="upload-files">
+<h2>UPLOAD FILES<a class="headerlink" href="#upload-files" title="Permalink to this headline">¶</a></h2>
+<p>To upload new content, follow this procedure:</p>
+<ol class="arabic simple">
+<li><p>In the shortlinks, click <strong>STOP</strong> to free all resources</p></li>
+<li><p>Click the ‘Filebrowser shortlink’</p></li>
+<li><p>There opens up a new tab with an eXtplorer window</p></li>
+<li><p>Upload and manage your files in the <code class="code docutils literal notranslate"><span class="pre">/internal</span></code></p></li>
+<li><p>Be patient while uploading and do not disconnect the power!</p></li>
+</ol>
+<img alt="_images/04_extplorer.png" src="_images/04_extplorer.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>For uploading large files (&gt;400MB) <a class="reference external" href="https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting">copy from a connected USB stick</a></p></li>
+<li><p>Filezilla for fast uploading via sftp://</p></li>
+<li><p>Do not use empty spaces or special characters in your filenames, use <a class="reference internal" href="#tools">TOOLS</a> =&gt;  <strong>Filename Fixer</strong></p></li>
+<li><p>Use the folder structure as given</p></li>
+<li><p>If you are not able to up/download files, use <a class="reference internal" href="#tools">TOOLS</a> =&gt; <strong>Permission Fixer</strong></p></li>
+<li><p>Stop the player before uploading and managing content</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="filezilla">
+<h2>FILEZILLA<a class="headerlink" href="#filezilla" title="Permalink to this headline">¶</a></h2>
+<p>Use <code class="docutils literal notranslate"><span class="pre">sftp://</span></code></p>
+<ol class="arabic simple">
+<li><p>Open Filezilla, under Server enter the IP: sftp://2.0.0.*** (replace the asterix with the number of your PocketVJ WiFi name)</p></li>
+<li><p>Hit Enter and you should be able to navigate to the folder</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">/media/internal/</span></code></p>
+<ol class="arabic simple" start="3">
+<li><p>Load or edit your files, be sure not to modify any other directories!</p></li>
+</ol>
+</div>
+<div class="section" id="loading-from-usb-to-internal">
+<h2>LOADING FROM USB TO INTERNAL<a class="headerlink" href="#loading-from-usb-to-internal" title="Permalink to this headline">¶</a></h2>
+<p>Supported file systems are: vFAT, FAT32, exFAT, HFS, NTFS, EXT4</p>
+<p>See tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting">https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting</a></p>
+</div>
+<div class="section" id="samba">
+<h2>SAMBA<a class="headerlink" href="#samba" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/04_samba.png" src="_images/04_samba.png" />
+<ol class="arabic simple">
+<li><p>In Finder go to: GO &gt; Connect to Server</p></li>
+</ol>
+<p>2. In the Server address bar type : <a class="reference external" href="smb://2.0.0.***">smb://2.0.0.***</a> (replace the <a href="#id2"><span class="problematic" id="id3">**</span></a>*
+with the number of your PocketVJ WiFi name).</p>
+<ol class="arabic simple" start="3">
+<li><p>Connect, in the Password Prompt select Guest.</p></li>
+</ol>
+<ol class="arabic simple" start="7">
+<li><p>Your Finder mounts a Network device named: media
+Load and edit your files with finder.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>If you move large files, finder may tell you: copy zero bytes of…. Estimating time remaining… and it looks like finder hangs showing turning colorball, then just go and grab a coffee, it is copying in the background :-)</p></li>
+<li><p>600MB may take around 16 minutes.</p></li>
+<li><p>After uploading files via same, make sure to use <strong>Clean Hidden Files</strong> function to get rid of hidden files</p></li>
+</ul>
+</div>
+<p>See tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/32/pocketvj_samba_share">https://video.pocketvj.com/AVideo/video/32/pocketvj_samba_share</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="05_presenter.html" class="btn btn-neutral float-right" title="PRESENTER" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="03_autostart.html" class="btn btn-neutral float-left" title="AUTOSTART" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PocketVJ RTC User Manual &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="First Steps" href="01_first_steps.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16_create_content.html">CREATE CONTENT</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>PocketVJ RTC User Manual</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pocketvj-rtc-user-manual">
+<h1>PocketVJ RTC User Manual<a class="headerlink" href="#pocketvj-rtc-user-manual" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/00_PocketVJ_RTC.jpg" src="_images/00_PocketVJ_RTC.jpg" />
+<p>Version 05/2021</p>
+<p>This user manual is published by magdesign.ch without any warranty.</p>
+<p>Improvements and changes to this manual necessitated by typographical errors,
+inaccuracies of current information, or improvements to
+programs and hardware, may be made by MAG Design at any time and without notice.
+Such changes will, however, be incorporated into new editions of this User guide.</p>
+<p>Under the copyright laws, this manual may not be copied in whole or in part
+without the written consent of the owner.</p>
+<p>No worries, just ask me politely :-)</p>
+<p>If you prefer videotutorials:
+<a class="reference external" href="https://tutorials.pocketvj.com">https://tutorials.pocketvj.com</a></p>
+</div>
+<div class="section" id="content">
+<h1>Content<a class="headerlink" href="#content" title="Permalink to this headline">¶</a></h1>
+<p><strong>Thank you for buying a PocketVJ, you are fantastic!</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_first_steps.html#connecting">CONNECTING</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="02_controlpanel.html#shortlinks">SHORTLINKS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_controlpanel.html#output-window">OUTPUT WINDOW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_controlpanel.html#colored-tabs">COLORED TABS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_controlpanel.html#direct-connecting-with-rj45">DIRECT CONNECTING WITH RJ45</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#info">INFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#usb">USB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#browser">BROWSER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#tools">TOOLS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#upload-files">UPLOAD FILES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#filezilla">FILEZILLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#loading-from-usb-to-internal">LOADING FROM USB TO INTERNAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_filemanagement.html#samba">SAMBA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="05_presenter.html#control">CONTROL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_presenter.html#slide-show">SLIDE SHOW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_presenter.html#slide-time">SLIDE TIME</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_presenter.html#overlay">OVERLAY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_presenter.html#impress">IMPRESS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_presenter.html#audio">AUDIO</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#player">PLAYER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#player-once">PLAYER ONCE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#player-sync">PLAYER SYNC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#player-sync-once">PLAYER SYNC ONCE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#sync-wifi">SYNC WIFI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#multichannel">MULTICHANNEL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#multichannel-syncing">MULTICHANNEL SYNCING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#slideshow-after">SLIDESHOW after</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#fade">FADE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_video.html#speed">SPEED</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="07_sharing.html#screen-sharing">SCREEN SHARING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_sharing.html#vnc-screensharing">VNC SCREENSHARING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_sharing.html#tcpsyphon">TCPSYPHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_sharing.html#picamera">piCAMERA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_sharing.html#fx">FX</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#open">OPEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#save">SAVE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#mode">MODE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#function">FUNCTION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#remote">REMOTE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#slideshow">SLIDESHOW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_mapping.html#format">FORMAT</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="09_videowall.html#syphon">SYPHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_videowall.html#screen">4 SCREEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_videowall.html#id1">3 SCREEN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_videowall.html#sender">SENDER</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="10_scheduler.html#clock">CLOCK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_scheduler.html#id1">SCHEDULER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_scheduler.html#timetable">TIMETABLE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="11_dmxoscmidi.html#ola">OLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_dmxoscmidi.html#osc">OSC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_dmxoscmidi.html#qlc">QLC+</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="13_networksettings.html#info">INFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_networksettings.html#change-ip">CHANGE IP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_networksettings.html#cp-password">CP PASSWORD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_networksettings.html#wifi-antenna">WIFI ANTENNA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_networksettings.html#wifi-channel">WIFI CHANNEL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#info">INFO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#audio-output">AUDIO OUTPUT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#audio-testtone">AUDIO TESTTONE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#firmware">FIRMWARE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#factory-reset">FACTORY RESET</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#access">ACCESS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_systemsettings.html#alpha-stuff">ALPHA STUFF</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#not-able-to-connect-cp-via-browser">Not able to connect CP via browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#movie-plays-but-stutters"><strong>Movie plays, but stutters</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#i-dont-get-an-ip-address-from-the-pocketvj"><strong>I dont get an IP address from the PocketVJ</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#can-t-connect-via-wifi-or-constantly-loosing-wifi-connection"><strong>Can’t connect via WIFI or constantly loosing WIFI connection</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#movie-is-not-playing"><strong>Movie is not playing</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#usb-stick-does-not-work-anymore-on-my-computer"><strong>USB-Stick does not work anymore on my computer</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#connected-several-pocketvjs-over-a-router"><strong>Connected several PocketVJs over a router</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#remote-power-on-projector-does-not-work"><strong>Remote “Power On Projector” does not work</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#special-functions"><strong>Special Functions</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_troubleshooting.html#get-help-online"><strong>Get help online:</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="16_create_content.html">CREATE CONTENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="16_create_content.html#convert-movies-to-h-264-mp4-files">Convert movies to h.264 * .mp4 files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_create_content.html#create-animations">Create Animations</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="01_first_steps.html" class="btn btn-neutral float-right" title="First Steps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, M.A.Gasser, magdesign.ch
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

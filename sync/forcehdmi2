@@ -28,3 +28,5 @@ dtparam=act_led_activelow=off
 #disable red onboard led
 dtparam=pwr_led_trigger=none
 dtparam=pwr_led_activelow=off
+
+temp_soft_limit=70
