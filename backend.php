@@ -2016,7 +2016,7 @@ if ($_GET['action'] == 'cpuusage') {
 }
 
 if ($_GET['action'] == 'powersupply') {
-	$outputtext = shell_exec('/var/www/sync/powersupply | grep Power');
+	$outputtext = shell_exec('/var/www/sync/powersupply');
 }
 
 if ($_GET['action'] == 'servicecheck'){
