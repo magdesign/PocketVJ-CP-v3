@@ -3,6 +3,8 @@
 
 ### Priority:
 
+- add usermanual to cp, so it can be viewed when beeing offline  <br />
+- play image after play video once has finished <p/>
 - feedback in cp when moving speed or opacity slider <br />
 - rewrite update script to force remove content in ofxPiMapper/example/bin/data/sources/videos, recheck to mapper update process! <br />
 - port the new pjlink commands from Exhibition <br />
