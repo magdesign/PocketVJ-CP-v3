@@ -1199,8 +1199,8 @@ if ($_GET['action'] == 'updateall') {
 	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
 	// disable camera on boot
 	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
-	// set audio to jack and hdmi
-	system("sudo /var/www/sync/setaudio_both");
+	// set audio to jack
+	system("sudo /var/www/sync/setaudio_jack");
 	//remove old chunk form CP 1.14
 	system("sudo rm /var/www/sitemap.xml");
 	//remove .xsession file
@@ -1243,8 +1243,6 @@ if ($_GET['action'] == 'factoryreset') {
 	system ("rm -rf /media/lost+found/");
 	//disable camera on boot
 	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
-	// set audio to jack and hdmi
-	system("sudo /var/www/sync/setaudio_both");
 	//system("sudo rm -rf /tmp/*");
 	//system("sudo rm -rf /var/log/*");
 	//system("sudo rm -rf /var/tmp/*");
@@ -1254,8 +1252,8 @@ if ($_GET['action'] == 'factoryreset') {
 	exec("sudo killall -9 /usr/bin/olad");
 	//disable camera
 	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
-	//set audio to jack and hdmi
-	system("sudo /var/www/sync/setaudio_both");
+	//set audio to jack
+	system("sudo /var/www/sync/setaudio_jack");
 }
 
 

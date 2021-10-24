@@ -23,7 +23,24 @@ then all you have to do is to remove the  https:// in the addressbar:
 
 .. image:: _images/15_disable_https.png
 
+**Trouble connecting to Wifi Hotspot (vj100) with a Windows Computer**
+**************************************************************
+
+If your Windows10 does not allow to connect to the PocketVJ wifi (vj100), following steps might help:
+
+
+.. image:: _images/15_windows_wifi.png
+
+
+or this one:
+
+.. image:: _images/15_windows_wifi2.png
+
+
+.
+
 **After update CP is showing a blank page**
+*******************************************
 
 => Do again an update, but with the alternative method:
 https://video.pocketvj.com/AVideo/video/41/pocketvj-rtc-alternative-update

@@ -29,6 +29,8 @@ Videotutorial: https://video.pocketvj.com/AVideo/video/15/pocketvj_rtc_overview
     - If you lost the sticker with the IP address, go to "Network Settings" and click ‘Display IP’.
     - There are some known issues with Safari / Edge / IE browsers = Use Chrome and its derivates.
 
+      **IF YOU HAVE TROUBLE CONNECTING, CHECK THE TROUBLESHOOTING SECTION OF THIS MANUAL!**
+
 
 
 

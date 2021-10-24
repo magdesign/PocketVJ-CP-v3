@@ -33,6 +33,8 @@ Select where you want the audio to be played.
 Limit of audio compression is: 160kbit/s 
 (you can experiment with higher values, but then decrease the video bitrate).
 
+Do not use "HDMI&Jack" audio out setting, it will result in bad audio quality, its only there for beeing there....
+
 If the quality from mini Jack plug does not make you happy, use audio over HDMI with an extender or attach an USB soundcard, keep in mind that when they arw big, to provide them power from an external powersource.
 
 
