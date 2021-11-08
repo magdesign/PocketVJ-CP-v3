@@ -2,8 +2,12 @@
 **********
 
 ### Priority:
-
-- bring the ausio quality fixes from exhibition to the rtc as well! <br />
+ <br />
+- mapping without mouse, adopt it from exhibition so it will work too <br />
+- add scheduler status to "Check Services"  <br />
+- remove the underline from play video 01_* so its more userfriendly  <br />
+<br />
+- bring the audio quality fixes from exhibition to the rtc as well!<br />
 - change build pipeline to build docs into cp and to website <br />
 - feedback in cp when moving speed or opacity slider <br />
 - rewrite update script to force remove content in ofxPiMapper/example/bin/data/sources/videos, recheck to mapper update process! <br />
