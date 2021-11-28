@@ -496,6 +496,12 @@ if ($_GET['action'] == 'stopimage') {
 	#hier muss noch kill feh und x rein?
 }
 
+if ($_GET['action'] == 'imagekenburn') {
+	$outputtext =  "start image player";
+	system("sudo /var/www/sync/startimage > /dev/null &");
+}
+
+
 if ($_GET['action'] == 'image') {
 	$outputtext =  "start image player";
 	system("sudo /var/www/sync/startimage > /dev/null &");
