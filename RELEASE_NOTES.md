@@ -2,8 +2,8 @@
 
 ## CP 3.0.8a 28.November 2021<br />
 
-
-- fixed slide show (did not trigger, no one reported...its fixed now)
+- fixed slide show (did not trigger, no one reported...its fixed now)<br />
+- speed up servicecheck with setting a timeout<br />
 
 ## CP 3.0.8 01. September 2021<br />
 

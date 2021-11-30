@@ -60,7 +60,7 @@ fi
 
 #Internet
 
-if ping -q -w1 -c1 pocketvj.com >/dev/null; then
+if timeout 1 ping -q -w1 -c1 pocketvj.com >/dev/null; then
  echo "INTERNET = online"
 else
  echo "INTERNET = offline"
