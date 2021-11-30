@@ -4,7 +4,6 @@
 ### Priority:
  <br />
 - mapping without mouse, adopt it from exhibition so it will work too <br />
-- add scheduler status to "Check Services"  <br />
 - remove the underline from play video 01_* so its more userfriendly  <br />
 <br />
 - bring the audio quality fixes from exhibition to the rtc as well!<br />

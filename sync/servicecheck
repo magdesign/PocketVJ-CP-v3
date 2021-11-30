@@ -44,13 +44,11 @@ else
     echo "OLAD dmx = off"
 fi
 
-
 #GPU
 if [ "${GPU}" = "state 0x2 [TV is off]" ]; then
     echo "GPU = off"
 else echo "GPU = on"
 fi
-
 
 #Wifi
 if [ "${WIFI}" = "wlan0" ]; then
@@ -59,16 +57,20 @@ else echo "WIFI = disabled"
 fi
 
 #Internet
-
 if timeout 1 ping -q -w1 -c1 pocketvj.com >/dev/null; then
  echo "INTERNET = online"
 else
  echo "INTERNET = offline"
 fi
 
+#Scheduler
+if [ $(crontab -l 2>/dev/null | wc -c) -eq 0 ]; then
+  echo "SCHEDULER = off"
+else
+  echo "SCHEDULER = on"
+fi
 
 #Power
-
 echo POWER = "${POWER}" 
 
 exit 0

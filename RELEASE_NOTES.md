@@ -4,6 +4,7 @@
 
 - fixed slide show (did not trigger, no one reported...its fixed now)<br />
 - speed up servicecheck with setting a timeout<br />
+- added scheduler status to servicecheck<br />
 
 ## CP 3.0.8 01. September 2021<br />
 
