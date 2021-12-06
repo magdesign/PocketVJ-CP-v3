@@ -10,11 +10,22 @@
 
 [**Official Website**](https://www.pocketvj.com/)
 
+## ⁉️ Tutorials
+
+Watch [Videos](https://www.pocketvj.com/pocketvj-rtc#Tutorials_RTC)
+
+
+or
+
+
+Read [Manual](https://www.pocketvj.com/manual_rtc/index.html)
+
+
 ## 🤲 Support
 
 **Please order something in the [online shop](https://www.pocketvj.com/shop) to support this project!**
 
-## 📝 Release Note
+## 📝 Release Notes
 
 > Always read the release notes before you update
 
@@ -30,5 +41,7 @@ Check out [**Build**](./docs/build.md)
 
 ## License
 
-[License](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/LICENSE.md)
+[License](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/LICENSE.md) file
+
+
 [magdesign](https://www.pocketvj.com/)

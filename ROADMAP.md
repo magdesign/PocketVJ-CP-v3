@@ -1,7 +1,7 @@
 ## Roadmap
 **********
 
-### Priority:
+
  <br />
 - mapping without mouse, adopt it from exhibition so it will work too <br />
 - remove the underline from play video 01_* so its more userfriendly  <br />
@@ -15,17 +15,14 @@
 - prevent bootloops when pusing reboot and browser reconnects, solve with closing the browser tab <br />
 - add omxplayer error output when setting to alsa/usb audio but no soundcard is recognized <br />
 - Update the osc_control.js (startlesser scripts) <br />
-- add wireless-power off to interfaces ? <br />
-- playing videos once does not give feedback in CP <br />
+- playing videos once does not give feedback in CP, add feedbacks inbackend or in scripts <br />
 
 ### Tutorials: <br />
 
 - Show how to use mapper without mouse  <br />
 - All autostart functions  <br />
 
-### Manual: <br />
 
-- is a rolling release ;)
 
 =======================<br />
 
