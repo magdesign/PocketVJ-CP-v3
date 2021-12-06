@@ -2,7 +2,7 @@
 <img src="./docs/PVJ_2019.svg" alt="PocketVJ-Logo" width="100%">
 </p>
 
-# PocketVJ Control Panel Version 3
+# PocketVJ CP 3.x
 
 [![commits](https://img.shields.io/github/last-commit/magdesign/PocketVJ-CP-v3/master.svg?style=flat-square)](https://github.com/magdesign/PocketVJ-CP-v3/commits/master)
 [![issues](https://img.shields.io/github/issues-raw/magdesign/PocketVJ-CP-v3.svg?style=flat-square)](https://github.com/magdesign/PocketVJ-CP-v3/issues)
@@ -28,6 +28,7 @@ Check out [**Todo list**](ROADMAP.md)
 
 Check out [**Build**](./docs/build.md)
 
-## Licence
+## License
 
-Copyright © 2021 [magdesign](https://www.pocketvj.com/)
+[License](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/LICENSE.md)
+[magdesign](https://www.pocketvj.com/)
