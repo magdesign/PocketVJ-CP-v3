@@ -68,6 +68,8 @@ To upload new content, follow this procedure:
 
 
 .. note::
+    - Filenaming: no empty spaces, no umlauts, when using numbers, always with underline, like this 01_video.mp4
+    
     - For uploading large files (>400MB) `copy from a connected USB stick <https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting>`_  
 
     - Filezilla for fast uploading via sftp://

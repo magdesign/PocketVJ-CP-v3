@@ -45,6 +45,16 @@ or this one:
 => Do again an update, but with the alternative method:
 https://video.pocketvj.com/AVideo/video/41/pocketvj-rtc-alternative-update
 
+
+
+**Colored square on top of screen**
+************************************
+
+.. image:: _images/15_power_failure.png
+
+=> Power Supply is bad, you need 5V 3A Power supply!
+
+
 **Movie plays, but stutters** 
 ******************************
 => Check if it is really a h.264 compressed movie.
