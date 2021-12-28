@@ -9,4 +9,4 @@ sudo rm -Rf /media/usb/.Spotlight-V100/
 
 
 #start video01 from usb
-/usr/bin/omxplayer-sync -mu -o both /media/usb/01* > /dev/null 2>&1 & echo $! &
+/usr/bin/omxplayer-sync -mu -o local /media/usb/01* > /dev/null 2>&1 & echo $! &

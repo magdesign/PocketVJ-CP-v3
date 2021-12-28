@@ -3,5 +3,18 @@
 #kill all running tasks
 /var/www/sync/stopall
 
+OVERLAY=OFF
+
+if [[ $OVERLAY == "ON" ]]; then
+/usr/bin/omxplayer-sync -mu -o local /media/internal/video/* > /dev/null 2>&1 & echo $! &
+sleep 1
+/var/www/sync/overlay
+echo "startmaster & overlay"
+fi
+
+
+if [[ $OVERLAY == "OFF" ]]; then
 #start master
-/usr/bin/omxplayer-sync -mu -o both /media/internal/video/* > /dev/null 2>&1 & echo $! &
+/usr/bin/omxplayer-sync -mu -o local /media/internal/video/* > /dev/null 2>&1 & echo $! &
+echo "start master"
+fi

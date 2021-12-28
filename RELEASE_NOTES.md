@@ -1,5 +1,11 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.8b 28.December 2021<br />
+
+- when enabling overlay, it will also be activated when autostart to master or video=> player sync => play all<br />
+- you might get edge cases when overlay is already enabled and you hit overlay on <br />
+
+
 ## CP 3.0.8a 28.November 2021<br />
 
 - fixed slide show (did not trigger, no one reported...its fixed now)<br />

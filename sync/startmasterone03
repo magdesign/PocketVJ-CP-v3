@@ -8,13 +8,13 @@ AFTERSLIDE=False
 
 if [[ $AFTERSLIDE == "True" ]]; then 
 #start video 03 once
-/usr/bin/omxplayer-sync -m -o both /media/internal/video/03*
+/usr/bin/omxplayer-sync -m -o local /media/internal/video/03*
 /var/www/sync/startimage > /dev/null &
 fi
 
 if  [[ $AFTERSLIDE == "False" ]]; then 
 #start video 03 once
-/usr/bin/omxplayer-sync -m -o both /media/internal/video/03* > /dev/null 2>&1 & echo $! &
+/usr/bin/omxplayer-sync -m -o local /media/internal/video/03* > /dev/null 2>&1 & echo $! &
 fi
 
 

@@ -1,7 +1,7 @@
 ## Roadmap
 **********
  <br />
-- add overlay to autostart <br />
+- fix the overlay edge case, needed? <br />
 - play all video files random  <br />
 - mapping without mouse, adopt it from exhibition so it will work too <br />
 - remove the underline from play video 01_* so its more userfriendly  <br />

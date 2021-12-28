@@ -8,13 +8,13 @@ AFTERSLIDE=False
 
 if [[ $AFTERSLIDE == "True" ]]; then 
 #play video without sync
-/usr/bin/omxplayer --no-osd -o both /media/internal/video/12*
+/usr/bin/omxplayer --no-osd -o local /media/internal/video/12*
 /var/www/sync/startimage > /dev/null &
 fi
 
 if  [[ $AFTERSLIDE == "False" ]]; then 
 #play video without sync
-/usr/bin/omxplayer --no-osd -o both /media/internal/video/12* > /dev/null 2>&1 & echo $! &
+/usr/bin/omxplayer --no-osd -o local /media/internal/video/12* > /dev/null 2>&1 & echo $! &
 fi
 
 

@@ -8,7 +8,7 @@
 # set here the path to the directory containing your videos
 VIDEOPATH="/media/internal/video/" 
 
-PLAYER="omxplayer -o both"
+PLAYER="omxplayer -o local"
 
 # you can normally leave this alone
 SERVICE="omxplayer"

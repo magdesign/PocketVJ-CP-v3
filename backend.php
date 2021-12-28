@@ -519,11 +519,13 @@ if ($_GET['action'] == 'startimagemanual') {
 
 if ($_GET['action'] == 'overlay') {
 	$outputtext =  "start .png overlay";
+	system ("sudo sed -i '/OVERLAY=/c OVERLAY=ON' /var/www/sync/startmaster");
 	system("sudo /var/www/sync/overlay");
 }
 
 if ($_GET['action'] == 'stopoverlay') {
 	$outputtext =  "stop .png overlay";
+	system ("sudo sed -i '/OVERLAY=/c OVERLAY=OFF' /var/www/sync/startmaster");
 	system("sudo /var/www/sync/overlaystop");
 	//system("sudo killall -9 /home/pi/raspidmx/pngview/./pngview");
 }
