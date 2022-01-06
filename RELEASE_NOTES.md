@@ -1,5 +1,10 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.8c 06.Januar 2021<br />
+
+- added "disable logging" to updateall and factory reset <br />
+- added change resolution without reboot <br />
+
 ## CP 3.0.8b 28.December 2021<br />
 
 - when enabling overlay, it will also be activated when autostart to master or video=> player sync => play all<br />

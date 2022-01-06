@@ -1,8 +1,8 @@
 ## Roadmap
 **********
  <br />
-- disable logs <br />
-- add resolution change without reboot <br />
+
+- add rescue script similar to exhibition <br />
 - fix the overlay edge case, needed? <br />
 - play all video files random  <br />
 - mapping without mouse, adopt it from exhibition so it will work too <br />
