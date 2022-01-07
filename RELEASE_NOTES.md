@@ -1,5 +1,9 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
+## CP 3.0.8d 07.Januar 2021 <br />
+
+- added random video player to "Autostart" => "Custom 01" (this is experimental, please report any issues on github)<br />
+
 ## CP 3.0.8c 06.Januar 2021<br />
 
 - added "disable logging" to updateall and factory reset <br />

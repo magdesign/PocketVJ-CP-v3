@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+import os, random, sys, select
+
+def randomvideo ():   
+
+  while True:
+	
+    	randomfile = random.choice(os.listdir("/media/internal/video"))
+    	file = ' /media/internal/video/'+ randomfile
+    	os.system ('omxplayer -o local' + file)
+	
+print "randomplayer running"
+
+randomvideo ()
+
+
