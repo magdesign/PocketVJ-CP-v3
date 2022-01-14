@@ -5,7 +5,7 @@ PocketVJ RTC User Manual
 .. image:: _images/00_PocketVJ_RTC.jpg
 
 
-Version 06/2021
+Version 01/2022
 
 This user manual is published by magdesign.ch without any warranty.
 

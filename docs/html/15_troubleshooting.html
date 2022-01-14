@@ -109,6 +109,8 @@
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">TROUBLESHOOTING</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#not-able-to-connect-cp-via-browser">Not able to connect CP via browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#not-able-to-connect-cp-via-browser-2">Not able to connect CP via browser (2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#not-able-to-connect-cp-via-browser-and-not-getting-any-ip-from-wifi-connection">Not able to connect CP via browser and not getting any IP from wifi connection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#trouble-connecting-to-wifi-hotspot-vj100-with-a-windows-computer"><strong>Trouble connecting to Wifi Hotspot (vj100) with a Windows Computer</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#after-update-cp-is-showing-a-blank-page"><strong>After update CP is showing a blank page</strong></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#colored-square-on-top-of-screen"><strong>Colored square on top of screen</strong></a></li>
@@ -205,6 +207,33 @@
 <img alt="_images/15_unable_to_connect.png" src="_images/15_unable_to_connect.png" />
 <p>then all you have to do is to remove the  <a class="reference external" href="https://">https://</a> in the addressbar:</p>
 <img alt="_images/15_disable_https.png" src="_images/15_disable_https.png" />
+</div>
+<div class="section" id="not-able-to-connect-cp-via-browser-2">
+<h2>Not able to connect CP via browser (2)<a class="headerlink" href="#not-able-to-connect-cp-via-browser-2" title="Permalink to this headline">¶</a></h2>
+<p>There is an edge scenario when the PocketVJ looses power while playing DMX Sequences causing the webserver (lighttpd) not to run anymore.
+To fix this, access it with ssh and do following</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">lighttpd</span>
+<span class="n">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="n">R</span> <span class="n">www</span><span class="o">-</span><span class="n">data</span><span class="p">:</span><span class="n">www</span><span class="o">-</span><span class="n">data</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">lighttpd</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">service</span> <span class="n">lighttpd</span> <span class="n">start</span>
+</pre></div>
+</div>
+<p>To check if the webserver is now running without errors</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">service</span> <span class="n">lighttpd</span> <span class="n">status</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="not-able-to-connect-cp-via-browser-and-not-getting-any-ip-from-wifi-connection">
+<h2>Not able to connect CP via browser and not getting any IP from wifi connection<a class="headerlink" href="#not-able-to-connect-cp-via-browser-and-not-getting-any-ip-from-wifi-connection" title="Permalink to this headline">¶</a></h2>
+<p>In rare cases, when you poweroff or reboot the PocketVJ while there are still things playing (especially mapping sync or dmx shows),
+it gets a read/write error on the internal SD card. There is no other way to fix this than opening your PocketVJ, remove the sd card,
+boot a computer with Linux (if you have no Linux computer, download an Ubuntu live Image (<a class="reference external" href="https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a>) and boot into this), insert the SD card,
+open the program called: “Gparted” and click Check &amp; Repair filesystem. After done so, insert the SD card back into PocketVJ and it will run again.
+I know its much, but it might bring your device back to life.</p>
+<img alt="_images/15_troubleshoot_diskfix.png" src="_images/15_troubleshoot_diskfix.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not try to fix the SD card with a Windows or OSX computer, this will completely break your system and you need to get warranty replacement card from me</p>
+</div>
 </div>
 <div class="section" id="trouble-connecting-to-wifi-hotspot-vj100-with-a-windows-computer">
 <h2><strong>Trouble connecting to Wifi Hotspot (vj100) with a Windows Computer</strong><a class="headerlink" href="#trouble-connecting-to-wifi-hotspot-vj100-with-a-windows-computer" title="Permalink to this headline">¶</a></h2>

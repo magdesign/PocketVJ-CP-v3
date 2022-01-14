@@ -12,3 +12,10 @@ If it shall do nothing on boot or listen to the timetable or listen to OSC, sele
 **Scheduler/OSC**
 
 If it shall do noting but listen to OSC/Artnet ord DMX signals, select => **OSC/ArtNet**
+
+**Custom 01**
+is for custom scripts you made yourself or users asked for.
+
+until CP 3.0.8b => autostart into Chromium browser
+
+since CP 3.0.8d => austart into random video player (plays all videos in folder in a random order)
