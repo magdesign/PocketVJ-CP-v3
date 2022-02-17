@@ -56,8 +56,8 @@
 	sudo chmod 755 /var/www/sync/beamer_on_off.sh
 	#Update mappingconverter
 	sudo rm -rf /home/pi/openFrameworks/apps/myApps/mapping-converter2
-	sudo unzip /var/www/sync/mappingconverter.zip -d /home/pi/openFrameworks/apps/myApps/
-	sudo mv /home/pi/openFrameworks/apps/myApps/mapping-converter2-master /home/pi/openFrameworks/apps/myApps/mapping-converter2
+	sudo unzip -o /var/www/sync/mappingconverter.zip -d /
+	#sudo mv /home/pi/openFrameworks/apps/myApps/mapping-converter2-master /home/pi/openFrameworks/apps/myApps/mapping-converter2
 	#Update OSC control in home folder
 	sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js
 	# disable camera on boot
