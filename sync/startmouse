@@ -1,5 +1,13 @@
 #!/bin/bash
 
 #/opt/fsaysuinput &
+
+#create the by folders
+echo "create by folders"
+mkdir /dev/input/by-id/
+mkdir /dev/input/by-path/
+
+#no idea what for this was
 mv /dev/input/event1 /dev/input/event7
 ln -s -f /dev/input/event0 /dev/input/event1
+

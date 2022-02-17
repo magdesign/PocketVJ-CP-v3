@@ -1,18 +1,23 @@
 #!/bin/bash
 
-
 #working method:	expect /var/www/sync/mapper3e > /dev/null 2>&1;
 
-#detect if a usb mouse is there or not:
+#detect if a usb mouse is there or not via ls command :
+COMMAND=$(ls /dev/input/by-id/*mouse > /dev/null 2>&1  && echo "yes" || echo "no")
 
-if sudo lsusb | grep Mouse; then 
+if [ "$COMMAND" == "yes" ]; then
         echo "YES! => there is a mouse <=";
         expect /var/www/sync/mapper3e > /dev/null 2>&1;
-        exit
-else
-        echo "NO mouse detected => lets fake one <="; 
-        /var/www/sync/startmouse
-        expect /var/www/sync/mapper3e > /dev/null 2>&1;
+	exit
 fi
+
+if [ "$COMMAND" == "no" ]; then
+	echo "NO mouse detected => some functions will not work!<=";
+	#/var/www/sync/startmouse
+        expect /var/www/sync/mapper3e > /dev/null 2>&1;
+# exit
+fi
+
+
 
 exit 0
