@@ -42,6 +42,8 @@
 	#Update Mappers
 	sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper
 	sudo unzip /var/www/sync/mapper_all.zip -d /
+	sudo rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos
+	sudo rm -rf /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
 	sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos
 	sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
 	#set ip on network scripts to match pvj current ip

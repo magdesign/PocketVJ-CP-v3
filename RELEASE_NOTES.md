@@ -3,7 +3,7 @@
 ## CP 3.0.9 17.Februar 2022 <br />
 
 - added simplepainter<br />
-- fixed updateall so you only have to do it once<br />
+- fixed updateall so you only have to do it once, fixed also mapper video symlink<br />
 - added mappingconverter, it somehow was lost in the last few releases<br />
 - fixes on powersupply check<br />
 - fixed set audio scripts<br />
