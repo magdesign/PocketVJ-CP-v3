@@ -49,6 +49,9 @@ sudo killall -9  /usr/bin/raspivid > /dev/null &
 sudo killall -9 /home/pi/superpikix/./superPikixOf > /dev/null &
 #kill puredata
 sudo killall -9 /usr/bin/pd-extended > /dev/null &
+#kill painter
+sudo kill $(pgrep -f '/usr/bin/python /var/www/sync/simplepainter.py') > /dev/null 2>&1 &
+
 #kill top command
 #sudo killall -9 top
 #without sleep its faster thean loading a new instance of omxplayer and would kill itself

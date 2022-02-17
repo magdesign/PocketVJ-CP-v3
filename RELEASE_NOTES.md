@@ -1,10 +1,16 @@
 # PocketVJ 3.x /  Control Panel 3.x.x
 
-## CP 3.0.8d 07.Januar 2021 <br />
+## CP 3.0.9 17.Februar 2022 <br />
+
+- added simplepainter<br />
+- fixed updateall so you only have to do it once<br />
+- added mappingconverter, it somehow was lost in the last few releases<br />
+
+## CP 3.0.8d 07.Januar 2022 <br />
 
 - added random video player to "Autostart" => "Custom 01" (this is experimental, please report any issues on github)<br />
 
-## CP 3.0.8c 06.Januar 2021<br />
+## CP 3.0.8c 06.Januar 2022<br />
 
 - added "disable logging" to updateall and factory reset <br />
 - added change resolution without reboot <br />

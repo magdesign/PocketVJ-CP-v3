@@ -1189,84 +1189,15 @@ if ($_GET['action'] == 'mapperupdate') {
 if ($_GET['action'] == 'updateall') {
 	//Update CP
 	system ("sudo /var/www/sync/stopall > /dev/null 2>&1");
+	// chmod everything, not sure if this is need when update does not work
+	system("sudo chmod 755 -R /var/www/");
+	//Update CP
 	system("sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/");
 	system("sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/");
 	system("sudo chmod 755 -R /var/www/");
 	system("sudo rm -rf /media/internal/PocketVJ-CP-v3-master.zip");
 	system("sudo rm -rf /media/internal/PocketVJ-CP-v3-master");
-	//Remove omxplayer and sync
-	system("sudo apt-get remove omxplayer");
-	system("rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer");
-	system("rm -f /usr/bin/omxplayer-sync");
-	system("rm -f /usr/bin/dbuscontrol.sh");
-	system("sudo apt-get clean");
-	//Install omxplayer dependencies
-  	system("sudo dpkg -i /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb");
-   	system("sudo dpkg -i /var/www/sync/libssh-4_0.6.3-4+deb8u2_armhf.deb");
-	//install omxplayer version:
-  	#system("sudo dpkg -i /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb");
-	system("sudo dpkg -i /var/www/sync/omxplayer_0.3.7-git20180910-7f3faf6-jessie_armhf.deb");
-    // Copy omxplayer-sync scripts to /usr/bin  & set permissions
-	system("sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync");
-	system("sudo cp /var/www/sync/omxplayer-sync-old /usr/bin/omxplayer-sync-old");
-	system("sudo chmod a+x /usr/bin/omxplayer");
-	system("sudo chmod a+x /usr/bin/omxplayer.bin");
-	system("sudo chmod a+x /usr/bin/omxplayer-sync");
-	system("sudo chmod a+x /usr/bin/omxplayer-sync-old");
-	//cleanup:
-	system("sudo apt-get clean");
-	//Update Interfaceswifi
-	system("sudo cp /var/www/sync/interfaceswifi /etc/network/interfaceswifi");
-	//Update Boot config
-	system("sudo cp /var/www/sync/defaulthdmi /boot/config.txt");
-	//Update timer.txt
-	system("sudo cp /var/www/sync/timer.txt /media/internal/timer.txt");
-	//Update Mappers
-	system("sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper");
-	system("sudo unzip /var/www/sync/mapper_all.zip -d /");
-	system ("sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos");
-	system ("sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images");
-	//set ip on network scripts to match pvj current ip
-	system("sudo /var/www/sync/iprangeUpdatecall");
-	//TCPSyphon new tcpsyphon needs debian strech libs!!
-	//reinstalls TCPSyphon
-	system("sudo rm /usr/bin/TCPSClient.bin");
-	system("sudo cp /var/www/sync/TCPSClient.bin /usr/bin/TCPSClient.bin");
-	system("sudo chmod +x /usr/bin/TCPSClient.bin");
-	//Set to PJlink
-	system("sudo cp /var/www/sync/beamer_on_off_pjlink.sh /var/www/sync/beamer_on_off.sh");
-	system("sudo chmod 755 /var/www/sync/beamer_on_off.sh");
-	//Update mappingconverter
-	system("sudo rm -rf /home/pi/openFrameworks/apps/myApps/mapping-converter2");
-	system("sudo unzip /var/www/sync/mappingconverter.zip -d /home/pi/openFrameworks/apps/myApps/");
-	//Update OSC control in home folder
-	system("sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js");
-	// disable camera on boot
-	system("sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt");
-	// set audio to jack
-	system("sudo /var/www/sync/setaudio_jack");
-	//remove old chunk form CP 1.14
-	system("sudo rm /var/www/sitemap.xml");
-	//remove .xsession file
-	system("sudo rm -rf /home/pi/.xsession");
-	//remove git folder
-	system("sudo rm -rf /var/www/.git");
-	//remove chunk from webflow
-	system("sudo rm -rf /var/www/icons");
-	system("sudo rm -rf /var/www/streamer");
-	system("sudo rm -rf /var/www/css");
-	system("sudo rm -rf /var/www/images");
-	//remove filebrowser, if there is one
-	system("sudo rm -rf /var/www/filebrowser");
-	//install filebrowser from zip
-	system("sudo unzip /var/www/sync/filebrowser -d /");
-	//copy filebrowser daemon
-	system("sudo cp /var/www/filebrowser/filebrowser.service /etc/systemd/system/filebrowser.service");
-	// Disable logging
-	system("sudo service rsyslog stop");
-    system("sudo systemctl disable rsyslog");
-	//Text Output
-	$outputtext =  "Updated all, refresh browser";
+	$outputtext = shell_exec('sudo /var/www/sync/updateall');
 }
 
 if ($_GET['action'] == 'factoryreset') {
@@ -1919,6 +1850,25 @@ if ($_GET['action'] == 'impressclose') {
 	system("sudo /var/www/sync/impressclose");
 }
 
+//# Painter
+
+if ($_GET['action'] == 'launchpainter') {
+	system("sudo /var/www/sync/stopall");
+	system("sudo /usr/bin/python /var/www/sync/simplepainter.py");
+	$outputtext =  "launched mask painter";
+}
+
+if ($_GET['action'] == 'savemask') {
+	system("sudo /opt/screenshot/./screenshot > /media/internal/images/screenshot.png");
+	system("sudo convert /media/internal/images/screenshot.png -fuzz 20% -transparent white /media/internal/images/mask.png");
+	$outputtext =  "saved as transparent mask.png";
+}
+
+if ($_GET['action'] == 'saveoverlay') {
+	system("sudo /opt/screenshot/./screenshot > /media/internal/images/screenshot.png");
+	system("sudo convert /media/internal/images/screenshot.png -fuzz 20% -transparent white /media/internal/images/overlay.png");
+	$outputtext =  "saved as transparent overlay.png";
+}
 
 //# Projector Control
 

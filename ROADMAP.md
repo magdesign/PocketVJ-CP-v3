@@ -4,7 +4,7 @@
 
 - add rescue script similar to exhibition <br />
 - fix the overlay edge case, needed? <br />
-- play all video files random  <br />
+- play all video files random, integrated in custom01  <br />
 - mapping without mouse, adopt it from exhibition so it will work too <br />
 - remove the underline from play video 01_* so its more userfriendly  <br />
 <br />
@@ -29,5 +29,5 @@
 =======================<br />
 
 Opensource rocks! <br />
-©2021 marc-andré gasser
+©2022 marc-andré gasser
 

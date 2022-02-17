@@ -1,0 +1,89 @@
+#! /bin/bash
+
+	#stop everything
+	#sudo /var/www/sync/stopall > /dev/null 2>&1
+
+	# chmod everything, not sure if this is need when update does not work
+	# sudo chmod 755 -R /var/www/
+	#Update CP
+	# sudo /var/www/sync/stopall > /dev/null 2>&1
+	# sudo unzip /media/internal/PocketVJ-CP-v3-master.zip -d /media/internal/
+	# sudo cp -r /media/internal/PocketVJ-CP-v3-master/* /var/www/
+	# sudo chmod 755 -R /var/www/
+	# sudo rm -rf /media/internal/PocketVJ-CP-v3-master.zip
+	# sudo rm -rf /media/internal/PocketVJ-CP-v3-master
+	#Remove omxplayer and sync
+	sudo apt-get -y remove omxplayer
+	sudo rm -rf /usr/bin/omxplayer /usr/bin/omxplayer.bin /usr/lib/omxplayer
+	sudo rm -rf /usr/bin/omxplayer-sync
+	sudo rm -rf /usr/bin/dbuscontrol.sh
+	sudo apt-get clean
+	#Install omxplayer dependencies
+  	sudo dpkg -i /var/www/sync/python3-dbus_1.2.0-2+b1_armhf.deb
+   	sudo dpkg -i /var/www/sync/libssh-4_0.6.3-4+deb8u2_armhf.deb
+	#install omxplayer version:
+  	#sudo dpkg -i /var/www/sync/omxplayer_0.3.7-git20170130-62fb580_armhf.deb
+	sudo dpkg -i /var/www/sync/omxplayer_0.3.7-git20180910-7f3faf6-jessie_armhf.deb
+    # Copy omxplayer-sync scripts to /usr/bin  & set permissions
+	sudo cp /var/www/sync/omxplayer-sync /usr/bin/omxplayer-sync
+	sudo cp /var/www/sync/omxplayer-sync-old /usr/bin/omxplayer-sync-old
+	sudo chmod a+x /usr/bin/omxplayer
+	sudo chmod a+x /usr/bin/omxplayer.bin
+	sudo chmod a+x /usr/bin/omxplayer-sync
+	sudo chmod a+x /usr/bin/omxplayer-sync-old
+	#cleanup:
+	sudo apt-get clean
+	#Update Interfaceswifi
+	sudo cp /var/www/sync/interfaceswifi /etc/network/interfaceswifi
+	#Update Boot config
+	sudo cp /var/www/sync/defaulthdmi /boot/config.txt
+	#Update timer.txt
+	sudo cp /var/www/sync/timer.txt /media/internal/timer.txt
+	#Update Mappers
+	sudo rm -r /home/pi/openFrameworks/addons/ofxPiMapper
+	sudo unzip /var/www/sync/mapper_all.zip -d /
+	sudo ln -s /media/internal/video /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/videos
+	sudo ln -s /media/internal/images /home/pi/openFrameworks/addons/ofxPiMapper/example/bin/data/sources/images
+	#set ip on network scripts to match pvj current ip
+	sudo /var/www/sync/iprangeUpdatecall
+	#TCPSyphon new tcpsyphon needs debian strech libs!!
+	#reinstalls TCPSyphon
+	sudo rm /usr/bin/TCPSClient.bin
+	sudo cp /var/www/sync/TCPSClient.bin /usr/bin/TCPSClient.bin
+	sudo chmod +x /usr/bin/TCPSClient.bin
+	#Set to PJlink
+	sudo cp /var/www/sync/beamer_on_off_pjlink.sh /var/www/sync/beamer_on_off.sh
+	sudo chmod 755 /var/www/sync/beamer_on_off.sh
+	#Update mappingconverter
+	sudo rm -rf /home/pi/openFrameworks/apps/myApps/mapping-converter2
+	sudo unzip /var/www/sync/mappingconverter.zip -d /home/pi/openFrameworks/apps/myApps/
+	sudo mv /home/pi/openFrameworks/apps/myApps/mapping-converter2-master /home/pi/openFrameworks/apps/myApps/mapping-converter2
+	#Update OSC control in home folder
+	sudo cp /var/www/sync/osc_control.js /home/pi/osc/osc_control.js
+	# disable camera on boot
+	sudo sed -ri 's/^start_x=.+$/start_x=0/' /boot/config.txt
+	# set audio to jack
+	sudo /var/www/sync/setaudio_jack
+	#remove old chunk form CP 1.14
+	sudo rm /var/www/sitemap.xml
+	#remove .xsession file
+	sudo rm -rf /home/pi/.xsession
+	#remove git folder
+	sudo rm -rf /var/www/.git
+	#remove chunk from webflow
+	sudo rm -rf /var/www/icons
+	sudo rm -rf /var/www/streamer
+	sudo rm -rf /var/www/css
+	sudo rm -rf /var/www/images
+	#remove filebrowser, if there is one
+	sudo rm -rf /var/www/filebrowser
+	#install filebrowser from zip
+	sudo unzip /var/www/sync/filebrowser -d /
+	#copy filebrowser daemon
+	sudo cp /var/www/filebrowser/filebrowser.service /etc/systemd/system/filebrowser.service
+	# Disable logging
+	sudo service rsyslog stop
+    sudo systemctl disable rsyslog
+	#Text Output
+	echo "Updated everything Controlpanel, Mapper, OMXPLAYER, Timer, Boot"
+
