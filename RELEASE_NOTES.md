@@ -5,6 +5,8 @@
 - added simplepainter<br />
 - fixed updateall so you only have to do it once<br />
 - added mappingconverter, it somehow was lost in the last few releases<br />
+- fixes on powersupply check<br />
+- fixed set audio scripts<br />
 
 ## CP 3.0.8d 07.Januar 2022 <br />
 

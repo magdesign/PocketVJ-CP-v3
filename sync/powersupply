@@ -7,18 +7,20 @@ POWERSUPPLY="$(sudo /opt/vc/bin/vcgencmd get_throttled)"
 if [ "${POWERSUPPLY}" = "throttled=0x0" ]; then 
         echo "Power is good";
 
-
 elif [ "${POWERSUPPLY}" = "throttled=0x50000" ]; then 
         echo "Power is bad; replace powersupply";
 
-elif [ "${POWERSUPPLY}" = "throttled=0x10000;" ]; then 
+elif [ "${POWERSUPPLY}" = "throttled=0x10000" ]; then 
         echo "Power Undervoltage";
 
-elif [ "${POWERSUPPLY}" = "throttled=0x80000;" ]; then 
+elif [ "${POWERSUPPLY}" = "throttled=0x80000" ]; then 
         echo "Power OK, but Soft Temperature Limit";
 
-elif [ "${POWERSUPPLY}" = "throttled=0x80008;" ]; then 
+elif [ "${POWERSUPPLY}" = "throttled=0x80008" ]; then 
         echo "Soft Temperature Limit and Throtteling";
+
+else echo "no info";
+
 fi
 
 exit 0
