@@ -86,6 +86,8 @@
 	# Disable logging
 	sudo service rsyslog stop
     sudo systemctl disable rsyslog
+	#fix a weird mapper bug for the remote
+	sudo ln -s /usr/bin/expect /bin/expect
 	#Text Output
 	echo "Updated everything Controlpanel, Mapper, OMXPLAYER, Timer, Boot"
 
