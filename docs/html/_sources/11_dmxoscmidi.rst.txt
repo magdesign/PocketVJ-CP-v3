@@ -2,8 +2,6 @@
 DMX OSC MIDI
 =========================
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/24/dmx%C2%A0on-pocketvj-rtc
-
 OLA
 *****
 

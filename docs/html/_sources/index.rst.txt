@@ -5,7 +5,7 @@ PocketVJ RTC User Manual
 .. image:: _images/00_PocketVJ_RTC.jpg
 
 
-Version 01/2022
+Version 02/2022
 
 This user manual is published by magdesign.ch without any warranty.
 
@@ -21,7 +21,7 @@ without the written consent of the owner.
 No worries, just ask me politely :-)
 
 If you prefer videotutorials:
-https://tutorials.pocketvj.com
+https://www.pocketvj.com/pocketvj-rtc
 
 Content
 ========
@@ -50,6 +50,7 @@ Content
    14_systemsettings
    15_troubleshooting
    16_create_content
+   19_advanced_mapping_tricks
 
 
 

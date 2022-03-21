@@ -4,7 +4,7 @@ SCHEDULER
 
 .. image:: _images/10_CP_scheduler.png
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/26/pocketvj-rtc-scheduler
+see video tutorial: https://www.pocketvj.com/pocketvj-rtc
 
 CLOCK
 *****

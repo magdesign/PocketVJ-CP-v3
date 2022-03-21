@@ -46,7 +46,7 @@ OVERLAY
 
 - Create an overlay.png with transparency in the /internal/images/ folder and overlay it over the Videoplayer
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/23/pocketvj-use-an-overlay
+see video tutorial:
 
 
 IMPRESS

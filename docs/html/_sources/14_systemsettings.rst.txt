@@ -59,7 +59,7 @@ Is for updating stuff:
 .. image:: _images/14_CP_firmware.png
 
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/36/pocketvj_rtc_update
+
 
 if this does not work, use the alternative method: 
 

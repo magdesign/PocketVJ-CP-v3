@@ -38,6 +38,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ADVANCED MAPPING TRICKS" href="19_advanced_mapping_tricks.html" />
     <link rel="prev" title="TROUBLESHOOTING" href="15_troubleshooting.html" /> 
 </head>
 
@@ -109,9 +110,11 @@
 <li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CREATE CONTENT</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#convert-movies-to-h-264-mp4-files">Convert movies to h.264 * .mp4 files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-handbrake">Using Handbrake:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#create-animations">Create Animations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="19_advanced_mapping_tricks.html">ADVANCED MAPPING TRICKS</a></li>
 </ul>
 
             
@@ -180,15 +183,20 @@
            <div itemprop="articleBody">
             
   <div class="section" id="create-content">
-<h1>CREATE CONTENT<a class="headerlink" href="#create-content" title="Permalink to this headline">¶</a></h1>
+<span id="encoding"></span><h1>CREATE CONTENT<a class="headerlink" href="#create-content" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="convert-movies-to-h-264-mp4-files">
 <h2>Convert movies to h.264 * .mp4 files<a class="headerlink" href="#convert-movies-to-h-264-mp4-files" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/16_handbrake.png" src="_images/16_handbrake.png" />
-<p><strong>Adobe media codecs are unusable proprietary crap!</strong></p>
-<p>Real pros use <a class="reference external" href="https://handbrake.fr">https://handbrake.fr</a></p>
-<p>Make sure to disable Crop under “Dimensions” !!</p>
-<p>Under “Video” select:</p>
+<p>I recommend to use <a class="reference external" href="https://handbrake.fr">https://handbrake.fr</a> for encoding videos.</p>
+<p>A lot of people still use Adobe media encoder, which is, in my opinion, unusable bloat… but use whatever you think creates the best results.</p>
+</div>
+<div class="section" id="using-handbrake">
+<h2>Using Handbrake:<a class="headerlink" href="#using-handbrake" title="Permalink to this headline">¶</a></h2>
+<p>Make sure to disable Auto Cropping in the “Dimensions” tab.</p>
+<p>In the  “Video” tab,  select:</p>
 <p>Framerate: same as source</p>
+<img alt="_images/16_framerate.png" src="_images/16_framerate.png" />
+<img alt="_images/16_dimensions.png" src="_images/16_dimensions.png" />
 <p>If you get videos with ending .m4v, disable the check mark in settings:</p>
 <img alt="_images/16_handbrake_prefs.png" src="_images/16_handbrake_prefs.png" />
 </div>
@@ -208,6 +216,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="19_advanced_mapping_tricks.html" class="btn btn-neutral float-right" title="ADVANCED MAPPING TRICKS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="15_troubleshooting.html" class="btn btn-neutral float-left" title="TROUBLESHOOTING" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

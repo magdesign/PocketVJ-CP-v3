@@ -76,8 +76,7 @@ or this one:
 **After update CP is showing a blank page**
 *******************************************
 
-=> Do again an update, but with the alternative method:
-https://video.pocketvj.com/AVideo/video/41/pocketvj-rtc-alternative-update
+=> Do again an update, but with the alternative method.
 
 
 
@@ -108,7 +107,7 @@ https://video.pocketvj.com/AVideo/video/41/pocketvj-rtc-alternative-update
 => Not enough power from the powersupply, connect via RJ45 and check if you get enough power in SYSTEM SETTINGS.
 You need 5V and 3A, lower Amps will not work!
 
-=> Try connecting via direct RJ45 https://video.pocketvj.com/AVideo/video/20/direct-rj45-to-your-pocketvj
+=> Try connecting via direct RJ45.
 
 **Movie is not playing**
 ************************
@@ -143,7 +142,7 @@ Make sure to always mount and unmount your USB devices!
 
 ``DNS Server: 192.168.2.1``
 
-- check this troubleshoot video: https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector
+
 - make sure the computer which is connected to the PocketVJ CP is not connected to second network, for example RJ45 in your local network and wifi to PocketVJ, 
 if this is the case, unplug rj45 until it finds the projector, then you can plug it in again. Get a list of standard passwords for projectors here: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/projector_passwords.md
 

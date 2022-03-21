@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ADVANCED MAPPING TRICKS &mdash; PocketVJ RTC 3.9 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="CREATE CONTENT" href="16_create_content.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> PocketVJ RTC
+          
+
+          
+            
+            <img src="_static/PocketVJ.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_videowall.html">VIDEO WALL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16_create_content.html">CREATE CONTENT</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ADVANCED MAPPING TRICKS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-your-justage-image">Create your Justage Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pause-your-content">Pause your Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#masking-1">Masking (1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#masking-2">Masking (2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#edit-the-raw-coordinates">Edit the Raw Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#map-with-your-mapping-tool-of-choice">Map with your Mapping tool of choice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#screenshot-and-rebuild-in-vfx-tool">Screenshot and rebuild in VFX tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-mapio-or-madmapper">Using Mapio or MadMapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#never-panic">Never panic</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ RTC</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>ADVANCED MAPPING TRICKS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/19_advanced_mapping_tricks.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="advanced-mapping-tricks">
+<h1>ADVANCED MAPPING TRICKS<a class="headerlink" href="#advanced-mapping-tricks" title="Permalink to this headline">¶</a></h1>
+<p>With over a decade of experience in projection mapping, here some basic tricks in no particular order :-)</p>
+<div class="section" id="create-your-justage-image">
+<h2>Create your Justage Image<a class="headerlink" href="#create-your-justage-image" title="Permalink to this headline">¶</a></h2>
+<p>In my opinion this is the most important step, it does make so much sense to first think about which surfaces you are going to map,
+how many squares or triangles you are going to need to solve this, then creating them in different colors in the same resolution as
+the final video will be. The same picture you will use to prepare the content.</p>
+<p>Here an example:</p>
+<img alt="_images/19_mapping_mask.jpg" src="_images/19_mapping_mask.jpg" />
+</div>
+<div class="section" id="pause-your-content">
+<h2>Pause your Content<a class="headerlink" href="#pause-your-content" title="Permalink to this headline">¶</a></h2>
+<p>When you are mapping with the PocketVJ without a predefined adjustment image and just using your video, hit the pause button in CP to get more performance and fluent mouse movements.</p>
+<img alt="_images/19_pause.png" src="_images/19_pause.png" />
+</div>
+<div class="section" id="masking-1">
+<h2>Masking (1)<a class="headerlink" href="#masking-1" title="Permalink to this headline">¶</a></h2>
+<p>For masking just create a plain black image in your imageeditor of choice, or even simpler
+create a screenshot of a black area. Load this image as texture into your mapping and use the
+<strong>Layer Up</strong> button to bring it on top to mask off things you want to hide.
+Here as well, you could create a screenshot of the mapping, import this into your imageeditor, draw the mask you need in black,
+save this as .png with alpha transparency and layer this on top of the the mapping to hide all the things which shall be hidden.</p>
+</div>
+<div class="section" id="masking-2">
+<h2>Masking (2)<a class="headerlink" href="#masking-2" title="Permalink to this headline">¶</a></h2>
+<p>1.) Set your computer screen resolution the same as the projector has.</p>
+<p>2.) Connect the projector to your computer and mirror the display, so you see your computers screen also on the projector.</p>
+<p>2a.) You can also use VNC screen <a class="reference internal" href="07_sharing.html#sharing"><span class="std std-ref">SHARING</span></a> if there is no cable to the proejctor.</p>
+<p>3.) Create a new file in Krita.org which has the same resolution as your beamer, with 72dpi.</p>
+<p>4.) Hit TAB so Krita goes fullscreen.</p>
+<p>5.) Use a black brush to mask everything which should not receive light.</p>
+<p>6.) When finished hit TAB again and replace the white area with transparent.</p>
+<p>7.) Save as .png with transparency and upload to PocketVJ.</p>
+<p>8.) Use it as a mask.</p>
+</div>
+<div class="section" id="edit-the-raw-coordinates">
+<h2>Edit the Raw Coordinates<a class="headerlink" href="#edit-the-raw-coordinates" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes its hard with the mouse to move the mapping to the exact position you desire or you do not have a mouse by hand.
+No problem, you can directly modify the coordinates of your surface in the built in texteditor.</p>
+<p>To do so, safe your mapping, then open the eXtplorer filebrowser, navigate to /internal/mapping,
+open the previously saved mappersetting*.xml preset by doubleclicking.</p>
+<img alt="_images/19_extplorer_mappersets.png" src="_images/19_extplorer_mappersets.png" />
+<img alt="_images/19_texture_manaul_mapping.png" src="_images/19_texture_manaul_mapping.png" />
+<p>Now you see the coordinates of surfaces and also the texture coordinates.</p>
+<p>Each corner has a Y and X coordinate, 0-point is on top left.</p>
+<p>Save and then reload the mapperpreset in CP under Open Mapperset.</p>
+</div>
+<div class="section" id="map-with-your-mapping-tool-of-choice">
+<h2>Map with your Mapping tool of choice<a class="headerlink" href="#map-with-your-mapping-tool-of-choice" title="Permalink to this headline">¶</a></h2>
+<p>There are moments when you really need and advanced mapping tool with bezier curves and grid warp,
+or you just want to remotely map over wifi while you are standing in front of a building.
+(There is a good FOSS tool: <a class="reference external" href="https://mapmapteam.github.io">https://mapmapteam.github.io</a>)</p>
+<p>For this purpose, VNC screen <a class="reference internal" href="07_sharing.html#sharing"><span class="std std-ref">SHARING</span></a> is the right choice</p>
+<p>1.) Use a second screen or fake a second screen (e.g. with a hdmi recorder).</p>
+<p>2.) Connect a HDMI gameplay recorder between the computer and the screen/projector.
+2a.) On Win or OSX computers you need a HDCP killer as well.</p>
+<p>3.) Do your mapping and record it in realtime.</p>
+<p>If your computer is powerfull enough, you could also use a screenrecorder to record the second screen.</p>
+<p>Make sure the select the right fps, when your mapping is produced in 25fps, record with 50 or 25fps.</p>
+<p>Screen recording with ffmpeg: <a class="reference external" href="https://trac.ffmpeg.org/wiki/Capture/Desktop">https://trac.ffmpeg.org/wiki/Capture/Desktop</a></p>
+<p><strong>this text need to be continued with pictures, coming on request…</strong></p>
+</div>
+<div class="section" id="screenshot-and-rebuild-in-vfx-tool">
+<h2>Screenshot and rebuild in VFX tool<a class="headerlink" href="#screenshot-and-rebuild-in-vfx-tool" title="Permalink to this headline">¶</a></h2>
+<p>In some circumstances (for me basically on every long term fixed installation) its easier to play the mapped content
+with the video player instead of the mapper. Most of you are used to some Vfx tools like Natron, Nuke, Fusion, AfterEffects etc.</p>
+<p>Just make your mapping in PocketVJ, when done so, load a Testscreen (<a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/raw/master/sync/testscreen.png">https://github.com/magdesign/PocketVJ-CP-exh/raw/master/sync/testscreen.png</a>) as image source
+and use the screenshot button in CP to generate a screenshot.</p>
+<img alt="_images/19_screenshot.png" src="_images/19_screenshot.png" />
+<p>Then transfer this screenshot from your PocketVJ to your Vfx tool and use
+the Warp tools to rebuild your setup.</p>
+<img alt="_images/19_vfx_fusion.png" src="_images/19_vfx_fusion.png" />
+</div>
+<div class="section" id="using-mapio-or-madmapper">
+<h2>Using Mapio or MadMapper<a class="headerlink" href="#using-mapio-or-madmapper" title="Permalink to this headline">¶</a></h2>
+<p>With the mentioned two softwares you are able to export an .svg file of your mapped quad, import this into the
+/internal/converter/ folder of your PocketVJ and use the <strong>Mapping Converter</strong> to create a Mapper preset.</p>
+</div>
+<div class="section" id="never-panic">
+<h2>Never panic<a class="headerlink" href="#never-panic" title="Permalink to this headline">¶</a></h2>
+<p>Never panic, sometimes you just need a coffee break, speak with someone and you get new inspiration to solve your task.
+Once I ended up projecting a colored UVW map onto the surface, taking a picture of it and built the animation for it Blender
+according the picture I took, roughly calculating the numbered UVW squares and then just had to do a few adjustments with the mapper.
+Sometime we used black tape or light baffles or even mirrors… sometime the used projector has a built in trapez correction which can help… there is always a way!!!</p>
+<img alt="_images/19_UVW_2k.jpg" src="_images/19_UVW_2k.jpg" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="16_create_content.html" class="btn btn-neutral float-left" title="CREATE CONTENT" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, M.A.Gasser, magdesign.ch.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

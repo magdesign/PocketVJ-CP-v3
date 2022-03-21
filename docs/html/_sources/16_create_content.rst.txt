@@ -1,3 +1,5 @@
+.. _encoding:
+
 CREATE CONTENT
 ==============
 
@@ -9,19 +11,28 @@ Convert movies to h.264 * .mp4 files
 
 
 
-**Adobe media codecs are unusable proprietary crap!** 
-
-Real pros use https://handbrake.fr
 
 
-Make sure to disable Crop under "Dimensions" !!
+I recommend to use https://handbrake.fr for encoding videos.
+
+A lot of people still use Adobe media encoder, which is, in my opinion, unusable bloat... but use whatever you think creates the best results.
+
+Using Handbrake:
+*****************
+
+Make sure to disable Auto Cropping in the "Dimensions" tab.
 
 
-Under "Video" select:
+In the  "Video" tab,  select:
 
 Framerate: same as source
 
 
+
+.. image:: _images/16_framerate.png
+
+
+.. image:: _images/16_dimensions.png
 
 If you get videos with ending .m4v, disable the check mark in settings:
 
