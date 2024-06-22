@@ -10,8 +10,8 @@
 
 [**Official Website**](https://www.pocketvj.com/)
 
-## ⁉️ Tutorials
-
+## Tutorials
+        
 Watch [Videos](https://www.pocketvj.com/pocketvj-rtc#Tutorials_RTC)
 
 
@@ -21,23 +21,37 @@ or
 Read [Manual](https://www.pocketvj.com/manual_rtc/index.html)
 
 
-## 🤲 Support
+## Support
 
 **Please order something in the [online shop](https://www.pocketvj.com/shop) to support this project!**
 
-## 📝 Release Notes
+## Release Notes
 
 > Always read the release notes before you update
 
 See [**Release notes**](RELEASE_NOTES.md)
 
-## 🚀 Roadmap
+## Roadmap
 
 Check out [**Todo list**](ROADMAP.md)
 
-## 🔨 Build
+## Build
 
 Check out [**Build**](./docs/build.md)
+
+## Image
+
+Download the ready made image
+
+## Donate
+
+Please donate to keep the project alive (donations in 2022/2023/2024 => 0.--, server and domain costs - 360.--):
+
+btc: bc1qpfljs02fmad7575fs2skjz5u02plzqw0g3xt6d
+
+paypal: boost@brandisbrandisbrand.com
+
+revolut: @brandisbrand
 
 ## License
 
