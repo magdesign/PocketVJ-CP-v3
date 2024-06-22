@@ -20,11 +20,6 @@ or
 
 Read [Manual](https://www.pocketvj.com/manual_rtc/index.html)
 
-
-## Support
-
-**Please order something in the [online shop](https://www.pocketvj.com/shop) to support this project!**
-
 ## Release Notes
 
 > Always read the release notes before you update
@@ -55,7 +50,7 @@ revolut: @brandisbrand
 
 ## License
 
-[License](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/LICENSE.md) file
+[License](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/LICENSE.md)
 
 
 [magdesign](https://www.pocketvj.com/)
