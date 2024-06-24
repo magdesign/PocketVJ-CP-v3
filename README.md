@@ -38,6 +38,8 @@ Check out [**Build**](./docs/build.md)
 
 Download the ready made image
 
+n2jMkN7C0xE8-2DqYwxXmirMuwWRF6VLr7d-pK86tY4
+
 ## Donate
 
 Please donate to keep the project alive (donations in 2022/2023/2024 => 0.--, server and domain costs - 360.--):
