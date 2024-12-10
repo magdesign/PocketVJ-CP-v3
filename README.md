@@ -42,7 +42,7 @@ n2jMkN7C0xE8-2DqYwxXmirMuwWRF6VLr7d-pK86tY4
 
 ## Donate
 
-Please donate to keep the project alive (donations in 2022/2023/2024 => 0.--, server and domain costs - 360.--):
+Please donate to keep the project alive (donations in 2022/2023/2024 => 20.--, server and domain costs - 360.--):
 
 btc: bc1qpfljs02fmad7575fs2skjz5u02plzqw0g3xt6d
 
