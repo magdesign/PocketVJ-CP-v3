@@ -1,6 +1,4 @@
-<p align="center">
-<img src="./docs/PVJ_2019.svg" alt="PocketVJ-Logo" width="100%">
-</p>
+**!! Project is not active anymore !!**
 
 # PocketVJ CP 3.x
 
@@ -12,13 +10,9 @@
 
 ## Tutorials
         
-Watch [Videos](https://www.pocketvj.com/pocketvj-rtc#Tutorials_RTC)
+Read the [Manual](https://html-preview.github.io/?url=https://raw.githubusercontent.com/magdesign/PocketVJ-CP-v3/refs/heads/master/docs/html/index.html)
 
-
-or
-
-
-Read [Manual](https://www.pocketvj.com/manual_rtc/index.html)
+[Videos] are down, a backup exists and if you are willing to host them, contact me.
 
 ## Release Notes
 
@@ -42,13 +36,14 @@ n2jMkN7C0xE8-2DqYwxXmirMuwWRF6VLr7d-pK86tY4
 
 ## Donate
 
-Please donate to keep the project alive (donations in 2022/2023/2024 => 20.--, server and domain costs - 360.--):
+Please donate
 
 btc: bc1qpfljs02fmad7575fs2skjz5u02plzqw0g3xt6d
 
 paypal: boost@brandisbrandisbrand.com
 
-revolut: @brandisbrand
+revolut:
+@brandisbrand
 
 ## License
 
