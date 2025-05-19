@@ -50,4 +50,4 @@ revolut:
 [License](https://github.com/magdesign/PocketVJ-CP-v3/blob/master/LICENSE.md)
 
 
-[magdesign](https://www.pocketvj.com/)
+[magdesign](https://magdesign.github.io)
