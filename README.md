@@ -6,7 +6,7 @@
 [![issues](https://img.shields.io/github/issues-raw/magdesign/PocketVJ-CP-v3.svg?style=flat-square)](https://github.com/magdesign/PocketVJ-CP-v3/issues)
 [![pulls](https://img.shields.io/github/issues-pr-raw/magdesign/PocketVJ-CP-v3.svg?style=flat-square)](https://github.com/magdesign/PocketVJ-CP-v3/pulls)
 
-[**Official Website**](https://www.pocketvj.com/)
+[**Official Website**]([https://www.pocketvj.com/](https://magdesign.github.io/pocketvj_website/))
 
 ## Tutorials
         
