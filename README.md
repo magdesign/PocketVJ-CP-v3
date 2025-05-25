@@ -6,13 +6,13 @@
 [![issues](https://img.shields.io/github/issues-raw/magdesign/PocketVJ-CP-v3.svg?style=flat-square)](https://github.com/magdesign/PocketVJ-CP-v3/issues)
 [![pulls](https://img.shields.io/github/issues-pr-raw/magdesign/PocketVJ-CP-v3.svg?style=flat-square)](https://github.com/magdesign/PocketVJ-CP-v3/pulls)
 
-[**Official Website**]([https://www.pocketvj.com/](https://magdesign.github.io/pocketvj_website/)
+[**Official Website**](https://magdesign.github.io/pocketvj_website/)
 
 ## Tutorials
         
 Read the [Manual](https://html-preview.github.io/?url=https://raw.githubusercontent.com/magdesign/PocketVJ-CP-v3/refs/heads/master/docs/html/index.html)
 
-[Videos](https://magdesign.github.io/pocketvj_website/pocketvj-rtc.html)
+Watch the [Videos](https://magdesign.github.io/pocketvj_website/pocketvj-rtc.html)
 
 ## Release Notes
 
